@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Actions implements Comparable<Actions> {
 
     private Box actual_position;
