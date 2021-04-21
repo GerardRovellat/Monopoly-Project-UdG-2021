@@ -4,9 +4,6 @@ public interface optionalActions {
 
     private ArrayList<Player> players_list;
 
-    public optionalActions (ArrayList<Player> players_list){
-        this->players_list = players_list;
-    }
-
+    public String toString();
     public execute();
 }

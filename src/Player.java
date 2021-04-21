@@ -7,5 +7,8 @@ public class Actions implements Comparable<Actions> {
     private int board_position; //??????????
     //MORE
 
-
+    //Modificar diners
+    private modifyMoney(Int )
+    //Moure jugador
+    //Retornar posicio jugador
 }

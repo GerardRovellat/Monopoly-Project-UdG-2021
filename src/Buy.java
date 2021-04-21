@@ -1,5 +1,10 @@
 public class Buy implements optionalActions{
 
+    @Override // Heretat d'Object
+    public String toString() {
+
+    }
+
     public execute() {
         /*
             preguntar oferta de compra;

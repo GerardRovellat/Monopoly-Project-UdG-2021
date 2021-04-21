@@ -1,5 +1,10 @@
 public class Sell implements optionalActions{
 
+    @Override // Heretat d'Object
+    public String toString() {
+
+    }
+
     public execute() {
         /*
         	Pregunta quin terreny;
