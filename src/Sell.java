@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+
 public class Sell implements optionalActions{
+
+
+    private ArrayList<Player> players_list;
 
     @Override // Heretat d'Object
     public String toString() {
 
+        return "DONE";
     }
 
-    public execute() {
+    public void execute() {
         /*
         	Pregunta quin terreny;
             Pregunta el preu de sortida;
@@ -18,3 +24,10 @@ public class Sell implements optionalActions{
          */
     }
 }
+
+/*??
+public Start(int int_reward = NULL, Field field_reward = NULL);
+
+Start(12000);
+Start(Madrid);
+*/

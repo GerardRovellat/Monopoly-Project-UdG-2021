@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+
 public class Buy implements optionalActions{
+
+    private ArrayList<Player> players_list;
 
     @Override // Heretat d'Object
     public String toString() {
 
+        return "DONE";
     }
 
-    public execute() {
+    public void execute() {
         /*
             preguntar oferta de compra;
             Pregunta al jugador propietari si accepta;

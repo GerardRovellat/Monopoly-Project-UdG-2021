@@ -1,18 +1,28 @@
 import java.util.ArrayList;
 
-public class Actions implements Comparable<Actions> {
+public class Movement {
 
     private Box actual_position;
     private Player active_player;
 
+
     /**
-     * @brief Actions class Constructor
+     * @brief Movement class Constructor
      * @pre \p actual_posicion and \p active_player valid
-     * @post Guarda l'informació de la tirada
-     * @param actual_position "Casella" position of actual_player on the board
-     * @param active_player Information of the player playing at this torn
+     * @post Create a movement with box and player
+     * @param box "Casella" position of actual_player on the board
+     * @param player Information of the player playing at this torn
      */
-    public Actions(Box actual_position,Player active_player){
+    public void Movement(Box box,Player player){
+
+    }
+
+    /**
+     * @brief $$$$$$$
+     * @pre true
+     * @post Gives the reward when the player cross or falls into the start box
+     */
+    public void startAction() {
 
     }
 
@@ -20,9 +30,9 @@ public class Actions implements Comparable<Actions> {
     /**
      * @brief Actions if the player falls into a field box
      * @pre true
-     * @post SOMETHING
+     * @post Manages movement when player falls into the property box
      */
-    public field(){
+    public void fieldAction(){
         /*
         comprovar titularitat del terreny;
 		si esta lliure {
@@ -46,16 +56,16 @@ public class Actions implements Comparable<Actions> {
 				si es edificable() { edifica }
 			}
 		}
-         */
+        */
     }
 
 
     /**
      * @brief Actions if the player falls into a Bet box
      * @pre true
-     * @post SOMETHING
+     * @post Gives the amount of the bet to the player that is doing the movement
      */
-    public bet(){
+    public void betAction(){
         /*
             tira els daus;
             modifica diners jugador segons resulat aposta;
@@ -65,9 +75,9 @@ public class Actions implements Comparable<Actions> {
     /**
      * @brief Actions if the player falls into a DirectComand box
      * @pre true
-     * @post SOMETHING
+     * @post Does the movement depending of the type of direct order it is
      */
-    public directComand(){
+    public void directComand(){
         /*
             Comprova quin tipus de comandaDirecte es();
                 switch:
@@ -83,7 +93,7 @@ public class Actions implements Comparable<Actions> {
      * @pre true
      * @post SOMETHING
      */
-    public executeCard(Cart active){
+    public void runCard(Card top_card){
         /*
             Executa accions targeta
          */
@@ -96,10 +106,12 @@ public class Actions implements Comparable<Actions> {
      * @pre true
      * @post SOMETHING
      */
-    public optionalActions(ArrayList<posibleActions> optional_actions_list){
+    public void optionalActions(ArrayList<optionalActions> possible_actions){
         /*
             Pregunta al usuari aqueste accions;
             posiblesAccions(entradaUsuari).executar(llista Jugadors,);
          */
+        //?? L'hi podem passar la interface o l'hi passem un index (int, String)
+
     }
 }
