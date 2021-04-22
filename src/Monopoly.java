@@ -1,20 +1,15 @@
 import java.util.ArrayList;
 
 import javafx.util.Pair;
-/* Struct boxInformation{
-    Box name;
-    ArrayList players;
-    bool bought;
-    Player owner;
-}
-Map <int,struct> Tauler;
-*/
-//?? Guardar la info de la casella dins la classe casella ( o crear una nova ) per aixis poder recorrer i canviar coses mes rapid sense haver de tocar internament els parametres de cada classe.
 
 
 public class Monopoly {
-    private Pair<Integer,Integer> dice; //??
-    //private Board board;  //?? Millor crear classe amb la info de sobre o fer-ho directament a Casella
+    private ArrayList<Player> players;
+    private Board board;
+
+    private Pair<Integer,Integer> dice_result;
+    //private int player_iterator = 0;
+    //private Player player = players.get(player_iterator); //??
 
     /**
      * @brief $$$$
@@ -59,7 +54,7 @@ public class Monopoly {
      * @pre true
      * @post Returns the number of boxes that player have to cross
      */
-    private int movePlayer(){
+    private void movePlayer(){ // PROBLEM: NOT INT? VOID
 
     }
 
@@ -104,7 +99,7 @@ public class Monopoly {
      * @pre true
      * @post Returns the dice result
      */
-    private Pair<Integer,Integer>  throwDice{
+    private void throwDice{  // PROBLEM: NOT Pair<Integer,Integer>? VOID
 
     }
 

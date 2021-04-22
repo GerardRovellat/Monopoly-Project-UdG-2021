@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class luckCard implements optionalActions{
+public class LuckCard implements optionalActions{
 
 
     private ArrayList<Player> players_list;
