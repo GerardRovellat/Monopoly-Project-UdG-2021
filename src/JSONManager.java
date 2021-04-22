@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class JSONManager {
 
+    private Monopoly monopoly;
+
 
     /**
      * @brief $$$$
