@@ -105,6 +105,17 @@ public class JSONManager {
             reader = new FileReader(rules_file);
             JsonElement data = parser.parse(reader);
             JsonObject j_object = data.getAsJsonObject();
+
+            int boxes_nr = j_object.get("nombreCaselles").getAsInt();
+
+            JsonArray field_boxes = j_object.get("casellesTerreny").getAsJsonArray();
+            for(JsonElement array_element : field_boxes){
+
+                
+
+            }
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
