@@ -93,7 +93,7 @@ public class Movement {
      * @pre true
      * @post SOMETHING
      */
-    public void runCard(Card top_card){
+    public void runCard(Card card){
         /*
             Executa accions targeta
          */
