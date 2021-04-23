@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class CardGo extends Card{
     private int position;
 
-    public CardGo (String type, boolean postposable, ArrayList<Player> players, Board board,int position) {
-        super(type,postposable,players,board);
+    public CardGo (String type, boolean postposable) {
+        super(type,postposable);
         this.position = position;
     }
 
-    public void execute() {
+    public void execute(ArrayList<Player> players, Board board,int position) {
 
     }
 }

@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class CardGet extends Card{
 
-    public CardGet (String type, boolean postposable, ArrayList<Player> players, Board board) {
-        super(type,postposable,players,board);
+    public CardGet (String type, boolean postposable) {
+        super(type,postposable);
     }
 
-    public void execute() {
+    public void execute(ArrayList<Player> players, Board board) {
 
     }
 }
