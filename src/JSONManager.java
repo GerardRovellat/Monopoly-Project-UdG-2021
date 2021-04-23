@@ -30,9 +30,7 @@ public class JSONManager {
      */
     public Monopoly readFile() {
         Monopoly monopoly;
-        Gson gson = new Gson();
-        JsonParser parser = new JsonParser();
-        FileReader fr;
+
 
 
     }
@@ -95,7 +93,7 @@ public class JSONManager {
      * @pre true
      * @post Read the board file
      */
-    private void readBoard() {
+    private Board readBoard() {
         //Start Gson variables.
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
@@ -111,10 +109,69 @@ public class JSONManager {
             JsonArray field_boxes = j_object.get("casellesTerreny").getAsJsonArray();
             for(JsonElement array_element : field_boxes){
 
-                
+                int box_nr = j_object.get("numCasella").getAsInt();
+                String box_name = j_object.get("nom").getAsString();
+                int box_price = j_object.get("preu").getAsInt();
+                int box_mortgage = j_object.get("preuHipoteca").getAsInt();
+                String box_group = j_object.get("agrupacio").getAsString();
+                int box_basic_rent = j_object.get("preuLloguerBasic").getAsInt();
+                int box_group_rent = j_object.get("preuLloguerAgrupacio").getAsInt();
+                String box_buildable = j_object.get("construible").getAsString();
+                int box_max_houses = j_object.get("maxCases").getAsInt();
+                int box_houses_price = j_object.get("preuCases").getAsInt();
+                boolean box_hotel = j_object.get("hotel").getAsBoolean();
+                int box_hotel_price = j_object.get("preuHotel").getAsInt();
+                JsonArray houses_rents = j_object.get("lloguerAmbCases").getAsJsonArray();
+                List houses_rents_list = new ArrayList<Integer>();
+                for(JsonElement rents : field_boxes){
+                    houses_rents_list.add(rents.getAsInt());
+                }
+                int hotel_rent = j_object.get("lloguerAmbHotel").getAsInt();
+
+                //Afegir a board*******.
 
             }
+            JsonArray jail_boxes = j_object.get("casellesTerreny").getAsJsonArray();
+            for(JsonElement array_element : jail_boxes){
+                int box_nr = j_object.get("numCasella").getAsInt();
+                String box_name = j_object.get("nom").getAsString();
 
+                //AFEGIR PRESO ?????????????????????? ***************
+            }
+
+            JsonArray direct_command_boxes = j_object.get("casellesComandaDirecta").getAsJsonArray();
+            for(JsonElement array_element : direct_command_boxes){
+                int box_nr = j_object.get("numCasella").getAsInt();
+                String box_action = j_object.get("accio").getAsString();
+                if(box_action.equals("MULTA")){ int box_amount = j_object.get("quantitat").getAsInt(); }
+
+                //AFEGIR a board **********.
+            }
+
+            JsonArray bet_boxes = j_object.get("casellesAposta").getAsJsonArray();
+            List bet_boxes_list = new ArrayList<Integer>();
+            for(JsonElement array_element : bet_boxes){
+                bet_boxes_list.add(array_element.getAsInt());
+
+                //AFEGIR a board ?????????????????????? ***************
+            }
+
+            JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
+            List luck_cards_boxes_list = new ArrayList<Integer>();
+            for(JsonElement array_element : bet_boxes){
+                luck_cards_boxes_list.add(array_element.getAsInt());
+
+                //AFEGIR a board ?????????????????????? ***************
+            }
+
+            JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
+            for(JsonElement array_element : bet_boxes){
+                String card_action = j_object.get("accio").getAsString();
+                boolean postponable = j_object.get("posposable").getAsBoolean();
+                if (!postponable){ int card_amount = j_object.get("quantitat").getAsInt(); }
+
+                //AFEGIR a board ?????????????????????? ***************
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
