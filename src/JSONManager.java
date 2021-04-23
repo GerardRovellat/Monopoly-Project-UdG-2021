@@ -168,7 +168,21 @@ public class JSONManager {
             for(JsonElement array_element : bet_boxes){
                 String card_action = j_object.get("accio").getAsString();
                 boolean postponable = j_object.get("posposable").getAsBoolean();
-                if (!postponable){ int card_amount = j_object.get("quantitat").getAsInt(); }
+                switch (card_action){
+                    case "PAGAR":
+                        int pay_amount = j_object.get("quantitat").getAsInt();
+                        break;
+                    case "MULTA":
+                        int fine_amount = j_object.get("quantitat").getAsInt();
+                        break;
+                    case "COBRAR":
+                        int charge_amount = j_object.get("quantitat").getAsInt();
+                        break;
+                    case "ANAR":
+                        int box_nr = j_object.get("numCasella").getAsInt();
+                        break;
+
+                }
 
                 //AFEGIR a board ?????????????????????? ***************
             }
