@@ -24,10 +24,3 @@ public class Sell implements optionalActions{
          */
     }
 }
-
-/*??
-public Start(int int_reward = NULL, Field field_reward = NULL);
-
-Start(12000);
-Start(Madrid);
-*/

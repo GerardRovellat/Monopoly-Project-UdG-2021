@@ -111,7 +111,6 @@ public class Movement {
             Pregunta al usuari aqueste accions;
             posiblesAccions(entradaUsuari).executar(llista Jugadors,);
          */
-        //?? L'hi podem passar la interface o l'hi passem un index (int, String)
 
     }
 }
