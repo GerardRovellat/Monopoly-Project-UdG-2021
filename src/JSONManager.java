@@ -2,10 +2,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 import com.google.gson.*;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 
 public class JSONManager {
 
@@ -98,6 +97,7 @@ public class JSONManager {
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         FileReader reader;
+        Board board = new Board();
         try {
             //Parse file to JsonElement data and get as JsonObject.
             reader = new FileReader(rules_file);
@@ -122,13 +122,15 @@ public class JSONManager {
                 boolean box_hotel = j_object.get("hotel").getAsBoolean();
                 int box_hotel_price = j_object.get("preuHotel").getAsInt();
                 JsonArray houses_rents = j_object.get("lloguerAmbCases").getAsJsonArray();
-                List houses_rents_list = new ArrayList<Integer>();
+                ArrayList houses_rents_list = new ArrayList<Integer>();
                 for(JsonElement rents : field_boxes){
                     houses_rents_list.add(rents.getAsInt());
                 }
                 int hotel_rent = j_object.get("lloguerAmbHotel").getAsInt();
 
-                //Afegir a board*******.
+                Field field = new Field(box_nr,box_name,box_price,box_group,box_basic_rent,box_group_rent,
+                        box_buildable,box_max_houses,box_houses_price,box_hotel,box_hotel_price,houses_rents_list,hotel_rent);
+                board.addBox(field);
 
             }
             JsonArray jail_boxes = j_object.get("casellesTerreny").getAsJsonArray();
@@ -140,12 +142,48 @@ public class JSONManager {
             }
 
             JsonArray direct_command_boxes = j_object.get("casellesComandaDirecta").getAsJsonArray();
-            for(JsonElement array_element : direct_command_boxes){
+            for(JsonElement array_element : direct_command_boxes) {
                 int box_nr = j_object.get("numCasella").getAsInt();
                 String box_action = j_object.get("accio").getAsString();
-                if(box_action.equals("MULTA")){ int box_amount = j_object.get("quantitat").getAsInt(); }
+                switch (box_action) {
+                    case "PAGAR":
+                        int pay_amount = j_object.get("quantitat").getAsInt();
+                        CardPay pay_card = new CardPay(box_action, false, pay_amount);
+                        directComand pay_direct_command = new directComand(box_nr,pay_card);
+                        board.addBox(pay_direct_command);
+                        break;
+                    case "MULTA":
+                        int fine_amount = j_object.get("quantitat").getAsInt();
+                        CardFine fine_card = new CardFine(box_action, false, fine_amount);
+                        directComand fine_direct_command = new directComand(box_nr,fine_card);
+                        board.addBox(fine_direct_command);
+                        break;
+                    case "COBRAR":
+                        int charge_amount = j_object.get("quantitat").getAsInt();
+                        CardCharge charge_card = new CardCharge(box_action, false, charge_amount);
+                        directComand charge_direct_command = new directComand(box_nr,charge_card);
+                        board.addBox(charge_direct_command);
+                        break;
+                    case "ANAR":
+                        int go_box_nr = j_object.get("numCasella").getAsInt();
+                        CardGo go_card = new CardGo(box_action, false, go_box_nr);
+                        directComand go_direct_command = new directComand(box_nr,go_card);
+                        board.addBox(go_direct_command);
+                        break;
+                    case "DONAR":
+                        CardGive give_card = new CardGive(box_action, false);
+                        directComand give_direct_command = new directComand(box_nr,give_card);
+                        board.addBox(give_direct_command);
+                        break;
+                    case "REBRE":
+                        CardGet get_card = new CardGet(box_action, false);
+                        directComand get_direct_command = new directComand(box_nr,get_card);
+                        board.addBox(get_direct_command);
+                        break;
+                    default:
+                        System.out.println("Accio incorrecte");
 
-                //AFEGIR a board **********.
+                }
             }
 
             JsonArray bet_boxes = j_object.get("casellesAposta").getAsJsonArray();
@@ -153,7 +191,7 @@ public class JSONManager {
             for(JsonElement array_element : bet_boxes){
                 bet_boxes_list.add(array_element.getAsInt());
 
-                //AFEGIR a board ?????????????????????? ***************
+                /**FALTA FER**/
             }
 
             JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
@@ -161,35 +199,56 @@ public class JSONManager {
             for(JsonElement array_element : bet_boxes){
                 luck_cards_boxes_list.add(array_element.getAsInt());
 
-                //AFEGIR a board ?????????????????????? ***************
+                /**FALTA FER**/
             }
 
             JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
             for(JsonElement array_element : bet_boxes){
                 String card_action = j_object.get("accio").getAsString();
                 boolean postponable = j_object.get("posposable").getAsBoolean();
+                Stack cards_stack = new Stack<Card>();
                 switch (card_action){
                     case "PAGAR":
                         int pay_amount = j_object.get("quantitat").getAsInt();
+                        CardPay pay_card = new CardPay(card_action,postponable,pay_amount);
+                        cards_stack.push(pay_card);
                         break;
                     case "MULTA":
                         int fine_amount = j_object.get("quantitat").getAsInt();
+                        CardFine fine_card = new CardFine(card_action,postponable,fine_amount);
+                        cards_stack.push(fine_card);
                         break;
                     case "COBRAR":
                         int charge_amount = j_object.get("quantitat").getAsInt();
+                        CardCharge charge_card = new CardCharge(card_action,postponable,charge_amount);
+                        cards_stack.push(charge_card);
                         break;
                     case "ANAR":
                         int box_nr = j_object.get("numCasella").getAsInt();
+                        CardGo go_card = new CardGo(card_action,postponable,box_nr);
+                        cards_stack.push(go_card);
                         break;
+                    case "DONAR":
+                        CardGive give_card = new CardGive(card_action,postponable);
+                        cards_stack.push(give_card);
+                        break;
+                    case "REBRE":
+                        CardGet get_card = new CardGet(card_action,postponable);
+                        cards_stack.push(get_card);
+                        break;
+                    default:
+                        System.out.println("Accio incorrecte");
 
                 }
 
-                //AFEGIR a board ?????????????????????? ***************
+                /**FALTA FER**/
             }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        return ...
     }
 
 }
