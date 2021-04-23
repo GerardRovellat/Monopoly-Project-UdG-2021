@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Stack;
 import javafx.util.Pair;
 
 
@@ -11,6 +11,7 @@ public class Monopoly {
     //private int player_iterator = 0;
     //private Player player = players.get(player_iterator); //??
     private ArrayList<optionalActions> optionalActions;
+    private Stack<Card> cards;
 
     /**
      * @brief $$$$
