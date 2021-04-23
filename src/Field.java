@@ -10,31 +10,55 @@ public class Field extends Box{
     private int group_rent;
     private boolean buildable;
     private int max_buildings;
-    private int builing_price;
+    private int building_price;
     private boolean hotel;
     private int hotel_price;
     private ArrayList<Integer> buildings_rent;
     private int hotel_rent;
+
+    private Player owner;
+    private int buildings_builded;
+    private boolean bought;
 
     /**
      * @brief $$$$
      * @pre true
      * @post Creates a Property with the input attributes
      */
-    public Field(int position,String name,int price,String group,int basic_rent,int group_rent,boolean buildable,int max_buildings,int builing_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
+    public Field(int position,String name,int price,String group,int basic_rent,int group_rent,boolean buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
         this.position = position;
         this.name = name;
         this.price = price;
         this.group = group;
+        this.basic_rent = basic_rent;
+        this.group_rent = group_rent;
+        this.buildable = buildable;
+        this.max_buildings = max_buildings;
+        this.building_price = building_price;
+        this.hotel = hotel;
+        this.hotel_price = hotel_price;
+        this.buildings_rent = buildings_rent;
+        this.hotel_rent = hotel_rent;
     }
 
     /**
      * @brief $$$$
      * @pre true
-     * @post Change state of a property
+     * @post Add player as owner and change state of field to true
      */
-    public void changeBoughtState() {
+    public void buy(Player owner) {
+        this.owner = owner;
+        this.bought = true;
+    }
 
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post Remove player as owner and change state of field to false
+     */
+    public void sell() {
+        this.owner = null;
+        this.bought = false;
     }
 
     /**
@@ -43,7 +67,7 @@ public class Field extends Box{
      * @post Returns price of property
      */
     public int getPrice(){
-
+        return this.price;
     }
 
     /**
@@ -52,7 +76,8 @@ public class Field extends Box{
      * @post Returns rent of the property
      */
     public int getRent() {
-
+        if(!hotel) return buildings_rent.get(2);
+        else return hotel_rent;
     }
 
     /**
@@ -61,7 +86,7 @@ public class Field extends Box{
      * @post Returns owner of the property
      */
     public Player getOwner() {
-
+        return this.owner;
     }
 
     /**

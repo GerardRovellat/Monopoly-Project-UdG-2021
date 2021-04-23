@@ -10,13 +10,14 @@ public class Monopoly {
     private Pair<Integer,Integer> dice_result;
     //private int player_iterator = 0;
     //private Player player = players.get(player_iterator); //??
+    private ArrayList<optionalActions> optionalActions;
 
     /**
      * @brief $$$$
      * @pre true
      * @post Create Monopoly with the input attributes
      */
-    public Monopoly(ArrayList<Player> player_list){
+    public Monopoly(Board board,ArrayList<optionalActions> optionalActions){
 
     }
 
