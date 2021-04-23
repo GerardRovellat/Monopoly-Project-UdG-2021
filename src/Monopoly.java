@@ -54,7 +54,7 @@ public class Monopoly {
      * @pre true
      * @post Returns the number of boxes that player have to cross
      */
-    private void movePlayer(){ // PROBLEM: NOT INT? VOID
+    private void movePlayer(){
 
     }
 
@@ -99,7 +99,7 @@ public class Monopoly {
      * @pre true
      * @post Returns the dice result
      */
-    private void throwDice{  // PROBLEM: NOT Pair<Integer,Integer>? VOID
+    private void throwDice{
 
     }
 
