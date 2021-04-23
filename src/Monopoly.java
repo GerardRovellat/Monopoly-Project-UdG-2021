@@ -8,8 +8,8 @@ public class Monopoly {
     private Board board;
 
     private Pair<Integer,Integer> dice_result;
-    //private int player_iterator = 0;
-    //private Player player = players.get(player_iterator); //??
+    private int player_iterator = 0;
+    private Player actual_player = players.get(player_iterator);
     private ArrayList<optionalActions> optionalActions;
     private Stack<Card> cards;
 

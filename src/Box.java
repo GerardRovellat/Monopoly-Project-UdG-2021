@@ -1,5 +1,4 @@
 public class Box {
-
     public int position;
 
     public Box(int position) {
