@@ -2,13 +2,12 @@ import java.util.ArrayList;
 
 public class Field extends Box{
 
-    private int position;
     private String name;
     private int price;
     private String group;
     private int basic_rent;
     private int group_rent;
-    private boolean buildable;
+    private String buildable;
     private int max_buildings;
     private int building_price;
     private boolean hotel;
@@ -17,16 +16,16 @@ public class Field extends Box{
     private int hotel_rent;
 
     private Player owner;
-    private int buildings_builded;
-    private boolean bought;
+    private int builded;
+    private boolean bought = false;
 
     /**
      * @brief $$$$
      * @pre true
      * @post Creates a Property with the input attributes
      */
-    public Field(int position,String name,int price,String group,int basic_rent,int group_rent,boolean buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
-        this.position = position;
+    public Field(int position,String name,int price,String group,int basic_rent,int group_rent,String buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
+        super(position);
         this.name = name;
         this.price = price;
         this.group = group;
@@ -76,8 +75,11 @@ public class Field extends Box{
      * @post Returns rent of the property
      */
     public int getRent() {
-        if(!hotel) return buildings_rent.get(2);
-        else return hotel_rent;
+        if (bought) {
+            if (!hotel) return buildings_rent.get(2);
+            else return hotel_rent;
+        }
+        else return 0;
     }
 
     /**
@@ -91,11 +93,11 @@ public class Field extends Box{
 
     /**
      * @brief $$$$
-     * @pre true
+     * @pre Es necesari saber que el usuari ja ha pagat el preu corresponent al apartament o hotel segons toqui i que es posible construir
      * @post Build one house on the property
      */
     public void build() {
-
+        builded++;
     }
 
     /**
@@ -103,8 +105,28 @@ public class Field extends Box{
      * @pre true
      * @post Returns TRUE if the property its buildable FALES otherwise
      */
-    public boolean buildable() {
+    public boolean houseBuildable() {
+        return builded < max_buildings;
+    }
 
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post Returns TRUE if the property its buildable FALES otherwise
+     */
+    public boolean hotelBuildable() {
+        return builded == max_buildings;
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$
+     */
+    public int priceToBuild() {
+        if (houseBuildable()) return building_price;
+        else if (hotelBuildable()) return hotel_price;
+        else return -1;
     }
 
 }

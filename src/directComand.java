@@ -1,11 +1,10 @@
-public class directComand {
+public class directComand extends Box{
     private Card function;
 
-    public directComand (Card function){
-
+    public directComand(int position,Card function){
+        super(position);
+        this.function = function;
     }
 
-    public void execute() {
-
-    }
+    public Card getCard() { return this.function; }
 }
