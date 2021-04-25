@@ -129,4 +129,13 @@ public class Field extends Box{
         else return -1;
     }
 
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$
+     */
+    public boolean isBought() {
+        return this.bought;
+    }
+
 }

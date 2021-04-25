@@ -19,4 +19,13 @@ public class Board {
     public void addBox(Box box) {
         board.put(box.getPosition(),box);
     }
+
+    public boolean haveOwner(Field box) {
+        Field aux = (Field) board.get(box.getPosition());
+        return aux.isBought();
+    }
+
+    public Box getBox(Player player) {
+        return board.get(player.getPosition());
+    }
 }

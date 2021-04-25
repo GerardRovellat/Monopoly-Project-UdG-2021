@@ -73,6 +73,16 @@ public class Player {
         return name;
     }
 
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public int getPosition() {
+        return position;
+    }
+
     /**
      * @brief $$$$
      * @pre true

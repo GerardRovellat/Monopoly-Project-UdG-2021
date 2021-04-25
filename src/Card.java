@@ -14,5 +14,4 @@ public class Card {
         return this.postposable;
     }
 
-
 }
