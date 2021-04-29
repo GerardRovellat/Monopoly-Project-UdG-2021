@@ -150,7 +150,7 @@ public class JSONManager {
                 }
                 int hotel_rent = j_object.get("lloguerAmbHotel").getAsInt();
 
-                Field field = new Field(box_nr,box_name,box_price,box_group,box_basic_rent,box_group_rent,
+                Field field = new Field(box_nr,"FIELD",box_name,box_price,box_group,box_basic_rent,box_group_rent,
                         box_buildable,box_max_houses,box_houses_price,box_hotel,box_hotel_price,houses_rents_list,hotel_rent);
                 board.addBox(field);
 
@@ -216,7 +216,7 @@ public class JSONManager {
 
             JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
             for(JsonElement array_element : bet_boxes){
-                Box box = new Box(array_element.getAsInt());
+                Box box = new Box(array_element.getAsInt(),"LUCK");
                 board.addBox(box);
             }
 

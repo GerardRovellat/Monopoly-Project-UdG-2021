@@ -133,7 +133,7 @@ public class Monopoly {
     }*/
 
 
-    /*public void setCards(Stack<Card> read_cards){
+    public void setCards(Stack<Card> read_cards){
         cards = read_cards;
-    }*/
+    }
 }
