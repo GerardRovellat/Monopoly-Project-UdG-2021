@@ -83,6 +83,24 @@ public class Player {
         return position;
     }
 
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public int getMoney() {
+        return money;
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public int isAffordable(int price) {
+        return money % price;
+    }
     /**
      * @brief $$$$
      * @pre true
