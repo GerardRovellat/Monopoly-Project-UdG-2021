@@ -4,6 +4,8 @@ public class Buy implements optionalActions{
 
     private ArrayList<Player> players_list;
 
+    public Buy() {};
+
     @Override // Heretat d'Object
     public String toString() {
 

@@ -28,10 +28,10 @@ public class JSONManager {
      * @post Returns the Monopoly game with configurations from rules and board files
      */
     public Monopoly readFile() {
-        Monopoly monopoly;
-
-
-
+        Board board = readBoard();
+        ArrayList actions = readRules();
+        monopoly = new Monopoly(board,actions);
+        return monopoly;
     }
 
     /**
@@ -48,11 +48,12 @@ public class JSONManager {
      * @pre true
      * @post Read the rules file
      */
-    private void readRules() {
+    private ArrayList<optionalActions> readRules() {
         //Start Gson variables.
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         FileReader reader;
+        ArrayList possible_actions = new ArrayList<optionalActions>();
         try {
             //Parse file to JsonElement data and get as JsonObject.
             reader = new FileReader(rules_file);
@@ -61,16 +62,35 @@ public class JSONManager {
 
             //First element "modalitat"
             String mode = j_object.get("modalitat").getAsString();
+            /**FALTA TRACTAR EL ERROR**/
 
             //Second element array "accionsNoAplicables"
             JsonArray restricted_actions = j_object.get("accionsNoAplicables").getAsJsonArray();
             List restricted_action_list = new ArrayList<String>();
-            for (JsonElement array_element : restricted_actions) {
+            for (JsonElement array_element : restricted_actions){
                 restricted_action_list.add(array_element.toString());
             }
+            if(!restricted_action_list.contains("VENDRE")){
+                Sell sell_action  = new Sell();
+                possible_actions.add(sell_action);
+            }
+            if(!restricted_action_list.contains("COMPRAR")){
+                Buy buy_action = new Buy();
+                possible_actions.add(buy_action);
+            }
+            if(!restricted_action_list.contains("PRESTEC")){
+                Loan loan_action = new Loan();
+                possible_actions.add(loan_action);
+            }
+            if(!restricted_action_list.contains("SORT")){
+                LuckCard luck_card_action = new LuckCard();
+                possible_actions.add(luck_card_action);
+            }
+
 
             //Third element "dinersInicials"
             int initial_money = j_object.get("dinersInicials").getAsInt();
+            monopoly.setInitialMoney(initial_money);
 
             //Fourth element array "recompensesCasellaSortida"
             JsonArray start_box_rewards = j_object.get("recompensesCasellaSortida").getAsJsonArray();
@@ -85,6 +105,7 @@ public class JSONManager {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        return possible_actions;
     }
 
     /**
@@ -105,6 +126,7 @@ public class JSONManager {
             JsonObject j_object = data.getAsJsonObject();
 
             int boxes_nr = j_object.get("nombreCaselles").getAsInt();
+            board.setBoxesNr(boxes_nr);
 
             JsonArray field_boxes = j_object.get("casellesTerreny").getAsJsonArray();
             for(JsonElement array_element : field_boxes){
@@ -187,26 +209,22 @@ public class JSONManager {
             }
 
             JsonArray bet_boxes = j_object.get("casellesAposta").getAsJsonArray();
-            List bet_boxes_list = new ArrayList<Integer>();
             for(JsonElement array_element : bet_boxes){
-                bet_boxes_list.add(array_element.getAsInt());
-
-                /**FALTA FER**/
+                Bet bet = new Bet(array_element.getAsInt());
+                board.addBox(bet);
             }
 
             JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
-            List luck_cards_boxes_list = new ArrayList<Integer>();
             for(JsonElement array_element : bet_boxes){
-                luck_cards_boxes_list.add(array_element.getAsInt());
-
-                /**FALTA FER**/
+                Box box = new Box(array_element.getAsInt());
+                board.addBox(box);
             }
 
             JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
+            Stack cards_stack = new Stack<Card>();
             for(JsonElement array_element : bet_boxes){
                 String card_action = j_object.get("accio").getAsString();
                 boolean postponable = j_object.get("posposable").getAsBoolean();
-                Stack cards_stack = new Stack<Card>();
                 switch (card_action){
                     case "PAGAR":
                         int pay_amount = j_object.get("quantitat").getAsInt();
@@ -238,17 +256,15 @@ public class JSONManager {
                         break;
                     default:
                         System.out.println("Accio incorrecte");
-
                 }
-
-                /**FALTA FER**/
             }
+
+            monopoly.setCards(cards_stack);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-        return ...
+        return board;
     }
 
 }

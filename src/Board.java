@@ -3,10 +3,15 @@ import java.util.HashMap;
 import java.util.SortedMap;
 
 public class Board {
+    private int boxes_nr;
     private SortedMap<Integer,Box> board;
     private HashMap<String,Player> players;
 
     public Board () {}
+
+    public void setBoxesNr(int number){
+        boxes_nr = number;
+    }
 
     public void addPlayer(Player player) {
         players.put(player.getName(),player);

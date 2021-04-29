@@ -5,6 +5,9 @@ public class Sell implements optionalActions{
 
     private ArrayList<Player> players_list;
 
+
+    public Sell() {};
+
     @Override // Heretat d'Object
     public String toString() {
 
