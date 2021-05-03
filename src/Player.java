@@ -101,6 +101,8 @@ public class Player {
     public int isAffordable(int price) {
         return money % price;
     }
+
+
     /**
      * @brief $$$$
      * @pre true
