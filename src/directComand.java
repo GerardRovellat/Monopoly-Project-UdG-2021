@@ -1,8 +1,8 @@
 public class directComand extends Box{
     private Card function;
 
-    public directComand(int position,Card function){
-        super(position);
+    public directComand(int position, String type,Card function){
+        super(position,type);
         this.function = function;
     }
 

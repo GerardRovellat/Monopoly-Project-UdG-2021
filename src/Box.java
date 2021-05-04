@@ -4,6 +4,7 @@ public class Box {
 
     public Box(int position,String type) {
         this.position = position;
+        this.type = type;
     }
 
     public int getPosition() {

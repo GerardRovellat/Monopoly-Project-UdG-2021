@@ -7,9 +7,9 @@ public class Monopoly {
     private ArrayList<Player> players;
     private Board board;
     private int initial_money;
+    private ArrayList<String> start_rewards = new ArrayList<>();
     private Pair<Integer,Integer> dice_result;
-    private int player_iterator = 0;
-    private Player actual_player = players.get(player_iterator);
+    private Player actual_player;
     private ArrayList<optionalActions> optional_actions;
     private Stack<Card> cards;
 
@@ -18,9 +18,12 @@ public class Monopoly {
      * @pre true
      * @post Create Monopoly with the input attributes
      */
-    public Monopoly(Board read_board,ArrayList<optionalActions> read_optional_actions){
-        board = read_board;
-        optional_actions = read_optional_actions;
+    public Monopoly(Board read_board,ArrayList<optionalActions> read_optional_actions, Stack<Card> stack_of_cards, int initial_money, ArrayList<String> start_rewards){
+        this.board = read_board;
+        this.optional_actions = read_optional_actions;
+        this.cards = stack_of_cards;
+        this.initial_money = initial_money;
+        this.start_rewards = start_rewards;
     }
 
     public void setInitialMoney(int money){

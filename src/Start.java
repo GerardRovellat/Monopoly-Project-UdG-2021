@@ -9,9 +9,8 @@ public class Start extends Box{
      * @pre true
      * @post Create a start box
      */
-    public Start(int position,String reward_type) {
-        super(position);
-        this.type = reward_type;
+    public Start(int position, String type) {
+        super(position,type);
     }
 
     /**

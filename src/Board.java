@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class Board {
     private int boxes_nr;
-    private SortedMap<Integer,Box> board;
-    private HashMap<String,Player> players;
+    private SortedMap<Integer,Box> board = new TreeMap<>();
+    private HashMap<String,Player> players = new HashMap<>();
 
     public Board () {}
 
