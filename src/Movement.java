@@ -20,7 +20,8 @@ public class Movement {
      * @param player Information of the player playing at this torn
      */
     public void Movement(Box box,Player player){
-
+        this.actual_box = box;
+        this.active_player = player;
     }
 
     /**
@@ -29,6 +30,7 @@ public class Movement {
      * @post Gives the reward when the player cross or falls into the start box
      */
     public void startAction() {
+        // Llegir jugadors
 
     }
 
