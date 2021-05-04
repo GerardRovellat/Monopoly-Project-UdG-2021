@@ -111,6 +111,16 @@ public class Player {
     public void movePlayer(int position) {
         this.position = position;
     }
+
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public void addBox(Box adding_box) {
+        boxes_in_property.add(adding_box);
+    }
 }
 
 

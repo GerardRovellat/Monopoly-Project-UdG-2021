@@ -38,47 +38,22 @@ public class Movement {
      * @pre true
      * @post Manages movement when player falls into the property box
      */
-    public void fieldAction(){
-        /*
-        comprovar titularitat del terreny;
-		si esta lliure {
-			Pregunta al usuari quina accio vol fer amb aquest terreny ( comprar o no );
-			si el compra {
-				Canvia el estat del terreny;
-				Resta al jugador el que costa el terreny
-			}
-		}
-		si es de un jugador {
-			consultar lloguer del terreny;
-			Jugador temporal = Retorna al jugador propietari();
-			resta el lloguer al jugador actual;
-			l'hi suma el lloguer al jugador propietari (temporal);
-		}
-		si es seva {
-			Consultar si vol edificar;
-			Preguntar quantitat per edificar;
-
-			si vol {
-				si es edificable() { edifica }
-			}
-		}
-        */
+    public void fieldAction() {
         Scanner scan = new Scanner(System.in);
         Field field = (Field) actual_box;
         if (field.isBought()) {
-            if (field.getOwner()==active_player) {
+            if (field.getOwner() == active_player) {
                 System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
-                System.out.println("Accions displonibles:");
-                printUserActions(new int[] {0,4});
+                printUserActions(new int[]{0, 4});
                 int action = scan.nextInt();
                 switch (action) {
                     case 0:
                         System.out.println("Accio selecionada: 0. Res");
                         break;
-                    case 1: // BUILD
+                    case 4: // BUILD
                         System.out.println("Accio selecionada: 1. Edificar");
-                        printUserActions(new int[] {0,5,6});        // Posible build accions ( apartament, hotel, nothing )
-                        for (boolean optionFin = false;!optionFin;) {
+                        printUserActions(new int[]{0, 5, 6});        // Posible build accions ( apartament, hotel, nothing )
+                        for (boolean optionFin = false; !optionFin; ) {
                             int option = scan.nextInt();
                             if (option == 5 || option == 6 || option == 0) {
                                 optionFin = true;
@@ -89,21 +64,21 @@ public class Movement {
                                     if (active_player.isAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
                                         System.out.println("Actualment disposa de " + active_player.getMoney() + "€ que l'hi permet comprar fins a " + active_player.isAffordable(price_to_build) + " apartaments");
                                         int quantity = 0;
-                                        for (boolean second_end = false; !second_end; ) {         // Check if it's posible to build quantity apartaments
+                                        for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
                                             System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
                                             quantity = scan.nextInt();      // Get number of apartaments to build
                                             if (quantity <= active_player.isAffordable(price_to_build))
-                                                second_end = true;      // Check if posible to build that many apartaments
+                                                end = true;      // Check if posible to build that many apartaments
                                             else
                                                 System.out.println("Es imposible edificar " + quantity + "apartaments");
                                         }
                                         int final_price = quantity * price_to_build;        // Calculate final price
                                         System.out.println("S'edificaràn " + quantity + "apartaments a un preu total de " + final_price + "€" + "i l'hi quedaràn " + (active_player.getMoney() - final_price) + "€");
                                         printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
-                                        for (boolean fin = false; !fin; ) {       // Check if actions value is correct
+                                        for (boolean end = false; !end; ) {       // Check if actions value is correct
                                             int value = scan.nextInt();         // Get action number
                                             if (value == 1 || value == 2)
-                                                fin = true;       // Check if actions value is correct
+                                                end = true;       // Check if actions value is correct
                                             if (value == 2) System.out.println("Operacio cancelada");
                                             else if (value == 1) {
                                                 field.build(quantity);          // Build x apartaments (x = quantity)
@@ -121,10 +96,10 @@ public class Movement {
                                         System.out.println("Actualment disposa de " + active_player.getMoney() + "€");
                                         System.out.println("S'edificarà un hotel a un preu total de " + price_to_build + "€" + "i l'hi quedaràn " + (active_player.getMoney() - price_to_build) + "€");
                                         printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
-                                        for (boolean fin = false; !fin; ) {       // Check if actions value is correct
+                                        for (boolean end = false; !end; ) {       // Check if actions value is correct
                                             int value = scan.nextInt();         // Get action number
                                             if (value == 1 || value == 2)
-                                                fin = true;       // Check if actions value is correct
+                                                end = true;       // Check if actions value is correct
                                             if (value == 2) System.out.println("Operacio cancelada");
                                             else if (value == 1) {
                                                 field.build(1);          // Build the hotel (quantity = 1)
@@ -136,8 +111,7 @@ public class Movement {
                                     } else System.out.println("No te suficients diners per construir el hotel");
                                 } else
                                     System.out.println("No te cap hotel per construir o encara no ha construit tots els apartaments");
-                            }
-                            else System.out.println("Valor entrat erroni, torni a provar");
+                            } else System.out.println("Valor entrat erroni, torni a provar");
                         }
                         System.out.println("FINAL EDIFICAR");
                         break;
@@ -145,26 +119,50 @@ public class Movement {
                         break;
                 }
                 System.out.println("FINAL ACCIONS DISPONIBLES");
-            }
-            else {
+            } else {
                 // CASELLA COMPRADA PERO DE UN ALTRE JUGADOR
-                Player owner = field.getOwner();
-                System.out.println("-  Ha caigut en una casella ja comprada -");
-                System.out.println("El propietari del terreny es "  + owner.getName() +  " i el lloguer es de " + field.getRent() + "€");
-                if (active_player.getMoney() >= field.getRent()) {
-                    active_player.pay(field.getRent());
-                    owner.charge(field.getRent());
+                Player owner = field.getOwner();        // Get field owner
+                System.out.println("-  La casella de terreny on ha caigut ja te propietari  -");
+                System.out.println("El propietari del terreny es " + owner.getName() + " i el lloguer es de " + field.getRent() + "€");
+                if (active_player.getMoney() >= field.getRent()) { // ture if player can pay rent
+                    active_player.pay(field.getRent());     // player pay rent
+                    owner.charge(field.getRent());          // owner get rent
                     System.out.println("El lloguer s'ha pagat");
-                }
-                else {/*JUGADOR ELIMINAT*/}
+                } else {/* JUGADOR ELIMINAT DE LA PARTIDA - BANCARROTA*/}
+            }
+        } else {
+            System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
+            System.out.println(field.toString()); // Print field info ( name, price, rent, etc )
+            printUserActions(new int[]{0, 3});      // Actions confirmation actions ( confirmate, denegate )
+            for (boolean end = false; !end; ) {
+                int value = scan.nextInt();
+                if (value == 3) {
+                    // Comprar
+                    if (active_player.getMoney() >= field.getPrice()) {
+                        System.out.println("Despres de la compra, et quedaràs amb " + (active_player.getMoney()- field.getPrice()) + "€");
+                        printUserActions(new int[]{1,2});
+                        int confirmation_value = -1;
+                        while(confirmation_value != 1 || confirmation_value != 2) {
+                            confirmation_value = scan.nextInt();
+                            if (confirmation_value == 1) {
+                                active_player.pay(field.getPrice());
+                                active_player.addBox(field);
+                                field.buy(active_player);
+                                System.out.println("Casella comprada");
+                            }
+                            else System.out.println("Operació cancelada");
+                        }
+                    }
+                    else System.out.println("No tens suficients diners per comprar");
+                    end = true;
+                } else if (value == 0) {
+                    System.out.println("Casella no comprada");
+                    end = true;
+                } else System.out.println("Valor entrat erroni, torni a provar");
             }
         }
-        else {
-                // CASELLA NO COMPRADA ENCARA
-        }
-
-
     }
+
 
 
     /**
@@ -243,7 +241,7 @@ public class Movement {
      * @post SOMETHING
      */
     public void printUserActions(int[] actions){
-        user_actions.put(0,"Res");
+        System.out.println("Accions displonibles:");
         for (Integer aux : actions ) {
             System.out.println(aux + ". " + user_actions.get(aux));
         }
