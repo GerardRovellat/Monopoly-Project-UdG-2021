@@ -17,8 +17,8 @@ public class Monopoly {
 
     private Pair<Integer,Integer> dice_result;
 
-    private Iterator<Player> player_iterator = players.iterator();
-    private Player actual_player = (Player) player_iterator;
+    private Iterator<Player> players_iterator = players.iterator();
+    private Player actual_player = players_iterator.next();
 
     private ArrayList<optionalActions> optional_actions;
     private Stack<Card> cards;
@@ -138,7 +138,7 @@ public class Monopoly {
     private void endTurn() {
 
         System.out.println("TORN FINALITZAT");
-        actual_player = player_iterator.next();
+        actual_player = players_iterator.next();
     }
 
     /**
