@@ -10,4 +10,6 @@ public class Box {
     public int getPosition() {
         return this.position;
     }
+
+
 }

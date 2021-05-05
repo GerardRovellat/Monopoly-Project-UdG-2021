@@ -137,6 +137,7 @@ public class Field extends Box{
     public int numberOfHouseBuildable() {
         return max_buildings - builded;
     }
+
     /**
      * @brief $$$$
      * @pre true
@@ -144,6 +145,14 @@ public class Field extends Box{
      */
     public boolean isBought() {
         return this.bought;
+    }
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$
+     */
+    public String getName() {
+        return this.name;
     }
 
 }

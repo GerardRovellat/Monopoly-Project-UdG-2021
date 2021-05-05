@@ -3,7 +3,7 @@ import java.util.*;
 public class Player {
     private String name;
     private int money;
-    private ArrayList <Box> boxes_in_property;
+    private ArrayList<Box> boxes_in_property;
     private int position;
     List<Card> luckCards;
 
@@ -118,8 +118,27 @@ public class Player {
      * @pre true
      * @post $$$$$$
      */
-    public void addBox(Box adding_box) {
-        boxes_in_property.add(adding_box);
+    public void addBox(Box box) {
+        boxes_in_property.add(box);
+    }
+
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public void removeBox(Box box) {
+        boxes_in_property.remove(box);
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public ArrayList<Box> getBoxes() {
+        return this.boxes_in_property;
     }
 }
 
