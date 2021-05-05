@@ -10,6 +10,9 @@ public class Movement {
     private Box actual_box;
     private Player active_player;
     private HashMap<Integer,String> user_actions;
+    ArrayList<Player> players;
+    Board board;
+
 
 
     /**
@@ -19,9 +22,11 @@ public class Movement {
      * @param box "Casella" position of actual_player on the board
      * @param player Information of the player playing at this torn
      */
-    public void Movement(Box box,Player player){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board){
         this.actual_box = box;
         this.active_player = player;
+        this.players = players;
+        this.board = board;
     }
 
     /**
@@ -177,6 +182,15 @@ public class Movement {
             tira els daus;
             modifica diners jugador segons resulat aposta;
          */
+    }
+
+    /**
+     * @brief $$$$$
+     * @pre true
+     * @post $$$$$
+     */
+    public void luckAction(){
+
     }
 
     /**

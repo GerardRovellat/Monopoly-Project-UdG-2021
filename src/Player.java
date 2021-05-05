@@ -5,7 +5,8 @@ public class Player {
     private int money;
     private ArrayList<Box> boxes_in_property;
     private int position;
-    List<Card> luckCards;
+    private List<Card> luckCards;
+    private boolean bankruptcy = false;
 
 
     /**
@@ -140,6 +141,27 @@ public class Player {
     public ArrayList<Box> getBoxes() {
         return this.boxes_in_property;
     }
+
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public void goToBankruptcy() {
+        bankruptcy = true;
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public Boolean getBankruptcy() {
+        return this.bankruptcy;
+    }
+
+
 }
 
 

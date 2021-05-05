@@ -1,15 +1,25 @@
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
 import java.util.Stack;
+import java.util.Random;
 import javafx.util.Pair;
+
+import javax.swing.text.StyledEditorKit;
 
 
 public class Monopoly {
     private ArrayList<Player> players;
     private Board board;
+
     private int initial_money;
     private ArrayList<String> start_rewards = new ArrayList<>();
+
     private Pair<Integer,Integer> dice_result;
-    private Player actual_player;
+
+    private Iterator<Player> player_iterator = players.iterator();
+    private Player actual_player = (Player) player_iterator;
+
     private ArrayList<optionalActions> optional_actions;
     private Stack<Card> cards;
 
@@ -26,114 +36,150 @@ public class Monopoly {
         this.start_rewards = start_rewards;
     }
 
-    public void setInitialMoney(int money){
-        initial_money = money;
-    }
-
-
 
     /**
      * @brief $$$$
      * @pre true
      * @post General that manage the flow of the game turns
      */
-    /*
+
     public void play(){
-        /*
-        	startGame();
+        startGame();
 
-            while(not checkEndGame) {
-                throwDice();
-                movePlayer();
-                Box actual = getActualBox;
-                Movement aux(player,actual);
-                switch:
-                    case:
-                    case:
-                    case:
-                    case:
-                    case:
-                end:
-                endTurn();
+        while(!checkEndGame()) {
+            throwDice();
+            movePlayer();
+            Box actual = getActualBox();
+            Movement aux = new Movement(actual,actual_player,players,board);
+            String actual_box_type = actual.getType();
 
-	        }
+            switch (actual_box_type) {
+                case "Start":
+                    aux.startAction();
+                    break;
+                case "Field":
+                    aux.fieldAction();
+                    break;
+                case "Bet":
+                    aux.betAction();
+                    break;
+                case "Luck":
+                    aux.luckAction();
+                    break;
+                case "DirectComand":
+                    aux.directComand();
+                    break;
+                case "Empty":
+                    System.out.println("EMPTY BOX");
+                    break;
+                default:
+                    // ERROR
+                    break;
+            }
 
-            endGame();
-         */
-    //}
+            endTurn();
+
+        }
+
+        endGame();
+
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Returns the number of boxes that player have to cross
      */
-    /*
-    private void movePlayer(){
 
-    }*/
+    private void movePlayer(){
+        actual_player.movePlayer(dice_result.getKey()+dice_result.getValue());
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Returns the actual Box
      */
-    /*private Box getActualBox{
-
-    }*/
+    private Box getActualBox() {
+        return board.getBox(this.actual_player);
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Returns TRUE if the game its end FALSE otherwise
      */
-    /*private Boolean checkEndGame{
-
-    }*/
+    private Boolean checkEndGame() {
+        boolean end = true;
+        for (Player aux : players) {
+            if (!aux.getBankruptcy()) end = false;
+        }
+        return end;
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Returns the number of players without bankruptcy
      */
-    /*private int activePlayers{
-
-    }*/
+    private int activePlayers() {
+        int count = 0;
+        for (Player aux : players) {
+            if (!aux.getBankruptcy()) count++;
+        }
+        return count;
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Do the final possible actions in a turn and select the next player
      */
-    /*private void endTurn{
+    private void endTurn() {
 
-    }*/
+        System.out.println("TORN FINALITZAT");
+        actual_player = player_iterator.next();
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post Returns the dice result
      */
-    /*private void throwDice{
-
-    }*/
-
-    /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$
-     */
-    /*private void startGame{
-
-    }*/
+    private void throwDice() {
+        Random rand = new Random();
+        int first_dice = rand.nextInt(5);
+        int second_dice = rand.nextInt(5);
+        Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice+1,second_dice+1);
+        dice_result = aux;
+    }
 
     /**
      * @brief $$$$
      * @pre true
      * @post $$$$$
      */
-    /*private void endGame(){
+    private void startGame() {
+        System.out.println("JOC DE MONOPOLY INICIAT");
+        System.out.println("ENTRA EL NUMERO DE JUGADORS:");
+        Scanner scan = new Scanner(System.in);
+        int number_of_players = scan.nextInt();
+        System.out.println("ENTRA EL NOM DE CADA JUGADOR");
+        for (int i=0;i<number_of_players;i++) {
+            String name = scan.nextLine();
+            Player aux = new Player(name,initial_money,0);
+            players.add(aux);
+        }
+    }
 
-    }*/
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$
+     */
+    private void endGame(){
+
+    }
 
 
     public void setCards(Stack<Card> read_cards){
