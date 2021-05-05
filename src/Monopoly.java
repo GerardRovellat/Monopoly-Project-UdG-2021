@@ -93,7 +93,7 @@ public class Monopoly {
      */
 
     private void movePlayer(){
-        actual_player.movePlayer(dice_result.getKey()+dice_result.getValue());
+        board.movePlayer(actual_player,dice_result.getKey()+dice_result.getValue(),start_rewards);
     }
 
     /**
