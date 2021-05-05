@@ -250,9 +250,36 @@ public class Movement {
      * @post SOMETHING
      */
     public void runCard(Card card){
-        /*
-            Executa accions targeta
-         */
+        String type = card.getType();
+        switch (type){
+            case "CHARGE":
+                CardCharge charge = (CardCharge) card;
+                charge.execute(players,board);
+                break;
+            case "FINE":
+                CardFine fine = (CardFine) card;
+                fine.execute(players,board);
+                break;
+            case "GET":
+                CardGet get = (CardGet) card;
+                get.execute(players,board);
+                break;
+            case "GIVE":
+                CardGive give = (CardGive) card;
+                give.execute(players,board,active_player);
+                break;
+            case "GO":
+                CardGo go = (CardGo) card;
+                go.execute(players,board,active_player);
+                break;
+            case "PAY":
+                CardPay pay = (CardPay) card;
+                pay.execute(players,board);
+                break;
+            default:
+                //trow error
+                break;
+        }
     }
 
     /*------------OPCIONALS ACTIONS---------------*/
