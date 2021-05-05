@@ -149,9 +149,9 @@ public class Monopoly {
      */
     private void throwDice() {
         Random rand = new Random();
-        int first_dice = rand.nextInt(5);
-        int second_dice = rand.nextInt(5);
-        Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice+1,second_dice+1);
+        int first_dice = rand.nextInt(5) + 1;
+        int second_dice = rand.nextInt(5) + 1;
+        Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
         dice_result = aux;
     }
 

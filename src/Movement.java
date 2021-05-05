@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Movement {
 
@@ -178,10 +179,44 @@ public class Movement {
      * @post Gives the amount of the bet to the player that is doing the movement
      */
     public void betAction(){
-        /*
-            tira els daus;
-            modifica diners jugador segons resulat aposta;
-         */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Entri la quantitat de la seva aposta");
+        int quantity = -1;
+        while (quantity < 0 || quantity > active_player.getMoney()) {
+            quantity = scan.nextInt();
+            if (quantity < 0 || quantity > active_player.getMoney()) {
+                System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 0 i " + active_player.getMoney() + " )");
+                System.out.println("Torni a provar:");
+            }
+            else System.out.println("El valor entrat es correcte");
+        }
+        System.out.println("Entri el valor de la seva aposta");
+        int bet = -1;
+        while( bet < 2 || bet > 12) {
+            bet = scan.nextInt();
+            if (bet < 2 || bet > 12) {
+                System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 0 i 12 )");
+                System.out.println("Torni a provar:");
+            }
+            else System.out.println("El valor entrat es correcte");
+        }
+        active_player.pay(quantity);
+        System.out.println("Quantitat de aposta retirada del compte");
+        Random rand = new Random();
+        int first_dice = rand.nextInt(5) + 1;
+        int second_dice = rand.nextInt(5) + 1;
+        System.out.println("El resultat dels daus ha sigut " + first_dice + " i de " + second_dice);
+        Bet aux = (Bet) actual_box;
+        int result = aux.betResult(quantity,bet,first_dice+second_dice);
+        if (result > 0) {
+            System.out.println("Ha superat la aposta amb un resultat de +" + result + "€");
+            active_player.charge(result);
+            System.out.println("S'han afegit els fons al compte");
+        }
+        else {
+            System.out.println("No ha superat la aposta");
+        }
+        System.out.println("Final aposta");
     }
 
     /**
@@ -215,9 +250,36 @@ public class Movement {
      * @post SOMETHING
      */
     public void runCard(Card card){
-        /*
-            Executa accions targeta
-         */
+        String type = card.getType();
+        switch (type){
+            case "CHARGE":
+                CardCharge charge = (CardCharge) card;
+                charge.execute(players,board);
+                break;
+            case "FINE":
+                CardFine fine = (CardFine) card;
+                fine.execute(players,board);
+                break;
+            case "GET":
+                CardGet get = (CardGet) card;
+                get.execute(players,board);
+                break;
+            case "GIVE":
+                CardGive give = (CardGive) card;
+                give.execute(players,board,active_player);
+                break;
+            case "GO":
+                CardGo go = (CardGo) card;
+                go.execute(players,board,active_player);
+                break;
+            case "PAY":
+                CardPay pay = (CardPay) card;
+                pay.execute(players,board);
+                break;
+            default:
+                //trow error
+                break;
+        }
     }
 
     /*------------OPCIONALS ACTIONS---------------*/

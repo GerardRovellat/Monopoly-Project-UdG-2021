@@ -8,7 +8,7 @@ public class CardPay extends Card{
         this.quantity = quantity;
     }
 
-    public void execute(ArrayList<Player> players, Board board,int quantity) {
+    public void execute(ArrayList<Player> players, Board board) {
 
     }
 }
