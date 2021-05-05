@@ -9,7 +9,7 @@ import javax.swing.text.StyledEditorKit;
 
 
 public class Monopoly {
-    private ArrayList<Player> players;
+    private ArrayList<Player> players = new ArrayList<>();
     private Board board;
 
     private int initial_money;
@@ -18,7 +18,7 @@ public class Monopoly {
     private Pair<Integer,Integer> dice_result;
 
     private Iterator<Player> players_iterator = players.iterator();
-    private Player actual_player = players_iterator.next();
+    private Player actual_player;
 
     private ArrayList<optionalActions> optional_actions;
     private Stack<Card> cards;
@@ -47,6 +47,7 @@ public class Monopoly {
         startGame();
 
         while(!checkEndGame()) {
+            actual_player = players_iterator.next();
             throwDice();
             movePlayer();
             Box actual = getActualBox();
@@ -54,22 +55,22 @@ public class Monopoly {
             String actual_box_type = actual.getType();
 
             switch (actual_box_type) {
-                case "Start":
+                case "START":
                     aux.startAction();
                     break;
-                case "Field":
+                case "FIELD":
                     aux.fieldAction();
                     break;
-                case "Bet":
+                case "BET":
                     aux.betAction();
                     break;
-                case "Luck":
+                case "LUCK":
                     aux.luckAction();
                     break;
-                case "DirectComand":
+                case "DIRECTCOMMAND":
                     aux.directComand();
                     break;
-                case "Empty":
+                case "EMPTY":
                     System.out.println("EMPTY BOX");
                     break;
                 default:

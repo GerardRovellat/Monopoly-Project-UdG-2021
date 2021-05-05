@@ -188,8 +188,8 @@ public class JSONManager {
                 int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                 String box_name = array_element.getAsJsonObject().get("nom").getAsString();
 
-                Jail jail = new Jail(box_nr,"JAIL",box_name);
-                board.addBox(jail);
+                Empty empty = new Empty(box_nr,"EMPTY",box_name);
+                board.addBox(empty);
             }
 
             JsonArray direct_command_boxes = j_object.get("casellesComandaDirecta").getAsJsonArray();
@@ -200,38 +200,49 @@ public class JSONManager {
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardPay pay_card = new CardPay(box_action, false, pay_amount);
-                        directComand pay_direct_command = new directComand(box_nr,"CARDPAY",pay_card);
+                        directComand pay_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDPAY",pay_card);
                         board.addBox(pay_direct_command);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardFine fine_card = new CardFine(box_action, false, fine_amount);
-                        directComand fine_direct_command = new directComand(box_nr,"CARDFINE",fine_card);
+                        directComand fine_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDFINE",fine_card);
                         board.addBox(fine_direct_command);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardCharge charge_card = new CardCharge(box_action, false, charge_amount);
-                        directComand charge_direct_command = new directComand(box_nr,"CARDGHARGE",charge_card);
+                        directComand charge_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGHARGE",charge_card);
                         board.addBox(charge_direct_command);
                         break;
                     case "ANAR":
                         int go_box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                         CardGo go_card = new CardGo(box_action, false, go_box_nr);
-                        directComand go_direct_command = new directComand(box_nr,"CARDGO",go_card);
+                        directComand go_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGO",go_card);
                         board.addBox(go_direct_command);
                         break;
                     case "DONAR":
                         CardGive give_card = new CardGive(box_action, false);
-                        directComand give_direct_command = new directComand(box_nr,"CARDGIVE",give_card);
+                        directComand give_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGIVE",give_card);
                         board.addBox(give_direct_command);
                         break;
                     case "REBRE":
                         CardGet get_card = new CardGet(box_action, false);
-                        directComand get_direct_command = new directComand(box_nr,"CARDGET",get_card);
+                        directComand get_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGET",get_card);
                         board.addBox(get_direct_command);
                         break;
-                    /**  FALTA MIRAR QUAN ES COMANDES DIRECTES QUE NO IMPLEMENTEM  -- CARD EMPTY**/
+                    case "HIPOTECAR":
+                        Empty mortatge_direct_command = new Empty(box_nr,"EMPTY",null);
+                        board.addBox(mortatge_direct_command);
+                    case "DISPENSAR":
+                        Empty dispense_direct_command = new Empty(box_nr,"EMPTY",null);
+                        board.addBox(dispense_direct_command);
+                    case "PRESO":
+                        Empty jail_direct_command = new Empty(box_nr,"EMPTY",null);
+                        board.addBox(jail_direct_command);
+                    case "ANAR_PRESO":
+                        Empty go_jail_direct_command = new Empty(box_nr,"EMPTY",null);
+                        board.addBox(go_jail_direct_command);
                 }
             }
 
@@ -281,7 +292,7 @@ public class JSONManager {
                         CardGet get_card = new CardGet(card_action,postponable);
                         cards_stack.push(get_card);
                         break;
-                    /**REVISAR TMB TARGETES SORT NO DISPONIBLES **/
+                    /**AQUESTES SI Q NO FARIEN FALTA, VERITAT? **/
                 }
             }
 
