@@ -230,8 +230,6 @@ public class Movement {
         Card actual = cards.get(cards.size()-1);
         runCard(actual);
         cards.add(0,actual);
-
-
     }
 
     /**
@@ -264,7 +262,7 @@ public class Movement {
                 break;
             case "GET":
                 CardGet get = (CardGet) card;
-                get.execute(players,board);
+                get.execute(players,board,active_player);
                 break;
             case "GIVE":
                 CardGive give = (CardGive) card;
@@ -276,7 +274,7 @@ public class Movement {
                 break;
             case "PAY":
                 CardPay pay = (CardPay) card;
-                pay.execute(players,board);
+                pay.execute(players,board,active_player);
                 break;
             default:
                 //trow error
@@ -296,7 +294,6 @@ public class Movement {
             Pregunta al usuari aqueste accions;
             posiblesAccions(entradaUsuari).executar(llista Jugadors,);
          */
-
     }
 
     /**
