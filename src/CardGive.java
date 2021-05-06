@@ -15,8 +15,8 @@ public class CardGive extends Card{
         for (Player aux : players) {
             if (actual_player != aux) {
                 System.out.println(x + ". " + aux.getName());
-                x++;
             }
+            x++;
         }
         int value = -1;
         Player chose_player = null;

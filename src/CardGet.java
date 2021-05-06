@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CardGet extends Card{
 
@@ -6,7 +7,16 @@ public class CardGet extends Card{
         super("GET",postposable);
     }
 
-    public void execute(ArrayList<Player> players, Board board) {
-
+    public void execute(ArrayList<Player> players, Board board, Player actual_player) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
+        System.out.println("Seleccioni el jugador");
+        int option_nr = 1;
+        for (Player player : players){
+            if (actual_player != player) {
+                System.out.println(option_nr + "- " + player.getName() + " (" + player.getMoney() + ")");
+            }
+            option_nr++;
+        }
     }
 }
