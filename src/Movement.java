@@ -1,10 +1,6 @@
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 
 public class Movement {
 
@@ -14,6 +10,7 @@ public class Movement {
     ArrayList<Player> players;
     Board board;
     private ArrayList<String> start_rewards = new ArrayList<>();
+    private Stack<Card> cards;
 
 
 
@@ -25,11 +22,13 @@ public class Movement {
      * @param box "Casella" position of actual_player on the board
      * @param player Information of the player playing at this torn
      */
-    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,Stack<Card> cards){
         this.actual_box = box;
         this.active_player = player;
         this.players = players;
         this.board = board;
+        this.start_rewards = start_rewards;
+        this.cards = cards;
     }
 
     /**
@@ -227,6 +226,9 @@ public class Movement {
      * @post $$$$$
      */
     public void luckAction(){
+        System.out.println("Has caigut en una casella de sort");
+        Card actual = cards.firstElement();
+
 
     }
 
@@ -236,6 +238,7 @@ public class Movement {
      * @post Does the movement depending of the type of direct order it is
      */
     public void directComand(){
+        System.out.println("Has caigut en una casella de comanda directa");
         directComand actual = (directComand) actual_box;
         runCard(actual.getCard());
     }

@@ -14,7 +14,7 @@ public class CardGive extends Card{
         int x = 0;
         for (Player aux : players) {
             if (actual_player != aux) {
-                System.out.println(x + ". " + aux.toString());
+                System.out.println(x + ". " + aux.getName());
                 x++;
             }
         }
@@ -30,7 +30,8 @@ public class CardGive extends Card{
         System.out.println("Seleccioni la propietat");
         x = 0;
         for (Box properties : actual_player.getBoxes()) {
-            System.out.println(x + ". " + properties.toString());
+            Field temp = (Field) properties;
+            System.out.println(x + ". " + temp.getName()); //
             x++;
         }
         value = -1;
