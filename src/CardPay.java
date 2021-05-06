@@ -21,9 +21,14 @@ public class CardPay extends Card{
         }
         System.out.println("A quin jugador vols pagar?");
         option_nr = scanner.nextInt();
+        while (option_nr < 0 || option_nr > players.size() || players.indexOf(actual_player) == option_nr){
+            System.out.println("Valor entrat erroni, torni a provar");
+            option_nr = scanner.nextInt();
+        }
         actual_player.pay(quantity);
         players.get(option_nr-1).charge(quantity);
         System.out.println("El jugador "+actual_player.getName()+" ha pagat "+quantity+"€ a "+players.get(option_nr-1).getName());
         //FALTA TRACTAR QUAN NO POT FER EL PAGAMENT
     }
+
 }

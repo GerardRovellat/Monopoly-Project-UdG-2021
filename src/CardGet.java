@@ -14,7 +14,7 @@ public class CardGet extends Card{
         int option_nr = 1;
         for (Player player : players){
             if (actual_player != player) {
-                System.out.println(option_nr + "- " + player.getName() + " (" + player.getMoney() + ")");
+                System.out.println(option_nr + "- " + player.getName());
             }
             option_nr++;
         }
