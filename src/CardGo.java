@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class CardGo extends Card{
     private int position;
 
-    public CardGo (String type, boolean postposable,int position) {
-        super(type,postposable);
+    public CardGo (boolean postposable,int position) {
+        super("GO",postposable);
         this.position = position;
     }
 

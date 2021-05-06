@@ -199,35 +199,35 @@ public class JSONManager {
                 switch (box_action) {
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardPay pay_card = new CardPay(box_action, false, pay_amount);
+                        CardPay pay_card = new CardPay( false, pay_amount);
                         directComand pay_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDPAY",pay_card);
                         board.addBox(pay_direct_command);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardFine fine_card = new CardFine(box_action, false, fine_amount);
+                        CardFine fine_card = new CardFine( false, fine_amount);
                         directComand fine_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDFINE",fine_card);
                         board.addBox(fine_direct_command);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardCharge charge_card = new CardCharge(box_action, false, charge_amount);
+                        CardCharge charge_card = new CardCharge(false, charge_amount);
                         directComand charge_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGHARGE",charge_card);
                         board.addBox(charge_direct_command);
                         break;
                     case "ANAR":
                         int go_box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
-                        CardGo go_card = new CardGo(box_action, false, go_box_nr);
+                        CardGo go_card = new CardGo(false, go_box_nr);
                         directComand go_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGO",go_card);
                         board.addBox(go_direct_command);
                         break;
                     case "DONAR":
-                        CardGive give_card = new CardGive(box_action, false);
+                        CardGive give_card = new CardGive(false);
                         directComand give_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGIVE",give_card);
                         board.addBox(give_direct_command);
                         break;
                     case "REBRE":
-                        CardGet get_card = new CardGet(box_action, false);
+                        CardGet get_card = new CardGet(false);
                         directComand get_direct_command = new directComand(box_nr,"DIRECTCOMMAND","CARDGET",get_card);
                         board.addBox(get_direct_command);
                         break;
@@ -266,30 +266,30 @@ public class JSONManager {
                 switch (card_action){
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardPay pay_card = new CardPay(card_action,postponable,pay_amount);
+                        CardPay pay_card = new CardPay(postponable,pay_amount);
                         cards_stack.push(pay_card);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardFine fine_card = new CardFine(card_action,postponable,fine_amount);
+                        CardFine fine_card = new CardFine(postponable,fine_amount);
                         cards_stack.push(fine_card);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
-                        CardCharge charge_card = new CardCharge(card_action,postponable,charge_amount);
+                        CardCharge charge_card = new CardCharge(postponable,charge_amount);
                         cards_stack.push(charge_card);
                         break;
                     case "ANAR":
                         int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
-                        CardGo go_card = new CardGo(card_action,postponable,box_nr);
+                        CardGo go_card = new CardGo(postponable,box_nr);
                         cards_stack.push(go_card);
                         break;
                     case "DONAR":
-                        CardGive give_card = new CardGive(card_action,postponable);
+                        CardGive give_card = new CardGive(postponable);
                         cards_stack.push(give_card);
                         break;
                     case "REBRE":
-                        CardGet get_card = new CardGet(card_action,postponable);
+                        CardGet get_card = new CardGet(postponable);
                         cards_stack.push(get_card);
                         break;
                     /**AQUESTES SI Q NO FARIEN FALTA, VERITAT? **/

@@ -51,7 +51,7 @@ public class Monopoly {
             throwDice();
             movePlayer();
             Box actual = getActualBox();
-            Movement aux = new Movement(actual,actual_player,players,board);
+            Movement aux = new Movement(actual,actual_player,players,board,start_rewards);
             String actual_box_type = actual.getType();
 
             switch (actual_box_type) {
@@ -77,7 +77,6 @@ public class Monopoly {
                     // ERROR
                     break;
             }
-
             endTurn();
 
         }

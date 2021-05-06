@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class CardGive extends Card{
 
-    public CardGive (String type, boolean postposable) {
-        super(type,postposable);
+    public CardGive ( boolean postposable) {
+        super("GIVE",postposable);
     }
 
     public void execute(ArrayList<Player> players,Board board, Player actual_player) {

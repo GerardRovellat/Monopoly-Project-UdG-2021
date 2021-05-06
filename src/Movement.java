@@ -13,6 +13,8 @@ public class Movement {
     private HashMap<Integer,String> user_actions;
     ArrayList<Player> players;
     Board board;
+    private ArrayList<String> start_rewards = new ArrayList<>();
+
 
 
 
@@ -23,7 +25,7 @@ public class Movement {
      * @param box "Casella" position of actual_player on the board
      * @param player Information of the player playing at this torn
      */
-    public Movement(Box box,Player player,ArrayList<Player> players,Board board){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards){
         this.actual_box = box;
         this.active_player = player;
         this.players = players;
@@ -234,13 +236,8 @@ public class Movement {
      * @post Does the movement depending of the type of direct order it is
      */
     public void directComand(){
-        /*
-            Comprova quin tipus de comandaDirecte es();
-                switch:
-                    case1: multa: executarTargeta(multa);
-                    case2: ...
-                end:
-         */
+        directComand actual = (directComand) actual_box;
+        runCard(actual.getCard());
     }
 
 
@@ -252,7 +249,7 @@ public class Movement {
     public void runCard(Card card){
         String type = card.getType();
         switch (type){
-            case "CHARGE":
+            case "CHARGE": // passsar a català
                 CardCharge charge = (CardCharge) card;
                 charge.execute(players,board);
                 break;
@@ -270,7 +267,7 @@ public class Movement {
                 break;
             case "GO":
                 CardGo go = (CardGo) card;
-                go.execute(players,board,active_player);
+                go.execute(players,board,active_player,start_rewards);
                 break;
             case "PAY":
                 CardPay pay = (CardPay) card;

@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class CardPay extends Card{
     private int quantity;
 
-    public CardPay (String type, boolean postposable, int quantity) {
-        super(type,postposable);
+    public CardPay ( boolean postposable, int quantity) {
+        super("PAY",postposable);
         this.quantity = quantity;
     }
 

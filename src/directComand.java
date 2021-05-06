@@ -9,4 +9,6 @@ public class directComand extends Box{
     }
 
     public Card getCard() { return this.function; }
+
+    public String getCommand() { return this.command; }
 }
