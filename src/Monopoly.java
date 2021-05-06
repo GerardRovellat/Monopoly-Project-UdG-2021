@@ -21,14 +21,14 @@ public class Monopoly {
     private Player actual_player;
 
     private ArrayList<optionalActions> optional_actions;
-    private Stack<Card> cards;
+    private ArrayList<Card> cards;
 
     /**
      * @brief $$$$
      * @pre true
      * @post Create Monopoly with the input attributes
      */
-    public Monopoly(Board read_board,ArrayList<optionalActions> read_optional_actions, Stack<Card> stack_of_cards, int initial_money, ArrayList<String> start_rewards){
+    public Monopoly(Board read_board,ArrayList<optionalActions> read_optional_actions, ArrayList<Card> stack_of_cards, int initial_money, ArrayList<String> start_rewards){
         this.board = read_board;
         this.optional_actions = read_optional_actions;
         this.cards = stack_of_cards;
@@ -182,7 +182,7 @@ public class Monopoly {
     }
 
 
-    public void setCards(Stack<Card> read_cards){
+    public void setCards(ArrayList<Card> read_cards){
         cards = read_cards;
     }
 }

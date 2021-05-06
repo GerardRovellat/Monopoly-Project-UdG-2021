@@ -10,7 +10,7 @@ public class Movement {
     ArrayList<Player> players;
     Board board;
     private ArrayList<String> start_rewards = new ArrayList<>();
-    private Stack<Card> cards;
+    private ArrayList<Card> cards;
 
 
 
@@ -22,7 +22,7 @@ public class Movement {
      * @param box "Casella" position of actual_player on the board
      * @param player Information of the player playing at this torn
      */
-    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,Stack<Card> cards){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards){
         this.actual_box = box;
         this.active_player = player;
         this.players = players;
@@ -227,7 +227,9 @@ public class Movement {
      */
     public void luckAction(){
         System.out.println("Has caigut en una casella de sort");
-        Card actual = cards.firstElement();
+        Card actual = cards.get(cards.size()-1);
+        runCard(actual);
+        cards.add(0,actual);
 
 
     }

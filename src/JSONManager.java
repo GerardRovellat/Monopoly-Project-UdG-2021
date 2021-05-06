@@ -11,7 +11,7 @@ public class JSONManager {
     private Board board = new Board();
     private ArrayList<optionalActions> actions = new ArrayList<>();
     private ArrayList<String> star_rewards = new ArrayList<>();
-    private ArrayList<Card> cards = new ArrayList<>();
+    private ArrayList<Card> cards = new ArrayList();
     private int initial_money = 0;
     private String rules_file;
     private String board_file;
@@ -259,7 +259,7 @@ public class JSONManager {
             }
 
             JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
-            Stack cards_stack = new Stack<Card>();
+            ArrayList cards_stack = new ArrayList<Card>();
             for(JsonElement array_element : luck_cards){
                 String card_action = array_element.getAsJsonObject().get("accio").getAsString();
                 boolean postponable = array_element.getAsJsonObject().get("posposable").getAsBoolean();
@@ -267,30 +267,30 @@ public class JSONManager {
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardPay pay_card = new CardPay(postponable,pay_amount);
-                        cards_stack.push(pay_card);
+                        cards_stack.add(pay_card);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardFine fine_card = new CardFine(postponable,fine_amount);
-                        cards_stack.push(fine_card);
+                        cards_stack.add(fine_card);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardCharge charge_card = new CardCharge(postponable,charge_amount);
-                        cards_stack.push(charge_card);
+                        cards_stack.add(charge_card);
                         break;
                     case "ANAR":
                         int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                         CardGo go_card = new CardGo(postponable,box_nr);
-                        cards_stack.push(go_card);
+                        cards_stack.add(go_card);
                         break;
                     case "DONAR":
                         CardGive give_card = new CardGive(postponable);
-                        cards_stack.push(give_card);
+                        cards_stack.add(give_card);
                         break;
                     case "REBRE":
                         CardGet get_card = new CardGet(postponable);
-                        cards_stack.push(get_card);
+                        cards_stack.add(get_card);
                         break;
                     /**AQUESTES SI Q NO FARIEN FALTA, VERITAT? **/
                 }
