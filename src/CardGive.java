@@ -18,7 +18,7 @@ public class CardGive extends Card{
             }
             x++;
         }
-        int value = -1;
+        int value = -1;  // CANVIAR COM A CARDPAY
         Player chose_player = null;
         while (value < 0 || value > x) {
             value = scan.nextInt();
@@ -27,6 +27,7 @@ public class CardGive extends Card{
             }
             else System.out.println("Valor entrat erroni, torni a provar");
         }
+
         System.out.println("Seleccioni la propietat");
         x = 0;
         for (Box properties : actual_player.getBoxes()) {
@@ -43,6 +44,7 @@ public class CardGive extends Card{
             }
             else System.out.println("Valor entrat erroni, torni a provar");
         }
+
         System.out.println("Es traspassarà la propietat " + chose_box.getName() + " a el jugador " + chose_player.getName() + ".");
         actual_player.removeBox(chose_box);
         chose_player.addBox(chose_box);

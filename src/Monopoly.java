@@ -80,7 +80,6 @@ public class Monopoly {
             endTurn();
 
         }
-
         endGame();
 
     }
