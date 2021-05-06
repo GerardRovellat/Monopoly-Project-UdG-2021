@@ -11,7 +11,7 @@ public class JSONManager {
     private Board board = new Board();
     private ArrayList<optionalActions> actions = new ArrayList<>();
     private ArrayList<String> star_rewards = new ArrayList<>();
-    private Stack<Card> cards = new Stack();
+    private ArrayList<Card> cards = new ArrayList<>();
     private int initial_money = 0;
     private String rules_file;
     private String board_file;
