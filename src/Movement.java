@@ -262,7 +262,7 @@ public class Movement {
                 break;
             case "GET":
                 CardGet get = (CardGet) card;
-                get.execute(players,board);
+                get.execute(players,board,active_player);
                 break;
             case "GIVE":
                 CardGive give = (CardGive) card;
