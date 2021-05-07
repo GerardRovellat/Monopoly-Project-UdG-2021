@@ -228,6 +228,7 @@ public class Movement {
     public void luckAction(){
         System.out.println("Has caigut en una casella de sort");
         Card actual = cards.get(cards.size()-1);
+        cards.remove(cards.size()-1);
         runCard(actual);
         cards.add(0,actual);
     }

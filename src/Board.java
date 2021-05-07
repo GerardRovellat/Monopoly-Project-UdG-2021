@@ -29,9 +29,14 @@ public class Board {
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
-                    player.addBox(field_reward);
-                    field_reward.buy(player);
-                    System.out.println("Has rebut "+field_reward.getName());
+                    if (field_reward == null) {
+                        System.out.println("NO HI HA CAP TERRENY");
+                    }
+                    else {
+                        player.addBox(field_reward);
+                        field_reward.buy(player);
+                        System.out.println("Has rebut " + field_reward.getName());
+                    }
                 }
                 else{
                     player.charge(Integer.parseInt(reward));
@@ -70,7 +75,7 @@ public class Board {
 
     private Field randomField(){
         Random rand = new Random();
-        int aux_nr = rand.nextInt(boxes_nr-1);
+        int aux_nr = rand.nextInt(boxes_nr-1)+1;
         Field aux_field = null;
         if(haveAvailableFields()) {
             Box aux_box = board.get(aux_nr);
@@ -82,7 +87,7 @@ public class Board {
                 }
             }
             while (!aux_box.getType().equals("FIELD") || have_owner) {
-                aux_box = board.get(rand.nextInt(boxes_nr - 1));
+                aux_box = board.get(rand.nextInt(boxes_nr-1)+1);
                 if (aux_box.getType().equals("FIELD")) {
                     aux_field = (Field) aux_box;
                     if (!aux_field.isBought()) {

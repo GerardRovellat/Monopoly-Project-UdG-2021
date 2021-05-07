@@ -21,7 +21,7 @@ public class CardPay extends Card{
         }
         System.out.println("A quin jugador vols pagar?");
         option_nr = scanner.nextInt();
-        while (option_nr < 0 || option_nr > players.size() || players.indexOf(actual_player) == option_nr){
+        while (option_nr < 0 || option_nr > players.size() || players.indexOf(actual_player) == option_nr){ // POSIBLE ERRO AQUI
             System.out.println("Valor entrat erroni, torni a provar");
             option_nr = scanner.nextInt();
         }

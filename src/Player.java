@@ -100,7 +100,7 @@ public class Player {
      * @post $$$$$$
      */
     public int isAffordable(int price) {
-        return money % price;
+        return money / price;
     }
 
 
@@ -120,8 +120,11 @@ public class Player {
      * @post $$$$$$
      */
     public void addBox(Field box) {
-        boxes_in_property.add(box);
-        box.buy(this);
+        if (box != null) {
+            boxes_in_property.add(box);
+            box.buy(this);
+        }
+        else ; //Throw error
     }
 
     /**
