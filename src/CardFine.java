@@ -34,9 +34,11 @@ public class CardFine extends Card{
                 end = true;
                 System.out.println("MULTA PAGADA");
             } else {
-                // ULTIMES OPCIONS DE PODER ACONSEGUIR LA PASTA NECESARIA
-                // board.nomfuncio (jugador_actual,quantitat_a_pagar); return true si ha aconseguit la pasta
-                // end = resultat de la funcio
+                System.out.println("No tens diners suficients per fer front a la multa");
+                if (!board.isBankrupt(actual_player,quantity)) {
+                    end = true;// la funcio ja ha enviat el jugador a la bancarrota
+                }
+                else System.out.println("Has aconseguit els diners suficients");
             }
         }
     }
