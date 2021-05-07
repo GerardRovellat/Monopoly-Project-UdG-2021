@@ -17,7 +17,7 @@ public class Monopoly {
 
     private Pair<Integer,Integer> dice_result;
 
-    private Iterator<Player> players_iterator = players.iterator();
+    private int actual_player_iterator = 0;
     private Player actual_player;
 
     private ArrayList<optionalActions> optional_actions;
@@ -47,7 +47,7 @@ public class Monopoly {
         startGame();
 
         while(!checkEndGame()) {
-            actual_player = players_iterator.next();
+            actual_player = players.get(actual_player_iterator);
             throwDice();
             movePlayer();
             Box actual = getActualBox();
@@ -138,7 +138,8 @@ public class Monopoly {
 
         System.out.println("TORN FINALITZAT");
         while (!actual_player.getBankruptcy()) {
-            actual_player = players_iterator.next();
+            actual_player_iterator++;
+            actual_player = players.get(actual_player_iterator);
         }
 
     }
@@ -168,7 +169,7 @@ public class Monopoly {
         int number_of_players = scan.nextInt();
         System.out.println("ENTRA EL NOM DE CADA JUGADOR");
         for (int i=0;i<number_of_players;i++) {
-            String name = scan.nextLine();
+            String name = scan.next();
             Player aux = new Player(name,initial_money,0);
             players.add(aux);
         }

@@ -52,7 +52,7 @@ public class Board {
                 }
             }
         }
-        players.get(player.getName()).movePlayer(position);
+        player.movePlayer(position);
     }
 
     public void addBox(Box box) {
@@ -95,7 +95,7 @@ public class Board {
     }
 
     public boolean isBankrupt(Player actual_player, int pay_amount){
-        /*if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return false; }
+        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return false; }
         else {
             System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
             int option_nr;
@@ -160,8 +160,8 @@ public class Board {
                 System.out.println();
             }
 
-
-        }*/
+        }
+        return false;
     }
 
 }
