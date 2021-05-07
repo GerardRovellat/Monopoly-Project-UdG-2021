@@ -30,7 +30,7 @@ public class CardGive extends Card{
 
         System.out.println("Seleccioni la propietat");
         x = 0;
-        for (Box properties : actual_player.getBoxes()) {
+        for (Box properties : actual_player.getFields()) {
             Field temp = (Field) properties;
             System.out.println(x + ". " + temp.getName()); //
             x++;
@@ -40,7 +40,7 @@ public class CardGive extends Card{
         while (value < 0 || value > x) {
             value = scan.nextInt();
             if (value >= 0 && value <= x) {
-                chose_box = (Field) actual_player.getBoxes().get(value);
+                chose_box = (Field) actual_player.getFields().get(value);
             }
             else System.out.println("Valor entrat erroni, torni a provar");
         }

@@ -119,7 +119,7 @@ public class Player {
      * @pre true
      * @post $$$$$$
      */
-    public void addBox(Box box) {
+    public void addBox(Field box) {
         boxes_in_property.add(box);
     }
 
