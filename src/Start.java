@@ -1,6 +1,5 @@
 public class Start extends Box{
 
-    private String type; // field,money,both
     private Field field_reward;
     private int money_reward;
 

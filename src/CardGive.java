@@ -27,7 +27,7 @@ public class CardGive extends Card{
             }
             else System.out.println("Valor entrat erroni, torni a provar");
         }
-
+        // SI NO HI HAN PROPIETATS, NO CAL ENTRAR
         System.out.println("Seleccioni la propietat");
         x = 0;
         for (Box properties : actual_player.getFields()) {

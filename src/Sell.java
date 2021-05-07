@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Sell implements optionalActions{
 
 
-    private ArrayList<Player> players_list;
+    private ArrayList<Player> players_list = new ArrayList<>();
 
 
     public Sell() {};

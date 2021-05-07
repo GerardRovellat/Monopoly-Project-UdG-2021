@@ -13,7 +13,7 @@ public class Monopoly {
     private Board board;
 
     private int initial_money;
-    private ArrayList<String> start_rewards = new ArrayList<>();
+    private ArrayList<String> start_rewards;
 
     private Pair<Integer,Integer> dice_result;
 
@@ -137,10 +137,13 @@ public class Monopoly {
     private void endTurn() {
 
         System.out.println("TORN FINALITZAT");
-        while (!actual_player.getBankruptcy()) {
+        actual_player_iterator++;
+        if (actual_player_iterator==players.size()) actual_player_iterator = 0;
+        while (players.get(actual_player_iterator).getBankruptcy()) {
             actual_player_iterator++;
-            actual_player = players.get(actual_player_iterator);
+            if (actual_player_iterator==players.size()) actual_player_iterator = 0;
         }
+        // CRIDAR A OPTIONAL ACTIONS
 
     }
 
@@ -172,6 +175,7 @@ public class Monopoly {
             String name = scan.next();
             Player aux = new Player(name,initial_money,0);
             players.add(aux);
+            board.addPlayer(aux);
         }
     }
 

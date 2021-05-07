@@ -3,9 +3,9 @@ import java.util.*;
 public class Player {
     private String name;
     private int money;
-    private ArrayList<Field> boxes_in_property;
+    private ArrayList<Field> boxes_in_property = new ArrayList<>();
     private int position;
-    private List<Card> luckCards;
+    private ArrayList<Card> luckCards = new ArrayList<>();
     private boolean bankruptcy = false;
 
 
@@ -110,7 +110,7 @@ public class Player {
      * @post $$$$$$
      */
     public void movePlayer(int position) {
-        this.position = position;
+        this.position = this.position + position;
     }
 
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Buy implements optionalActions{
 
-    private ArrayList<Player> players_list;
+    private ArrayList<Player> players_list = new ArrayList<>();
 
     public Buy() {};
 

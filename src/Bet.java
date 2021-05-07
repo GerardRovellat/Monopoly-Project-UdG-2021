@@ -10,7 +10,7 @@ public class Bet extends Box{
 
     public int betResult(int quanity, int bet, int dice_result) {
         if (dice_result >= bet) {
-            Double aux = bet * (1 + Math.pow(10,((36 - combinations[bet-1]) / 36)));
+            Double aux = bet * (1 + Math.pow(10,((36 - (36 - combinations[bet-1])) / 36)));
             return aux.intValue();
         }
         else return -1;

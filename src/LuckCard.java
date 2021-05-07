@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class LuckCard implements optionalActions{
 
 
-    private ArrayList<Player> players_list;
+    private ArrayList<Player> players_list = new ArrayList<>();
 
     @Override // Heretat d'Object
     public String toString() {

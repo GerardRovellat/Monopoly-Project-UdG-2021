@@ -6,10 +6,10 @@ public class Movement {
 
     private Box actual_box;
     private Player active_player;
-    private HashMap<Integer,String> user_actions;
+    private HashMap<Integer,String> user_actions = new HashMap<>();
     ArrayList<Player> players;
     Board board;
-    private ArrayList<String> start_rewards = new ArrayList<>();
+    private ArrayList<String> start_rewards;
     private ArrayList<Card> cards;
 
 
@@ -29,6 +29,7 @@ public class Movement {
         this.board = board;
         this.start_rewards = start_rewards;
         this.cards = cards;
+        userActionsStart();
     }
 
     /**
@@ -150,7 +151,7 @@ public class Movement {
                         System.out.println("Despres de la compra, et quedaràs amb " + (active_player.getMoney()- field.getPrice()) + "€");
                         printUserActions(new int[]{1,2});
                         int confirmation_value = -1;
-                        while(confirmation_value != 1 || confirmation_value != 2) {
+                        while(confirmation_value != 1 && confirmation_value != 2) {
                             confirmation_value = scan.nextInt();
                             if (confirmation_value == 1) {
                                 active_player.pay(field.getPrice());

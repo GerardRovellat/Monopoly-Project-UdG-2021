@@ -16,6 +16,7 @@ public class Box {
     }
     public String getType() { return this.type; }
 
+    @Override
     public String toString() {
         if (this.type == "FIELD") System.out.println(this.position + " | " + this.type + " | " + this.name);
         else System.out.println(this.position + " | " + this.name);

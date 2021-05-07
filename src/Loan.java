@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Loan implements optionalActions{
 
-    private ArrayList<Player> players_list;
+    private ArrayList<Player> players_list = new ArrayList<>();
 
     public Loan() {};
 
