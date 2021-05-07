@@ -94,4 +94,40 @@ public class Board {
         return found;
     }
 
+    public boolean isBankrupt(Player actual_player, int pay_amount){
+        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return false; }
+        else {
+            System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
+            int option_nr;
+            for (option_nr = 1; option_nr <= 2; option_nr++) {
+                System.out.println(option_nr + "- Vendre terrenys en la seva propietat");
+                if(actual_player.getFields().isEmpty()){
+                    System.out.println("Cap terreny en propietat");
+                }
+                else{
+                    for (Field field : actual_player.getFields()) {
+                        System.out.println(field.getName()+" (Valor del terreny "+field.getPrice()+"€)");
+                    }
+                }
+                System.out.println(option_nr + "- Utilitzar una targeta sort en propietat");
+                 if (actual_player.getLuckCards().isEmpty()){
+                     System.out.println("Cap targeta sort en propietat");
+                 }
+                 else{
+                     int card_nr = 1;
+                     for (Card card : actual_player.getLuckCards()) {
+                         if (card.getType().equals("CHARGE")) {
+                             CardCharge c = (CardCharge) card;
+                             System.out.println(card_nr+"- Obtindras "+ c.getQuantity() +"€");
+                         }
+                         card_nr++;
+                     }
+                 }
+            }
+            System.out.println("Quina opcio tries?");
+            Scanner scan = new Scanner(System.in);
+
+        }
+    }
+
 }
