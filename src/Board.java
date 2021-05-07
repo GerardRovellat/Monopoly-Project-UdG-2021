@@ -26,7 +26,7 @@ public class Board {
                 }
                 Scanner scan = new Scanner(System.in);
                 int chosed_option = scan.nextInt();
-                String reward = rewards.get(chosed_option);
+                String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
                     player.addBox(field_reward);
@@ -72,13 +72,22 @@ public class Board {
         Random rand = new Random();
         int aux_nr = rand.nextInt(boxes_nr-1);
         Field aux_field = null;
-        if(haveAvailableFields()){
+        if(haveAvailableFields()) {
             Box aux_box = board.get(aux_nr);
-            while(aux_box.getType().equals("FIELD")){
+            boolean have_owner = true;
+            if (aux_box.getType().equals("FIELD")) {
                 aux_field = (Field) aux_box;
-                if (haveOwner(aux_field)) {
-                    aux_nr = rand.nextInt(boxes_nr - 1);
-                    aux_box = board.get(aux_nr);
+                if (!aux_field.isBought()) {
+                    have_owner = false;
+                }
+            }
+            while (!aux_box.getType().equals("FIELD") || have_owner) {
+                aux_box = board.get(rand.nextInt(boxes_nr - 1));
+                if (aux_box.getType().equals("FIELD")) {
+                    aux_field = (Field) aux_box;
+                    if (!aux_field.isBought()) {
+                        have_owner = false;
+                    }
                 }
             }
         }
