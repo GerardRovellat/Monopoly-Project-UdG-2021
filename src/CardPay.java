@@ -7,6 +7,7 @@ public class CardPay extends Card{
     public CardPay ( boolean postposable, int quantity) {
         super("PAY",postposable);
         this.quantity = quantity;
+
     }
 
     public void execute(ArrayList<Player> players, Board board, Player actual_player) {
