@@ -180,11 +180,53 @@ public class Monopoly {
      * @post $$$$$
      */
     private void endGame(){
-
+        ArrayList<Player> winers = new ArrayList<>();
+        for (Player player : players) {
+            if (!player.getBankruptcy()) winers.add(player);
+        }
+        if (winers.size() == 1) {
+            System.out.println(winers.get(0).getName() + "Ha guanyat la partida");
+        }
+        else if (winers.size() > 1){
+            Player winer = winers.get(0);
+            for (Player player : winers) {
+                if (player.getMoney() > winer.getMoney()) {
+                    winers.remove(player);
+                }
+                else if (player.getMoney() > winer.getMoney()) {
+                    winers.remove(winer);
+                    winer = player;
+                }
+            }
+            if (winers.size()>1) {
+                System.out.println("Hi ha hagut un empat entre:");
+                for (Player player : winers) System.out.println(player.toString());
+            }
+            else {
+                System.out.println(winers.get(0).getName() + "Ha guanyat la partida");
+            }
+        }
+        else ;// Throw error
+        System.out.println("\nRESUM FINAL DELS JUGADORS:");
+        printPlayers(false);
     }
 
 
     public void setCards(ArrayList<Card> read_cards){
         cards = read_cards;
+    }
+
+    private void printPlayers (boolean active) {
+        if (active) System.out.println("JUGADORS ACTIUS");
+        else System.out.println("JUGADORS");
+        for ( Player aux : players) {
+            if (active) {
+                if (!aux.getBankruptcy()) System.out.println(aux.toString());
+            }
+            else {
+                System.out.println(aux.toString());
+            }
+        }
+
     }
 }

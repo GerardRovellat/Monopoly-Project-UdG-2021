@@ -7,6 +7,7 @@ public class JocMonopoly {
         Monopoly monopoly = json_manager.readFile();
         System.out.println("llegit");
 
+        monopoly.play();
     }
 
 }

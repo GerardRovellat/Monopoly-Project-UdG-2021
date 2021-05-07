@@ -37,8 +37,7 @@ public class Movement {
      * @post Gives the reward when the player cross or falls into the start box
      */
     public void startAction() {
-        // Llegir jugadors
-
+        System.out.println("Has caigut a la casella de Inici i rebut la recompensa");
     }
 
 
