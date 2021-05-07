@@ -110,7 +110,7 @@ public class Player {
      * @post $$$$$$
      */
     public void movePlayer(int position) {
-        this.position = this.position + position;
+        this.position = position;
     }
 
 
@@ -121,8 +121,8 @@ public class Player {
      */
     public void addBox(Field box) {
         boxes_in_property.add(box);
+        box.buy(this);
     }
-
 
     /**
      * @brief $$$$

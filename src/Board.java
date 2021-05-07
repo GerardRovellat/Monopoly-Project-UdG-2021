@@ -39,7 +39,7 @@ public class Board {
                 }
             }
             else{
-                String reward = rewards.get(1);
+                String reward = rewards.get(0);
                 if(reward.equals("terreny")) {
                     Field field_reward = randomField();
                     player.addBox(field_reward);
@@ -70,12 +70,16 @@ public class Board {
 
     private Field randomField(){
         Random rand = new Random();
-        int aux_nr = rand.nextInt(boxes_nr-1)+1;
-        Field aux_field = (Field) board.get(aux_nr);
+        int aux_nr = rand.nextInt(boxes_nr-1);
+        Field aux_field = null;
         if(haveAvailableFields()){
-            while(!aux_field.type.equals("FIELD") && haveOwner(aux_field)){
-                aux_nr = rand.nextInt(boxes_nr-1)+1;
-                aux_field = (Field) board.get(aux_nr);
+            Box aux_box = board.get(aux_nr);
+            while(aux_box.getType().equals("FIELD")){
+                aux_field = (Field) aux_box;
+                if (haveOwner(aux_field)) {
+                    aux_nr = rand.nextInt(boxes_nr - 1);
+                    aux_box = board.get(aux_nr);
+                }
             }
         }
         return aux_field;
@@ -86,9 +90,11 @@ public class Board {
         boolean found = false;
         while(it.hasNext() && !found){
             int box_nr = it.next();
-            Field aux_field = (Field) board.get(box_nr);
-            if(aux_field.type.equals("FIELD") && !haveOwner(aux_field)){
-                found = true;
+            if (board.get(box_nr).getType() == "FIELD") {
+                Field aux_field = (Field) board.get(box_nr);
+                if (!haveOwner(aux_field)) {
+                    found = true;
+                }
             }
         }
         return found;
@@ -163,5 +169,16 @@ public class Board {
         }
         return false;
     }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$$$
+     */
+    public int getSize() {
+        return board.size();
+    }
+
+
 
 }

@@ -100,7 +100,7 @@ public class JSONManager {
             JsonArray start_box_rewards = j_object.get("recompensesCasellaSortida").getAsJsonArray();
             ArrayList start_box_rewards_list = new ArrayList<String>();
             for (JsonElement array_element : start_box_rewards) {
-                start_box_rewards_list.add(array_element.toString());
+                start_box_rewards_list.add(array_element.toString().replace("\"",""));
             }
             this.star_rewards=start_box_rewards_list;
 

@@ -91,7 +91,15 @@ public class Monopoly {
      */
 
     private void movePlayer(){
-        board.movePlayer(actual_player,dice_result.getKey()+dice_result.getValue(),start_rewards);
+        int position = dice_result.getKey()+dice_result.getValue();
+        if (actual_player.getPosition()+position > board.getSize()-1) {
+            position = actual_player.getPosition() + position - board.getSize()+1;
+        }
+        else position = actual_player.getPosition() + position;
+        System.out.println("Et mous de la posicio " + actual_player.getPosition() + "a la posicio " + position);
+
+        board.movePlayer(actual_player,position,start_rewards);
+
     }
 
     /**
@@ -144,6 +152,7 @@ public class Monopoly {
             if (actual_player_iterator==players.size()) actual_player_iterator = 0;
         }
         // CRIDAR A OPTIONAL ACTIONS
+        System.out.println("\n\nSEGUENT JUGADOR\n\n");
 
     }
 
@@ -158,6 +167,7 @@ public class Monopoly {
         int second_dice = rand.nextInt(5) + 1;
         Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
         dice_result = aux;
+        System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
     }
 
     /**

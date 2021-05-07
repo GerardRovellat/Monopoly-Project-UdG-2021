@@ -146,6 +146,7 @@ public class Field extends Box{
     public boolean isBought() {
         return this.bought;
     }
+
     /**
      * @brief $$$$
      * @pre true
