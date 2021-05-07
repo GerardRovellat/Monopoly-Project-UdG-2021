@@ -8,8 +8,7 @@ public class Buy implements optionalActions{
 
     @Override // Heretat d'Object
     public String toString() {
-
-        return "DONE";
+        return "Comprar: Fer una oferta de compra a un altre jugador";
     }
 
     public void execute() {

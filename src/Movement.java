@@ -254,11 +254,11 @@ public class Movement {
         switch (type){
             case "CHARGE": // passsar a català
                 CardCharge charge = (CardCharge) card;
-                charge.execute(players,board);
+                charge.execute(board,active_player);
                 break;
             case "FINE":
                 CardFine fine = (CardFine) card;
-                fine.execute(players,board);
+                fine.execute(board,active_player);
                 break;
             case "GET":
                 CardGet get = (CardGet) card;
@@ -290,10 +290,19 @@ public class Movement {
      * @post SOMETHING
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
-        /*
-            Pregunta al usuari aqueste accions;
-            posiblesAccions(entradaUsuari).executar(llista Jugadors,);
-         */
+        System.out.println("Accions Opcionals:");
+        int index = 0;
+        for (optionalActions aux : possible_actions) {
+            System.out.println(index + " - " + aux.toString());
+            index++;
+        }
+        int value = -1;
+        while (value < 0 || value > index) {
+            Scanner scan = new Scanner(System.in);
+            value = scan.nextInt();
+            if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
+        }
+        possible_actions.get(value).execute();
     }
 
     /**

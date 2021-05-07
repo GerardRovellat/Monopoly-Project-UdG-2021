@@ -137,7 +137,10 @@ public class Monopoly {
     private void endTurn() {
 
         System.out.println("TORN FINALITZAT");
-        actual_player = players_iterator.next();
+        while (!actual_player.getBankruptcy()) {
+            actual_player = players_iterator.next();
+        }
+
     }
 
     /**
