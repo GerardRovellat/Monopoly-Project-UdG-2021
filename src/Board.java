@@ -105,8 +105,9 @@ public class Board {
                     System.out.println("Cap terreny en propietat");
                 }
                 else{
+                    int field_nr = 1;
                     for (Field field : actual_player.getFields()) {
-                        System.out.println(field.getName()+" (Valor del terreny "+field.getPrice()+"€)");
+                        System.out.println("\t"+field_nr+"- "+field.getName()+" (Valor del terreny "+field.getPrice()+"€)");
                     }
                 }
                 System.out.println(option_nr + "- Utilitzar una targeta sort en propietat");
@@ -118,14 +119,47 @@ public class Board {
                      for (Card card : actual_player.getLuckCards()) {
                          if (card.getType().equals("CHARGE")) {
                              CardCharge c = (CardCharge) card;
-                             System.out.println(card_nr+"- Obtindras "+ c.getQuantity() +"€");
+                             System.out.println("\t"+card_nr+"- Obtindras "+ c.getQuantity() +"€");
                          }
                          card_nr++;
                      }
                  }
             }
-            System.out.println("Quina opcio tries?");
+            int missing_money = pay_amount - actual_player.getMoney();
+            System.out.println("Necessites "+missing_money+", quina opcio tries?");
             Scanner scan = new Scanner(System.in);
+            option_nr = scan.nextInt();
+            while(option_nr < 0 || option_nr > 2){
+                System.out.println("Opcio incorrecte, torna a provar");
+                option_nr = scan.nextInt();
+            }
+            if(option_nr == 1){
+                int field_nr;
+                int confirm = 2;
+                Field field_to_sell;
+                while(confirm == 2){
+                    System.out.println("Quin terreny vols vendre?");
+                    field_nr = scan.nextInt();
+                    field_to_sell = actual_player.getFields().get(field_nr-1);
+                    System.out.println(field_to_sell.toString());
+                    System.out.println("Segur que vols vendre aquesta propietat? (1-Si 2-No)");
+                    while(confirm != 1 || confirm != 2){
+                        System.out.println("Tria una opcio correcte");
+                        confirm = scan.nextInt();
+                    }
+                }
+                int sell_price;
+                System.out.println("Per quin preu vols començar la venta?");
+                sell_price = scan.nextInt();
+                //FALTA FER
+            }
+            else{
+                int card_nr;
+                System.out.println("Quina targeta vols utilitzar?");
+                card_nr = scan.nextInt();
+                System.out.println();
+            }
+
 
         }
     }
