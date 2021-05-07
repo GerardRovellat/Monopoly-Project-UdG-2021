@@ -10,7 +10,7 @@ public class Start extends Box{
      * @post Create a start box
      */
     public Start(int position, String type) {
-        super(position,type);
+        super(position,type,"SORTIDA");
     }
 
     /**

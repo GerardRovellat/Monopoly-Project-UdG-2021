@@ -35,7 +35,7 @@ public class CardFine extends Card{
                 System.out.println("MULTA PAGADA");
             } else {
                 // ULTIMES OPCIONS DE PODER ACONSEGUIR LA PASTA NECESARIA
-                // board.nomfuncio (jugador_actual,llista_jugadors,quantitat_a_pagar); return true si ha aconseguit la pasta
+                // board.nomfuncio (jugador_actual,quantitat_a_pagar); return true si ha aconseguit la pasta
                 // end = resultat de la funcio
             }
         }

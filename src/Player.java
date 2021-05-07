@@ -3,7 +3,7 @@ import java.util.*;
 public class Player {
     private String name;
     private int money;
-    private ArrayList<Box> boxes_in_property;
+    private ArrayList<Field> boxes_in_property;
     private int position;
     private List<Card> luckCards;
     private boolean bankruptcy = false;
@@ -138,7 +138,7 @@ public class Player {
      * @pre true
      * @post $$$$$$
      */
-    public ArrayList<Box> getBoxes() {
+    public ArrayList<Field> getFields() {
         return this.boxes_in_property;
     }
 
@@ -161,7 +161,20 @@ public class Player {
         return this.bankruptcy;
     }
 
-
+    @Override
+    public String toString() {
+        System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);
+        System.out.println("DINERS ENS CAIXA: " + this.money);
+        System.out.println("PROPIETATS:");
+        for(Field actual : boxes_in_property) {
+            System.out.println("    " + actual.getName() + ". amb un valor de " + actual.getPrice() + "€");
+        }
+        if (!bankruptcy) System.out.println("JUGADOR ACTIU");
+        else System.out.println("JUGADOR INACTIU ( EN FALLIDA )");
+        return "\n";
+    }
 }
+
+
 
 

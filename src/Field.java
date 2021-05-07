@@ -25,7 +25,7 @@ public class Field extends Box{
      * @post Creates a Property with the input attributes
      */
     public Field(int position,String type,String name,int price,String group,int basic_rent,int group_rent,String buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
-        super(position,type);
+        super(position,type,name);
         this.name = name;
         this.price = price;
         this.group = group;
@@ -155,4 +155,20 @@ public class Field extends Box{
         return this.name;
     }
 
+
+    @Override
+    public String toString() {
+        System.out.println("TÍTUL DE PROPIETAT: " + this.name );
+        System.out.println("PREU DE LA PROPIETAT: " + this.price);
+        System.out.println("LLOGUERS - Solar sense edificar" + this.basic_rent + "€");
+        int pos = 1;
+        for (Integer actual : buildings_rent) {
+            System.out.println("Amb " + pos + "apartaments:    " + actual + "€");
+        }
+        System.out.println("Amb un hotel:         " + this.hotel_rent + "€");
+        System.out.println("Preu de cada Apartament: " + this.building_price + "€");
+        System.out.println("Preu de cada Hotel: " + this.hotel_price + "€ a mes de " + this.max_buildings + "apartaments");
+        System.out.println("Grup de propietats: " + this.group);
+        return "\n";
+    }
 }

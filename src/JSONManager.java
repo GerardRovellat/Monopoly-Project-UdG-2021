@@ -254,7 +254,7 @@ public class JSONManager {
 
             JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
             for(JsonElement array_element : luck_cards_boxes){
-                Box box = new Box(array_element.getAsInt(),"LUCK");
+                Box box = new Box(array_element.getAsInt(),"LUCK","LUCK");
                 board.addBox(box);
             }
 
