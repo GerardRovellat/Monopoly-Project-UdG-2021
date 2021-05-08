@@ -115,7 +115,8 @@ public class Board {
     }
 
     public boolean isBankrupt(Player actual_player, int pay_amount){
-        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return true; }
+        boolean is_it = false;
+        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ is_it =true; }
         else {
             System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
             int option_nr;
@@ -203,7 +204,7 @@ public class Board {
                 }
                 if(winner == null){
                     System.out.println("Cap jugador ha comprat la propietat "+field_to_sell.getName());
-                    return true;
+                    is_it = true;
                 }
                 else{
                     players.get(winner).pay(max_offer);
@@ -223,7 +224,7 @@ public class Board {
                 }
                 if(card_nr == 0){
                     System.out.println("El jugador "+actual_player.getName()+"s'ha declarat en fallida");
-                    return true;
+                    is_it = true;
                 }
                 else{
                     actual_player.charge(chosed_card.getQuantity());
@@ -232,6 +233,7 @@ public class Board {
                 }
             }
         }
+        return is_it;
     }
 
     /**
