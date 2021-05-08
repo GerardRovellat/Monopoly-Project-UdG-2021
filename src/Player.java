@@ -164,6 +164,8 @@ public class Player {
         return this.bankruptcy;
     }
 
+    public void setBankruptcy(boolean status){ this.bankruptcy = status; }
+
     @Override
     public String toString() {
         /*System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);

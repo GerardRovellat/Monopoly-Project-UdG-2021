@@ -115,36 +115,37 @@ public class Board {
     }
 
     public boolean isBankrupt(Player actual_player, int pay_amount){
-        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return false; }
+        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ return true; }
         else {
             System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
             int option_nr;
-            for (option_nr = 1; option_nr <= 2; option_nr++) {
-                System.out.println(option_nr + "- Vendre terrenys en la seva propietat");
-                if(actual_player.getFields().isEmpty()){
-                    System.out.println("Cap terreny en propietat");
-                }
-                else{
-                    int field_nr = 1;
-                    for (Field field : actual_player.getFields()) {
-                        System.out.println("\t"+field_nr+"- "+field.getName()+" (Valor del terreny "+field.getPrice()+"€)");
-                    }
-                }
-                System.out.println(option_nr + "- Utilitzar una targeta sort en propietat");
-                 if (actual_player.getLuckCards().isEmpty()){
-                     System.out.println("Cap targeta sort en propietat");
-                 }
-                 else{
-                     int card_nr = 1;
-                     for (Card card : actual_player.getLuckCards()) {
-                         if (card.getType().equals("CHARGE")) {
-                             CardCharge c = (CardCharge) card;
-                             System.out.println("\t"+card_nr+"- Obtindras "+ c.getQuantity() +"€");
-                         }
-                         card_nr++;
-                     }
-                 }
+            System.out.println("0- Declarar-se en fallida");
+            System.out.println("1- Vendre terrenys en la seva propietat");
+            if(actual_player.getFields().isEmpty()){
+                System.out.println("Cap terreny en propietat");
             }
+            else{
+                int field_nr = 1;
+                for (Field field : actual_player.getFields()) {
+                    System.out.println("\t"+field_nr+"- "+field.getName()+" (Valor del terreny "+field.getPrice()+"€)");
+                }
+            }
+            System.out.println("2- Utilitzar una targeta sort en propietat");
+            int charge_cards_nr = 0;
+             if (actual_player.getLuckCards().isEmpty()){
+                 System.out.println("Cap targeta sort en propietat");
+             }
+             else{
+                 int card_nr = 1;
+                 for (Card card : actual_player.getLuckCards()) {
+                     if (card.getType().equals("CHARGE")) {
+                         CardCharge c = (CardCharge) card;
+                         System.out.println("\t"+card_nr+"- Obtindras "+ c.getQuantity() +"€");
+                         charge_cards_nr++;
+                     }
+                     card_nr++;
+                 }
+             }
             int missing_money = pay_amount - actual_player.getMoney();
             System.out.println("Necessites obtenir "+missing_money+", quina opcio tries?");
             Scanner scan = new Scanner(System.in);
@@ -172,46 +173,65 @@ public class Board {
                 System.out.println("Per quin preu vols començar la venta?");
                 sell_price = scan.nextInt();
                 System.out.println("La subhasta per "+field_to_sell.getName()+" comença per "+sell_price+"€");
-                HashMap<String,Player> auction_players = new HashMap();
+                LinkedHashMap<String,Player> auction_players = new LinkedHashMap<>();
                 auction_players = players;
                 auction_players.remove(actual_player.getName());
-                boolean auction_end = false;
-                Iterator<String> it = auction_players.keySet().iterator();
                 int offer, max_offer=-1;
-                String winner;
-                while(!auction_end){
-                    String name_of_player = it.next();
-                    int actual_money = players.get(name_of_player).getMoney();
-                    System.out.println(name_of_player+" tens "+actual_money+"€");
-                    System.out.println("Que ofereixes? (-1 per retirar-se):");
-                    offer = scan.nextInt();
-                    while (actual_money < offer && offer != -1){
-                        System.out.println("Erroni, no pots pagar més de "+actual_money+", prova de nou");
+                String winner = null;
+                while(auction_players.size() > 1){
+                    for(Map.Entry<String,Player> entry : players.entrySet()){
+                        String name_of_player = entry.getKey();
+                        int actual_money = players.get(name_of_player).getMoney();
+                        System.out.println(name_of_player+" tens "+actual_money+"€");
+                        System.out.println("Que ofereixes? (-1 per retirar-se):");
                         offer = scan.nextInt();
-                    }
-                    if(offer == -1){
-                        auction_players.remove(name_of_player);
-                        System.out.println(name_of_player+" s'ha retirat de la subhasta");
-                    }
-                    else{
-                        if(max_offer < offer){
-                            max_offer = offer;
-                            winner = name_of_player;
+                        while (actual_money < offer && offer != -1){
+                            System.out.println("Erroni, no pots pagar més de "+actual_money+", prova de nou");
+                            offer = scan.nextInt();
+                        }
+                        if(offer == -1){
+                            auction_players.remove(name_of_player);
+                            System.out.println(name_of_player+" s'ha retirat de la subhasta");
+                        }
+                        else{
+                            if(max_offer < offer){
+                                max_offer = offer;
+                                winner = name_of_player;
+                            }
                         }
                     }
-                    //if(!it.)
                 }
-
+                if(winner == null){
+                    System.out.println("Cap jugador ha comprat la propietat "+field_to_sell.getName());
+                    return true;
+                }
+                else{
+                    players.get(winner).pay(max_offer);
+                    players.get(actual_player).charge(max_offer);
+                    System.out.println("El jugador "+winner+" ha comprat "+field_to_sell+" per "+max_offer);
+                }
             }
-            else{
+            else if(option_nr == 2){
                 int card_nr;
-                System.out.println("Quina targeta vols utilitzar?");
+                System.out.println("Quina targeta vols utilitzar? (introdueix 0 per declarar-se en fallida)");
                 card_nr = scan.nextInt();
-                System.out.println();
+                CardCharge chosed_card =(CardCharge) actual_player.getLuckCards().get(card_nr-1);
+                while(card_nr < 0 || card_nr > charge_cards_nr || chosed_card.getQuantity() < missing_money){
+                    System.out.println("Introdueix una carta valida");
+                    card_nr = scan.nextInt();
+                    chosed_card = (CardCharge) actual_player.getLuckCards().get(card_nr-1);
+                }
+                if(card_nr == 0){
+                    System.out.println("El jugador "+actual_player.getName()+"s'ha declarat en fallida");
+                    return true;
+                }
+                else{
+                    actual_player.charge(chosed_card.getQuantity());
+                    System.out.println("En "+actual_player.getName()+" ha rebut "+chosed_card.getQuantity());
+                    actual_player.getLuckCards().remove(chosed_card);
+                }
             }
-
         }
-        return false;
     }
 
     /**
