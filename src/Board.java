@@ -234,7 +234,6 @@ public class Board {
             }
         }
         return is_it;
-        int hola;
     }
 
     /**
