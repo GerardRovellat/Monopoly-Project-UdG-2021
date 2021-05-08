@@ -146,7 +146,7 @@ public class Board {
                  }
             }
             int missing_money = pay_amount - actual_player.getMoney();
-            System.out.println("Necessites "+missing_money+", quina opcio tries?");
+            System.out.println("Necessites obtenir "+missing_money+", quina opcio tries?");
             Scanner scan = new Scanner(System.in);
             option_nr = scan.nextInt();
             while(option_nr < 0 || option_nr > 2){
@@ -156,7 +156,7 @@ public class Board {
             if(option_nr == 1){
                 int field_nr;
                 int confirm = 2;
-                Field field_to_sell;
+                Field field_to_sell = null;
                 while(confirm == 2){
                     System.out.println("Quin terreny vols vendre?");
                     field_nr = scan.nextInt();
@@ -171,7 +171,37 @@ public class Board {
                 int sell_price;
                 System.out.println("Per quin preu vols començar la venta?");
                 sell_price = scan.nextInt();
-                //FALTA FER
+                System.out.println("La subhasta per "+field_to_sell.getName()+" comença per "+sell_price+"€");
+                HashMap<String,Player> auction_players = new HashMap();
+                auction_players = players;
+                auction_players.remove(actual_player.getName());
+                boolean auction_end = false;
+                Iterator<String> it = auction_players.keySet().iterator();
+                int offer, max_offer=-1;
+                String winner;
+                while(!auction_end &&){
+                    String name_of_player = it.next();
+                    int actual_money = players.get(name_of_player).getMoney();
+                    System.out.println(name_of_player+" tens "+actual_money+"€");
+                    System.out.println("Que ofereixes? (-1 per retirar-se):");
+                    offer = scan.nextInt();
+                    while (actual_money < offer && offer != -1){
+                        System.out.println("Erroni, no pots pagar més de "+actual_money+", prova de nou");
+                        offer = scan.nextInt();
+                    }
+                    if(offer == -1){
+                        auction_players.remove(name_of_player);
+                        System.out.println(name_of_player+" s'ha retirat de la subhasta");
+                    }
+                    else{
+                        if(max_offer < offer){
+                            max_offer = offer;
+                            winner = name_of_player;
+                        }
+                    }
+                    if(!it.)
+                }
+
             }
             else{
                 int card_nr;
