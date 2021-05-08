@@ -166,15 +166,19 @@ public class Player {
 
     @Override
     public String toString() {
-        System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);
-        System.out.println("DINERS ENS CAIXA: " + this.money);
-        System.out.println("PROPIETATS:");
-        for(Field actual : boxes_in_property) {
-            System.out.println("    " + actual.getName() + ". amb un valor de " + actual.getPrice() + "€");
+        /*System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);
+        System.out.println("DINERS ENS CAIXA: " + this.money);*/
+        System.out.println(this.name + ": " + this.money + "€");
+        if (boxes_in_property.size() > 0) {
+            System.out.println("PROPIETATS:");
+            for (Field actual : boxes_in_property) {
+                System.out.println("    " + actual.getName() + ". amb un valor de " + actual.getPrice() + "€");
+            }
         }
-        if (!bankruptcy) System.out.println("JUGADOR ACTIU");
-        else System.out.println("JUGADOR INACTIU ( EN FALLIDA )");
-        return "\n";
+        else System.out.println("NO TE PROPIETATS");
+        /*if (!bankruptcy) System.out.println("JUGADOR ACTIU");
+        else System.out.println("JUGADOR INACTIU ( EN FALLIDA )");*/
+        return "";
     }
 }
 

@@ -16,11 +16,16 @@ public class Box {
     }
     public String getType() { return this.type; }
 
-    @Override
-    public String toString() {
-        if (this.type == "FIELD") System.out.println(this.position + " | " + this.type + " | " + this.name);
-        else System.out.println(this.position + " | " + this.name);
-        return "\n";
+
+    public void print() {
+        if (this.position > 9) {
+            if (this.type == "FIELD") System.out.println(this.position + " | " + this.type + ":   " + this.name);
+            else System.out.println(this.position + " | " + this.name);
+        }
+        else {
+            if (this.type == "FIELD") System.out.println(this.position + "  | " + this.type + ":   " + this.name);
+            else System.out.println(this.position + "  | " + this.name);
+        }
     }
 
 

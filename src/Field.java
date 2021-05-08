@@ -159,17 +159,18 @@ public class Field extends Box{
 
     @Override
     public String toString() {
-        System.out.println("TÍTUL DE PROPIETAT: " + this.name );
-        System.out.println("PREU DE LA PROPIETAT: " + this.price);
-        System.out.println("LLOGUERS - Solar sense edificar" + this.basic_rent + "€");
+        System.out.println("\tTÍTUL DE PROPIETAT:                  " + this.name );
+        System.out.println("\tPREU DE LA PROPIETAT:                " + this.price);
+        System.out.println("\tLLOGUERS - Solar sense edificar      " + this.basic_rent + "€");
         int pos = 1;
         for (Integer actual : buildings_rent) {
-            System.out.println("Amb " + pos + "apartaments:    " + actual + "€");
+            System.out.println("\t           Amb " + pos + " apartaments:        " + actual + "€");
+            pos++;
         }
-        System.out.println("Amb un hotel:         " + this.hotel_rent + "€");
-        System.out.println("Preu de cada Apartament: " + this.building_price + "€");
-        System.out.println("Preu de cada Hotel: " + this.hotel_price + "€ a mes de " + this.max_buildings + "apartaments");
-        System.out.println("Grup de propietats: " + this.group);
+        System.out.println("\tAmb un hotel:                        " + this.hotel_rent + "€");
+        System.out.println("\tPreu de cada Apartament:             " + this.building_price + "€");
+        System.out.println("\tPreu de cada Hotel:                  " + this.hotel_price + "€ a mes de " + this.max_buildings + "apartaments");
+        System.out.println("\tGrup de propietats:                  " + this.group);
         return "\n";
     }
 }

@@ -48,6 +48,10 @@ public class Monopoly {
 
         while(!checkEndGame()) {
             actual_player = players.get(actual_player_iterator);
+            System.out.println(board.toString());
+            System.out.println("---------- TORN DEL JUGADOR: " + actual_player.getName() + " ----------");
+            String temp = actual_player.toString();
+            System.out.println("-----------------------------------------------------------------------\n");
             throwDice();
             movePlayer();
             Box actual = getActualBox();
@@ -96,7 +100,7 @@ public class Monopoly {
             position = actual_player.getPosition() + position - board.getSize()+1;
         }
         else position = actual_player.getPosition() + position;
-        System.out.println("Et mous de la posicio " + actual_player.getPosition() + "a la posicio " + position);
+        System.out.println("Et mous de la posicio " + actual_player.getPosition() + " a la posicio " + position);
 
         board.movePlayer(actual_player,position,start_rewards);
 
@@ -167,6 +171,9 @@ public class Monopoly {
         int second_dice = rand.nextInt(5) + 1;
         Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
         dice_result = aux;
+        System.out.println("Enter per tirar els daus");
+        Scanner scan = new Scanner(System.in);
+        String readString = scan.nextLine();
         System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
     }
 

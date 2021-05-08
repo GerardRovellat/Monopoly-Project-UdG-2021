@@ -193,6 +193,21 @@ public class Board {
         return board.size();
     }
 
+    @Override
+    public String toString() {
+        System.out.println("---------- TAULELL ----------");
+        for (int i = 1;i<=board.size();i++) {
+            board.get(i).print();
+        }
+
+        System.out.println("\n---------- JUGADORS ----------");
+        for(Map.Entry<String, Player> entry : players.entrySet()) {
+            System.out.println(entry.getValue().toString());
+        }
+
+        return "\n";
+    }
+
 
 
 }
