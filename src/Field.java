@@ -32,12 +32,14 @@ public class Field extends Box{
         this.basic_rent = basic_rent;
         this.group_rent = group_rent;
         this.buildable = buildable;
-        this.max_buildings = max_buildings + 1;
+        this.max_buildings = max_buildings;
         this.building_price = building_price;
         this.hotel = hotel;
         this.hotel_price = hotel_price;
         this.buildings_rent = buildings_rent;
         this.hotel_rent = hotel_rent;
+
+        if (hotel) this.max_buildings++;
     }
 
     /**
@@ -126,7 +128,8 @@ public class Field extends Box{
      * @post Returns TRUE if the property its buildable FALES otherwise
      */
     public boolean hotelBuildable() {
-        return builded == max_buildings;
+        if (hotel) return builded == max_buildings;
+        else return false;
     }
 
     /**
