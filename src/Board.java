@@ -3,7 +3,7 @@ import java.util.*;
 public class Board {
     private int boxes_nr;
     private SortedMap<Integer,Box> board = new TreeMap<>();
-    private HashMap<String,Player> players = new HashMap<>();
+    private LinkedHashMap<String,Player> players = new LinkedHashMap<>();
 
     public Board () {}
 
@@ -179,7 +179,7 @@ public class Board {
                 Iterator<String> it = auction_players.keySet().iterator();
                 int offer, max_offer=-1;
                 String winner;
-                while(!auction_end &&){
+                while(!auction_end){
                     String name_of_player = it.next();
                     int actual_money = players.get(name_of_player).getMoney();
                     System.out.println(name_of_player+" tens "+actual_money+"€");
@@ -199,7 +199,7 @@ public class Board {
                             winner = name_of_player;
                         }
                     }
-                    if(!it.)
+                    //if(!it.)
                 }
 
             }
@@ -231,7 +231,7 @@ public class Board {
         }
 
         System.out.println("\n---------- JUGADORS ----------");
-        for(Map.Entry<String, Player> entry : players.entrySet()) {
+        for(Map.Entry<String,Player> entry : players.entrySet()) {
             System.out.println(entry.getValue().toString());
         }
 

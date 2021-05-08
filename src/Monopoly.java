@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Stack;
-import java.util.Random;
+import java.util.*;
+
 import javafx.util.Pair;
 
 import javax.swing.text.StyledEditorKit;

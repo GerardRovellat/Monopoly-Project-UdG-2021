@@ -137,7 +137,9 @@ public class Movement {
                     active_player.pay(field.getRent());     // player pay rent
                     owner.charge(field.getRent());          // owner get rent
                     System.out.println("El lloguer s'ha pagat");
-                } else {/* JUGADOR ELIMINAT DE LA PARTIDA - BANCARROTA*/}
+                } else {
+                    board.isBankrupt(active_player,field.getRent());
+                }
             }
         } else {
             System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
