@@ -32,7 +32,7 @@ public class Field extends Box{
         this.basic_rent = basic_rent;
         this.group_rent = group_rent;
         this.buildable = buildable;
-        this.max_buildings = max_buildings;
+        this.max_buildings = max_buildings + 1;
         this.building_price = building_price;
         this.hotel = hotel;
         this.hotel_price = hotel_price;
@@ -75,9 +75,20 @@ public class Field extends Box{
      * @post Returns rent of the property
      */
     public int getRent() {
-        if (bought) {
+        /*if (bought) {
             if (!hotel) return buildings_rent.get(2);
             else return hotel_rent;
+        }
+        else return 0;*/
+
+        if (builded == 0) {
+            return this.basic_rent;
+        }
+        else if (builded < max_buildings) {
+            return this.buildings_rent.get(builded);
+        }
+        else if (builded == max_buildings) {
+            return this.hotel_rent;
         }
         else return 0;
     }
