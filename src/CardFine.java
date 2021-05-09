@@ -26,7 +26,7 @@ public class CardFine extends Card{
         messages.put(11,"HAS SUSPENDIDO LA ASIGNATURA DE PROYECTO DE PROGRAMACION. PAGA " + quantity + "PARA QUE EL PROFESOR TE APRUEVE");
     }
 
-    public void execute(Board board,Player actual_player) {
+    public void execute(Board board,Player actual_player, Movement aux) {
         Random rand = new Random();
         message = messages.get(rand.nextInt(messages.size()) - 1);
         System.out.println(message);
@@ -37,7 +37,7 @@ public class CardFine extends Card{
                 System.out.println("MULTA PAGADA");
             } else {
                 System.out.println("No tens diners suficients per fer front a la multa");
-                if (!board.isBankrupt(actual_player,quantity)) {
+                if (!board.isBankrupt(actual_player,quantity,aux)) {
                     end = true;// la funcio ja ha enviat el jugador a la bancarrota
                 }
                 else System.out.println("Has aconseguit els diners suficients");

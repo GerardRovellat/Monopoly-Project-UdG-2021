@@ -21,9 +21,10 @@ public class Sell implements optionalActions{
         }
         else {
             System.out.println("Llistat de terrenys en propietat:");
-            int field_nr = 1;
+            int field_nr = 0;
             for (Field field : actual_player.getFields()) {
                 System.out.println("\t" + field_nr + "- " + field.getName() + " (Valor del terreny " + field.getPrice() + "€)");
+                field_nr++;
             }
             Scanner scan = new Scanner(System.in);
             int confirm = 2;
@@ -31,10 +32,11 @@ public class Sell implements optionalActions{
             while (confirm == 2) {
                 System.out.println("Quin terreny vols vendre?");
                 field_nr = scan.nextInt();
-                field_to_sell = actual_player.getFields().get(field_nr - 1);
+                field_to_sell = actual_player.getFields().get(field_nr);
                 System.out.println(field_to_sell.toString());
                 System.out.println("Segur que vols vendre aquesta propietat? (1-Si 2-No 0-Cancel·lar)");
-                while (confirm != 1 || confirm != 2 || confirm != 0) {
+                confirm = scan.nextInt();
+                while (confirm != 1 && confirm != 2 && confirm != 0) {
                     System.out.println("Tria una opcio correcte");
                     confirm = scan.nextInt();
                 }

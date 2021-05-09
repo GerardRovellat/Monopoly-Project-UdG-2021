@@ -84,6 +84,7 @@ public class Buy implements optionalActions{
                 actual_player.pay(actual_offer);
                 buy_player.charge(actual_offer);
                 actual_player.addBox(buy_field);
+                buy_player.removeBox(buy_field);
                 System.out.println("La venda s'ha fet efectiva, per un preu de " + actual_offer + "€");
             }
         }

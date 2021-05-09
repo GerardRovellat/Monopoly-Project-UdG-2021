@@ -113,6 +113,7 @@ public class Movement {
         cards.remove(cards.size()-1);
         runCard(actual);
         cards.add(0,actual);
+        // eL JUGADOR HA DE PODER GUARDAR LA CARTA SI POSTPONABLE == TRUE
     }
 
     /**
@@ -141,7 +142,7 @@ public class Movement {
                 break;
             case "FINE":
                 CardFine fine = (CardFine) card;
-                fine.execute(board,active_player);
+                fine.execute(board,active_player,this);
                 break;
             case "GET":
                 CardGet get = (CardGet) card;
@@ -274,7 +275,7 @@ public class Movement {
             owner.charge(field.getRent());          // owner get rent
             System.out.println("El lloguer s'ha pagat");
         } else {
-            board.isBankrupt(active_player,field.getRent());
+            board.isBankrupt(active_player,field.getRent(),this);
         }
     }
 

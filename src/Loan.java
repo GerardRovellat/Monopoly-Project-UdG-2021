@@ -8,7 +8,7 @@ public class Loan implements optionalActions{
     @Override // Heretat d'Object
     public String toString() {
 
-        return "DONE";
+        return "PRÉSTEC: pot demanar una quantitat prestada a un altre jugador";
     }
 
     public boolean execute(ArrayList<Player> players,Player actual_player, Movement aux) {

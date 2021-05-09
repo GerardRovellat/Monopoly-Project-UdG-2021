@@ -9,7 +9,7 @@ public class LuckCard implements optionalActions{
     @Override // Heretat d'Object
     public String toString() {
 
-        return "DONE";
+        return "CARTA DE SORT: pot usar alguna carta de sort que hagi rebut amb anterioritat";
     }
 
     public boolean execute(ArrayList<Player> players,Player actual_player, Movement aux) {

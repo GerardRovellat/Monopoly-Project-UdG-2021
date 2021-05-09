@@ -114,7 +114,7 @@ public class Board {
         return found;
     }
 
-    public boolean isBankrupt(Player actual_player, int pay_amount){
+    public boolean isBankrupt(Player actual_player, int pay_amount, Movement aux){
         boolean is_it = false;
         if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ is_it =true; }
         else {
@@ -140,7 +140,7 @@ public class Board {
                             System.out.println("Cap terreny en propietat");
                         } else {
                             Sell sell = new Sell();
-                            sell_action_done = sell.execute(players, actual_player);
+                            sell_action_done = sell.execute(players, actual_player,aux);
                         }
                     }
                 }
