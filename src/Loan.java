@@ -13,9 +13,6 @@ public class Loan implements optionalActions{
     }
 
     public boolean execute(ArrayList<Player> players,Player actual_player) {
-        /*
-
-            }
-         */
+        return false;
     }
 }

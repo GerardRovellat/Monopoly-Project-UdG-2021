@@ -12,4 +12,9 @@ public class CardGo extends Card{
         System.out.println("Vas immediatament a la casella "+ position +" i si passes per la casella de sortida, cobra la recompensa");
         board.movePlayer(actual_player,this.position,rewards);
     }
+
+    public String toString(){
+        return "Vas immediatament a la casella "+ position +" i si passes per la casella de sortida, cobra la recompensa";
+    }
+
 }

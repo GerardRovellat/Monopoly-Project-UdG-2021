@@ -143,10 +143,12 @@ public class Board {
                             sell_action_done = sell.execute(players, actual_player);
                         }
                     }
-                } else if (option_nr == 2) {
+                }
+                else if (option_nr == 2) {
                     if (actual_player.getLuckCards().isEmpty()) {
                         System.out.println("Cap targeta sort en propietat");
-                    } else {
+                    }
+                    else {
                         int charge_cards_nr = 0;
                         int card_nr = 1;
                         for (Card card : actual_player.getLuckCards()) {
@@ -178,11 +180,12 @@ public class Board {
                             }
                         }
                     }
-                } else {
+                }
+                else {
                     System.out.println("El jugador " + actual_player.getName() + "s'ha declarat en fallida");
                 }
             }
-            if(pay_amount-actual_player.getMoney() > 0){ is_it = true; }
+            if(pay_amount > actual_player.getMoney()){ is_it = true; }
         }
         return is_it;
     }

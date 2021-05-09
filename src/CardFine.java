@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class CardFine extends Card{
     private int quantity;
+    private String message;
     private HashMap<Integer,String> messages = new HashMap<>();
 
     public CardFine (boolean postposable, int quantity) {
@@ -27,7 +28,8 @@ public class CardFine extends Card{
 
     public void execute(Board board,Player actual_player) {
         Random rand = new Random();
-        System.out.println(messages.get(rand.nextInt(messages.size()) - 1));
+        message = messages.get(rand.nextInt(messages.size()) - 1);
+        System.out.println(message);
         for(boolean end = false;!end;) {
             if (actual_player.getMoney() >= quantity) {
                 actual_player.pay(quantity);
@@ -41,5 +43,9 @@ public class CardFine extends Card{
                 else System.out.println("Has aconseguit els diners suficients");
             }
         }
+    }
+
+    public String toString(){
+        return message;
     }
 }

@@ -19,4 +19,8 @@ public class CardGet extends Card{
             option_nr++;
         }
     }
+
+    public String toString(){
+        return "El jugador rebra una propietats d'algun dels seus adversaris";
+    }
 }

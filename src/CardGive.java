@@ -52,4 +52,9 @@ public class CardGive extends Card{
         else System.out.println("No disposes de cap propietat");
 
     }
+
+    public String toString(){
+        return "Estàs obligat a donar inmediatament una de les teves propietats";
+    }
+
 }

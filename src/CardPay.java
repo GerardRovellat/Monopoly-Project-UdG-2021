@@ -31,4 +31,8 @@ public class CardPay extends Card{
         //FALTA TRACTAR QUAN NO POT FER EL PAGAMENT
     }
 
+    public String toString(){
+        return "Has de pagar "+quantity+" a un dels altres jugadors";
+    }
+
 }

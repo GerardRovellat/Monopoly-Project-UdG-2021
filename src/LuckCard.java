@@ -13,6 +13,23 @@ public class LuckCard implements optionalActions{
     }
 
     public boolean execute(ArrayList<Player> players,Player actual_player) {
+        Scanner scan = new Scanner(System.in);
+        if (actual_player.getLuckCards().isEmpty()) {
+            System.out.println("Cap targeta sort en propietat");
+        }
+        else {
+            int card_nr = 1;
+            for (Card card : actual_player.getLuckCards()) {
+                System.out.println(card_nr + "- " + card);
+                card_nr++;
+            }
+            System.out.println("Quina targeta vols utilitzar?");
+            while (card_nr < 1 || card_nr > actual_player.getLuckCards().size()) {
+                System.out.println("Introduieixi una opcio valida");
+                card_nr = scan.nextInt();
+            }
+            Movement aux = new Movement()
 
+        }
     }
 }

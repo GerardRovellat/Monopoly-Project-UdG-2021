@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class CardCharge extends Card{
     private int quantity;
+    private String message;
     private HashMap<Integer,String> messages = new HashMap<>();
 
     public CardCharge (boolean postposable, int quantity) {
@@ -25,10 +26,15 @@ public class CardCharge extends Card{
 
     public void execute(Board board, Player actual_player) {
         Random rand = new Random();
-        System.out.println(messages.get(rand.nextInt(messages.size()) - 1));
+        message = messages.get(rand.nextInt(messages.size()) - 1);
+        System.out.println(message);
         actual_player.charge(quantity);
         System.out.println("DINERS REBUTS");
     }
 
     public int getQuantity() { return this.quantity; }
+
+    public String toString(){
+        return message;
+    }
 }
