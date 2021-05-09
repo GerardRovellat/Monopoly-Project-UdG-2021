@@ -172,22 +172,20 @@ public class Movement {
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
         int value = -1;
-        while (value != 0) {
-            value = -1;
-            System.out.println("Accions Opcionals:");
-            int index = 1;
-            System.out.println("0 - RES");
-            for (optionalActions aux : possible_actions) {
-                System.out.println(index + " - " + aux.toString());
-                index++;
-            }
-            while (value < 0 || value > index) {
-                Scanner scan = new Scanner(System.in);
-                value = scan.nextInt();
-                if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
-            }
-            if (value != 0) possible_actions.get(value - 1).execute(players, active_player);
+        System.out.println("Accions Opcionals:");
+        int index = 1;
+        System.out.println("0 - RES");
+        for (optionalActions aux : possible_actions) {
+            System.out.println(index + " - " + aux.toString());
+            index++;
         }
+        while (value < 0 || value > index) {
+            Scanner scan = new Scanner(System.in);
+            value = scan.nextInt();
+            if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
+        }
+        if (value != 0) possible_actions.get(value - 1).execute(players, active_player);
+
     }
 
     /**

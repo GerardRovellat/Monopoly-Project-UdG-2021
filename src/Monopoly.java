@@ -79,7 +79,9 @@ public class Monopoly {
                     // ERROR
                     break;
             }
-            endTurn(aux);
+            System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
+            aux.optionalActions(optional_actions);
+            endTurn();
 
         }
         endGame();
@@ -144,8 +146,7 @@ public class Monopoly {
      * @pre true
      * @post Do the final possible actions in a turn and select the next player
      */
-    private void endTurn(Movement aux) {
-
+    private void endTurn() {
         System.out.println("TORN FINALITZAT");
         actual_player_iterator++;
         if (actual_player_iterator==players.size()) actual_player_iterator = 0;
@@ -153,8 +154,6 @@ public class Monopoly {
             actual_player_iterator++;
             if (actual_player_iterator==players.size()) actual_player_iterator = 0;
         }
-        System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
-        aux.optionalActions(optional_actions);
         System.out.println("\n\nSEGUENT JUGADOR\n\n");
 
     }

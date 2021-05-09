@@ -36,7 +36,7 @@ public class Buy implements optionalActions{
         if (value == -1) ;//Throw error
         Player buy_player = players.get(value);
         ArrayList<Field> fields = buy_player.getFields();
-        if (fields.size()==0) {
+        if (fields.size()!=0) {
             System.out.println("Selecioni la propietat de " + buy_player.getName() + " que desitja comprar:");
             cont = 0;
             for (Field aux : fields) {
@@ -54,16 +54,15 @@ public class Buy implements optionalActions{
             System.out.println("Indiqui la oferta inicial:");
             int actual_offer = 0; // -1 if not
             actual_offer = scan.nextInt();
-
             System.out.println("Oferta realitzada.");
             System.out.println("Comença la negociació");
             boolean buy_final = false;
             System.out.println(buy_player.getName() + "> COMPRAR " + buy_field.getName() + " " + actual_offer);
             Player offer_active_player = buy_player;
             while (!buy_final) {
-                String tmp = "";
-                System.out.println(offer_active_player.getName() + "indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
-                tmp = scan.nextLine();
+                String tmp ;
+                System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
+                tmp = scan.next();
                 if (tmp == "ok") {
                     buy_final = true;
                 } else if (tmp == "no") {
