@@ -118,39 +118,35 @@ public class Board {
         boolean is_it = false;
         if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ is_it =true; }
         else {
-            System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
-            int option_nr;
-            System.out.println("0- Declarar-se en fallida");
-            System.out.println("1- Vendre terrenys en la seva propietat");
-            System.out.println("2- Utilitzar una targeta sort en propietat");
-            int missing_money = pay_amount - actual_player.getMoney();
-            System.out.println("Necessites obtenir "+missing_money+", quina opcio tries?");
-            Scanner scan = new Scanner(System.in);
-            option_nr = scan.nextInt();
-            while(option_nr < 0 || option_nr > 2){
-                System.out.println("Opcio incorrecte, torna a provar");
+            boolean sell_action_done = false;
+            boolean card_action_done = false;
+            while (!sell_action_done || !card_action_done) {
+                System.out.println("Hauria de triar una de les seguents opcions per afrontar el pagament:");
+                int option_nr;
+                System.out.println("0- Declarar-se en fallida");
+                System.out.println("1- Vendre terrenys en la seva propietat");
+                System.out.println("2- Utilitzar una targeta sort en propietat");
+                int missing_money = pay_amount - actual_player.getMoney();
+                System.out.println("Necessites obtenir " + missing_money + ", quina opcio tries?");
+                Scanner scan = new Scanner(System.in);
                 option_nr = scan.nextInt();
-            }
-            if(option_nr == 1){
-                boolean sell_action_done = false;
-                while(!sell_action_done){
-                    if (actual_player.getFields().isEmpty()) {
-                        System.out.println("Cap terreny en propietat");
-                    } else {
-                        Sell sell = new Sell();
-                        sell_action_done = sell.execute(players,actual_player);
-                        //Podem cancel·lar desde dins, amb els dos booleans locals i un pels dos ifs
-                    }
+                while (option_nr < 0 || option_nr > 2) {
+                    System.out.println("Opcio incorrecte, torna a provar");
+                    option_nr = scan.nextInt();
                 }
-            }
-            else if(option_nr == 2){
-                boolean card_action_done = false;
-                while(!card_action_done){
-                    if (actual_player.getLuckCards().isEmpty()){
-                        System.out.println("Cap targeta sort en propietat");
-                        card_action_done = true;
+                if (option_nr == 1) {
+                    while (!sell_action_done) {
+                        if (actual_player.getFields().isEmpty()) {
+                            System.out.println("Cap terreny en propietat");
+                        } else {
+                            Sell sell = new Sell();
+                            sell_action_done = sell.execute(players, actual_player);
+                        }
                     }
-                    else {
+                } else if (option_nr == 2) {
+                    if (actual_player.getLuckCards().isEmpty()) {
+                        System.out.println("Cap targeta sort en propietat");
+                    } else {
                         int charge_cards_nr = 0;
                         int card_nr = 1;
                         for (Card card : actual_player.getLuckCards()) {
@@ -170,25 +166,23 @@ public class Board {
                         }
                         if (card_nr == 0) {
                             card_action_done = true;
-                        }
-                        else if (card_nr > 0) {
+                        } else if (card_nr > 0) {
                             CardCharge chosed_card = (CardCharge) actual_player.getLuckCards().get(card_nr - 1);
                             if (chosed_card.getQuantity() < missing_money) {
                                 System.out.println("La targeta sel·leccionada no li reporta el suficient benefici de " + missing_money + "€");
+                                card_action_done = true;
                             } else {
                                 chosed_card.execute(this, actual_player);
                                 actual_player.getLuckCards().remove(chosed_card);
                                 card_action_done = true;
                             }
                         }
-                        else { card_action_done = true; }
                     }
+                } else {
+                    System.out.println("El jugador " + actual_player.getName() + "s'ha declarat en fallida");
                 }
             }
-            else{
-                System.out.println("El jugador " + actual_player.getName() + "s'ha declarat en fallida");
-                is_it = true;
-            }
+            if(pay_amount-actual_player.getMoney() > 0){ is_it = true; }
         }
         return is_it;
     }

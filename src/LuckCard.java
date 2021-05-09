@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class LuckCard implements optionalActions{
 
@@ -12,11 +13,6 @@ public class LuckCard implements optionalActions{
     }
 
     public boolean execute(ArrayList<Player> players,Player actual_player) {
-        /*
-            mostra al jugador les cartes que te;
-		    el jugador tria les que vol fer servir;
-		    executarTargeta(Targeta);
-		    jugador.eliminarCartaSort();
-        */
+
     }
 }
