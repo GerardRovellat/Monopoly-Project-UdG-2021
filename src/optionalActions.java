@@ -3,5 +3,5 @@ import java.util.ArrayList;
 public interface optionalActions {
 // General actions interface
     public String toString();
-    public boolean execute(ArrayList<Player> players,Player actual_player);
+    public boolean execute(ArrayList<Player> players,Player actual_player,Movement aux);
 }

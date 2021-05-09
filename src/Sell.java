@@ -13,7 +13,7 @@ public class Sell implements optionalActions{
         return "Vendre: posar a la venda una de les teves propietats, incloent-hi els edificis que hi pugui haver-hi.";
     }
 
-    public boolean execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player,Movement m) {
         boolean is_possible = true;
         if(actual_player.getFields().isEmpty()){
             System.out.println("Cap terreny en propietat");

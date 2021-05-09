@@ -12,7 +12,7 @@ public class LuckCard implements optionalActions{
         return "DONE";
     }
 
-    public boolean execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player, Movement aux) {
         Scanner scan = new Scanner(System.in);
         if (actual_player.getLuckCards().isEmpty()) {
             System.out.println("Cap targeta sort en propietat");
@@ -28,8 +28,8 @@ public class LuckCard implements optionalActions{
                 System.out.println("Introduieixi una opcio valida");
                 card_nr = scan.nextInt();
             }
-            Movement aux = new Movement()
-
+            aux.runCard(actual_player.getLuckCards().get(card_nr-1));
         }
+        return true;
     }
 }

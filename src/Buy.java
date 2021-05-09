@@ -13,7 +13,7 @@ public class Buy implements optionalActions{
         return "Comprar: Fer una oferta de compra a un altre jugador";
     }
 
-    public boolean execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player,Movement m) {
         boolean is_possible = true;
         Scanner scan = new Scanner(System.in);
         System.out.println("PROPIETATS DELS JUGADORS");

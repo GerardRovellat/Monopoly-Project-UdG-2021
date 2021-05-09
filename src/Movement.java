@@ -184,7 +184,7 @@ public class Movement {
             value = scan.nextInt();
             if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
         }
-        if (value != 0) possible_actions.get(value - 1).execute(players, active_player);
+        if (value != 0) possible_actions.get(value - 1).execute(players, active_player, this);
 
     }
 
