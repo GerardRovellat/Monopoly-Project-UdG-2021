@@ -11,7 +11,7 @@ public class LuckCard implements optionalActions{
         return "DONE";
     }
 
-    public void execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player) {
         /*
             mostra al jugador les cartes que te;
 		    el jugador tria les que vol fer servir;
