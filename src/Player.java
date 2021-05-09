@@ -1,3 +1,4 @@
+import javafx.util.Pair;
 import java.util.*;
 
 public class Player {
@@ -7,6 +8,7 @@ public class Player {
     private int position;
     private ArrayList<Card> luckCards = new ArrayList<>();
     private boolean bankruptcy = false;
+    private ArrayList<PlayerLoan> loans = new ArrayList<>();
 
 
     /**
@@ -162,6 +164,30 @@ public class Player {
      */
     public Boolean getBankruptcy() {
         return this.bankruptcy;
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    public void addLoan(Player loner, int value, int interest, int torns) {
+        loans.add(new PlayerLoan(loner,this,value,interest,torns));
+    }
+
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$
+     */
+    private void payLoans() {
+        for (PlayerLoan aux : loans) {
+            aux.nextTurn();
+            if (aux.payLoan()) {
+                loans.remove(aux);
+            }
+        }
     }
 
     public void setBankruptcy(boolean status){ this.bankruptcy = status; }
