@@ -57,15 +57,14 @@ public class Buy implements optionalActions{
             System.out.println("Oferta realitzada.");
             System.out.println("Comença la negociació");
             boolean buy_final = false;
-            System.out.println(buy_player.getName() + "> COMPRAR " + buy_field.getName() + " " + actual_offer);
+            System.out.println(actual_player.getName() + "> COMPRAR " + buy_field.getName() + " " + actual_offer);
             Player offer_active_player = buy_player;
             while (!buy_final) {
-                String tmp ;
                 System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
-                tmp = scan.next();
-                if (tmp == "ok") {
+                String tmp = scan.next();
+                if (tmp.equals("ok")) {
                     buy_final = true;
-                } else if (tmp == "no") {
+                } else if (tmp.equals("no")) {
                     buy_final = true;
                     actual_offer = -1;
                 } else if (Integer.parseInt(tmp) < 0) {
