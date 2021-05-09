@@ -165,27 +165,29 @@ public class Movement {
         }
     }
 
-    /*------------OPCIONALS ACTIONS---------------*/
-
     /**
      * @brief Manage all posible optional Actions
      * @pre true
      * @post SOMETHING
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
-        System.out.println("Accions Opcionals:");
-        int index = 0;
-        for (optionalActions aux : possible_actions) {
-            System.out.println(index + " - " + aux.toString());
-            index++;
-        }
         int value = -1;
-        while (value < 0 || value > index) {
-            Scanner scan = new Scanner(System.in);
-            value = scan.nextInt();
-            if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
+        while (value != 0) {
+            value = -1;
+            System.out.println("Accions Opcionals:");
+            int index = 1;
+            System.out.println("0 - RES");
+            for (optionalActions aux : possible_actions) {
+                System.out.println(index + " - " + aux.toString());
+                index++;
+            }
+            while (value < 0 || value > index) {
+                Scanner scan = new Scanner(System.in);
+                value = scan.nextInt();
+                if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
+            }
+            if (value != 0) possible_actions.get(value - 1).execute(players, active_player);
         }
-        possible_actions.get(value).execute();
     }
 
     /**
@@ -357,6 +359,7 @@ public class Movement {
             }
         }else System.out.println("Ja estàn tots els apartaments permesos construits");
     }
+
 
     private void buildHotel(Scanner scan, Field field) {
         if (field.hotelBuildable()) {

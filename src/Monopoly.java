@@ -45,7 +45,7 @@ public class Monopoly {
 
         while(!checkEndGame()) {
             actual_player = players.get(actual_player_iterator);
-            System.out.println(board.toString());
+            //System.out.println(board.toString());
             System.out.println("---------- TORN DEL JUGADOR: " + actual_player.getName() + " ----------");
             String temp = actual_player.toString();
             System.out.println("-----------------------------------------------------------------------\n");
@@ -54,6 +54,7 @@ public class Monopoly {
             Box actual = getActualBox();
             Movement aux = new Movement(actual,actual_player,players,board,start_rewards,cards);
             String actual_box_type = actual.getType();
+            System.out.println(board.toString());
 
             switch (actual_box_type) {
                 case "START":
@@ -78,7 +79,7 @@ public class Monopoly {
                     // ERROR
                     break;
             }
-            endTurn();
+            endTurn(aux);
 
         }
         endGame();
@@ -143,7 +144,7 @@ public class Monopoly {
      * @pre true
      * @post Do the final possible actions in a turn and select the next player
      */
-    private void endTurn() {
+    private void endTurn(Movement aux) {
 
         System.out.println("TORN FINALITZAT");
         actual_player_iterator++;
@@ -152,7 +153,8 @@ public class Monopoly {
             actual_player_iterator++;
             if (actual_player_iterator==players.size()) actual_player_iterator = 0;
         }
-        // CRIDAR A OPTIONAL ACTIONS
+        System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
+        aux.optionalActions(optional_actions);
         System.out.println("\n\nSEGUENT JUGADOR\n\n");
 
     }
@@ -246,6 +248,5 @@ public class Monopoly {
                 System.out.println(aux.toString());
             }
         }
-
     }
 }

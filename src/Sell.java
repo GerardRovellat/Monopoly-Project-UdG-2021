@@ -14,7 +14,7 @@ public class Sell implements optionalActions{
         return "Vendre: posar a la venda una de les teves propietats, incloent-hi els edificis que hi pugui haver-hi.";
     }
 
-    public void execute() {
+    public void execute(ArrayList<Player> players,Player actual_player) {
         /*
         	Pregunta quin terreny;
             Pregunta el preu de sortida;

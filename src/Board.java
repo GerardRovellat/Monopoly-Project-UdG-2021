@@ -249,7 +249,7 @@ public class Board {
     public String toString() {
         System.out.println("---------- TAULELL ----------");
         for (int i = 1;i<=board.size();i++) {
-            board.get(i).print();
+            board.get(i).print(players);
         }
 
         System.out.println("\n---------- JUGADORS ----------");
