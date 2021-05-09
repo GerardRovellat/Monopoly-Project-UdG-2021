@@ -181,7 +181,7 @@ public class Player {
      * @pre true
      * @post $$$$$$
      */
-    private void payLoans() {
+    public void payLoans() {
         for (PlayerLoan aux : loans) {
             aux.nextTurn();
             if (aux.payLoan()) {

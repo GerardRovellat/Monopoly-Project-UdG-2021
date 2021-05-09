@@ -147,6 +147,7 @@ public class Monopoly {
      * @post Do the final possible actions in a turn and select the next player
      */
     private void endTurn() {
+        actual_player.payLoans();
         System.out.println("TORN FINALITZAT");
         actual_player_iterator++;
         if (actual_player_iterator==players.size()) actual_player_iterator = 0;
