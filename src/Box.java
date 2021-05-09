@@ -21,7 +21,7 @@ public class Box {
     public String getType() { return this.type; }
 
 
-    public void print(LinkedHashMap<String, Player> players) {
+    public void print(ArrayList<Player> players) {
         if (this.position > 9) {
             if (this.type == "FIELD") System.out.println(this.position + " | "/* + this.type + ":   "*/ + this.name + playerInPosition(players,this.position));
             else System.out.println(this.position + " | " + this.name + playerInPosition(players,this.position));
@@ -32,11 +32,11 @@ public class Box {
         }
     }
 
-    private String playerInPosition(LinkedHashMap<String, Player> players,int position) {
+    private String playerInPosition(ArrayList<Player> players,int position) {
         String playersInPosition = "";
-        for(Map.Entry<String,Player> aux : players.entrySet()) {
-            if (aux.getValue().getPosition()==position) {
-                playersInPosition = playersInPosition + " | " + aux.getValue().getName() ;
+        for(Player aux : players) {
+            if (aux.getPosition()==position) {
+                playersInPosition = playersInPosition + " | " + aux.getName() ;
             }
         }
        return playersInPosition;

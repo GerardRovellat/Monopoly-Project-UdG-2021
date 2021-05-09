@@ -13,7 +13,8 @@ public class Buy implements optionalActions{
         return "Comprar: Fer una oferta de compra a un altre jugador";
     }
 
-    public void execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player) {
+        boolean is_possible = true;
         Scanner scan = new Scanner(System.in);
         System.out.println("PROPIETATS DELS JUGADORS");
         for (Player aux : players) {
@@ -75,8 +76,10 @@ public class Buy implements optionalActions{
                 if (offer_active_player == buy_player) offer_active_player = actual_player;
                 else offer_active_player = buy_player;
             }
-            if (actual_offer == -1)
+            if (actual_offer == -1) {
                 System.out.println("Les negociacions no han concuit i per tant la compra no es farà efectiva");
+                is_possible = false;
+            }
             else {
                 actual_player.pay(actual_offer);
                 buy_player.charge(actual_offer);
@@ -84,6 +87,10 @@ public class Buy implements optionalActions{
                 System.out.println("La venda s'ha fet efectiva, per un preu de " + actual_offer + "€");
             }
         }
-        else System.out.println("Aquest jugador no te cap propietat en posesió per poder comprar");
+        else{
+            System.out.println("Aquest jugador no te cap propietat en posesió per poder comprar");
+            is_possible = false;
+        }
+        return is_possible;
     }
 }

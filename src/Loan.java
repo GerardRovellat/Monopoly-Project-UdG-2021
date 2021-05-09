@@ -12,7 +12,7 @@ public class Loan implements optionalActions{
         return "DONE";
     }
 
-    public void execute(ArrayList<Player> players,Player actual_player) {
+    public boolean execute(ArrayList<Player> players,Player actual_player) {
         /*
 
             }
