@@ -177,8 +177,8 @@ public class Field extends Box{
         System.out.println("\tPREU DE LA PROPIETAT:                " + this.price);
         System.out.println("\tLLOGUERS - Solar sense edificar      " + this.basic_rent + "€");
         int pos = 1;
-        for (Integer actual : buildings_rent) {
-            System.out.println("\t           Amb " + pos + " apartaments:        " + actual + "€");
+        for (Integer current : buildings_rent) {
+            System.out.println("\t           Amb " + pos + " apartaments:        " + current + "€");
             pos++;
         }
         System.out.println("\tAmb un hotel:                        " + this.hotel_rent + "€");

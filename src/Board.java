@@ -114,9 +114,9 @@ public class Board {
         return found;
     }
 
-    public boolean isBankrupt(Player actual_player, int pay_amount, Movement aux){
+    public boolean isBankrupt(Player current_player, int pay_amount, Movement aux){
         boolean is_it = false;
-        if(actual_player.getLuckCards().isEmpty() && actual_player.getFields().isEmpty()){ is_it =true; }
+        if(current_player.getLuckCards().isEmpty() && current_player.getFields().isEmpty()){ is_it =true; }
         else {
             boolean sell_action_done = false;
             boolean card_action_done = false;
@@ -126,7 +126,7 @@ public class Board {
                 System.out.println("0- Declarar-se en fallida");
                 System.out.println("1- Vendre terrenys en la seva propietat");
                 System.out.println("2- Utilitzar una targeta sort en propietat");
-                int missing_money = pay_amount - actual_player.getMoney();
+                int missing_money = pay_amount - current_player.getMoney();
                 System.out.println("Necessites obtenir " + missing_money + ", quina opcio tries?");
                 Scanner scan = new Scanner(System.in);
                 option_nr = scan.nextInt();
@@ -136,22 +136,22 @@ public class Board {
                 }
                 if (option_nr == 1) {
                     while (!sell_action_done) {
-                        if (actual_player.getFields().isEmpty()) {
+                        if (current_player.getFields().isEmpty()) {
                             System.out.println("Cap terreny en propietat");
                         } else {
                             Sell sell = new Sell();
-                            sell_action_done = sell.execute(players, actual_player,aux);
+                            sell_action_done = sell.execute(players, current_player,aux);
                         }
                     }
                 }
                 else if (option_nr == 2) {
-                    if (actual_player.getLuckCards().isEmpty()) {
+                    if (current_player.getLuckCards().isEmpty()) {
                         System.out.println("Cap targeta sort en propietat");
                     }
                     else {
                         int charge_cards_nr = 0;
                         int card_nr = 1;
-                        for (Card card : actual_player.getLuckCards()) {
+                        for (Card card : current_player.getLuckCards()) {
                             if (card.getType().equals("CHARGE")) {
                                 CardCharge c = (CardCharge) card;
                                 System.out.println("\t" + card_nr + "- Obtindras " + c.getQuantity() + "€");
@@ -169,23 +169,23 @@ public class Board {
                         if (card_nr == 0) {
                             card_action_done = true;
                         } else if (card_nr > 0) {
-                            CardCharge chosed_card = (CardCharge) actual_player.getLuckCards().get(card_nr - 1);
+                            CardCharge chosed_card = (CardCharge) current_player.getLuckCards().get(card_nr - 1);
                             if (chosed_card.getQuantity() < missing_money) {
                                 System.out.println("La targeta sel·leccionada no li reporta el suficient benefici de " + missing_money + "€");
                                 card_action_done = true;
                             } else {
-                                chosed_card.execute(this, actual_player);
-                                actual_player.getLuckCards().remove(chosed_card);
+                                chosed_card.execute(this, current_player);
+                                current_player.getLuckCards().remove(chosed_card);
                                 card_action_done = true;
                             }
                         }
                     }
                 }
                 else {
-                    System.out.println("El jugador " + actual_player.getName() + "s'ha declarat en fallida");
+                    System.out.println("El jugador " + current_player.getName() + "s'ha declarat en fallida");
                 }
             }
-            if(pay_amount > actual_player.getMoney()){ is_it = true; }
+            if(pay_amount > current_player.getMoney()){ is_it = true; }
         }
         return is_it;
     }

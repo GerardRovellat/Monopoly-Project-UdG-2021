@@ -13,7 +13,7 @@ public class Buy implements optionalActions{
         return "Comprar: Fer una oferta de compra a un altre jugador";
     }
 
-    public boolean execute(ArrayList<Player> players,Player actual_player,Movement m) {
+    public boolean execute(ArrayList<Player> players,Player current_player,Movement m) {
         boolean is_possible = true;
         Scanner scan = new Scanner(System.in);
         System.out.println("PROPIETATS DELS JUGADORS");
@@ -23,7 +23,7 @@ public class Buy implements optionalActions{
         System.out.println("A QUIN JUGADOR L'HI VOL FER LA OFERTA?:");
         int cont = 0;
         for (Player aux : players) {
-            if (aux.getName() != actual_player.getName()) {
+            if (aux.getName() != current_player.getName()) {
                 System.out.println(cont + ". " + aux.getName());
             }
             cont++;
@@ -53,12 +53,12 @@ public class Buy implements optionalActions{
             }
             Field buy_field = fields.get(value);
             System.out.println("Indiqui la oferta inicial:");
-            int actual_offer = 0; // -1 if not
-            actual_offer = scan.nextInt();
+            int current_offer = 0; // -1 if not
+            current_offer = scan.nextInt();
             System.out.println("Oferta realitzada.");
             System.out.println("Comença la negociació");
             boolean buy_final = false;
-            System.out.println(actual_player.getName() + "> COMPRAR " + buy_field.getName() + " " + actual_offer);
+            System.out.println(current_player.getName() + "> COMPRAR " + buy_field.getName() + " " + current_offer);
             Player offer_active_player = buy_player;
             while (!buy_final) {
                 System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
@@ -67,25 +67,25 @@ public class Buy implements optionalActions{
                     buy_final = true;
                 } else if (tmp.equals("no")) {
                     buy_final = true;
-                    actual_offer = -1;
+                    current_offer = -1;
                 } else if (Integer.parseInt(tmp) < 0) {
                     System.out.println("Valor incorrecte, la oferta ha de superior a 0");
                 } else {
-                    actual_offer = Integer.parseInt(tmp);
+                    current_offer = Integer.parseInt(tmp);
                 }
-                if (offer_active_player == buy_player) offer_active_player = actual_player;
+                if (offer_active_player == buy_player) offer_active_player = current_player;
                 else offer_active_player = buy_player;
             }
-            if (actual_offer == -1) {
+            if (current_offer == -1) {
                 System.out.println("Les negociacions no han concuit i per tant la compra no es farà efectiva");
                 is_possible = false;
             }
             else {
-                actual_player.pay(actual_offer);
-                buy_player.charge(actual_offer);
-                actual_player.addBox(buy_field);
+                current_player.pay(current_offer);
+                buy_player.charge(current_offer);
+                current_player.addBox(buy_field);
                 buy_player.removeBox(buy_field);
-                System.out.println("La venda s'ha fet efectiva, per un preu de " + actual_offer + "€");
+                System.out.println("La venda s'ha fet efectiva, per un preu de " + current_offer + "€");
             }
         }
         else{

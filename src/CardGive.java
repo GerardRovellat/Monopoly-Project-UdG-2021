@@ -7,14 +7,14 @@ public class CardGive extends Card{
         super("GIVE",postposable);
     }
 
-    public void execute(ArrayList<Player> players,Board board, Player actual_player) {
+    public void execute(ArrayList<Player> players,Board board, Player current_player) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Estàs obligat a donar inmediatament una de les teves propietats");
-        if (actual_player.getFields().size() > 0) {
+        if (current_player.getFields().size() > 0) {
             System.out.println("Seleccioni el jugador");
             int x = 0;
             for (Player aux : players) {
-                if (actual_player != aux) {
+                if (current_player != aux) {
                     System.out.println(x + ". " + aux.getName());
                 }
                 x++;
@@ -30,7 +30,7 @@ public class CardGive extends Card{
             // SI NO HI HAN PROPIETATS, NO CAL ENTRAR
             System.out.println("Seleccioni la propietat");
             x = 0;
-            for (Box properties : actual_player.getFields()) {
+            for (Box properties : current_player.getFields()) {
                 Field temp = (Field) properties;
                 System.out.println(x + ". " + temp.getName()); //
                 x++;
@@ -40,12 +40,12 @@ public class CardGive extends Card{
             while (value < 0 || value > x) {
                 value = scan.nextInt();
                 if (value >= 0 && value <= x) {
-                    chose_box = (Field) actual_player.getFields().get(value);
+                    chose_box = (Field) current_player.getFields().get(value);
                 } else System.out.println("Valor entrat erroni, torni a provar");
             }
 
             System.out.println("Es traspassarà la propietat " + chose_box.getName() + " a el jugador " + chose_player.getName() + ".");
-            actual_player.removeBox(chose_box);
+            current_player.removeBox(chose_box);
             chose_player.addBox(chose_box);
             System.out.println("Propietat traspassada");
         }

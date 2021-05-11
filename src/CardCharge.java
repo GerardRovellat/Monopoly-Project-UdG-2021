@@ -24,11 +24,11 @@ public class CardCharge extends Card{
         messages.put(11,"HAS GANADO TU APUESTA EN LA ELIMINACIÓN DEL MADRID EN CHAMPIONS COBRA " + quantity + " €");
     }
 
-    public void execute(Board board, Player actual_player) {
+    public void execute(Board board, Player current_player) {
         Random rand = new Random();
         message = messages.get(rand.nextInt(messages.size()) - 1);
         System.out.println(message);
-        actual_player.charge(quantity);
+        current_player.charge(quantity);
         System.out.println("DINERS REBUTS");
     }
 

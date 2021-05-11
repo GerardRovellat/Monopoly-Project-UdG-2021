@@ -199,8 +199,8 @@ public class Player {
         System.out.println(this.name + ": " + this.money + "€");
         if (boxes_in_property.size() > 0) {
             System.out.println("PROPIETATS:");
-            for (Field actual : boxes_in_property) {
-                System.out.println("    " + actual.getName() + ". amb un valor de " + actual.getPrice() + "€");
+            for (Field current : boxes_in_property) {
+                System.out.println("    " + current.getName() + ". amb un valor de " + current.getPrice() + "€");
             }
         }
         else System.out.println("NO TE PROPIETATS");

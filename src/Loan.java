@@ -11,7 +11,7 @@ public class Loan implements optionalActions{
         return "PRÉSTEC: pot demanar una quantitat prestada a un altre jugador";
     }
 
-    public boolean execute(ArrayList<Player> players,Player actual_player, Movement aux) {
+    public boolean execute(ArrayList<Player> players,Player current_player, Movement aux) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Selecioni el jugador a qui l'hi vol demanar el prestec:");
         int cont = 0;
@@ -25,15 +25,15 @@ public class Loan implements optionalActions{
             if (value < 0 || value > cont) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
         Player loan_player = players.get(value);
-        int actual_offer = -1;
-        while (actual_offer < 0) {
+        int current_offer = -1;
+        while (current_offer < 0) {
             System.out.println("Valor de la oferta:");
-            actual_offer = scan.nextInt();
-            if (actual_offer < 0) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0");
+            current_offer = scan.nextInt();
+            if (current_offer < 0) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0");
         }
 
         System.out.println("Info del prestes:");
-        System.out.println(actual_player.getName() + "> PRESTEC " + loan_player.getName() + " " + value);
+        System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + value);
         Player offer_active_player = loan_player;
         String interests_string = "";
         int interests = -1;
@@ -55,12 +55,12 @@ public class Loan implements optionalActions{
                 interests = Integer.parseInt(interests_string);
                 turns = scan.nextInt();
             }
-            if (offer_active_player == actual_player) offer_active_player = loan_player;
-            else offer_active_player = actual_player;
+            if (offer_active_player == current_player) offer_active_player = loan_player;
+            else offer_active_player = current_player;
         }
 
         if (turns > 0) {
-            actual_player.addLoan(loan_player,value,interests,turns);
+            current_player.addLoan(loan_player,value,interests,turns);
             System.out.println("El prestec s'ha dut a terme");
         }
         else {

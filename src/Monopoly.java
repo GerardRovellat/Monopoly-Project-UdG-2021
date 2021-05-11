@@ -2,8 +2,6 @@ import java.util.*;
 
 import javafx.util.Pair;
 
-import javax.swing.text.StyledEditorKit;
-
 
 public class Monopoly {
     private ArrayList<Player> players = new ArrayList<>();
@@ -14,8 +12,8 @@ public class Monopoly {
 
     private Pair<Integer,Integer> dice_result;
 
-    private int actual_player_iterator = 0;
-    private Player actual_player;
+    private int current_player_iterator = 0;
+    private Player current_player;
 
     private ArrayList<optionalActions> optional_actions;
     private ArrayList<Card> cards;
@@ -44,19 +42,19 @@ public class Monopoly {
         startGame();
 
         while(!checkEndGame()) {
-            actual_player = players.get(actual_player_iterator);
+            current_player = players.get(current_player_iterator);
             //System.out.println(board.toString());
-            System.out.println("---------- TORN DEL JUGADOR: " + actual_player.getName() + " ----------");
-            String temp = actual_player.toString();
+            System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
+            String temp = current_player.toString();
             System.out.println("-----------------------------------------------------------------------\n");
             throwDice();
             movePlayer();
-            Box actual = getActualBox();
-            Movement aux = new Movement(actual,actual_player,players,board,start_rewards,cards);
-            String actual_box_type = actual.getType();
+            Box current = getCurrentBox();
+            Movement aux = new Movement(current, current_player,players,board,start_rewards,cards);
+            String current_box_type = current.getType();
             System.out.println(board.toString());
 
-            switch (actual_box_type) {
+            switch (current_box_type) {
                 case "START":
                     aux.startAction();
                     break;
@@ -96,23 +94,23 @@ public class Monopoly {
 
     private void movePlayer(){
         int position = dice_result.getKey()+dice_result.getValue();
-        if (actual_player.getPosition()+position > board.getSize()-1) {
-            position = actual_player.getPosition() + position - board.getSize()+1;
+        if (current_player.getPosition()+position > board.getSize()-1) {
+            position = current_player.getPosition() + position - board.getSize()+1;
         }
-        else position = actual_player.getPosition() + position;
-        System.out.println("Et mous de la posicio " + actual_player.getPosition() + " a la posicio " + position);
+        else position = current_player.getPosition() + position;
+        System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position);
 
-        board.movePlayer(actual_player,position,start_rewards);
+        board.movePlayer(current_player,position,start_rewards);
 
     }
 
     /**
      * @brief $$$$
      * @pre true
-     * @post Returns the actual Box
+     * @post Returns the current Box
      */
-    private Box getActualBox() {
-        return board.getBox(this.actual_player);
+    private Box getCurrentBox() {
+        return board.getBox(this.current_player);
     }
 
     /**
@@ -147,13 +145,13 @@ public class Monopoly {
      * @post Do the final possible actions in a turn and select the next player
      */
     private void endTurn() {
-        actual_player.payLoans();
+        current_player.payLoans();
         System.out.println("TORN FINALITZAT");
-        actual_player_iterator++;
-        if (actual_player_iterator==players.size()) actual_player_iterator = 0;
-        while (players.get(actual_player_iterator).getBankruptcy()) {
-            actual_player_iterator++;
-            if (actual_player_iterator==players.size()) actual_player_iterator = 0;
+        current_player_iterator++;
+        if (current_player_iterator ==players.size()) current_player_iterator = 0;
+        while (players.get(current_player_iterator).getBankruptcy()) {
+            current_player_iterator++;
+            if (current_player_iterator ==players.size()) current_player_iterator = 0;
         }
         System.out.println("\n\nSEGUENT JUGADOR\n\n");
 

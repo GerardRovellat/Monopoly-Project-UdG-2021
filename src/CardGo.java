@@ -8,9 +8,9 @@ public class CardGo extends Card{
         this.position = position;
     }
 
-    public void execute(ArrayList<Player> players,Board board, Player actual_player, ArrayList<String> rewards) {
+    public void execute(ArrayList<Player> players,Board board, Player current_player, ArrayList<String> rewards) {
         System.out.println("Vas immediatament a la casella "+ position +" i si passes per la casella de sortida, cobra la recompensa");
-        board.movePlayer(actual_player,this.position,rewards);
+        board.movePlayer(current_player,this.position,rewards);
     }
 
     public String toString(){

@@ -1,10 +1,8 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 import java.util.*;
 
 public class Movement {
 
-    private Box actual_box;
+    private Box current_box;
     private Player active_player;
     private HashMap<Integer,String> user_actions = new HashMap<>();
     ArrayList<Player> players;
@@ -17,13 +15,13 @@ public class Movement {
 
     /**
      * @brief Movement class Constructor
-     * @pre \p actual_posicion and \p active_player valid
+     * @pre \p current_posicion and \p active_player valid
      * @post Create a movement with box and player
-     * @param box "Casella" position of actual_player on the board
+     * @param box "Casella" position of active_player on the board
      * @param player Information of the player playing at this torn
      */
     public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards){
-        this.actual_box = box;
+        this.current_box = box;
         this.active_player = player;
         this.players = players;
         this.board = board;
@@ -49,7 +47,7 @@ public class Movement {
      */
     public void fieldAction() {
         Scanner scan = new Scanner(System.in);
-        Field field = (Field) actual_box;
+        Field field = (Field) current_box;
         if (field.isBought()) {
             if (field.getOwner() == active_player) build();
             else payRent();
@@ -89,7 +87,7 @@ public class Movement {
         int first_dice = rand.nextInt(5) + 1;
         int second_dice = rand.nextInt(5) + 1;
         System.out.println("El resultat dels daus ha sigut " + first_dice + " i de " + second_dice);
-        Bet aux = (Bet) actual_box;
+        Bet aux = (Bet) current_box;
         int result = aux.betResult(quantity,bet,first_dice+second_dice);
         if (result > 0) {
             System.out.println("Ha superat la aposta amb un resultat de +" + result + "€");
@@ -109,10 +107,10 @@ public class Movement {
      */
     public void luckAction(){
         System.out.println("Has caigut en una casella de sort");
-        Card actual = cards.get(cards.size()-1);
+        Card current = cards.get(cards.size()-1);
         cards.remove(cards.size()-1);
-        runCard(actual);
-        cards.add(0,actual);
+        runCard(current);
+        cards.add(0,current);
         // eL JUGADOR HA DE PODER GUARDAR LA CARTA SI POSTPONABLE == TRUE
     }
 
@@ -123,8 +121,8 @@ public class Movement {
      */
     public void directComand(){
         System.out.println("Has caigut en una casella de comanda directa");
-        directComand actual = (directComand) actual_box;
-        runCard(actual.getCard());
+        directComand current = (directComand) current_box;
+        runCard(current.getCard());
     }
 
 
@@ -226,7 +224,7 @@ public class Movement {
      */
     public void buyField() {
         Scanner scan = new Scanner(System.in);
-        Field field = (Field) actual_box;
+        Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
         System.out.println(field.toString()); // Print field info ( name, price, rent, etc )
         printUserActions(new int[]{0, 3});      // Actions confirmation actions ( confirmate, denegate )
@@ -266,7 +264,7 @@ public class Movement {
      */
     public void payRent() {
         Scanner scan = new Scanner(System.in);
-        Field field = (Field) actual_box;
+        Field field = (Field) current_box;
         Player owner = field.getOwner();        // Get field owner
         System.out.println("-  La casella de terreny on ha caigut ja te propietari  -");
         System.out.println("El propietari del terreny es " + owner.getName() + " i el lloguer es de " + field.getRent() + "€");
@@ -286,7 +284,7 @@ public class Movement {
      */
     public void build() {
         Scanner scan = new Scanner(System.in);
-        Field field = (Field) actual_box;
+        Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
         printUserActions(new int[]{0, 4});
         int action = scan.nextInt();
