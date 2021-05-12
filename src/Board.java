@@ -183,6 +183,7 @@ public class Board {
                 }
                 else {
                     System.out.println("El jugador " + current_player.getName() + "s'ha declarat en fallida");
+                    current_player.goToBankruptcy();
                 }
             }
             if(pay_amount > current_player.getMoney()){ is_it = true; }
