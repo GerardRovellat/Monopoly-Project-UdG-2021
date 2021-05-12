@@ -170,6 +170,26 @@ public class Field extends Box{
         return this.name;
     }
 
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$
+     */
+    public int getNumberOfApartaments() {
+        if (hotelBuildable()) return max_buildings;
+        else return builded;
+    }
+
+    /**
+     * @brief $$$$
+     * @pre true
+     * @post $$$$$$$
+     */
+    public int getNumberOfHotels() {
+        if (builded == max_buildings) return 1;
+        else return 0;
+    }
+
 
     @Override
     public String toString() {

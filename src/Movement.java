@@ -343,6 +343,8 @@ public class Movement {
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
         System.out.println(field.toString());
+        System.out.println("Apartaments Construits: " + field.getNumberOfApartaments());
+        System.out.println("Hotels Construits: " + field.getNumberOfHotels());
         if (field.houseBuildable()) {
             if (active_player.isAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
                 System.out.println("Es pot construir fins a " + numberOfHouseBuildable + " apartaments a un preu de " + price_to_build + "€ per apartament");
