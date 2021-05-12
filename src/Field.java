@@ -186,7 +186,7 @@ public class Field extends Box{
      * @post $$$$$$$
      */
     public int getNumberOfHotels() {
-        if (builded == max_buildings) return 1;
+        if (builded == max_buildings + 1) return 1;
         else return 0;
     }
 
