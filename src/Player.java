@@ -157,6 +157,10 @@ public class Player {
         bankruptcy = true;
     }
 
+    public boolean haveFields(){
+        return !boxes_in_property.isEmpty();
+    }
+
     /**
      * @brief $$$$
      * @pre true

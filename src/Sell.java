@@ -46,39 +46,48 @@ public class Sell implements optionalActions{
                 System.out.println("Per quin preu vols començar la venta?");
                 sell_price = scan.nextInt();
                 System.out.println("La subhasta per " + field_to_sell.getName() + " comença per " + sell_price + "€");
-                ArrayList<Player> auction_players;
-                auction_players = players;
+                ArrayList<Player> auction_players = new ArrayList<>();
+                ArrayList<Player> retired_players = new ArrayList<>();
+                auction_players.addAll(players);
                 auction_players.remove(current_player);
-                int offer, max_offer = -1;
+                int offer, max_offer = sell_price;
                 Player winner = null;
                 while (auction_players.size() > 1) {
                     for (Player aux_player : auction_players) {
-                        String name_of_player = aux_player.getName();
-                        int current_money = aux_player.getMoney();
-                        System.out.println(name_of_player + " tens " + current_money + "€");
-                        System.out.println("Que ofereixes? (-1 per retirar-se):");
-                        offer = scan.nextInt();
-                        while (current_money < offer && offer != -1) {
-                            System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
+                        if (auction_players.size() - retired_players.size() != 1 || winner == null) {
+                            String name_of_player = aux_player.getName();
+                            int current_money = aux_player.getMoney();
+                            System.out.println(name_of_player + " tens " + current_money + "€");
+                            System.out.println("Que ofereixes? (-1 per retirar-se):");
                             offer = scan.nextInt();
-                        }
-                        if (offer == -1) {
-                            auction_players.remove(aux_player);
-                            System.out.println(name_of_player + " s'ha retirat de la subhasta");
-                        } else {
-                            if (max_offer < offer) {
-                                max_offer = offer;
-                                winner = aux_player;
+                            while (current_money < offer || offer < max_offer && offer != -1) {
+                                if(offer < max_offer) System.out.println("Erroni, s'ha de superar el import de "+max_offer);
+                                else System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
+                                offer = scan.nextInt();
+                            }
+                            if (offer == -1) {
+                                retired_players.add(aux_player);
+                                System.out.println(name_of_player + " s'ha retirat de la subhasta");
+                            } else {
+                                if (max_offer < offer) {
+                                    max_offer = offer;
+                                    winner = aux_player;
+                                }
                             }
                         }
                     }
+                    for (Player retired : retired_players) {
+                        auction_players.remove(retired);
+                    }
+                    retired_players.clear();
                 }
                 if (winner == null) {
                     System.out.println("Cap jugador ha comprat la propietat " + field_to_sell.getName());
-                } else {
+                }
+                else {
                     winner.pay(max_offer);
                     current_player.charge(max_offer);
-                    System.out.println("El jugador " + winner + " ha comprat " + field_to_sell + " per " + max_offer);
+                    System.out.println("El jugador " + winner + " ha comprat " + field_to_sell.getName() + " per " + max_offer);
                 }
             }
             else{
