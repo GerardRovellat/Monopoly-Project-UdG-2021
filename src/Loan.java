@@ -16,24 +16,26 @@ public class Loan implements optionalActions{
         System.out.println("Selecioni el jugador a qui l'hi vol demanar el prestec:");
         int cont = 0;
         for (Player player : players) {
-            System.out.println(cont + ". " + player.getName());
+            if (player != current_player) {
+                System.out.println(cont + ". " + player.getName());
+            }
             cont++;
         }
         int value = -1;
         while(value < 0 || value > cont) {
             value = scan.nextInt();
-            if (value < 0 || value > cont) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
+            if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
         Player loan_player = players.get(value);
         int current_offer = -1;
-        while (current_offer < 0) {
+        while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
             current_offer = scan.nextInt();
-            if (current_offer < 0) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0");
+            if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
 
         System.out.println("Info del prestes:");
-        System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + value);
+        System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + current_offer);
         Player offer_active_player = loan_player;
         String interests_string = "";
         int interests = -1;
@@ -60,7 +62,9 @@ public class Loan implements optionalActions{
         }
 
         if (turns > 0) {
-            current_player.addLoan(loan_player,value,interests,turns);
+            current_player.addLoan(loan_player,current_offer,interests,turns);
+            loan_player.pay(current_offer);
+            current_player.charge(current_offer);
             System.out.println("El prestec s'ha dut a terme");
         }
         else {

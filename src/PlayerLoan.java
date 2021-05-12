@@ -14,11 +14,12 @@ public class PlayerLoan {
     }
 
     public void nextTurn() {
-        turns=turns--;
+        turns=turns-1;
     }
 
     public int returnValue() {
-        return (int) (value * (interest/100));
+        Double result = value * ( 1 + (double) interest / 100 );
+        return result.intValue();
     }
 
     public boolean isEnd() {

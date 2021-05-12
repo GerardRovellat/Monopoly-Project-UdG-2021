@@ -43,10 +43,12 @@ public class Monopoly {
 
         while(!checkEndGame()) {
             current_player = players.get(current_player_iterator);
+            current_player.payLoans();
             //System.out.println(board.toString());
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             String temp = current_player.toString();
             System.out.println("-----------------------------------------------------------------------\n");
+            // COMPROVAR PER SI DE CAS SI EL JUGADOR ESTA AN BANCAROTA
             throwDice();
             movePlayer();
             Box current = getCurrentBox();
@@ -145,7 +147,6 @@ public class Monopoly {
      * @post Do the final possible actions in a turn and select the next player
      */
     private void endTurn() {
-        current_player.payLoans();
         System.out.println("TORN FINALITZAT");
         current_player_iterator++;
         if (current_player_iterator ==players.size()) current_player_iterator = 0;

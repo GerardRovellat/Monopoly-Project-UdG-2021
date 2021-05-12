@@ -182,7 +182,9 @@ public class Player {
      * @post $$$$$$
      */
     public void payLoans() {
-        for (PlayerLoan aux : loans) {
+        //for (PlayerLoan aux : loans) {
+        for (int i=0;i<loans.size();i++){
+            PlayerLoan aux = loans.get(i);
             aux.nextTurn();
             if (aux.payLoan()) {
                 loans.remove(aux);

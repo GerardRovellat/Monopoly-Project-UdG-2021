@@ -156,7 +156,7 @@ public class Movement {
                 break;
             case "PAY":
                 CardPay pay = (CardPay) card;
-                pay.execute(players,board,active_player);
+                pay.execute(players,board,active_player,this);
                 break;
             default:
                 //trow error

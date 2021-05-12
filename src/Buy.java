@@ -68,16 +68,16 @@ public class Buy implements optionalActions{
                 } else if (tmp.equals("no")) {
                     buy_final = true;
                     current_offer = -1;
-                } else if (Integer.parseInt(tmp) < 0) {
-                    System.out.println("Valor incorrecte, la oferta ha de superior a 0");
+                } else if (Integer.parseInt(tmp) < 0 || Integer.parseInt(tmp) >= current_player.getMoney()) {
+                    System.out.println("Valor incorrecte, la oferta ha de superior a 0 i inferior a " + current_player.getMoney());
                 } else {
                     current_offer = Integer.parseInt(tmp);
+                    if (offer_active_player == buy_player) offer_active_player = current_player;
+                    else offer_active_player = buy_player;
                 }
-                if (offer_active_player == buy_player) offer_active_player = current_player;
-                else offer_active_player = buy_player;
             }
             if (current_offer == -1) {
-                System.out.println("Les negociacions no han concuit i per tant la compra no es farà efectiva");
+                System.out.println("Les negociacions no han concluit i per tant la compra no es farà efectiva");
                 is_possible = false;
             }
             else {
