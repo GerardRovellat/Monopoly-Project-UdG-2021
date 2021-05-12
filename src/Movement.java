@@ -73,10 +73,10 @@ public class Movement {
         }
         System.out.println("Entri el valor de la seva aposta");
         int bet = -1;
-        while( bet < 2 || bet > 12) {
+        while( bet < 3 || bet > 12) {
             bet = scan.nextInt();
-            if (bet < 2 || bet > 12) {
-                System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 0 i 12 )");
+            if (bet < 3 || bet > 12) {
+                System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 3 i 12 )");
                 System.out.println("Torni a provar:");
             }
             else System.out.println("El valor entrat es correcte");
@@ -106,12 +106,32 @@ public class Movement {
      * @post $$$$$
      */
     public void luckAction(){
+        Scanner scan = new Scanner(System.in);
         System.out.println("Has caigut en una casella de sort");
         Card current = cards.get(cards.size()-1);
         cards.remove(cards.size()-1);
-        runCard(current);
-        cards.add(0,current);
-        // eL JUGADOR HA DE PODER GUARDAR LA CARTA SI POSTPONABLE == TRUE
+        if (current.isPostposable()) {
+            System.out.println("Es pot guardar la carta per poderla utilitzar el qualsevol moment");
+            System.out.println("0. Guardar per despres");
+            System.out.println("1. fer-la servir ara");
+            int value = -1;
+            while (value < 0 || value > 1 ) {
+                value = scan.nextInt();
+                if (value < 0 || value > 1 ) System.out.println("Valor entrat incorrecte. Torni a provar:");
+            }
+            if (value == 0) {
+                active_player.addLuckCard(current);
+                System.out.println("Carta guardada.");
+            }
+            else {
+                runCard(current);
+                cards.add(0, current);
+            }
+        }
+        else {
+            runCard(current);
+            cards.add(0, current);
+        }
     }
 
     /**
@@ -183,7 +203,9 @@ public class Movement {
             value = scan.nextInt();
             if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
         }
-        if (value != 0) possible_actions.get(value - 1).execute(players, active_player, this);
+        if (value != 0) {
+            possible_actions.get(value - 1).execute(players, active_player, this);
+        }
 
     }
 
@@ -320,6 +342,7 @@ public class Movement {
     private void buildApartament(Scanner scan, Field field) {
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
+        System.out.println(field.toString());
         if (field.houseBuildable()) {
             if (active_player.isAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
                 System.out.println("Es pot construir fins a " + numberOfHouseBuildable + " apartaments a un preu de " + price_to_build + "€ per apartament");
@@ -381,6 +404,10 @@ public class Movement {
             } else System.out.println("No te suficients diners per construir el hotel");
         }
         System.out.println("Encara no es pot construir un hotel");
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
     }
 
 }

@@ -38,6 +38,10 @@ public class PlayerLoan {
         return aux;
     }
 
+    public String smallPrint() {
+        return value + "€ en " + turns + " torns a " + loner.getName() + " i un interes del " + interest + "%";
+    }
+
     @Override
     public String toString() {
         System.out.println("Propietari: " + loner.getName());

@@ -208,6 +208,13 @@ public class Player {
         else System.out.println("NO TE PROPIETATS");
         /*if (!bankruptcy) System.out.println("JUGADOR ACTIU");
         else System.out.println("JUGADOR INACTIU ( EN FALLIDA )");*/
+        if (loans.size() > 0) {
+            System.out.println("PRESTECS:");
+            for (PlayerLoan loan : loans) {
+                System.out.println("    " + loan.smallPrint());
+            }
+        }
+        else System.out.println("NO TE PRESTECS");
         return "";
     }
 }

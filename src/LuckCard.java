@@ -29,6 +29,7 @@ public class LuckCard implements optionalActions{
                 card_nr = scan.nextInt();
             }
             aux.runCard(current_player.getLuckCards().get(card_nr-1));
+            aux.getCards().add(0,current_player.getLuckCards().get(card_nr-1));
         }
         return true;
     }
