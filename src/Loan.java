@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class Loan implements optionalActions{
 
+    /**
+     * @brief Constructor per defecte de Loan.
+     * @pre \p true
+     * @post Crea una acció opcional Loan.
+     */
     public Loan() {};
 
     /**
