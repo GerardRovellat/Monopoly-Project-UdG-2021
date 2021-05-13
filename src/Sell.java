@@ -3,16 +3,42 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * @class Sell
+ * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador vendre una de les
+ * seves propietats a un dels altres jugadors contraris. Aquesta venda és fara en format de subhasta.
+ */
 public class Sell implements optionalActions{
 
+    /**
+     * @brief Constructor de Sell.
+     * @pre \p true
+     * @post Crea una acció opcional Sell.
+     */
     public Sell() {};
 
+    /**
+     * @brief toString per mostrar la descripció de l'acció Sell per text.
+     * @pre \p true
+     * @post Mostra la descripció de Sell
+     * @return String de la sortida per pantalla de Sell
+     */
     @Override // Heretat d'Object
     public String toString() {
 
         return "Vendre: posar a la venda una de les teves propietats, incloent-hi els edificis que hi pugui haver-hi.";
     }
 
+    /**
+     * @brief Mètode per executar el procés de vendre un terreny en propietat d'un jugador.
+     * @pre Jugador \p current_player != null i Moviment \p m != null
+     * @post Una propietat del jugador ha estat venuda al guanyador de la subhasta, en cas contrari no ha estat venuda
+     * i la subhasta no té guanyador.
+     * @param players ArrayList de jugadors que estan jugant al Monopoly.
+     * @param current_player Jugador que fa la venda.
+     * @param m Moviment que crida Sell, en aquesta implementació, \p m no és usada però s'ha de passar.
+     * @return \p true si el procés s'ha realitzat, \p false altrament.
+     */
     public boolean execute(ArrayList<Player> players,Player current_player,Movement m) {
         boolean is_possible = true;
         if(current_player.getFields().isEmpty()){

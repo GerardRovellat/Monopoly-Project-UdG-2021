@@ -2,10 +2,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
-
 import com.google.gson.*;
 
+/**
+ * @class JSONManager
+ * @brief JSONManager administra totes les funcions relacionades amb llegir fitxers JSON i també la creació del fitxer
+ * de desenvolupament de la partida.
+ */
 public class JSONManager {
 
     private Board board = new Board();
@@ -17,9 +20,11 @@ public class JSONManager {
     private String board_file;
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Create JsonManager class with name of files
+     * @brief Constructor de JSONManager
+     * @pre \p true
+     * @post Crea la classe JSONManager amb el nom dels fitxers d'entrada JSON.
+     * @param rules nom del fitxer JSON el qual descriu les regles del joc.
+     * @param board nom del fitxer JSON el qual descriu el tauler i les seves propietats.
      */
     public JSONManager(String rules, String board) {
         rules_file = rules;
@@ -27,9 +32,10 @@ public class JSONManager {
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Returns the Monopoly game with configurations from rules and board files
+     * @brief Llegeix els dos fitxers d'entrada \p rules_file i \p board_file per poder crear el joc del Monopoly.
+     * @pre \p true
+     * @post Retorna el joc del Monopoly amb les configuracions de \p rules_file i \p board_file.
+     * @return Monopoly \p monopoly amb totes les característiques establertes.
      */
     public Monopoly readFile() {
         this.board = readBoard();
@@ -39,18 +45,19 @@ public class JSONManager {
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Write the development file of the game
+     * @brief Escriu el fitxer de desenvolupament de la partida de Monopoly.
+     * @pre \p true
+     * @post El fitxer de desenvolupament de la partida ha estat escrit.
      */
     public void writeFile() {
 
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Read the rules file
+     * @brief Llegeix \p rules_file fitxer JSON i configura les propietats llegides del joc del Monopoly.
+     * @pre \p true
+     * @post \p rules_file ha estat llegit.
+     * @return ArrayList amb totes les accions opcionals possibles que el jugador pot fer en aquest joc.
      */
     private ArrayList<optionalActions> readRules() {
         //Start Gson variables.
@@ -114,9 +121,10 @@ public class JSONManager {
     }
 
     /**
-     * @brief $$$$
+     * @brief Llegeix \p bord_file fitxer JSON i configura les propietats del tauler llegides al joc del Monopoly.
      * @pre true
-     * @post Read the board file
+     * @post \p board_file ha estat llegit.
+     * @return Tauler amb totes les seves propietats.
      */
     private Board readBoard() {
         //Start Gson variables.
