@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 /**
  * @author Marc Got
- * @file CardFine.java
- * @class CardFine
- * @brief Implementa la funcions de la carta de tipus multa
+ * @file
+ * @class
+ * @brief
  */
 public class Exception {
 

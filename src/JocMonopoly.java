@@ -1,11 +1,17 @@
 /**
  * @author Gerard Rovellat
- * @file CardGo.java
- * @class CardGo
- * @brief Targeta que mou al jugador a una casella determinada en el tauler de Monopoly.
+ * @file JocMonopoly.java
+ * @class JocMonopoly (main)
+ * @brief Main principal del joc del Monopoly.
  */
 public class JocMonopoly {
 
+    /**
+     * @brief Main principal per començar el Joc de Monopoly.
+     * @pre \p true
+     * @post Joc acabat
+     * @param args fitxers d'entrada
+     */
     public static void main(String[] args){
 
         JSONManager json_manager = new JSONManager(args[0],args[1]);

@@ -47,9 +47,9 @@ public class Field extends Box{
     }
 
     /**
-     * @brief
-     * @pre true
-     * @post Add player as owner and change state of field to true
+     * @brief Assigna un Jugador \p Player com a propietari \p owner i actualitza estat del terreny.
+     * @pre \p owner != null
+     * @post Propietari assignat i estat \p bought = true.
      */
     public void buy(Player owner) {
         this.owner = owner;
@@ -57,9 +57,9 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Elimina el propietari \p owner del terreny.
      * @pre true
-     * @post Remove player as owner and change state of field to false
+     * @post Elimina le Jugador com a propietari \p owner i canvia el estat \p bought a \p false.
      */
     public void sell() {
         this.owner = null;
@@ -67,18 +67,20 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Getter del preu del terreny \p Field.
      * @pre true
-     * @post Returns price of property
+     * @post Retorna el preu del terreny \p Field.
+     * @return preu \p price del terreny.
      */
     public int getPrice(){
         return this.price;
     }
 
     /**
-     * @brief $$$$
+     * @brief Getter del lloguer del terreny \p Field depenent de les edificacions que tingui.
      * @pre true
-     * @post Returns rent of the property
+     * @post Retorna el lloguer del terreny \p Field que correspon.
+     * @return lloguer del terreny \p Field depenent de \p builded.
      */
     public int getRent() {
         /*if (bought) {
@@ -100,36 +102,39 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Getter del propietari \p owner del terreny.
      * @pre true
-     * @post Returns owner of the property
+     * @post Retorna el propietari \p owner del terreny \p Field.
+     * @return Jugador \p owner propietari de \p Field.
      */
     public Player getOwner() {
         return this.owner;
     }
 
     /**
-     * @brief $$$$
+     * @brief Afegeix \p quantity com a edificis edificats al terreny \p Field
      * @pre Es necesari saber que el usuari ja ha pagat el preu corresponent al apartament o hotel segons toqui i que es posible construir
-     * @post Build one house on the property
+     * @post S'ha construit \p quantity apartaments al terreny.
      */
-    public void build(int quanity) {
-        builded = builded + quanity;
+    public void build(int quantity) {
+        builded = builded + quantity;
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta si es pot construïr cases en el terreny
      * @pre true
-     * @post Returns TRUE if the property its buildable FALES otherwise
+     * @post Retorna \p true si a la propietat s'hi pot construir cases, \p false altrament.
+     * @return \p true si es pot construïr cases, \p false altrament
      */
     public boolean houseBuildable() {
         return builded < max_buildings;
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta si es pot contruïr un hotel a terreny.
      * @pre true
-     * @post Returns TRUE if the property its buildable FALES otherwise
+     * @post Retorna \p true si es pot construir un hotel a la propietat, \p false altrament,
+     * @return \p true si es pot construïr un hotel, \p false altrament.
      */
     public boolean hotelBuildable() {
         if (hotel) return builded == max_buildings;
@@ -137,9 +142,10 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta el preu per construïr el el edifici que correspon.
      * @pre true
-     * @post $$$$$$$
+     * @post Retorna el preu d'una casa \p building_price si pot ser construïda, \p hotel_price si nomes pot
+     * construïr-se un hotel, -1 altrament.
      */
     public int priceToBuild() {
         if (houseBuildable()) return building_price;
@@ -148,36 +154,40 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta el nombre de cases que es pot construïr en un terreny.
      * @pre houseBuildable = true
-     * @post $$$$$$$
+     * @post Retorna el numero de cases possibles a construïr.
+     * @return numero de cases per construïr.
      */
     public int numberOfHouseBuildable() {
         return max_buildings - builded;
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta si la propietat esta comprada.
      * @pre true
-     * @post $$$$$$$
+     * @post Retorna \p true si la propietat esta comprada, \p false altrament.
+     * @return \p true si \p bought = true, \p false altrament.
      */
     public boolean isBought() {
         return this.bought;
     }
 
     /**
-     * @brief $$$$
+     * @brief Getter del nom de la terreny.
      * @pre true
-     * @post $$$$$$$
+     * @post Retorna el nom del terreny.
+     * @return string del nom \p name del terreny
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     * @brief $$$$
+     * @brief Getter de nombre d'edificacions construïdes.
      * @pre true
-     * @post $$$$$$$
+     * @post Retorna el nombre d'apartaments construïts.
+     * @return nombre de edificacions a \p Field.
      */
     public int getNumberOfApartaments() {
         if (hotelBuildable()) return max_buildings;
@@ -185,16 +195,22 @@ public class Field extends Box{
     }
 
     /**
-     * @brief $$$$
+     * @brief Consulta el nombre d'hotels que estan construïts.
      * @pre true
-     * @post $$$$$$$
+     * @post Retorna el nombre d'hotels construïts.
+     * @return nombre d'hotels a \p Field.
      */
     public int getNumberOfHotels() {
         if (builded == max_buildings + 1) return 1;
         else return 0;
     }
 
-
+    /**
+     * @brief toString per mostrar la descripció del terreny \p Field en text.
+     * @pre true
+     * @post Mostra els detalls de \p Field.
+     * @return salt de linea.
+     */
     @Override
     public String toString() {
         System.out.println("\tTÍTUL DE PROPIETAT:                  " + this.name );
