@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * @class Movement
+ * @brief Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera fet
+ * sobre un Jugador.
+ */
 public class Movement {
 
     private Box current_box;
@@ -14,11 +19,11 @@ public class Movement {
 
 
     /**
-     * @brief Movement class Constructor
-     * @pre \p current_posicion and \p active_player valid
-     * @post Create a movement with box and player
-     * @param box "Casella" position of active_player on the board
-     * @param player Information of the player playing at this torn
+     * @brief Constructor de Movement.
+     * @pre \p current_posicion != null i \p active_player != null
+     * @post Crea un moviment Movement amb \p box i \p player.
+     * @param box Casella posició de \p active_player en el tauler.
+     * @param player Informació de el Jugador que està jugant en aquest torn.
      */
     public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards){
         this.current_box = box;
@@ -31,9 +36,9 @@ public class Movement {
     }
 
     /**
-     * @brief $$$$$$$
-     * @pre true
-     * @post Gives the reward when the player cross or falls into the start box
+     * @brief Informa al Jugador que ha caigut a la casella de sortida \p Start.
+     * @pre \p true
+     * @post La informació ha sigut mostrada per pantalla.
      */
     public void startAction() {
         System.out.println("Has caigut a la casella de Inici i rebut la recompensa");
@@ -41,9 +46,9 @@ public class Movement {
 
 
     /**
-     * @brief Actions if the player falls into a field box
-     * @pre true
-     * @post Manages movement when player falls into the property box
+     * @brief Administra les accions que s'han de fer si es cau en una Casella de terreny \p Field.
+     * @pre \p true
+     * @post Les accions han sigut realitzades.
      */
     public void fieldAction() {
         Scanner scan = new Scanner(System.in);
@@ -55,9 +60,9 @@ public class Movement {
     }
 
     /**
-     * @brief Actions if the player falls into a Bet box
-     * @pre true
-     * @post Gives the amount of the bet to the player that is doing the movement
+     * @brief Administra les accions que s'han de fer si es cau en una Casella d'aposta \p Bet.
+     * @pre \p true
+     * @post Dona la suma de diners de l'aposta que el jugador que fa el moviment ha realitzat.
      */
     public void betAction(){
         Scanner scan = new Scanner(System.in);
@@ -101,9 +106,10 @@ public class Movement {
     }
 
     /**
-     * @brief $$$$$
-     * @pre true
-     * @post $$$$$
+     * @brief Administra les accions que s'han de fer si es cau en una Casella de sort.
+     * @pre \p true
+     * @post S'executarà la targeta de sort agafada de les targetes sort. En cas que la targeta sigui posposable pot
+     * guardar-se o utilitzar-se, altrament s'executara.
      */
     public void luckAction(){
         Scanner scan = new Scanner(System.in);
@@ -135,9 +141,9 @@ public class Movement {
     }
 
     /**
-     * @brief Actions if the player falls into a DirectComand box
-     * @pre true
-     * @post Does the movement depending of the type of direct order it is
+     * @brief Administra les accions que s'han de fer si es cau en una Casella de comanda directa.
+     * @pre \p true
+     * @post Realitza el moviment depenent del tipus de comanda directa que és.
      */
     public void directComand(){
         System.out.println("Has caigut en una casella de comanda directa");
@@ -147,9 +153,10 @@ public class Movement {
 
 
     /**
-     * @brief Actions depending of the card got
-     * @pre true
-     * @post SOMETHING
+     * @brief Administra les accions que s'han de fer depenent de la targeta que et toqui.
+     * @pre \p card != null
+     * @post La targeta \p card ha estat executada.
+     * @param card targeta que s'ha d'executar.
      */
     public void runCard(Card card){
         String type = card.getType();
@@ -185,9 +192,10 @@ public class Movement {
     }
 
     /**
-     * @brief Manage all posible optional Actions
-     * @pre true
-     * @post SOMETHING
+     * @brief Administra totes les possibles accions opcionals.
+     * @pre \p true
+     * @post L'acció opcional ha estat executada.
+     * @param possible_actions ArrayList amb totes les accions possibles que el Jugador pot fer.
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
         int value = -1;
@@ -240,9 +248,9 @@ public class Movement {
 
 
     /**
-     * @brief $$$$$$
+     * @brief Administrarà la compra d'un terreny on s'ha caigut de tauler.
      * @pre true
-     * @post SOMETHING
+     * @post Si el terreny no te propietari i el jugador ho desitja, el terreny serà comprat, altrament passarà.
      */
     public void buyField() {
         Scanner scan = new Scanner(System.in);
@@ -280,9 +288,9 @@ public class Movement {
 
 
     /**
-     * @brief $$$$$$
+     * @brief Administrarà el pagament dels lloguers en els terrenys amb propietaris
      * @pre true
-     * @post SOMETHING
+     * @post El jugador ha pagat el lloguer del terreny on ha caigut al seu Jugador propietari.
      */
     public void payRent() {
         Scanner scan = new Scanner(System.in);
@@ -300,9 +308,9 @@ public class Movement {
     }
 
     /**
-     * @brief $$$$$$
+     * @brief Administra l'acció per contruïr edificis si el terreny es de la propietat de Jugador.
      * @pre true
-     * @post SOMETHING
+     * @post L'acció per contruïr edificis dins d'una propietat ha estat gestionada.
      */
     public void build() {
         Scanner scan = new Scanner(System.in);
@@ -338,7 +346,12 @@ public class Movement {
         System.out.println("FINAL ACCIONS DISPONIBLES");
     }
 
-
+    /**
+     * @brief Administra l'acció per contruïr apartaments en una propietat.
+     * @pre \p field != null
+     * @post L'acció per contruïr apartaments dins d'una propietat ha estat gestionada.
+     * @param field terreny on s'ha de contruïr apartaments.
+     */
     private void buildApartament(Scanner scan, Field field) {
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
@@ -382,7 +395,12 @@ public class Movement {
         }else System.out.println("Ja estàn tots els apartaments permesos construits");
     }
 
-
+    /**
+     * @brief Administra l'acció per contruïr un hotel en una propietat.
+     * @pre \p field != null
+     * @post L'acció per contruïr un hotel dins d'una propietat ha estat gestionada.
+     * @param field terreny on s'ha de contruïr apartaments.
+     */
     private void buildHotel(Scanner scan, Field field) {
         if (field.hotelBuildable()) {
             int price_to_build = field.priceToBuild();
@@ -408,6 +426,12 @@ public class Movement {
         System.out.println("Encara no es pot construir un hotel");
     }
 
+    /**
+     * @brief Retorna les targetes sort del joc del Monopoly.
+     * @pre \p true.
+     * @post Les targetes sort han estat retornades.
+     * @return ArrayList de les targetes sort de Monopoly.
+     */
     public ArrayList<Card> getCards() {
         return cards;
     }

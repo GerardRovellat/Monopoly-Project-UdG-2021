@@ -1,6 +1,11 @@
 import javafx.util.Pair;
 import java.util.*;
 
+/**
+ * @class Player
+ * @brief Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes accions
+ * que pot fer el jugador en si.
+ */
 public class Player {
     private String name;
     private int money;
@@ -12,9 +17,12 @@ public class Player {
 
 
     /**
-     * @brief $$$$
+     * @brief Constructor de Player.
      * @pre true
-     * @post Creates a Player with the input attributes
+     * @post Crea un jugador amb els atributs entrats.
+     * @param name nom del Jugador.
+     * @param initial_money quantitat de diners inicials dels que disposa un Jugador.
+     * @param initial_position posició inicial del Jugador.
      */
     public Player(String name,int initial_money,int initial_position) {
         this.name = name;
@@ -23,54 +31,58 @@ public class Player {
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Subtract money paid to another player or banker
+     * @brief El Jugador paga una quantitat de diners \p amount determinada.
+     * @pre \p amount >= 0
+     * @post La quantitat entrada \p amount ha estat restada de \p money del Jugador.
      */
     public void pay(int amount){
         this.money = this.money - amount;
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Add money paid to another player or banker
+     * @brief El jugador cobra una quantitat de diners \p amount determinada.
+     * @pre \p amount >= 0
+     * @post La quantitat entrada \p amount ha estat sumada de \p money del Jugador.
      */
     public void charge(int amount){
         this.money = this.money + amount;
     }
 
     /**
-     * @brief $$$$
+     * @brief Retorna en una llista les targetes sort \p luckCards del Jugador.
      * @pre true
-     * @post Returns a list of luck cards that player have
+     * @post \p luckCards ha estat retornada.
+     * @return List de targetes sort del Jugador.
      */
     public List<Card> getLuckCards() {
         return this.luckCards;
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Add luck card to the player luck cards
+     * @brief Afegeix una targeta sort \p card a la propietat del Jugador.
+     * @pre \p card != null
+     * @post La targeta \p card ha estat afegida a la llista de targetes sort del Jugador.
+     * @param card targeta que es vol afegir a les targetes de sort \p luckCards del Jugador.
      */
     public void addLuckCard(Card card){
         this.luckCards.add(card);
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Remove luck card to the player luck cards
+     * @brief Elimina una targeta sort \p card de la propietat del Jugador.
+     * @pre \p card != null
+     * @post La targeta \p card ha estat eliminada de la llista de targetes sort del Jugador.
+     * @param card targeta que es vol eliminar de les targetes de sort \p luckCards del Jugador.
      */
     public void removeLuckCard(Card card) {
         this.luckCards.remove(card);
     }
 
     /**
-     * @brief $$$$
+     * @brief Retorna el nom del Jugador el qual la crida.
      * @pre true
-     * @post $$$$$$
+     * @post El nom del Jugador \p name ha estat tornat.
+     * @return String que contindrà el nom \p name del Jugador.
      */
     public String getName() {
         return name;
@@ -78,9 +90,10 @@ public class Player {
 
 
     /**
-     * @brief $$$$
+     * @brief Retorna la posició del Jugador el qual la crida.
      * @pre true
-     * @post $$$$$$
+     * @post la posició del Jugador \p position ha estat tornada.
+     * @return int que contindrà la \p position del Jugador.
      */
     public int getPosition() {
         return position;
@@ -88,9 +101,10 @@ public class Player {
 
 
     /**
-     * @brief $$$$
+     * @brief Retorna els diners que té el Jugador en possessió.
      * @pre true
-     * @post $$$$$$
+     * @post Els diners \p money del Jugador  han estat retornats.
+     * @return int que contindrà els diners \p money de Jugador.
      */
     public int getMoney() {
         return money;
@@ -107,9 +121,10 @@ public class Player {
 
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$$
+     * @brief Mou el Jugador a una posició \p position final en el tauler.
+     * @pre \p postion > 0
+     * @post El Jugador ha sigut mogut a \p position del tauler.
+     * @param position posició final a la qual el Jugador s'ha de moure.
      */
     public void movePlayer(int position) {
         this.position = position;
@@ -117,9 +132,10 @@ public class Player {
 
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$$
+     * @brief Afegeix un terreny a la propietat d'un Jugador
+     * @pre \p box != null
+     * @post \p box ha estat afegit a la llista de propietats \p boxes_in_property de Jugador.
+     * @param box terreny que serà afegit a la propietat de Jugador.
      */
     public void addBox(Field box) {
         if (box != null) {
@@ -130,18 +146,20 @@ public class Player {
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$$
+     * @brief Elimina un terreny a la propietat d'un Jugador
+     * @pre \p box != null
+     * @post \p box ha estat eliminat de la llista de propietats \p boxes_in_property de Jugador.
+     * @param box terreny que serà eliminat de la propietat de Jugador.
      */
     public void removeBox(Box box) {
         boxes_in_property.remove(box);
     }
 
     /**
-     * @brief $$$$
+     * @brief Retorna la llista \p boxes_in_property de terrenys que te en propietat el Jugador.
      * @pre true
-     * @post $$$$$$
+     * @post La llista \p boces_in_property ha estat retornada.
+     * @return ArrayList que contindrà tots els terrenys en propeitat del Jugador.
      */
     public ArrayList<Field> getFields() {
         return this.boxes_in_property;
@@ -149,41 +167,52 @@ public class Player {
 
 
     /**
-     * @brief $$$$
+     * @brief Declara el Jugador en fallida.
      * @pre true
-     * @post $$$$$$
+     * @post El jugador ha estat declarat en fallida.
      */
     public void goToBankruptcy() {
         bankruptcy = true;
     }
 
+    /**
+     * @brief Retorna si el Jugador te terrenys en propietat o no.
+     * @pre true
+     * @post És retorna \p true si Jugador te terrenys, \p false altrament.
+     * @return \p true si \p boxes_in_property no es buida, \p false altrament.
+     */
     public boolean haveFields(){
         return !boxes_in_property.isEmpty();
     }
 
     /**
-     * @brief $$$$
+     * @brief Retorna si el Jugador es en fallida o no.
      * @pre true
-     * @post $$$$$$
+     * @post És retorna \p true si Jugador es en fallida, \p false altrament.
+     * @return \p true si \p bakruptcy es \p true, \p false altrament.
      */
     public Boolean getBankruptcy() {
         return this.bankruptcy;
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$$
+     * @brief Afegeix un préstec a la llista de préstecs del Jugador
+     * @pre \p loaner != null, \p torns > 0
+     * @post El préstec ha estat afegit a la llista de préstecs \p loans de Jugador.
+     * @param loaner Jugador que ha prestat diners a Jugador.
+     * @param value valor a retornar a \p loaner.
+     * @param interest interes del préstec.
+     * @param torns numero de torns el qual s'ha de tornar el préstec del Jugador.
      */
-    public void addLoan(Player loner, int value, int interest, int torns) {
-        loans.add(new PlayerLoan(loner,this,value,interest,torns));
+    public void addLoan(Player loaner, int value, int interest, int torns) {
+        loans.add(new PlayerLoan(loaner,this,value,interest,torns));
     }
 
 
     /**
-     * @brief $$$$
+     * @brief Paga els préstecs que te pendents els Jugadors.
      * @pre true
-     * @post $$$$$$
+     * @post
      */
     public void payLoans() {
         //for (PlayerLoan aux : loans) {
@@ -196,8 +225,20 @@ public class Player {
         }
     }
 
+    /**
+     * @brief Posa el \p true si el jugador està en fallida, \p false altrament.
+     * @pre \p status != null
+     * @post \p status ha estat introduit a \p bankruptcy.
+     * @param status estat el qual es troba el Jugador.
+     */
     public void setBankruptcy(boolean status){ this.bankruptcy = status; }
 
+    /**
+     * @brief toString per mostrar l'informació de Player per text.
+     * @pre \p true
+     * @post Player ha estat mostrat per pantalla amb tota la seva informació per poder seguir la partida adequadament.
+     * @return \p name i \p money del Jugador, les seves propietas \p boxes_in_property i els seus préstecs \p loans.
+     */
     @Override
     public String toString() {
         /*System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);
