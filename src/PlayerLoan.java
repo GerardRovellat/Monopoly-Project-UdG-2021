@@ -1,6 +1,6 @@
 /**
  * @author Marc Got
- * @file Player.java
+ * @file PlayerLoan.java
  * @class PlayerLoan
  * @brief Classe que administra els préstecs entre prestatari i prestador.
  */
