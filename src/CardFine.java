@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 /**
+ * @author Marc Got
  * @file CardFine.java
  * @class CardFine
  * @brief Implementa la funcions de la carta de tipus multa

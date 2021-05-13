@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
+ * @author Marc Got
  * @file Movement.java
  * @class Movement
  * @brief Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera fet

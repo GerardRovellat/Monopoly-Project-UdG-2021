@@ -1,5 +1,6 @@
 
 /**
+ * @author Marc Got
  * @file Start.java
  * @class Start
  * @brief Casella de sortida en el tauler de Monopoly.

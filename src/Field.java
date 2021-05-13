@@ -1,28 +1,33 @@
 import java.util.ArrayList;
 
+/**
+ * @author Marc Got
+ * @file Field.java
+ * @class Field
+ * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
+ */
 public class Field extends Box{
 
-    private String name;
-    private int price;
-    private String group;
-    private int basic_rent;
-    private int group_rent;
-    private String buildable;
-    private int max_buildings;
-    private int building_price;
-    private boolean hotel;
-    private int hotel_price;
-    private ArrayList<Integer> buildings_rent;
-    private int hotel_rent;
-
-    private Player owner;
-    private int builded = 0;
-    private boolean bought = false;
+    private String name;                            ///< Nom del terreny.
+    private int price;                              ///< Preu del terreny.
+    private String group;                           ///< Color d'agrupació.
+    private int basic_rent;                         ///< Preu lloguer sense agrupació.
+    private int group_rent;                         ///< Preu lloguer agrupació.
+    private String buildable;                       ///< Tipus de construcció.
+    private int max_buildings;                      ///< Nombre màxim d' apartaments construibles.
+    private int building_price;                     ///< Preu de cada apartament.
+    private boolean hotel;                          ///< Es pot contruir hotel, true si, false no.
+    private int hotel_price;                        ///< Preu de l'hotel.
+    private ArrayList<Integer> buildings_rent;      ///< Lloguer depenent de les construccions.
+    private int hotel_rent;                         ///< Lloguer del hotel.
+    private Player owner;                           ///< Jugador propietari.
+    private int builded = 0;                        ///< Nombre de edificacions construides.
+    private boolean bought = false;                 ///< Estat de comprat o no.
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post Creates a Property with the input attributes
+     * @brief Constructor de terreny \p Field.
+     * @pre \p true
+     * @post Crea un terreny amb tots els atributs entrats.
      */
     public Field(int position,String type,String name,int price,String group,int basic_rent,int group_rent,String buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
         super(position,type,name);
@@ -38,12 +43,11 @@ public class Field extends Box{
         this.hotel_price = hotel_price;
         this.buildings_rent = buildings_rent;
         this.hotel_rent = hotel_rent;
-
         if (hotel) this.max_buildings++;
     }
 
     /**
-     * @brief $$$$
+     * @brief
      * @pre true
      * @post Add player as owner and change state of field to true
      */

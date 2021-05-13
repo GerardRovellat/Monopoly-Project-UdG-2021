@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 /**
+ * @author Marc Got
  * @file Box.java
  * @class Box
  * @brief Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella

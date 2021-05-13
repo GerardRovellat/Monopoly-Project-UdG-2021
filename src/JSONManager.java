@@ -5,19 +5,20 @@ import java.util.List;
 import com.google.gson.*;
 
 /**
+ * @author Gerard Rovellat
  * @class JSONManager
  * @brief JSONManager administra totes les funcions relacionades amb llegir fitxers JSON i també la creació del fitxer
  * de desenvolupament de la partida.
  */
 public class JSONManager {
 
-    private Board board = new Board();
-    private ArrayList<optionalActions> actions = new ArrayList<>();
-    private ArrayList<String> star_rewards = new ArrayList<>();
-    private ArrayList<Card> cards = new ArrayList();
-    private int initial_money = 0;
-    private String rules_file;
-    private String board_file;
+    private Board board = new Board();                                  ///< Tauler llegit del fitxer JSON pel Monopoly.
+    private ArrayList<optionalActions> actions = new ArrayList<>();     ///< Llistat d'accions opcionals possibles.
+    private ArrayList<String> star_rewards = new ArrayList<>();         ///< Llistat de recompenses que pot donar Start
+    private ArrayList<Card> cards = new ArrayList();                    ///< Llistat de targetes sort de Monopoly
+    private int initial_money = 0;                                      ///< Diners inicials de cada Jugador.
+    private String rules_file;                                          ///< Fitxer definicio regles del joc de Monopoly
+    private String board_file;                                          ///< Fitxer definicio tauler del joc de Monopoly
 
     /**
      * @brief Constructor de JSONManager

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author Marc Got
  * @file Buy.java
  * @class Buy
  * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador comprar una de les

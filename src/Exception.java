@@ -3,6 +3,12 @@ import javafx.util.Pair;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * @author Marc Got
+ * @file CardFine.java
+ * @class CardFine
+ * @brief Implementa la funcions de la carta de tipus multa
+ */
 public class Exception {
 
     private HashMap<Integer, Pair<String,String>> error_messages = new HashMap<>();

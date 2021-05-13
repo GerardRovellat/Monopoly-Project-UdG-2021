@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author Marc Got
  * @file CardPay.java
  * @class CardPay
  * @brief Targeta que fa pagar la quantitat assignada a un jugador

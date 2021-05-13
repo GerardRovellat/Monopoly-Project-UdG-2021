@@ -4,6 +4,7 @@ import java.util.Scanner;
 import javafx.util.Pair;
 
 /**
+ * @author Marc Got
  * @file Monopoly.java
  * @class Monopoly
  * @brief Classe que s'encarrega d'administrar l'inicialització, els torns i funcionament general

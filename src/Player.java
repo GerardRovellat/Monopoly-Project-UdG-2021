@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author Marc Got
  * @file Player.java
  * @class Player
  * @brief Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes accions

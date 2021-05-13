@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @author Marc Got
+ * @file Loan.java
+ * @class Loan
+ * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
+ */
 public class Loan implements optionalActions{
 
     /**
@@ -13,18 +19,23 @@ public class Loan implements optionalActions{
     /**
      * @brief toString per mostrar la descripció de l'acció LuckCard per text.
      * @pre \p true
-     * @post Mostra la descripció de LuckCard
-     * @return String de la sortida per pantalla de Sell
+     * @post Mostra la descripció de LuckCard.
+     * @return String de la sortida per pantalla de LuckCard.
      */
     @Override
     public String toString() {
-
         return "PRÉSTEC: pot demanar una quantitat prestada a un altre jugador";
     }
 
+    /**
+     * @brief Mètode per executar el procés de demanar un préstec a un Jugador.
+     * @pre \p current_player != null
+     * @post S'ha demanat un préstec a un Jugador.
+     * @return \p true quan ha acabat de demanar el prestéc.
+     */
     public boolean execute(ArrayList<Player> players,Player current_player, Movement aux) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Selecioni el jugador a qui l'hi vol demanar el prestec:");
+        System.out.println("Sel·lecioni el jugador a qui l'hi vol demanar el prestec:");
         int cont = 0;
         for (Player player : players) {
             if (player != current_player) {
@@ -81,12 +92,6 @@ public class Loan implements optionalActions{
         else {
             System.out.println("La operacio s'ha cancelat");
         }
-
-
-
-
-
-
-        return false;
+        return true;
     }
 }

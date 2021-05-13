@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author Marc Got
  * @file CardGive.java
  * @class CardGive
  * @brief Implementa la funcions de la carta de tipus donar

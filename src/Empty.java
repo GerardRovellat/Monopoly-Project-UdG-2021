@@ -1,4 +1,5 @@
 /**
+ * @author Gerard Rovellat
  * @file Empty.java
  * @class Empty
  * @brief Casella buida en el Monopoly, aquesta casella la anomanem "Buida" ja que no fem cap acció quan jugador hi cau
@@ -6,7 +7,7 @@
  */
 public class Empty extends Box{
 
-    private String name;  ///< nom de la casella
+    private String name;                               ///< Nom de la casella
 
     /**
      * @brief Constructor de Empty.

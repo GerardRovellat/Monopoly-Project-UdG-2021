@@ -1,4 +1,9 @@
-
+/**
+ * @author Gerard Rovellat
+ * @file CardGo.java
+ * @class CardGo
+ * @brief Targeta que mou al jugador a una casella determinada en el tauler de Monopoly.
+ */
 public class JocMonopoly {
 
     public static void main(String[] args){

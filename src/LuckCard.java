@@ -2,10 +2,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @file Monopoly.java
- * @class Monopoly
- * @brief Classe que s'encarrega d'administrar l'inicialització, els torns i funcionament general
- * i la finalització del joc Monopoly.
+ * @author Gerard Rovellat
+ * @file LuckCard.java
+ * @class LuckCard
+ * @brief Classe que s'encarrega d'administrar l'acció opcional de executar una targeta sort al final del torn
+ * d'un Jugador.
  */
 public class LuckCard implements optionalActions{
 

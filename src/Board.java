@@ -1,6 +1,7 @@
 import java.util.*;
 
 /**
+ * @author Gerard Rovellat
  * @file Board.java
  * @class Board
  * @brief Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altres com la gestio de la bancarrota

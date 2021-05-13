@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author Gerard Rovellat
  * @file CardGet.java
  * @class CardGet
  * @brief Implementa la funcions de la carta de tipus rebre

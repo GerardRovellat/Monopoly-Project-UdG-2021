@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author Gerard Rovellat
  * @file Sell.java
  * @class Sell
  * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador vendre una de les

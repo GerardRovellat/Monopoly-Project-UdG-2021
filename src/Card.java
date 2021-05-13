@@ -1,5 +1,6 @@
 
 /**
+ * @author Gerard Rovellat
  * @file Card.java
  * @class Card
  * @brief Implementa la funcions base i comunes totes les cartes.
