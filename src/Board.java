@@ -1,25 +1,50 @@
 import java.util.*;
 
 /**
+ * @file Board.java
  * @class Board
  * @brief Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altres com la gestio de la bancarrota
  */
 
 public class Board {
-    private int boxes_nr;
-    private SortedMap<Integer,Box> board = new TreeMap<>();
-    private ArrayList<Player> players = new ArrayList<>();
+    private int boxes_nr;                                           ///< numero de caselles dels taulell
+    private SortedMap<Integer,Box> board = new TreeMap<>();         ///< Mapa amb les caselles del taulell ordenades
+    private ArrayList<Player> players = new ArrayList<>();          ///< Llista de jugadors de la partida
 
+    /**
+     * @brief Constructor de Board per defecte
+     * @pre true
+     * @post Board creat
+     */
     public Board () {}
 
+    /**
+     * @brief Setter del nombre de caselles
+     * @pre true
+     * @post s'ha guardat el numero de caselles
+     */
     public void setBoxesNr(int number){
         boxes_nr = number;
     }
 
+    /**
+     * @brief Afegir un jugador nou a la partida
+     * @pre true
+     * @post El jugador nou ha estat afegit
+     * @param player Jugador nou
+     */
     public void addPlayer(Player player) {
         players.add(player);
     }
 
+    /**
+     * @brief Moure el jugador de casella i gestionar el pas per la casella de inici
+     * @pre true
+     * @post El jugador s'ha mogut a la posició entrada i si ha passat per la casella de sortida, se l'hi ha pagat la recompensa
+     * @param player Jugador actiu a moure
+     * @param position posicio final del jugador
+     * @param rewards posibles recompenses de la casella de sortida
+     */
     public void movePlayer (Player player, int position, ArrayList<String> rewards) {
         boolean give_reward = player.getPosition() > position;
         if(give_reward){
@@ -65,19 +90,45 @@ public class Board {
         player.movePlayer(position);
     }
 
+    /**
+     * @brief Afageix una casella al taulell
+     * @pre true
+     * @post La casella ha estat afegida
+     * @param box Casella nova
+     */
     public void addBox(Box box) {
         board.put(box.getPosition(),box);
     }
 
+    /**
+     * @brief Comprova si la casella te propietari
+     * @pre true
+     * @post s'ha retornat si la casella te propietari
+     * @param box Casella de tipus terreny
+     * @return true si la casella te propietari
+     */
     public boolean haveOwner(Field box) {
         Field aux = (Field) board.get(box.getPosition());
         return aux.isBought();
     }
 
+    /**
+     * @brief Getter de la casella on estigui el jugador
+     * @pre true
+     * @post La casella on està el jugador ha estat retornada
+     * @param player Jugador actiu
+     * @return La casella de la posicio on està el jugador actiu
+     */
     public Box getBox(Player player) {
         return board.get(player.getPosition());
     }
 
+    /**
+     * @brief Genera una casella de terreny de forma aleatoria
+     * @pre true
+     * @post La casella de terreny s'ha retornat
+     * @return una cassella de terreny aleatoria
+     */
     private Field randomField(){
         Random rand = new Random();
         int aux_nr = rand.nextInt(boxes_nr-1)+1;
@@ -104,6 +155,12 @@ public class Board {
         return aux_field;
     }
 
+    /**
+     * @brief Comprova si queden terrenys sense propietari
+     * @pre true
+     * @post s'ha retornat si queden terrenys sense propietari
+     * @return true si ueden terrenys sense propietari, false altrament
+     */
     private boolean haveAvailableFields(){
         Iterator<Integer> it = board.keySet().iterator();
         boolean found = false;
@@ -119,6 +176,15 @@ public class Board {
         return found;
     }
 
+    /**
+     * @brief Gestiona les accions per quan el jugador està sense diners ( en fallida )
+     * @pre true
+     * @post el jugador ha realitzat les accions disponibles i s'ha comprovat si despres pot seguir jugant
+     * @return true si el jugador pot seguir jugant, false altrament
+     * @param current_player jugador actual
+     * @param pay_amount quantitat a pagar
+     * @param aux Classe movement per poder cridar a accions opcionals
+     */
     public boolean isBankrupt(Player current_player, int pay_amount, Movement aux){
         boolean is_it = false;
         if(current_player.getLuckCards().isEmpty() && current_player.getFields().isEmpty()){ is_it =true; }
@@ -197,14 +263,21 @@ public class Board {
     }
 
     /**
-     * @brief $$$$
+     * @brief Calcula la mida del taulell
      * @pre true
-     * @post $$$$$$$$$
+     * @post s'ha retornat la mida del taulell
+     * @return la mida del taulell
      */
     public int getSize() {
         return board.size();
     }
 
+    /**
+     * @brief toString per mostrar l'informació del Taulell per text.
+     * @pre \p true
+     * @post el tualell ha estat mostrat per pantalla amb tota la seva informació per poder seguir la partida adequadament.
+     * @return salt de linea
+     */
     @Override
     public String toString() {
         System.out.println("---------- TAULELL ----------");
@@ -216,7 +289,6 @@ public class Board {
         for(Player player : players) {
             System.out.println(player.toString());
         }
-
         return "\n";
     }
 

@@ -1,4 +1,5 @@
 /**
+ * @file Bet.java
  * @class Bet
  * @brief Classe de casella de aposta. En aquesta, es gestionarà les dades i els calculs corresponents
  */

@@ -1,14 +1,36 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CardPay extends Card{
-    private int quantity;
+/**
+ * @file CardPay.java
+ * @class CardPay
+ * @brief Targeta que fa pagar la quantitat assignada a un jugador
+ */
 
+public class CardPay extends Card{
+    private int quantity;                                       ///< quantitat a pagar
+
+    /**
+     * @brief Constructor de CardPay
+     * @pre \p true
+     * @post La carta ha estat creada
+     * @param postposable true si es posposable, false altrament
+     * @param quantity quantitat a pagar
+     */
     public CardPay ( boolean postposable, int quantity) {
         super("PAY",postposable);
         this.quantity = quantity;
     }
 
+    /**
+     * @brief Execucio de la carta
+     * @pre \p true
+     * @post la quantitat ha estat pagada a un altre jugador
+     * @param players llista de jugadors de la partida
+     * @param board taulell
+     * @param current_player jugador actiu
+     * @param aux Classe movement per poder cridar a accions opcionals
+     */
     public void execute(ArrayList<Player> players, Board board, Player current_player, Movement aux) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Has de pagar "+quantity+" a un dels altres jugadors");
@@ -37,6 +59,12 @@ public class CardPay extends Card{
         //FALTA TRACTAR QUAN NO POT FER EL PAGAMENT
     }
 
+    /**
+     * @brief Sortida
+     * @pre \p true
+     * @post el missatge ha estat retornat
+     * @return missatge de sortida
+     */
     public String toString(){
         return "Has de pagar "+quantity+" a un dels altres jugadors";
     }
