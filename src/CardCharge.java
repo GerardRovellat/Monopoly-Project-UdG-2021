@@ -1,12 +1,24 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class CardCharge extends Card{
-    private int quantity;
-    private String message;
-    private HashMap<Integer,String> messages = new HashMap<>();
+/**
+ * @file CardCharge.java
+ * @class CardCharge
+ * @brief Implementa la funcions de la carta de tipus cobrar
+ */
 
+public class CardCharge extends Card{
+    private int quantity;                                           ///< quantitat a pagar
+    private String message;                                         ///< Missatge de la carta
+    private HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
+
+    /**
+     * @brief Constructor de CardCharge
+     * @pre \p true
+     * @post La carta ha estat creada
+     * @param postposable true si es posposable, false altrament
+     * @param quantity quantitat a pagar
+     */
     public CardCharge (boolean postposable, int quantity) {
         super("CHARGE",postposable);
         this.quantity = quantity;
@@ -24,6 +36,13 @@ public class CardCharge extends Card{
         messages.put(11,"HAS GANADO TU APUESTA EN LA ELIMINACIÓN DEL MADRID EN CHAMPIONS COBRA " + quantity + " €");
     }
 
+    /**
+     * @brief Execucio de la carta
+     * @pre \p true
+     * @post El jugador ha rebut la quantitat assignada
+     * @param board taulell
+     * @param current_player jugador actiu
+     */
     public void execute(Board board, Player current_player) {
         Random rand = new Random();
         message = messages.get(rand.nextInt(messages.size()) - 1);
@@ -32,8 +51,20 @@ public class CardCharge extends Card{
         System.out.println("DINERS REBUTS");
     }
 
+    /**
+     * @brief Getter de la quantitat a cobrar
+     * @pre \p true
+     * @post la quantitat a cobrar ha estat retornada
+     * @return la quantitat a cobrar
+     */
     public int getQuantity() { return this.quantity; }
 
+    /**
+     * @brief Sortida
+     * @pre \p true
+     * @post el missatge ha estat retornat
+     * @return missatge de sortida
+     */
     public String toString(){
         return message;
     }

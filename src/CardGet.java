@@ -1,12 +1,32 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @file CardGet.java
+ * @class CardGet
+ * @brief Implementa la funcions de la carta de tipus rebre
+ */
+
 public class CardGet extends Card{
 
+    /**
+     * @brief Constructor de CardGet
+     * @pre \p true
+     * @post La carta ha estat creada
+     * @param postposable true si es posposable, false altrament
+     */
     public CardGet (boolean postposable) {
         super("GET",postposable);
     }
 
+    /**
+     * @brief Execucio de la carta
+     * @pre \p true
+     * @post la propietat ha estat rebuda
+     * @param players llista de jugadors de la partida
+     * @param board taulell
+     * @param current_player jugador actiu
+     */
     public void execute(ArrayList<Player> players, Board board, Player current_player) {
         Scanner scan = new Scanner(System.in);
         System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
@@ -41,6 +61,12 @@ public class CardGet extends Card{
         System.out.println("En "+current_player.getName()+" ha adquirit "+field_choosed.getName());
     }
 
+    /**
+     * @brief Sortida
+     * @pre \p true
+     * @post el missatge ha estat retornat
+     * @return missatge de sortida
+     */
     public String toString(){
         return "El jugador rebra una propietats d'algun dels seus adversaris";
     }

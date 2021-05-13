@@ -1,12 +1,32 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @file CardGive.java
+ * @class CardGive
+ * @brief Implementa la funcions de la carta de tipus donar
+ */
+
 public class CardGive extends Card{
 
+    /**
+     * @brief Constructor de CardGive
+     * @pre \p true
+     * @post La carta ha estat creada
+     * @param postposable true si es posposable, false altrament
+     */
     public CardGive ( boolean postposable) {
         super("GIVE",postposable);
     }
 
+    /**
+     * @brief Execucio de la carta
+     * @pre \p true
+     * @post la propietat ha estat donada
+     * @param players llista de jugadors de la partida
+     * @param board taulell
+     * @param current_player jugador actiu
+     */
     public void execute(ArrayList<Player> players,Board board, Player current_player) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Estàs obligat a donar inmediatament una de les teves propietats");
@@ -52,7 +72,13 @@ public class CardGive extends Card{
         else System.out.println("No disposes de cap propietat");
 
     }
-
+    
+    /**
+     * @brief Sortida
+     * @pre \p true
+     * @post el missatge ha estat retornat
+     * @return missatge de sortida
+     */
     public String toString(){
         return "Estàs obligat a donar inmediatament una de les teves propietats";
     }

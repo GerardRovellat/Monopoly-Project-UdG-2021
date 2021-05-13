@@ -1,18 +1,42 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @file Buy.java
+ * @class Buy
+ * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador comprar una de les
+ * propietats de un dels altres jugadors contraris. Aquesta compra és negociable
+ */
+
 public class Buy implements optionalActions{
 
+    /**
+     * @brief Constructor de Buy.
+     * @pre \p true
+     * @post Crea una acció opcional Buy.
+     */
+    public Buy() {};
 
-    public Buy() {
-
-    };
-
+    /**
+     * @brief toString per mostrar la descripció de l'acció Buy per text.
+     * @pre \p true
+     * @post Mostra la descripció de Buy
+     * @return String de la sortida per pantalla de Buy
+     */
     @Override // Heretat d'Object
     public String toString() {
         return "Comprar: Fer una oferta de compra a un altre jugador";
     }
 
+    /**
+     * @brief Mètode per executar el procés de compra un terreny en propietat d'un jugador.
+     * @pre Jugador \p current_player != null i Moviment \p m != null
+     * @post Una propietat de algun jugador ha estat comprada o la acció s'ha cancelat
+     * @param players ArrayList de jugadors que estan jugant al Monopoly.
+     * @param current_player Jugador que fa la compra.
+     * @param m Moviment que crida Buy, en aquesta implementació, \p m no és usada però s'ha de passar.
+     * @return \p true si el procés s'ha realitzat, \p false altrament.
+     */
     public boolean execute(ArrayList<Player> players,Player current_player,Movement m) {
         boolean is_possible = true;
         Scanner scan = new Scanner(System.in);

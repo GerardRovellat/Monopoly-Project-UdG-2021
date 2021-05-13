@@ -1,14 +1,24 @@
-import com.sun.javaws.IconUtil;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class CardFine extends Card{
-    private int quantity;
-    private String message;
-    private HashMap<Integer,String> messages = new HashMap<>();
+/**
+ * @file CardFine.java
+ * @class CardFine
+ * @brief Implementa la funcions de la carta de tipus multa
+ */
 
+public class CardFine extends Card{
+    private int quantity;                                           ///< quantitat a pagar
+    private String message;                                         ///< Missatge de la carta
+    private HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
+
+    /**
+     * @brief Constructor de CardFine
+     * @pre \p true
+     * @post La carta ha estat creada
+     * @param postposable true si es posposable, false altrament
+     * @param quantity quantitat a pagar
+     */
     public CardFine (boolean postposable, int quantity) {
         super("FINE",postposable);
         this.quantity = quantity;
@@ -26,6 +36,14 @@ public class CardFine extends Card{
         messages.put(11,"HAS SUSPENDIDO LA ASIGNATURA DE PROYECTO DE PROGRAMACION. PAGA " + quantity + "PARA QUE EL PROFESOR TE APRUEVE");
     }
 
+    /**
+     * @brief Execucio de la carta
+     * @pre \p true
+     * @post La multa ha estat pagada
+     * @param board taulell
+     * @param current_player jugador actiu
+     * @param aux Movement que crida Buy, en aquesta implementació, \p m no és usada però s'ha de passar.
+     */
     public void execute(Board board,Player current_player, Movement aux) {
         Random rand = new Random();
         message = messages.get(rand.nextInt(messages.size()) - 1);
@@ -45,6 +63,12 @@ public class CardFine extends Card{
         }
     }
 
+    /**
+     * @brief Sortida
+     * @pre \p true
+     * @post el missatge ha estat retornat
+     * @return missatge de sortida
+     */
     public String toString(){
         return message;
     }
