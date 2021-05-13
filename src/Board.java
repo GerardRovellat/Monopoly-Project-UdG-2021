@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * @class Board
+ * @brief Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altres com la gestio de la bancarrota
+ */
+
 public class Board {
     private int boxes_nr;
     private SortedMap<Integer,Box> board = new TreeMap<>();

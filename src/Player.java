@@ -1,4 +1,3 @@
-import javafx.util.Pair;
 import java.util.*;
 
 /**
@@ -6,6 +5,7 @@ import java.util.*;
  * @brief Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes accions
  * que pot fer el jugador en si.
  */
+
 public class Player {
     private String name;
     private int money;
@@ -34,6 +34,7 @@ public class Player {
      * @brief El Jugador paga una quantitat de diners \p amount determinada.
      * @pre \p amount >= 0
      * @post La quantitat entrada \p amount ha estat restada de \p money del Jugador.
+     * @param amount quantitat a pagar
      */
     public void pay(int amount){
         this.money = this.money - amount;
@@ -43,6 +44,7 @@ public class Player {
      * @brief El jugador cobra una quantitat de diners \p amount determinada.
      * @pre \p amount >= 0
      * @post La quantitat entrada \p amount ha estat sumada de \p money del Jugador.
+     * @param amount quantitat a cobrar
      */
     public void charge(int amount){
         this.money = this.money + amount;
@@ -111,11 +113,13 @@ public class Player {
     }
 
     /**
-     * @brief $$$$
-     * @pre true
-     * @post $$$$$$
+     * @brief Calcula el nombre de apartaments que es pot permetre costruir al preu entrat
+     * @pre price > 0
+     * @post el nombre de apartaments construïbles ha estat retornada
+     * @param price preu de un apartament
+     * @return int que contindrà el nombre de apartaments construibles
      */
-    public int isAffordable(int price) {
+    public int numberOfBuildingsAffordable(int price) {
         return money / price;
     }
 
@@ -210,12 +214,11 @@ public class Player {
 
 
     /**
-     * @brief Paga els préstecs que te pendents els Jugadors.
+     * @brief Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s'han de pagar
      * @pre true
-     * @post
+     * @post els préstecs que han finalitzat s'han retornat i gestionat els torns dels que no
      */
     public void payLoans() {
-        //for (PlayerLoan aux : loans) {
         for (int i=0;i<loans.size();i++){
             PlayerLoan aux = loans.get(i);
             aux.nextTurn();
@@ -241,8 +244,6 @@ public class Player {
      */
     @Override
     public String toString() {
-        /*System.out.println("INFORMACIÓ DEL JUGADOR: " + this.name);
-        System.out.println("DINERS ENS CAIXA: " + this.money);*/
         System.out.println(this.name + ": " + this.money + "€");
         if (boxes_in_property.size() > 0) {
             System.out.println("PROPIETATS:");
@@ -251,8 +252,6 @@ public class Player {
             }
         }
         else System.out.println("NO TE PROPIETATS");
-        /*if (!bankruptcy) System.out.println("JUGADOR ACTIU");
-        else System.out.println("JUGADOR INACTIU ( EN FALLIDA )");*/
         if (loans.size() > 0) {
             System.out.println("PRESTECS:");
             for (PlayerLoan loan : loans) {

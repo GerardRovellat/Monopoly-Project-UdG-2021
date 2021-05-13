@@ -208,35 +208,35 @@ public class JSONManager {
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardPay pay_card = new CardPay( false, pay_amount);
-                        directComand pay_direct_command = new directComand(box_nr,"DIRECTCOMMAND",pay_card);
+                        directCommand pay_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",pay_card);
                         board.addBox(pay_direct_command);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardFine fine_card = new CardFine( false, fine_amount);
-                        directComand fine_direct_command = new directComand(box_nr,"DIRECTCOMMAND",fine_card);
+                        directCommand fine_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",fine_card);
                         board.addBox(fine_direct_command);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardCharge charge_card = new CardCharge(false, charge_amount);
-                        directComand charge_direct_command = new directComand(box_nr,"DIRECTCOMMAND",charge_card);
+                        directCommand charge_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",charge_card);
                         board.addBox(charge_direct_command);
                         break;
                     case "ANAR":
                         int go_box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                         CardGo go_card = new CardGo(false, go_box_nr);
-                        directComand go_direct_command = new directComand(box_nr,"DIRECTCOMMAND",go_card);
+                        directCommand go_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",go_card);
                         board.addBox(go_direct_command);
                         break;
                     case "DONAR":
                         CardGive give_card = new CardGive(false);
-                        directComand give_direct_command = new directComand(box_nr,"DIRECTCOMMAND",give_card);
+                        directCommand give_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",give_card);
                         board.addBox(give_direct_command);
                         break;
                     case "REBRE":
                         CardGet get_card = new CardGet(false);
-                        directComand get_direct_command = new directComand(box_nr,"DIRECTCOMMAND",get_card);
+                        directCommand get_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",get_card);
                         board.addBox(get_direct_command);
                         break;
                     case "HIPOTECAR":

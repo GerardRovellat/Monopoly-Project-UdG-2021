@@ -147,7 +147,7 @@ public class Movement {
      */
     public void directComand(){
         System.out.println("Has caigut en una casella de comanda directa");
-        directComand current = (directComand) current_box;
+        directCommand current = (directCommand) current_box;
         runCard(current.getCard());
     }
 
@@ -360,9 +360,9 @@ public class Movement {
         System.out.println("Apartaments Construits: " + field.getNumberOfApartaments());
         System.out.println("Hotels Construits: " + field.getNumberOfHotels());
         if (field.houseBuildable()) {
-            if (active_player.isAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
+            if (active_player.numberOfBuildingsAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
                 System.out.println("Es pot construir fins a " + numberOfHouseBuildable + " apartaments a un preu de " + price_to_build + "€ per apartament");
-                int max_apartaments_buildable = active_player.isAffordable(price_to_build);
+                int max_apartaments_buildable = active_player.numberOfBuildingsAffordable(price_to_build);
                 if (max_apartaments_buildable > numberOfHouseBuildable)
                     max_apartaments_buildable = numberOfHouseBuildable;
                 System.out.println("Actualment disposa de " + active_player.getMoney() + "€ que l'hi permet comprar fins a " + max_apartaments_buildable + " apartaments");

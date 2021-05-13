@@ -1,12 +1,14 @@
 
 /**
+ * @file Start.java
  * @class Start
  * @brief Casella de sortida en el tauler de Monopoly.
  */
+
 public class Start extends Box{
 
-    private Field field_reward;
-    private int money_reward;
+    private Field field_reward; ///< @brief recompensa en forma de terreny*/
+    private int money_reward; ///< @brief recompensa economica*/
 
     /**
      * @brief Constructor de Start
