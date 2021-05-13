@@ -7,7 +7,7 @@
 
 public class Bet extends Box{
 
-    private double[] combinations = new double[]{0,0,0,1,3,6,10,15,21,26,30,33,35}; ///< @brief Contè les combinacions acomulades sobre un total de 12 valors ( 2 daus )
+    private double[] combinations = new double[]{0,0,0,1,3,6,10,15,21,26,30,33,35}; ///<  Contè les combinacions acomulades sobre un total de 12 valors ( 2 daus )
 
     /**
      * @brief Constructor de Bet
