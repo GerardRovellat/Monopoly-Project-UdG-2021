@@ -331,10 +331,10 @@ public class Movement {
                         System.out.println("FINAL DE EDIFICACIÓ");
                     }
                     else if (option==5) {
-                        buildApartament(scan,field);
+                        buildApartament(field);
                     }
                     else if (option==6) {
-                        buildHotel(scan,field);
+                        buildHotel(field);
                     }
                     else System.out.println("Valor entrat erroni, torni a provar");
                 }
@@ -352,7 +352,8 @@ public class Movement {
      * @post L'acció per contruïr apartaments dins d'una propietat ha estat gestionada.
      * @param field terreny on s'ha de contruïr apartaments.
      */
-    private void buildApartament(Scanner scan, Field field) {
+    private void buildApartament(Field field) {
+        Scanner scan = new Scanner(System.in);
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
         System.out.println(field.toString());
@@ -401,7 +402,8 @@ public class Movement {
      * @post L'acció per contruïr un hotel dins d'una propietat ha estat gestionada.
      * @param field terreny on s'ha de contruïr apartaments.
      */
-    private void buildHotel(Scanner scan, Field field) {
+    private void buildHotel(Field field) {
+        Scanner scan = new Scanner(System.in);
         if (field.hotelBuildable()) {
             int price_to_build = field.priceToBuild();
             System.out.println("Es pot construir un hotel a un preu de " + price_to_build + "€");
