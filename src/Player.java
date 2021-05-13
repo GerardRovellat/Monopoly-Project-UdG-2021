@@ -1,19 +1,21 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
+ * @file Player.java
  * @class Player
  * @brief Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes accions
  * que pot fer el jugador en si.
  */
 
 public class Player {
-    private String name;
-    private int money;
-    private ArrayList<Field> boxes_in_property = new ArrayList<>();
-    private int position;
-    private ArrayList<Card> luckCards = new ArrayList<>();
-    private boolean bankruptcy = false;
-    private ArrayList<PlayerLoan> loans = new ArrayList<>();
+    private String name;                                                ///< Nom del Jugador.
+    private int money;                                                  ///< Diners del Jugador.
+    private ArrayList<Field> boxes_in_property = new ArrayList<>();     ///< Llista terrenys en propietat del Jugador.
+    private int position;                                               ///< Posició del Jugador
+    private ArrayList<Card> luckCards = new ArrayList<>();              ///< Llista targetes sort.
+    private boolean bankruptcy = false;                                 ///< Estat fallida jugador.
+    private ArrayList<PlayerLoan> loans = new ArrayList<>();            ///< Llista de préstecs del Jugador.
 
 
     /**
@@ -240,7 +242,7 @@ public class Player {
      * @brief toString per mostrar l'informació de Player per text.
      * @pre \p true
      * @post Player ha estat mostrat per pantalla amb tota la seva informació per poder seguir la partida adequadament.
-     * @return \p name i \p money del Jugador, les seves propietas \p boxes_in_property i els seus préstecs \p loans.
+     * @return String buida.
      */
     @Override
     public String toString() {

@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 /**
+ * @file Sell.java
  * @class Sell
  * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador vendre una de les
  * seves propietats a un dels altres jugadors contraris. Aquesta venda és fara en format de subhasta.

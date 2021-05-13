@@ -5,7 +5,13 @@ public class Loan implements optionalActions{
 
     public Loan() {};
 
-    @Override // Heretat d'Object
+    /**
+     * @brief toString per mostrar la descripció de l'acció LuckCard per text.
+     * @pre \p true
+     * @post Mostra la descripció de LuckCard
+     * @return String de la sortida per pantalla de Sell
+     */
+    @Override
     public String toString() {
 
         return "PRÉSTEC: pot demanar una quantitat prestada a un altre jugador";

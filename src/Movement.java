@@ -1,19 +1,23 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 /**
+ * @file Movement.java
  * @class Movement
  * @brief Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera fet
  * sobre un Jugador.
  */
 public class Movement {
 
-    private Box current_box;
-    private Player active_player;
-    private HashMap<Integer,String> user_actions = new HashMap<>();
-    ArrayList<Player> players;
-    Board board;
-    private ArrayList<String> start_rewards;
-    private ArrayList<Card> cards;
+    private Box current_box;                                            ///< Casella actual.
+    private Player active_player;                                       ///< Jugador que esta realitzant el moviment.
+    private HashMap<Integer,String> user_actions = new HashMap<>();     ///< Accions d'usuari.
+    ArrayList<Player> players;                                          ///< Llista de Jugadors jugant.
+    Board board;                                                        ///< Tauler del Monopoly.
+    private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
+    private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
 
 
 
@@ -220,7 +224,7 @@ public class Movement {
     /**
      * @brief $$$$$$
      * @pre true
-     * @post SOMETHING
+     * @post
      */
     public void userActionsStart(){
         user_actions.put(0,"Res");

@@ -7,8 +7,8 @@
 
 public class Start extends Box{
 
-    private Field field_reward; ///< @brief recompensa en forma de terreny*/
-    private int money_reward; ///< @brief recompensa economica*/
+    private Field field_reward; ///< recompensa en forma de terreny
+    private int money_reward; ///< recompensa economica
 
     /**
      * @brief Constructor de Start
@@ -34,7 +34,7 @@ public class Start extends Box{
      * @brief Fixa els diners que \p Start dona com a recompensa.
      * @pre true
      * @post La quantitat de diners ha estat fixada.
-     * @param money_reward quantitat de diners a fixar coma recompensa.
+     * @param money_reward quantitat de diners a fixar com a recompensa.
      */
     public void setMoneyReward(int money_reward) {
         this.money_reward = money_reward;
