@@ -113,7 +113,8 @@ public class Field extends Box{
 
     /**
      * @brief Afegeix \p quantity com a edificis edificats al terreny \p Field
-     * @pre Es necesari saber que el usuari ja ha pagat el preu corresponent al apartament o hotel segons toqui i que es posible construir
+     * @pre Es necesari saber que el usuari ja ha pagat el preu corresponent al apartament o hotel segons toqui i que
+     * posible construir
      * @post S'ha construit \p quantity apartaments al terreny.
      */
     public void build(int quantity) {
