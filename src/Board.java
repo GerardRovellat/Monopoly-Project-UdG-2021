@@ -264,6 +264,55 @@ public class Board {
     }
 
     /**
+     * @brief Retorna el contador de propietats amb el grup igual a \p group_name.
+     * @pre \p true
+     * @post El numero de propietats amb \p group_name ha estat retornat.
+     * @return numero de propietats amb el mateix \p group_name.
+     */
+    public int numberOfAgrupationField(String group_name){
+        int number = 0;
+        for(Iterator<Map.Entry<Integer,Box>> entries = board.entrySet().iterator(); entries.hasNext();){
+            Map.Entry<Integer, Box> entry = entries.next();
+            if(entry.getValue().getType().equals("FIELD")){
+                Field aux = (Field) entry.getValue();
+                if(aux.getGroup().equals(group_name)) number++;
+            }
+        }
+        return number;
+    }
+
+    /**
+     * @brief Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador.
+     * @pre Si player_get == null serà la banca, un jugador contrari altrament
+     * @post Totes les propietats, diners i targetes, s'han transferit a Jugador o a la banca
+     */
+    public void transferProperties(Player player_give, Player player_get, Movement movement){
+        if(player_get == null){ //banca
+            for (Field field : player_give.getFields()){
+                field.sell();
+            }
+            player_give.getFields().clear();
+            player_give.pay(player_give.getMoney());
+            for(Card card : player_give.getLuckCards()){
+                movement.getCards().add(0,card);
+            }
+            player_give.getLuckCards().clear();
+        }
+        else{
+            for (Field field : player_give.getFields()){
+                player_get.addBox(field);
+            }
+            player_give.getFields().clear();
+            player_get.charge(player_give.getMoney());
+            player_give.pay(player_give.getMoney());
+            for(Card card : player_give.getLuckCards()){
+                player_get.getLuckCards().add(card);
+            }
+            player_give.getLuckCards().clear();
+        }
+    }
+
+    /**
      * @brief Calcula la mida del taulell
      * @pre true
      * @post s'ha retornat la mida del taulell
