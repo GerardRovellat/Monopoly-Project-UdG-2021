@@ -192,8 +192,10 @@ public class Monopoly {
         int second_dice = rand.nextInt(5) + 1;
         Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
         dice_result = aux;
-        System.out.println("Enter per tirar els daus");
-        String readString = scan.nextLine();
+        if (current_player.getType()=="USER") {
+            System.out.println("Enter per tirar els daus");
+            String readString = scan.nextLine();
+        }
         System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
     }
 

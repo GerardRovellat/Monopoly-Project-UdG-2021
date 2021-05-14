@@ -16,6 +16,7 @@ public abstract class Player {
     private ArrayList<Card> luckCards = new ArrayList<>();              ///< Llista targetes sort.
     private boolean bankruptcy = false;                                 ///< Estat fallida jugador.
     private ArrayList<PlayerLoan> loans = new ArrayList<>();            ///< Llista de préstecs del Jugador.
+    private String type;                                                ///< Tipus de jugador ( CPU, USER )
 
 
     /**
@@ -26,10 +27,11 @@ public abstract class Player {
      * @param initial_money quantitat de diners inicials dels que disposa un Jugador.
      * @param initial_position posició inicial del Jugador.
      */
-    public Player(String name,int initial_money,int initial_position) {
+    public Player(String name,int initial_money,int initial_position,String type) {
         this.name = name;
         this.money = initial_money;
         this.position = initial_position;
+        this.type = type;
     }
 
     /**
@@ -90,6 +92,16 @@ public abstract class Player {
      */
     public String getName() {
         return name;
+    }
+
+    /**
+     * @brief Retorna el tipus de Jugador el qual la crida.
+     * @pre true
+     * @post El tipus del Jugador \p type ha estat tornat.
+     * @return String que contindrà el tipus \p type del Jugador.
+     */
+    public String getType() {
+        return type;
     }
 
 
@@ -288,9 +300,11 @@ public abstract class Player {
         return "";
     }
 
-    public abstract int optionSelection(ArrayList<Integer> options, Scanner scan,String type);
+    public abstract int optionSelection(String type,Player player, Field field);
 
-    public abstract int valueSelection(int min, int max, Scanner scan,String type);
+    public abstract int integerValueSelection(int min, int max, String type, Player player);
+
+    public abstract String stringValueSelection(int min, int max, String type, Player player);
 
 }
 

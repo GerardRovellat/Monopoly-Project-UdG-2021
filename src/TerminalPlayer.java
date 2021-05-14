@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 public class TerminalPlayer extends Player{
+    Scanner scan = new Scanner(System.in);
 
     /**
      * @param name             nom del Jugador.
@@ -13,14 +14,18 @@ public class TerminalPlayer extends Player{
      * @post Crea un jugador amb els atributs entrats.
      */
     public TerminalPlayer(String name, int initial_money, int initial_position) {
-        super(name, initial_money, initial_position);
+        super(name, initial_money, initial_position,"USER");
     }
 
-    public int optionSelection(ArrayList<Integer> options, Scanner scan,String type) {
+    public int optionSelection(String type, Player player, Field field) {
         return scan.nextInt();
     }
 
-    public int valueSelection(int min, int max, Scanner scan,String type) {
+    public int integerValueSelection(int min, int max, String type, Player player) {
         return scan.nextInt();
+    }
+
+    public String stringValueSelection(int min, int max, String type, Player player) {
+        return scan.next();
     }
 }
