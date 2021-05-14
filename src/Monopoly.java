@@ -123,7 +123,6 @@ public class Monopoly {
         else position = current_player.getPosition() + position;
         System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position + "\n");
         board.movePlayer(current_player,position,start_rewards);
-
     }
 
     /**
