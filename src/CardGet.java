@@ -42,19 +42,30 @@ public class CardGet extends Card{
             }
             option_nr++;
         }
-        System.out.println("Seleccioni el jugador");
-        option_nr = scan.nextInt();
-        while(not_disponible.contains(option_nr)){
-            System.out.println("Error, sel·leccioni un jugador de la llista");
+        try {
+            System.out.println("Seleccioni el jugador");
+            option_nr = scan.nextInt();
+            while (not_disponible.contains(option_nr)) {
+                System.out.println("Error, sel·leccioni un jugador de la llista");
+            }
+        }
+        catch (NumberFormatException e){
+            System.out.println("Format incorrecte. Torna-hi.");
         }
         Player choosed = players.get(option_nr);
         int field_nr = 0;
         for(Field field : choosed.getFields()){
             System.out.println(field_nr+"- "+field.getName()+" ("+field.getPrice()+")");
         }
-        System.out.println("Seleccioni un terreny");
-        while(field_nr < 0 && field_nr > choosed.getFields().size()){
-            System.out.println("Error, sel·leccioni un terreny correcte");
+        try {
+            System.out.println("Seleccioni un terreny");
+            field_nr = scan.nextInt();
+            while (field_nr < 0 && field_nr > choosed.getFields().size()) {
+                System.out.println("Error, sel·leccioni un terreny correcte");
+            }
+        }
+        catch (NumberFormatException e){
+            System.out.println("Format incorrecte. Torna-hi.");
         }
         Field field_choosed = choosed.getFields().get(field_nr);
         current_player.addBox(field_choosed);

@@ -53,13 +53,18 @@ public class Buy implements optionalActions{
             }
             cont++;
         }
-        System.out.println("Selecioni la opcio que desitgi:");
         int value = -1;
-        while (value < 0 || value > cont) {
-            value = scan.nextInt();
-            if (value < 0 || value > cont) System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
+        try {
+            System.out.println("Selecioni la opcio que desitgi:");
+            while (value < 0 || value > cont) {
+                value = scan.nextInt();
+                if (value < 0 || value > cont)
+                    System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
+            }
         }
-        if (value == -1) ;//Throw error
+        catch (NumberFormatException e){
+            System.out.println("Format incorrecte. Torna-hi.");
+        }
         Player buy_player = players.get(value);
         ArrayList<Field> fields = buy_player.getFields();
         if (fields.size()!=0) {
@@ -69,17 +74,27 @@ public class Buy implements optionalActions{
                 System.out.println(cont + ". " + aux.getName() + " | " + aux.getPrice());
                 cont++;
             }
-            System.out.println("Selecioni la opcio que desitgi:");
-            value = -1;
-            while (value < 0 || value > cont) {
-                value = scan.nextInt();
-                if (value < 0 || value > cont)
-                    System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
+            try {
+                System.out.println("Selecioni la opcio que desitgi:");
+                value = -1;
+                while (value < 0 || value > cont) {
+                    value = scan.nextInt();
+                    if (value < 0 || value > cont)
+                        System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
+                }
+            }
+            catch(NumberFormatException e){
+                System.out.println("Format incorrecte. Torna-hi.");
             }
             Field buy_field = fields.get(value);
-            System.out.println("Indiqui la oferta inicial:");
             int current_offer = 0; // -1 if not
-            current_offer = scan.nextInt();
+            try {
+                System.out.println("Indiqui la oferta inicial:");
+                current_offer = scan.nextInt();
+            }
+            catch (NumberFormatException e){
+                System.out.println("Format incorrecte. Torna-hi.");
+            }
             System.out.println("Oferta realitzada.");
             System.out.println("Comença la negociació");
             boolean buy_final = false;

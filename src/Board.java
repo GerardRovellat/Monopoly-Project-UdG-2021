@@ -339,7 +339,7 @@ public class Board {
         for(Player player : players) {
             System.out.println(player.toString());
         }
-        return "\n";
+        return "";
     }
 
 

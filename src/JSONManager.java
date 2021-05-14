@@ -116,7 +116,8 @@ public class JSONManager {
             int percentage_mortgage_buildings = j_object.get("percentatgePreuEdificisHipoteca").getAsInt();
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("El fitxer JSON de regles no s'ha trobat --> "+e.getMessage());
+            System.exit(-1);
         }
         return possible_actions;
     }
@@ -308,7 +309,8 @@ public class JSONManager {
             cards = cards_stack;
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("El fitxer JSON de tauler no s'ha trobat --> "+e.getMessage());
+            System.exit(-1);
         }
         return board;
     }
