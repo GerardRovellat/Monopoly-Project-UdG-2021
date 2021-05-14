@@ -57,39 +57,45 @@ public class Monopoly {
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             String temp = current_player.toString();
             System.out.println("-----------------------------------------------------------------------\n");
-            // COMPROVAR PER SI DE CAS SI EL JUGADOR ESTA AN BANCAROTA
-            throwDice();
-            movePlayer();
-            Box current = getCurrentBox();
-            Movement aux = new Movement(current, current_player,players,board,start_rewards,cards);
-            String current_box_type = current.getType();
-            System.out.println(board.toString());
+            if (!current_player.getBankruptcy()) {
+                throwDice();
+                movePlayer();
+                Box current = getCurrentBox();
+                Movement aux = new Movement(current, current_player, players, board, start_rewards, cards);
+                String current_box_type = current.getType();
+                System.out.println(board.toString());
 
-            switch (current_box_type) {
-                case "START":
-                    aux.startAction();
-                    break;
-                case "FIELD":
-                    aux.fieldAction();
-                    break;
-                case "BET":
-                    aux.betAction();
-                    break;
-                case "LUCK":
-                    aux.luckAction();
-                    break;
-                case "DIRECTCOMMAND":
-                    aux.directComand();
-                    break;
-                case "EMPTY":
-                    System.out.println("EMPTY BOX");
-                    break;
-                default:
-                    // ERROR
-                    break;
+                switch (current_box_type) {
+                    case "START":
+                        aux.startAction();
+                        break;
+                    case "FIELD":
+                        aux.fieldAction();
+                        break;
+                    case "BET":
+                        aux.betAction();
+                        break;
+                    case "LUCK":
+                        aux.luckAction();
+                        break;
+                    case "DIRECTCOMMAND":
+                        aux.directComand();
+                        break;
+                    case "EMPTY":
+                        System.out.println("EMPTY BOX");
+                        break;
+                    default:
+                        // ERROR
+                        break;
+                }
+                if (!current_player.getBankruptcy()) {
+                    System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
+                    aux.optionalActions(optional_actions);
+                }
             }
-            System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
-            aux.optionalActions(optional_actions);
+            else {
+                System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
+            }
             nextPlayer();
 
         }
@@ -113,7 +119,6 @@ public class Monopoly {
         }
         else position = current_player.getPosition() + position;
         System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position);
-
         board.movePlayer(current_player,position,start_rewards);
 
     }

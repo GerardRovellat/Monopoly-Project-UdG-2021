@@ -308,7 +308,9 @@ public class Movement {
             owner.charge(field.getRent());          // owner get rent
             System.out.println("El lloguer s'ha pagat");
         } else {
-            board.isBankrupt(active_player,field.getRent(),this);
+            if (!board.isBankrupt(active_player,field.getRent(),this)) {
+                board.transferProperties(active_player,field.getOwner());
+            }
         }
     }
 
@@ -321,34 +323,41 @@ public class Movement {
         Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
-        printUserActions(new int[]{0, 4});
-        int action = scan.nextInt();
-        switch (action) {
-            case 0:
-                System.out.println("Accio selecionada: 0. Res");
-                break;
-            case 4: // BUILD
-                System.out.println("Accio selecionada: 4. Edificar");
-                for (int option = -1; option!= 0;) {
-                    printUserActions(new int[]{0, 5, 6});
-                    option = scan.nextInt();
-                    if (option==0) {
-                        System.out.println("FINAL DE EDIFICACIÓ");
-                    }
-                    else if (option==5) {
-                        buildApartament(field);
-                    }
-                    else if (option==6) {
-                        buildHotel(field);
-                    }
-                    else System.out.println("Valor entrat erroni, torni a provar");
+        if (field.houseBuildableType() == "si" || field.houseBuildableType() == "agrupacio" ) { //board.numberOfAgrupationField()) {
+            if (field.houseBuildableType() == "agrupacio" && board.numberOfAgrupationField(field.getGroup()) == active_player.numberOfAgrupationField(field.getGroup())) {
+                printUserActions(new int[]{0, 4});
+                int action = scan.nextInt();
+                switch (action) {
+                    case 0:
+                        System.out.println("Accio selecionada: 0. Res");
+                        break;
+                    case 4: // BUILD
+                        System.out.println("Accio selecionada: 4. Edificar");
+                        for (int option = -1; option != 0; ) {
+                            printUserActions(new int[]{0, 5, 6});
+                            option = scan.nextInt();
+                            if (option == 0) {
+                                System.out.println("FINAL DE EDIFICACIÓ");
+                            } else if (option == 5) {
+                                buildApartament(field);
+                            } else if (option == 6) {
+                                buildHotel(field);
+                            } else System.out.println("Valor entrat erroni, torni a provar");
+                        }
+                        System.out.println("FINAL EDIFICAR");
+                        break;
+                    default:
+                        break;
                 }
-                System.out.println("FINAL EDIFICAR");
-                break;
-            default:
-                break;
+                System.out.println("FINAL ACCIONS DISPONIBLES");
+            }
+            else {
+                System.out.println("Encara no tens totes les propietats de la agrupació i per tant no pots edificar");
+            }
         }
-        System.out.println("FINAL ACCIONS DISPONIBLES");
+        else {
+            System.out.println("No es posible edificar en aquest terreny");
+        }
     }
 
     /**
@@ -364,41 +373,41 @@ public class Movement {
         System.out.println(field.toString());
         System.out.println("Apartaments Construits: " + field.getNumberOfApartaments());
         System.out.println("Hotels Construits: " + field.getNumberOfHotels());
-        if (field.houseBuildable()) {
-            if (active_player.numberOfBuildingsAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
-                System.out.println("Es pot construir fins a " + numberOfHouseBuildable + " apartaments a un preu de " + price_to_build + "€ per apartament");
-                int max_apartaments_buildable = active_player.numberOfBuildingsAffordable(price_to_build);
-                if (max_apartaments_buildable > numberOfHouseBuildable)
-                    max_apartaments_buildable = numberOfHouseBuildable;
-                System.out.println("Actualment disposa de " + active_player.getMoney() + "€ que l'hi permet comprar fins a " + max_apartaments_buildable + " apartaments");
-                int quantity = 0;
-                for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
-                    System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
-                    quantity = scan.nextInt();      // Get number of apartaments to build
-                    if (quantity <= max_apartaments_buildable)
-                        end = true;      // Check if posible to build that many apartaments
-                    else
-                        System.out.println("Es imposible edificar " + quantity + "apartaments. Introdueix un valor correcte");
+            if (field.houseBuildable()) {
+                if (active_player.numberOfBuildingsAffordable(price_to_build) > 0) {       // true if the player can aford at least one apartament
+                    System.out.println("Es pot construir fins a " + numberOfHouseBuildable + " apartaments a un preu de " + price_to_build + "€ per apartament");
+                    int max_apartaments_buildable = active_player.numberOfBuildingsAffordable(price_to_build);
+                    if (max_apartaments_buildable > numberOfHouseBuildable)
+                        max_apartaments_buildable = numberOfHouseBuildable;
+                    System.out.println("Actualment disposa de " + active_player.getMoney() + "€ que l'hi permet comprar fins a " + max_apartaments_buildable + " apartaments");
+                    int quantity = 0;
+                    for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
+                        System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
+                        quantity = scan.nextInt();      // Get number of apartaments to build
+                        if (quantity <= max_apartaments_buildable)
+                            end = true;      // Check if posible to build that many apartaments
+                        else
+                            System.out.println("Es imposible edificar " + quantity + "apartaments. Introdueix un valor correcte");
+                    }
+                    int final_price = quantity * price_to_build;        // Calculate final price
+                    System.out.println("S'edificaràn " + quantity + " apartaments a un preu total de " + final_price + "€" + " i l'hi quedaràn " + (active_player.getMoney() - final_price) + "€");
+                    printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
+                    for (boolean end = false; !end; ) {       // Check if actions value is correct
+                        int value = scan.nextInt();         // Get action number
+                        if (value == 1 || value == 2)
+                            end = true;       // Check if actions value is correct
+                        if (value == 2) System.out.println("Operacio cancelada");
+                        else if (value == 1) {
+                            field.build(quantity);          // Build x apartaments (x = quantity)
+                            active_player.pay(final_price);         // Modify active player money ( money - final price )
+                            System.out.println("Operacio realitzada");
+                            // Treure resum final del jugador
+                        } else System.out.println("Valor entrat erroni, torni a provar");
+                    }
+                } else {
+                    System.out.println("No te suficients diners per construir cap apartament");
                 }
-                int final_price = quantity * price_to_build;        // Calculate final price
-                System.out.println("S'edificaràn " + quantity + " apartaments a un preu total de " + final_price + "€" + " i l'hi quedaràn " + (active_player.getMoney() - final_price) + "€");
-                printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
-                for (boolean end = false; !end; ) {       // Check if actions value is correct
-                    int value = scan.nextInt();         // Get action number
-                    if (value == 1 || value == 2)
-                        end = true;       // Check if actions value is correct
-                    if (value == 2) System.out.println("Operacio cancelada");
-                    else if (value == 1) {
-                        field.build(quantity);          // Build x apartaments (x = quantity)
-                        active_player.pay(final_price);         // Modify active player money ( money - final price )
-                        System.out.println("Operacio realitzada");
-                        // Treure resum final del jugador
-                    } else System.out.println("Valor entrat erroni, torni a provar");
-                }
-            } else {
-                System.out.println("No te suficients diners per construir cap apartament");
-            }
-        }else System.out.println("Ja estàn tots els apartaments permesos construits");
+            }else System.out.println("Ja estàn tots els apartaments permesos construits");
     }
 
     /**

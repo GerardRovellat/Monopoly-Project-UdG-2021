@@ -84,6 +84,16 @@ public class PlayerLoan {
     }
 
     /**
+     * @brief Sortida resumida dels préstecs actius de \p loaned.
+     * @pre \p true
+     * @post S'ha mostrat els préstec que queden actius del jugador \p loaned.
+     * @return string amb la informació del préstec.
+     */
+    public Player getLoaner() {
+        return loaner;
+    }
+
+    /**
      * @brief toString per mostrar la descripció dels préstecs PlayerLoan per text.
      * @pre \p true
      * @post La descripció dels préstecs ha estat mostrada.

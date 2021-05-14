@@ -83,14 +83,13 @@ public class Field extends Box{
      * @return lloguer del terreny \p Field depenent de \p builded.
      */
     public int getRent() {
-        /*if (bought) {
-            if (!hotel) return buildings_rent.get(2);
-            else return hotel_rent;
-        }
-        else return 0;*/
-
         if (builded == 0) {
-            return this.basic_rent;
+            if (buildable != "agrupacio") {
+                return this.basic_rent;
+            }
+            else {
+                return this.group_rent;
+            }
         }
         else if (builded < max_buildings) {
             return this.buildings_rent.get(builded);
@@ -112,6 +111,16 @@ public class Field extends Box{
     }
 
     /**
+     * @brief Getter de la agrupació del terreny
+     * @pre true
+     * @post Retorna el el color de la agrupació del terreny
+     * @return agrupació del terreny
+     */
+    public String getGroup() {
+        return this.group;
+    }
+
+    /**
      * @brief Afegeix \p quantity com a edificis edificats al terreny \p Field
      * @pre Es necesari saber que el usuari ja ha pagat el preu corresponent al apartament o hotel segons toqui i que
      * posible construir
@@ -119,6 +128,16 @@ public class Field extends Box{
      */
     public void build(int quantity) {
         builded = builded + quantity;
+    }
+
+    /**
+     * @brief Consulta si es pot construïr cases en el terreny
+     * @pre true
+     * @post Retorna \p true si a la propietat s'hi pot construir cases, \p false altrament.
+     * @return \p true si es pot construïr cases, \p false altrament
+     */
+    public String houseBuildableType() {
+        return this.buildable;
     }
 
     /**

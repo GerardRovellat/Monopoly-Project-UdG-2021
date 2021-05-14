@@ -221,12 +221,21 @@ public class Player {
      * @pre true
      * @post els préstecs que han finalitzat s'han retornat i gestionat els torns dels que no
      */
-    public void payLoans() {
+    public void payLoans(Board board, Movement movement) {
         for (int i=0;i<loans.size();i++){
             PlayerLoan aux = loans.get(i);
             aux.nextTurn();
-            if (aux.payLoan()) {
-                loans.remove(aux);
+            if (aux.isEnd()) {
+                boolean ableToPay = true;
+                if (aux.returnValue() > money) {
+                    ableToPay = board.isBankrupt(this, aux.returnValue(), movement);
+                }
+                if (ableToPay) {
+                    if (aux.payLoan()) {
+                        loans.remove(aux);
+                    }
+                }
+                else board.transferProperties(this,aux.getLoaner());
             }
         }
     }
@@ -238,6 +247,21 @@ public class Player {
      * @param status estat el qual es troba el Jugador.
      */
     public void setBankruptcy(boolean status){ this.bankruptcy = status; }
+
+    /**
+     * @brief calcula el numero de terrenys de la agrupacio passada que te en propietat el jugador
+     * @pre true
+     * @post el numero de terrenys de la agrupacio passada s'ha retornat
+     * @param group_name nom de la agrupacio
+     * @return numero de terrenys de la agrupacio passada
+     */
+    public int numberOfAgrupationField(String group_name) {
+        int cont = 0;
+        for (Field aux : boxes_in_property) {
+            if (aux.getGroup() == group_name) cont++;
+        }
+        return cont;
+    }
 
     /**
      * @brief toString per mostrar l'informació de Player per text.
