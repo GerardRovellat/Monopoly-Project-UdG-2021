@@ -56,7 +56,7 @@ public class CardPay extends Card{
         else {
             System.out.println("No tens suficient diners per pagar");
             if (!board.isBankrupt(current_player,quantity,aux)) {
-                board.transferProperties(current_player,null);
+                board.transferProperties(current_player,null,aux);
             }
         }
         //FALTA TRACTAR QUAN NO POT FER EL PAGAMENT

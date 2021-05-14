@@ -235,7 +235,7 @@ public class Player {
                         loans.remove(aux);
                     }
                 }
-                else board.transferProperties(this,aux.getLoaner());
+                else board.transferProperties(this,aux.getLoaner(),movement);
             }
         }
     }

@@ -52,7 +52,6 @@ public class Monopoly {
 
         while(!checkEndGame()) {
             current_player = players.get(current_player_iterator);
-            current_player.payLoans();
             //System.out.println(board.toString());
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             String temp = current_player.toString();
@@ -64,7 +63,8 @@ public class Monopoly {
                 Movement aux = new Movement(current, current_player, players, board, start_rewards, cards);
                 String current_box_type = current.getType();
                 System.out.println(board.toString());
-
+                current_player.payLoans(board,aux);
+                System.out.println("-----------------------------------------------------------------------\n");
                 switch (current_box_type) {
                     case "START":
                         aux.startAction();
@@ -82,15 +82,17 @@ public class Monopoly {
                         aux.directComand();
                         break;
                     case "EMPTY":
-                        System.out.println("EMPTY BOX");
+                        System.out.println("Ha caigut en una casella buida que no realitza cap acció\n");
                         break;
                     default:
                         // ERROR
                         break;
                 }
+                System.out.println("\n-----------------------------------------------------------------------\n");
                 if (!current_player.getBankruptcy()) {
                     System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
                     aux.optionalActions(optional_actions);
+                    System.out.println("-----------------------------------------------------------------------\n");
                 }
             }
             else {
@@ -118,7 +120,7 @@ public class Monopoly {
             position = current_player.getPosition() + position - board.getSize()+1;
         }
         else position = current_player.getPosition() + position;
-        System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position);
+        System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position + "\n");
         board.movePlayer(current_player,position,start_rewards);
 
     }
@@ -167,14 +169,14 @@ public class Monopoly {
      * @post S'ha passat al segÜent Jugador de la llista.
      */
     private void nextPlayer() {
-        System.out.println("TORN FINALITZAT");
+        System.out.println("---------- TORN FINALITZAT ----------");
         current_player_iterator++;
         if (current_player_iterator ==players.size()) current_player_iterator = 0;
         while (players.get(current_player_iterator).getBankruptcy()) {
             current_player_iterator++;
             if (current_player_iterator ==players.size()) current_player_iterator = 0;
         }
-        System.out.println("\n\nSEGUENT JUGADOR\n\n");
+        System.out.println("\n---------- SEGUENT JUGADOR ----------\n");
 
     }
 

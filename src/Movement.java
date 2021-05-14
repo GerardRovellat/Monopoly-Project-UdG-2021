@@ -309,7 +309,7 @@ public class Movement {
             System.out.println("El lloguer s'ha pagat");
         } else {
             if (!board.isBankrupt(active_player,field.getRent(),this)) {
-                board.transferProperties(active_player,field.getOwner());
+                board.transferProperties(active_player,field.getOwner(),this);
             }
         }
     }
