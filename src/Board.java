@@ -160,7 +160,7 @@ public class Board {
      * @brief Comprova si queden terrenys sense propietari
      * @pre true
      * @post s'ha retornat si queden terrenys sense propietari
-     * @return true si ueden terrenys sense propietari, false altrament
+     * @return true si queden terrenys sense propietari, false altrament
      */
     private boolean haveAvailableFields(){
         Iterator<Integer> it = board.keySet().iterator();

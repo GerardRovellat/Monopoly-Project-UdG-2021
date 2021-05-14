@@ -16,7 +16,7 @@ public class Movement {
     private Player active_player;                                       ///< Jugador que esta realitzant el moviment.
     private HashMap<Integer,String> user_actions = new HashMap<>();     ///< Accions d'usuari.
     ArrayList<Player> players;                                          ///< Llista de Jugadors jugant.
-    Board board;                                                        ///< Tauler del Monopoly.
+    Board board;                                                        ///< Tale del Monopoly.
     private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
     private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
 
@@ -323,7 +323,7 @@ public class Movement {
         Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
-        if (field.houseBuildableType() == "si" || field.houseBuildableType() == "agrupacio" ) { //board.numberOfAgrupationField()) {
+        if (field.houseBuildableType() == "si" || field.houseBuildableType() == "agrupacio" ) {
             if (field.houseBuildableType() == "agrupacio" && board.numberOfAgrupationField(field.getGroup()) == active_player.numberOfAgrupationField(field.getGroup())) {
                 printUserActions(new int[]{0, 4});
                 int action = scan.nextInt();
