@@ -18,7 +18,8 @@ public class Movement {
     ArrayList<Player> players;                                          ///< Llista de Jugadors jugant.
     Board board;                                                        ///< Tale del Monopoly.
     private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
-    private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
+    private ArrayList<Card> cards;
+    Scanner scan = new Scanner(System.in);                                    ///< Llista de targetes sort de Monopoly
 
 
 
@@ -56,7 +57,6 @@ public class Movement {
      * @post Les accions han sigut realitzades.
      */
     public void fieldAction() {
-        Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         if (field.isBought()) {
             if (field.getOwner() == active_player) build();
@@ -70,7 +70,6 @@ public class Movement {
      * @post Dona la suma de diners de l'aposta que el jugador que fa el moviment ha realitzat.
      */
     public void betAction(){
-        Scanner scan = new Scanner(System.in);
         System.out.println("Entri la quantitat de la seva aposta");
         int quantity = -1;
         while (quantity < 0 || quantity > active_player.getMoney()) {
@@ -117,7 +116,6 @@ public class Movement {
      * guardar-se o utilitzar-se, altrament s'executara.
      */
     public void luckAction(){
-        Scanner scan = new Scanner(System.in);
         System.out.println("Has caigut en una casella de sort");
         Card current = cards.get(cards.size()-1);
         cards.remove(cards.size()-1);
@@ -203,19 +201,25 @@ public class Movement {
      * @param possible_actions ArrayList amb totes les accions possibles que el Jugador pot fer.
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
-        int value = -1;
+        int value = 0;
         System.out.println("Accions Opcionals:");
         int index = 1;
         System.out.println("0 - RES");
+        ArrayList<Integer> options = new ArrayList<>();
+        options.add(0);
+
         for (optionalActions aux : possible_actions) {
             System.out.println(index + " - " + aux.toString());
+            options.add(index);
             index++;
         }
+        /*
         while (value < 0 || value > index) {
             Scanner scan = new Scanner(System.in);
             value = scan.nextInt();
             if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
-        }
+        }*/
+        value = active_player.optionSelection(options,scan,"OptionalActionSelector");
         if (value != 0) {
             possible_actions.get(value - 1).execute(players, active_player, this);
         }
@@ -258,7 +262,6 @@ public class Movement {
      * @post Si el terreny no te propietari i el jugador ho desitja, el terreny serà comprat, altrament passarà.
      */
     public void buyField() {
-        Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
         System.out.println(field.toString()); // Print field info ( name, price, rent, etc )
@@ -298,7 +301,6 @@ public class Movement {
      * @post El jugador ha pagat el lloguer del terreny on ha caigut al seu Jugador propietari.
      */
     public void payRent() {
-        Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         Player owner = field.getOwner();        // Get field owner
         System.out.println("-  La casella de terreny on ha caigut ja te propietari  -");
@@ -320,7 +322,6 @@ public class Movement {
      * @post L'acció per contruïr edificis dins d'una propietat ha estat gestionada.
      */
     public void build() {
-        Scanner scan = new Scanner(System.in);
         Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
         if (field.houseBuildableType() == "si" || field.houseBuildableType() == "agrupacio" ) {
@@ -367,7 +368,6 @@ public class Movement {
      * @param field terreny on s'ha de contruïr apartaments.
      */
     private void buildApartament(Field field) {
-        Scanner scan = new Scanner(System.in);
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
         System.out.println(field.toString());
@@ -417,7 +417,6 @@ public class Movement {
      * @param field terreny on s'ha de contruïr apartaments.
      */
     private void buildHotel(Field field) {
-        Scanner scan = new Scanner(System.in);
         if (field.hotelBuildable()) {
             int price_to_build = field.priceToBuild();
             System.out.println("Es pot construir un hotel a un preu de " + price_to_build + "€");

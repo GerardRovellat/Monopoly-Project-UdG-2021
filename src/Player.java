@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Marc Got
@@ -9,7 +8,7 @@ import java.util.List;
  * que pot fer el jugador en si.
  */
 
-public class Player {
+public abstract class Player {
     private String name;                                                ///< Nom del Jugador.
     private int money;                                                  ///< Diners del Jugador.
     private ArrayList<Field> boxes_in_property = new ArrayList<>();     ///< Llista terrenys en propietat del Jugador.
@@ -288,6 +287,11 @@ public class Player {
         else System.out.println("NO TE PRESTECS");
         return "";
     }
+
+    public abstract int optionSelection(ArrayList<Integer> options, Scanner scan,String type);
+
+    public abstract int valueSelection(int min, int max, Scanner scan,String type);
+
 }
 
 

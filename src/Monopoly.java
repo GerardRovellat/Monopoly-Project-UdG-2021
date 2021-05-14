@@ -19,7 +19,8 @@ public class Monopoly {
     private int current_player_iterator = 0;                    ///< Iterador que recorre Llista players.
     private Player current_player;                              ///< Jugador actual.
     private ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
-    private ArrayList<Card> cards;                              ///< Llista de targetes sort.
+    private ArrayList<Card> cards;
+    Scanner scan = new Scanner(System.in);                           ///< Llista de targetes sort.
 
     /**
      * @brief Constructor de Monopoly.
@@ -192,7 +193,6 @@ public class Monopoly {
         Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
         dice_result = aux;
         System.out.println("Enter per tirar els daus");
-        Scanner scan = new Scanner(System.in);
         String readString = scan.nextLine();
         System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
     }
@@ -205,14 +205,26 @@ public class Monopoly {
     private void startGame() {
         System.out.println("JOC DE MONOPOLY INICIAT");
         System.out.println("ENTRA EL NUMERO DE JUGADORS:");
-        Scanner scan = new Scanner(System.in);
         int number_of_players = scan.nextInt();
-        System.out.println("ENTRA EL NOM DE CADA JUGADOR");
         for (int i=0;i<number_of_players;i++) {
+            System.out.println("ENTRA EL NOM DEL SEGUENT JUGADOR");
             String name = scan.next();
-            Player aux = new Player(name,initial_money,0);
-            players.add(aux);
-            board.addPlayer(aux);
+            System.out.println("El jugador es un usuari o una CPU:");
+            System.out.println("0. Usuari");
+            System.out.println("1. CPU");
+            System.out.println("Seleccioni la opcio que desitgi:");
+            int value = scan.nextInt();
+            if (value == 0) {
+                Player aux = new TerminalPlayer(name,initial_money,0);
+                players.add(aux);
+                board.addPlayer(aux);
+            }
+            else if (value == 1){
+                Player aux = new CPUPlayer(name,initial_money,0);
+                players.add(aux);
+                board.addPlayer(aux);
+            }
+            else System.out.println("ERROR!!!!!");
         }
     }
 
