@@ -32,7 +32,7 @@ public class CardGet extends Card{
         Scanner scan = new Scanner(System.in);
         System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
         int option_nr = 0;
-        ArrayList<Integer> not_disponible = new ArrayList<Integer>();
+        ArrayList<Integer> not_disponible = new ArrayList<>();
         for (Player player : players){
             if (current_player != player && player.haveFields() ) {
                 System.out.println(option_nr + "- " + player.getName());
@@ -42,35 +42,39 @@ public class CardGet extends Card{
             }
             option_nr++;
         }
-        try {
-            System.out.println("Seleccioni el jugador");
-            option_nr = scan.nextInt();
-            while (not_disponible.contains(option_nr)) {
-                System.out.println("Error, sel·leccioni un jugador de la llista");
+        if (players.size() != not_disponible.size()) {
+            try {
+                System.out.println("Seleccioni el jugador");
+                //option_nr = scan.nextInt();
+                option_nr = current_player.optionSelection("cardGetPlayerSelect", null, null, not_disponible, players, null);
+                while (not_disponible.contains(option_nr)) {
+                    System.out.println("Error, sel·leccioni un jugador de la llista");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Format incorrecte. Torna-hi.");
             }
-        }
-        catch (NumberFormatException e){
-            System.out.println("Format incorrecte. Torna-hi.");
-        }
-        Player choosed = players.get(option_nr);
-        int field_nr = 0;
-        for(Field field : choosed.getFields()){
-            System.out.println(field_nr+"- "+field.getName()+" ("+field.getPrice()+")");
-        }
-        try {
-            System.out.println("Seleccioni un terreny");
-            field_nr = scan.nextInt();
-            while (field_nr < 0 && field_nr > choosed.getFields().size()) {
-                System.out.println("Error, sel·leccioni un terreny correcte");
+            Player choosed = players.get(option_nr);
+            int field_nr = 0;
+            for (Field field : choosed.getFields()) {
+                System.out.println(field_nr + "- " + field.getName() + " (" + field.getPrice() + ")");
+                field_nr++;
             }
+            try {
+                System.out.println("Seleccioni un terreny");
+                //field_nr = scan.nextInt();
+                field_nr = current_player.optionSelection("cardGetFieldSelect", choosed, null, null, null, null);
+                while (field_nr < 0 && field_nr > choosed.getFields().size()) {
+                    System.out.println("Error, sel·leccioni un terreny correcte");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Format incorrecte. Torna-hi.");
+            }
+            Field field_choosed = choosed.getFields().get(field_nr);
+            current_player.addBox(field_choosed);
+            choosed.removeBox(field_choosed);
+            System.out.println("En " + current_player.getName() + " ha adquirit " + field_choosed.getName());
         }
-        catch (NumberFormatException e){
-            System.out.println("Format incorrecte. Torna-hi.");
-        }
-        Field field_choosed = choosed.getFields().get(field_nr);
-        current_player.addBox(field_choosed);
-        choosed.removeBox(field_choosed);
-        System.out.println("En "+current_player.getName()+" ha adquirit "+field_choosed.getName());
+        else System.out.println("No hi ha cap jugador amb propietats per rebre");
     }
 
     /**

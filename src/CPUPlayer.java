@@ -18,25 +18,54 @@ public class CPUPlayer extends Player{
         startTypes();
     }
 
-    public int optionSelection(String type,Player player, Field field) {
+    public int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card) {
+        int return_value;
         switch (type) {
             case "optionalActionSelector":
-                return optionalActionSelector(player);
+                //return_value = optionalActionSelector(player);
+                return_value = 0;
+                break;
             case "start":
-                return start(player);
+                return_value = start(player);
+                break;
             case "buy":
-                return buy(player,field);
+                return_value = buy(player,field);
+                break;
             case "buyConfirmation":
-                return 0;
+                return_value = 0;
+                break;
             case "build":
-                return build(player,field);
+                return_value = build(player,field);
+                break;
             case "betQuantity":
-                return betQuantity(player);
+                return_value = betQuantity(player);
+                break;
             case "betValue":
-                return betValue(betQuantity(player));
+                return_value = betValue(betQuantity(player));
+                break;
+            case "cardGetPlayerSelect":
+                return_value = cardGetPlayerSelect(options,players);
+                break;
+            case "cardGetFieldSelect":
+                return_value = cardGetFieldSelect(player);
+                break;
+            case "cardGivePlayerSelect":
+                return_value = cardGivePlayerSelect(options,players);
+                break;
+            case "cardGiveFieldSelect":
+                return_value = cardGiveFieldSelect(player);
+                break;
+            case "cardPayPlayerSelect":
+                return_value = cardPayPlayerSelect(player,players);
+                break;
+            case "postposableLuckCardChoice":
+                return_value = postposableLuckCardChoice(card);
+                break;
             default:
-                return 0;
+                return_value = 0;
         }
+        System.out.println("CPU CHOCIE: " + return_value);
+        return return_value;
     }
 
     public int integerValueSelection(int min, int max, String type, Player player) {
@@ -55,20 +84,22 @@ public class CPUPlayer extends Player{
     }
 
     private void startTypes() {
-        types.put(1,"optionalActionSelector");
-        types.put(2,"start");
+        types.put(0,"optionalActionSelector");
+        types.put(1,"start");
 
-        types.put(3,"buy");
-        types.put(4,"buyConfirmation");
-        types.put(5,"build");
+        types.put(2,"buy");
+        types.put(3,"buyConfirmation");
+        types.put(4,"build");
 
-        types.put(6,"betQuantity");
-        types.put(7,"betValue");
+        types.put(5,"betQuantity");
+        types.put(6,"betValue");
+        types.put(7,"postposableLuckCardChoice");
 
-        // COMANDES DIRECTES
-        types.put(3,"Build");
-        types.put(3,"Build");
-        types.put(3,"Build");
+        // CardGet
+        types.put(8,"cardGetPlayerSelect");
+        types.put(9,"cardGetFieldSelect");
+
+        types.put(10,"cardPayPlayerSelect");
     }
 
     private int random(ArrayList<Integer> options) {
@@ -106,8 +137,8 @@ public class CPUPlayer extends Player{
     }
 
     private int start(Player player) {
-        if (player.getMoney() < 15000) return 0;
-        else return 1;
+        if (player.getMoney() < 15000) return 1;
+        else return 2;
     }
 
     private int buy(Player player,Field field) {
@@ -134,6 +165,89 @@ public class CPUPlayer extends Player{
         if (betQuantity < 5000) return rand.nextInt(11-8) +8; // 8->11
         else if (betQuantity < 10000) return rand.nextInt(9-5) +5; // 5->9
         return rand.nextInt(7-3) +3; // 3->7
+    }
+
+    private int cardGetPlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
+        int min_fields = -1;
+        int player_chosen = -1;
+        for (int i=0;i<players.size();i++) {
+            if (!options.contains(i) && players.get(i).getFields().size() > min_fields) {
+                min_fields = players.get(i).getFields().size();
+                player_chosen = i;
+            }
+        }
+        if (player_chosen == -1) {
+            System.out.println("HI HA HAGUT UN ERROR");  // Introduir exception
+        }
+        return player_chosen;
+    }
+
+    private int cardGetFieldSelect (Player fields_owner) {
+        ArrayList<Field> fields = fields_owner.getFields();
+        int iterator = 0;
+        int result = 0;
+        int value = fields.get(0).getPrice();
+        for (Field aux : fields) {
+            if (aux.getPrice() > value) result = iterator;
+            iterator++;
+        }
+        return result;
+    }
+
+    private int cardGivePlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
+        int min_fields = -1;
+        int player_chosen = -1;
+        for (int i=0;i<players.size();i++) {
+            if (!options.contains(i) && players.get(i).getFields().size() > min_fields) {
+                min_fields = players.get(i).getFields().size();
+                player_chosen = i;
+            }
+        }
+        if (player_chosen == -1) {
+            System.out.println("HI HA HAGUT UN ERROR");  // Introduir exception
+        }
+        return player_chosen;
+    }
+
+    private int cardGiveFieldSelect (Player fields_owner) {
+        ArrayList<Field> fields = fields_owner.getFields();
+        int iterator = 0;
+        int result = 0;
+        int value = fields.get(0).getPrice();
+        for (Field aux : fields) {
+            if (aux.getPrice() < value) {
+                result = iterator;
+                value = aux.getPrice();
+            }
+            iterator++;
+        }
+        return result;
+    }
+
+    // PRE: minim 2 jugadors
+    private int cardPayPlayerSelect (Player current_player,ArrayList<Player> players) {
+        int result = 0;
+        int min_value = -1;
+        if (players.get(0) != current_player) min_value = players.get(0).getMoney();
+        else {
+            min_value = players.get(1).getMoney();
+            result = 1;
+        }
+
+        for (Player aux : players) {
+            if (aux != current_player && aux.getMoney() < min_value) {
+                result = players.indexOf(aux);
+                min_value = aux.getMoney();
+            }
+        }
+
+        if (result == -1 || min_value == -1) ;//Throw error
+        return result;
+    }
+
+    private int postposableLuckCardChoice(Card card) {
+        if (card.getType() == "CHARGE" || card.getType() == "GET" || card.getType() == "GO") return 1;
+        else return 0;
     }
 
 }

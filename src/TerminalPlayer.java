@@ -17,7 +17,7 @@ public class TerminalPlayer extends Player{
         super(name, initial_money, initial_position,"USER");
     }
 
-    public int optionSelection(String type, Player player, Field field) {
+    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card) {
         return scan.nextInt();
     }
 
