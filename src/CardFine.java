@@ -60,7 +60,9 @@ public class CardFine extends Card{
                     board.transferProperties(current_player,null,aux);
                     end = true;// la funcio ja ha enviat el jugador a la bancarrota
                 }
-                else System.out.println("Has aconseguit els diners suficients");
+                else {
+                    System.out.println("Has aconseguit els diners suficients");
+                }
             }
         }
     }

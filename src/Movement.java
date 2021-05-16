@@ -73,7 +73,7 @@ public class Movement {
         System.out.println("Entri la quantitat de la seva aposta");
         int quantity = -1;
         while (quantity < 0 || quantity > active_player.getMoney()) {
-            quantity = active_player.optionSelection("betQuantity",active_player,null,null,null,null);
+            quantity = active_player.optionSelection("betQuantity",active_player,null,null,null,null,0);
             if (quantity < 0 || quantity > active_player.getMoney()) {
                 System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 0 i " + active_player.getMoney() + " )");
                 System.out.println("Torni a provar:");
@@ -83,7 +83,7 @@ public class Movement {
         System.out.println("Entri el valor de la seva aposta");
         int bet = -1;
         while( bet < 3 || bet > 12) {
-            bet = active_player.optionSelection("betValue",active_player,null,null,null,null);
+            bet = active_player.optionSelection("betValue",active_player,null,null,null,null,0);
             if (bet < 3 || bet > 12) {
                 System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 3 i 12 )");
                 System.out.println("Torni a provar:");
@@ -126,7 +126,7 @@ public class Movement {
             int value = -1;
             while (value < 0 || value > 1 ) {
                 //value = scan.nextInt();
-                value = active_player.optionSelection("postposableLuckCardChoice",null,null,null,null,current);
+                value = active_player.optionSelection("postposableLuckCardChoice",null,null,null,null,current,0);
                 if (value < 0 || value > 1 ) System.out.println("Valor entrat incorrecte. Torni a provar:");
             }
             if (value == 0) {
@@ -217,7 +217,7 @@ public class Movement {
             value = scan.nextInt();
             if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
         }*/
-        value = active_player.optionSelection("optionalActionSelector",active_player,null,null,null,null);
+        value = active_player.optionSelection("optionalActionSelector",active_player,null,null,null,null,0);
         if (value != 0) {
             possible_actions.get(value - 1).execute(players, active_player, this);
         }
@@ -270,7 +270,7 @@ public class Movement {
         System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
         for (boolean end = false; !end; ) {
             //int value = scan.nextInt();
-            int value = active_player.optionSelection("buy",active_player,field,null,null,null);
+            int value = active_player.optionSelection("buy",active_player,field,null,null,null,0);
             if (value == 1) {
                 // Comprar
                 if (active_player.getMoney() >= field.getPrice()) {
@@ -282,7 +282,7 @@ public class Movement {
                     System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
                     int confirmation_value = -1;
                     while(confirmation_value != 0 && confirmation_value != 1) {
-                        confirmation_value = active_player.optionSelection("buyConfirmation",active_player,field,null,null,null);
+                        confirmation_value = active_player.optionSelection("confirmation",active_player,field,null,null,null,0);
                         if (confirmation_value == 0) {
                             active_player.pay(field.getPrice());
                             active_player.addBox(field);
@@ -337,7 +337,8 @@ public class Movement {
                 System.out.println("0. Res");
                 System.out.println("1. Edificar");
                 System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-                int action = scan.nextInt();
+                //int action = scan.nextInt();
+                int action = active_player.optionSelection("buildChoice",active_player,field,null,null,null,0);
                 switch (action) {
                     case 0:
                         System.out.println("Accio selecionada: 0. Res");
@@ -350,7 +351,7 @@ public class Movement {
                             System.out.println("1. Apartaments");
                             System.out.println("2. Hotel");
                             System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-                            option = active_player.optionSelection("build",active_player,field,null,null,null);
+                            option = active_player.optionSelection("build",active_player,field,null,null,null,0);
                             if (option == 0) {
                                 System.out.println("FINAL DE EDIFICACIÓ");
                             } else if (option == 1) {
@@ -397,7 +398,8 @@ public class Movement {
                     int quantity = 0;
                     for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
                         System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
-                        quantity = scan.nextInt();      // Get number of apartaments to build
+                        //quantity = scan.nextInt();      // Get number of apartaments to build
+                        quantity = active_player.optionSelection("buildApartment",active_player,field,null,null,null,max_apartaments_buildable);
                         if (quantity <= max_apartaments_buildable)
                             end = true;      // Check if posible to build that many apartaments
                         else
@@ -405,13 +407,17 @@ public class Movement {
                     }
                     int final_price = quantity * price_to_build;        // Calculate final price
                     System.out.println("S'edificaràn " + quantity + " apartaments a un preu total de " + final_price + "€" + " i l'hi quedaràn " + (active_player.getMoney() - final_price) + "€");
-                    printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
+                    System.out.println("Accions displonibles:");
+                    System.out.println("0. Confirmar");
+                    System.out.println("1. Anular");
+                    System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
                     for (boolean end = false; !end; ) {       // Check if actions value is correct
-                        int value = scan.nextInt();         // Get action number
-                        if (value == 1 || value == 2)
+                        //int value = scan.nextInt();         // Get action number
+                        int value = active_player.optionSelection("confirmation",active_player,field,null,null,null,0);
+                        if (value == 0 || value == 1)
                             end = true;       // Check if actions value is correct
-                        if (value == 2) System.out.println("Operacio cancelada");
-                        else if (value == 1) {
+                        if (value == 1) System.out.println("Operacio cancelada");
+                        else if (value == 0) {
                             field.build(quantity);          // Build x apartaments (x = quantity)
                             active_player.pay(final_price);         // Modify active player money ( money - final price )
                             System.out.println("Operacio realitzada");
@@ -437,13 +443,16 @@ public class Movement {
             if (active_player.getMoney() >= price_to_build) {
                 System.out.println("Actualment disposa de " + active_player.getMoney() + "€");
                 System.out.println("S'edificarà un hotel a un preu total de " + price_to_build + "€" + " i l'hi quedaràn " + (active_player.getMoney() - price_to_build) + "€");
-                printUserActions(new int[]{1, 2});      // Actions confirmation actions ( confirmate, denegate )
+                System.out.println("Accions displonibles:");
+                System.out.println("0. Confirmar");
+                System.out.println("1. Anular");
+                System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
                 for (boolean end = false; !end; ) {       // Check if actions value is correct
-                    int value = scan.nextInt();         // Get action number
-                    if (value == 1 || value == 2)
+                    int value = active_player.optionSelection("confirmation",active_player,field,null,null,null,0);
+                    if (value == 0 || value == 1)
                         end = true;       // Check if actions value is correct
-                    if (value == 2) System.out.println("Operacio cancelada");
-                    else if (value == 1) {
+                    if (value == 1) System.out.println("Operacio cancelada");
+                    else if (value == 0) {
                         field.build(1);          // Build the hotel (quantity = 1)
                         active_player.pay(price_to_build);         // Modify active player money ( money - hotel price )
                         System.out.println("Operacio realitzada");
@@ -452,7 +461,7 @@ public class Movement {
                 }
             } else System.out.println("No te suficients diners per construir el hotel");
         }
-        System.out.println("Encara no es pot construir un hotel");
+        else System.out.println("Encara no es pot construir un hotel");
     }
 
     /**

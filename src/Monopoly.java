@@ -145,11 +145,17 @@ public class Monopoly {
      * @return \p true si s'ha acabat, \p false altrament.
      */
     private Boolean checkEndGame() {
-        boolean end = true;
-        for (Player aux : players) {
-            if (!aux.getBankruptcy()) end = false;
+        ArrayList<Player> out = new ArrayList<>();
+        for (Player player : players) {
+            if (player.getBankruptcy()) out.add(player);
+            if (player.getMoney()>2000000) {
+                System.out.println("S'ha asolit el maxim de diners posibles i per tant s'acaba la partida");
+                return true;
+            }
         }
-        return end;
+        if (players.size()-out.size()>1) return false;
+        else return true;
+
     }
 
     /**
@@ -243,17 +249,18 @@ public class Monopoly {
             if (!player.getBankruptcy()) winners.add(player);
         }
         if (winners.size() == 1) {
-            System.out.println(winners.get(0).getName() + "Ha guanyat la partida");
+            System.out.println(winners.get(0).getName() + " Ha guanyat la partida");
         }
         else if (winners.size() > 1){
             Player winner = winners.get(0);
-            for (Player player : winners) {
-                if (player.getMoney() > winner.getMoney()) {
-                    winners.remove(player);
-                }
-                else if (player.getMoney() > winner.getMoney()) {
-                    winners.remove(winner);
-                    winner = player;
+            for (Player player : players) {
+                if (winners.contains(player)) {
+                    if (player.getMoney() < winner.getMoney()) {
+                        winners.remove(player);
+                    } else if (player.getMoney() > winner.getMoney()) {
+                        winners.remove(winner);
+                        winner = player;
+                    }
                 }
             }
             if (winners.size()>1) {
@@ -264,9 +271,10 @@ public class Monopoly {
                 System.out.println(winners.get(0).getName() + "Ha guanyat la partida");
             }
         }
-        else ;// Throw error
+        else ; // Throw error
         System.out.println("\nRESUM FINAL DELS JUGADORS:");
         printPlayers(false);
+        System.out.println("\n\n----------------------------------------\n\n");
     }
 
     /**
