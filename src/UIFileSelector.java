@@ -6,10 +6,18 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * @author Gerard Rovellat
+ * @file UIFileSelector.java
+ * @class UIFileSelector
+ * @brief Implementació d'un selector de fitxers gràfic per poder jugar al Monopoly
+ */
+
 public class UIFileSelector extends JFrame {
 
-    private String rules_name;
-    private String board_name;
+    private String rules_name;///<
+    private String board_name;///<
+    private boolean status = false;///< Estat de
 
     public UIFileSelector(){
         setSize(750,750);
@@ -37,7 +45,6 @@ public class UIFileSelector extends JFrame {
         browse_board_button.setText("Browse");
         browse_rules_button.setBounds(150, 20, 100, 30);
         browse_board_button.setBounds(500, 20, 100, 30);
-        //button.setEnabled(false); desavtivar el boto
         panel.add(browse_rules_button);
         panel.add(browse_board_button);
         JTextField rules_field = new JTextField();
@@ -114,10 +121,12 @@ public class UIFileSelector extends JFrame {
         next_button.setText("Següent");
         next_button.setBounds(600, 650, 100, 30);
         panel.add(next_button);
+        next_button.setEnabled(true);
         ActionListener next_action = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //dispose();
+                dispose();
+                status = true;
             }
         };
         next_button.addActionListener(next_action);
@@ -130,5 +139,7 @@ public class UIFileSelector extends JFrame {
     public String getBoardFileName(){
         return board_name;
     }
+
+    public boolean getStatus(){ return status; }
 
 }

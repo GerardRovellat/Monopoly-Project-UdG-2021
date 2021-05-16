@@ -17,14 +17,16 @@ public class JocMonopoly {
             if(args.length == 1){
                 if(args[0].equals("-h")){
                     System.out.println("------------------- AJUDA DE EXECUCIÓ DE L'APLICACIÓ -------------------");
+                    System.out.println("Utilització: java -jar JocMonopoly.jar [Fitxer_regles] [Fitxer_tauler]");
                     System.out.println("\t-h: Mostra l'ajuda per la inicialització de l'aplicació");
                     System.out.println("\t-s: Obra un selector grafic per poder obrir el joc i comença la execució");
-                    System.out.println("\tfitxer_regles fitxer_tauler: Llegeix els dos fitxers passats per parametre" +
-                            " respectivament per inicialitzar el joc del Monopoly. ");
+                    System.out.println("\t-Fitxer_regles: Fitxer tipus JSON de la configuració de regles del Monopoly.");
+                    System.out.println("\t-Fitxer_tauler: Fitxer tipus JSON de la configuració del tauler del Monopoly");
                 }
                 else if(args[0].equals("-s")){
                     UIFileSelector fileSelector = new UIFileSelector();
                     fileSelector.setVisible(true);
+                    while(fileSelector.getStatus() != true) Thread.sleep(100);
                     JSONManager json_manager = new JSONManager(fileSelector.getRulesFileName(),fileSelector.getBoardFileName());
                     Monopoly monopoly = json_manager.readFile();
                     monopoly.play();
@@ -39,7 +41,7 @@ public class JocMonopoly {
         }
         catch (Exception e){
             System.err.println("S'ha produït una excepció");
-            e.printStackTrace();
+            System.exit(-1);
         }
     }
 
