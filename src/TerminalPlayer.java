@@ -25,7 +25,7 @@ public class TerminalPlayer extends Player{
         return scan.nextInt();
     }
 
-    public String stringValueSelection(int min, int max, String type, Player player) {
+    public String stringValueSelection(String type, Player player, Field field, int value) {
         return scan.next();
     }
 }

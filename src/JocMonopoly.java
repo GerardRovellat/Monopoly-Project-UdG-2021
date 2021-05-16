@@ -41,6 +41,7 @@ public class JocMonopoly {
         }
         catch (Exception e){
             System.err.println("S'ha produït una excepció");
+            e.printStackTrace();
             System.exit(-1);
         }
     }

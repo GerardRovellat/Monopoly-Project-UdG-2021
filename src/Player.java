@@ -304,7 +304,7 @@ public abstract class Player {
 
     public abstract int integerValueSelection(int min, int max, String type, Player player);
 
-    public abstract String stringValueSelection(int min, int max, String type, Player player);
+    public abstract String stringValueSelection(String type, Player player, Field field, int value);
 
 }
 

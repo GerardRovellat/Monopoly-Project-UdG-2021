@@ -58,7 +58,8 @@ public class Buy implements optionalActions{
             try {
                 System.out.println("Selecioni la opcio que desitgi:");
                 while (value < 0 || value > cont-1) {
-                    value = scan.nextInt();
+                    //value = scan.nextInt();
+                    value = current_player.optionSelection("buyPlayerSelect",current_player,null,null,players,null,0);
                     if (value < 0 || value > cont-1)
                         System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
                 }
@@ -79,7 +80,8 @@ public class Buy implements optionalActions{
                     System.out.println("Selecioni la opcio que desitgi:");
                     value = -1;
                     while (value < 0 || value > cont - 1) {
-                        value = scan.nextInt();
+                        //value = scan.nextInt();
+                        value = current_player.optionSelection("buyFieldSelect",buy_player,null,null,null,null,0);
                         if (value < 0 || value > cont - 1)
                             System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
                     }
@@ -92,7 +94,7 @@ public class Buy implements optionalActions{
                 try {
                     while (current_offer <= 0 || current_offer > current_player.getMoney()){
                         System.out.println("Indiqui la oferta inicial:");
-                        current_offer = scan.nextInt();
+                        current_offer = current_player.optionSelection("buyInitalOffer",current_player,buy_field,null,null,null,0);
                         if (current_offer <= 0 || current_offer > current_player.getMoney()) System.out.println("valor entrat incorrecte. Ha de ser superior a 0 i inferior a " + current_player.getMoney());
                     }
                 }
@@ -106,7 +108,10 @@ public class Buy implements optionalActions{
                 Player offer_active_player = buy_player;
                 while (!buy_final) {
                     System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
-                    String tmp = scan.next();
+                    //String tmp = scan.next();
+                    String tmp = "";
+                    if (offer_active_player == current_player) tmp = current_player.stringValueSelection("buyBuyerOffer",offer_active_player,buy_field,current_offer);
+                    else tmp = buy_player.stringValueSelection("buySellerOffer",offer_active_player,buy_field,current_offer);
                     if (tmp.equals("ok")) {
                         buy_final = true;
                     } else if (tmp.equals("no")) {

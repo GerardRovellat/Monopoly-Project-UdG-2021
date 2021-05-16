@@ -57,6 +57,7 @@ public class LuckCard implements optionalActions{
             }
             aux.runCard(current_player.getLuckCards().get(card_nr-1));
             aux.getCards().add(0,current_player.getLuckCards().get(card_nr-1));
+            current_player.removeLuckCard(current_player.getLuckCards().get(card_nr-1));
         }
         return true;
     }
