@@ -15,18 +15,19 @@ public class JocMonopoly {
     public static void main(String[] args){
         try{
             if(args.length == 1){
-                if(args[1].equals("-h")){
+                if(args[0].equals("-h")){
                     System.out.println("------------------- AJUDA DE EXECUCIÓ DE L'APLICACIÓ -------------------");
                     System.out.println("\t-h: Mostra l'ajuda per la inicialització de l'aplicació");
                     System.out.println("\t-s: Obra un selector grafic per poder obrir el joc i comença la execució");
                     System.out.println("\tfitxer_regles fitxer_tauler: Llegeix els dos fitxers passats per parametre" +
                             " respectivament per inicialitzar el joc del Monopoly. ");
                 }
-                else if(args[1].equals("-s")){
-                    //FER SELECTOR GRÀFIC
-                    //JSONManager json_manager = new JSONManager(args[0],args[1]);
-                    //Monopoly monopoly = json_manager.readFile();
-                    //monopoly.play();
+                else if(args[0].equals("-s")){
+                    UIFileSelector fileSelector = new UIFileSelector();
+                    fileSelector.setVisible(true);
+                    JSONManager json_manager = new JSONManager(fileSelector.getRulesFileName(),fileSelector.getBoardFileName());
+                    Monopoly monopoly = json_manager.readFile();
+                    monopoly.play();
                 }
                 else System.err.println("Parametres entrats incorrectes, la aplicació es tancara...");
             }
@@ -42,5 +43,5 @@ public class JocMonopoly {
         }
     }
 
-
 }
+
