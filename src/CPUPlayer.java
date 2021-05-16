@@ -164,7 +164,8 @@ public class CPUPlayer extends Player{
 
     private int build(Player player, Field field) {
         if (field.hotelBuildable()) {
-            if (player.getMoney()-field.priceToBuild() > 2000) return 2;
+            //if (player.getMoney()-field.priceToBuild() > 2000) return 2;
+            if (buildApartment(player,field,10) > 0) return 2;
         }
         else if (field.houseBuildable()) {
             if (player.getMoney()-field.priceToBuild() > 2000) return 1;
@@ -180,14 +181,15 @@ public class CPUPlayer extends Player{
 
 
     private int betQuantity(Player player) {
-        return (player.getMoney()/10) ; //10% de aposta
+        return (player.getMoney()/1) ; //10% de aposta
     }
 
     private int betValue(int betQuantity) {
-        Random rand = new Random();
+        /*Random rand = new Random();
         if (betQuantity < 5000) return rand.nextInt(11-8) +8; // 8->11
         else if (betQuantity < 10000) return rand.nextInt(9-5) +5; // 5->9
-        return rand.nextInt(7-3) +3; // 3->7
+        return rand.nextInt(7-3) +3; // 3->7*/
+        return 12;
     }
 
     private int cardGetPlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {

@@ -48,88 +48,97 @@ public class Buy implements optionalActions{
         System.out.println("A QUIN JUGADOR L'HI VOL FER LA OFERTA?:");
         int cont = 0;
         for (Player aux : players) {
-            if (aux.getName() != current_player.getName()) {
+            if (aux.getName() != current_player.getName() && aux.getFields().size() > 0) {
                 System.out.println(cont + ". " + aux.getName());
-            }
-            cont++;
-        }
-        int value = -1;
-        try {
-            System.out.println("Selecioni la opcio que desitgi:");
-            while (value < 0 || value > cont) {
-                value = scan.nextInt();
-                if (value < 0 || value > cont)
-                    System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
-            }
-        }
-        catch (NumberFormatException e){
-            System.out.println("Format incorrecte. Torna-hi.");
-        }
-        Player buy_player = players.get(value);
-        ArrayList<Field> fields = buy_player.getFields();
-        if (fields.size()!=0) {
-            System.out.println("Selecioni la propietat de " + buy_player.getName() + " que desitja comprar:");
-            cont = 0;
-            for (Field aux : fields) {
-                System.out.println(cont + ". " + aux.getName() + " | " + aux.getPrice());
                 cont++;
             }
+        }
+        if (cont != 0) {
+            int value = -1;
             try {
                 System.out.println("Selecioni la opcio que desitgi:");
-                value = -1;
-                while (value < 0 || value > cont) {
+                while (value < 0 || value > cont-1) {
                     value = scan.nextInt();
-                    if (value < 0 || value > cont)
-                        System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + cont + " ). Torni a provar:");
+                    if (value < 0 || value > cont-1)
+                        System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
                 }
-            }
-            catch(NumberFormatException e){
-                System.out.println("Format incorrecte. Torna-hi.");
-            }
-            Field buy_field = fields.get(value);
-            int current_offer = 0; // -1 if not
-            try {
-                System.out.println("Indiqui la oferta inicial:");
-                current_offer = scan.nextInt();
             }
             catch (NumberFormatException e){
                 System.out.println("Format incorrecte. Torna-hi.");
             }
-            System.out.println("Oferta realitzada.");
-            System.out.println("Comença la negociació");
-            boolean buy_final = false;
-            System.out.println(current_player.getName() + "> COMPRAR " + buy_field.getName() + " " + current_offer);
-            Player offer_active_player = buy_player;
-            while (!buy_final) {
-                System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
-                String tmp = scan.next();
-                if (tmp.equals("ok")) {
-                    buy_final = true;
-                } else if (tmp.equals("no")) {
-                    buy_final = true;
-                    current_offer = -1;
-                } else if (Integer.parseInt(tmp) < 0 || Integer.parseInt(tmp) >= current_player.getMoney()) {
-                    System.out.println("Valor incorrecte, la oferta ha de superior a 0 i inferior a " + current_player.getMoney());
-                } else {
-                    current_offer = Integer.parseInt(tmp);
-                    if (offer_active_player == buy_player) offer_active_player = current_player;
-                    else offer_active_player = buy_player;
+            Player buy_player = players.get(value);
+            ArrayList<Field> fields = buy_player.getFields();
+            if (fields.size()!=0) {
+                System.out.println("Selecioni la propietat de " + buy_player.getName() + " que desitja comprar:");
+                cont = 0;
+                for (Field aux : fields) {
+                    System.out.println(cont + ". " + aux.getName() + " | " + aux.getPrice());
+                    cont++;
+                }
+                try {
+                    System.out.println("Selecioni la opcio que desitgi:");
+                    value = -1;
+                    while (value < 0 || value > cont - 1) {
+                        value = scan.nextInt();
+                        if (value < 0 || value > cont - 1)
+                            System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
+                    }
+                }
+                catch(NumberFormatException e){
+                    System.out.println("Format incorrecte. Torna-hi.");
+                }
+                Field buy_field = fields.get(value);
+                int current_offer = 0; // -1 if not
+                try {
+                    while (current_offer <= 0 || current_offer > current_player.getMoney()){
+                        System.out.println("Indiqui la oferta inicial:");
+                        current_offer = scan.nextInt();
+                        if (current_offer <= 0 || current_offer > current_player.getMoney()) System.out.println("valor entrat incorrecte. Ha de ser superior a 0 i inferior a " + current_player.getMoney());
+                    }
+                }
+                catch (NumberFormatException e){
+                    System.out.println("Format incorrecte. Torna-hi.");
+                }
+                System.out.println("Oferta realitzada.");
+                System.out.println("Comença la negociació");
+                boolean buy_final = false;
+                System.out.println(current_player.getName() + "> COMPRAR " + buy_field.getName() + " " + current_offer);
+                Player offer_active_player = buy_player;
+                while (!buy_final) {
+                    System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
+                    String tmp = scan.next();
+                    if (tmp.equals("ok")) {
+                        buy_final = true;
+                    } else if (tmp.equals("no")) {
+                        buy_final = true;
+                        current_offer = -1;
+                    } else if (Integer.parseInt(tmp) < 0 || Integer.parseInt(tmp) >= current_player.getMoney()) {
+                        System.out.println("Valor incorrecte, la oferta ha de superior a 0 i inferior a " + current_player.getMoney());
+                    } else {
+                        current_offer = Integer.parseInt(tmp);
+                        if (offer_active_player == buy_player) offer_active_player = current_player;
+                        else offer_active_player = buy_player;
+                    }
+                }
+                if (current_offer == -1) {
+                    System.out.println("Les negociacions no han concluit i per tant la compra no es farà efectiva");
+                    is_possible = false;
+                }
+                else {
+                    current_player.pay(current_offer);
+                    buy_player.charge(current_offer);
+                    current_player.addBox(buy_field);
+                    buy_player.removeBox(buy_field);
+                    System.out.println("La venda s'ha fet efectiva, per un preu de " + current_offer + "€");
                 }
             }
-            if (current_offer == -1) {
-                System.out.println("Les negociacions no han concluit i per tant la compra no es farà efectiva");
+            else{
+                System.out.println("Aquest jugador no te cap propietat en posesió per poder comprar");
                 is_possible = false;
             }
-            else {
-                current_player.pay(current_offer);
-                buy_player.charge(current_offer);
-                current_player.addBox(buy_field);
-                buy_player.removeBox(buy_field);
-                System.out.println("La venda s'ha fet efectiva, per un preu de " + current_offer + "€");
-            }
         }
-        else{
-            System.out.println("Aquest jugador no te cap propietat en posesió per poder comprar");
+        else {
+            System.out.println("No hi ha cap jugador amb propietats per comprar");
             is_possible = false;
         }
         return is_possible;

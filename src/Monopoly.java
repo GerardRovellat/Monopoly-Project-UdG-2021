@@ -271,7 +271,7 @@ public class Monopoly {
                 System.out.println(winners.get(0).getName() + "Ha guanyat la partida");
             }
         }
-        else ;// Throw error
+        else ; // Throw error
         System.out.println("\nRESUM FINAL DELS JUGADORS:");
         printPlayers(false);
         System.out.println("\n\n----------------------------------------\n\n");
