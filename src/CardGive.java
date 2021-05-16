@@ -90,7 +90,7 @@ public class CardGive extends Card{
             try {
                 System.out.println("Seleccioni el jugador");
                 //option_nr = scan.nextInt();
-                option_nr = current_player.optionSelection("cardGivePlayerSelect", null, null, not_disponible, players, null);
+                option_nr = current_player.optionSelection("cardGivePlayerSelect", null, null, not_disponible, players, null,0);
                 while (not_disponible.contains(option_nr)) {
                     System.out.println("Error, sel·leccioni un jugador de la llista");
                 }
@@ -106,7 +106,7 @@ public class CardGive extends Card{
             try {
                 System.out.println("Seleccioni un terreny");
                 //field_nr = scan.nextInt();
-                field_nr = current_player.optionSelection("cardGiveFieldSelect", current_player, null, null, null, null);
+                field_nr = current_player.optionSelection("cardGiveFieldSelect", current_player, null, null, null, null,0);
                 while (field_nr < 0 && field_nr > current_player.getFields().size()) {
                     System.out.println("Error, sel·leccioni un terreny correcte");
                 }

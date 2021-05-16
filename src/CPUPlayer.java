@@ -18,7 +18,7 @@ public class CPUPlayer extends Player{
         startTypes();
     }
 
-    public int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card) {
+    public int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int max) {
         int return_value;
         switch (type) {
             case "optionalActionSelector":
@@ -31,11 +31,17 @@ public class CPUPlayer extends Player{
             case "buy":
                 return_value = buy(player,field);
                 break;
-            case "buyConfirmation":
+            case "confirmation":
                 return_value = 0;
+                break;
+            case "buildChoice":
+                return_value = buildChoice(player,field);
                 break;
             case "build":
                 return_value = build(player,field);
+                break;
+            case "buildApartment":
+                return_value = buildApartment(player,field,max);
                 break;
             case "betQuantity":
                 return_value = betQuantity(player);
@@ -89,7 +95,11 @@ public class CPUPlayer extends Player{
 
         types.put(2,"buy");
         types.put(3,"buyConfirmation");
+
+
+        types.put(11,"buildChoice");
         types.put(4,"build");
+        types.put(4,"buildApartment");
 
         types.put(5,"betQuantity");
         types.put(6,"betValue");
@@ -146,6 +156,12 @@ public class CPUPlayer extends Player{
         else return 0;
     }
 
+    // PRE: Construible
+    private int buildChoice(Player player, Field field) {
+        if (player.getMoney() < 10000) return 0;
+        else return 1;
+    }
+
     private int build(Player player, Field field) {
         if (field.hotelBuildable()) {
             if (player.getMoney()-field.priceToBuild() > 2000) return 2;
@@ -155,6 +171,13 @@ public class CPUPlayer extends Player{
         }
         return 0;
     }
+
+    private int buildApartment(Player player, Field field, int max) {
+        int max_to_buid = (player.getMoney() / 100) * 30 / field.priceToBuild();
+        if (max_to_buid >= max) return max;
+        else return max_to_buid;
+    }
+
 
     private int betQuantity(Player player) {
         return (player.getMoney()/10) ; //10% de aposta
@@ -233,14 +256,12 @@ public class CPUPlayer extends Player{
             min_value = players.get(1).getMoney();
             result = 1;
         }
-
         for (Player aux : players) {
             if (aux != current_player && aux.getMoney() < min_value) {
                 result = players.indexOf(aux);
                 min_value = aux.getMoney();
             }
         }
-
         if (result == -1 || min_value == -1) ;//Throw error
         return result;
     }

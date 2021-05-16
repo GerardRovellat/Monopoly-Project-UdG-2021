@@ -56,7 +56,7 @@ public class Board {
                     menu_option++;
                 }
                 Scanner scan = new Scanner(System.in);
-                int chosed_option = player.optionSelection("start",player,null,null,null,null);
+                int chosed_option = player.optionSelection("start",player,null,null,null,null,0);
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
@@ -256,6 +256,7 @@ public class Board {
                 else {
                     System.out.println("El jugador " + current_player.getName() + "s'ha declarat en fallida");
                     current_player.goToBankruptcy();
+                    return false;
                 }
             }
             if(pay_amount > current_player.getMoney()){ is_it = true; }

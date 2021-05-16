@@ -157,7 +157,7 @@ public class Field extends Box{
      * @return \p true si es pot construïr un hotel, \p false altrament.
      */
     public boolean hotelBuildable() {
-        if (hotel) return builded == max_buildings;
+        if (hotel ) return builded == max_buildings;
         else return false;
     }
 
