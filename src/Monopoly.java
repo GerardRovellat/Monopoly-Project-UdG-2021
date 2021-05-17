@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -235,6 +237,21 @@ public class Monopoly {
                 board.addPlayer(aux);
             }
             else System.out.println("ERROR!!!!!");
+        }
+        //CREAR DIRECTORI I FICHER
+        File directory = new File("saves");
+        if(!directory.exists()) directory.mkdir();
+        int index = 1;
+        File logfile = new File ("saves","log_"+index+".txt");
+        while(logfile.exists()){
+            index++;
+            logfile = new File("saves","log_"+index+".txt");
+        }
+        try{
+            logfile.createNewFile();
+        }
+        catch (IOException e){
+            e.printStackTrace();
         }
     }
 
