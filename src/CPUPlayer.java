@@ -1,29 +1,40 @@
-
-import com.sun.imageio.plugins.wbmp.WBMPImageReader;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
 
 public class CPUPlayer extends Player{
 
     /**
+     * @brief Constructor de Player de tipus CPU
      * @param name             nom del Jugador.
      * @param initial_money    quantitat de diners inicials dels que disposa un Jugador.
      * @param initial_position posició inicial del Jugador.
-     * @brief Constructor de Player.
      * @pre true
-     * @post Crea un jugador amb els atributs entrats.
+     * @post Crea un jugador de tipus CPU amb els atributs entrats.
      */
     public CPUPlayer(String name, int initial_money, int initial_position) {
         super(name, initial_money, initial_position,"CPU");
     }
 
-    public int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int value) {
+    /**
+     * @brief Pregunta a la CPU segons el tipus entrat
+     * @param type              tipus de pregunta a la CPU
+     * @param player            posible jugador necesitat per la funcio
+     * @param field             posible terreny necesitat per la funcio
+     * @param options           llista de opcions posibles a triar
+     * @param players           llista de jugadors de la partida
+     * @param card              posible carta necesitada per la funcio
+     * @param value             posible valor enter necesitat per la funcio
+     * @pre \p type equival a una pregunta a la CPU (optionalActionSelector,start,buy,confirmation,buildChoice,build,buildApartment,betQuantity,betQuantity,betValue,cardGetPlayerSelect,cardGetFieldSelect,cardGivePlayerSelect,cardGiveFieldSelect,ardPayPlayerSelect,postposableLuckCardChoice,buyPlayerSelect,buyFieldSelect,buyInitalOffer,sellFieldSelect,sellInitalOffer,sellBuyerOffer,loanPlayerSelect,loanInitialOffer,bankruptcy)
+     * @post el valor escollit per la CPU s'ha retornat
+     * @return el valor escollit per la CPU
+     */
+    public int optionSelection(String type,Player player, Field field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value) {
         int return_value = 0;
         switch (type) {
             case "optionalActionSelector":
-                //return_value = optionalActionSelector(player);
-                return_value = 3;
-                //if (player.getFields().size() > 0) return_value = 1;
+                return_value = optionalActionSelector(player);
                 break;
             case "start":
                 return_value = start(player);
@@ -89,21 +100,28 @@ public class CPUPlayer extends Player{
                 return_value = loanPlayerSelect(player,players);
                 break;
             case "loanInitialOffer":
-                return_value = loanInitialOffer();
+                return_value = loanInitialOffer(player);
                 break;
+            case "bankruptcy":
+                return_value = bankruptcy();
             default:
         }
         System.out.println("CPU CHOCIE: " + return_value);
         return return_value;
     }
 
-    public int integerValueSelection(int min, int max, String type, Player player) {
-        Random rand = new Random();
-        int result = rand. nextInt(max-min) + min;
-        return result;
-    }
-
-    public String stringValueSelection(String type, Player player, Field field, int value) {
+    /**
+     * @brief Pregunta a la CPU segons el tipus entrat
+     * @param type              tipus de pregunta a la CPU
+     * @param player            posible jugador necesitat per la funcio
+     * @param field             posible terreny necesitat per la funcio
+     * @param value             posible enter  necesitat per la funcio
+     * @param second_value             posible enter  necesitat per la funcio
+     * @pre \p type equival a una pregunta a la CPU (throwDice,buyBuyerOffer,buySellerOffer,loanInterestOffer,loanTurnsOffer)
+     * @post el string escollit per la CPU s'ha retornat
+     * @return el string escollit per la CPU
+     */
+    public String stringValueSelection(String type, Player player, Field field, int value, int second_value) {
         String return_value = null;
         switch (type) {
             case "throwDice" :
@@ -115,7 +133,7 @@ public class CPUPlayer extends Player{
                 return_value = buySellerOffer(player,field,value);
                 break;
             case "loanInterestOffer":
-                return_value = loanInterestOffer(player,value);
+                return_value = loanInterestOffer(player,value,second_value);
                 break;
             case "loanTurnsOffer":
                 return_value = loanTurnsOffer();
@@ -127,12 +145,13 @@ public class CPUPlayer extends Player{
         return return_value;
     }
 
-    private int random(ArrayList<Integer> options) {
-        Random rand = new Random();
-        int result = rand.nextInt(options.size());
-        return options.get(result);
-    }
-
+    /**
+     * @brief Seleciona la millor accio opcional per la CPU al final del torn
+     * @param player Jugador actual
+     * @pre true
+     * @post el string escollit per la CPU s'ha retornat
+     * @return el string escollit per la CPU
+     */
     private int optionalActionSelector(Player player) {
         HashMap<Integer,Integer> bestMoves = new HashMap<>();
         bestMoves.put(0,20);
@@ -144,15 +163,15 @@ public class CPUPlayer extends Player{
         else bestMoves.put(2,0);
 
         if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
-        else bestMoves.put(3,1020);
+        else bestMoves.put(3,0);
 
         List<Card> cards = player.getLuckCards();
         int prob = 0;
-        /*for (Card aux : cards) {
+        for (Card aux : cards) {
             if (aux.getType()=="CHARGE") prob = prob + 40;
             else if (aux.getType()=="GET") prob = prob + 50;
             else if (aux.getType()=="GO") prob = prob + 10;
-        }*/
+        }
         bestMoves.put(4,prob);
         int bestMove = 0;
         for (int i=0;i<4;i++) {
@@ -173,8 +192,8 @@ public class CPUPlayer extends Player{
 
     // PRE: Construible
     private int buildChoice(Player player, Field field) {
-        if (player.getMoney() < 10000) return 0;
-        else return 1;
+        if (player.getMoney() > field.priceToBuild()) return 1;
+        else return 0;
     }
 
     private int build(Player player, Field field) {
@@ -242,9 +261,6 @@ public class CPUPlayer extends Player{
                 min_fields = players.get(i).getFields().size();
                 player_chosen = i;
             }
-        }
-        if (player_chosen == -1) {
-            System.out.println("HI HA HAGUT UN ERROR");  // Introduir exception
         }
         return player_chosen;
     }
@@ -387,16 +403,20 @@ public class CPUPlayer extends Player{
         return chosen_index;
     }
 
-    private int loanInitialOffer() {
+    private int loanInitialOffer(Player loan_player) {
         Random rand = new Random();
-        int min = (int) (this.getMoney() * 0.1);
-        int max = (int) (this.getMoney() * 0.5);
-        return rand.nextInt(max-min) + min;
+        int min = (int) (loan_player.getMoney() * 0.1);
+        int max = (int) (loan_player.getMoney() * 0.5);
+        if (max-min <= 0) return 0;
+        else return rand.nextInt(max-min) + min;
     }
 
-    private String loanInterestOffer(Player player,int offer) {
+    private String loanInterestOffer(Player player,int offer,int interests) {
         Random rand = new Random();
-        if (player != this) {
+        if (interests == -1) {
+            return String.valueOf(rand.nextInt(30 - 5) + 5);
+        }
+        else if (player != this) {
             if (offer > player.getMoney() * 0.3) return "no";
             else return String.valueOf(rand.nextInt(30 - 5) + 5);
         }
@@ -411,5 +431,9 @@ public class CPUPlayer extends Player{
         Random rand = new Random();
         int turns = rand.nextInt(6-1) + 1;
         return String.valueOf(turns);
+    }
+
+    private int bankruptcy() {
+        return 0;
     }
 }

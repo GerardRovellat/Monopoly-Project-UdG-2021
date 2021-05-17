@@ -188,7 +188,7 @@ public class Board {
      */
     public boolean isBankrupt(Player current_player, int pay_amount, Movement aux){
         boolean is_it = false;
-        if(current_player.getLuckCards().isEmpty() && current_player.getFields().isEmpty()){ is_it =true; }
+        if(current_player.getLuckCards().isEmpty() && current_player.getFields().isEmpty()){ is_it = false; }
         else {
             boolean sell_action_done = false;
             boolean card_action_done = false;
@@ -201,7 +201,7 @@ public class Board {
                 int missing_money = pay_amount - current_player.getMoney();
                 System.out.println("Necessites obtenir " + missing_money + ", quina opcio tries?");
                 Scanner scan = new Scanner(System.in);
-                option_nr = scan.nextInt();
+                option_nr = current_player.optionSelection("bankruptcy",null,null,null,null,null,0);
                 while (option_nr < 0 || option_nr > 2) {
                     System.out.println("Opcio incorrecte, torna a provar");
                     option_nr = scan.nextInt();
@@ -212,7 +212,8 @@ public class Board {
                             System.out.println("Cap terreny en propietat");
                         } else {
                             Sell sell = new Sell();
-                            sell_action_done = sell.execute(players, current_player,aux);
+                            sell.execute(players, current_player,aux);
+                            sell_action_done = true;
                         }
                     }
                 }

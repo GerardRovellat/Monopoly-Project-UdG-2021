@@ -110,8 +110,8 @@ public class Buy implements optionalActions{
                     System.out.println(offer_active_player.getName() + ": indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:");
                     //String tmp = scan.next();
                     String tmp = "";
-                    if (offer_active_player == current_player) tmp = current_player.stringValueSelection("buyBuyerOffer",offer_active_player,buy_field,current_offer);
-                    else tmp = buy_player.stringValueSelection("buySellerOffer",offer_active_player,buy_field,current_offer);
+                    if (offer_active_player == current_player) tmp = current_player.stringValueSelection("buyBuyerOffer",offer_active_player,buy_field,current_offer,0);
+                    else tmp = buy_player.stringValueSelection("buySellerOffer",offer_active_player,buy_field,current_offer,0);
                     if (tmp.equals("ok")) {
                         buy_final = true;
                     } else if (tmp.equals("no")) {

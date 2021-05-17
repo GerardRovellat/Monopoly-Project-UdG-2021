@@ -38,7 +38,7 @@ public class Loan implements optionalActions{
         System.out.println("Sel·lecioni el jugador a qui l'hi vol demanar el prestec:");
         int cont = 0;
         for (Player player : players) {
-            if (player != current_player) {
+            if (player != current_player && player.getMoney() > 0) {
                 System.out.println(cont + ". " + player.getName());
             }
             cont++;
@@ -53,10 +53,9 @@ public class Loan implements optionalActions{
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
-            current_offer = current_player.optionSelection("loanInitialOffer",null,null,null,null,null,0);
+            current_offer = current_player.optionSelection("loanInitialOffer",loan_player,null,null,null,null,0);
             if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
-
         System.out.println("Info del prestes:");
         System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + current_offer);
         Player offer_active_player = loan_player;
@@ -68,7 +67,7 @@ public class Loan implements optionalActions{
         while (!negociate) {
             if (turns==0)System.out.println(offer_active_player.getName() + ": indiqui no si rebutja la oferta, o el interes que demana tot seguit de el numero de torns (ex: 15 3).");
             else System.out.println((offer_active_player.getName() + ": indiqui no si rebutja la oferta, ok si la accepta o el interes que demana tot seguit de el numero de torns (ex: 15 3) si vol fer una contraoferta"));
-            interests_string = offer_active_player.stringValueSelection("loanInterestOffer",loan_player,null,current_offer);
+            interests_string = offer_active_player.stringValueSelection("loanInterestOffer",loan_player,null,current_offer,interests);
             if (interests_string.equals("no")) {
                 turns = 0;
                 negociate = true;
@@ -78,7 +77,7 @@ public class Loan implements optionalActions{
             }
             else {
                 interests = Integer.parseInt(interests_string);
-                turns = Integer.parseInt(offer_active_player.stringValueSelection("loanTurnsOffer",null,null,0));
+                turns = Integer.parseInt(offer_active_player.stringValueSelection("loanTurnsOffer",null,null,0,0));
             }
             if (offer_active_player == current_player) offer_active_player = loan_player;
             else offer_active_player = current_player;

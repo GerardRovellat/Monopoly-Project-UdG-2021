@@ -17,15 +17,11 @@ public class TerminalPlayer extends Player{
         super(name, initial_money, initial_position,"USER");
     }
 
-    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int max) {
+    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int value) {
         return scan.nextInt();
     }
 
-    public int integerValueSelection(int min, int max, String type, Player player) {
-        return scan.nextInt();
-    }
-
-    public String stringValueSelection(String type, Player player, Field field, int value) {
+    public String stringValueSelection(String type, Player player, Field field, int value, int second_value) {
         return scan.next();
     }
 }

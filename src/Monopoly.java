@@ -22,7 +22,8 @@ public class Monopoly {
     private Player current_player;                              ///< Jugador actual.
     private ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
     private ArrayList<Card> cards;
-    Scanner scan = new Scanner(System.in);                           ///< Llista de targetes sort.
+    Scanner scan = new Scanner(System.in);                      ///< Llista de targetes sort.
+    int turns = 0;
 
     /**
      * @brief Constructor de Monopoly.
@@ -188,6 +189,7 @@ public class Monopoly {
             if (current_player_iterator ==players.size()) current_player_iterator = 0;
         }
         System.out.println("\n---------- SEGUENT JUGADOR ----------\n");
+        turns++;
 
     }
 
@@ -217,7 +219,11 @@ public class Monopoly {
     private void startGame() {
         System.out.println("JOC DE MONOPOLY INICIAT");
         System.out.println("ENTRA EL NUMERO DE JUGADORS:");
-        int number_of_players = scan.nextInt();
+        int number_of_players = 0;
+        while (number_of_players < 2) {
+            number_of_players = scan.nextInt();
+            if (number_of_players < 2) System.out.println("Han de jugar minim dos jugadors. Torni a provar");
+        }
         for (int i=0;i<number_of_players;i++) {
             System.out.println("ENTRA EL NOM DEL SEGUENT JUGADOR");
             String name = scan.next();
@@ -292,6 +298,7 @@ public class Monopoly {
         System.out.println("\nRESUM FINAL DELS JUGADORS:");
         printPlayers(false);
         System.out.println("\n\n----------------------------------------\n\n");
+        System.out.println("----------------- TURNS: " + turns/players.size() + "-----------------");
     }
 
     /**

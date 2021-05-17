@@ -300,11 +300,9 @@ public abstract class Player {
         return "";
     }
 
-    public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int max);
+    public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int value);
 
-    public abstract int integerValueSelection(int min, int max, String type, Player player);
-
-    public abstract String stringValueSelection(String type, Player player, Field field, int value);
+    public abstract String stringValueSelection(String type, Player player, Field field, int value, int second_value);
 
 }
 
