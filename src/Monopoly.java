@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 import javafx.util.Pair;
@@ -21,9 +22,10 @@ public class Monopoly {
     private int current_player_iterator = 0;                    ///< Iterador que recorre Llista players.
     private Player current_player;                              ///< Jugador actual.
     private ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
-    private ArrayList<Card> cards;
-    Scanner scan = new Scanner(System.in);                      ///< Llista de targetes sort.
-    int turns = 0;
+    private ArrayList<Card> cards;                              ///< Llista de targetes sort.
+    Scanner scan = new Scanner(System.in);                      ///< Scanner per el jugador CPU.
+    int turns = 0;                                              ///< Numero de torns.
+    File dev_file;                                              ///< Fitxer de desenvolupament de la partida.
 
     /**
      * @brief Constructor de Monopoly.
@@ -217,48 +219,74 @@ public class Monopoly {
      * @post Els jugadors han sigut entrats amb el seu nom.
      */
     private void startGame() {
-        System.out.println("JOC DE MONOPOLY INICIAT");
-        System.out.println("ENTRA EL NUMERO DE JUGADORS:");
+        System.out.println("----------------- BENVINGUT AL JOC DE MONOPOLY -----------------");
         int number_of_players = 0;
-        while (number_of_players < 2) {
-            number_of_players = scan.nextInt();
-            if (number_of_players < 2) System.out.println("Han de jugar minim dos jugadors. Torni a provar");
-        }
+        boolean flag1 = false;
+        do {
+            try {
+                System.out.println("ENTRA EL NUMERO DE JUGADORS [2-12]:");
+                number_of_players = scan.nextInt();
+                if (number_of_players < 2 || number_of_players > 12) throw new Exception("S'ha de jugar amb [2-12] jugadors");
+                flag1=true;
+            } catch (InputMismatchException e){
+                scan.nextLine();
+                System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
+            } catch (Exception e_range){
+                System.out.println("RANG ENTRAT INCORRECTE: "+e_range.getMessage());
+            }
+        } while (!flag1);
+        boolean flag2 = false;
         for (int i=0;i<number_of_players;i++) {
+            scan.nextLine();                                                            // Neteja el \n del buffer.
             System.out.println("ENTRA EL NOM DEL SEGUENT JUGADOR");
-            String name = scan.next();
-            System.out.println("El jugador es un usuari o una CPU:");
-            System.out.println("0. Usuari");
-            System.out.println("1. CPU");
-            System.out.println("Seleccioni la opcio que desitgi:");
-            int value = scan.nextInt();
-            if (value == 0) {
-                Player aux = new TerminalPlayer(name,initial_money,0);
-                players.add(aux);
-                board.addPlayer(aux);
-            }
-            else if (value == 1){
-                Player aux = new CPUPlayer(name,initial_money,0);
-                players.add(aux);
-                board.addPlayer(aux);
-            }
-            else System.out.println("ERROR!!!!!");
+            String name = scan.nextLine();
+            int value = 0;
+            do{
+                try {
+                    System.out.println("El jugador es un usuari o una CPU:");
+                    System.out.println("0. Usuari");
+                    System.out.println("1. CPU");
+                    System.out.println("Seleccioni la opcio que desitgi:");
+                    value = scan.nextInt();
+                    if (value > 2) throw new Exception();
+                    flag2 = true;
+                    if (value == 0) {
+                        Player aux = new TerminalPlayer(name, initial_money, 0);
+                        players.add(aux);
+                        board.addPlayer(aux);
+                    } else if (value == 1) {
+                        Player aux = new CPUPlayer(name, initial_money, 0);
+                        players.add(aux);
+                        board.addPlayer(aux);
+                    }
+                } catch (InputMismatchException e_format){
+                    scan.nextLine();
+                    System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
+                } catch (Exception e_option) {
+                    System.out.println("OPCIO INCORRECTE: Torna-hi...");
+                }
+            }while (!flag2);
         }
-        //CREAR DIRECTORI I FICHER
+        dev_file = createDevFile();
+        System.out.println(dev_file.getName());
+    }
+
+    private File createDevFile(){
         File directory = new File("saves");
         if(!directory.exists()) directory.mkdir();
         int index = 1;
-        File logfile = new File ("saves","log_"+index+".txt");
-        while(logfile.exists()){
+        File dev_file = new File ("saves","log_"+index+".txt");
+        while(dev_file.exists()){
             index++;
-            logfile = new File("saves","log_"+index+".txt");
+            dev_file = new File("saves","logs_"+index+".txt");
         }
         try{
-            logfile.createNewFile();
+            dev_file.createNewFile();
         }
         catch (IOException e){
-            e.printStackTrace();
+            System.out.println("ERROR: No s'ha pogut crear el fitxer de desenvolupament de la partida.");;
         }
+        return dev_file;
     }
 
     /**
