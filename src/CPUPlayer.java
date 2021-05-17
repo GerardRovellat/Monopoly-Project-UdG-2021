@@ -146,11 +146,11 @@ public class CPUPlayer extends Player{
     }
 
     /**
-     * @brief Seleciona la millor accio opcional per la CPU al final del torn
+     * @brief Seleciona la millor accio opcional per la CPU al final del torn segons les probabilitats de guanyar diners o terrenys
      * @param player Jugador actual
      * @pre true
-     * @post el string escollit per la CPU s'ha retornat
-     * @return el string escollit per la CPU
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
      */
     private int optionalActionSelector(Player player) {
         HashMap<Integer,Integer> bestMoves = new HashMap<>();
@@ -180,22 +180,53 @@ public class CPUPlayer extends Player{
         return bestMove;
     }
 
+    /**
+     * @brief Seleciona la millor accio de recompensa al passar per la casella de sortida
+     * @param player Jugador actual
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
+    // ERROR: Si hi ha nomes una recompensa ---------------------------------------------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!
     private int start(Player player) {
         if (player.getMoney() < 15000) return 1;
         else return 2;
     }
 
+    /**
+     * @brief Seleciona si compra o no el terreny entrat
+     * @param player Jugador actual
+     * @param field Terreny a comprar
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int buy(Player player,Field field) {
         if (player.getMoney()-field.getPrice() >= 2000) return 1;
         else return 0;
     }
 
-    // PRE: Construible
+    /**
+     * @brief Seleciona si construeix o no en el terreny
+     * @param player Jugador actual
+     * @param field Terreny a contruir
+     * @pre field buildable == true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int buildChoice(Player player, Field field) {
         if (player.getMoney() > field.priceToBuild()) return 1;
         else return 0;
     }
 
+    /**
+     * @brief Seleciona si construeix un apartament o un hotel
+     * @param player Jugador actual
+     * @param field Terreny a contruir
+     * @pre player money() > field priceToBuild ( es pot parmetre minim un apartament )
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int build(Player player, Field field) {
         if (field.hotelBuildable()) {
             //if (player.getMoney()-field.priceToBuild() > 2000) return 2;
@@ -207,25 +238,54 @@ public class CPUPlayer extends Player{
         return 0;
     }
 
+    /**
+     * @brief Seleciona quants apartament vol construir
+     * @param player Jugador actual
+     * @param field Terreny a contruir
+     * @param max numero maxim de apartaments permesos i asequibles per el jugador
+     * @pre player money() > field priceToBuild ( es pot parmetre minim un apartament )
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int buildApartment(Player player, Field field, int max) {
         int max_to_buid = (player.getMoney() / 100) * 30 / field.priceToBuild();
         if (max_to_buid >= max) return max;
         else return max_to_buid;
     }
 
-
+    /**
+     * @brief Seleciona la millor quanitat a apostar ( el 10% del seu capital )
+     * @param player Jugador actual
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int betQuantity(Player player) {
-        return (player.getMoney()/1) ; //10% de aposta
+        return (player.getMoney()/10) ; //10% de aposta
     }
 
+    /**
+     * @brief Seleciona la millor aposta a fer depenguent de la quanitat apostada
+     * @param betQuantity quantiat apostada
+     * @pre betQuantity < player money
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int betValue(int betQuantity) {
-        /*Random rand = new Random();
+        Random rand = new Random();
         if (betQuantity < 5000) return rand.nextInt(11-8) +8; // 8->11
         else if (betQuantity < 10000) return rand.nextInt(9-5) +5; // 5->9
         return rand.nextInt(7-3) +3; // 3->7*/
-        return 12;
     }
 
+    /**
+     * @brief Seleciona el jugador amb mes cartes
+     * @param options numero de opcions disponibles
+     * @param players llista de jugadors de la partida
+     * @pre options size > 0
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int cardGetPlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
         int min_fields = -1;
         int player_chosen = -1;
@@ -241,6 +301,13 @@ public class CPUPlayer extends Player{
         return player_chosen;
     }
 
+    /**
+     * @brief Selecciona el terrent amb major valor
+     * @param fields_owner propietari dels terreny
+     * @pre field_owner fields size > 0 ( El jugador te terrenys disponibles )
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int cardGetFieldSelect (Player fields_owner) {
         ArrayList<Field> fields = fields_owner.getFields();
         int iterator = 0;
@@ -253,6 +320,14 @@ public class CPUPlayer extends Player{
         return result;
     }
 
+    /**
+     * @brief Seleciona el jugador amb mes cartes
+     * @param options numero de opcions disponibles
+     * @param players llista de jugadors de la partida
+     * @pre options size > 0
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int cardGivePlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
         int min_fields = -1;
         int player_chosen = -1;
@@ -265,6 +340,13 @@ public class CPUPlayer extends Player{
         return player_chosen;
     }
 
+    /**
+     * @brief Selecciona el terrent amb major valor
+     * @param fields_owner propietari dels terreny
+     * @pre field_owner fields size > 0 ( El jugador te terrenys disponibles )
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int cardGiveFieldSelect (Player fields_owner) {
         ArrayList<Field> fields = fields_owner.getFields();
         int iterator = 0;
@@ -280,7 +362,14 @@ public class CPUPlayer extends Player{
         return result;
     }
 
-    // PRE: minim 2 jugadors
+    /**
+     * @brief Selecciona el jugador a qui pagar
+     * @param current_player jugador actual
+     * @param players llista de jugadors
+     * @pre players size > 1
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int cardPayPlayerSelect (Player current_player,ArrayList<Player> players) {
         int result = 0;
         int min_value = -1;
@@ -299,11 +388,26 @@ public class CPUPlayer extends Player{
         return result;
     }
 
+    /**
+     * @brief Selecciona si vol executar una carta de sort o guardar-sela
+     * @param card carta de sort
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int postposableLuckCardChoice(Card card) {
         if (card.getType() == "CHARGE" || card.getType() == "GET" || card.getType() == "GO") return 1;
         else return 0;
     }
 
+    /**
+     * @brief Seleccio del jugador a la funcio Buy
+     * @param player jugador actual
+     * @param players llista de jugadors
+     * @pre players size > 0
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int buyPlayerSelect(Player player, ArrayList<Player> players) {
         int max_properties = -1;
         int chosen_index = -1;
@@ -316,6 +420,14 @@ public class CPUPlayer extends Player{
         return chosen_index;
     }
 
+    /**
+     * @brief Seleccio del terreny a la funcio Buy
+     * @param player jugador actual
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
+    //----------------------------------------------------------------------------------------COMENTAT FINS AQUI--------------------------------------------------------
     private int buyFieldSelect(Player player) {
         int min_value = player.getFields().get(0).getPrice();
         int chosen = 0;
@@ -424,7 +536,6 @@ public class CPUPlayer extends Player{
             if (offer >= player.getMoney() * 0.2) return "ok";
             else return "no";
         }
-
     }
 
     private String loanTurnsOffer() {
