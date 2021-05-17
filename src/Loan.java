@@ -45,14 +45,15 @@ public class Loan implements optionalActions{
         }
         int value = -1;
         while(value < 0 || value > cont) {
-            value = scan.nextInt();
+            //value = scan.nextInt();
+            value = current_player.optionSelection("loanPlayerSelect",current_player,null,null,players,null,0);
             if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
         Player loan_player = players.get(value);
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
-            current_offer = scan.nextInt();
+            current_offer = current_player.optionSelection("loanInitialOffer",null,null,null,null,null,0);
             if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
 
@@ -67,7 +68,7 @@ public class Loan implements optionalActions{
         while (!negociate) {
             if (turns==0)System.out.println(offer_active_player.getName() + ": indiqui no si rebutja la oferta, o el interes que demana tot seguit de el numero de torns (ex: 15 3).");
             else System.out.println((offer_active_player.getName() + ": indiqui no si rebutja la oferta, ok si la accepta o el interes que demana tot seguit de el numero de torns (ex: 15 3) si vol fer una contraoferta"));
-            interests_string = scan.next();
+            interests_string = offer_active_player.stringValueSelection("loanInterestOffer",loan_player,null,current_offer);
             if (interests_string.equals("no")) {
                 turns = 0;
                 negociate = true;
@@ -77,7 +78,7 @@ public class Loan implements optionalActions{
             }
             else {
                 interests = Integer.parseInt(interests_string);
-                turns = scan.nextInt();
+                turns = Integer.parseInt(offer_active_player.stringValueSelection("loanTurnsOffer",null,null,0));
             }
             if (offer_active_player == current_player) offer_active_player = loan_player;
             else offer_active_player = current_player;

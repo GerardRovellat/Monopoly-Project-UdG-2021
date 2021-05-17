@@ -78,20 +78,20 @@ public class Sell implements optionalActions{
                 ArrayList<Player> retired_players = new ArrayList<>();
                 auction_players.addAll(players);
                 auction_players.remove(current_player);
-                int offer = 0, max_offer = sell_price;
+                int offer = sell_price, max_offer = sell_price;
                 Player winner = null;
                 if (auction_players.size() == 1){
                     String name_of_player = auction_players.get(0).getName();
                     int current_money = auction_players.get(0).getMoney();
                     System.out.println(name_of_player + " tens " + current_money + "€");
                     System.out.println("Que ofereixes? (-1 per retirar-se):");
-                    offer = auction_players.get(0).optionSelection("sellBuyerOffer", auction_players.get(0), field_to_sell, null, null, null, sell_price);
+                    offer = auction_players.get(0).optionSelection("sellBuyerOffer", auction_players.get(0), field_to_sell, null, null, null, offer);
                     while (current_money < offer || offer < max_offer && offer != -1) {
                         if (offer < max_offer)
                             System.out.println("Erroni, s'ha de superar el import de " + max_offer);
                         else
                             System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
-                            offer = auction_players.get(0).optionSelection("sellBuyerOffer", auction_players.get(0), field_to_sell, null, null, null, sell_price);
+                            offer = auction_players.get(0).optionSelection("sellBuyerOffer", auction_players.get(0), field_to_sell, null, null, null, offer);
                     }
                     if (offer == -1) {
                         retired_players.add(auction_players.get(0));

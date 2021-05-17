@@ -22,8 +22,8 @@ public class CPUPlayer extends Player{
         switch (type) {
             case "optionalActionSelector":
                 //return_value = optionalActionSelector(player);
-                //return_value = 2;
-                if (player.getFields().size() > 0) return_value = 1;
+                return_value = 3;
+                //if (player.getFields().size() > 0) return_value = 1;
                 break;
             case "start":
                 return_value = start(player);
@@ -84,6 +84,13 @@ public class CPUPlayer extends Player{
                 break;
             case "sellBuyerOffer":
                 return_value = sellBuyerOffer(player,field,value);
+                break;
+            case "loanPlayerSelect":
+                return_value = loanPlayerSelect(player,players);
+                break;
+            case "loanInitialOffer":
+                return_value = loanInitialOffer();
+                break;
             default:
         }
         System.out.println("CPU CHOCIE: " + return_value);
@@ -106,6 +113,12 @@ public class CPUPlayer extends Player{
                 break;
             case "buySellerOffer":
                 return_value = buySellerOffer(player,field,value);
+                break;
+            case "loanInterestOffer":
+                return_value = loanInterestOffer(player,value);
+                break;
+            case "loanTurnsOffer":
+                return_value = loanTurnsOffer();
                 break;
             default:
                 break;
@@ -130,9 +143,8 @@ public class CPUPlayer extends Player{
         if (player.getMoney()>=20000) bestMoves.put(2,player.getMoney()/1000);
         else bestMoves.put(2,0);
 
-        //if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
-        //else
-        bestMoves.put(3,0);
+        if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
+        else bestMoves.put(3,1020);
 
         List<Card> cards = player.getLuckCards();
         int prob = 0;
@@ -356,7 +368,48 @@ public class CPUPlayer extends Player{
         Random rand = new Random();
         int max = (int) (actual_offer * 1.2);
         int min = actual_offer;
+        if (max-min <= 0 || min <= 0 || max <= 0) {
+            return -1;
+        }
         int result = rand.nextInt(max-min) + min;
         return result;
+    }
+
+    private int loanPlayerSelect(Player player, ArrayList<Player> players) {
+        int max_money = -1;
+        int chosen_index = -1;
+        for (Player aux : players) {
+            if (aux != player && aux.getMoney() > max_money) {
+                max_money = aux.getMoney();
+                chosen_index = players.indexOf(aux);
+            }
+        }
+        return chosen_index;
+    }
+
+    private int loanInitialOffer() {
+        Random rand = new Random();
+        int min = (int) (this.getMoney() * 0.1);
+        int max = (int) (this.getMoney() * 0.5);
+        return rand.nextInt(max-min) + min;
+    }
+
+    private String loanInterestOffer(Player player,int offer) {
+        Random rand = new Random();
+        if (player != this) {
+            if (offer > player.getMoney() * 0.3) return "no";
+            else return String.valueOf(rand.nextInt(30 - 5) + 5);
+        }
+        else {
+            if (offer >= player.getMoney() * 0.2) return "ok";
+            else return "no";
+        }
+
+    }
+
+    private String loanTurnsOffer() {
+        Random rand = new Random();
+        int turns = rand.nextInt(6-1) + 1;
+        return String.valueOf(turns);
     }
 }
