@@ -27,7 +27,7 @@ public class Monopoly {
     private ArrayList<Card> cards;                              ///< Llista de targetes sort.
     Scanner scan = new Scanner(System.in);                      ///< Scanner per el jugador CPU.
     int turns = 0;                                              ///< Numero de torns jugats.
-    File dev_file;                                              ///< Fitxer de desenvolupament de la partida.
+    OutputManager dev_file;                                              ///< Fitxer de desenvolupament de la partida.
 
     /**
      * @brief Constructor de Monopoly.
@@ -103,7 +103,7 @@ public class Monopoly {
                     aux.optionalActions(optional_actions);
                     System.out.println("-----------------------------------------------------------------------\n");
                 }
-                fileWrite("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------\n"+
+                dev_file.fileWrite("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------\n"+
                         current_player.toString()+"Resultat dels daus: "+dice_result.getKey()+" i "+dice_result.getValue()+"\n");
             }
             else {
@@ -227,8 +227,8 @@ public class Monopoly {
         System.out.println("----------------- BENVINGUT AL JOC DE MONOPOLY -----------------");
         int number_of_players = askNrOfPlayers();
         askInfoOfPlayers(number_of_players);
-        dev_file = createDevFile();
-        fileWrite("Mode: "+mode+"\n"+board.toString());
+        OutputManager dev_file = new OutputManager();
+        dev_file.fileWrite("Mode: "+mode+"\n"+board.toString());
     }
 
     /**
@@ -297,31 +297,6 @@ public class Monopoly {
         }
         scan.nextLine();                                                               // Netejem buffer
     }
-    
-    /**
-     * @brief Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom
-     * logs_x on x es un numero correlatiu.
-     * @pre \p true
-     * @post El fitxer de logs ha estat creat.
-     * @return fitxer creat de logs d'aquesta partida.
-     */
-    private File createDevFile(){
-        File directory = new File("saves");
-        if(!directory.exists()) directory.mkdir();
-        int index = 1;
-        File dev_file = new File ("saves","logs_"+index+".txt");
-        while(dev_file.exists()){
-            index++;
-            dev_file = new File("saves","logs_"+index+".txt");
-        }
-        try{
-            dev_file.createNewFile();
-        }
-        catch (IOException e){
-            System.out.println("ERROR: No s'ha pogut crear el fitxer de desenvolupament de la partida.");;
-        }
-        return dev_file;
-    }
 
     /**
      * @brief Gestiona la finalització del joc de Monopoly.
@@ -381,16 +356,4 @@ public class Monopoly {
         }
     }
 
-    /**
-     * @brief Escriu text \p line al fitxer de desenvolupament de partida \p dev_file.
-     * @pre \p true
-     * @post la linea de text \p line ha estat escrita a \p dev_file.
-     */
-    private void fileWrite(String line){
-        try{
-            FileWriter fr = new FileWriter(dev_file,true);
-            fr.write(line);
-            fr.close();
-        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
-    }
 }

@@ -6,6 +6,12 @@ public class OutputManager {
 
     private File dev_file;
 
+    /**
+     * @brief Constructor OutputManager. Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom
+     * logs_x on x es un numero correlatiu.
+     * @pre \p true
+     * @post El fitxer de logs ha estat creat.
+     */
     public OutputManager(){
         File directory = new File("saves");
         if(!directory.exists()) directory.mkdir();
@@ -23,7 +29,12 @@ public class OutputManager {
         }
     }
 
-    private void fileWrite(String line){
+    /**
+     * @brief Escriu text \p line al fitxer de desenvolupament de partida \p dev_file.
+     * @pre \p true
+     * @post la linea de text \p line ha estat escrita a \p dev_file.
+     */
+    public void fileWrite(String line){
         try{
             FileWriter fr = new FileWriter(dev_file,true);
             fr.write(line);
