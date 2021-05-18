@@ -56,7 +56,7 @@ public class Board {
                     menu_option++;
                 }
                 Scanner scan = new Scanner(System.in);
-                int chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1);
+                int chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1,null);
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
@@ -201,7 +201,7 @@ public class Board {
                 int missing_money = pay_amount - current_player.getMoney();
                 System.out.println("Necessites obtenir " + missing_money + ", quina opcio tries?");
                 Scanner scan = new Scanner(System.in);
-                option_nr = current_player.optionSelection("bankruptcy",null,null,null,null,null,0);
+                option_nr = current_player.optionSelection("bankruptcy",null,null,null,null,null,0,null);
                 while (option_nr < 0 || option_nr > 2) {
                     System.out.println("Opcio incorrecte, torna a provar");
                     option_nr = scan.nextInt();

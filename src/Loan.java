@@ -46,14 +46,14 @@ public class Loan implements optionalActions{
         int value = -1;
         while(value < 0 || value > cont) {
             //value = scan.nextInt();
-            value = current_player.optionSelection("loanPlayerSelect",current_player,null,null,players,null,0);
+            value = current_player.optionSelection("loanPlayerSelect",current_player,null,null,players,null,0,null);
             if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
         Player loan_player = players.get(value);
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
-            current_offer = current_player.optionSelection("loanInitialOffer",loan_player,null,null,null,null,0);
+            current_offer = current_player.optionSelection("loanInitialOffer",loan_player,null,null,null,null,0,null);
             if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
         System.out.println("Info del prestes:");

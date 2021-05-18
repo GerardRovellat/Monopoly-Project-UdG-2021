@@ -30,11 +30,11 @@ public class CPUPlayer extends Player{
      * @post el valor escollit per la CPU s'ha retornat
      * @return el valor escollit per la CPU
      */
-    public int optionSelection(String type,Player player, Field field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value) {
+    public int optionSelection(String type,Player player, Field field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions) {
         int return_value = 0;
         switch (type) {
             case "optionalActionSelector":
-                return_value = optionalActionSelector(player);
+                return_value = optionalActionSelector(player,optional_actions);
                 break;
             case "start":
                 return_value = start(value);
@@ -152,31 +152,37 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int optionalActionSelector(Player player) {
+    private int optionalActionSelector(Player player,ArrayList<optionalActions> optional_actions) {
         HashMap<Integer,Integer> bestMoves = new HashMap<>();
         bestMoves.put(0,20);
 
-        if (player.getMoney()<=20000) bestMoves.put(1,20-(player.getMoney()/1000)*5);  // Ex: money = 5000 => 5000/1000 = 5 => 20-5 = 15 => 15*5 = 75%
-        else bestMoves.put(1,0);
-
-        if (player.getMoney()>=20000) bestMoves.put(2,player.getMoney()/1000);
-        else bestMoves.put(2,0);
-
-        if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
-        else bestMoves.put(3,0);
-
-        List<Card> cards = player.getLuckCards();
-        int prob = 0;
-        for (Card aux : cards) {
-            if (aux.getType()=="CHARGE") prob = prob + 40;
-            else if (aux.getType()=="GET") prob = prob + 50;
-            else if (aux.getType()=="GO") prob = prob + 10;
+        int pos_iterator = 1;
+        for (optionalActions opaction : optional_actions) {
+            if (opaction.getClass().getName() == "Buy") {
+                if (player.getMoney()<=20000) bestMoves.put(1,20-(player.getMoney()/1000)*5);  // Ex: money = 5000 => 5000/1000 = 5 => 20-5 = 15 => 15*5 = 75%
+                else bestMoves.put(pos_iterator,0);
+            }
+            else if (opaction.getClass().getName() == "Sell") {
+                if (player.getMoney()>=20000) bestMoves.put(2,player.getMoney()/1000);
+                else bestMoves.put(pos_iterator,0);
+            }
+            else if (opaction.getClass().getName() == "Loan") {
+                if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
+                else bestMoves.put(pos_iterator,0);
+            }
+            else if (opaction.getClass().getName() == "LuckCard") {
+                List<Card> cards = player.getLuckCards();
+                int prob = 0;
+                for (Card aux : cards) {
+                    if (aux.getType()=="CHARGE") prob = prob + 40;
+                    else if (aux.getType()=="GET") prob = prob + 50;
+                    else if (aux.getType()=="GO") prob = prob + 10;
+                }
+                bestMoves.put(pos_iterator,prob);
+            }
         }
-        bestMoves.put(4,prob);
         int bestMove = 0;
-        for (int i=0;i<4;i++) {
-            if (bestMoves.get(i).byteValue() > bestMoves.get(bestMove).longValue()) bestMove = i;
-        }
+        for (int i=0;i<bestMoves.size();i++) if (bestMoves.get(i).byteValue() > bestMoves.get(bestMove).longValue()) bestMove = i;
         return bestMove;
     }
 
@@ -187,7 +193,6 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    // ERROR: Si hi ha nomes una recompensa ---------------------------------------------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!
     private int start(int options) {
         Random rand = new Random();
         return rand.nextInt(options-1) ;

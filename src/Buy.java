@@ -59,7 +59,7 @@ public class Buy implements optionalActions{
                 System.out.println("Selecioni la opcio que desitgi:");
                 while (value < 0 || value > cont-1) {
                     //value = scan.nextInt();
-                    value = current_player.optionSelection("buyPlayerSelect",current_player,null,null,players,null,0);
+                    value = current_player.optionSelection("buyPlayerSelect",current_player,null,null,players,null,0,null);
                     if (value < 0 || value > cont-1)
                         System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
                 }
@@ -81,7 +81,7 @@ public class Buy implements optionalActions{
                     value = -1;
                     while (value < 0 || value > cont - 1) {
                         //value = scan.nextInt();
-                        value = current_player.optionSelection("buyFieldSelect",buy_player,null,null,null,null,0);
+                        value = current_player.optionSelection("buyFieldSelect",buy_player,null,null,null,null,0,null);
                         if (value < 0 || value > cont - 1)
                             System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (cont - 1) + " ). Torni a provar:");
                     }
@@ -94,7 +94,7 @@ public class Buy implements optionalActions{
                 try {
                     while (current_offer <= 0 || current_offer > current_player.getMoney()){
                         System.out.println("Indiqui la oferta inicial:");
-                        current_offer = current_player.optionSelection("buyInitalOffer",current_player,buy_field,null,null,null,0);
+                        current_offer = current_player.optionSelection("buyInitalOffer",current_player,buy_field,null,null,null,0,null);
                         if (current_offer <= 0 || current_offer > current_player.getMoney()) System.out.println("valor entrat incorrecte. Ha de ser superior a 0 i inferior a " + current_player.getMoney());
                     }
                 }
