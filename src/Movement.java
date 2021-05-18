@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Random;
@@ -19,7 +22,7 @@ public class Movement {
     Board board;                                                        ///< Tale del Monopoly.
     private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
     private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
-    Scanner scan = new Scanner(System.in);
+    private File dev_file;
 
 
 
@@ -31,13 +34,14 @@ public class Movement {
      * @param box Casella posició de \p active_player en el tauler.
      * @param player Informació de el Jugador que està jugant en aquest torn.
      */
-    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards,File dev_file){
         this.current_box = box;
         this.active_player = player;
         this.players = players;
         this.board = board;
         this.start_rewards = start_rewards;
         this.cards = cards;
+        this.dev_file = dev_file;
         userActionsStart();
     }
 
@@ -47,6 +51,7 @@ public class Movement {
      * @post La informació ha sigut mostrada per pantalla.
      */
     public void startAction() {
+        write(active_player.getName() + "> Cau a Casella Sortida");
         System.out.println("Has caigut a la casella de Inici i rebut la recompensa");
     }
 
@@ -58,6 +63,7 @@ public class Movement {
      */
     public void fieldAction() {
         Field field = (Field) current_box;
+        write(active_player.getName() + "> Cau a Casella Terreny");
         if (field.isBought()) {
             if (field.getOwner() == active_player) build();
             else payRent();
@@ -211,12 +217,6 @@ public class Movement {
             System.out.println(index + " - " + aux.toString());
             index++;
         }
-        /*
-        while (value < 0 || value > index) {
-            Scanner scan = new Scanner(System.in);
-            value = scan.nextInt();
-            if (value < 0 || value > index) System.out.println("El valor que ha entrat no es correcte ");
-        }*/
         value = active_player.optionSelection("optionalActionSelector",active_player,null,null,null,null,0,possible_actions);
         if (value != 0) {
             possible_actions.get(value - 1).execute(players, active_player, this);
@@ -473,5 +473,14 @@ public class Movement {
     public ArrayList<Card> getCards() {
         return cards;
     }
+
+    private void write(String line) {
+        try{
+            FileWriter fr = new FileWriter(this.dev_file,true);
+            fr.write(line);
+            //fr.close();
+        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
+    }
+
 
 }
