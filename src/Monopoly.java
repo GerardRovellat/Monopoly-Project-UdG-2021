@@ -58,13 +58,13 @@ public class Monopoly {
      */
     public void play(){
         startGame();
-
         while(!checkEndGame()) {
             current_player = players.get(current_player_iterator);
-            //System.out.println(board.toString());
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             System.out.println(current_player.toString());
             System.out.println("-----------------------------------------------------------------------");
+            dev_file.fileWrite("CANVI DE JUGADOR:\n" + current_player.getName() + ">  "+current_player.getMoney()+"€, Terrenys "+
+                    current_player.getFields().size()+", Prestecs "+current_player.getLoans().size()+", Posició "+current_player.getPosition());
             if (!current_player.getBankruptcy()) {
                 throwDice();
                 movePlayer();
@@ -103,8 +103,6 @@ public class Monopoly {
                     aux.optionalActions(optional_actions);
                     System.out.println("-----------------------------------------------------------------------\n");
                 }
-                dev_file.fileWrite("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------\n"+
-                        current_player.toString()+"Resultat dels daus: "+dice_result.getKey()+" i "+dice_result.getValue()+"\n");
             }
             else {
                 System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
@@ -113,7 +111,6 @@ public class Monopoly {
                 System.out.println("ERROR: Alguna cosa ha anat malament...");
             }
             nextPlayer();
-
         }
         endGame();
 
@@ -136,6 +133,7 @@ public class Monopoly {
         else position = current_player.getPosition() + position;
         System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position + "\n");
         board.movePlayer(current_player,position,start_rewards);
+        dev_file.fileWrite(current_player.getName() +"> Mou de la posició "+current_player.getPosition()+" a la"+position);
     }
 
     /**
@@ -216,6 +214,7 @@ public class Monopoly {
             scan.nextLine();
         }
         System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
+        dev_file.fileWrite(current_player.getName()+"> Resultat dels daus: "+dice_result.getKey()+" i "+dice_result.getValue());
     }
 
     /**
@@ -227,7 +226,7 @@ public class Monopoly {
         System.out.println("----------------- BENVINGUT AL JOC DE MONOPOLY -----------------");
         int number_of_players = askNrOfPlayers();
         askInfoOfPlayers(number_of_players);
-        OutputManager dev_file = new OutputManager();
+        dev_file = new OutputManager();
         dev_file.fileWrite("Mode: "+mode+"\n"+board.toString());
     }
 

@@ -203,6 +203,10 @@ public abstract class Player {
         return !boxes_in_property.isEmpty();
     }
 
+    public ArrayList<PlayerLoan> getLoans(){
+        return loans;
+    }
+
     /**
      * @brief Retorna si el Jugador es en fallida o no.
      * @pre true

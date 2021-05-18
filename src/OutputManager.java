@@ -37,7 +37,7 @@ public class OutputManager {
     public void fileWrite(String line){
         try{
             FileWriter fr = new FileWriter(dev_file,true);
-            fr.write(line);
+            fr.write(line+"\n");
             fr.close();
         } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
     }
