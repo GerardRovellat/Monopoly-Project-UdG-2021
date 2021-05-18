@@ -96,7 +96,7 @@ public class Monopoly {
                 }
                 System.out.println("\n-----------------------------------------------------------------------\n");
                 if (!current_player.getBankruptcy()) {
-                    System.out.println("AVANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
+                    System.out.println("ABANS DE FINALIZTAR EL TORN, POT FER UNA DE LES SEGUENTS ACCIONS OPCIONALS:");
                     aux.optionalActions(optional_actions);
                     System.out.println("-----------------------------------------------------------------------\n");
                 }
@@ -105,7 +105,7 @@ public class Monopoly {
                 System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
             }
             if (current_player.getFields().size() > 10 || current_player.getMoney() > 100000) {
-                System.out.println("SOMETHING WENT WRONG");
+                System.out.println("ERROR: Alguna cosa ha anat malament...");
             }
             nextPlayer();
 
@@ -241,7 +241,7 @@ public class Monopoly {
                 number_of_players = scan.nextInt();
                 if (number_of_players < 2 || number_of_players > 12) throw new Exception("S'ha de jugar amb [2-12] jugadors");
                 valid=true;
-            } catch (InputMismatchException e){
+            } catch (InputMismatchException e_format){
                 scan.nextLine();
                 System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
             } catch (Exception e_range){

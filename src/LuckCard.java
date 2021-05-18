@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -50,11 +51,20 @@ public class LuckCard implements optionalActions{
                 System.out.println(card_nr + "- " + card);
                 card_nr++;
             }
-            System.out.println("Quina targeta vols utilitzar?");
-            while (card_nr < 1 || card_nr > current_player.getLuckCards().size()) {
-                System.out.println("Introduieixi una opcio valida");
-                card_nr = scan.nextInt();
-            }
+            boolean valid = false;
+            do {
+                try {
+                    System.out.println("Quina targeta vols utilitzar?");
+                    card_nr = scan.nextInt();
+                    if (card_nr < 1 || card_nr > current_player.getLuckCards().size()) throw new Exception();
+                    valid = true;
+                } catch (InputMismatchException e_format) {
+                    scan.nextLine();
+                    System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
+                } catch (Exception e_range){
+                    System.out.println("OPCIO INCORRECTE: Torna-hi...");
+                }
+            }while (!valid);
             aux.runCard(current_player.getLuckCards().get(card_nr-1));
             aux.getCards().add(0,current_player.getLuckCards().get(card_nr-1));
             current_player.removeLuckCard(current_player.getLuckCards().get(card_nr-1));

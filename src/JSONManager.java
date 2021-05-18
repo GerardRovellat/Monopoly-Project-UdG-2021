@@ -61,22 +61,22 @@ public class JSONManager {
      * @return ArrayList amb totes les accions opcionals possibles que el jugador pot fer en aquest joc.
      */
     private ArrayList<optionalActions> readRules() {
-        //Start Gson variables.
+        //Inicialitza les variables gson.
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         FileReader reader;
         ArrayList possible_actions = new ArrayList<optionalActions>();
         try {
-            //Parse file to JsonElement data and get as JsonObject.
+            //Parseja el fitxer a JsonElement i s'agafa com a JsonObject.
             reader = new FileReader(rules_file);
             JsonElement data = parser.parse(reader);
             JsonObject j_object = data.getAsJsonObject();
 
-            //First element "modalitat"
+            //Primer element "modalitat"
             String mode = j_object.get("modalitat").getAsString();
             /**FALTA TRACTAR EL ERROR**/
 
-            //Second element array "accionsNoAplicables"
+            //Segon element array "accionsNoAplicables"
             JsonArray restricted_actions = j_object.get("accionsNoAplicables").getAsJsonArray();
             List restricted_action_list = new ArrayList<String>();
             for (JsonElement array_element : restricted_actions){
@@ -100,11 +100,11 @@ public class JSONManager {
             }
 
 
-            //Third element "dinersInicials"
+            //Tercer element "dinersInicials"
             int initial_money = j_object.get("dinersInicials").getAsInt();
             this.initial_money = initial_money;
 
-            //Fourth element array "recompensesCasellaSortida"
+            //Quart element array "recompensesCasellaSortida"
             JsonArray start_box_rewards = j_object.get("recompensesCasellaSortida").getAsJsonArray();
             ArrayList start_box_rewards_list = new ArrayList<String>();
             for (JsonElement array_element : start_box_rewards) {
@@ -112,11 +112,11 @@ public class JSONManager {
             }
             this.star_rewards=start_box_rewards_list;
 
-            //Fifth element "percentatgePreuEdificisHipoteca"
+            //Cinquè element "percentatgePreuEdificisHipoteca"
             int percentage_mortgage_buildings = j_object.get("percentatgePreuEdificisHipoteca").getAsInt();
 
         } catch (FileNotFoundException e) {
-            System.err.println("El fitxer JSON de regles no s'ha trobat --> "+e.getMessage());
+            System.err.println("ERROR: El fitxer JSON de regles no s'ha trobat --> "+e.getMessage());
             System.exit(-1);
         }
         return possible_actions;
@@ -129,13 +129,13 @@ public class JSONManager {
      * @return Tauler amb totes les seves propietats.
      */
     private Board readBoard() {
-        //Start Gson variables.
+        //Inicialitza les variables gson.
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         FileReader reader;
         Board board = new Board();
         try {
-            //Parse file to JsonElement data and get as JsonObject.
+            //Parseja el fitxer a JsonElement i s'agafa com a JsonObject.
             reader = new FileReader(board_file);
             JsonElement data = parser.parse(reader);
             JsonObject j_object = data.getAsJsonObject();
@@ -309,7 +309,7 @@ public class JSONManager {
             cards = cards_stack;
 
         } catch (FileNotFoundException e) {
-            System.err.println("El fitxer JSON de tauler no s'ha trobat --> "+e.getMessage());
+            System.err.println("ERROR: El fitxer JSON de tauler no s'ha trobat --> "+e.getMessage());
             System.exit(-1);
         }
         return board;
