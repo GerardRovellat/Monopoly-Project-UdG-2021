@@ -26,7 +26,6 @@ public class Sell implements optionalActions{
      */
     @Override // Heretat d'Object
     public String toString() {
-
         return "Vendre: posar a la venda una de les teves propietats, incloent-hi els edificis que hi pugui haver-hi.";
     }
 

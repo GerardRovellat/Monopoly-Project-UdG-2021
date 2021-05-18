@@ -8,8 +8,8 @@
 
 public class Start extends Box{
 
-    private Field field_reward; ///< recompensa en forma de terreny
-    private int money_reward; ///< recompensa economica
+    private Field field_reward;                         ///< recompensa en forma de terreny
+    private int money_reward;                           ///< recompensa economica
 
     /**
      * @brief Constructor de Start

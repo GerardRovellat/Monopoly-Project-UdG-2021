@@ -24,7 +24,7 @@ public class Monopoly {
     private ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
     private ArrayList<Card> cards;                              ///< Llista de targetes sort.
     Scanner scan = new Scanner(System.in);                      ///< Scanner per el jugador CPU.
-    int turns = 0;                                              ///< Numero de torns.
+    int turns = 0;                                              ///< Numero de torns jugats.
     File dev_file;                                              ///< Fitxer de desenvolupament de la partida.
 
     /**
@@ -214,34 +214,56 @@ public class Monopoly {
     }
 
     /**
-     * @brief Inicialitza el joc del Monopoly entrant el nombre de Jugadors i el seu nom.
+     * @brief Inicialitza el joc del Monopoly.
      * @pre \p true
-     * @post Els jugadors han sigut entrats amb el seu nom.
+     * @post El joc ha estat inicialitzat i esta preparat per començar la partida.
      */
     private void startGame() {
         System.out.println("----------------- BENVINGUT AL JOC DE MONOPOLY -----------------");
+        int number_of_players = askNrOfPlayers();
+        askInfoOfPlayers(number_of_players);
+        dev_file = createDevFile();
+    }
+
+    /**
+     * @brief Demana el numero \p number_of_players de Jugadors que jugaran al joc del monopoly, han de jugar
+     * de dos a dotze persones.
+     * @pre \p true
+     * @post Retorna el numero entrat de Jugadors que jugaran al Monopoly.
+     * @return numero de Jugadors de la partida.
+     */
+    private int askNrOfPlayers(){
         int number_of_players = 0;
-        boolean flag1 = false;
+        boolean valid = false;
         do {
             try {
                 System.out.println("ENTRA EL NUMERO DE JUGADORS [2-12]:");
                 number_of_players = scan.nextInt();
                 if (number_of_players < 2 || number_of_players > 12) throw new Exception("S'ha de jugar amb [2-12] jugadors");
-                flag1=true;
+                valid=true;
             } catch (InputMismatchException e){
                 scan.nextLine();
                 System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
             } catch (Exception e_range){
                 System.out.println("RANG ENTRAT INCORRECTE: "+e_range.getMessage());
             }
-        } while (!flag1);
-        boolean flag2 = false;
-        for (int i=0;i<number_of_players;i++) {
+        } while (!valid);
+        return number_of_players;
+    }
+
+    /**
+     * @brief Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari.
+     * @pre \p true
+     * @post Els Jugadors entrats estan preparats per poder jugar al Monopoly.
+     */
+    private void askInfoOfPlayers(int number_of_players) {
+        boolean valid = false;
+        for (int i = 0; i < number_of_players; i++) {
             scan.nextLine();                                                            // Neteja el \n del buffer.
             System.out.println("ENTRA EL NOM DEL SEGUENT JUGADOR");
             String name = scan.nextLine();
-            int value = 0;
-            do{
+            int value;
+            do {
                 try {
                     System.out.println("El jugador es un usuari o una CPU:");
                     System.out.println("0. Usuari");
@@ -249,7 +271,7 @@ public class Monopoly {
                     System.out.println("Seleccioni la opcio que desitgi:");
                     value = scan.nextInt();
                     if (value > 2) throw new Exception();
-                    flag2 = true;
+                    valid = true;
                     if (value == 0) {
                         Player aux = new TerminalPlayer(name, initial_money, 0);
                         players.add(aux);
@@ -259,23 +281,28 @@ public class Monopoly {
                         players.add(aux);
                         board.addPlayer(aux);
                     }
-                } catch (InputMismatchException e_format){
+                } catch (InputMismatchException e_format) {
                     scan.nextLine();
                     System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
                 } catch (Exception e_option) {
                     System.out.println("OPCIO INCORRECTE: Torna-hi...");
                 }
-            }while (!flag2);
+            } while (!valid);
         }
-        dev_file = createDevFile();
-        System.out.println(dev_file.getName());
     }
-
+    
+    /**
+     * @brief Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom
+     * logs_x on x es un numero correlatiu.
+     * @pre \p true
+     * @post El fitxer de logs ha estat creat.
+     * @return fitxer creat de logs d'aquesta partida.
+     */
     private File createDevFile(){
         File directory = new File("saves");
         if(!directory.exists()) directory.mkdir();
         int index = 1;
-        File dev_file = new File ("saves","log_"+index+".txt");
+        File dev_file = new File ("saves","logs_"+index+".txt");
         while(dev_file.exists()){
             index++;
             dev_file = new File("saves","logs_"+index+".txt");

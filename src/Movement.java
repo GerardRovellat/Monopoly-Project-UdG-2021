@@ -18,8 +18,8 @@ public class Movement {
     ArrayList<Player> players;                                          ///< Llista de Jugadors jugant.
     Board board;                                                        ///< Tale del Monopoly.
     private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
-    private ArrayList<Card> cards;
-    Scanner scan = new Scanner(System.in);                                    ///< Llista de targetes sort de Monopoly
+    private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
+    Scanner scan = new Scanner(System.in);
 
 
 
@@ -309,12 +309,12 @@ public class Movement {
      */
     public void payRent() {
         Field field = (Field) current_box;
-        Player owner = field.getOwner();        // Get field owner
+        Player owner = field.getOwner();                                // Retorna propietari terreny
         System.out.println("-  La casella de terreny on ha caigut ja te propietari  -");
         System.out.println("El propietari del terreny es " + owner.getName() + " i el lloguer es de " + field.getRent() + "€");
-        if (active_player.getMoney() >= field.getRent()) { // ture if player can pay rent
-            active_player.pay(field.getRent());     // player pay rent
-            owner.charge(field.getRent());          // owner get rent
+        if (active_player.getMoney() >= field.getRent()) {              // True si jugador pot pagar el lloguer
+            active_player.pay(field.getRent());                         // Jugador paga el lloguer
+            owner.charge(field.getRent());                              // Propietari rep el lloguer
             System.out.println("El lloguer s'ha pagat");
         } else {
             if (!board.isBankrupt(active_player,field.getRent(),this)) {
