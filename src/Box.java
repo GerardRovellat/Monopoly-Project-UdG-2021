@@ -51,15 +51,17 @@ public class Box {
      * @post La casella s'ha tret per pantalla
      * @param players llista de jugadors de la partida
      */
-    public void print(ArrayList<Player> players) {
+    public String print(ArrayList<Player> players) {
+        String output_text ="";
         if (this.position > 9) {
-            if (this.type == "FIELD") System.out.println(this.position + " | "/* + this.type + ":   "*/ + this.name + playerInPosition(players));
-            else System.out.println(this.position + " | " + this.name + playerInPosition(players));
+            if (this.type == "FIELD") output_text += this.position + " | "/* + this.type + ":   "*/ + this.name + playerInPosition(players)+"\n";
+            else output_text += this.position + " | " + this.name + playerInPosition(players)+"\n";
         }
         else {
-            if (this.type == "FIELD") System.out.println(this.position + "  | "/* + this.type + ":   " */+ this.name + playerInPosition(players));
-            else System.out.println(this.position + "  | " + this.name + playerInPosition(players));
+            if (this.type == "FIELD") output_text += this.position + "  | "/* + this.type + ":   " */+ this.name + playerInPosition(players)+"\n";
+            else output_text += this.position + "  | " + this.name + playerInPosition(players)+"\n";
         }
+        return output_text;
     }
 
     /**

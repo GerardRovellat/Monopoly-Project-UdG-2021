@@ -282,22 +282,23 @@ public abstract class Player {
      */
     @Override
     public String toString() {
-        System.out.println(this.name + ": " + this.money + "€");
+        String output_text = "";
+        output_text += this.name + ": " + this.money + "€\n";
         if (boxes_in_property.size() > 0) {
-            System.out.println("PROPIETATS:");
+            output_text+="PROPIETATS:\n";
             for (Field current : boxes_in_property) {
-                System.out.println("    " + current.getName() + ". amb un valor de " + current.getPrice() + "€");
+                output_text+="    " + current.getName() + ". amb un valor de " + current.getPrice() + "€\n";
             }
         }
-        else System.out.println("NO TE PROPIETATS");
+        else output_text += "NO TE PROPIETATS\n";
         if (loans.size() > 0) {
-            System.out.println("PRESTECS:");
+            output_text+="PRESTECS:\n";
             for (PlayerLoan loan : loans) {
-                System.out.println("    " + loan.smallPrint());
+                output_text+="    " + loan.smallPrint()+"\n";
             }
         }
-        else System.out.println("NO TE PRESTECS");
-        return "";
+        else output_text+="NO TE PRESTECS";
+        return output_text;
     }
 
     public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int value);

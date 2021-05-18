@@ -332,16 +332,17 @@ public class Board {
      */
     @Override
     public String toString() {
-        System.out.println("---------- TAULELL ----------");
+        String output_text = "";
+        output_text+="---------- TAULELL ----------\n";
         for (int i = 1;i<=board.size();i++) {
-            board.get(i).print(players);
+            output_text+=board.get(i).print(players);
         }
 
-        System.out.println("\n---------- JUGADORS ----------");
+        output_text+="\n---------- JUGADORS ----------\n";
         for(Player player : players) {
-            System.out.println(player.toString());
+            output_text+=player.toString();
         }
-        return "";
+        return output_text;
     }
 
 

@@ -63,8 +63,8 @@ public class Monopoly {
             current_player = players.get(current_player_iterator);
             //System.out.println(board.toString());
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
-            String temp = current_player.toString();
-            System.out.println("-----------------------------------------------------------------------\n");
+            System.out.println(current_player.toString());
+            System.out.println("-----------------------------------------------------------------------");
             if (!current_player.getBankruptcy()) {
                 throwDice();
                 movePlayer();
@@ -211,7 +211,7 @@ public class Monopoly {
         dice_result = aux;
         if (current_player.getType()=="USER") {
             System.out.println("Enter per tirar els daus");
-            String readString = scan.nextLine();
+            scan.nextLine();
         }
         System.out.println("RESULTAT DELS DAUS: " + first_dice + " | " + second_dice);
     }
