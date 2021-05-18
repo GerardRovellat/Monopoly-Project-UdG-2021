@@ -57,6 +57,10 @@ public class Board {
                 }
                 Scanner scan = new Scanner(System.in);
                 int chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1,null);
+                while(chosed_option<1 || chosed_option > rewards.size()){
+                    System.out.println("ERROR: Rang incorrecte, torna-hi...");
+                    chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1,null);
+                }
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
