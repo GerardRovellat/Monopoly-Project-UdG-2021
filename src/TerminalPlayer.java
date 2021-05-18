@@ -18,7 +18,7 @@ public class TerminalPlayer extends Player{
         super(name, initial_money, initial_position,"USER");
     }
 
-    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int value) {
+    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int value, ArrayList<optionalActions> optional_actions) {
         int number = 0;
         boolean valid = false;
         do {

@@ -301,7 +301,7 @@ public abstract class Player {
         return output_text;
     }
 
-    public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int value);
+    public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int value, ArrayList<optionalActions> optional_actions);
 
     public abstract String stringValueSelection(String type, Player player, Field field, int value, int second_value);
 
