@@ -37,7 +37,7 @@ public class CPUPlayer extends Player{
                 return_value = optionalActionSelector(player);
                 break;
             case "start":
-                return_value = start(player);
+                return_value = start(value);
                 break;
             case "buy":
                 return_value = buy(player,field);
@@ -127,10 +127,10 @@ public class CPUPlayer extends Player{
             case "throwDice" :
                 return "\n";
             case "buyBuyerOffer":
-                return_value = buyBuyerOffer(player,field,value);
+                return_value = buyBuyerOffer(field,value);
                 break;
             case "buySellerOffer":
-                return_value = buySellerOffer(player,field,value);
+                return_value = buySellerOffer(field,value);
                 break;
             case "loanInterestOffer":
                 return_value = loanInterestOffer(player,value,second_value);
@@ -182,15 +182,15 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleciona la millor accio de recompensa al passar per la casella de sortida
-     * @param player Jugador actual
-     * @pre true
+     * @param options quantitat de recompenses posibles -1
+     * @pre options es igual a la quantitat de recompenses posibles -1
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
     // ERROR: Si hi ha nomes una recompensa ---------------------------------------------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!
-    private int start(Player player) {
-        if (player.getMoney() < 15000) return 1;
-        else return 2;
+    private int start(int options) {
+        Random rand = new Random();
+        return rand.nextInt(options-1) ;
     }
 
     /**
@@ -427,7 +427,6 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    //----------------------------------------------------------------------------------------COMENTAT FINS AQUI--------------------------------------------------------
     private int buyFieldSelect(Player player) {
         int min_value = player.getFields().get(0).getPrice();
         int chosen = 0;
@@ -440,6 +439,14 @@ public class CPUPlayer extends Player{
         return chosen;
     }
 
+    /**
+     * @brief Seleccio  de la oferta inicial a la funcio Buy
+     * @param player jugador actual
+     * @param field terreny a comprar
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int buyInitalOffer(Player player, Field field) {
         Random rand = new Random();
         if (field.getPrice() > player.getMoney()) return player.getMoney();
@@ -450,7 +457,15 @@ public class CPUPlayer extends Player{
 
     }
 
-    private String buyBuyerOffer(Player player, Field field, int actual_offer) {
+    /**
+     * @brief Seleccio de la oferta del comprador a la funcio Buy en negociació
+     * @param field terreny a comprar
+     * @param actual_offer ultima oferta activa
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
+    private String buyBuyerOffer(Field field, int actual_offer) {
         if (actual_offer > field.getPrice() * 1.5) return "no";
         else if (actual_offer < field.getPrice() * 1.2) return "ok";
         Random rand = new Random();
@@ -460,7 +475,15 @@ public class CPUPlayer extends Player{
         return Integer.toString(result);
     }
 
-    private String buySellerOffer(Player player, Field field, int actual_offer) {
+    /**
+     * @brief Seleccio de la oferta del venedor a la funcio Buy en negociació
+     * @param field terreny a comprar
+     * @param actual_offer ultima oferta activa
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
+    private String buySellerOffer(Field field, int actual_offer) {
         if (actual_offer < field.getPrice()) return "no";
         else if (actual_offer > field.getPrice() * 1.3) return "ok";
         Random rand = new Random();
@@ -470,6 +493,13 @@ public class CPUPlayer extends Player{
         return Integer.toString(result);
     }
 
+    /**
+     * @brief Seleccio del terreny a la funcio Sell
+     * @param player jugador actual
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int sellFieldSelect(Player player) {
         int min_value = player.getFields().get(0).getPrice();
         int chosen = 0;
@@ -482,6 +512,14 @@ public class CPUPlayer extends Player{
         return chosen;
     }
 
+    /**
+     * @brief Seleccio  de la oferta inicial a la funcio Sell
+     * @param player jugador actual
+     * @param field terreny a vendre
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int sellInitalOffer(Player player, Field field) {
         Random rand = new Random();
         if (field.getPrice() > player.getMoney()) return player.getMoney();
@@ -491,6 +529,15 @@ public class CPUPlayer extends Player{
         }
     }
 
+    /**
+     * @brief Seleccio de la oferta del comprador a la funcio Sell
+     * @param player jugador actual
+     * @param field terreny a comprar
+     * @param actual_offer ultima oferta activa
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int sellBuyerOffer(Player player, Field field, int actual_offer) {
         if (actual_offer > field.getPrice() * 1.5 || actual_offer > player.getMoney()) return -1;
         Random rand = new Random();
@@ -503,6 +550,14 @@ public class CPUPlayer extends Player{
         return result;
     }
 
+    /**
+     * @brief Seleccio del jugador a la funcio Loan
+     * @param player jugador actual
+     * @param players llista de jugadors
+     * @pre players size > 0
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int loanPlayerSelect(Player player, ArrayList<Player> players) {
         int max_money = -1;
         int chosen_index = -1;
@@ -515,6 +570,13 @@ public class CPUPlayer extends Player{
         return chosen_index;
     }
 
+    /**
+     * @brief Seleccio  de la oferta inicial adel prestec
+     * @param loan_player jugador que demana el prestec
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return la opcio escollida
+     */
     private int loanInitialOffer(Player loan_player) {
         Random rand = new Random();
         int min = (int) (loan_player.getMoney() * 0.1);
@@ -523,6 +585,13 @@ public class CPUPlayer extends Player{
         else return rand.nextInt(max-min) + min;
     }
 
+    /**
+     * @brief Seleccio de la acceptacio, denegació o valor del interes del prestec
+     * @param player jugador que dona el prestec
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return un enter amb el interes del prestec, no si rebutja la oferta o ok si la accepta
+     */
     private String loanInterestOffer(Player player,int offer,int interests) {
         Random rand = new Random();
         if (interests == -1) {
@@ -538,12 +607,24 @@ public class CPUPlayer extends Player{
         }
     }
 
+    /**
+     * @brief Seleccio de dels torns que durarà del prestec
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return numero de torns que durarà el prestec
+     */
     private String loanTurnsOffer() {
         Random rand = new Random();
         int turns = rand.nextInt(6-1) + 1;
         return String.valueOf(turns);
     }
 
+    /**
+     * @brief Seleccio de la opcio a triar si s'entra en bancarrota ( la CPU mai farà cap altre opcio que declarar fallida perque sino la partida pot durar eternament )
+     * @pre true
+     * @post la opcio escollida s'ha retornat
+     * @return 0
+     */
     private int bankruptcy() {
         return 0;
     }

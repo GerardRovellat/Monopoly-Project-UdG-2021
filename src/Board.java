@@ -56,7 +56,7 @@ public class Board {
                     menu_option++;
                 }
                 Scanner scan = new Scanner(System.in);
-                int chosed_option = player.optionSelection("start",player,null,null,null,null,0);
+                int chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1);
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
