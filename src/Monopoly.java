@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -14,6 +15,7 @@ import javafx.util.Pair;
  * i la finalització del joc Monopoly.
  */
 public class Monopoly {
+    private String mode;
     private ArrayList<Player> players = new ArrayList<>();      ///< Llista de Jugadors del Monopoly.
     private Board board;                                        ///< Tauler del Monopoly.
     private int initial_money;                                  ///< Diners inicials quan es comença una partida.
@@ -37,8 +39,9 @@ public class Monopoly {
      * @param initial_money diners inicials del Jugador.
      * @param start_rewards llista de recompenses per la casella de sortida "Start"
      */
-    public Monopoly(Board read_board,ArrayList<optionalActions> read_optional_actions, ArrayList<Card> stack_of_cards,
+    public Monopoly(String mode,Board read_board,ArrayList<optionalActions> read_optional_actions, ArrayList<Card> stack_of_cards,
                     int initial_money, ArrayList<String> start_rewards){
+        this.mode = mode;
         this.board = read_board;
         this.optional_actions = read_optional_actions;
         this.cards = stack_of_cards;
@@ -223,6 +226,16 @@ public class Monopoly {
         int number_of_players = askNrOfPlayers();
         askInfoOfPlayers(number_of_players);
         dev_file = createDevFile();
+        //S'HA DE CANVIAR!!!!!!
+        try{
+            FileWriter fr = new FileWriter(dev_file,true);
+            String initial_description = "Mode: mode\n"
+                                        +"Nombre de Jugadors: " + players.size()+"\n";
+            fr.write(initial_description);
+            fr.close();
+        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
+
+
     }
 
     /**

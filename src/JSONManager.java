@@ -12,6 +12,7 @@ import com.google.gson.*;
  */
 public class JSONManager {
 
+    private String mode;
     private Board board = new Board();                                  ///< Tauler llegit del fitxer JSON pel Monopoly.
     private ArrayList<optionalActions> actions = new ArrayList<>();     ///< Llistat d'accions opcionals possibles.
     private ArrayList<String> star_rewards = new ArrayList<>();         ///< Llistat de recompenses que pot donar Start
@@ -41,7 +42,7 @@ public class JSONManager {
     public Monopoly readFile() {
         this.board = readBoard();
         this.actions = readRules();
-        Monopoly monopoly = new Monopoly(board,actions,cards,initial_money,star_rewards);
+        Monopoly monopoly = new Monopoly(mode,board,actions,cards,initial_money,star_rewards);
         return monopoly;
     }
 
@@ -73,7 +74,7 @@ public class JSONManager {
             JsonObject j_object = data.getAsJsonObject();
 
             //Primer element "modalitat"
-            String mode = j_object.get("modalitat").getAsString();
+            mode = j_object.get("modalitat").getAsString();
             /**FALTA TRACTAR EL ERROR**/
 
             //Segon element array "accionsNoAplicables"

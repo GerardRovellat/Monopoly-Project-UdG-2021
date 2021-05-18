@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -53,19 +54,22 @@ public class Sell implements optionalActions{
                 field_nr++;
             }
             Scanner scan = new Scanner(System.in);
-            int confirm = 1;
+            int confirm = 1, nr_of_fields = field_nr;
             Field field_to_sell = null;
             while (confirm == 1) {
                 System.out.println("Quin terreny vols vendre?");
-                field_nr = current_player.optionSelection("sellFieldSelect",current_player,null,null,null,null,0);
+                field_nr = current_player.optionSelection("sellFieldSelect", current_player, null, null, null, null, 0);
+                while (field_nr < 0 || field_nr > nr_of_fields - 1) {
+                    System.out.println("Tria una opcio correcte:");
+                    field_nr = current_player.optionSelection("confirmation", null, null, null, null, null, 0);
+                }
                 field_to_sell = current_player.getFields().get(field_nr);
                 System.out.println(field_to_sell.toString());
                 System.out.println("Segur que vols vendre aquesta propietat? (0-Si 1-No 2-Cancel·lar)");
-                confirm = current_player.optionSelection("confirmation",null,null,null,null,null,0);
-
+                confirm = current_player.optionSelection("confirmation", null, null, null, null, null, 0);
                 while (confirm != 0 && confirm != 1 && confirm != 2) {
-                    System.out.println("Tria una opcio correcte");
-                    confirm = current_player.optionSelection("confirmation",null,null,null,null,null,0);
+                    System.out.println("Tria una opcio correcte:");
+                    confirm = current_player.optionSelection("confirmation", null, null, null, null, null, 0);
                 }
             }
             if(confirm == 0) {
