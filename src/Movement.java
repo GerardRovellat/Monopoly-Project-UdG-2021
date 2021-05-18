@@ -405,13 +405,18 @@ public class Movement {
                             field.build(quantity);          // Build x apartaments (x = quantity)
                             active_player.pay(final_price);         // Modify active player money ( money - final price )
                             System.out.println("Operacio realitzada");
+                            output.fileWrite(active_player.getName() + "> Edifica " + quantity + " Apartaments a " + field.getName());
                             // Treure resum final del jugador
                         } else System.out.println("Valor entrat erroni, torni a provar");
                     }
                 } else {
                     System.out.println("No te suficients diners per construir cap apartament");
+                    output.fileWrite(active_player.getName() + "> No te suficients diners per edificar");
                 }
-            }else System.out.println("Ja estàn tots els apartaments permesos construits");
+            }else {
+                System.out.println("Ja estàn tots els apartaments permesos construits");
+                output.fileWrite(active_player.getName() + "> Ja estàn tots els apartaments permesos construits");
+            }
     }
 
     /**
@@ -440,12 +445,19 @@ public class Movement {
                         field.build(1);          // Build the hotel (quantity = 1)
                         active_player.pay(price_to_build);         // Modify active player money ( money - hotel price )
                         System.out.println("Operacio realitzada");
+                        output.fileWrite(active_player.getName() + "> Edifica 1 Hotel a " + field.getName());
                         // Treure resum final del jugador
                     } else System.out.println("Valor entrat erroni, torni a provar");
                 }
-            } else System.out.println("No te suficients diners per construir el hotel");
+            } else {
+                System.out.println("No te suficients diners per construir el hotel");
+                output.fileWrite(active_player.getName() + "> No te suficients diners per edificar");
+            }
         }
-        else System.out.println("Encara no es pot construir un hotel");
+        else {
+            System.out.println("Encara no es pot construir un hotel");
+            output.fileWrite(active_player.getName() + "> Encara no es pot construir un hotel");
+        }
     }
 
     /**
@@ -458,5 +470,7 @@ public class Movement {
         return cards;
     }
 
-
+    public OutputManager getOutput() {
+        return output;
+    }
 }

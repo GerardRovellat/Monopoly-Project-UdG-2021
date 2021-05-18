@@ -41,6 +41,7 @@ public class Sell implements optionalActions{
      * @return \p true si el procés s'ha realitzat, \p false altrament.
      */
     public boolean execute(ArrayList<Player> players,Player current_player,Movement m) {
+        OutputManager output = m.getOutput();
         boolean is_possible = true;
         if(current_player.getFields().isEmpty()){
             System.out.println("Cap terreny en propietat");
@@ -77,6 +78,7 @@ public class Sell implements optionalActions{
                 System.out.println("Per quin preu vols començar la venta?");
                 sell_price = current_player.optionSelection("sellInitalOffer",current_player,field_to_sell,null,null,null,0,null);
                 System.out.println("La subhasta per " + field_to_sell.getName() + " comença per " + sell_price + "€");
+                output.fileWrite(current_player.getName() + "> Ven " + field_to_sell.getName() + " per " + sell_price + "€");
                 ArrayList<Player> auction_players = new ArrayList<>();
                 ArrayList<Player> retired_players = new ArrayList<>();
                 auction_players.addAll(players);
@@ -99,7 +101,10 @@ public class Sell implements optionalActions{
                     if (offer == -1) {
                         retired_players.add(auction_players.get(0));
                         System.out.println(name_of_player + " s'ha retirat de la subhasta");
-                    } else winner = auction_players.get(0);
+                        output.fileWrite("\t" +name_of_player + "> Es retira");
+                    } else {
+                        winner = auction_players.get(0);
+                    }
                 }
                 else {
                     while (auction_players.size() > 1) {
@@ -120,11 +125,13 @@ public class Sell implements optionalActions{
                                 if (offer == -1) {
                                     retired_players.add(aux_player);
                                     System.out.println(name_of_player + " s'ha retirat de la subhasta");
+                                    output.fileWrite("\t" + name_of_player + "> Es retira");
                                 } else {
                                     if (max_offer < offer) {
                                         max_offer = offer;
                                         winner = aux_player;
                                     }
+                                    output.fileWrite("\t" + name_of_player + "> Ofereix " + offer + "€");
                                 }
                             }
                         }
@@ -136,11 +143,13 @@ public class Sell implements optionalActions{
                 }
                 if (winner == null) {
                     System.out.println("Cap jugador ha comprat la propietat " + field_to_sell.getName());
+                    output.fileWrite(current_player.getName() + "> Cap jugador compra");
                 }
                 else {
                     winner.pay(max_offer);
                     current_player.charge(max_offer);
                     System.out.println("El jugador " + winner + " ha comprat " + field_to_sell.getName() + " per " + max_offer);
+                    output.fileWrite(winner.getName() + "> Compra " + field_to_sell.getName() + " a " + current_player.getName() + " per " + max_offer);
                 }
             }
             else{

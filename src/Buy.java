@@ -39,6 +39,7 @@ public class Buy implements optionalActions{
      * @return \p true si el procés s'ha realitzat, \p false altrament.
      */
     public boolean execute(ArrayList<Player> players,Player current_player,Movement m) {
+        OutputManager output = m.getOutput();
         boolean is_possible = true;
         Scanner scan = new Scanner(System.in);
         System.out.println("PROPIETATS DELS JUGADORS");
@@ -101,6 +102,7 @@ public class Buy implements optionalActions{
                 catch (NumberFormatException e){
                     System.out.println("Format incorrecte. Torna-hi.");
                 }
+                output.fileWrite(current_player.getName() + "> Vol vendre " + buy_field.getName() + " per " + current_offer + "€");
                 System.out.println("Oferta realitzada.");
                 System.out.println("Comença la negociació");
                 boolean buy_final = false;
@@ -114,13 +116,16 @@ public class Buy implements optionalActions{
                     else tmp = buy_player.stringValueSelection("buySellerOffer",offer_active_player,buy_field,current_offer,0);
                     if (tmp.equals("ok")) {
                         buy_final = true;
+                        output.fileWrite(offer_active_player.getName() + "> Accepta la oferta");
                     } else if (tmp.equals("no")) {
                         buy_final = true;
                         current_offer = -1;
+                        output.fileWrite(offer_active_player.getName() + "> No accepta la oferta");
                     } else if (Integer.parseInt(tmp) < 0 || Integer.parseInt(tmp) >= current_player.getMoney()) {
                         System.out.println("Valor incorrecte, la oferta ha de superior a 0 i inferior a " + current_player.getMoney());
                     } else {
                         current_offer = Integer.parseInt(tmp);
+                        output.fileWrite("\t" +  offer_active_player.getName() + "> Offereix " + current_offer + "€");
                         if (offer_active_player == buy_player) offer_active_player = current_player;
                         else offer_active_player = buy_player;
                     }

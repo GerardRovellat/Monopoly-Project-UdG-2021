@@ -159,15 +159,15 @@ public class CPUPlayer extends Player{
         int pos_iterator = 1;
         for (optionalActions opaction : optional_actions) {
             if (opaction.getClass().getName() == "Buy") {
-                if (player.getMoney()<=20000) bestMoves.put(1,20-(player.getMoney()/1000)*5);  // Ex: money = 5000 => 5000/1000 = 5 => 20-5 = 15 => 15*5 = 75%
+                if (player.getMoney()<=20000) bestMoves.put(pos_iterator,20-(player.getMoney()/1000)*5);  // Ex: money = 5000 => 5000/1000 = 5 => 20-5 = 15 => 15*5 = 75%
                 else bestMoves.put(pos_iterator,0);
             }
             else if (opaction.getClass().getName() == "Sell") {
-                if (player.getMoney()>=20000) bestMoves.put(2,player.getMoney()/1000);
+                if (player.getMoney()>=20000) bestMoves.put(pos_iterator,player.getMoney()/1000);
                 else bestMoves.put(pos_iterator,0);
             }
             else if (opaction.getClass().getName() == "Loan") {
-                if (player.getMoney()<=5000) bestMoves.put(3,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
+                if (player.getMoney()<=5000) bestMoves.put(pos_iterator,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
                 else bestMoves.put(pos_iterator,0);
             }
             else if (opaction.getClass().getName() == "LuckCard") {
