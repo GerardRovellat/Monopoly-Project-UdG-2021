@@ -163,7 +163,7 @@ public class CPUPlayer extends Player{
                 else bestMoves.put(pos_iterator,0);
             }
             else if (opaction.getClass().getName() == "Sell") {
-                if (player.getMoney()>=20000) bestMoves.put(pos_iterator,player.getMoney()/1000);
+                if (player.getMoney()>=20000 /*&& player.getFields().size() > 0*/) bestMoves.put(pos_iterator,player.getMoney()/1000);
                 else bestMoves.put(pos_iterator,0);
             }
             else if (opaction.getClass().getName() == "Loan") {

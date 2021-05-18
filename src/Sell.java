@@ -45,6 +45,7 @@ public class Sell implements optionalActions{
         boolean is_possible = true;
         if(current_player.getFields().isEmpty()){
             System.out.println("Cap terreny en propietat");
+            output.fileWrite(current_player.getName() + "> No te cap terreny en propietat");
             is_possible = false;
         }
         else {

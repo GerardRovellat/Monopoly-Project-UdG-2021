@@ -224,10 +224,11 @@ public class Movement {
         }
         value = active_player.optionSelection("optionalActionSelector",active_player,null,null,null,null,0,possible_actions);
         if (value != 0) {
+            output.fileWrite(active_player.getName() + "> Accio opcional escollida: " +  value + " - " + possible_actions.get(value-1).getClass().getName());
             possible_actions.get(value - 1).execute(players, active_player, this);
         }
-        if( value != 0 ) output.fileWrite(active_player.getName() + "> Accio opcional escollida: " +  value + " - " + possible_actions.get(value-1).getClass().getName());
         else output.fileWrite(active_player.getName() + "> Accio opcional escollida: 0 - RES");
+
     }
 
     /**

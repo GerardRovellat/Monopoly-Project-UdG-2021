@@ -58,12 +58,13 @@ public class Monopoly {
      */
     public void play(){
         startGame();
+        dev_file.fileWrite("\n--------------- PARTIDA--------------\n");
         while(!checkEndGame()) {
             current_player = players.get(current_player_iterator);
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             System.out.println(current_player.toString());
             System.out.println("-----------------------------------------------------------------------");
-            dev_file.fileWrite("CANVI DE JUGADOR:\n" + current_player.getName() + ">  "+current_player.getMoney()+"€, Terrenys "+
+            dev_file.fileWrite("\nCANVI DE JUGADOR:\n" + current_player.getName() + ">  "+current_player.getMoney()+"€, Terrenys "+
                     current_player.getFields().size()+", Prestecs "+current_player.getLoans().size()+", Posició "+current_player.getPosition());
             if (!current_player.getBankruptcy()) {
                 throwDice();
@@ -133,7 +134,7 @@ public class Monopoly {
         else position = current_player.getPosition() + position;
         System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position + "\n");
         board.movePlayer(current_player,position,start_rewards);
-        dev_file.fileWrite(current_player.getName() +"> Mou de la posició "+current_player.getPosition()+" a la"+position);
+        dev_file.fileWrite(current_player.getName() +"> Mou de la posició "+current_player.getPosition()+" a la "+position);
     }
 
     /**
