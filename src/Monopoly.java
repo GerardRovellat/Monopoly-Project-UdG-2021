@@ -103,6 +103,8 @@ public class Monopoly {
                     aux.optionalActions(optional_actions);
                     System.out.println("-----------------------------------------------------------------------\n");
                 }
+                fileWrite("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------\n"+
+                        current_player.toString()+"Resultat dels daus: "+dice_result.getKey()+" i "+dice_result.getValue()+"\n");
             }
             else {
                 System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
@@ -226,14 +228,7 @@ public class Monopoly {
         int number_of_players = askNrOfPlayers();
         askInfoOfPlayers(number_of_players);
         dev_file = createDevFile();
-        try{
-            FileWriter fr = new FileWriter(dev_file,true);
-            String initial_description = board.toString();
-            fr.write(initial_description);
-            fr.close();
-        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
-
-
+        fileWrite("Mode: "+mode+"\n"+board.toString());
     }
 
     /**
@@ -300,7 +295,7 @@ public class Monopoly {
                 }
             } while (!valid);
         }
-        scan.nextLine();                                                //Netejem buffer
+        scan.nextLine();                                                               // Netejem buffer
     }
     
     /**
@@ -384,5 +379,18 @@ public class Monopoly {
                 System.out.println(aux.toString());
             }
         }
+    }
+
+    /**
+     * @brief Escriu text \p line al fitxer de desenvolupament de partida \p dev_file.
+     * @pre \p true
+     * @post la linea de text \p line ha estat escrita a \p dev_file.
+     */
+    private void fileWrite(String line){
+        try{
+            FileWriter fr = new FileWriter(dev_file,true);
+            fr.write(line);
+            fr.close();
+        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
     }
 }
