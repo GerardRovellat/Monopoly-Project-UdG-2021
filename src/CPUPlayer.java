@@ -180,9 +180,14 @@ public class CPUPlayer extends Player{
                 }
                 bestMoves.put(pos_iterator,prob);
             }
+            pos_iterator++;
         }
         int bestMove = 0;
-        for (int i=0;i<bestMoves.size();i++) if (bestMoves.get(i).byteValue() > bestMoves.get(bestMove).longValue()) bestMove = i;
+        for (HashMap.Entry<Integer,Integer> entry : bestMoves.entrySet()) {
+            if (entry.getValue() > bestMoves.get(bestMove)) {
+                bestMove = entry.getKey();
+            }
+        }
         return bestMove;
     }
 
@@ -195,7 +200,7 @@ public class CPUPlayer extends Player{
      */
     private int start(int options) {
         Random rand = new Random();
-        return rand.nextInt(options-1) ;
+        return rand.nextInt(options) + 1;
     }
 
     /**

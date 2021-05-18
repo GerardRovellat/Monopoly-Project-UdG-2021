@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  * @author Marc Got
@@ -22,7 +21,7 @@ public class Movement {
     Board board;                                                        ///< Tale del Monopoly.
     private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
     private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
-    private File dev_file;
+    private OutputManager output;
 
 
 
@@ -34,15 +33,15 @@ public class Movement {
      * @param box Casella posició de \p active_player en el tauler.
      * @param player Informació de el Jugador que està jugant en aquest torn.
      */
-    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards,File dev_file){
+    public Movement(Box box,Player player,ArrayList<Player> players,Board board,ArrayList<String> start_rewards,ArrayList<Card> cards,OutputManager output){
         this.current_box = box;
         this.active_player = player;
         this.players = players;
         this.board = board;
         this.start_rewards = start_rewards;
         this.cards = cards;
-        this.dev_file = dev_file;
-        userActionsStart();
+        this.output = output;
+        //userActionsStart();
     }
 
     /**
@@ -51,7 +50,7 @@ public class Movement {
      * @post La informació ha sigut mostrada per pantalla.
      */
     public void startAction() {
-        write(active_player.getName() + "> Cau a Casella Sortida");
+        output.fileWrite(active_player.getName() + "> Cau a Casella Sortida");
         System.out.println("Has caigut a la casella de Inici i rebut la recompensa");
     }
 
@@ -63,7 +62,7 @@ public class Movement {
      */
     public void fieldAction() {
         Field field = (Field) current_box;
-        write(active_player.getName() + "> Cau a Casella Terreny");
+        output.fileWrite(active_player.getName() + "> Cau a Casella Terreny");
         if (field.isBought()) {
             if (field.getOwner() == active_player) build();
             else payRent();
@@ -76,6 +75,7 @@ public class Movement {
      * @post Dona la suma de diners de l'aposta que el jugador que fa el moviment ha realitzat.
      */
     public void betAction(){
+        output.fileWrite(active_player.getName() + "> Cau a Casella Aposta");
         System.out.println("Entri la quantitat de la seva aposta");
         int quantity = -1;
         while (quantity < 0 || quantity > active_player.getMoney()) {
@@ -108,9 +108,11 @@ public class Movement {
             System.out.println("Ha superat la aposta amb un resultat de +" + result + "€");
             active_player.charge(result);
             System.out.println("S'han afegit els fons al compte");
+            output.fileWrite(active_player.getName() + "> Aposta " + quantity + " a el valor " + bet + " i el resultat es " + (first_dice+second_dice)  + " i guanya " + (result-quantity));
         }
         else {
             System.out.println("No ha superat la aposta");
+            output.fileWrite(active_player.getName() + "> Aposta " + quantity + " a el valor " + bet + " i el resultat es " + (first_dice+second_dice)  + " i perd " + (quantity-result-1));
         }
         System.out.println("Final aposta");
     }
@@ -122,6 +124,7 @@ public class Movement {
      * guardar-se o utilitzar-se, altrament s'executara.
      */
     public void luckAction(){
+        output.fileWrite(active_player.getName() + "> Cau a Casella Sort");
         System.out.println("Has caigut en una casella de sort");
         Card current = cards.get(cards.size()-1);
         cards.remove(cards.size()-1);
@@ -142,6 +145,7 @@ public class Movement {
             else {
                 runCard(current);
                 cards.add(0, current);
+                output.fileWrite(active_player.getName() + "> guardada");
             }
         }
         else {
@@ -156,6 +160,7 @@ public class Movement {
      * @post Realitza el moviment depenent del tipus de comanda directa que és.
      */
     public void directComand(){
+        output.fileWrite(active_player.getName() + "> Cau a Casella Comanda Directe");
         System.out.println("Has caigut en una casella de comanda directa");
         directCommand current = (directCommand) current_box;
         runCard(current.getCard());
@@ -221,38 +226,9 @@ public class Movement {
         if (value != 0) {
             possible_actions.get(value - 1).execute(players, active_player, this);
         }
-
+        if( value != 0 ) output.fileWrite(active_player.getName() + "> Accio opcional escollida: " +  value + " - " + possible_actions.get(value-1).getClass().getName());
+        else output.fileWrite(active_player.getName() + "> Accio opcional escollida: 0 - RES");
     }
-
-    /**
-     * @brief $$$$$$
-     * @pre true
-     * @post
-     */
-    public void userActionsStart(){
-        user_actions.put(0,"Res");
-        user_actions.put(1,"Confirmar");
-        user_actions.put(2,"Anular");
-        user_actions.put(3,"Comprar");
-        user_actions.put(4,"Edificar");
-        user_actions.put(5,"Apartaments");
-        user_actions.put(6,"Hotel");
-    }
-
-
-    /**
-     * @brief $$$$$$
-     * @pre true
-     * @post SOMETHING
-     */
-    public void printUserActions(int[] actions){
-        System.out.println("Accions displonibles:");
-        for (Integer aux : actions ) {
-            System.out.println(aux + ". " + user_actions.get(aux));
-        }
-        System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-    }
-
 
     /**
      * @brief Administrarà la compra d'un terreny on s'ha caigut de tauler.
@@ -288,14 +264,20 @@ public class Movement {
                             active_player.addBox(field);
                             field.buy(active_player);
                             System.out.println("Casella comprada");
+                            output.fileWrite(active_player.getName() + "> Compra " + field.getName() + " a un preu de " + field.getPrice());
                         }
                         else System.out.println("Operació cancelada");
+                        output.fileWrite(active_player.getName() + "> No compra" + field.getName());
                     }
                 }
-                else System.out.println("No tens suficients diners per comprar");
+                else {
+                    System.out.println("No tens suficients diners per comprar");
+                    output.fileWrite(active_player.getName() + "> No to deiners per comprar" + field.getName());
+                }
                 end = true;
             } else if (value == 0) {
                 System.out.println("Casella no comprada");
+                output.fileWrite(active_player.getName() + "> No compra" + field.getName());
                 end = true;
             } else System.out.println("Valor entrat erroni, torni a provar");
         }
@@ -316,8 +298,10 @@ public class Movement {
             active_player.pay(field.getRent());                         // Jugador paga el lloguer
             owner.charge(field.getRent());                              // Propietari rep el lloguer
             System.out.println("El lloguer s'ha pagat");
+            output.fileWrite(active_player.getName() + "> Paga el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
         } else {
             if (!board.isBankrupt(active_player,field.getRent(),this)) {
+                output.fileWrite(active_player.getName() + "> No pot pagar el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
                 board.transferProperties(active_player,field.getOwner(),this);
             }
         }
@@ -472,14 +456,6 @@ public class Movement {
      */
     public ArrayList<Card> getCards() {
         return cards;
-    }
-
-    private void write(String line) {
-        try{
-            FileWriter fr = new FileWriter(this.dev_file,true);
-            fr.write(line);
-            //fr.close();
-        } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
     }
 
 
