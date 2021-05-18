@@ -297,7 +297,7 @@ public abstract class Player {
                 output_text+="    " + loan.smallPrint()+"\n";
             }
         }
-        else output_text+="NO TE PRESTECS";
+        else output_text+="NO TE PRESTECS\n";
         return output_text;
     }
 

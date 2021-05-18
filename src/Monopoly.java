@@ -226,11 +226,9 @@ public class Monopoly {
         int number_of_players = askNrOfPlayers();
         askInfoOfPlayers(number_of_players);
         dev_file = createDevFile();
-        //S'HA DE CANVIAR!!!!!!
         try{
             FileWriter fr = new FileWriter(dev_file,true);
-            String initial_description = "Mode: mode\n"
-                                        +"Nombre de Jugadors: " + players.size()+"\n";
+            String initial_description = board.toString();
             fr.write(initial_description);
             fr.close();
         } catch (IOException e){System.out.println("No s'ha pogut escriure en el fitxer de desenvolupament de partida");}
@@ -302,6 +300,7 @@ public class Monopoly {
                 }
             } while (!valid);
         }
+        scan.nextLine();                                                //Netejem buffer
     }
     
     /**
