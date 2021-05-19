@@ -53,8 +53,9 @@ public class CardPay extends Card{
         }
         else {
             System.out.println("No tens suficient diners per pagar");
-            if (!board.isBankrupt(current_player,quantity,aux)) {
+            if (board.isBankrupt(current_player,quantity,aux)) {
                 board.transferProperties(current_player,null,aux);
+                current_player.goToBankruptcy();
             }
         }
     }

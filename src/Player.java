@@ -242,10 +242,14 @@ public abstract class Player {
             if (aux.isEnd()) {
                 boolean ableToPay = true;
                 if (aux.returnValue() > money) ableToPay = board.isBankrupt(this, aux.returnValue(), movement);
-                if (ableToPay) {
+                if (!ableToPay) {
                     if (aux.payLoan()) loans.remove(aux);
                 }
-                else board.transferProperties(this,aux.getLoaner(),movement);
+                else{
+                    board.transferProperties(this,aux.getLoaner(),movement);
+                    this.goToBankruptcy();
+                }
+
             }
         }
     }

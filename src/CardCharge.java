@@ -23,18 +23,18 @@ public class CardCharge extends Card{
     public CardCharge (boolean postposable, int quantity) {
         super("CHARGE",postposable);
         this.quantity = quantity;
-        messages.put(0,"VENDES TU BILLETE DE TREN PARA VALLADOLID EN UNA SUBASTA POR INTERNET RECIBE " + quantity + " €");
-        messages.put(1,"¡HAS GANADO EL BOTE DE LA LOTERÍA RECIBE " + quantity + " €");
-        messages.put(2,"BENEFICIO POR LA VENTA DE SUS ACCIONES RECIBE " + quantity + " €");
-        messages.put(3,"TU COMPAÑIA DE INTERNET OBTIENE BENEFICIOS RECIBE " + quantity + " €");
-        messages.put(4,"TUS COMPAÑEROS TE ALQUILAS TU VILLA EN CANNES DURANTE UNA SEMANA COBRA " + quantity + " €");
-        messages.put(5,"GANAS UN CONCURSO DE KARAOKE EN TELEVISIÓN COBRA " + quantity + "€ POR UN CONTRATO DISCOGRÁFICO");
-        messages.put(6,"HEREDAS 3M € PERO LOS GRAVÁMENES SON MUY ALTOS RECIBE " + quantity + " €");
-        messages.put(7,"COMPRAS UNA ACUARELA EN MELILLA Y LA VENDES POS MÁS DEL DOBLE RECIBE " + quantity + " €");
-        messages.put(8,"GANAS LA DEMANDA DE TU SEGURO DE COCHE RECIBE " + quantity + " €");
-        messages.put(9,"RECIBE " + quantity + " € DE BENEFICIOS POR ALQUILAR LOS SERVICIOS DE TU JET PRIVADO");
-        messages.put(10,"DEVOLUCIÓN DE HACIENDA COBRA " + quantity + " €");
-        messages.put(11,"HAS GANADO TU APUESTA EN LA ELIMINACIÓN DEL MADRID EN CHAMPIONS COBRA " + quantity + " €");
+        messages.put(0,"VENS EL TEU BITLLET DE TREN PER VALLADOLID EN UNA SUBHASTA PER INTERNET REP " + quantity + " €");
+        messages.put(1,"¡HAS GUANYAT EL POT DE LA LOTERIA REB " + quantity + " €!");
+        messages.put(2,"BENEFICI PER LA VENTA DE LES TEVES ACCIONS " + quantity + " €");
+        messages.put(3,"LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP " + quantity + " €");
+        messages.put(4,"ELS TEUS COMPANYS T'ALQUILEN LA TEVA VILLA A HAWAI DURANT UNA SEMANA COBRA " + quantity + " €");
+        messages.put(5,"GUANAYS UN CONCURS DE KARAOKE PER LA TELEVISIO COBRA " + quantity + "€ POR UN CONTRATO DISCOGRÁFICO");
+        messages.put(6,"HEREDAS D'UN FAMILIRAR REP " + quantity + " €");
+        messages.put(7,"COMPRAS UN SEGELL I EL VENS PER MES DEL DOBLE REPS " + quantity + " €");
+        messages.put(8,"GUANYAS LA DEMANDA DEL PARTE DEL COTXE REPS " + quantity + " €");
+        messages.put(9,"REPS " + quantity + " € DE BENEFICIS PER EL LLOGUER DEL TEU JET PRIVAT");
+        messages.put(10,"DEVOLUCIÓ D'HISENDA REPS " + quantity + " €");
+        messages.put(11,"HAS GUANYAT LA TEVA APOSTA DEL MADRID ELIMINAT DE CHAMPIONS REPS " + quantity + " €");
     }
 
     /**

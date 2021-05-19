@@ -70,6 +70,7 @@ public class Movement {
      */
     public void betAction(){
         output.fileWrite(active_player.getName() + "> Cau a Casella Aposta");
+        System.out.println("Cau a Casella Aposta");
         System.out.println("Entri la quantitat de la seva aposta");
         int quantity = -1;
         while (quantity < 0 || quantity > active_player.getMoney()) {
@@ -128,7 +129,6 @@ public class Movement {
             System.out.println("1. fer-la servir ara");
             int value = -1;
             while (value < 0 || value > 1 ) {
-                //value = scan.nextInt();
                 value = active_player.optionSelection("postposableLuckCardChoice",null,null,null,null,current,0,null);
                 if (value < 0 || value > 1 ) System.out.println("Valor entrat incorrecte. Torni a provar:");
             }
@@ -193,9 +193,6 @@ public class Movement {
             case "PAY":
                 CardPay pay = (CardPay) card;
                 pay.execute(players,board,active_player,this);
-                break;
-            default:
-                //trow error
                 break;
         }
     }
@@ -293,9 +290,10 @@ public class Movement {
             System.out.println("El lloguer s'ha pagat");
             output.fileWrite(active_player.getName() + "> Paga el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
         } else {
-            if (!board.isBankrupt(active_player,field.getRent(),this)) {
+            if (board.isBankrupt(active_player,field.getRent(),this)) {
                 output.fileWrite(active_player.getName() + "> No pot pagar el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
                 board.transferProperties(active_player,field.getOwner(),this);
+                active_player.goToBankruptcy();
             }
         }
     }

@@ -70,7 +70,7 @@ public class CardGive extends Card{
     private BoxField fieldSelect(Player current_player) {
         if (current_player.getFields().size() > 0) {
             for (BoxField field : current_player.getFields()) {
-                System.out.println(current_player.getFields().indexOf(field) + "- " + field.getName() + " (" + field.getPrice() + ")");
+                System.out.println(current_player.getFields().indexOf(field) + "- " + field.getName() + " (" + field.getPrice() + "€)");
             }
             System.out.println("Seleccioni un terreny");
             try {
