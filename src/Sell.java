@@ -1,3 +1,4 @@
+import javafx.util.Pair;
 import java.util.ArrayList;
 
 
@@ -50,60 +51,17 @@ public class Sell implements optionalActions{
         else {
             Field field_to_sell = selectFieldToSell(current_player);
             if(field_to_sell != null) {
-                int sell_price;
-                System.out.println("Per quin preu vols començar la venta?");
-                sell_price = current_player.optionSelection("sellInitalOffer",current_player,field_to_sell,null,null,null,0,null);
-                System.out.println("La subhasta per " + field_to_sell.getName() + " comença per " + sell_price + "€");
-                output.fileWrite(current_player.getName() + "> Ven " + field_to_sell.getName() + " per " + sell_price + "€");
-                ArrayList<Player> auction_players = new ArrayList<>();
-                ArrayList<Player> retired_players = new ArrayList<>();
-                auction_players.addAll(players);
-                auction_players.remove(current_player);
-                int offer = sell_price, max_offer = sell_price;
-                Player winner = null;
-                while (auction_players.size() > 0) {
-                    for (Player aux_player : auction_players) {
-                        if (auction_players.size() - retired_players.size() != 1 || winner == null) {
-                            String name_of_player = aux_player.getName();
-                            int current_money = aux_player.getMoney();
-                            System.out.println(name_of_player + " tens " + current_money + "€");
-                            System.out.println("Que ofereixes? (-1 per retirar-se):");
-                            offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer,null);
-                            while (current_money < offer || offer < max_offer && offer != -1) {
-                                if (offer < max_offer)
-                                    System.out.println("Erroni, s'ha de superar el import de " + max_offer);
-                                else
-                                    System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
-                                offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer,null);
-                            }
-                            if (offer == -1) {
-                                retired_players.add(aux_player);
-                                System.out.println(name_of_player + " s'ha retirat de la subhasta");
-                                output.fileWrite("\t" + name_of_player + "> Es retira");
-                            } else {
-                                if (max_offer < offer) {
-                                    max_offer = offer;
-                                    winner = aux_player;
-                                }
-                                output.fileWrite("\t" + name_of_player + "> Ofereix " + offer + "€");
-                            }
-                        }
-                    }
-                    if(auction_players.size() == 1 && winner != null) retired_players.addAll(auction_players);
-                    for (Player retired : retired_players) {
-                        auction_players.remove(retired);
-                    }
-                    retired_players.clear();
-                }
-                if (winner == null) {
+                int sell_price = selectSellPrice(current_player,field_to_sell,output);
+                Pair<Player,Integer> winner = doAuction(players,current_player,field_to_sell,output,sell_price);
+                if (winner.getKey() == null) {
                     System.out.println("Cap jugador ha comprat la propietat " + field_to_sell.getName());
                     output.fileWrite(current_player.getName() + "> Cap jugador compra");
                 }
                 else {
-                    winner.pay(max_offer);
-                    current_player.charge(max_offer);
-                    System.out.println("El jugador " + winner.getName() + " ha comprat " + field_to_sell.getName() + " per " + max_offer);
-                    output.fileWrite(winner.getName() + "> Compra " + field_to_sell.getName() + " a " + current_player.getName() + " per " + max_offer);
+                    winner.getKey().pay(winner.getValue());
+                    current_player.charge(winner.getValue());
+                    System.out.println("El jugador " + winner.getKey().getName() + " ha comprat " + field_to_sell.getName() + " per " + winner.getValue());
+                    output.fileWrite(winner.getKey().getName() + "> Compra " + field_to_sell.getName() + " a " + current_player.getName() + " per " + winner.getValue());
                 }
             }
             else{
@@ -112,6 +70,80 @@ public class Sell implements optionalActions{
             }
         }
         return  is_possible;
+    }
+
+    /**
+     * @brief Metode per realitzar la subhasta a l'hora de vendre.
+     * @pre Jugador \p field_to_sell != null i Moviment \p sell_price != 0
+     * @post La subhasta ha estat realitzada
+     * @param players           ArrayList de jugadors que estan jugant al Monopoly.
+     * @param current_player    Jugador que fa la venda.
+     * @param field_to_sell     Terreny el qual sera venut.
+     * @param output            Fitxer per escriure desenvolupament de partida
+     * @param sell_price        Preu inicial de la venta
+     * @return Retorna el guanyador de la subhasta i el preu pel qual l'ha comprat.
+     */
+    private Pair<Player,Integer> doAuction(ArrayList<Player> players, Player current_player, Field field_to_sell, OutputManager output, int sell_price){
+        ArrayList<Player> auction_players = new ArrayList<>();
+        ArrayList<Player> retired_players = new ArrayList<>();
+        auction_players.addAll(players);
+        auction_players.remove(current_player);
+        int offer = sell_price, max_offer = sell_price;
+        Player winner = null;
+        while (auction_players.size() > 0) {
+            for (Player aux_player : auction_players) {
+                if (auction_players.size() - retired_players.size() != 1 || winner == null) {
+                    String name_of_player = aux_player.getName();
+                    int current_money = aux_player.getMoney();
+                    System.out.println(name_of_player + " tens " + current_money + "€");
+                    System.out.println("Que ofereixes? (-1 per retirar-se):");
+                    offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer, null);
+                    while (current_money < offer || offer < max_offer && offer != -1) {
+                        if (offer < max_offer)
+                            System.out.println("Erroni, s'ha de superar el import de " + max_offer);
+                        else
+                            System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
+                        offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer, null);
+                    }
+                    if (offer == -1) {
+                        retired_players.add(aux_player);
+                        System.out.println(name_of_player + " s'ha retirat de la subhasta");
+                        output.fileWrite("\t" + name_of_player + "> Es retira");
+                    } else {
+                        if (max_offer < offer) {
+                            max_offer = offer;
+                            winner = aux_player;
+                        }
+                        output.fileWrite("\t" + name_of_player + "> Ofereix " + offer + "€");
+                    }
+                }
+            }
+            if (auction_players.size() == 1 && winner != null) retired_players.addAll(auction_players);
+            for (Player retired : retired_players) {
+                auction_players.remove(retired);
+            }
+            retired_players.clear();
+        }
+        Pair<Player,Integer> winner_info= new Pair(winner,max_offer);
+        return winner_info;
+    }
+
+    /**
+     * @brief Metode per sel·leccionar el preu de la venta d'un terreny \p field_to_sell.
+     * @pre Jugador \p true
+     * @post Preu de la venta sel·leccionat.
+     * @param current_player    Jugador que fa la venda.
+     * @param field_to_sell     Terreny per vendre a seleccionar.
+     * @param output            Fitxer de desenvolupament de partida.
+     * @return Retorna el preu \p price pel que començara la venta.
+     */
+    private int selectSellPrice(Player current_player, Field field_to_sell, OutputManager output){
+        int price;
+        System.out.println("Per quin preu vols començar la venta?");
+        price = current_player.optionSelection("sellInitalOffer",current_player,field_to_sell,null,null,null,0,null);
+        System.out.println("La subhasta per " + field_to_sell.getName() + " comença per " + price + "€");
+        output.fileWrite(current_player.getName() + "> Ven " + field_to_sell.getName() + " per " + price + "€");
+        return price;
     }
 
     /**
