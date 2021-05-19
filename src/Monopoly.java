@@ -258,7 +258,7 @@ public class Monopoly {
                     System.out.println("1. CPU");
                     System.out.println("Seleccioni la opcio que desitgi:");
                     value = scan.nextInt();
-                    if (value > 2) throw new Exception();
+                    if (value >= 2) throw new Exception();
                     valid = true;
                     if (value == 0) {
                         Player aux = new TerminalPlayer(name, initial_money, 0);

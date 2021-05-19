@@ -34,19 +34,25 @@ public class OpActLoan implements optionalActions{
      */
     public boolean execute(ArrayList<Player> players,Player current_player, Movement aux) {
         System.out.println("Sel·lecioni el jugador a qui l'hi vol demanar el prestec:");
-        int cont = 0;
+        Player loan_player = playerSelect(players,current_player);
+        int current_offer = offer(current_player, loan_player);
+        return negociation(current_player,loan_player,current_offer);
+
+    }
+
+    // Pre: minim dos jugadors i un dells != current player
+    private Player playerSelect(ArrayList<Player> players, Player current_player) {
         for (Player player : players) {
-            if (player != current_player && player.getMoney() > 0) {
-                System.out.println(cont + ". " + player.getName());
-            }
-            cont++;
+            if (player != current_player && player.getMoney() > 0) System.out.println(players.indexOf(player) + ". " + player.getName());
         }
-        int value = -1;
-        while(value < 0 || value > cont) {
-            value = current_player.optionSelection("loanPlayerSelect",null,null,null,players,null,0,null);
-            if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
+        while(true) {
+            int value = current_player.optionSelection("loanPlayerSelect",null,null,null,players,null,0,null);
+            if (value >= 0 && value < players.size() && value != players.indexOf(current_player)) return players.get(value);
+            else System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
-        Player loan_player = players.get(value);
+    }
+
+    private int offer(Player current_player, Player loan_player) {
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
@@ -55,21 +61,26 @@ public class OpActLoan implements optionalActions{
         }
         System.out.println("Info del prestes:");
         System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + current_offer);
+        return current_offer;
+    }
+
+    private boolean negociation(Player current_player, Player loan_player, int current_offer) {
         Player offer_active_player = loan_player;
         String interests_string;
         int interests = -1;
         int turns = 0;
-        boolean negociate = false;
-
-        while (!negociate) {
+        while (true) {
             if (turns==0)System.out.println(offer_active_player.getName() + ": indiqui no si rebutja la oferta, o el interes que demana tot seguit de el numero de torns (ex: 15 3).");
             else System.out.println((offer_active_player.getName() + ": indiqui no si rebutja la oferta, ok si la accepta o el interes que demana tot seguit de el numero de torns (ex: 15 3) si vol fer una contraoferta"));
             interests_string = offer_active_player.stringValueSelection("loanInterestOffer",loan_player,null,current_offer,interests);
             if (interests_string.equals("no")) {
-                turns = 0;
-                negociate = true;
+                System.out.println("La operacio s'ha cancelat");
+                return false;
             }
-            else if (interests_string.equals("ok")) negociate = true;
+            else if (interests_string.equals("ok")) {
+                giveLoan(loan_player,current_player,current_offer,interests,turns);
+                return true;
+            }
             else {
                 interests = Integer.parseInt(interests_string);
                 turns = Integer.parseInt(offer_active_player.stringValueSelection("loanTurnsOffer",null,null,0,0));
@@ -77,16 +88,13 @@ public class OpActLoan implements optionalActions{
             if (offer_active_player == current_player) offer_active_player = loan_player;
             else offer_active_player = current_player;
         }
+    }
 
-        if (turns > 0) {
-            current_player.addLoan(loan_player,current_offer,interests,turns);
-            loan_player.pay(current_offer);
-            current_player.charge(current_offer);
-            System.out.println("El prestec s'ha dut a terme");
-        }
-        else {
-            System.out.println("La operacio s'ha cancelat");
-        }
+    private boolean giveLoan (Player loan_player, Player current_player, int current_offer, int interests, int turns) {
+        current_player.addLoan(loan_player,current_offer,interests,turns);
+        loan_player.pay(current_offer);
+        current_player.charge(current_offer);
+        System.out.println("El prestec s'ha dut a terme");
         return true;
     }
 }
