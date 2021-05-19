@@ -40,7 +40,14 @@ public class OpActLoan implements optionalActions{
 
     }
 
-    // Pre: minim dos jugadors i un dells != current player
+    /**
+     * @param players        ArrayList de jugadors que estan jugant al Monopoly.
+     * @param current_player Jugador que reb el prestec
+     * @return el jugador selecionat o null si no n'hi ha cap
+     * @brief Mostra tots els jugadors i deixa escollir a un d'ells
+     * @pre players size > 1 i algun de ells != jugador actual
+     * @post El jugador selecionat ha estat retornat ( mai retorna un jugador null per la precondicio)
+     */
     private Player playerSelect(ArrayList<Player> players, Player current_player) {
         for (Player player : players) {
             if (player != current_player && player.getMoney() > 0) System.out.println(players.indexOf(player) + ". " + player.getName());
@@ -52,6 +59,14 @@ public class OpActLoan implements optionalActions{
         }
     }
 
+    /**
+     * @param current_player  Jugador que reb el prestec
+     * @param loan_player     Jugador que dona el prestec
+     * @return valor incial del prestec
+     * @brief Demana al jugador la quantiat que vol demanar
+     * @pre true
+     * @post el valor ha estat retornat
+     */
     private int offer(Player current_player, Player loan_player) {
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
@@ -64,6 +79,15 @@ public class OpActLoan implements optionalActions{
         return current_offer;
     }
 
+    /**
+     * @param current_player  Jugador que reb el prestec
+     * @param loan_player     Jugador que dona el prestec
+     * @param current_offer   Valor que es demana del prestec
+     * @return true si \loan_player ha acceptat o false altrament
+     * @brief Gestiona la negociacio de els torns i interesos del prestec
+     * @pre true
+     * @post la negociacio de els torns i interesos del prestec s'ha realitzat
+     */
     private boolean negociation(Player current_player, Player loan_player, int current_offer) {
         Player offer_active_player = loan_player;
         String interests_string;
@@ -78,8 +102,7 @@ public class OpActLoan implements optionalActions{
                 return false;
             }
             else if (interests_string.equals("ok")) {
-                giveLoan(loan_player,current_player,current_offer,interests,turns);
-                return true;
+                return giveLoan(loan_player,current_player,current_offer,interests,turns);
             }
             else {
                 interests = Integer.parseInt(interests_string);
@@ -90,6 +113,17 @@ public class OpActLoan implements optionalActions{
         }
     }
 
+    /**
+     * @param current_player     Jugador que reb el prestec
+     * @param loan_player        Jugador que dona el prestec
+     * @param current_offer      Valor del prestec
+     * @param interests          Tant per cent de interes del prestes
+     * @param turns              Torns a retornar el prestec
+     * @return true si s'ha realitzat correctament el prestex
+     * @brief Afageix un prestec al jugador que el reb i treu els diners al jugador que el dona
+     * @pre true
+     * @post el prestec s'ha realitzat
+     */
     private boolean giveLoan (Player loan_player, Player current_player, int current_offer, int interests, int turns) {
         current_player.addLoan(loan_player,current_offer,interests,turns);
         loan_player.pay(current_offer);
