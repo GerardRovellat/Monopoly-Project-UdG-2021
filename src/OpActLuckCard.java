@@ -9,16 +9,14 @@ import java.util.Scanner;
  * @brief Classe que s'encarrega d'administrar l'acció opcional de executar una targeta sort al final del torn
  * d'un Jugador.
  */
-public class LuckCard implements optionalActions{
-
-    private ArrayList<Player> players_list = new ArrayList<>();             ///< Llista de Jugadors
+public class OpActLuckCard implements optionalActions{
 
     /**
      * @brief Constructor per defecte de LuckCard.
      * @pre \p true
      * @post Crea una acció opcional LuckCard
      */
-    public LuckCard() {}
+    public OpActLuckCard() {}
 
     /**
      * @brief toString per mostrar la descripció de l'acció LuckCard per text.

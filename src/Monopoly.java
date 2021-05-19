@@ -1,10 +1,9 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
+
+import com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue;
 import javafx.util.Pair;
 
 /**
@@ -15,19 +14,19 @@ import javafx.util.Pair;
  * i la finalització del joc Monopoly.
  */
 public class Monopoly {
-    private String mode;
-    private ArrayList<Player> players = new ArrayList<>();      ///< Llista de Jugadors del Monopoly.
-    private Board board;                                        ///< Tauler del Monopoly.
-    private int initial_money;                                  ///< Diners inicials quan es comença una partida.
-    private ArrayList<String> start_rewards;                    ///< Recompenses de casella sortida "Start".
-    private Pair<Integer,Integer> dice_result;                  ///< Resultat dels daus tirats.
-    private int current_player_iterator = 0;                    ///< Iterador que recorre Llista players.
-    private Player current_player;                              ///< Jugador actual.
-    private ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
-    private ArrayList<Card> cards;                              ///< Llista de targetes sort.
-    Scanner scan = new Scanner(System.in);                      ///< Scanner per el jugador CPU.
-    int turns = 0;                                              ///< Numero de torns jugats.
-    OutputManager dev_file;                                              ///< Fitxer de desenvolupament de la partida.
+    private final String mode;                                        ///< Mode de joc
+    private final ArrayList<Player> players = new ArrayList<>();      ///< Llista de Jugadors del Monopoly.
+    private final Board board;                                        ///< Tauler del Monopoly.
+    private final int initial_money;                                  ///< Diners inicials quan es comença una partida.
+    private final ArrayList<String> start_rewards;                    ///< Recompenses de casella sortida "Start".
+    private Pair<Integer,Integer> dice_result;                        ///< Resultat dels daus tirats.
+    private int current_player_iterator = 0;                          ///< Iterador que recorre Llista players.
+    private Player current_player;                                    ///< Jugador actual.
+    private final ArrayList<optionalActions> optional_actions;        ///< Llista d'accions opcionals.
+    private final ArrayList<Card> cards;                                    ///< Llista de targetes sort.
+    Scanner scan = new Scanner(System.in);                            ///< Scanner per el jugador CPU.
+    int turns = 0;                                                    ///< Numero de torns jugats.
+    OutputManager dev_file;                                           ///< Fitxer de desenvolupament de la partida.
 
     /**
      * @brief Constructor de Monopoly.
@@ -39,8 +38,7 @@ public class Monopoly {
      * @param initial_money diners inicials del Jugador.
      * @param start_rewards llista de recompenses per la casella de sortida "Start"
      */
-    public Monopoly(String mode,Board read_board,ArrayList<optionalActions> read_optional_actions, ArrayList<Card> stack_of_cards,
-                    int initial_money, ArrayList<String> start_rewards){
+    public Monopoly(String mode,Board read_board,ArrayList<optionalActions> read_optional_actions, ArrayList<Card> stack_of_cards,int initial_money, ArrayList<String> start_rewards){
         this.mode = mode;
         this.board = read_board;
         this.optional_actions = read_optional_actions;
@@ -48,7 +46,6 @@ public class Monopoly {
         this.initial_money = initial_money;
         this.start_rewards = start_rewards;
     }
-
 
     /**
      * @brief Mètode que s'encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s'ha de seguir, jugar,
@@ -64,8 +61,8 @@ public class Monopoly {
             System.out.println("---------- TORN DEL JUGADOR: " + current_player.getName() + " ----------");
             System.out.println(current_player.toString());
             System.out.println("-----------------------------------------------------------------------");
-            dev_file.fileWrite("\nCANVI DE JUGADOR:\n" + current_player.getName() + ">  "+current_player.getMoney()+"€, Terrenys "+
-                    current_player.getFields().size()+", Prestecs "+current_player.getLoans().size()+", Posició "+current_player.getPosition());
+            dev_file.fileWrite("\nCANVI DE JUGADOR:\n" + current_player.getName() + "> "+current_player.getMoney()+"€, Terrenys "+
+            current_player.getFields().size()+", Prestecs "+current_player.getLoans().size()+", Posició "+current_player.getPosition());
             if (!current_player.getBankruptcy()) {
                 throwDice();
                 movePlayer();
@@ -94,9 +91,6 @@ public class Monopoly {
                     case "EMPTY":
                         System.out.println("Ha caigut en una casella buida que no realitza cap acció\n");
                         break;
-                    default:
-                        // ERROR
-                        break;
                 }
                 System.out.println("\n-----------------------------------------------------------------------\n");
                 if (!current_player.getBankruptcy()) {
@@ -105,9 +99,7 @@ public class Monopoly {
                     System.out.println("-----------------------------------------------------------------------\n");
                 }
             }
-            else {
-                System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
-            }
+            else System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
             if (current_player.getFields().size() > 10 || current_player.getMoney() > 100000) {
                 System.out.println("ERROR: Alguna cosa ha anat malament...");
             }
@@ -117,12 +109,14 @@ public class Monopoly {
 
     }
 
+    /**
+     * @brief Retorna el mode de joc
+     * @pre true
+     * @post el mode de joc s'ha retornat.
+     * @return mode de joc
+     */
     public String getMode(){
         return this.mode;
-    }
-
-    public void setCards(ArrayList<Card> read_cards){
-        cards = read_cards;
     }
 
     /**
@@ -166,23 +160,8 @@ public class Monopoly {
                 return true;
             }
         }
-        if (players.size()-out.size()>1) return false;
-        else return true;
+        return players.size() - out.size() <= 1;
 
-    }
-
-    /**
-     * @brief Dona el numero de jugadors que no estan en fallida jugant a Monopoly.
-     * @pre true
-     * @post Retorna el nombre de jugadors amb \p bankruptcy = false.
-     * @return enter de jugadors \p bakruptcy = false.
-     */
-    private int activePlayers() {
-        int count = 0;
-        for (Player aux : players) {
-            if (!aux.getBankruptcy()) count++;
-        }
-        return count;
     }
 
     /**
@@ -212,9 +191,8 @@ public class Monopoly {
         Random rand = new Random();
         int first_dice = rand.nextInt(5) + 1;
         int second_dice = rand.nextInt(5) + 1;
-        Pair<Integer,Integer> aux = new Pair<Integer,Integer>(first_dice,second_dice);
-        dice_result = aux;
-        if (current_player.getType()=="USER") {
+        dice_result = new Pair<>(first_dice,second_dice);
+        if (current_player.getType().equals("USER")) {
             System.out.println("Enter per tirar els daus");
             scan.nextLine();
         }
@@ -308,12 +286,14 @@ public class Monopoly {
      * @post Finalitza el joc i mostra per pantalla el resum de la partida.
      */
     private void endGame(){
+        dev_file.fileWrite("\n\n------- FINAL PARTIDA -------");
         ArrayList<Player> winners = new ArrayList<>();
         for (Player player : players) {
             if (!player.getBankruptcy()) winners.add(player);
         }
         if (winners.size() == 1) {
             System.out.println(winners.get(0).getName() + " Ha guanyat la partida");
+            dev_file.fileWrite("\n" + winners.get(0).getName() + " HA GUANYAT LA PARTIDA");
         }
         else if (winners.size() > 1){
             Player winner = winners.get(0);
@@ -329,15 +309,20 @@ public class Monopoly {
             }
             if (winners.size()>1) {
                 System.out.println("Hi ha hagut un empat entre:");
-                for (Player player : winners) System.out.println(player.toString());
+                dev_file.fileWrite("\nEMPAT ENTRE:");
+                for (Player player : winners) {
+                    System.out.println(player.toString());
+                    dev_file.fileWrite("\t" + player.getName());
+                }
             }
             else {
                 System.out.println(winners.get(0).getName() + "Ha guanyat la partida");
+                dev_file.fileWrite("\n" + winners.get(0).getName() + "HA GUANYAT LA PARTIDA");
             }
         }
-        else ; // Throw error
         System.out.println("\nRESUM FINAL DELS JUGADORS:");
-        printPlayers(false);
+        dev_file.fileWrite("\n---- ESTAT FINAL PARTIDA ----\n\n" + "Mode: "+mode+"\n"+board.toString());
+        printPlayers();
         System.out.println("\n\n----------------------------------------\n\n");
         System.out.println("----------------- TURNS: " + turns/players.size() + "-----------------");
     }
@@ -347,17 +332,10 @@ public class Monopoly {
      * @pre \p true
      * @post Retorna els jugadors amb \p bankruptcy = false.
      */
-    private void printPlayers (boolean active) {
-        if (active) System.out.println("JUGADORS ACTIUS");
-        else System.out.println("JUGADORS");
+    private void printPlayers() {
+        System.out.println("JUGADORS");
         for ( Player aux : players) {
-            if (active) {
-                if (!aux.getBankruptcy()) System.out.println(aux.toString());
-            }
-            else {
-                System.out.println(aux.toString());
-            }
+            System.out.println(aux.toString());
         }
     }
-
 }

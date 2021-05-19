@@ -9,9 +9,9 @@ import java.util.Random;
  */
 
 public class CardFine extends Card{
-    private int quantity;                                           ///< quantitat a pagar
+    private final int quantity;                                           ///< quantitat a pagar
     private String message;                                         ///< Missatge de la carta
-    private HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
+    private final HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
 
     /**
      * @brief Constructor de CardFine

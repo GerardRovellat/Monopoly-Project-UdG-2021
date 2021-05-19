@@ -153,34 +153,31 @@ public class UIFileSelector extends JFrame {
      * @post Accions creades per a cada boto de browse.
      */
     private void createBrowseButtonAction(JButton browse_button, JTextField browse_field, JTextArea browse_textarea, String name_button, JPanel panel){
-        ActionListener browse_action = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                File file;
-                int response = 0;
-                JFileChooser board_file_chooser = new JFileChooser(".");
-                response = board_file_chooser.showOpenDialog(panel);
-                if (response == JFileChooser.APPROVE_OPTION) {
-                    if(name_button.equals("rules")){
-                        file = board_file_chooser.getSelectedFile();
-                        rules_name = file.getName();
+        ActionListener browse_action = e -> {
+            File file;
+            int response;
+            JFileChooser board_file_chooser = new JFileChooser(".");
+            response = board_file_chooser.showOpenDialog(panel);
+            if (response == JFileChooser.APPROVE_OPTION) {
+                if(name_button.equals("rules")){
+                    file = board_file_chooser.getSelectedFile();
+                    rules_name = file.getName();
+                }
+                else{
+                    file = board_file_chooser.getSelectedFile();
+                    board_name = file.getName();
+                }
+                browse_field.setText(file.getPath());
+                try (FileReader fr = new FileReader(file)) {
+                    StringBuilder cadena = new StringBuilder();
+                    int valor = fr.read();
+                    while (valor != -1) {
+                        cadena.append((char) valor);
+                        valor = fr.read();
                     }
-                    else{
-                        file = board_file_chooser.getSelectedFile();
-                        board_name = file.getName();
-                    }
-                    browse_field.setText(file.getPath());
-                    try (FileReader fr = new FileReader(file)) {
-                        String cadena = "";
-                        int valor = fr.read();
-                        while (valor != -1) {
-                            cadena = cadena + (char) valor;
-                            valor = fr.read();
-                        }
-                        browse_textarea.setText(cadena);
-                    } catch (IOException exception) {
-                        exception.printStackTrace();
-                    }
+                    browse_textarea.setText(cadena.toString());
+                } catch (IOException exception) {
+                    exception.printStackTrace();
                 }
             }
         };
@@ -193,13 +190,10 @@ public class UIFileSelector extends JFrame {
      * @post Accions creades pel boto next.
      */
     private void createNextButtonAction(JButton next_button){
-        ActionListener next_action = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                status = true;
-                dispose();
+        ActionListener next_action = e -> {
+            status = true;
+            dispose();
 
-            }
         };
         next_button.addActionListener(next_action);
     }

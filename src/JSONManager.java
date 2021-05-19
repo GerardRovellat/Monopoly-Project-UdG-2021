@@ -1,4 +1,3 @@
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +12,11 @@ import com.google.gson.*;
 public class JSONManager {
 
     private String mode;
-    private Board board = new Board();                                  ///< Tauler llegit del fitxer JSON pel Monopoly.
-    private ArrayList<optionalActions> actions = new ArrayList<>();     ///< Llistat d'accions opcionals possibles.
     private ArrayList<String> star_rewards = new ArrayList<>();         ///< Llistat de recompenses que pot donar Start
-    private ArrayList<Card> cards = new ArrayList();                    ///< Llistat de targetes sort de Monopoly
+    private ArrayList<Card> cards = new ArrayList<>();                    ///< Llistat de targetes sort de Monopoly
     private int initial_money = 0;                                      ///< Diners inicials de cada Jugador.
-    private String rules_file;                                          ///< Fitxer definicio regles del joc de Monopoly
-    private String board_file;                                          ///< Fitxer definicio tauler del joc de Monopoly
+    private final String rules_file;                                          ///< Fitxer definicio regles del joc de Monopoly
+    private final String board_file;                                          ///< Fitxer definicio tauler del joc de Monopoly
 
     /**
      * @brief Constructor de JSONManager
@@ -40,10 +37,11 @@ public class JSONManager {
      * @return Monopoly \p monopoly amb totes les característiques establertes.
      */
     public Monopoly readFile() {
-        this.board = readBoard();
-        this.actions = readRules();
-        Monopoly monopoly = new Monopoly(mode,board,actions,cards,initial_money,star_rewards);
-        return monopoly;
+        ///< Tauler llegit del fitxer JSON pel Monopoly.
+        Board board = readBoard();
+        ///< Llistat d'accions opcionals possibles.
+        ArrayList<optionalActions> actions = readRules();
+        return new Monopoly(mode, board, actions,cards,initial_money,star_rewards);
     }
 
     /**
@@ -57,7 +55,7 @@ public class JSONManager {
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         FileReader reader;
-        ArrayList possible_actions = new ArrayList<optionalActions>();
+        ArrayList<optionalActions> possible_actions = new ArrayList<>();
         try {
             //Parseja el fitxer a JsonElement i s'agafa com a JsonObject.
             reader = new FileReader(rules_file);
@@ -69,35 +67,34 @@ public class JSONManager {
 
             //Segon element array "accionsNoAplicables"
             JsonArray restricted_actions = j_object.get("accionsNoAplicables").getAsJsonArray();
-            List restricted_action_list = new ArrayList<String>();
+            List<String> restricted_action_list = new ArrayList<>();
             for (JsonElement array_element : restricted_actions){
                 restricted_action_list.add(array_element.toString());
             }
             if(!restricted_action_list.contains("VENDRE")){
-                Sell sell_action  = new Sell();
+                OpActSell sell_action  = new OpActSell();
                 possible_actions.add(sell_action);
             }
             if(!restricted_action_list.contains("COMPRAR")){
-                Buy buy_action = new Buy();
+                OpActBuy buy_action = new OpActBuy();
                 possible_actions.add(buy_action);
             }
             if(!restricted_action_list.contains("PRESTEC")){
-                Loan loan_action = new Loan();
+                OpActLoan loan_action = new OpActLoan();
                 possible_actions.add(loan_action);
             }
             if(!restricted_action_list.contains("SORT")){
-                LuckCard luck_card_action = new LuckCard();
+                OpActLuckCard luck_card_action = new OpActLuckCard();
                 possible_actions.add(luck_card_action);
             }
 
 
             //Tercer element "dinersInicials"
-            int initial_money = j_object.get("dinersInicials").getAsInt();
-            this.initial_money = initial_money;
+            this.initial_money = j_object.get("dinersInicials").getAsInt();
 
             //Quart element array "recompensesCasellaSortida"
             JsonArray start_box_rewards = j_object.get("recompensesCasellaSortida").getAsJsonArray();
-            ArrayList start_box_rewards_list = new ArrayList<String>();
+            ArrayList<String> start_box_rewards_list = new ArrayList<>();
             for (JsonElement array_element : start_box_rewards) {
                 start_box_rewards_list.add(array_element.toString().replace("\"",""));
             }
@@ -136,7 +133,7 @@ public class JSONManager {
             board.setBoxesNr(boxes_nr);
 
             //Casella Sortida sempre sera la primera.
-            Start start = new Start(1,"START");
+            BoxStart start = new BoxStart(1,"START");
             board.addBox(start);
 
             //Segon element array de terrenys.
@@ -147,42 +144,42 @@ public class JSONManager {
                 String box_name = array_element.getAsJsonObject().get("nom").getAsString();
                 int box_price = array_element.getAsJsonObject().get("preu").getAsInt();
                 int box_mortgage = array_element.getAsJsonObject().get("preuHipoteca").getAsInt();
-                String box_group = "";
+                String box_group ;
                 if(array_element.getAsJsonObject().get("agrupacio").isJsonNull()){
                     box_group = "null";
                 }
                 else box_group = array_element.getAsJsonObject().get("agrupacio").getAsString();
                 int box_basic_rent = array_element.getAsJsonObject().get("preuLloguerBasic").getAsInt();
-                int box_group_rent = 0;
+                int box_group_rent;
                 if(array_element.getAsJsonObject().get("preuLloguerAgrupacio").isJsonNull()){
                     box_group_rent = -1;
                 }
                 else box_group_rent = array_element.getAsJsonObject().get("preuLloguerAgrupacio").getAsInt();
                 String box_buildable = array_element.getAsJsonObject().get("construible").getAsString();
                 int box_max_houses = array_element.getAsJsonObject().get("maxCases").getAsInt();
-                int box_houses_price = 0;
+                int box_houses_price;
                 if(array_element.getAsJsonObject().get("preuCasa").isJsonNull()) {
                     box_houses_price = -1;
                 }
                 else box_houses_price = array_element.getAsJsonObject().get("preuCasa").getAsInt();
                 boolean box_hotel = array_element.getAsJsonObject().get("hotel").getAsBoolean();
-                int box_hotel_price = 0;
+                int box_hotel_price;
                 if(array_element.getAsJsonObject().get("preuHotel").isJsonNull()){
                     box_hotel_price = -1;
                 }
                 else box_hotel_price = array_element.getAsJsonObject().get("preuHotel").getAsInt();
                 JsonArray houses_rents = array_element.getAsJsonObject().get("lloguerAmbCases").getAsJsonArray();
-                ArrayList houses_rents_list = new ArrayList<Integer>();
+                ArrayList<Integer> houses_rents_list = new ArrayList<>();
                 for(JsonElement rents : houses_rents){
                     houses_rents_list.add(rents.getAsInt());
                 }
-                int hotel_rent = 0;
+                int hotel_rent;
                 if(array_element.getAsJsonObject().get("lloguerAmbHotel").isJsonNull()){
                     hotel_rent = -1;
                 }
                 else hotel_rent = array_element.getAsJsonObject().get("lloguerAmbHotel").getAsInt();
 
-                Field field = new Field(box_nr,"FIELD",box_name,box_price,box_group,box_basic_rent,box_group_rent,
+                BoxField field = new BoxField(box_nr,"FIELD",box_name,box_price,box_group,box_basic_rent,box_group_rent,
                         box_buildable,box_max_houses,box_houses_price,box_hotel,box_hotel_price,houses_rents_list,hotel_rent);
                 board.addBox(field);
 
@@ -194,7 +191,7 @@ public class JSONManager {
                 int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                 String box_name = array_element.getAsJsonObject().get("nom").getAsString();
 
-                Empty empty = new Empty(box_nr,"EMPTY",box_name);
+                BoxEmpty empty = new BoxEmpty(box_nr,"EMPTY");
                 board.addBox(empty);
             }
 
@@ -207,48 +204,48 @@ public class JSONManager {
                     case "PAGAR":
                         int pay_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardPay pay_card = new CardPay( false, pay_amount);
-                        directCommand pay_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",pay_card);
+                        BoxDirectCommand pay_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",pay_card);
                         board.addBox(pay_direct_command);
                         break;
                     case "MULTA":
                         int fine_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardFine fine_card = new CardFine( false, fine_amount);
-                        directCommand fine_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",fine_card);
+                        BoxDirectCommand fine_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",fine_card);
                         board.addBox(fine_direct_command);
                         break;
                     case "COBRAR":
                         int charge_amount = array_element.getAsJsonObject().get("quantitat").getAsInt();
                         CardCharge charge_card = new CardCharge(false, charge_amount);
-                        directCommand charge_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",charge_card);
+                        BoxDirectCommand charge_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",charge_card);
                         board.addBox(charge_direct_command);
                         break;
                     case "ANAR":
                         int go_box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
                         CardGo go_card = new CardGo(false, go_box_nr);
-                        directCommand go_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",go_card);
+                        BoxDirectCommand go_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",go_card);
                         board.addBox(go_direct_command);
                         break;
                     case "DONAR":
                         CardGive give_card = new CardGive(false);
-                        directCommand give_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",give_card);
+                        BoxDirectCommand give_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",give_card);
                         board.addBox(give_direct_command);
                         break;
                     case "REBRE":
                         CardGet get_card = new CardGet(false);
-                        directCommand get_direct_command = new directCommand(box_nr,"DIRECTCOMMAND",get_card);
+                        BoxDirectCommand get_direct_command = new BoxDirectCommand(box_nr,"DIRECTCOMMAND",get_card);
                         board.addBox(get_direct_command);
                         break;
                     case "HIPOTECAR":
-                        Empty mortatge_direct_command = new Empty(box_nr,"EMPTY",null);
+                        BoxEmpty mortatge_direct_command = new BoxEmpty(box_nr,"EMPTY");
                         board.addBox(mortatge_direct_command);
                     case "DISPENSAR":
-                        Empty dispense_direct_command = new Empty(box_nr,"EMPTY",null);
+                        BoxEmpty dispense_direct_command = new BoxEmpty(box_nr,"EMPTY");
                         board.addBox(dispense_direct_command);
                     case "PRESO":
-                        Empty jail_direct_command = new Empty(box_nr,"EMPTY",null);
+                        BoxEmpty jail_direct_command = new BoxEmpty(box_nr,"EMPTY");
                         board.addBox(jail_direct_command);
                     case "ANAR_PRESO":
-                        Empty go_jail_direct_command = new Empty(box_nr,"EMPTY",null);
+                        BoxEmpty go_jail_direct_command = new BoxEmpty(box_nr,"EMPTY");
                         board.addBox(go_jail_direct_command);
                 }
             }
@@ -256,7 +253,7 @@ public class JSONManager {
             //Cinquè element array caselles aposta
             JsonArray bet_boxes = j_object.get("casellesAposta").getAsJsonArray();
             for(JsonElement array_element : bet_boxes){
-                Bet bet = new Bet(array_element.getAsInt(),"BET");
+                BoxBet bet = new BoxBet(array_element.getAsInt(),"BET");
                 board.addBox(bet);
             }
 
@@ -269,7 +266,7 @@ public class JSONManager {
 
             //Sete element array targetes sort.
             JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
-            ArrayList cards_stack = new ArrayList<Card>();
+            ArrayList<Card> cards_stack = new ArrayList<>();
             for(JsonElement array_element : luck_cards){
                 String card_action = array_element.getAsJsonObject().get("accio").getAsString();
                 boolean postponable = array_element.getAsJsonObject().get("posposable").getAsBoolean();

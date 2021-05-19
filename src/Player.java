@@ -9,14 +9,14 @@ import java.util.*;
  */
 
 public abstract class Player {
-    private String name;                                                ///< Nom del Jugador.
-    private int money;                                                  ///< Diners del Jugador.
-    private ArrayList<Field> boxes_in_property = new ArrayList<>();     ///< Llista terrenys en propietat del Jugador.
-    private int position;                                               ///< Posició del Jugador
-    private ArrayList<Card> luckCards = new ArrayList<>();              ///< Llista targetes sort.
-    private boolean bankruptcy = false;                                 ///< Estat fallida jugador.
-    private ArrayList<PlayerLoan> loans = new ArrayList<>();            ///< Llista de préstecs del Jugador.
-    private String type;                                                ///< Tipus de jugador ( CPU, USER )
+    private final String name;                                                ///< Nom del Jugador.
+    private int money;                                                        ///< Diners del Jugador.
+    private final ArrayList<BoxField> boxes_in_property = new ArrayList<>();     ///< Llista terrenys en propietat del Jugador.
+    private int position;                                                     ///< Posició del Jugador
+    private ArrayList<Card> luckCards = new ArrayList<>();                    ///< Llista targetes sort.
+    private boolean bankruptcy = false;                                       ///< Estat fallida jugador.
+    private ArrayList<PlayerLoan> loans = new ArrayList<>();                  ///< Llista de préstecs del Jugador.
+    private final String type;                                                ///< Tipus de jugador ( CPU, USER )
 
 
     /**
@@ -155,12 +155,11 @@ public abstract class Player {
      * @post \p box ha estat afegit a la llista de propietats \p boxes_in_property de Jugador.
      * @param box terreny que serà afegit a la propietat de Jugador.
      */
-    public void addBox(Field box) {
+    public void addBox(BoxField box) {
         if (box != null) {
             boxes_in_property.add(box);
             box.buy(this);
         }
-        else ; //Throw error
     }
 
     /**
@@ -179,7 +178,7 @@ public abstract class Player {
      * @post La llista \p boces_in_property ha estat retornada.
      * @return ArrayList que contindrà tots els terrenys en propeitat del Jugador.
      */
-    public ArrayList<Field> getFields() {
+    public ArrayList<BoxField> getFields() {
         return this.boxes_in_property;
     }
 
@@ -242,26 +241,14 @@ public abstract class Player {
             aux.nextTurn();
             if (aux.isEnd()) {
                 boolean ableToPay = true;
-                if (aux.returnValue() > money) {
-                    ableToPay = board.isBankrupt(this, aux.returnValue(), movement);
-                }
+                if (aux.returnValue() > money) ableToPay = board.isBankrupt(this, aux.returnValue(), movement);
                 if (ableToPay) {
-                    if (aux.payLoan()) {
-                        loans.remove(aux);
-                    }
+                    if (aux.payLoan()) loans.remove(aux);
                 }
                 else board.transferProperties(this,aux.getLoaner(),movement);
             }
         }
     }
-
-    /**
-     * @brief Posa el \p true si el jugador està en fallida, \p false altrament.
-     * @pre \p status != null
-     * @post \p status ha estat introduit a \p bankruptcy.
-     * @param status estat el qual es troba el Jugador.
-     */
-    public void setBankruptcy(boolean status){ this.bankruptcy = status; }
 
     /**
      * @brief calcula el numero de terrenys de la agrupacio passada que te en propietat el jugador
@@ -272,8 +259,8 @@ public abstract class Player {
      */
     public int numberOfAgrupationField(String group_name) {
         int cont = 0;
-        for (Field aux : boxes_in_property) {
-            if (aux.getGroup() == group_name) cont++;
+        for (BoxField aux : boxes_in_property) {
+            if (aux.getGroup().equals(group_name)) cont++;
         }
         return cont;
     }
@@ -286,28 +273,28 @@ public abstract class Player {
      */
     @Override
     public String toString() {
-        String output_text = "";
-        output_text += this.name + ": " + this.money + "€\n";
+        StringBuilder output_text = new StringBuilder();
+        output_text.append(this.name).append(": ").append(this.money).append("€\n");
         if (boxes_in_property.size() > 0) {
-            output_text+="PROPIETATS:\n";
-            for (Field current : boxes_in_property) {
-                output_text+="    " + current.getName() + ". amb un valor de " + current.getPrice() + "€\n";
+            output_text.append("PROPIETATS:\n");
+            for (BoxField current : boxes_in_property) {
+                output_text.append("    ").append(current.getName()).append(". amb un valor de ").append(current.getPrice()).append("€\n");
             }
         }
-        else output_text += "NO TE PROPIETATS\n";
+        else output_text.append("NO TE PROPIETATS\n");
         if (loans.size() > 0) {
-            output_text+="PRESTECS:\n";
+            output_text.append("PRESTECS:\n");
             for (PlayerLoan loan : loans) {
-                output_text+="    " + loan.smallPrint()+"\n";
+                output_text.append("    ").append(loan.smallPrint()).append("\n");
             }
         }
-        else output_text+="NO TE PRESTECS\n";
-        return output_text;
+        else output_text.append("NO TE PRESTECS\n");
+        return output_text.toString();
     }
 
-    public abstract int optionSelection(String type,Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card,int value, ArrayList<optionalActions> optional_actions);
+    public abstract int optionSelection(String type, Player player, BoxField field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions);
 
-    public abstract String stringValueSelection(String type, Player player, Field field, int value, int second_value);
+    public abstract String stringValueSelection(String type, Player player, BoxField field, int value, int second_value);
 
 }
 

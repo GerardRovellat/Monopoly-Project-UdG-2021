@@ -11,7 +11,7 @@ public class Box {
 
     public int position;        ///< Posicio de la casella en el taulell
     public String type;         ///< Tipus de casella. ( Start, Field, Bet, Luck, DirectComand, Empty )
-    private String name;        ///< Nom de la casella
+    private final String name;        ///< Nom de la casella
 
     /**
      * @brief Constructor de Box
@@ -54,11 +54,11 @@ public class Box {
     public String print(ArrayList<Player> players) {
         String output_text ="";
         if (this.position > 9) {
-            if (this.type == "FIELD") output_text += this.position + " | "/* + this.type + ":   "*/ + this.name + playerInPosition(players)+"\n";
+            if (this.type.equals("FIELD")) output_text += this.position + " | " + this.type + ":   " + this.name + playerInPosition(players)+"\n";
             else output_text += this.position + " | " + this.name + playerInPosition(players)+"\n";
         }
         else {
-            if (this.type == "FIELD") output_text += this.position + "  | "/* + this.type + ":   " */+ this.name + playerInPosition(players)+"\n";
+            if (this.type.equals("FIELD")) output_text += this.position + "  | " + this.type + ":   " + this.name + playerInPosition(players)+"\n";
             else output_text += this.position + "  | " + this.name + playerInPosition(players)+"\n";
         }
         return output_text;
@@ -72,9 +72,9 @@ public class Box {
      * @return nom dels jugadors que estan en la casella
      */
     private String playerInPosition(ArrayList<Player> players) {
-        String playersInPosition = "";
-        for(Player aux : players) if (aux.getPosition()==position) playersInPosition = playersInPosition + " | " + aux.getName() ;
-        return playersInPosition;
+        StringBuilder playersInPosition = new StringBuilder();
+        for(Player aux : players) if (aux.getPosition()==position) playersInPosition.append(" | ").append(aux.getName());
+        return playersInPosition.toString();
     }
 
 

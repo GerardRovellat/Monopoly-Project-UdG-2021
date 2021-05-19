@@ -31,7 +31,7 @@ public class OutputManager {
             dev_file.createNewFile();
         }
         catch (IOException e){
-            System.out.println("ERROR: No s'ha pogut crear el fitxer de desenvolupament de la partida.");;
+            System.out.println("ERROR: No s'ha pogut crear el fitxer de desenvolupament de la partida.");
         }
     }
 

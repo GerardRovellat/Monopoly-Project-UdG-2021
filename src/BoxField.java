@@ -6,20 +6,20 @@ import java.util.ArrayList;
  * @class Field
  * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
  */
-public class Field extends Box{
+public class BoxField extends Box{
 
-    private String name;                            ///< Nom del terreny.
-    private int price;                              ///< Preu del terreny.
-    private String group;                           ///< Color d'agrupació.
-    private int basic_rent;                         ///< Preu lloguer sense agrupació.
-    private int group_rent;                         ///< Preu lloguer agrupació.
-    private String buildable;                       ///< Tipus de construcció.
+    private final String name;                            ///< Nom del terreny.
+    private final int price;                              ///< Preu del terreny.
+    private final String group;                           ///< Color d'agrupació.
+    private final int basic_rent;                         ///< Preu lloguer sense agrupació.
+    private final int group_rent;                         ///< Preu lloguer agrupació.
+    private final String buildable;                       ///< Tipus de construcció.
     private int max_buildings;                      ///< Nombre màxim d' apartaments construibles.
-    private int building_price;                     ///< Preu de cada apartament.
-    private boolean hotel;                          ///< Es pot contruir hotel, true si, false no.
-    private int hotel_price;                        ///< Preu de l'hotel.
-    private ArrayList<Integer> buildings_rent;      ///< Lloguer depenent de les construccions.
-    private int hotel_rent;                         ///< Lloguer del hotel.
+    private final int building_price;                     ///< Preu de cada apartament.
+    private final boolean hotel;                          ///< Es pot contruir hotel, true si, false no.
+    private final int hotel_price;                        ///< Preu de l'hotel.
+    private final ArrayList<Integer> buildings_rent;      ///< Lloguer depenent de les construccions.
+    private final int hotel_rent;                         ///< Lloguer del hotel.
     private Player owner;                           ///< Jugador propietari.
     private int builded = 0;                        ///< Nombre de edificacions construides.
     private boolean bought = false;                 ///< Estat de comprat o no.
@@ -29,7 +29,7 @@ public class Field extends Box{
      * @pre \p true
      * @post Crea un terreny amb tots els atributs entrats.
      */
-    public Field(int position,String type,String name,int price,String group,int basic_rent,int group_rent,String buildable,int max_buildings,int building_price,boolean hotel,int hotel_price,ArrayList<Integer> buildings_rent,int hotel_rent) {
+    public BoxField(int position, String type, String name, int price, String group, int basic_rent, int group_rent, String buildable, int max_buildings, int building_price, boolean hotel, int hotel_price, ArrayList<Integer> buildings_rent, int hotel_rent) {
         super(position,type,name);
         this.name = name;
         this.price = price;
@@ -84,7 +84,7 @@ public class Field extends Box{
      */
     public int getRent() {
         if (builded == 0) {
-            if (buildable != "agrupacio") {
+            if (!buildable.equals("agrupacio")) {
                 return this.basic_rent;
             }
             else {

@@ -9,9 +9,9 @@ import java.util.Random;
  */
 
 public class CardCharge extends Card{
-    private int quantity;                                           ///< quantitat a pagar
+    private final int quantity;                                           ///< quantitat a pagar
     private String message;                                         ///< Missatge de la carta
-    private HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
+    private final HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles
 
     /**
      * @brief Constructor de CardCharge
@@ -41,10 +41,9 @@ public class CardCharge extends Card{
      * @brief Execucio de la carta
      * @pre \p true
      * @post El jugador ha rebut la quantitat assignada
-     * @param board taulell
      * @param current_player jugador actiu
      */
-    public void execute(Board board, Player current_player) {
+    public void execute(Player current_player) {
         Random rand = new Random();
         message = messages.get(rand.nextInt(messages.size()) - 1);
         System.out.println(message);

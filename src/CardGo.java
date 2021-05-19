@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @brief Targeta que mou al jugador a una casella determinada en el tauler de Monopoly.
  */
 public class CardGo extends Card{
-    private int position;
+    private final int position;
 
     /**
      * @brief Constructor de CardGo.
@@ -25,13 +25,11 @@ public class CardGo extends Card{
      * @brief Mètode per executar la targeta CardGo.Moura el jugador fins a la posició que li indiqui la targeta.
      * @pre \p players != null, \p board != null, \p current_player != null, \p rewards != null
      * @post El jugador ha estat mogut fins a la posició \p position.
-     * @param players ArrayList dels jugadors que estan jugant al Monopoly, no és usada en aquesta implementació
-     *                però s'ha de passar.
      * @param board tauler de Monopoly en el qual s'esta jugant.
      * @param current_player jugador actual que executa la targeta CardGo.
      * @param rewards ArrayList de recompenses que pot donar-te la casella de sortida.
      */
-    public void execute(ArrayList<Player> players,Board board, Player current_player, ArrayList<String> rewards) {
+    public void execute(Board board, Player current_player, ArrayList<String> rewards) {
         System.out.println("Vas immediatament a la casella "+ position +" i si passes per la casella de sortida, cobra la recompensa");
         board.movePlayer(current_player,this.position,rewards);
     }

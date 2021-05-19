@@ -14,7 +14,7 @@ public interface optionalActions {
      * @post La informació ha sigut mostrada per pantalla.
      * @return Informació especifica de cada acció opcional.
      */
-    public String toString();
+    String toString();
 
     /**
      * @brief Execució d'una acció opcional, depenent de quina, farà una funcio o altre descrita en el seu fitxer
@@ -23,5 +23,5 @@ public interface optionalActions {
      * @post Retorna \p true si l'acció s'ha realitzat correctament, \p false altrament.
      * @return \p true si s'ha pogut realitzar l'acció, \p false altrament.
      */
-    public boolean execute(ArrayList<Player> players,Player current_player,Movement aux);
+    boolean execute(ArrayList<Player> players,Player current_player,Movement aux);
 }

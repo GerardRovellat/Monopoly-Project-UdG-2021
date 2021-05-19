@@ -21,7 +21,7 @@ public class JocMonopoly {
                 else if(args[0].equals("-s")){
                     UIFileSelector fileSelector = new UIFileSelector();
                     fileSelector.setVisible(true);
-                    while(fileSelector.getStatus() != true) Thread.sleep(100);
+                    while(!fileSelector.getStatus()) Thread.sleep(100);
                     JSONManager json_manager = new JSONManager(fileSelector.getRulesFileName(),fileSelector.getBoardFileName());
                     Monopoly monopoly = json_manager.readFile();
                     if(!monopoly.getMode().equals("classica")) System.out.println("No es pot jugar amb aquest mode...");

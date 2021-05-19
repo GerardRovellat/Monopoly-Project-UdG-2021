@@ -9,14 +9,14 @@ import java.util.ArrayList;
  * seves propietats a un dels altres jugadors contraris. Aquesta venda és fara en format de subhasta.
  */
 
-public class Sell implements optionalActions{
+public class OpActSell implements optionalActions{
 
     /**
      * @brief Constructor de Sell.
      * @pre \p true
      * @post Crea una acció opcional Sell.
      */
-    public Sell() {};
+    public OpActSell() {}
 
     /**
      * @brief toString per mostrar la descripció de l'acció Sell per text.
@@ -48,16 +48,15 @@ public class Sell implements optionalActions{
             is_possible = false;
         }
         else {
-            Field field_to_sell = selectFieldToSell(current_player);
+            BoxField field_to_sell = selectFieldToSell(current_player);
             if(field_to_sell != null) {
                 int sell_price;
                 System.out.println("Per quin preu vols començar la venta?");
-                sell_price = current_player.optionSelection("sellInitalOffer",current_player,field_to_sell,null,null,null,0,null);
+                sell_price = current_player.optionSelection("sellInitalOffer",null,field_to_sell,null,null,null,0,null);
                 System.out.println("La subhasta per " + field_to_sell.getName() + " comença per " + sell_price + "€");
                 output.fileWrite(current_player.getName() + "> Ven " + field_to_sell.getName() + " per " + sell_price + "€");
-                ArrayList<Player> auction_players = new ArrayList<>();
                 ArrayList<Player> retired_players = new ArrayList<>();
-                auction_players.addAll(players);
+                ArrayList<Player> auction_players = new ArrayList<>(players);
                 auction_players.remove(current_player);
                 int offer = sell_price, max_offer = sell_price;
                 Player winner = null;
@@ -68,13 +67,13 @@ public class Sell implements optionalActions{
                             int current_money = aux_player.getMoney();
                             System.out.println(name_of_player + " tens " + current_money + "€");
                             System.out.println("Que ofereixes? (-1 per retirar-se):");
-                            offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer,null);
+                            offer = aux_player.optionSelection("sellBuyerOffer", null, field_to_sell, null, null, null, offer,null);
                             while (current_money < offer || offer < max_offer && offer != -1) {
                                 if (offer < max_offer)
                                     System.out.println("Erroni, s'ha de superar el import de " + max_offer);
                                 else
                                     System.out.println("Erroni, no pots pagar més de " + current_money + ", prova de nou");
-                                offer = aux_player.optionSelection("sellBuyerOffer", aux_player, field_to_sell, null, null, null, offer,null);
+                                offer = aux_player.optionSelection("sellBuyerOffer", null, field_to_sell, null, null, null, offer,null);
                             }
                             if (offer == -1) {
                                 retired_players.add(aux_player);
@@ -121,19 +120,19 @@ public class Sell implements optionalActions{
      * @param current_player    Jugador que fa la venda.
      * @return Retorna un terreny \p Field, null en cas de cancel·lar-se.
      */
-    private Field selectFieldToSell(Player current_player){
+    private BoxField selectFieldToSell(Player current_player){
         System.out.println("Llistat de terrenys en propietat:");
         int field_nr = 0;
-        for (Field field : current_player.getFields()) {
+        for (BoxField field : current_player.getFields()) {
             System.out.println("\t" + field_nr + "- " + field.getName() + " (Valor del terreny " + field.getPrice() + "€)");
             field_nr++;
         }
         int confirm = 1;
         int nr_of_fields = field_nr;
-        Field field_to_sell = null;
+        BoxField field_to_sell = null;
         while (confirm == 1) {
             System.out.println("Quin terreny vols vendre?");
-            field_nr = current_player.optionSelection("sellFieldSelect", current_player, null, null, null, null, 0, null);
+            field_nr = current_player.optionSelection("sellFieldSelect", null, null, null, null, null, 0, null);
             while (field_nr < 0 || field_nr > nr_of_fields - 1) {
                 System.out.println("Tria una opcio correcte:");
                 field_nr = current_player.optionSelection("confirmation", null, null, null, null, null, 0, null);

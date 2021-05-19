@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * @author Gerard Rovellat
@@ -25,10 +24,9 @@ public class CardGet extends Card{
      * @pre \p true
      * @post la propietat ha estat rebuda
      * @param players           llista de jugadors de la partida
-     * @param board             taulell
      * @param current_player    jugador actiu
      */
-    public void execute(ArrayList<Player> players, Board board, Player current_player) {
+    public void execute(ArrayList<Player> players,Player current_player) {
         System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
         int option_nr = 0;
         ArrayList<Integer> not_disponible = new ArrayList<>();
@@ -53,20 +51,20 @@ public class CardGet extends Card{
             }
             Player choosed = players.get(option_nr);
             int field_nr = 0;
-            for (Field field : choosed.getFields()) {
+            for (BoxField field : choosed.getFields()) {
                 System.out.println(field_nr + "- " + field.getName() + " (" + field.getPrice() + ")");
                 field_nr++;
             }
             try {
                 System.out.println("Seleccioni un terreny");
                 field_nr = choosed.optionSelection("cardGetFieldSelect", null, null, null, null, null,0,null);
-                while (field_nr < 0 && field_nr > choosed.getFields().size()) {
+                while (field_nr < 0 || field_nr > choosed.getFields().size()) {
                     System.out.println("Error, sel·leccioni un terreny correcte");
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Format incorrecte. Torna-hi.");
             }
-            Field field_choosed = choosed.getFields().get(field_nr);
+            BoxField field_choosed = choosed.getFields().get(field_nr);
             current_player.addBox(field_choosed);
             choosed.removeBox(field_choosed);
             System.out.println("En " + current_player.getName() + " ha adquirit " + field_choosed.getName());

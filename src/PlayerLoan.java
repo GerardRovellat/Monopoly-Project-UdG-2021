@@ -41,8 +41,8 @@ public class PlayerLoan {
      * @return valor a retornar \p result.
      */
     public int returnValue() {
-        Double result = value * ( 1 + (double) interest / 100 );
-        return result.intValue();
+        double result = value * ( 1 + (double) interest / 100 );
+        return (int) result;
     }
 
     /**
@@ -101,12 +101,12 @@ public class PlayerLoan {
      */
     @Override
     public String toString() {
-        System.out.println("Propietari: " + loaner.getName());
-        System.out.println("Valor: " + value);
-        System.out.println("Interes: " + interest);
-        System.out.println("Torns: " + turns);
-        System.out.println("A retornar: " + returnValue());
-        return "";
+        String result = "";
+        result += "Propietari: " + loaner.getName();
+        result += "\nValor: " + value;
+        result += "\nInteres: " + interest;
+        result += "\nTorns: " + turns;
+        result += "\nA retornar: " + returnValue();
+        return result;
     }
-
 }

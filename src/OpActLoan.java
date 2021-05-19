@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * @author Marc Got
@@ -7,14 +6,14 @@ import java.util.Scanner;
  * @class Loan
  * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
  */
-public class Loan implements optionalActions{
+public class OpActLoan implements optionalActions{
 
     /**
      * @brief Constructor per defecte de Loan.
      * @pre \p true
      * @post Crea una acció opcional Loan.
      */
-    public Loan() {};
+    public OpActLoan() {}
 
     /**
      * @brief toString per mostrar la descripció de l'acció LuckCard per text.
@@ -34,7 +33,6 @@ public class Loan implements optionalActions{
      * @return \p true quan ha acabat de demanar el prestéc.
      */
     public boolean execute(ArrayList<Player> players,Player current_player, Movement aux) {
-        Scanner scan = new Scanner(System.in);
         System.out.println("Sel·lecioni el jugador a qui l'hi vol demanar el prestec:");
         int cont = 0;
         for (Player player : players) {
@@ -45,20 +43,20 @@ public class Loan implements optionalActions{
         }
         int value = -1;
         while(value < 0 || value > cont) {
-            value = current_player.optionSelection("loanPlayerSelect",current_player,null,null,players,null,0,null);
+            value = current_player.optionSelection("loanPlayerSelect",null,null,null,players,null,0,null);
             if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
         Player loan_player = players.get(value);
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
-            current_offer = current_player.optionSelection("loanInitialOffer",loan_player,null,null,null,null,0,null);
+            current_offer = loan_player.optionSelection("loanInitialOffer",null,null,null,null,null,0,null);
             if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
         System.out.println("Info del prestes:");
         System.out.println(current_player.getName() + "> PRESTEC " + loan_player.getName() + " " + current_offer);
         Player offer_active_player = loan_player;
-        String interests_string = "";
+        String interests_string;
         int interests = -1;
         int turns = 0;
         boolean negociate = false;

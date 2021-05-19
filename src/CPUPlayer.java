@@ -5,6 +5,8 @@ import java.util.Random;
 
 public class CPUPlayer extends Player{
 
+    private final Random rand = new Random();
+
     /**
      * @brief Constructor de Player de tipus CPU
      * @param name             nom del Jugador.
@@ -30,78 +32,77 @@ public class CPUPlayer extends Player{
      * @post el valor escollit per la CPU s'ha retornat
      * @return el valor escollit per la CPU
      */
-    public int optionSelection(String type,Player player, Field field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions) {
+    public int optionSelection(String type, Player player, BoxField field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions) {
         int return_value = 0;
         switch (type) {
             case "optionalActionSelector":
-                //return_value = optionalActionSelector(player,optional_actions);
-                return_value = 2;
+                return_value = optionalActionSelector(player,optional_actions);
                 break;
             case "start":
                 return_value = start(value);
                 break;
             case "buy":
-                return_value = buy(player,field);
+                return_value = buy(field);
                 break;
             case "confirmation":
                 return_value = 0;
                 break;
             case "buildChoice":
-                return_value = buildChoice(player,field);
+                return_value = buildChoice(field);
                 break;
             case "build":
-                return_value = build(player,field);
+                return_value = build(field);
                 break;
             case "buildApartment":
-                return_value = buildApartment(player,field,value);
+                return_value = buildApartment(field,value);
                 break;
             case "betQuantity":
-                return_value = betQuantity(player);
+                return_value = betQuantity();
                 break;
             case "betValue":
-                return_value = betValue(betQuantity(player));
+                return_value = betValue(betQuantity());
                 break;
             case "cardGetPlayerSelect":
                 return_value = cardGetPlayerSelect(options,players);
                 break;
             case "cardGetFieldSelect":
-                return_value = cardGetFieldSelect(player);
+                return_value = cardGetFieldSelect();
                 break;
             case "cardGivePlayerSelect":
-                return_value = cardGivePlayerSelect(options,players);
+                return_value = cardGivePlayerSelect(players);
                 break;
             case "cardGiveFieldSelect":
-                return_value = cardGiveFieldSelect(player);
+                return_value = cardGiveFieldSelect();
                 break;
             case "cardPayPlayerSelect":
-                return_value = cardPayPlayerSelect(player,players);
+                return_value = cardPayPlayerSelect(players);
                 break;
             case "postposableLuckCardChoice":
                 return_value = postposableLuckCardChoice(card);
                 break;
             case "buyPlayerSelect":
-                buyPlayerSelect(player,players);
+                buyPlayerSelect(players);
                 break;
             case "buyFieldSelect":
-                buyFieldSelect(player);
+                buyFieldSelect();
                 break;
             case "buyInitalOffer":
                 return_value = buyInitalOffer(field);
                 break;
             case "sellFieldSelect":
-                return_value = sellFieldSelect(player);
+                return_value = sellFieldSelect();
                 break;
             case "sellInitalOffer":
-                return_value = sellInitalOffer(player,field);
+                return_value = sellInitalOffer(field);
                 break;
             case "sellBuyerOffer":
-                return_value = sellBuyerOffer(player,field,value);
+                return_value = sellBuyerOffer(field,value);
                 break;
             case "loanPlayerSelect":
-                return_value = loanPlayerSelect(player,players);
+                return_value = loanPlayerSelect(players);
                 break;
             case "loanInitialOffer":
-                return_value = loanInitialOffer(player);
+                return_value = loanInitialOffer();
                 break;
             case "bankruptcy":
                 return_value = bankruptcy();
@@ -122,7 +123,7 @@ public class CPUPlayer extends Player{
      * @post el string escollit per la CPU s'ha retornat
      * @return el string escollit per la CPU
      */
-    public String stringValueSelection(String type, Player player, Field field, int value, int second_value) {
+    public String stringValueSelection(String type, Player player, BoxField field, int value, int second_value) {
         String return_value = null;
         switch (type) {
             case "throwDice" :
@@ -159,27 +160,40 @@ public class CPUPlayer extends Player{
 
         int pos_iterator = 1;
         for (optionalActions opaction : optional_actions) {
-            if (opaction.getClass().getName() == "Buy") {
-                if (player.getMoney()<=20000) bestMoves.put(pos_iterator,20-(player.getMoney()/1000)*5);  // Ex: money = 5000 => 5000/1000 = 5 => 20-5 = 15 => 15*5 = 75%
-                else bestMoves.put(pos_iterator,0);
-            }
-            else if (opaction.getClass().getName() == "Sell") {
-                if (player.getMoney()>=20000 /*&& player.getFields().size() > 0*/) bestMoves.put(pos_iterator,player.getMoney()/1000);
-                else bestMoves.put(pos_iterator,0);
-            }
-            else if (opaction.getClass().getName() == "Loan") {
-                if (player.getMoney()<=5000) bestMoves.put(pos_iterator,player.getMoney()/1000*20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
-                else bestMoves.put(pos_iterator,0);
-            }
-            else if (opaction.getClass().getName() == "LuckCard") {
-                List<Card> cards = player.getLuckCards();
-                int prob = 0;
-                for (Card aux : cards) {
-                    if (aux.getType()=="CHARGE") prob = prob + 40;
-                    else if (aux.getType()=="GET") prob = prob + 50;
-                    else if (aux.getType()=="GO") prob = prob + 10;
-                }
-                bestMoves.put(pos_iterator,prob);
+            switch (opaction.getClass().getName()) {
+                case "OpActBuy":
+                    if (player.getMoney() >= 20000)
+                        bestMoves.put(pos_iterator, player.getMoney() / 1000);  // Ex: money = 40000 / 1000 = 40
+                    else bestMoves.put(pos_iterator, 0);
+                    break;
+                case "OpActSell":
+                    if (player.getMoney() <= 20000 /*&& player.getFields().size() > 0*/)
+                        bestMoves.put(pos_iterator, player.getMoney() / 1000);
+                    else bestMoves.put(pos_iterator, 0);
+                    break;
+                case "OpActLoan":
+                    if (player.getMoney() <= 5000)
+                        bestMoves.put(pos_iterator, player.getMoney() / 1000 * 20);  // Ex: money = 3000 => 3000/1000 = 3 => 5-3 = 2 => 2*20 = 40%
+                    else bestMoves.put(pos_iterator, 0);
+                    break;
+                case "OpActLuckCard":
+                    List<Card> cards = player.getLuckCards();
+                    int prob = 0;
+                    for (Card aux : cards) {
+                        switch (aux.getType()) {
+                            case "CHARGE":
+                                prob = prob + 40;
+                                break;
+                            case "GET":
+                                prob = prob + 50;
+                                break;
+                            case "GO":
+                                prob = prob + 10;
+                                break;
+                        }
+                    }
+                    bestMoves.put(pos_iterator, prob);
+                    break;
             }
             pos_iterator++;
         }
@@ -200,79 +214,67 @@ public class CPUPlayer extends Player{
      * @return la opcio escollida
      */
     private int start(int options) {
-        Random rand = new Random();
         return rand.nextInt(options) + 1;
     }
 
     /**
      * @brief Seleciona si compra o no el terreny entrat
-     * @param player Jugador actual
      * @param field Terreny a comprar
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buy(Player player,Field field) {
-        if (player.getMoney()-field.getPrice() >= 2000) return 1;
+    private int buy(BoxField field) {
+        if (this.getMoney()-field.getPrice() >= 2000) return 1;
         else return 0;
     }
 
     /**
      * @brief Seleciona si construeix o no en el terreny
-     * @param player Jugador actual
      * @param field Terreny a contruir
      * @pre field buildable == true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buildChoice(Player player, Field field) {
-        if (player.getMoney() > field.priceToBuild()) return 1;
+    private int buildChoice(BoxField field) {
+        if (this.getMoney() > field.priceToBuild()) return 1;
         else return 0;
     }
 
     /**
      * @brief Seleciona si construeix un apartament o un hotel
-     * @param player Jugador actual
      * @param field Terreny a contruir
      * @pre player money() > field priceToBuild ( es pot parmetre minim un apartament )
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int build(Player player, Field field) {
-        if (field.hotelBuildable()) {
-            //if (player.getMoney()-field.priceToBuild() > 2000) return 2;
-            if (buildApartment(player,field,10) > 0) return 2;
-        }
-        else if (field.houseBuildable()) {
-            if (player.getMoney()-field.priceToBuild() > 2000) return 1;
-        }
+    private int build(BoxField field) {
+        if (field.hotelBuildable()) if (buildApartment(field,10) > 0) return 2;
+        else if (field.houseBuildable()) if (this.getMoney()-field.priceToBuild() > 2000) return 1;
         return 0;
     }
 
     /**
      * @brief Seleciona quants apartament vol construir
-     * @param player Jugador actual
      * @param field Terreny a contruir
      * @param max numero maxim de apartaments permesos i asequibles per el jugador
      * @pre player money() > field priceToBuild ( es pot parmetre minim un apartament )
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buildApartment(Player player, Field field, int max) {
-        int max_to_buid = (player.getMoney() / 100) * 30 / field.priceToBuild();
-        if (max_to_buid >= max) return max;
-        else return max_to_buid;
+    private int buildApartment(BoxField field, int max) {
+        int max_to_buid = (this.getMoney() / 100) * 30 / field.priceToBuild();
+        return Math.min(max_to_buid, max);
     }
 
     /**
      * @brief Seleciona la millor quanitat a apostar ( el 10% del seu capital )
-     * @param player Jugador actual
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int betQuantity(Player player) {
-        return (player.getMoney()/10) ; //10% de aposta
+    private int betQuantity() {
+        return (this.getMoney()/10) ; //10% de aposta
     }
 
     /**
@@ -283,7 +285,6 @@ public class CPUPlayer extends Player{
      * @return la opcio escollida
      */
     private int betValue(int betQuantity) {
-        Random rand = new Random();
         if (betQuantity < 5000) return rand.nextInt(11-8) +8; // 8->11
         else if (betQuantity < 10000) return rand.nextInt(9-5) +5; // 5->9
         return rand.nextInt(7-3) +3; // 3->7*/
@@ -314,38 +315,33 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Selecciona el terrent amb major valor
-     * @param fields_owner propietari dels terreny
      * @pre field_owner fields size > 0 ( El jugador te terrenys disponibles )
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int cardGetFieldSelect (Player fields_owner) {
-        ArrayList<Field> fields = fields_owner.getFields();
-        int iterator = 0;
+    private int cardGetFieldSelect () {
         int result = 0;
-        int value = fields.get(0).getPrice();
-        for (Field aux : fields) {
-            if (aux.getPrice() > value) result = iterator;
-            iterator++;
+        int max_value = this.getFields().get(0).getPrice();
+        for (BoxField aux : this.getFields()) {
+            if (aux.getPrice() > max_value) result = this.getFields().indexOf(aux);
         }
         return result;
     }
 
     /**
      * @brief Seleciona el jugador amb mes cartes
-     * @param options numero de opcions disponibles
      * @param players llista de jugadors de la partida
      * @pre options size > 0
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int cardGivePlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
+    private int cardGivePlayerSelect (ArrayList<Player> players) {
         int min_fields = -1;
         int player_chosen = -1;
-        for (int i=0;i<players.size();i++) {
-            if (!options.contains(i) && players.get(i).getFields().size() > min_fields) {
-                min_fields = players.get(i).getFields().size();
-                player_chosen = i;
+        for (Player player : players) {
+            if (player != this && player.getFields().size() > min_fields) {
+                min_fields = player.getFields().size();
+                player_chosen = players.indexOf(player);
             }
         }
         return player_chosen;
@@ -353,49 +349,43 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Selecciona el terrent amb major valor
-     * @param fields_owner propietari dels terreny
      * @pre field_owner fields size > 0 ( El jugador te terrenys disponibles )
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int cardGiveFieldSelect (Player fields_owner) {
-        ArrayList<Field> fields = fields_owner.getFields();
-        int iterator = 0;
+    private int cardGiveFieldSelect () {
         int result = 0;
-        int value = fields.get(0).getPrice();
-        for (Field aux : fields) {
+        int value = this.getFields().get(0).getPrice();
+        for (BoxField aux : this.getFields()) {
             if (aux.getPrice() < value) {
-                result = iterator;
+                result = this.getFields().indexOf(aux);
                 value = aux.getPrice();
             }
-            iterator++;
         }
         return result;
     }
 
     /**
      * @brief Selecciona el jugador a qui pagar
-     * @param current_player jugador actual
      * @param players llista de jugadors
      * @pre players size > 1
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int cardPayPlayerSelect (Player current_player,ArrayList<Player> players) {
+    private int cardPayPlayerSelect (ArrayList<Player> players) {
         int result = 0;
-        int min_value = -1;
-        if (players.get(0) != current_player) min_value = players.get(0).getMoney();
+        int min_value;
+        if (players.get(0) != this) min_value = players.get(0).getMoney();
         else {
             min_value = players.get(1).getMoney();
             result = 1;
         }
         for (Player aux : players) {
-            if (aux != current_player && aux.getMoney() < min_value) {
+            if (aux != this && aux.getMoney() < min_value) {
                 result = players.indexOf(aux);
                 min_value = aux.getMoney();
             }
         }
-        if (result == -1 || min_value == -1) ;//Throw error
         return result;
     }
 
@@ -407,23 +397,22 @@ public class CPUPlayer extends Player{
      * @return la opcio escollida
      */
     private int postposableLuckCardChoice(Card card) {
-        if (card.getType() == "CHARGE" || card.getType() == "GET" || card.getType() == "GO") return 1;
+        if (card.getType().equals("CHARGE") || card.getType().equals("GET") || card.getType().equals("GO")) return 1;
         else return 0;
     }
 
     /**
      * @brief Seleccio del jugador a la funcio Buy
-     * @param player jugador actual
      * @param players llista de jugadors
      * @pre players size > 0
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buyPlayerSelect(Player player, ArrayList<Player> players) {
+    private int buyPlayerSelect(ArrayList<Player> players) {
         int max_properties = -1;
         int chosen_index = -1;
         for (Player aux : players) {
-            if (aux != player && aux.getFields().size() > max_properties) {
+            if (aux != this && aux.getFields().size() > max_properties) {
                 max_properties = aux.getFields().size();
                 chosen_index = players.indexOf(aux);
             }
@@ -433,18 +422,17 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleccio del terreny a la funcio Buy
-     * @param player jugador actual
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buyFieldSelect(Player player) {
-        int min_value = player.getFields().get(0).getPrice();
+    private int buyFieldSelect() {
+        int min_value = this.getFields().get(0).getPrice();
         int chosen = 0;
-        for (Field aux : player.getFields()) {
+        for (BoxField aux : this.getFields()) {
             if (aux.getPrice() < min_value) {
                 min_value = aux.getPrice();
-                chosen = player.getFields().indexOf(aux);
+                chosen = this.getFields().indexOf(aux);
             }
         }
         return chosen;
@@ -457,8 +445,7 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buyInitalOffer(Field field) {
-        Random rand = new Random();
+    private int buyInitalOffer(BoxField field) {
         if (field.getPrice() > this.getMoney()) return this.getMoney();
         else {
             if (this.getMoney() > field.getPrice() * 1.5) return (int) (rand.nextInt((int) (field.getPrice() * 1.5 - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
@@ -475,10 +462,9 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private String buyBuyerOffer(Field field, int actual_offer) {
+    private String buyBuyerOffer(BoxField field, int actual_offer) {
         if (actual_offer > field.getPrice() * 1.5) return "no";
         else if (actual_offer < field.getPrice() * 1.2) return "ok";
-        Random rand = new Random();
         int max = actual_offer;
         int min = (int) (field.getPrice() * 0.8);
         int result = rand.nextInt(max-min) + min;
@@ -493,30 +479,28 @@ public class CPUPlayer extends Player{
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private String buySellerOffer(Field field, int actual_offer) {
+    private String buySellerOffer(BoxField field, int actual_offer) {
         if (actual_offer < field.getPrice()) return "no";
         else if (actual_offer > field.getPrice() * 1.3) return "ok";
-        Random rand = new Random();
         int max = (int) (field.getPrice() * 1.7);
-        int min = (int) actual_offer;
+        int min = actual_offer;
         int result = rand.nextInt(max-min) + min;
         return Integer.toString(result);
     }
 
     /**
      * @brief Seleccio del terreny a la funcio Sell
-     * @param player jugador actual
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int sellFieldSelect(Player player) {
-        int min_value = player.getFields().get(0).getPrice();
+    private int sellFieldSelect() {
+        int min_value = this.getFields().get(0).getPrice();
         int chosen = 0;
-        for (Field aux : player.getFields()) {
+        for (BoxField aux : this.getFields()) {
             if (aux.getPrice() < min_value) {
                 min_value = aux.getPrice();
-                chosen = player.getFields().indexOf(aux);
+                chosen = this.getFields().indexOf(aux);
             }
         }
         return chosen;
@@ -524,55 +508,47 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleccio  de la oferta inicial a la funcio Sell
-     * @param player jugador actual
      * @param field terreny a vendre
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int sellInitalOffer(Player player, Field field) {
-        Random rand = new Random();
-        if (field.getPrice() > player.getMoney()) return player.getMoney();
+    private int sellInitalOffer(BoxField field) {
+        if (field.getPrice() > this.getMoney()) return this.getMoney();
         else {
-            if (player.getMoney() > field.getPrice() * 1.5) return (int) (rand.nextInt((int) (field.getPrice() * 1.5 - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
+            if (this.getMoney() > field.getPrice() * 1.5) return (int) (rand.nextInt((int) (field.getPrice() * 1.5 - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
             else return (int) (rand.nextInt((int) (field.getPrice() - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
         }
     }
 
     /**
      * @brief Seleccio de la oferta del comprador a la funcio Sell
-     * @param player jugador actual
      * @param field terreny a comprar
      * @param actual_offer ultima oferta activa
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int sellBuyerOffer(Player player, Field field, int actual_offer) {
-        if (actual_offer > field.getPrice() * 1.5 || actual_offer > player.getMoney()) return -1;
-        Random rand = new Random();
+    private int sellBuyerOffer(BoxField field, int actual_offer) {
+        if (actual_offer > field.getPrice() * 1.5 || actual_offer > this.getMoney()) return -1;
         int max = (int) (actual_offer * 1.2);
         int min = actual_offer;
-        if (max-min <= 0 || min <= 0 || max <= 0) {
-            return -1;
-        }
-        int result = rand.nextInt(max-min) + min;
-        return result;
+        if (max-min <= 0 || min <= 0 || max <= 0) return -1;
+        return rand.nextInt(max-min) + min;
     }
 
     /**
      * @brief Seleccio del jugador a la funcio Loan
-     * @param player jugador actual
      * @param players llista de jugadors
      * @pre players size > 0
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int loanPlayerSelect(Player player, ArrayList<Player> players) {
+    private int loanPlayerSelect(ArrayList<Player> players) {
         int max_money = -1;
         int chosen_index = -1;
         for (Player aux : players) {
-            if (aux != player && aux.getMoney() > max_money) {
+            if (aux != this && aux.getMoney() > max_money) {
                 max_money = aux.getMoney();
                 chosen_index = players.indexOf(aux);
             }
@@ -582,28 +558,24 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleccio  de la oferta inicial adel prestec
-     * @param loan_player jugador que demana el prestec
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int loanInitialOffer(Player loan_player) {
-        Random rand = new Random();
-        int min = (int) (loan_player.getMoney() * 0.1);
-        int max = (int) (loan_player.getMoney() * 0.5);
+    private int loanInitialOffer() {
+        int min = (int) (this.getMoney() * 0.1);
+        int max = (int) (this.getMoney() * 0.5);
         if (max-min <= 0) return 0;
         else return rand.nextInt(max-min) + min;
     }
 
     /**
      * @brief Seleccio de la acceptacio, denegació o valor del interes del prestec
-     * @param player jugador que dona el prestec
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return un enter amb el interes del prestec, no si rebutja la oferta o ok si la accepta
      */
     private String loanInterestOffer(Player player,int offer,int interests) {
-        Random rand = new Random();
         if (interests == -1) {
             return String.valueOf(rand.nextInt(30 - 5) + 5);
         }
@@ -624,7 +596,6 @@ public class CPUPlayer extends Player{
      * @return numero de torns que durarà el prestec
      */
     private String loanTurnsOffer() {
-        Random rand = new Random();
         int turns = rand.nextInt(6-1) + 1;
         return String.valueOf(turns);
     }

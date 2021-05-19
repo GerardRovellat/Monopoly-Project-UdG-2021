@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 public class TerminalPlayer extends Player{
     Scanner scan = new Scanner(System.in);
@@ -18,7 +17,7 @@ public class TerminalPlayer extends Player{
         super(name, initial_money, initial_position,"USER");
     }
 
-    public int optionSelection(String type, Player player, Field field,ArrayList<Integer> options,ArrayList<Player> players,Card card, int value, ArrayList<optionalActions> optional_actions) {
+    public int optionSelection(String type, Player player, BoxField field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions) {
         int number = 0;
         boolean valid = false;
         do {
@@ -29,11 +28,11 @@ public class TerminalPlayer extends Player{
                 scan.nextLine();
                 System.out.println("FORMAT ENTRAT INCORRECTE: Torna-hi...");
             }
-        }while (!valid);
+        } while (!valid);
         return number;
     }
 
-    public String stringValueSelection(String type, Player player, Field field, int value, int second_value) {
+    public String stringValueSelection(String type, Player player, BoxField field, int value, int second_value) {
         return scan.next();
     }
 }

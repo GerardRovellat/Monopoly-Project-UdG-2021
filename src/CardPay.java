@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * @author Marc Got
@@ -9,7 +8,7 @@ import java.util.Scanner;
  */
 
 public class CardPay extends Card{
-    private int quantity;                                       ///< quantitat a pagar
+    private final int quantity;                                       ///< quantitat a pagar
 
     /**
      * @brief Constructor de CardPay
@@ -43,10 +42,10 @@ public class CardPay extends Card{
                 option_nr++;
             }
             System.out.println("A quin jugador vols pagar?");
-            option_nr = current_player.optionSelection("cardPayPlayerSelect",current_player,null,null,players,null,0,null);
+            option_nr = current_player.optionSelection("cardPayPlayerSelect",null,null,null,players,null,0,null);
             while (option_nr < 0 || option_nr > players.size() - 1 || players.indexOf(current_player) == option_nr) { // POSIBLE ERROR AQUI
                 System.out.println("Valor entrat erroni, torni a provar");
-                option_nr = current_player.optionSelection("cardPayPlayerSelect",current_player,null,null,players,null,0,null);
+                option_nr = current_player.optionSelection("cardPayPlayerSelect",null,null,null,players,null,0,null);
             }
             current_player.pay(quantity);
             players.get(option_nr).charge(quantity);

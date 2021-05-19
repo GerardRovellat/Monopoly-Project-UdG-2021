@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * @author Marc Got
@@ -9,17 +8,14 @@ import java.util.Scanner;
  * propietats de un dels altres jugadors contraris. Aquesta compra és negociable
  */
 
-public class Buy implements optionalActions {
+public class OpActBuy implements optionalActions {
 
     /**
      * @brief Constructor de Buy.
      * @pre \p true
      * @post Crea una acció opcional Buy.
      */
-    public Buy() {
-    }
-
-    ;
+    public OpActBuy() { }
 
     /**
      * @return String de la sortida per pantalla de Buy
@@ -45,7 +41,7 @@ public class Buy implements optionalActions {
         OutputManager output = m.getOutput();
         Player buy_player = playerSelect(current_player, players,output);
         if (buy_player != null) {
-            Field buy_field = fieldSelect(current_player, buy_player);
+            BoxField buy_field = fieldSelect(buy_player);
             if (buy_field != null) {
                 int initial_offer = startOffer(current_player, buy_field, output);
                 return buyNegociation(current_player, buy_player, buy_field, initial_offer, output);
@@ -75,7 +71,7 @@ public class Buy implements optionalActions {
             try {
                 System.out.println("Selecioni la opcio que desitgi:");
                 while (true) {
-                    int value = current_player.optionSelection("buyPlayerSelect", current_player, null, null, players, null, 0, null);
+                    int value = current_player.optionSelection("buyPlayerSelect", null, null, null, players, null, 0, null);
                     if (value >= 0 && value < players.size()) return players.get(value);
                     else System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (players.size() - 1) + " ). Torni a provar:");
                 }
@@ -87,22 +83,21 @@ public class Buy implements optionalActions {
     }
 
     /**
-     * @param current_player Jugador que fa la compra.
      * @param buy_player     Jugador que ven el terreny
      * @return el terreny selecionat per el jugador o null si no es pot
      * @brief Mostra tots els terreyns del jugador i deixa escollir a un d'ells per comprar'l-ho
      * @pre true
      * @post El terreny selecionat ha estat retornat, o en la seva absencia, s'ha retorntat un terreny null
      */
-    private Field fieldSelect(Player current_player, Player buy_player) {
-        ArrayList<Field> fields = buy_player.getFields();
+    private BoxField fieldSelect(Player buy_player) {
+        ArrayList<BoxField> fields = buy_player.getFields();
         if (fields.size() != 0) {
             System.out.println("Selecioni la propietat de " + buy_player.getName() + " que desitja comprar:");
-            for (Field aux : fields) System.out.println(fields.indexOf(aux) + ". " + aux.getName() + " | " + aux.getPrice());
+            for (BoxField aux : fields) System.out.println(fields.indexOf(aux) + ". " + aux.getName() + " | " + aux.getPrice());
             System.out.println("Selecioni la opcio que desitgi:");
             try {
                 while (true) {
-                    int value = current_player.optionSelection("buyFieldSelect", buy_player, null, null, null, null, 0, null);
+                    int value = buy_player.optionSelection("buyFieldSelect", null, null, null, null, null, 0, null);
                     if (value >= 0 && value < fields.size()) return fields.get(value);
                     else System.out.println("La opcio entrada es incorrecte ( ha de ser un enter entre 0 i " + (fields.size() - 1) + " ). Torni a provar:");
                 }
@@ -120,7 +115,7 @@ public class Buy implements optionalActions {
      * @pre true
      * @post El valor de la oferta ha estat retornat i el valor > 0 i < la quantitat de diners del jugador comprador
      */
-    private int startOffer(Player current_player, Field buy_field, OutputManager output) {
+    private int startOffer(Player current_player, BoxField buy_field, OutputManager output) {
         int current_offer;
         System.out.println("Indiqui la oferta inicial:");
         try {
@@ -148,7 +143,7 @@ public class Buy implements optionalActions {
      * @pre true
      * @post el boolean indicant si la compra s'ha dut a terme s'ha retornat
      */
-    private boolean buyNegociation(Player current_player, Player buy_player, Field buy_field, int initial_offer, OutputManager output) {
+    private boolean buyNegociation(Player current_player, Player buy_player, BoxField buy_field, int initial_offer, OutputManager output) {
         System.out.println("Comença la negociació");
         System.out.println(current_player.getName() + "> COMPRAR " + buy_field.getName() + " " + initial_offer);
         Player offer_active_player = buy_player;
@@ -185,7 +180,7 @@ public class Buy implements optionalActions {
      * @pre true
      * @post el boolean indicant si la compra s'ha dut a terme s'ha retornat
      */
-    private boolean buy(Player current_player, Player buy_player, Field buy_field, int final_offer) {
+    private boolean buy(Player current_player, Player buy_player, BoxField buy_field, int final_offer) {
         current_player.pay(final_offer);
         buy_player.charge(final_offer);
         current_player.addBox(buy_field);

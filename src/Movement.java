@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -14,14 +10,13 @@ import java.util.Random;
  */
 public class Movement {
 
-    private Box current_box;                                            ///< Casella actual.
-    private Player active_player;                                       ///< Jugador que esta realitzant el moviment.
-    private HashMap<Integer,String> user_actions = new HashMap<>();     ///< Accions d'usuari.
-    ArrayList<Player> players;                                          ///< Llista de Jugadors jugant.
-    Board board;                                                        ///< Tale del Monopoly.
-    private ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
-    private ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
-    private OutputManager output;
+    private final Box current_box;                                            ///< Casella actual.
+    private final Player active_player;                                       ///< Jugador que esta realitzant el moviment.
+    ArrayList<Player> players;                                                ///< Llista de Jugadors jugant.
+    Board board;                                                              ///< Tale del Monopoly.
+    private final ArrayList<String> start_rewards;                            ///< Llista de recompenses de la casella Sortida
+    private final ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
+    private final OutputManager output;
 
 
 
@@ -41,7 +36,6 @@ public class Movement {
         this.start_rewards = start_rewards;
         this.cards = cards;
         this.output = output;
-        //userActionsStart();
     }
 
     /**
@@ -61,7 +55,7 @@ public class Movement {
      * @post Les accions han sigut realitzades.
      */
     public void fieldAction() {
-        Field field = (Field) current_box;
+        BoxField field = (BoxField) current_box;
         output.fileWrite(active_player.getName() + "> Cau a Casella Terreny");
         if (field.isBought()) {
             if (field.getOwner() == active_player) build();
@@ -79,7 +73,7 @@ public class Movement {
         System.out.println("Entri la quantitat de la seva aposta");
         int quantity = -1;
         while (quantity < 0 || quantity > active_player.getMoney()) {
-            quantity = active_player.optionSelection("betQuantity",active_player,null,null,null,null,0,null);
+            quantity = active_player.optionSelection("betQuantity",null,null,null,null,null,0,null);
             if (quantity < 0 || quantity > active_player.getMoney()) {
                 System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 0 i " + active_player.getMoney() + " )");
                 System.out.println("Torni a provar:");
@@ -89,7 +83,7 @@ public class Movement {
         System.out.println("Entri el valor de la seva aposta");
         int bet = -1;
         while( bet < 3 || bet > 12) {
-            bet = active_player.optionSelection("betValue",active_player,null,null,null,null,0,null);
+            bet = active_player.optionSelection("betValue",null,null,null,null,null,0,null);
             if (bet < 3 || bet > 12) {
                 System.out.println("El valor que ha entrat no es correcte ( ha de estar entre 3 i 12 )");
                 System.out.println("Torni a provar:");
@@ -102,7 +96,7 @@ public class Movement {
         int first_dice = rand.nextInt(5) + 1;
         int second_dice = rand.nextInt(5) + 1;
         System.out.println("El resultat dels daus ha sigut " + first_dice + " i de " + second_dice);
-        Bet aux = (Bet) current_box;
+        BoxBet aux = (BoxBet) current_box;
         int result = aux.betResult(quantity,bet,first_dice+second_dice);
         if (result > 0) {
             System.out.println("Ha superat la aposta amb un resultat de +" + result + "€");
@@ -162,7 +156,7 @@ public class Movement {
     public void directComand(){
         output.fileWrite(active_player.getName() + "> Cau a Casella Comanda Directe");
         System.out.println("Has caigut en una casella de comanda directa");
-        directCommand current = (directCommand) current_box;
+        BoxDirectCommand current = (BoxDirectCommand) current_box;
         runCard(current.getCard());
     }
 
@@ -178,7 +172,7 @@ public class Movement {
         switch (type){
             case "CHARGE": // passsar a català
                 CardCharge charge = (CardCharge) card;
-                charge.execute(board,active_player);
+                charge.execute(active_player);
                 break;
             case "FINE":
                 CardFine fine = (CardFine) card;
@@ -186,15 +180,15 @@ public class Movement {
                 break;
             case "GET":
                 CardGet get = (CardGet) card;
-                get.execute(players,board,active_player);
+                get.execute(players,active_player);
                 break;
             case "GIVE":
                 CardGive give = (CardGive) card;
-                give.execute(players,board,active_player);
+                give.execute(players,active_player);
                 break;
             case "GO":
                 CardGo go = (CardGo) card;
-                go.execute(players,board,active_player,start_rewards);
+                go.execute(board,active_player,start_rewards);
                 break;
             case "PAY":
                 CardPay pay = (CardPay) card;
@@ -213,7 +207,7 @@ public class Movement {
      * @param possible_actions ArrayList amb totes les accions possibles que el Jugador pot fer.
      */
     public void optionalActions(ArrayList<optionalActions> possible_actions){
-        int value = 0;
+        int value;
         System.out.println("Accions Opcionals:");
         int index = 1;
         System.out.println("0 - RES");
@@ -237,7 +231,7 @@ public class Movement {
      * @post Si el terreny no te propietari i el jugador ho desitja, el terreny serà comprat, altrament passarà.
      */
     public void buyField() {
-        Field field = (Field) current_box;
+        BoxField field = (BoxField) current_box;
         System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
         System.out.println(field.toString()); // Print field info ( name, price, rent, etc )
         System.out.println("Accions displonibles:");
@@ -246,7 +240,7 @@ public class Movement {
         System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
         for (boolean end = false; !end; ) {
             //int value = scan.nextInt();
-            int value = active_player.optionSelection("buy",active_player,field,null,null,null,0,null);
+            int value = active_player.optionSelection("buy",null,field,null,null,null,0,null);
             if (value == 1) {
                 // Comprar
                 if (active_player.getMoney() >= field.getPrice()) {
@@ -289,7 +283,7 @@ public class Movement {
      * @post El jugador ha pagat el lloguer del terreny on ha caigut al seu Jugador propietari.
      */
     public void payRent() {
-        Field field = (Field) current_box;
+        BoxField field = (BoxField) current_box;
         Player owner = field.getOwner();                                // Retorna propietari terreny
         System.out.println("-  La casella de terreny on ha caigut ja te propietari  -");
         System.out.println("El propietari del terreny es " + owner.getName() + " i el lloguer es de " + field.getRent() + "€");
@@ -312,15 +306,15 @@ public class Movement {
      * @post L'acció per contruïr edificis dins d'una propietat ha estat gestionada.
      */
     public void build() {
-        Field field = (Field) current_box;
+        BoxField field = (BoxField) current_box;
         System.out.println("-  La casella de terreny on ha caigut es de la seva propietat  -");
         if (field.houseBuildableType().equals("si") || field.houseBuildableType().equals("agrupacio")) {
-            if ( ( field.houseBuildableType() == "agrupacio" && board.numberOfAgrupationField(field.getGroup()) == active_player.numberOfAgrupationField(field.getGroup())) || field.houseBuildableType().equals("si")) {
+            if ( (field.houseBuildableType().equals("agrupacio") && board.numberOfAgrupationField(field.getGroup()) == active_player.numberOfAgrupationField(field.getGroup())) || field.houseBuildableType().equals("si")) {
                 System.out.println("Accions displonibles:");
                 System.out.println("0. Res");
                 System.out.println("1. Edificar");
                 System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-                int action = active_player.optionSelection("buildChoice",active_player,field,null,null,null,0,null);
+                int action = active_player.optionSelection("buildChoice",null,field,null,null,null,0,null);
                 switch (action) {
                     case 0: // NOTHING
                         System.out.println("Accio selecionada: 0. Res");
@@ -333,7 +327,7 @@ public class Movement {
                             System.out.println("1. Apartaments");
                             System.out.println("2. Hotel");
                             System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-                            option = active_player.optionSelection("build",active_player,field,null,null,null,0,null);
+                            option = active_player.optionSelection("build",null,field,null,null,null,0,null);
                             if (option == 0) System.out.println("FINAL DE EDIFICACIÓ");
                             else if (option == 1)  buildApartament(field);
                             else if (option == 2)  buildHotel(field);
@@ -357,7 +351,7 @@ public class Movement {
      * @post L'acció per contruïr apartaments dins d'una propietat ha estat gestionada.
      * @param field terreny on s'ha de contruïr apartaments.
      */
-    private void buildApartament(Field field) {
+    private void buildApartament(BoxField field) {
         int price_to_build = field.priceToBuild();      // Get the price to build one apartament
         int numberOfHouseBuildable = field.numberOfHouseBuildable();        // get the maximum number of apartament the player is able to build
         System.out.println(field.toString());
@@ -373,7 +367,7 @@ public class Movement {
                     int quantity = 0;
                     for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
                         System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
-                        quantity = active_player.optionSelection("buildApartment",active_player,field,null,null,null,max_apartaments_buildable,null);
+                        quantity = active_player.optionSelection("buildApartment",null,field,null,null,null,max_apartaments_buildable,null);
                         if (quantity <= max_apartaments_buildable)
                             end = true;      // Check if posible to build that many apartaments
                         else
@@ -414,7 +408,7 @@ public class Movement {
      * @post L'acció per contruïr un hotel dins d'una propietat ha estat gestionada.
      * @param field terreny on s'ha de contruïr apartaments.
      */
-    private void buildHotel(Field field) {
+    private void buildHotel(BoxField field) {
         if (field.hotelBuildable()) {
             int price_to_build = field.priceToBuild();
             System.out.println("Es pot construir un hotel a un preu de " + price_to_build + "€");

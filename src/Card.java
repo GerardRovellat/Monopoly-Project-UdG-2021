@@ -7,8 +7,8 @@
  */
 
 public class Card {
-    private String type;                //< Tipus de carta: ( CHARGE, FINE, GET, GIVE, GO, PAY )
-    private boolean postposable;        ///< true si es posposable, false altrament
+    private final String type;                //< Tipus de carta: ( CHARGE, FINE, GET, GIVE, GO, PAY )
+    private final boolean postposable;        ///< true si es posposable, false altrament
 
     /**
      * @brief Constructor de Card.

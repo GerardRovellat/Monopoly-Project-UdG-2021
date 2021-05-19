@@ -5,7 +5,7 @@
  * @brief Classe de casella de aposta. En aquesta, es gestionarà les dades i els calculs corresponents
  */
 
-public class Bet extends Box{
+public class BoxBet extends Box{
 
     private final double[] combinations = new double[]{0,0,0,1,3,6,10,15,21,26,30,33,35}; ///<  Contè les combinacions acomulades sobre un total de 12 valors ( 2 daus )
 
@@ -16,7 +16,7 @@ public class Bet extends Box{
      * @param position posició de la casella en el taulell
      * @param type tipus de casella == "Bet"
      */
-    public Bet(int position, String type) {
+    public BoxBet(int position, String type) {
         super(position, type, "APOSTA");
     }
 
