@@ -63,7 +63,7 @@ public class CPUPlayer extends Player{
                 return_value = betValue(betQuantity());
                 break;
             case "cardGetPlayerSelect":
-                return_value = cardGetPlayerSelect(options,players);
+                return_value = cardGetPlayerSelect(players);
                 break;
             case "cardGetFieldSelect":
                 return_value = cardGetFieldSelect();
@@ -292,19 +292,18 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleciona el jugador amb mes cartes
-     * @param options numero de opcions disponibles
      * @param players llista de jugadors de la partida
      * @pre options size > 0
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int cardGetPlayerSelect (ArrayList<Integer> options,ArrayList<Player> players) {
+    private int cardGetPlayerSelect (ArrayList<Player> players) {
         int min_fields = -1;
         int player_chosen = -1;
-        for (int i=0;i<players.size();i++) {
-            if (!options.contains(i) && players.get(i).getFields().size() > min_fields) {
-                min_fields = players.get(i).getFields().size();
-                player_chosen = i;
+        for (Player player : players) {
+            if (player != this && player.getFields().size() > min_fields) {
+                min_fields = player.getFields().size();
+                player_chosen = players.indexOf(player);
             }
         }
         if (player_chosen == -1) {
