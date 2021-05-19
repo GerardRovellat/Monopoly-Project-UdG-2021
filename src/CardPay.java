@@ -33,7 +33,6 @@ public class CardPay extends Card{
      * @param aux Classe movement per poder cridar a accions opcionals
      */
     public void execute(ArrayList<Player> players, Board board, Player current_player, Movement aux) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Has de pagar "+quantity+" a un dels altres jugadors");
         if (current_player.getMoney() >= quantity) {
             int option_nr = 0;
@@ -44,7 +43,6 @@ public class CardPay extends Card{
                 option_nr++;
             }
             System.out.println("A quin jugador vols pagar?");
-            //option_nr = scanner.nextInt();
             option_nr = current_player.optionSelection("cardPayPlayerSelect",current_player,null,null,players,null,0,null);
             while (option_nr < 0 || option_nr > players.size() - 1 || players.indexOf(current_player) == option_nr) { // POSIBLE ERROR AQUI
                 System.out.println("Valor entrat erroni, torni a provar");
@@ -60,7 +58,6 @@ public class CardPay extends Card{
                 board.transferProperties(current_player,null,aux);
             }
         }
-        //FALTA TRACTAR QUAN NO POT FER EL PAGAMENT
     }
 
     /**

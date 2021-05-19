@@ -58,11 +58,9 @@ public class CardFine extends Card{
                 System.out.println("No tens diners suficients per fer front a la multa");
                 if (!board.isBankrupt(current_player,quantity,aux)) {
                     board.transferProperties(current_player,null,aux);
-                    end = true;// la funcio ja ha enviat el jugador a la bancarrota
+                    end = true;
                 }
-                else {
-                    System.out.println("Has aconseguit els diners suficients");
-                }
+                else System.out.println("Has aconseguit els diners suficients");
             }
         }
     }

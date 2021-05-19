@@ -240,7 +240,6 @@ public class Movement {
         Field field = (Field) current_box;
         System.out.println("-  La casella de terreny on ha caigut no te propietari  -");
         System.out.println(field.toString()); // Print field info ( name, price, rent, etc )
-        //printUserActions(new int[]{0, 3});      // Actions confirmation actions ( confirmate, denegate )
         System.out.println("Accions displonibles:");
         System.out.println("0. Res");
         System.out.println("1. Comprar");
@@ -252,7 +251,6 @@ public class Movement {
                 // Comprar
                 if (active_player.getMoney() >= field.getPrice()) {
                     System.out.println("Despres de la compra, et quedaràs amb " + (active_player.getMoney()- field.getPrice()) + "€");
-                    //printUserActions(new int[]{1,2});
                     System.out.println("Accions displonibles:");
                     System.out.println("0. Confirmar");
                     System.out.println("1. Anular");
@@ -322,10 +320,9 @@ public class Movement {
                 System.out.println("0. Res");
                 System.out.println("1. Edificar");
                 System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
-                //int action = scan.nextInt();
                 int action = active_player.optionSelection("buildChoice",active_player,field,null,null,null,0,null);
                 switch (action) {
-                    case 0:
+                    case 0: // NOTHING
                         System.out.println("Accio selecionada: 0. Res");
                         break;
                     case 1: // BUILD
@@ -337,13 +334,10 @@ public class Movement {
                             System.out.println("2. Hotel");
                             System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
                             option = active_player.optionSelection("build",active_player,field,null,null,null,0,null);
-                            if (option == 0) {
-                                System.out.println("FINAL DE EDIFICACIÓ");
-                            } else if (option == 1) {
-                                buildApartament(field);
-                            } else if (option == 2) {
-                                buildHotel(field);
-                            } else System.out.println("Valor entrat erroni, torni a provar");
+                            if (option == 0) System.out.println("FINAL DE EDIFICACIÓ");
+                            else if (option == 1)  buildApartament(field);
+                            else if (option == 2)  buildHotel(field);
+                            else System.out.println("Valor entrat erroni, torni a provar");
                         }
                         System.out.println("FINAL EDIFICAR");
                         break;
@@ -352,13 +346,9 @@ public class Movement {
                 }
                 System.out.println("FINAL ACCIONS DISPONIBLES");
             }
-            else {
-                System.out.println("Encara no tens totes les propietats de la agrupació i per tant no pots edificar");
-            }
+            else System.out.println("Encara no tens totes les propietats de la agrupació i per tant no pots edificar");
         }
-        else {
-            System.out.println("No es posible edificar en aquest terreny");
-        }
+        else System.out.println("No es posible edificar en aquest terreny");
     }
 
     /**
@@ -383,7 +373,6 @@ public class Movement {
                     int quantity = 0;
                     for (boolean end = false; !end; ) {         // Check if it's posible to build quantity apartaments
                         System.out.println("Quina quantitat de apartaments vol edificar? Introdueixi la quantitat: ");
-                        //quantity = scan.nextInt();      // Get number of apartaments to build
                         quantity = active_player.optionSelection("buildApartment",active_player,field,null,null,null,max_apartaments_buildable,null);
                         if (quantity <= max_apartaments_buildable)
                             end = true;      // Check if posible to build that many apartaments
@@ -397,7 +386,6 @@ public class Movement {
                     System.out.println("1. Anular");
                     System.out.println("Indiqui amb el numero corresponent la accio que vol realitzar: ");
                     for (boolean end = false; !end; ) {       // Check if actions value is correct
-                        //int value = scan.nextInt();         // Get action number
                         int value = active_player.optionSelection("confirmation",active_player,field,null,null,null,0,null);
                         if (value == 0 || value == 1)
                             end = true;       // Check if actions value is correct
@@ -471,6 +459,12 @@ public class Movement {
         return cards;
     }
 
+    /**
+     * @brief Retorna la classe de sortida de dades
+     * @pre \p true.
+     * @post el objecte ha sigut retornat
+     * @return output manager
+     */
     public OutputManager getOutput() {
         return output;
     }

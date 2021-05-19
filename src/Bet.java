@@ -32,7 +32,6 @@ public class Bet extends Box{
         if (dice_result >= bet) {
             Double aux = quanity * (1 + 10 * combinations[bet] / 36 ) ; // combinations[bet] = combinacions posibles de que surti un valor inferior o igual a bet
             return aux.intValue();
-        }
-        else return -1;
+        } else return -1;
     }
 }

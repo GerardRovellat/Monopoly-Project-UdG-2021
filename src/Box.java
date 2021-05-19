@@ -73,12 +73,8 @@ public class Box {
      */
     private String playerInPosition(ArrayList<Player> players) {
         String playersInPosition = "";
-        for(Player aux : players) {
-            if (aux.getPosition()==position) {
-                playersInPosition = playersInPosition + " | " + aux.getName() ;
-            }
-        }
-       return playersInPosition;
+        for(Player aux : players) if (aux.getPosition()==position) playersInPosition = playersInPosition + " | " + aux.getName() ;
+        return playersInPosition;
     }
 
 

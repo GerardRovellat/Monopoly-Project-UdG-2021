@@ -45,7 +45,6 @@ public class Loan implements optionalActions{
         }
         int value = -1;
         while(value < 0 || value > cont) {
-            //value = scan.nextInt();
             value = current_player.optionSelection("loanPlayerSelect",current_player,null,null,players,null,0,null);
             if (value < 0 || value > cont || value == players.indexOf(current_player)) System.out.println("El valor entrat no es correcte. Torn-hi a provar:");
         }
@@ -72,9 +71,7 @@ public class Loan implements optionalActions{
                 turns = 0;
                 negociate = true;
             }
-            else if (interests_string.equals("ok")) {
-                negociate = true;
-            }
+            else if (interests_string.equals("ok")) negociate = true;
             else {
                 interests = Integer.parseInt(interests_string);
                 turns = Integer.parseInt(offer_active_player.stringValueSelection("loanTurnsOffer",null,null,0,0));
