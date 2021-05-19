@@ -34,7 +34,8 @@ public class CPUPlayer extends Player{
         int return_value = 0;
         switch (type) {
             case "optionalActionSelector":
-                return_value = optionalActionSelector(player,optional_actions);
+                //return_value = optionalActionSelector(player,optional_actions);
+                return_value = 2;
                 break;
             case "start":
                 return_value = start(value);
@@ -85,7 +86,7 @@ public class CPUPlayer extends Player{
                 buyFieldSelect(player);
                 break;
             case "buyInitalOffer":
-                return_value = buyInitalOffer(player,field);
+                return_value = buyInitalOffer(field);
                 break;
             case "sellFieldSelect":
                 return_value = sellFieldSelect(player);
@@ -451,17 +452,16 @@ public class CPUPlayer extends Player{
 
     /**
      * @brief Seleccio  de la oferta inicial a la funcio Buy
-     * @param player jugador actual
      * @param field terreny a comprar
      * @pre true
      * @post la opcio escollida s'ha retornat
      * @return la opcio escollida
      */
-    private int buyInitalOffer(Player player, Field field) {
+    private int buyInitalOffer(Field field) {
         Random rand = new Random();
-        if (field.getPrice() > player.getMoney()) return player.getMoney();
+        if (field.getPrice() > this.getMoney()) return this.getMoney();
         else {
-            if (player.getMoney() > field.getPrice() * 1.5) return (int) (rand.nextInt((int) (field.getPrice() * 1.5 - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
+            if (this.getMoney() > field.getPrice() * 1.5) return (int) (rand.nextInt((int) (field.getPrice() * 1.5 - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
             else return (int) (rand.nextInt((int) (field.getPrice() - field.getPrice() * 0.5)) + field.getPrice() * 0.5);
         }
 
