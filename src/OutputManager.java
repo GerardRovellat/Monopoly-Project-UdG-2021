@@ -2,9 +2,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * @author Gerard Rovellat
+ * @file OutputManager.java
+ * @class OutputManager
+ * @brief Classe que s'encarrega de gestionar les sortides en el nostre cas al fitxer de desenvolupament de partida.
+ */
 public class OutputManager {
 
-    private File dev_file;
+    private File dev_file;          ///< Fitxer desenvolupament de la partida
 
     /**
      * @brief Constructor OutputManager. Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom
@@ -33,6 +39,7 @@ public class OutputManager {
      * @brief Escriu text \p line al fitxer de desenvolupament de partida \p dev_file.
      * @pre \p true
      * @post la linea de text \p line ha estat escrita a \p dev_file.
+     * @param line text que s'ha d'escriure al fitxer.
      */
     public void fileWrite(String line){
         try{

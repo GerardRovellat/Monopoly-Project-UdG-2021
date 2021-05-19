@@ -24,12 +24,11 @@ public class CardGet extends Card{
      * @brief Execucio de la carta
      * @pre \p true
      * @post la propietat ha estat rebuda
-     * @param players llista de jugadors de la partida
-     * @param board taulell
-     * @param current_player jugador actiu
+     * @param players           llista de jugadors de la partida
+     * @param board             taulell
+     * @param current_player    jugador actiu
      */
     public void execute(ArrayList<Player> players, Board board, Player current_player) {
-        Scanner scan = new Scanner(System.in);
         System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
         int option_nr = 0;
         ArrayList<Integer> not_disponible = new ArrayList<>();
@@ -45,7 +44,6 @@ public class CardGet extends Card{
         if (players.size() != not_disponible.size()) {
             try {
                 System.out.println("Seleccioni el jugador");
-                //option_nr = scan.nextInt();
                 option_nr = current_player.optionSelection("cardGetPlayerSelect", null, null, not_disponible, players, null,0,null);
                 while (not_disponible.contains(option_nr)) {
                     System.out.println("Error, sel·leccioni un jugador de la llista");
@@ -61,8 +59,7 @@ public class CardGet extends Card{
             }
             try {
                 System.out.println("Seleccioni un terreny");
-                //field_nr = scan.nextInt();
-                field_nr = current_player.optionSelection("cardGetFieldSelect", choosed, null, null, null, null,0,null);
+                field_nr = choosed.optionSelection("cardGetFieldSelect", null, null, null, null, null,0,null);
                 while (field_nr < 0 && field_nr > choosed.getFields().size()) {
                     System.out.println("Error, sel·leccioni un terreny correcte");
                 }

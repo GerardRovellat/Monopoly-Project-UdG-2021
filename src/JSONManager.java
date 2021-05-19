@@ -47,15 +47,6 @@ public class JSONManager {
     }
 
     /**
-     * @brief Escriu el fitxer de desenvolupament de la partida de Monopoly.
-     * @pre \p true
-     * @post El fitxer de desenvolupament de la partida ha estat escrit.
-     */
-    public void writeFile() {
-
-    }
-
-    /**
      * @brief Llegeix \p rules_file fitxer JSON i configura les propietats llegides del joc del Monopoly.
      * @pre \p true
      * @post \p rules_file ha estat llegit.
@@ -75,7 +66,6 @@ public class JSONManager {
 
             //Primer element "modalitat"
             mode = j_object.get("modalitat").getAsString();
-            /**FALTA TRACTAR EL ERROR**/
 
             //Segon element array "accionsNoAplicables"
             JsonArray restricted_actions = j_object.get("accionsNoAplicables").getAsJsonArray();
@@ -116,8 +106,8 @@ public class JSONManager {
             //Cinquè element "percentatgePreuEdificisHipoteca"
             int percentage_mortgage_buildings = j_object.get("percentatgePreuEdificisHipoteca").getAsInt();
 
-        } catch (FileNotFoundException e) {
-            System.err.println("ERROR: El fitxer JSON de regles no s'ha trobat --> "+e.getMessage());
+        } catch (Exception e) {
+            System.err.println("ERROR: Hi ha hagut un problema amb el fitxer JSON --> "+e.getMessage());
             System.exit(-1);
         }
         return possible_actions;
@@ -141,12 +131,15 @@ public class JSONManager {
             JsonElement data = parser.parse(reader);
             JsonObject j_object = data.getAsJsonObject();
 
+            //Primer element nombre de caselles.
             int boxes_nr = j_object.get("nombreCaselles").getAsInt();
             board.setBoxesNr(boxes_nr);
 
+            //Casella Sortida sempre sera la primera.
             Start start = new Start(1,"START");
             board.addBox(start);
 
+            //Segon element array de terrenys.
             JsonArray field_boxes = j_object.get("casellesTerreny").getAsJsonArray();
             for(JsonElement array_element : field_boxes){
 
@@ -194,6 +187,8 @@ public class JSONManager {
                 board.addBox(field);
 
             }
+
+            //Tercer element array caselles preso.
             JsonArray jail_boxes = j_object.get("casellesPreso").getAsJsonArray();
             for(JsonElement array_element : jail_boxes){
                 int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
@@ -203,6 +198,7 @@ public class JSONManager {
                 board.addBox(empty);
             }
 
+            //Quart element array caselles comanda directa.
             JsonArray direct_command_boxes = j_object.get("casellesComandaDirecta").getAsJsonArray();
             for(JsonElement array_element : direct_command_boxes) {
                 int box_nr = array_element.getAsJsonObject().get("numCasella").getAsInt();
@@ -257,18 +253,21 @@ public class JSONManager {
                 }
             }
 
+            //Cinquè element array caselles aposta
             JsonArray bet_boxes = j_object.get("casellesAposta").getAsJsonArray();
             for(JsonElement array_element : bet_boxes){
                 Bet bet = new Bet(array_element.getAsInt(),"BET");
                 board.addBox(bet);
             }
 
+            //Sise element array caselles sort.
             JsonArray luck_cards_boxes = j_object.get("casellesSort").getAsJsonArray();
             for(JsonElement array_element : luck_cards_boxes){
                 Box box = new Box(array_element.getAsInt(),"LUCK","LUCK");
                 board.addBox(box);
             }
 
+            //Sete element array targetes sort.
             JsonArray luck_cards = j_object.get("targetesSort").getAsJsonArray();
             ArrayList cards_stack = new ArrayList<Card>();
             for(JsonElement array_element : luck_cards){
@@ -303,14 +302,13 @@ public class JSONManager {
                         CardGet get_card = new CardGet(postponable);
                         cards_stack.add(get_card);
                         break;
-                    /**AQUESTES SI Q NO FARIEN FALTA, VERITAT? **/
                 }
             }
 
             cards = cards_stack;
 
-        } catch (FileNotFoundException e) {
-            System.err.println("ERROR: El fitxer JSON de tauler no s'ha trobat --> "+e.getMessage());
+        } catch (Exception e) {
+            System.err.println("ERROR: Hi ha hagut un problema amb el fitxer JSON --> "+e.getMessage());
             System.exit(-1);
         }
         return board;

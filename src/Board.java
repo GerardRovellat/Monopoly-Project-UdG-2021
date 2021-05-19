@@ -55,7 +55,6 @@ public class Board {
                     System.out.println(menu_option + " - " + reward);
                     menu_option++;
                 }
-                Scanner scan = new Scanner(System.in);
                 int chosed_option = player.optionSelection("start",null,null,null,null,null,rewards.size()-1,null);
                 while(chosed_option<1 || chosed_option > rewards.size()){
                     System.out.println("ERROR: Rang incorrecte, torna-hi...");
@@ -64,9 +63,7 @@ public class Board {
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     Field field_reward = randomField();
-                    if (field_reward == null) {
-                        System.out.println("NO HI HA CAP TERRENY");
-                    }
+                    if (field_reward == null) System.out.println("NO HI HA CAP TERRENY");
                     else {
                         player.addBox(field_reward);
                         field_reward.buy(player);
@@ -186,9 +183,9 @@ public class Board {
      * @pre true
      * @post el jugador ha realitzat les accions disponibles i s'ha comprovat si despres pot seguir jugant
      * @return true si el jugador pot seguir jugant, false altrament
-     * @param current_player jugador actual
-     * @param pay_amount quantitat a pagar
-     * @param aux Classe movement per poder cridar a accions opcionals
+     * @param current_player    jugador actual
+     * @param pay_amount        quantitat a pagar
+     * @param aux               Classe movement per poder cridar a accions opcionals
      */
     public boolean isBankrupt(Player current_player, int pay_amount, Movement aux){
         boolean is_it = false;

@@ -117,6 +117,10 @@ public class Monopoly {
 
     }
 
+    public String getMode(){
+        return this.mode;
+    }
+
     public void setCards(ArrayList<Card> read_cards){
         cards = read_cards;
     }
