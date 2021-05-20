@@ -35,7 +35,6 @@ public class CardGo extends Card{
             go_to_position = this.position % board.getSize();
         }
         else go_to_position = position;
-        System.out.println("Vas immediatament a la casella "+ go_to_position +" i si passes per la casella de sortida, cobra la recompensa");
         board.movePlayer(current_player,go_to_position,rewards,output);
     }
 
