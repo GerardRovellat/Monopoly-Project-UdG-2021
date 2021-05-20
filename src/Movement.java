@@ -125,9 +125,6 @@ public class Movement {
         cards.remove(cards.size()-1);
         output.fileWrite(active_player.getName() + "> " +  current.toString());
         System.out.println(current.toString());
-        if (current.toString() == null) {
-            System.out.println("jbafk");
-        }
         if (current.isPostposable()) {
             System.out.println("Es pot guardar la carta per poderla utilitzar el qualsevol moment");
             System.out.println("0. Guardar per despres");

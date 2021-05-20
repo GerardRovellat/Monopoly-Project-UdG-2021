@@ -68,9 +68,6 @@ public class Monopoly {
                 movePlayer();
                 Box current = getCurrentBox();
                 Movement aux = new Movement(current, current_player, players, board, start_rewards, cards,dev_file);
-                if (current == null ) {
-                    System.out.println("ERROR");
-                }
                 String current_box_type = current.getType();
                 System.out.println(board.toString());
                 current_player.payLoans(board,aux);
