@@ -161,11 +161,11 @@ public class UIFileSelector extends JFrame {
             if (response == JFileChooser.APPROVE_OPTION) {
                 if(name_button.equals("rules")){
                     file = board_file_chooser.getSelectedFile();
-                    rules_name = file.getName();
+                    rules_name = file.getPath();
                 }
                 else{
                     file = board_file_chooser.getSelectedFile();
-                    board_name = file.getName();
+                    board_name = file.getPath();
                 }
                 browse_field.setText(file.getPath());
                 try (FileReader fr = new FileReader(file)) {

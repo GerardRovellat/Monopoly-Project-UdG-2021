@@ -56,8 +56,8 @@ public class JocMonopoly {
         System.out.println("Utilització: java -jar JocMonopoly.jar [Fitxer_regles] [Fitxer_tauler]");
         System.out.println("\t-h: Mostra l'ajuda per la inicialització de l'aplicació");
         System.out.println("\t-s: Obra un selector grafic per poder obrir el joc i comença la execució");
-        System.out.println("\t-Fitxer_regles: Fitxer tipus JSON de la configuració de regles del Monopoly.");
-        System.out.println("\t-Fitxer_tauler: Fitxer tipus JSON de la configuració del tauler del Monopoly");
+        System.out.println("\t-Fitxer_regles: Ruta del fitxer tipus JSON de la configuració de regles del Monopoly.");
+        System.out.println("\t-Fitxer_tauler: Ruta del fitxer tipus JSON de la configuració del tauler del Monopoly");
     }
 
 }
