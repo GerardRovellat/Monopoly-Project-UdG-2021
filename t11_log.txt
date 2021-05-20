@@ -1,0 +1,784 @@
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | Usuari1 | Usuari2
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+Usuari1: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+Usuari2: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+
+
+--------------- PARTIDA--------------
+
+
+CANVI DE JUGADOR:
+Usuari1> 40000€, Terrenys 0, Prestecs 0, Posició 1
+Usuari1> Resultat dels daus: 4 i 2
+Usuari1> Mou de la posició 1 a la 7
+Usuari1> Cau a Casella Terreny
+Usuari1> Compra CarrerPerill a un preu de 7000
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 40000€, Terrenys 0, Prestecs 0, Posició 1
+Usuari2> Resultat dels daus: 5 i 1
+Usuari2> Mou de la posició 1 a la 7
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de CarrerPerill( 3000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 36000€, Terrenys 1, Prestecs 0, Posició 7
+Usuari1> Resultat dels daus: 1 i 4
+Usuari1> Mou de la posició 7 a la 12
+Usuari1> Cau a Casella Terreny
+Usuari1> Compra ViaLaietana a un preu de 20000
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 37000€, Terrenys 0, Prestecs 0, Posició 7
+Usuari2> Resultat dels daus: 1 i 4
+Usuari2> Mou de la posició 7 a la 12
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de ViaLaietana( 8000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> No te cap terreny en propietat
+
+CANVI DE JUGADOR:
+Usuari1> 24000€, Terrenys 2, Prestecs 0, Posició 12
+Usuari1> Resultat dels daus: 5 i 5
+Usuari1> Mou de la posició 12 a la 2
+Usuari1> Ha rebut: PauClaris
+Usuari1> Cau a Casella Aposta
+Usuari1> Aposta 5000 a el valor 4 i el resultat es 10 i guanya 4166
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 29000€, Terrenys 0, Prestecs 0, Posició 12
+Usuari2> Resultat dels daus: 2 i 1
+Usuari2> Mou de la posició 12 a la 15
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 28166€, Terrenys 3, Prestecs 0, Posició 2
+Usuari1> Resultat dels daus: 4 i 4
+Usuari1> Mou de la posició 2 a la 10
+Usuari1> Cau a Casella Terreny
+Usuari1> Compra PlaçaGalaPlacidia a un preu de 10000
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 29000€, Terrenys 0, Prestecs 0, Posició 15
+Usuari2> Resultat dels daus: 4 i 5
+Usuari2> Mou de la posició 15 a la 4
+Usuari2> Ha rebut: CarrerBruc
+Usuari2> Cau a Casella Sort
+Usuari2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+Usuari2> Ha rebut: CarrerCamprodon
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 18166€, Terrenys 4, Prestecs 0, Posició 10
+Usuari1> Resultat dels daus: 5 i 3
+Usuari1> Mou de la posició 10 a la 18
+Usuari1> Cau a Casella Sort
+Usuari1> ELS TEUS COMPANYS T'ALQUILEN LA TEVA VILLA A HAWAI DURANT UNA SEMANA COBRA 2000 €
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 29000€, Terrenys 2, Prestecs 0, Posició 1
+Usuari2> Resultat dels daus: 3 i 5
+Usuari2> Mou de la posició 1 a la 9
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 20166€, Terrenys 4, Prestecs 0, Posició 18
+Usuari1> Resultat dels daus: 3 i 5
+Usuari1> Mou de la posició 18 a la 6
+Usuari1> Ha rebut: CarrerGirona
+Usuari1> Cau a Casella Comanda Directe
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 29000€, Terrenys 3, Prestecs 0, Posició 9
+Usuari2> Resultat dels daus: 2 i 2
+Usuari2> Mou de la posició 9 a la 13
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> Ven CarrerPerill per 10000€
+	Usuari1> Ofereix 10500€
+Usuari1> Compra CarrerPerill a Usuari2 per 10500
+
+CANVI DE JUGADOR:
+Usuari1> 9666€, Terrenys 4, Prestecs 0, Posició 6
+Usuari1> Resultat dels daus: 2 i 4
+Usuari1> Mou de la posició 6 a la 12
+Usuari1> Cau a Casella Terreny
+Usuari1> No te suficients diners per edificar
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 39500€, Terrenys 3, Prestecs 0, Posició 13
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 13 a la 20
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> S'ha cancel·lat la compra
+
+CANVI DE JUGADOR:
+Usuari1> 9666€, Terrenys 4, Prestecs 0, Posició 12
+Usuari1> Resultat dels daus: 2 i 2
+Usuari1> Mou de la posició 12 a la 16
+Usuari1> Cau a Casella Aposta
+Usuari1> Aposta 7000 a el valor 8 i el resultat es 9 i guanya 40833
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 32500€, Terrenys 3, Prestecs 0, Posició 20
+Usuari2> Resultat dels daus: 1 i 5
+Usuari2> Mou de la posició 20 a la 6
+Usuari2> Ha rebut: ParcDelMigdia
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 50499€, Terrenys 5, Prestecs 0, Posició 16
+Usuari1> Resultat dels daus: 3 i 4
+Usuari1> Mou de la posició 16 a la 3
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de ParcDelMigdia( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 35500€, Terrenys 3, Prestecs 0, Posició 6
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 6 a la 13
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 57499€, Terrenys 5, Prestecs 0, Posició 3
+Usuari1> Resultat dels daus: 1 i 1
+Usuari1> Mou de la posició 3 a la 5
+Usuari1> Accio opcional escollida: 1 - OpActSell
+Usuari1> Ven CarrerGirona per 25000€
+	Usuari2> Es retira
+Usuari1> Cap jugador compra
+
+CANVI DE JUGADOR:
+Usuari2> 35500€, Terrenys 3, Prestecs 0, Posició 13
+Usuari2> Resultat dels daus: 2 i 2
+Usuari2> Mou de la posició 13 a la 17
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de CarrerBruc( 10000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 67499€, Terrenys 5, Prestecs 0, Posició 5
+Usuari1> Resultat dels daus: 2 i 1
+Usuari1> Mou de la posició 5 a la 8
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de CarrerCamprodon( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 28500€, Terrenys 3, Prestecs 0, Posició 17
+Usuari2> Resultat dels daus: 5 i 1
+Usuari2> Mou de la posició 17 a la 3
+Usuari2> No hi ha cap terreny
+Usuari2> Cau a Casella Terreny
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 64499€, Terrenys 5, Prestecs 0, Posició 8
+Usuari1> Resultat dels daus: 5 i 1
+Usuari1> Mou de la posició 8 a la 14
+Usuari1> Cau a Casella Terreny
+Usuari1> Edifica 2 Apartaments a PauClaris
+Usuari1> Edifica 1 Apartaments a PauClaris
+Usuari1> Edifica 1 Hotel a PauClaris
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 28500€, Terrenys 3, Prestecs 0, Posició 3
+Usuari2> Resultat dels daus: 1 i 5
+Usuari2> Mou de la posició 3 a la 9
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 53499€, Terrenys 5, Prestecs 0, Posició 14
+Usuari1> Resultat dels daus: 5 i 4
+Usuari1> Mou de la posició 14 a la 3
+Usuari1> No hi ha cap terreny
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de ParcDelMigdia( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 31500€, Terrenys 3, Prestecs 0, Posició 9
+Usuari2> Resultat dels daus: 5 i 1
+Usuari2> Mou de la posició 9 a la 15
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> S'ha cancel·lat la compra
+
+CANVI DE JUGADOR:
+Usuari1> 50499€, Terrenys 5, Prestecs 0, Posició 3
+Usuari1> Resultat dels daus: 5 i 1
+Usuari1> Mou de la posició 3 a la 9
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 31500€, Terrenys 3, Prestecs 0, Posició 15
+Usuari2> Resultat dels daus: 1 i 5
+Usuari2> Mou de la posició 15 a la 1
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Sortida
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 50499€, Terrenys 5, Prestecs 0, Posició 9
+Usuari1> Resultat dels daus: 3 i 5
+Usuari1> Mou de la posició 9 a la 17
+Usuari1> Cau a Casella Terreny
+Usuari1> Encara no es pot construir un hotel
+Usuari1> Edifica 4 Apartaments a CarrerBruc
+Usuari1> Encara no es pot construir un hotel
+Usuari1> Ja estàn tots els apartaments permesos construits
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 41500€, Terrenys 3, Prestecs 0, Posició 1
+Usuari2> Resultat dels daus: 3 i 5
+Usuari2> Mou de la posició 1 a la 9
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> Ven CarrerCamprodon per 20000€
+	Usuari1> Ofereix 25000€
+Usuari1> Compra CarrerCamprodon a Usuari2 per 25000
+
+CANVI DE JUGADOR:
+Usuari1> 17499€, Terrenys 5, Prestecs 0, Posició 17
+Usuari1> Resultat dels daus: 4 i 3
+Usuari1> Mou de la posició 17 a la 4
+Usuari1> No hi ha cap terreny
+Usuari1> Cau a Casella Sort
+Usuari1> DEMANES A FAMOSOS INTERIORISTES QUE DECORIN LA TEVA CASA. PAGA 1500€ A LA BANCA
+Usuari1> Accio opcional escollida: 1 - OpActSell
+Usuari1> S'ha cancel·lat la compra
+
+CANVI DE JUGADOR:
+Usuari2> 66500€, Terrenys 3, Prestecs 0, Posició 9
+Usuari2> Resultat dels daus: 2 i 4
+Usuari2> Mou de la posició 9 a la 15
+Usuari2> Accio opcional escollida: 1 - OpActSell
+Usuari2> Ven CarrerCamprodon per 1000€
+	Usuari1> Ofereix 1200€
+Usuari1> Compra CarrerCamprodon a Usuari2 per 1200
+
+CANVI DE JUGADOR:
+Usuari1> 14799€, Terrenys 5, Prestecs 0, Posició 4
+Usuari1> Resultat dels daus: 5 i 2
+Usuari1> Mou de la posició 4 a la 11
+Usuari1> Cau a Casella Sort
+Usuari1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 67700€, Terrenys 3, Prestecs 0, Posició 15
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 15 a la 2
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Aposta
+Usuari2> Aposta 67700 a el valor 10 i el resultat es 7 i perd 67700
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 14799€, Terrenys 5, Prestecs 0, Posició 17
+Usuari1> Resultat dels daus: 1 i 2
+Usuari1> Mou de la posició 17 a la 20
+Usuari1> Cau a Casella Comanda Directe
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 10000€, Terrenys 3, Prestecs 0, Posició 2
+Usuari2> Resultat dels daus: 3 i 5
+Usuari2> Mou de la posició 2 a la 10
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 11799€, Terrenys 5, Prestecs 0, Posició 20
+Usuari1> Resultat dels daus: 2 i 5
+Usuari1> Mou de la posició 20 a la 7
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de CarrerPerill( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 9000€, Terrenys 3, Prestecs 0, Posició 10
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 10 a la 17
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de CarrerBruc( -1€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 18798€, Terrenys 5, Prestecs 0, Posició 7
+Usuari1> Resultat dels daus: 1 i 1
+Usuari1> Mou de la posició 7 a la 9
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 9001€, Terrenys 3, Prestecs 0, Posició 17
+Usuari2> Resultat dels daus: 3 i 5
+Usuari2> Mou de la posició 17 a la 5
+Usuari2> No hi ha cap terreny
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 18798€, Terrenys 5, Prestecs 0, Posició 9
+Usuari1> Resultat dels daus: 4 i 2
+Usuari1> Mou de la posició 9 a la 15
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 9001€, Terrenys 3, Prestecs 0, Posició 5
+Usuari2> Resultat dels daus: 1 i 2
+Usuari2> Mou de la posició 5 a la 8
+Usuari2> Cau a Casella Terreny
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 18798€, Terrenys 5, Prestecs 0, Posició 15
+Usuari1> Resultat dels daus: 4 i 5
+Usuari1> Mou de la posició 15 a la 4
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Sort
+Usuari1> Has de pagar 1000 a un dels altres jugadors
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 10001€, Terrenys 3, Prestecs 0, Posició 8
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 8 a la 15
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 27798€, Terrenys 5, Prestecs 0, Posició 4
+Usuari1> Resultat dels daus: 5 i 2
+Usuari1> Mou de la posició 4 a la 11
+Usuari1> Cau a Casella Sort
+Usuari1> El jugador rebra una propietats d'algun dels seus adversaris
+Usuari1> Carta guardada
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 10001€, Terrenys 3, Prestecs 0, Posició 15
+Usuari2> Resultat dels daus: 2 i 3
+Usuari2> Mou de la posició 15 a la 20
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 3 - OpActLuckCard
+Usuari2> Cap targeta sort en propietat
+
+CANVI DE JUGADOR:
+Usuari1> 27798€, Terrenys 5, Prestecs 0, Posició 11
+Usuari1> Resultat dels daus: 1 i 4
+Usuari1> Mou de la posició 11 a la 16
+Usuari1> Cau a Casella Aposta
+Usuari1> Aposta 1000 a el valor 3 i el resultat es 6 i guanya 277
+Usuari1> Accio opcional escollida: 3 - OpActLuckCard
+Usuari2> S'ha utilitzat: El jugador rebra una propietats d'algun dels seus adversaris
+
+CANVI DE JUGADOR:
+Usuari2> 3001€, Terrenys 2, Prestecs 0, Posició 20
+Usuari2> Resultat dels daus: 5 i 3
+Usuari2> Mou de la posició 20 a la 8
+Usuari2> No hi ha cap terreny
+Usuari2> Cau a Casella Terreny
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 28075€, Terrenys 6, Prestecs 0, Posició 16
+Usuari1> Resultat dels daus: 4 i 2
+Usuari1> Mou de la posició 16 a la 2
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Aposta
+Usuari1> Aposta 3001 a el valor 12 i el resultat es 5 i perd 3001
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 3001€, Terrenys 2, Prestecs 0, Posició 8
+Usuari2> Resultat dels daus: 5 i 3
+Usuari2> Mou de la posició 8 a la 16
+Usuari2> Cau a Casella Aposta
+Usuari2> Aposta 3001 a el valor 12 i el resultat es 4 i perd 3001
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 35074€, Terrenys 6, Prestecs 0, Posició 2
+Usuari1> Resultat dels daus: 5 i 3
+Usuari1> Mou de la posició 2 a la 10
+Usuari1> Cau a Casella Terreny
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 0€, Terrenys 2, Prestecs 0, Posició 16
+Usuari2> Resultat dels daus: 2 i 2
+Usuari2> Mou de la posició 16 a la 20
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> No pot pagar la multa
+Usuari2> Ven CarrerPerill per 7000€
+	Usuari1> Ofereix 7005€
+Usuari1> Compra CarrerPerill a Usuari2 per 7005
+Usuari2> Aconseguix els diners
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 28069€, Terrenys 6, Prestecs 0, Posició 10
+Usuari1> Resultat dels daus: 5 i 2
+Usuari1> Mou de la posició 10 a la 17
+Usuari1> Cau a Casella Terreny
+Usuari1> Ja estàn tots els apartaments permesos construits
+Usuari1> Encara no es pot construir un hotel
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 5€, Terrenys 2, Prestecs 0, Posició 20
+Usuari2> Resultat dels daus: 4 i 3
+Usuari2> Mou de la posició 20 a la 7
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Terreny
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 28069€, Terrenys 6, Prestecs 0, Posició 17
+Usuari1> Resultat dels daus: 3 i 4
+Usuari1> Mou de la posició 17 a la 4
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Sort
+Usuari1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+Usuari1> Ha rebut: 10000€
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 10005€, Terrenys 2, Prestecs 0, Posició 7
+Usuari2> Resultat dels daus: 3 i 3
+Usuari2> Mou de la posició 7 a la 13
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 48069€, Terrenys 6, Prestecs 0, Posició 1
+Usuari1> Resultat dels daus: 3 i 2
+Usuari1> Mou de la posició 1 a la 6
+Usuari1> Cau a Casella Comanda Directe
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 10005€, Terrenys 3, Prestecs 0, Posició 13
+Usuari2> Resultat dels daus: 4 i 2
+Usuari2> Mou de la posició 13 a la 19
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de CarrerGirona( 6000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 54069€, Terrenys 5, Prestecs 0, Posició 6
+Usuari1> Resultat dels daus: 5 i 3
+Usuari1> Mou de la posició 6 a la 14
+Usuari1> Cau a Casella Terreny
+Usuari1> Ja estàn tots els apartaments permesos construits
+Usuari1> Encara no es pot construir un hotel
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 4005€, Terrenys 3, Prestecs 0, Posició 19
+Usuari2> Resultat dels daus: 2 i 1
+Usuari2> Mou de la posició 19 a la 2
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Aposta
+Usuari2> Aposta 4005 a el valor 12 i el resultat es 7 i perd 4005
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 54069€, Terrenys 5, Prestecs 0, Posició 14
+Usuari1> Resultat dels daus: 5 i 4
+Usuari1> Mou de la posició 14 a la 3
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de ParcDelMigdia( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 13000€, Terrenys 3, Prestecs 0, Posició 2
+Usuari2> Resultat dels daus: 4 i 3
+Usuari2> Mou de la posició 2 a la 9
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 61069€, Terrenys 5, Prestecs 0, Posició 3
+Usuari1> Resultat dels daus: 1 i 5
+Usuari1> Mou de la posició 3 a la 9
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 13000€, Terrenys 3, Prestecs 0, Posició 9
+Usuari2> Resultat dels daus: 1 i 3
+Usuari2> Mou de la posició 9 a la 13
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 61069€, Terrenys 5, Prestecs 0, Posició 9
+Usuari1> Resultat dels daus: 4 i 1
+Usuari1> Mou de la posició 9 a la 14
+Usuari1> Cau a Casella Terreny
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 13000€, Terrenys 3, Prestecs 0, Posició 13
+Usuari2> Resultat dels daus: 5 i 3
+Usuari2> Mou de la posició 13 a la 1
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Sortida
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 61069€, Terrenys 5, Prestecs 0, Posició 14
+Usuari1> Resultat dels daus: 2 i 2
+Usuari1> Mou de la posició 14 a la 18
+Usuari1> Cau a Casella Sort
+Usuari1> ELS TEUS COMPANYS T'ALQUILEN LA TEVA VILLA A HAWAI DURANT UNA SEMANA COBRA 2000 €
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 23000€, Terrenys 3, Prestecs 0, Posició 1
+Usuari2> Resultat dels daus: 2 i 2
+Usuari2> Mou de la posició 1 a la 5
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 63069€, Terrenys 5, Prestecs 0, Posició 18
+Usuari1> Resultat dels daus: 3 i 1
+Usuari1> Mou de la posició 18 a la 2
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Aposta
+Usuari1> Aposta 63069 a el valor 12 i el resultat es 6 i perd 63069
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 23000€, Terrenys 3, Prestecs 0, Posició 5
+Usuari2> Resultat dels daus: 2 i 5
+Usuari2> Mou de la posició 5 a la 12
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de ViaLaietana( 8000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 18000€, Terrenys 5, Prestecs 0, Posició 2
+Usuari1> Resultat dels daus: 5 i 4
+Usuari1> Mou de la posició 2 a la 11
+Usuari1> Cau a Casella Sort
+Usuari1> DEMANES A FAMOSOS INTERIORISTES QUE DECORIN LA TEVA CASA. PAGA 1500€ A LA BANCA
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 15000€, Terrenys 3, Prestecs 0, Posició 12
+Usuari2> Resultat dels daus: 3 i 5
+Usuari2> Mou de la posició 12 a la 20
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 16500€, Terrenys 5, Prestecs 0, Posició 11
+Usuari1> Resultat dels daus: 4 i 3
+Usuari1> Mou de la posició 11 a la 18
+Usuari1> Cau a Casella Sort
+Usuari1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+Usuari1> Ha rebut: 10000€
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 8000€, Terrenys 3, Prestecs 0, Posició 20
+Usuari2> Resultat dels daus: 3 i 3
+Usuari2> Mou de la posició 20 a la 6
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 26500€, Terrenys 6, Prestecs 0, Posició 17
+Usuari1> Resultat dels daus: 2 i 4
+Usuari1> Mou de la posició 17 a la 3
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de ParcDelMigdia( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 21000€, Terrenys 2, Prestecs 0, Posició 6
+Usuari2> Resultat dels daus: 1 i 3
+Usuari2> Mou de la posició 6 a la 10
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 37500€, Terrenys 6, Prestecs 0, Posició 3
+Usuari1> Resultat dels daus: 1 i 3
+Usuari1> Mou de la posició 3 a la 7
+Usuari1> Cau a Casella Terreny
+Usuari1> Paga el lloguer de CarrerPerill( 3000€ ) a Usuari2
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 20000€, Terrenys 2, Prestecs 0, Posició 10
+Usuari2> Resultat dels daus: 3 i 2
+Usuari2> Mou de la posició 10 a la 15
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 34500€, Terrenys 6, Prestecs 0, Posició 7
+Usuari1> Resultat dels daus: 3 i 4
+Usuari1> Mou de la posició 7 a la 14
+Usuari1> Cau a Casella Terreny
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 20000€, Terrenys 2, Prestecs 0, Posició 15
+Usuari2> Resultat dels daus: 4 i 1
+Usuari2> Mou de la posició 15 a la 20
+Usuari2> Cau a Casella Comanda Directe
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 34500€, Terrenys 6, Prestecs 0, Posició 14
+Usuari1> Resultat dels daus: 3 i 1
+Usuari1> Mou de la posició 14 a la 18
+Usuari1> Cau a Casella Sort
+Usuari1> Has de pagar 1000 a un dels altres jugadors
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 14000€, Terrenys 2, Prestecs 0, Posició 20
+Usuari2> Resultat dels daus: 4 i 4
+Usuari2> Mou de la posició 20 a la 8
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Terreny
+Usuari2> Paga el lloguer de CarrerCamprodon( 3000€ ) a Usuari1
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 36500€, Terrenys 6, Prestecs 0, Posició 18
+Usuari1> Resultat dels daus: 1 i 5
+Usuari1> Mou de la posició 18 a la 4
+Usuari1> Ha rebut: 10000€
+Usuari1> Cau a Casella Sort
+Usuari1> El jugador rebra una propietats d'algun dels seus adversaris
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 21000€, Terrenys 1, Prestecs 0, Posició 8
+Usuari2> Resultat dels daus: 3 i 2
+Usuari2> Mou de la posició 8 a la 13
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 46500€, Terrenys 7, Prestecs 0, Posició 4
+Usuari1> Resultat dels daus: 2 i 5
+Usuari1> Mou de la posició 4 a la 11
+Usuari1> Cau a Casella Sort
+Usuari1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+Usuari1> Ha rebut: 10000€
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 21000€, Terrenys 1, Prestecs 0, Posició 13
+Usuari2> Resultat dels daus: 4 i 5
+Usuari2> Mou de la posició 13 a la 2
+Usuari2> Ha rebut: 10000€
+Usuari2> Cau a Casella Aposta
+Usuari2> Aposta 31000 a el valor 12 i el resultat es 5 i perd 31000
+Usuari2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari1> 56500€, Terrenys 7, Prestecs 0, Posició 1
+Usuari1> Resultat dels daus: 3 i 3
+Usuari1> Mou de la posició 1 a la 7
+Usuari1> Cau a Casella Terreny
+Usuari1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+Usuari2> 0€, Terrenys 1, Prestecs 0, Posició 2
+Usuari2> Resultat dels daus: 2 i 4
+Usuari2> Mou de la posició 2 a la 8
+Usuari2> Cau a Casella Terreny
+Usuari2> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a Usuari1
+Usuari2> Es declara en fallida
+
+
+------- FINAL PARTIDA -------
+
+Usuari1 HA GUANYAT LA PARTIDA
+
+---- ESTAT FINAL PARTIDA ----
+
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill | Usuari1
+8  | FIELD:   CarrerCamprodon | Usuari2
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+Usuari1: 56500€ | Fallida false
+PROPIETATS:
+    ViaLaietana. amb un valor de 20000€
+    PauClaris. amb un valor de 20000€
+    PlaçaGalaPlacidia. amb un valor de 10000€
+    CarrerGirona. amb un valor de 25000€
+    CarrerBruc. amb un valor de 25000€
+    CarrerCamprodon. amb un valor de 8000€
+    CarrerPerill. amb un valor de 7000€
+    ParcDelMigdia. amb un valor de 15000€
+NO TE PRESTECS
+Usuari2: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+
