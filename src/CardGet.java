@@ -27,7 +27,6 @@ public class CardGet extends Card{
      * @param current_player    jugador actiu
      */
     public void execute(ArrayList<Player> players,Player current_player) {
-        System.out.println("El jugador rebra una propietats d'algun dels seus adversaris");
         Player choosed = playerSelect(players, current_player);
         if (choosed != null) {
             BoxField field_choosed = fieldSelect(choosed);

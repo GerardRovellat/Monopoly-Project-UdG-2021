@@ -41,6 +41,7 @@ public class OpActLuckCard implements optionalActions{
     public boolean execute(ArrayList<Player> players,Player current_player, Movement aux) {
         Scanner scan = new Scanner(System.in);
         if (current_player.getLuckCards().isEmpty()) {
+            aux.getOutput().fileWrite(current_player.getName()+"Cap targeta sort en propietat");
             System.out.println("Cap targeta sort en propietat");
         }
         else {
@@ -64,6 +65,7 @@ public class OpActLuckCard implements optionalActions{
                 }
             }while (!valid);
             aux.runCard(current_player.getLuckCards().get(card_nr-1));
+            aux.getOutput().fileWrite(current_player+"> S'ha utilitzat: "+current_player.getLuckCards().get(card_nr-1));
             aux.getCards().add(0,current_player.getLuckCards().get(card_nr-1));
             current_player.removeLuckCard(current_player.getLuckCards().get(card_nr-1));
         }

@@ -36,7 +36,7 @@ public class OpActLoan implements optionalActions{
         System.out.println("Sel·lecioni el jugador a qui l'hi vol demanar el prestec:");
         Player loan_player = playerSelect(players,current_player);
         int current_offer = offer(current_player, loan_player);
-        return negociation(current_player,loan_player,current_offer);
+        return negociation(current_player,loan_player,current_offer,aux);
 
     }
 
@@ -71,7 +71,7 @@ public class OpActLoan implements optionalActions{
         int current_offer = -1;
         while (current_offer < 0 || current_offer > loan_player.getMoney()) {
             System.out.println("Valor de la oferta:");
-            current_offer = loan_player.optionSelection("loanInitialOffer",null,null,null,null,null,0,null);
+            current_offer = current_player.optionSelection("loanInitialOffer",null,null,null,null,null,0,null);
             if (current_offer < 0 || current_offer > loan_player.getMoney()) System.out.println("Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a " + loan_player.getMoney());
         }
         System.out.println("Info del prestes:");
@@ -88,7 +88,7 @@ public class OpActLoan implements optionalActions{
      * @pre true
      * @post la negociacio de els torns i interesos del prestec s'ha realitzat
      */
-    private boolean negociation(Player current_player, Player loan_player, int current_offer) {
+    private boolean negociation(Player current_player, Player loan_player, int current_offer, Movement aux) {
         Player offer_active_player = loan_player;
         String interests_string;
         int interests = -1;
@@ -98,10 +98,12 @@ public class OpActLoan implements optionalActions{
             else System.out.println((offer_active_player.getName() + ": indiqui no si rebutja la oferta, ok si la accepta o el interes que demana tot seguit de el numero de torns (ex: 15 3) si vol fer una contraoferta"));
             interests_string = offer_active_player.stringValueSelection("loanInterestOffer",loan_player,null,current_offer,interests);
             if (interests_string.equals("no")) {
-                System.out.println("La operacio s'ha cancelat");
+                System.out.println("La operacio s'ha cancel·lat");
+                aux.getOutput().fileWrite(current_player.getName()+"> La operacio s'ha cancel·lat");
                 return false;
             }
             else if (interests_string.equals("ok")) {
+                aux.getOutput().fileWrite(current_player.getName()+"> prestec de "+loan_player.getName()+" de "+current_offer+"€ amb un "+interests+"% d'interes en "+turns+" torns");
                 return giveLoan(loan_player,current_player,current_offer,interests,turns);
             }
             else {

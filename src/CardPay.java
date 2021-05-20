@@ -32,7 +32,6 @@ public class CardPay extends Card{
      * @param aux Classe movement per poder cridar a accions opcionals
      */
     public void execute(ArrayList<Player> players, Board board, Player current_player, Movement aux) {
-        System.out.println("Has de pagar "+quantity+" a un dels altres jugadors");
         if (current_player.getMoney() >= quantity) {
             int option_nr = 0;
             for (Player player : players) {

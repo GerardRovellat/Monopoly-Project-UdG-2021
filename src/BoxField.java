@@ -243,7 +243,7 @@ public class BoxField extends Box{
         }
         System.out.println("\tAmb un hotel:                        " + this.hotel_rent + "€");
         System.out.println("\tPreu de cada Apartament:             " + this.building_price + "€");
-        System.out.println("\tPreu de cada Hotel:                  " + this.hotel_price + "€ a mes de " + this.max_buildings + "apartaments");
+        System.out.println("\tPreu de cada Hotel:                  " + this.hotel_price + "€");
         System.out.println("\tGrup de propietats:                  " + this.group);
         return "\n";
     }

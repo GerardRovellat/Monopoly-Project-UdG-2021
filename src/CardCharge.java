@@ -46,7 +46,6 @@ public class CardCharge extends Card{
      * @param current_player jugador actiu
      */
     public void execute(Player current_player) {
-        System.out.println(message);
         current_player.charge(quantity);
         System.out.println("DINERS REBUTS");
     }

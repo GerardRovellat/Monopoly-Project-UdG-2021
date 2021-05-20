@@ -68,6 +68,7 @@ public class OpActSell implements optionalActions{
             else{
                 is_possible = false;
                 System.out.println("S'ha cancel·lat la compra");
+                output.fileWrite(current_player.getName()+"> S'ha cancel·lat la compra");
             }
         }
         return  is_possible;

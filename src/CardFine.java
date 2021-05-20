@@ -48,7 +48,6 @@ public class CardFine extends Card{
      * @param aux Movement que crida Buy, en aquesta implementació, \p m no és usada però s'ha de passar.
      */
     public void execute(Board board,Player current_player, Movement aux) {
-        System.out.println(message);
         for(boolean end = false;!end;) {
             if (current_player.getMoney() >= quantity) {
                 current_player.pay(quantity);
