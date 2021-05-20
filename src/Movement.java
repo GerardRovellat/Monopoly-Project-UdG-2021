@@ -258,8 +258,10 @@ public class Movement {
                             System.out.println("Casella comprada");
                             output.fileWrite(active_player.getName() + "> Compra " + field.getName() + " a un preu de " + field.getPrice());
                         }
-                        else System.out.println("Operació cancelada");
-                        output.fileWrite(active_player.getName() + "> No compra" + field.getName());
+                        else {
+                            System.out.println("Operació cancelada");
+                            output.fileWrite(active_player.getName() + "> No compra" + field.getName());
+                        }
                     }
                 }
                 else {
