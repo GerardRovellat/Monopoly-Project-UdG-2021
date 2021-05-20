@@ -47,8 +47,8 @@ public class Board {
      * @param position      posicio final del jugador
      * @param rewards       posibles recompenses de la casella de sortida
      */
-    public void movePlayer (Player player, int position, ArrayList<String> rewards) {
-        boolean give_reward = player.getPosition() > position;
+    public void movePlayer (Player player, int position, ArrayList<String> rewards,OutputManager output) {
+        boolean give_reward = player.getPosition() >= position;
         if(give_reward){
             if(rewards.size() > 1) {
                 int menu_option = 1;
@@ -64,29 +64,43 @@ public class Board {
                 String reward = rewards.get(chosed_option-1);
                 if(reward.equals("terreny")){
                     BoxField field_reward = randomField();
-                    if (field_reward == null) System.out.println("NO HI HA CAP TERRENY");
+                    if (field_reward == null) {
+                        System.out.println("NO HI HA CAP TERRENY");
+                        output.fileWrite(player.getName() + "> No hi ha cap terreny");
+                    }
                     else {
                         player.addBox(field_reward);
                         field_reward.buy(player);
                         System.out.println("Has rebut " + field_reward.getName());
+                        output.fileWrite(player.getName() + "> Ha rebut: " + field_reward.getName());
                     }
                 }
                 else{
                     player.charge(Integer.parseInt(reward));
                     System.out.println("Has rebut "+reward+"€");
+                    output.fileWrite(player.getName() + "> Ha rebut: "+reward+"€");
+
                 }
             }
             else{
                 String reward = rewards.get(0);
                 if(reward.equals("terreny")) {
                     BoxField field_reward = randomField();
-                    player.addBox(field_reward);
-                    field_reward.buy(player);
-                    System.out.println("Has rebut " + field_reward.getName());
+                    if (field_reward == null) {
+                        System.out.println("NO HI HA CAP TERRENY");
+                        output.fileWrite(player.getName() + "> No hi ha cap terreny");
+                    }
+                    else {
+                        player.addBox(field_reward);
+                        field_reward.buy(player);
+                        System.out.println("Has rebut " + field_reward.getName());
+                        output.fileWrite(player.getName() + "> Ha rebut: " + field_reward.getName());
+                    }
                 }
                 else{
                     player.charge(Integer.parseInt(reward));
                     System.out.println("Has rebut "+reward+"€");
+                    output.fileWrite(player.getName() + "> Ha rebut: "+reward+"€");
                 }
             }
         }
@@ -134,9 +148,9 @@ public class Board {
      */
     private BoxField randomField(){
         Random rand = new Random();
-        int aux_nr = rand.nextInt(boxes_nr-1)+1;
         BoxField aux_field = null;
         if(haveAvailableFields()) {
+            int aux_nr = rand.nextInt(boxes_nr-1)+1;
             Box aux_box = board.get(aux_nr);
             boolean have_owner = true;
             if (aux_box.getType().equals("FIELD")) {
@@ -183,14 +197,13 @@ public class Board {
      * @brief Gestiona les accions per quan el jugador està sense diners ( en fallida )
      * @pre true
      * @post el jugador ha realitzat les accions disponibles i s'ha comprovat si despres pot seguir jugant
-     * @return true si el jugador pot seguir jugant, false altrament
+     * @return true si el jugador no pot seguir jugant, false altrament
      * @param current_player    jugador actual
      * @param pay_amount        quantitat a pagar
      * @param aux               Classe movement per poder cridar a accions opcionals
      */
     public boolean isBankrupt(Player current_player, int pay_amount, Movement aux){
         OutputManager output = aux.getOutput();
-        boolean is_it = false;
         if(!current_player.getLuckCards().isEmpty() || !current_player.getFields().isEmpty()) {
             boolean sell_action_done = false;
             boolean card_action_done = false;
@@ -210,12 +223,20 @@ public class Board {
                     System.out.println("El jugador " + current_player.getName() + "s'ha declarat en fallida");
                     output.fileWrite(current_player.getName() + "> Es declara en fallida");
                     current_player.goToBankruptcy();
-                    is_it = true;
+                    return true;
                 }
             }
-            if(pay_amount > current_player.getMoney()){ is_it = true; }
+            if(pay_amount > current_player.getMoney()) {
+                output.fileWrite(current_player.getName() + "> Es declara en fallida");
+                return true;
+            }
+            else {
+                output.fileWrite(current_player.getName() + "> Aconseguix els diners");
+                return false;
+            }
         }
-        return is_it;
+        output.fileWrite(current_player.getName() + "> Es declara en fallida");
+        return true;
     }
 
     /**

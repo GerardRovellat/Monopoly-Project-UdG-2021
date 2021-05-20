@@ -123,6 +123,11 @@ public class Movement {
         System.out.println("Has caigut en una casella de sort");
         Card current = cards.get(cards.size()-1);
         cards.remove(cards.size()-1);
+        output.fileWrite(active_player.getName() + "> " +  current.toString());
+        System.out.println(current.toString());
+        if (current.toString() == null) {
+            System.out.println("jbafk");
+        }
         if (current.isPostposable()) {
             System.out.println("Es pot guardar la carta per poderla utilitzar el qualsevol moment");
             System.out.println("0. Guardar per despres");
@@ -135,11 +140,11 @@ public class Movement {
             if (value == 0) {
                 active_player.addLuckCard(current);
                 System.out.println("Carta guardada.");
+                output.fileWrite(active_player.getName() + "> Carta guardada" );
             }
             else {
                 runCard(current);
                 cards.add(0, current);
-                output.fileWrite(active_player.getName() + "> guardada");
             }
         }
         else {
@@ -188,7 +193,7 @@ public class Movement {
                 break;
             case "GO":
                 CardGo go = (CardGo) card;
-                go.execute(board,active_player,start_rewards);
+                go.execute(board,active_player,start_rewards,output);
                 break;
             case "PAY":
                 CardPay pay = (CardPay) card;
@@ -290,11 +295,12 @@ public class Movement {
             System.out.println("El lloguer s'ha pagat");
             output.fileWrite(active_player.getName() + "> Paga el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
         } else {
+            output.fileWrite(active_player.getName() + "> No pot pagar el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
             if (board.isBankrupt(active_player,field.getRent(),this)) {
-                output.fileWrite(active_player.getName() + "> No pot pagar el lloguer de " + field.getName() + "( " + field.getRent() + "€ ) a " + owner.getName());
                 board.transferProperties(active_player,field.getOwner(),this);
                 active_player.goToBankruptcy();
             }
+            else {payRent();}
         }
     }
 

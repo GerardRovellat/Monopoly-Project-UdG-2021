@@ -57,6 +57,10 @@ public class CardPay extends Card{
                 board.transferProperties(current_player,null,aux);
                 current_player.goToBankruptcy();
             }
+            else {
+                execute(players,board,current_player,aux);
+                System.out.println("Has aconseguit els diners suficients");
+            }
         }
     }
 

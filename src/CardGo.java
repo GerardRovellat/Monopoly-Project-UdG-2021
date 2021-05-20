@@ -29,9 +29,14 @@ public class CardGo extends Card{
      * @param current_player jugador actual que executa la targeta CardGo.
      * @param rewards ArrayList de recompenses que pot donar-te la casella de sortida.
      */
-    public void execute(Board board, Player current_player, ArrayList<String> rewards) {
-        System.out.println("Vas immediatament a la casella "+ position +" i si passes per la casella de sortida, cobra la recompensa");
-        board.movePlayer(current_player,this.position,rewards);
+    public void execute(Board board, Player current_player, ArrayList<String> rewards, OutputManager output) {
+        int go_to_position;
+        if (this.position > board.getSize()) {
+            go_to_position = this.position % board.getSize();
+        }
+        else go_to_position = position;
+        System.out.println("Vas immediatament a la casella "+ go_to_position +" i si passes per la casella de sortida, cobra la recompensa");
+        board.movePlayer(current_player,go_to_position,rewards,output);
     }
 
     /**

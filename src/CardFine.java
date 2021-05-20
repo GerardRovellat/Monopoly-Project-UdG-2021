@@ -23,18 +23,20 @@ public class CardFine extends Card{
     public CardFine (boolean postposable, int quantity) {
         super("FINE",postposable);
         this.quantity = quantity;
-        messages.put(0,"PAGA " + quantity + " € PER UN CAP DE SETMANA A UN BALEARI DE 5 ESTRELLES");
-        messages.put(1,"ASSISTEIX A UNA FIRA BENEFICA A SEVILLA I PAGUES " + quantity + "€");
-        messages.put(2,"PAGA " + quantity + " € PER INVITAR A TOTS ELS TEUS AMICS A UN VIATGE A MALLORCA");
-        messages.put(3,"PAGA UNA MULTA DE " + quantity + "€ PER SALTARTE EL TOC DE QUEDA");
-        messages.put(4,"EL AUGMENT DE L'IMPOST SOBRE ELS BÉNS IMMOBLES AFECTA TOTES LES PROPIETATS. PAGA " + quantity + "€ A LA BANCA");
-        messages.put(5,"DEMANES A FAMOSOS INTERIORISTES QUE DECORIN LA TEVA CASA. PAGA " + quantity + "€ A LA BANCA");
-        messages.put(6,"CONSTRUEIXES UNA PISCINA COBERTA AL TEU APARTAMENT DE MADRID. PAGA " + quantity + "€");
-        messages.put(7,"PAGA  " + quantity + "€ PER LA MATRICULA DE LA UDG");
-        messages.put(8,"ET MULTEN PER UTILITZAR EL MOVIL MENTRE CONDUEIXES. PAGA " + quantity + "€");
-        messages.put(9,"HAS REALITZAT UNA BARBACOA AMB MÉS DE 6 PERSONES. PAGA"  + quantity + "€ PER INCUMPLIMENT DE LES RESTRICCIONS");
-        messages.put(10,"T'HAN ENXAMPAT ANANT AL SUPERMERCAT SENSE MASCARETA. PAGA " + quantity + "€ PER INCUMPLIMENT DE LES RESTRICCIONS");
-        messages.put(11,"HAS SUSPES LA ASSIGNATURA DE PROJECTE DE PROGRAMACIO. PAGA " + quantity + "PERQUE EL PROFESSOR T'APROVI");
+        messages.put(0,"PAGA " + quantity + " € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS");
+        messages.put(1,"ASISTES A UNA FERIA BENÉFICA EN SEVILLA PAGA " + quantity + "€");
+        messages.put(2,"PAGA " + quantity + " € POR INVITAR A TODOS TUS AMIGOS A UN VIAJE A SANTA CRUZ DE TENERIFE");
+        messages.put(3,"PAGA UNA MULTA DE " + quantity + "€ POR SALTARTE EL TOQUE DE QUEDA");
+        messages.put(4,"EL AUMENTO DEL IMPUESTO SOBRE TUS BIENES INMUEBLES AFECTA A TODAS TUS PROPIEDADES. PAGA " + quantity + "€ A LA BANCA");
+        messages.put(5,"PIDES A FAMOSOS INTERIORISTAS QUE DECOREN TUS PROPIEDADES. PAGA " + quantity + "€ A LA BANCA");
+        messages.put(6,"CONSTRUYES UNA PISCINA CUBIERTA EN TU APARTAMENTO DE MADRID. PAGA " + quantity + "€");
+        messages.put(7,"PAGA  " + quantity + "€ POR LA MATRÍCULA DEL COLEGIO PRIVADO");
+        messages.put(8,"TE MULTAN POR USAR EL MÓVIL MIENTRAS CONDUCES. PAGA " + quantity + "€");
+        messages.put(9,"HAS REALIZADO UNA BARBACOA CON MÀS DE 6 PERSONAS. PAGA"  + quantity + "€ POR INCUMPLIMIENTO DE LAS RESTRICCIONES");
+        messages.put(10,"TE HAN PILLADO YENDO AL SUPERMERCADO SIN MASCARILLA. PAGA " + quantity + "€ POR INCUMPLIMIENTO DE LAS RESTRICCIONES");
+        messages.put(11,"HAS SUSPENDIDO LA ASIGNATURA DE PROYECTO DE PROGRAMACION. PAGA " + quantity + "PARA QUE EL PROFESOR TE APRUEVE");
+        Random rand = new Random();
+        message = messages.get(rand.nextInt(messages.size()) - 1);
     }
 
     /**
@@ -46,8 +48,6 @@ public class CardFine extends Card{
      * @param aux Movement que crida Buy, en aquesta implementació, \p m no és usada però s'ha de passar.
      */
     public void execute(Board board,Player current_player, Movement aux) {
-        Random rand = new Random();
-        message = messages.get(rand.nextInt(messages.size()) - 1);
         System.out.println(message);
         for(boolean end = false;!end;) {
             if (current_player.getMoney() >= quantity) {
@@ -56,12 +56,16 @@ public class CardFine extends Card{
                 System.out.println("MULTA PAGADA");
             } else {
                 System.out.println("No tens diners suficients per fer front a la multa");
+                aux.getOutput().fileWrite(current_player.getName() + "> No pot pagar la multa");
                 if (board.isBankrupt(current_player,quantity,aux)) {
                     board.transferProperties(current_player,null,aux);
                     current_player.goToBankruptcy();
-                    end = true;
                 }
-                else System.out.println("Has aconseguit els diners suficients");
+                else {
+                    execute(board,current_player,aux);
+                    System.out.println("Has aconseguit els diners suficients");
+                }
+                end = true;
             }
         }
     }

@@ -278,7 +278,7 @@ public abstract class Player {
     @Override
     public String toString() {
         StringBuilder output_text = new StringBuilder();
-        output_text.append(this.name).append(": ").append(this.money).append("€\n");
+        output_text.append(this.name).append(": ").append(this.money).append("€").append(" | Fallida ").append(bankruptcy).append("\n");
         if (boxes_in_property.size() > 0) {
             output_text.append("PROPIETATS:\n");
             for (BoxField current : boxes_in_property) {

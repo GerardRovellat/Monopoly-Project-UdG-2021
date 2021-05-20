@@ -68,6 +68,9 @@ public class Monopoly {
                 movePlayer();
                 Box current = getCurrentBox();
                 Movement aux = new Movement(current, current_player, players, board, start_rewards, cards,dev_file);
+                if (current == null ) {
+                    System.out.println("ERROR");
+                }
                 String current_box_type = current.getType();
                 System.out.println(board.toString());
                 current_player.payLoans(board,aux);
@@ -126,13 +129,15 @@ public class Monopoly {
      */
     private void movePlayer(){
         int position = dice_result.getKey()+dice_result.getValue();
-        if (current_player.getPosition()+position > board.getSize()-1) {
-            position = current_player.getPosition() + position - board.getSize()+1;
+        while (position > board.getSize()) {
+            board.movePlayer(current_player,current_player.getPosition(),start_rewards,dev_file);  // mou a el jugador a la mateixa posicio passant per la casella de sortida
+            position = position - board.getSize();
         }
+        if (current_player.getPosition()+position > board.getSize()) position = current_player.getPosition() + position - board.getSize();
         else position = current_player.getPosition() + position;
         System.out.println("Et mous de la posicio " + current_player.getPosition() + " a la posicio " + position + "\n");
-        board.movePlayer(current_player,position,start_rewards);
         dev_file.fileWrite(current_player.getName() +"> Mou de la posició "+current_player.getPosition()+" a la "+position);
+        board.movePlayer(current_player,position,start_rewards,dev_file);
     }
 
     /**
@@ -157,6 +162,12 @@ public class Monopoly {
             if (player.getBankruptcy()) out.add(player);
             if (player.getMoney()>2000000) {
                 System.out.println("S'ha asolit el maxim de diners posibles i per tant s'acaba la partida");
+                dev_file.fileWrite("MAXIM DE DINERS ASOLITS: FINAL PARTIDA");
+                return true;
+            }
+            if (turns > 500) {
+                System.out.println("S'ha asolit el maxim de torns posibles i per tant s'acaba la partida");
+                dev_file.fileWrite("MAXIM DE TORNS ASOLITS: FINAL PARTIDA");
                 return true;
             }
         }
@@ -172,13 +183,18 @@ public class Monopoly {
     private void nextPlayer() {
         System.out.println("---------- TORN FINALITZAT ----------");
         current_player_iterator++;
-        if (current_player_iterator ==players.size()) current_player_iterator = 0;
+        if (current_player_iterator == players.size()) {
+            current_player_iterator = 0;
+            turns++;
+        }
         while (players.get(current_player_iterator).getBankruptcy()) {
             current_player_iterator++;
-            if (current_player_iterator ==players.size()) current_player_iterator = 0;
+            if (current_player_iterator ==players.size()) {
+                current_player_iterator = 0;
+                turns++;
+            }
         }
         System.out.println("\n---------- SEGUENT JUGADOR ----------\n");
-        turns++;
 
     }
 
@@ -261,11 +277,11 @@ public class Monopoly {
                     if (value >= 2) throw new Exception();
                     valid = true;
                     if (value == 0) {
-                        Player aux = new TerminalPlayer(name, initial_money, 0);
+                        Player aux = new TerminalPlayer(name, initial_money, 1);
                         players.add(aux);
                         board.addPlayer(aux);
                     } else if (value == 1) {
-                        Player aux = new CPUPlayer(name, initial_money, 0);
+                        Player aux = new CPUPlayer(name, initial_money, 1);
                         players.add(aux);
                         board.addPlayer(aux);
                     }
@@ -324,7 +340,7 @@ public class Monopoly {
         dev_file.fileWrite("\n---- ESTAT FINAL PARTIDA ----\n\n" + "Mode: "+mode+"\n"+board.toString());
         printPlayers();
         System.out.println("\n\n----------------------------------------\n\n");
-        System.out.println("----------------- TURNS: " + turns/players.size() + "-----------------");
+        System.out.println("----------------- TURNS: " + turns + "-----------------");
     }
 
     /**
