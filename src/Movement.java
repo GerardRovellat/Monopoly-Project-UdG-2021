@@ -18,9 +18,6 @@ public class Movement {
     private final ArrayList<Card> cards;                                      ///< Llista de targetes sort de Monopoly
     private final OutputManager output;
 
-
-
-
     /**
      * @brief Constructor de Movement.
      * @pre \p current_posicion != null i \p active_player != null

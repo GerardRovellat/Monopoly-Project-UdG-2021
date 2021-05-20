@@ -7,8 +7,7 @@ import java.util.Random;
  * @class CardCharge
  * @brief Implementa la funcions de la carta de tipus cobrar
  */
-
-public class CardCharge extends Card{
+public class CardCharge extends Card {
     private final int quantity;                                           ///< quantitat a pagar
     private String message;                                         ///< Missatge de la carta
     private final HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles

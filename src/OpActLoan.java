@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @class Loan
  * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
  */
-public class OpActLoan implements optionalActions{
+public class OpActLoan implements optionalActions {
 
     /**
      * @brief Constructor per defecte de Loan.

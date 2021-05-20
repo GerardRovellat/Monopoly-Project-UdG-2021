@@ -2,7 +2,13 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TerminalPlayer extends Player{
+/**
+ * @author Marc Got
+ * @file TerminalPlayer.java
+ * @class TerminalPlayer
+ * @brief Jugador controlat per el usuari
+ */
+public class TerminalPlayer extends Player {
     Scanner scan = new Scanner(System.in);
 
     /**

@@ -6,8 +6,7 @@ import java.util.ArrayList;
  * @class CardGet
  * @brief Implementa la funcions de la carta de tipus rebre
  */
-
-public class CardGet extends Card{
+public class CardGet extends Card {
 
     /**
      * @brief Constructor de CardGet

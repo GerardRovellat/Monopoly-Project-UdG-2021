@@ -310,6 +310,5 @@ public class JSONManager {
         }
         return board;
     }
-
 }
 

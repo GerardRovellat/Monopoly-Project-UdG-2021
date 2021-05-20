@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @class CardGo
  * @brief Targeta que mou al jugador a una casella determinada en el tauler de Monopoly.
  */
-public class CardGo extends Card{
+public class CardGo extends Card {
     private final int position;
 
     /**

@@ -10,8 +10,7 @@ import java.util.ArrayList;
  * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador vendre una de les
  * seves propietats a un dels altres jugadors contraris. Aquesta venda és fara en format de subhasta.
  */
-
-public class OpActSell implements optionalActions{
+public class OpActSell implements optionalActions {
 
     /**
      * @brief Constructor de Sell.

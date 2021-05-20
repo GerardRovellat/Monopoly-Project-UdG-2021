@@ -5,7 +5,6 @@
  * @class Card
  * @brief Implementa la funcions base i comunes totes les cartes.
  */
-
 public class Card {
     private final String type;                //< Tipus de carta: ( CHARGE, FINE, GET, GIVE, GO, PAY )
     private final boolean postposable;        ///< true si es posposable, false altrament

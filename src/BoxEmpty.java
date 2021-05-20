@@ -5,7 +5,7 @@
  * @brief Casella buida en el Monopoly, aquesta casella la anomanem "Buida" ja que no fem cap acció quan jugador hi cau
  * a sobre.
  */
-public class BoxEmpty extends Box{
+public class BoxEmpty extends Box {
 
     /**
      * @brief Constructor de Empty.

@@ -7,8 +7,7 @@ import java.util.Random;
  * @class CardFine
  * @brief Implementa la funcions de la carta de tipus multa
  */
-
-public class CardFine extends Card{
+public class CardFine extends Card {
     private final int quantity;                                           ///< quantitat a pagar
     private String message;                                         ///< Missatge de la carta
     private final HashMap<Integer,String> messages = new HashMap<>();     ///< llista de missatges posibles

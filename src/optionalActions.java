@@ -5,7 +5,6 @@ import java.util.ArrayList;
  * @class optionalActions
  * @brief Interficie general d'accions opcionals del joc de Monopoly.
  */
-
 public interface optionalActions {
 
     /**

@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * @class Box
  * @brief Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella
  */
-
 public class Box {
 
     public int position;        ///< Posicio de la casella en el taulell

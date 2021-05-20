@@ -12,7 +12,6 @@ import java.io.IOException;
  * @class UIFileSelector
  * @brief Implementació d'un selector de fitxers gràfic per poder jugar al Monopoly
  */
-
 public class UIFileSelector extends JFrame {
 
     private String rules_name;             ///< Ruta fitxer de regles.

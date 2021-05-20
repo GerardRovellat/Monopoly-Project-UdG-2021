@@ -4,7 +4,6 @@
  * @class Bet
  * @brief Classe de casella de aposta. En aquesta, es gestionarà les dades i els calculs corresponents
  */
-
 public class BoxBet extends Box{
 
     private final double[] combinations = new double[]{0,0,0,1,3,6,10,15,21,26,30,33,35}; ///<  Contè les combinacions acomulades sobre un total de 12 valors ( 2 daus )

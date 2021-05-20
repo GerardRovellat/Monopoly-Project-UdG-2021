@@ -59,6 +59,5 @@ public class JocMonopoly {
         System.out.println("\t-Fitxer_regles: Ruta del fitxer tipus JSON de la configuració de regles del Monopoly.");
         System.out.println("\t-Fitxer_tauler: Ruta del fitxer tipus JSON de la configuració del tauler del Monopoly");
     }
-
 }
 

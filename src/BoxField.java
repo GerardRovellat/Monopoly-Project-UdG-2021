@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @class Field
  * @brief Classe que administra els préstecs entre Jugadors del Monopoly.
  */
-public class BoxField extends Box{
+public class BoxField extends Box {
 
     private final String name;                            ///< Nom del terreny.
     private final int price;                              ///< Preu del terreny.

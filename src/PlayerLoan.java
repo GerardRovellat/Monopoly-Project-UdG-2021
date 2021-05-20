@@ -26,7 +26,7 @@ public class PlayerLoan {
     }
 
     /**
-     * @brief Resta un torn per haver de tornar el préstec
+     * @brief Resta un torn per haver de tornar el préstec.
      * @pre \p true
      * @post Torn restat a \p turns.
      */

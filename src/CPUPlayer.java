@@ -3,7 +3,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-public class CPUPlayer extends Player{
+/**
+ * @author Marc Got
+ * @file CPUPlayer.java
+ * @class CPUPlayer
+ * @brief Jugador controlat per el ordinador
+ */
+public class CPUPlayer extends Player {
 
     private final Random rand = new Random();
 

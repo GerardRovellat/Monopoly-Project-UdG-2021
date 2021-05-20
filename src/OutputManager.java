@@ -13,7 +13,7 @@ public class OutputManager {
     private File dev_file;          ///< Fitxer desenvolupament de la partida
 
     /**
-     * @brief Constructor OutputManager. Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom
+     * @brief Constructor OutputManager. Crea un directori \p saves si no esta creat i crea un fitxer de desenvolupament de partida amb nom.
      * logs_x on x es un numero correlatiu.
      * @pre \p true
      * @post El fitxer de logs ha estat creat.

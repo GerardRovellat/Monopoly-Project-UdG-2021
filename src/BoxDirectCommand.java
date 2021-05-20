@@ -5,7 +5,7 @@
  * @brief Classe que administra les caselles de comanda directe \p directCommand. Aquesta classe tindra una targeta
  * perque quan s'hagi d'executar la casella la tractarem com si toques una targeta (les possibles accions son iguals.
  */
-public class BoxDirectCommand extends Box{
+public class BoxDirectCommand extends Box {
 
     private final Card function;                              ///< Targeta a la que equival aquesta casella de directCommand
 

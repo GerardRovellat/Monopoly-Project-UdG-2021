@@ -6,8 +6,7 @@ import java.util.ArrayList;
  * @class CardGive
  * @brief Implementa la funcions de la carta de tipus donar
  */
-
-public class CardGive extends Card{
+public class CardGive extends Card {
 
     /**
      * @brief Constructor de CardGive

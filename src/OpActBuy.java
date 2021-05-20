@@ -7,7 +7,6 @@ import java.util.ArrayList;
  * @brief Implementa la interifíce d'optionalActions. Aquesta implementació permet a un jugador comprar una de les
  * propietats de un dels altres jugadors contraris. Aquesta compra és negociable
  */
-
 public class OpActBuy implements optionalActions {
 
     /**

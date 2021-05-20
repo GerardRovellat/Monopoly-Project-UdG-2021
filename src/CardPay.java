@@ -6,8 +6,7 @@ import java.util.ArrayList;
  * @class CardPay
  * @brief Targeta que fa pagar la quantitat assignada a un jugador
  */
-
-public class CardPay extends Card{
+public class CardPay extends Card {
     private final int quantity;                                       ///< quantitat a pagar
 
     /**

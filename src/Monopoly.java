@@ -14,6 +14,7 @@ import javafx.util.Pair;
  * i la finalització del joc Monopoly.
  */
 public class Monopoly {
+
     private final String mode;                                        ///< Mode de joc
     private final ArrayList<Player> players = new ArrayList<>();      ///< Llista de Jugadors del Monopoly.
     private final Board board;                                        ///< Tauler del Monopoly.

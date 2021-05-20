@@ -6,7 +6,6 @@ import java.util.*;
  * @class Board
  * @brief Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altres com la gestio de la fallida
  */
-
 public class Board {
     private int boxes_nr;                                           ///< numero de caselles dels taulell
     private SortedMap<Integer,Box> board = new TreeMap<>();         ///< Mapa amb les caselles del taulell ordenades

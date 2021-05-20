@@ -6,7 +6,7 @@
  * @brief Casella de sortida en el tauler de Monopoly.
  */
 
-public class BoxStart extends Box{
+public class BoxStart extends Box {
 
     /**
      * @brief Constructor de Start

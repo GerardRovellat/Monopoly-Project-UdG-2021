@@ -7,8 +7,8 @@ import java.util.*;
  * @brief Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes accions
  * que pot fer el jugador en si.
  */
-
 public abstract class Player {
+
     private final String name;                                                ///< Nom del Jugador.
     private int money;                                                        ///< Diners del Jugador.
     private final ArrayList<BoxField> boxes_in_property = new ArrayList<>();     ///< Llista terrenys en propietat del Jugador.
@@ -299,7 +299,6 @@ public abstract class Player {
     public abstract int optionSelection(String type, Player player, BoxField field, ArrayList<Integer> options, ArrayList<Player> players, Card card, int value, ArrayList<optionalActions> optional_actions);
 
     public abstract String stringValueSelection(String type, Player player, BoxField field, int value, int second_value);
-
 }
 
 
