@@ -1,0 +1,12 @@
+{
+  "modalitat": "classica",
+  "accionsNoAplicables": [
+    "COMPRAR",
+    "DISPENSAR"
+  ],
+  "dinersInicials": 40000,
+  "recompensesCasellaSortida": [
+    "terreny"
+  ],
+  "percentatgePreuEdificisHipoteca": 60
+}

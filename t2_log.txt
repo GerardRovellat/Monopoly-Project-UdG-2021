@@ -1,0 +1,3627 @@
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | CPU1 | CPU2 | CPU3
+2  | LUCK
+3  | LUCK
+4  | LUCK
+
+---------- JUGADORS ----------
+CPU1: 20000€
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU2: 20000€
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU3: 20000€
+NO TE PROPIETATS
+NO TE PRESTECS
+
+
+--------------- PARTIDA--------------
+
+
+CANVI DE JUGADOR:
+CPU1> 20000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 20000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 20000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 40000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 42000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 28500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 51000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 62000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 37500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 61000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 82000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 49500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 79500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 102000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 70500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 99500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 111000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 80500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 99500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 131000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 82500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 118000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 151000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 103500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 127000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 161000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 123500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 137000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 181000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 125500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 155500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 191000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 146500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 164500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 201000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 166500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 184500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 213000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 175000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 205500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 233000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 184000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 225500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 243000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 214000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 237500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 261500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 234000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 267500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 271500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 245000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 276500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 281500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 265000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 306500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 303500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 274500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 326500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 322500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 294500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 346500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 342500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 304500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 366500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 362500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 316500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 376500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 371000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 337500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 385500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 401000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 347500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 405500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 413000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 357000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 425500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 432000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 377000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 445500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 462000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 397000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 457500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 470500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 407000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 487500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 481500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 416000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 507500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 491500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 446000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 527500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 511500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 456000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 539500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 520000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 467000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 559500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 539000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 467000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 579500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 549000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 479000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 599500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 567500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 509000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 619500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 577500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 520000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 638500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 597500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 540000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 648500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 619500€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 549500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 658500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 628500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 559500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 678500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 638500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 589500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 700500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 647000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 600500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 719500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 667000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 620500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 731500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 665500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 631500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 750500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 685500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 651500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 760500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 715500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 661500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 772500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 724000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 681500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 802500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 745000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 700500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 812500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 765000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 720500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 824500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 773500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 731500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 833500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 793500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 741500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 863500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 805500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 761500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 873500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 824000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 782500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 883500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 843000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 792500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 903500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 863000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 804500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 912000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 883000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 835500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 931000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 893000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 855500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 961000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 913000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 867500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 969500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 923000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 888500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 999500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 932000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 908500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1019500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 952000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 928500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1039500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 974000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 938000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1049500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 983000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 958000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1069500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1003000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 968000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1089500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1015000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 977500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1109500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1024000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 997500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1129500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1056000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1017000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1159500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1075000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1027000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1169500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1087000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1046500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1189500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1096000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1056500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1209500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1108000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1065000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1219500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1139000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1084000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1229500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1159000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1096000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1248000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1169000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1117000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1267000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1179000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1137000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1289000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1199000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1145500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1309000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1230000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1154500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1309000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1250000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1174500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1331000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1248500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1185500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1340000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1258500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1205500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1362000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1267000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1216500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1392000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1286000€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1226500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1402000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1306000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1248500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1400500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1327000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1267500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1410500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1347000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1289500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1429000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1367000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1300500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1448000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1377000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1320500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1468000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1399000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1329000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1498000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1410000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1338000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1498000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1430000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1368000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1520000€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1440000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1388000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1538500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1471000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1397000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1548500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1491000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1409000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1557000€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1512000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1418000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1567000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1532000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1430000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1585500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1552000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1451000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1615500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1561000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1461000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1635500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1573000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1481000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1645500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1591500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1502000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1654500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1601500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1512000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1684500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1623500€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1520500€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1704500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1654500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1529500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1714500€, Terrenys 0, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1664500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1559500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1734500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1684500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1571500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1754500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1703000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1592500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1784500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1702000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1592500€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1794500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1714000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1611000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1814500€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1745000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1630000€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1824500€, Terrenys 0, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 4 a la 4
+CPU1> Cau a Casella Sort
+CPU1> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1765000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1652000€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1833000€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1785000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1683000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 4 a la 4
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1863000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1794000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 2 a la 2
+CPU2> Cau a Casella Sort
+CPU2> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1683000€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1893000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1816000€, Terrenys 0, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 4 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1712500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1923000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 2 a la 2
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1825000€, Terrenys 0, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1732500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 2 a la 2
+CPU3> Cau a Casella Sort
+CPU3> DEVOLUCIÓN DE HACIENDA COBRA 2000 €
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1943000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1855000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 3 a la 3
+CPU2> Cau a Casella Sort
+CPU2> PAGA 1500 € POR UN FIN DE SEMANA EN UN BALEARIO DE 5 ESTRELLAS
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1744500€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1953000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 3 a la 3
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1853500€, Terrenys 0, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1764500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Ha rebut: 10000€
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 1 a la 1
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1973000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU2> 1883500€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Ha rebut: 10000€
+CPU2> Mou de la posició 1 a la 1
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 2 - OpActBuy
+CPU2> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU3> 1784500€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Ha rebut: 10000€
+CPU3> Mou de la posició 3 a la 3
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 2 - OpActBuy
+CPU3> Cap jugador amb propietats
+
+CANVI DE JUGADOR:
+CPU1> 1983000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Ha rebut: 10000€
+CPU1> Ha rebut: 10000€
+CPU1> Mou de la posició 1 a la 1
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 2 - OpActBuy
+CPU1> Cap jugador amb propietats
+
+
+------- FINAL PARTIDA -------
+
+CPU1HA GUANYAT LA PARTIDA
+
+---- ESTAT FINAL PARTIDA ----
+
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | CPU1 | CPU2
+2  | LUCK
+3  | LUCK | CPU3
+4  | LUCK
+
+---------- JUGADORS ----------
+CPU1: 2003000€
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU2: 1894500€
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU3: 1793500€
+NO TE PROPIETATS
+NO TE PRESTECS
+

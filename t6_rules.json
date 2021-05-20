@@ -1,0 +1,13 @@
+{
+  "modalitat": "eliminacio",
+  "accionsNoAplicables": [
+    "COMPRAR",
+    "DISPENSAR"
+  ],
+  "dinersInicials": 40000,
+  "recompensesCasellaSortida": [
+    10000,
+    "terreny"
+  ],
+  "percentatgePreuEdificisHipoteca": 60
+}

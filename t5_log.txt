@@ -1,0 +1,576 @@
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | CPU1 | CPU2 | CPU3 | CPU4 | CPU5 | CPU6 | CPU7 | CPU8 | CPU9 | CPU10 | CPU11 | CPU12
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+CPU1: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU2: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU3: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU4: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU5: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU6: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU7: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU8: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU9: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU10: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU11: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU12: 0€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+
+
+--------------- PARTIDA--------------
+
+
+CANVI DE JUGADOR:
+CPU1> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 1 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> No compraCarrerCamprodon
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 1 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: CarrerCamprodon
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 1 a la 3
+CPU3> Cau a Casella Terreny
+CPU3> No compraParcDelMigdia
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU4> Resultat dels daus: 2 i 2
+CPU4> Mou de la posició 1 a la 5
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU5> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU5> Resultat dels daus: 1 i 4
+CPU5> Mou de la posició 1 a la 6
+CPU5> Cau a Casella Comanda Directe
+CPU5> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU6> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU6> Resultat dels daus: 4 i 3
+CPU6> Mou de la posició 1 a la 8
+CPU6> Cau a Casella Terreny
+CPU6> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU6> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU7> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU7> Resultat dels daus: 4 i 3
+CPU7> Mou de la posició 1 a la 8
+CPU7> Cau a Casella Terreny
+CPU7> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU7> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU8> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU8> Resultat dels daus: 3 i 1
+CPU8> Mou de la posició 1 a la 5
+CPU8> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU9> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU9> Resultat dels daus: 5 i 5
+CPU9> Mou de la posició 1 a la 11
+CPU9> Cau a Casella Sort
+CPU9> TU COMPAÑIA DE INTERNET OBTIENE BENEFICIOS RECIBE 2000 €
+CPU9> Accio opcional escollida: 3 - OpActLoan
+
+CANVI DE JUGADOR:
+CPU10> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU10> Resultat dels daus: 2 i 2
+CPU10> Mou de la posició 1 a la 5
+CPU10> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU11> Resultat dels daus: 1 i 3
+CPU11> Mou de la posició 1 a la 5
+CPU11> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU12> 0€, Terrenys 0, Prestecs 0, Posició 1
+CPU12> Resultat dels daus: 5 i 4
+CPU12> Mou de la posició 1 a la 10
+CPU12> Cau a Casella Terreny
+CPU12> No compraPlaçaGalaPlacidia
+CPU12> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 0€, Terrenys 0, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 8 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 0€, Terrenys 1, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 1 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 3 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 0, Prestecs 0, Posició 5
+CPU4> Resultat dels daus: 3 i 2
+CPU4> Mou de la posició 5 a la 10
+CPU4> Cau a Casella Terreny
+CPU4> No compraPlaçaGalaPlacidia
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU5> 0€, Terrenys 0, Prestecs 0, Posició 6
+CPU5> Resultat dels daus: 4 i 2
+CPU5> Mou de la posició 6 a la 12
+CPU5> Cau a Casella Terreny
+CPU5> No compraViaLaietana
+CPU5> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU8> 0€, Terrenys 0, Prestecs 0, Posició 5
+CPU8> Resultat dels daus: 2 i 5
+CPU8> Mou de la posició 5 a la 12
+CPU8> Cau a Casella Terreny
+CPU8> No compraViaLaietana
+CPU8> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU9> 2000€, Terrenys 0, Prestecs 1, Posició 11
+CPU9> Resultat dels daus: 2 i 5
+CPU9> Mou de la posició 11 a la 18
+CPU9> Cau a Casella Sort
+CPU9> null
+CPU9> No pot pagar la multa
+CPU9> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU10> 0€, Terrenys 0, Prestecs 0, Posició 5
+CPU10> Resultat dels daus: 5 i 2
+CPU10> Mou de la posició 5 a la 12
+CPU10> Cau a Casella Terreny
+CPU10> No compraViaLaietana
+CPU10> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 0, Prestecs 0, Posició 5
+CPU11> Resultat dels daus: 1 i 3
+CPU11> Mou de la posició 5 a la 9
+CPU11> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU12> 0€, Terrenys 0, Prestecs 0, Posició 10
+CPU12> Resultat dels daus: 2 i 2
+CPU12> Mou de la posició 10 a la 14
+CPU12> Cau a Casella Terreny
+CPU12> No compraPauClaris
+CPU12> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 2000€, Terrenys 0, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 15 a la 1
+CPU1> Ha rebut: CarrerPerill
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 3 - OpActLoan
+
+CANVI DE JUGADOR:
+CPU2> 0€, Terrenys 1, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 8 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> No compraViaLaietana
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 6 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> No compraPlaçaGalaPlacidia
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 0, Prestecs 0, Posició 10
+CPU4> Resultat dels daus: 3 i 1
+CPU4> Mou de la posició 10 a la 14
+CPU4> Cau a Casella Terreny
+CPU4> No compraPauClaris
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU5> 0€, Terrenys 0, Prestecs 0, Posició 12
+CPU5> Resultat dels daus: 1 i 3
+CPU5> Mou de la posició 12 a la 16
+CPU5> Cau a Casella Aposta
+CPU5> Aposta 0 a el valor 10 i el resultat es 9 i perd 0
+CPU5> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU8> 0€, Terrenys 0, Prestecs 0, Posició 12
+CPU8> Resultat dels daus: 3 i 3
+CPU8> Mou de la posició 12 a la 18
+CPU8> Cau a Casella Sort
+CPU8> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU8> Ha rebut: PlaçaGalaPlacidia
+CPU8> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU10> 0€, Terrenys 0, Prestecs 0, Posició 12
+CPU10> Resultat dels daus: 2 i 3
+CPU10> Mou de la posició 12 a la 17
+CPU10> Cau a Casella Terreny
+CPU10> No compraCarrerBruc
+CPU10> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 0, Prestecs 0, Posició 9
+CPU11> Resultat dels daus: 2 i 2
+CPU11> Mou de la posició 9 a la 13
+CPU11> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU12> 0€, Terrenys 0, Prestecs 0, Posició 14
+CPU12> Resultat dels daus: 1 i 5
+CPU12> Mou de la posició 14 a la 20
+CPU12> Cau a Casella Comanda Directe
+CPU12> No pot pagar la multa
+CPU12> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU1> 2000€, Terrenys 1, Prestecs 1, Posició 1
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 1 a la 4
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1000€, Terrenys 1, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 12 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> No compraCarrerBruc
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 10 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> No compraViaLaietana
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 0, Prestecs 0, Posició 14
+CPU4> Resultat dels daus: 1 i 2
+CPU4> Mou de la posició 14 a la 17
+CPU4> Cau a Casella Terreny
+CPU4> No compraCarrerBruc
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU5> 0€, Terrenys 0, Prestecs 0, Posició 16
+CPU5> Resultat dels daus: 4 i 1
+CPU5> Mou de la posició 16 a la 1
+CPU5> Ha rebut: CarrerGirona
+CPU5> Cau a Casella Sortida
+CPU5> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU8> 0€, Terrenys 1, Prestecs 0, Posició 17
+CPU8> Resultat dels daus: 2 i 2
+CPU8> Mou de la posició 17 a la 1
+CPU8> Ha rebut: PauClaris
+CPU8> Cau a Casella Sortida
+CPU8> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU10> 0€, Terrenys 0, Prestecs 0, Posició 17
+CPU10> Resultat dels daus: 1 i 4
+CPU10> Mou de la posició 17 a la 2
+CPU10> Ha rebut: ParcDelMigdia
+CPU10> Cau a Casella Aposta
+CPU10> Aposta 0 a el valor 10 i el resultat es 4 i perd 0
+CPU10> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 0, Prestecs 0, Posició 13
+CPU11> Resultat dels daus: 4 i 1
+CPU11> Mou de la posició 13 a la 18
+CPU11> Cau a Casella Sort
+CPU11> El jugador rebra una propietats d'algun dels seus adversaris
+CPU11> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1000€, Terrenys 1, Prestecs 1, Posició 4
+CPU1> Resultat dels daus: 4 i 1
+CPU1> Mou de la posició 4 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1000€, Terrenys 1, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 17 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> No pot pagar la multa
+CPU2> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Mou de la posició 12 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> No compraCarrerBruc
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 0, Prestecs 0, Posició 17
+CPU4> Resultat dels daus: 5 i 2
+CPU4> Mou de la posició 17 a la 4
+CPU4> Ha rebut: CarrerCamprodon
+CPU4> Cau a Casella Sort
+CPU4> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU4> Ha rebut: CarrerBruc
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU5> 0€, Terrenys 1, Prestecs 0, Posició 1
+CPU5> Resultat dels daus: 2 i 5
+CPU5> Mou de la posició 1 a la 8
+CPU5> Cau a Casella Terreny
+CPU5> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a CPU4
+CPU5> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU8> 0€, Terrenys 1, Prestecs 0, Posició 1
+CPU8> Resultat dels daus: 1 i 2
+CPU8> Mou de la posició 1 a la 4
+CPU8> Cau a Casella Sort
+CPU8> TU COMPAÑIA DE INTERNET OBTIENE BENEFICIOS RECIBE 2000 €
+CPU8> Accio opcional escollida: 3 - OpActLoan
+
+CANVI DE JUGADOR:
+CPU10> 0€, Terrenys 1, Prestecs 0, Posició 2
+CPU10> Resultat dels daus: 2 i 4
+CPU10> Mou de la posició 2 a la 8
+CPU10> Cau a Casella Terreny
+CPU10> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a CPU4
+CPU10> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 1, Prestecs 0, Posició 18
+CPU11> Resultat dels daus: 1 i 2
+CPU11> Mou de la posició 18 a la 1
+CPU11> Ha rebut: ViaLaietana
+CPU11> Cau a Casella Sortida
+CPU11> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1000€, Terrenys 1, Prestecs 1, Posició 9
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 9 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 100 a el valor 10 i el resultat es 7 i perd 100
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 17 a la 2
+CPU3> No hi ha cap terreny
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 0 a el valor 10 i el resultat es 2 i perd 0
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 0€, Terrenys 4, Prestecs 0, Posició 1
+CPU4> Resultat dels daus: 3 i 5
+CPU4> Mou de la posició 1 a la 9
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU8> 2000€, Terrenys 1, Prestecs 0, Posició 4
+CPU8> Resultat dels daus: 1 i 3
+CPU8> Mou de la posició 4 a la 8
+CPU8> Cau a Casella Terreny
+CPU8> No pot pagar el lloguer de CarrerCamprodon( 3000€ ) a CPU4
+CPU8> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU11> 0€, Terrenys 2, Prestecs 0, Posició 1
+CPU11> Resultat dels daus: 1 i 1
+CPU11> Mou de la posició 1 a la 3
+CPU11> Cau a Casella Terreny
+CPU11> No pot pagar el lloguer de ParcDelMigdia( 3000€ ) a CPU4
+CPU11> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU1> 900€, Terrenys 1, Prestecs 1, Posició 16
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 16 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> No pot pagar la multa
+CPU1> Es declara en fallida
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 2 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> No compraCarrerPerill
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU4> 2000€, Terrenys 7, Prestecs 0, Posició 9
+CPU4> Resultat dels daus: 1 i 1
+CPU4> Mou de la posició 9 a la 11
+CPU4> Cau a Casella Sort
+CPU4> null
+CPU4> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 0€, Terrenys 0, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 7 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> No pot pagar el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU4
+CPU3> Es declara en fallida
+
+
+------- FINAL PARTIDA -------
+
+CPU4 HA GUANYAT LA PARTIDA
+
+---- ESTAT FINAL PARTIDA ----
+
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia | CPU11
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon | CPU5 | CPU6 | CPU7 | CPU8 | CPU10
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia | CPU3
+11 | LUCK | CPU4
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK | CPU9
+19 | FIELD:   CarrerGirona
+20 | FINE | CPU1 | CPU2 | CPU12
+
+---------- JUGADORS ----------
+CPU1: 0€ | Fallida true
+NO TE PROPIETATS
+PRESTECS:
+    0€ en 1 torns a CPU2 i un interes del 25%
+CPU2: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU3: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU4: 500€ | Fallida false
+PROPIETATS:
+    CarrerCamprodon. amb un valor de 8000€
+    CarrerBruc. amb un valor de 25000€
+    CarrerGirona. amb un valor de 25000€
+    ParcDelMigdia. amb un valor de 15000€
+    PlaçaGalaPlacidia. amb un valor de 10000€
+    PauClaris. amb un valor de 20000€
+    ViaLaietana. amb un valor de 20000€
+NO TE PRESTECS
+CPU5: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU6: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU7: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU8: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU9: 0€ | Fallida true
+NO TE PROPIETATS
+PRESTECS:
+    0€ en 0 torns a CPU1 i un interes del 18%
+CPU10: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU11: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU12: 0€ | Fallida true
+NO TE PROPIETATS
+NO TE PRESTECS
+

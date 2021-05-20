@@ -69,7 +69,7 @@ public class JSONManager {
             JsonArray restricted_actions = j_object.get("accionsNoAplicables").getAsJsonArray();
             List<String> restricted_action_list = new ArrayList<>();
             for (JsonElement array_element : restricted_actions){
-                restricted_action_list.add(array_element.toString());
+                restricted_action_list.add(array_element.getAsString());
             }
             if(!restricted_action_list.contains("VENDRE")){
                 OpActSell sell_action  = new OpActSell();

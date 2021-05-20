@@ -1,0 +1,93 @@
+{
+  "nombreCaselles": 5,
+  "casellesTerreny": [
+    {
+      "numCasella": 2,
+      "nom": "CarrerPerill",
+      "preu": 7000,
+      "preuHipoteca": 5000,
+      "agrupacio": "verda",
+      "preuLloguerBasic": 1500,
+      "preuLloguerAgrupacio": 3000,
+      "construible": "agrupacio",
+      "maxCases": 3,
+      "preuCasa": 2000,
+      "hotel": true,
+      "preuHotel": 4000,
+      "lloguerAmbCases": [
+        5000,
+        6000,
+        7000
+      ],
+      "lloguerAmbHotel": 10000
+    },
+    {
+      "numCasella": 3,
+      "nom": "CarrerCamprodon",
+      "preu": 8000,
+      "preuHipoteca": 5500,
+      "agrupacio": "verda",
+      "preuLloguerBasic": 1500,
+      "preuLloguerAgrupacio": 3000,
+      "construible": "agrupacio",
+      "maxCases": 4,
+      "preuCasa": 2000,
+      "hotel": true,
+      "preuHotel": 5000,
+      "lloguerAmbCases": [
+        5000,
+        6000,
+        7000,
+        8500
+      ],
+      "lloguerAmbHotel": 12000
+    },
+    {
+      "numCasella": 4,
+      "nom": "PlaçaGalaPlacidia",
+      "preu": 10000,
+      "preuHipoteca": 7000,
+      "agrupacio": "verda",
+      "preuLloguerBasic": 2000,
+      "preuLloguerAgrupacio": 4000,
+      "construible": "agrupacio",
+      "maxCases": 0,
+      "preuCasa": null,
+      "hotel": true,
+      "preuHotel": 5000,
+      "lloguerAmbCases": [],
+      "lloguerAmbHotel": 15000
+    },
+    {
+      "numCasella": 5,
+      "nom": "ParcDelMigdia",
+      "preu": 15000,
+      "preuHipoteca": 9000,
+      "agrupacio": null,
+      "preuLloguerBasic": 3000,
+      "preuLloguerAgrupacio": null,
+      "construible": "no",
+      "maxCases": 0,
+      "preuCasa": null,
+      "hotel": false,
+      "preuHotel": null,
+      "lloguerAmbCases": [],
+      "lloguerAmbHotel": null
+    }
+  ],
+  "casellesPreso": [
+
+  ],
+  "casellesComandaDirecta": [
+
+  ],
+  "casellesAposta": [
+
+  ],
+  "casellesSort": [
+
+  ],
+  "targetesSort": [
+
+  ]
+}

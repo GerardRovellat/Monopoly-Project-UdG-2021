@@ -1,0 +1,67 @@
+{
+  "nombreCaselles": 4,
+  "casellesTerreny": [
+
+  ],
+  "casellesPreso": [
+
+  ],
+  "casellesComandaDirecta": [
+
+  ],
+  "casellesAposta": [
+
+  ],
+  "casellesSort": [
+    2,
+    3,
+    4
+  ],
+  "targetesSort": [
+    {
+      "accio": "REBRE",
+      "posposable": true
+    },
+    {
+      "accio": "PAGAR",
+      "posposable": false,
+      "quantitat": 1000
+    },
+    {
+      "accio": "DISPENSAR",
+      "posposable": false
+    },
+    {
+      "accio": "PRESO",
+      "posposable": false
+    },
+    {
+      "accio": "SORTIR_PRESO",
+      "posposable": true
+    },
+    {
+      "accio": "ANAR",
+      "posposable": false,
+      "numCasella": 17
+    },
+    {
+      "accio": "MULTA",
+      "posposable": false,
+      "quantitat": 1500
+    },
+    {
+      "accio": "COBRAR",
+      "posposable": false,
+      "quantitat": 2000
+    },
+    {
+      "accio": "HIPOTECAR",
+      "posposable": false
+    },
+    {
+      "accio": "ANAR",
+      "posposable": false,
+      "numCasella": 1
+    }
+  ]
+}

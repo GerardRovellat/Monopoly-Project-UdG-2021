@@ -1,0 +1,12 @@
+{
+  "modalitat": "classica",
+  "accionsNoAplicables": [
+    "SORT",
+    "VENDRE"
+  ],
+  "dinersInicials": 220000,
+  "recompensesCasellaSortida": [
+    10000
+  ],
+  "percentatgePreuEdificisHipoteca": 34
+}

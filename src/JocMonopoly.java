@@ -24,7 +24,11 @@ public class JocMonopoly {
                     while(!fileSelector.getStatus()) Thread.sleep(100);
                     JSONManager json_manager = new JSONManager(fileSelector.getRulesFileName(),fileSelector.getBoardFileName());
                     Monopoly monopoly = json_manager.readFile();
-                    if(!monopoly.getMode().equals("classica")) System.out.println("No es pot jugar amb aquest mode...");
+                    if(!monopoly.getMode().equals("classica")) {
+                        OutputManager dev_file = new OutputManager();
+                        dev_file.fileWrite("No es pot jugar amb aquest mode...");
+                        System.out.println("No es pot jugar amb aquest mode...");
+                    }
                     else monopoly.play();
                 }
                 else System.err.println("Parametres entrats incorrectes, la aplicació es tancara...");
@@ -32,7 +36,11 @@ public class JocMonopoly {
             else if(args.length == 2){
                 JSONManager json_manager = new JSONManager(args[0],args[1]);
                 Monopoly monopoly = json_manager.readFile();
-                if(!monopoly.getMode().equals("classica")) System.out.println("No es pot jugar amb aquest mode...");
+                if(!monopoly.getMode().equals("classica")) {
+                    OutputManager dev_file = new OutputManager();
+                    dev_file.fileWrite("No es pot jugar amb aquest mode...");
+                    System.out.println("No es pot jugar amb aquest mode...");
+                }
                 else monopoly.play();
             }
         }
