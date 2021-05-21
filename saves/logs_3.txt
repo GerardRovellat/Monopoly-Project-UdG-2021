@@ -1,0 +1,5137 @@
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | CPU1 | CPU2 | CPU3
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+CPU1: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU2: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU3: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+
+
+--------------- PARTIDA--------------
+
+
+CANVI DE JUGADOR:
+CPU1> 40000€, Terrenys 0, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Mou de la posició 1 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 40000€, Terrenys 0, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 1 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Compra PlaçaGalaPlacidia a un preu de 10000
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 40000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 1 a la 3
+CPU3> Cau a Casella Terreny
+CPU3> Compra ParcDelMigdia a un preu de 15000
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 40000€, Terrenys 0, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Mou de la posició 6 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 30000€, Terrenys 1, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 10 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 25000€, Terrenys 1, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 40000€, Terrenys 0, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 13 a la 18
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 40000€, Terrenys 1, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Compra CarrerPerill a un preu de 7000
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 25000€, Terrenys 1, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 9 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 42000€, Terrenys 0, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Mou de la posició 18 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 33000€, Terrenys 2, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 7 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 25000€, Terrenys 1, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 13 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 50500€, Terrenys 0, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 4 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 33000€, Terrenys 2, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 10 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Compra PauClaris a un preu de 20000
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 18000€, Terrenys 1, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 20 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 50500€, Terrenys 0, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 13 a la 17
+CPU1> Cau a Casella Terreny
+CPU1> Compra CarrerBruc a un preu de 25000
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 13000€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 14 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 2300 a el valor 10 i el resultat es 3 i perd 2300
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 28000€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 6 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 25500€, Terrenys 1, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 17 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 20700€, Terrenys 4, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 2 a la 6
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 28000€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 13 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 35500€, Terrenys 2, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 1 a la 3
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 23700€, Terrenys 3, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 6 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 38000€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 1 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Compra CarrerCamprodon a un preu de 8000
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 32500€, Terrenys 2, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 3 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 23700€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 17 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 30000€, Terrenys 1, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 8 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 32500€, Terrenys 2, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 5 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 37700€, Terrenys 3, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 5 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 26000€, Terrenys 1, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 10 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 2600 a el valor 9 i el resultat es 7 i perd 2600
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 32500€, Terrenys 2, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 13 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 3250 a el valor 10 i el resultat es 4 i perd 3250
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 37700€, Terrenys 3, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 9 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 23400€, Terrenys 1, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 16 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 29250€, Terrenys 2, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 16 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 37700€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 14 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 33400€, Terrenys 1, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 1 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 22250€, Terrenys 2, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 20 a la 7
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 30700€, Terrenys 4, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 20 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 33400€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 6 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 32250€, Terrenys 3, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 7 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 44700€, Terrenys 3, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 6 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 29400€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 10 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 33250€, Terrenys 3, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 13 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 44700€, Terrenys 3, Prestecs 0, Posició 15
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 15 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 5470 a el valor 8 i el resultat es 5 i perd 5470
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 28400€, Terrenys 0, Prestecs 0, Posició 18
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 18 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 43250€, Terrenys 2, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 1 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 53230€, Terrenys 3, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 2 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 38400€, Terrenys 1, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 4 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 42250€, Terrenys 2, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 10 a la 18
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 63230€, Terrenys 3, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 1 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 35400€, Terrenys 1, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 7 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 47250€, Terrenys 2, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 18 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 60230€, Terrenys 3, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 8 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 35400€, Terrenys 1, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 13 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 3540 a el valor 10 i el resultat es 8 i perd 3540
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 57250€, Terrenys 2, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 5 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 64230€, Terrenys 3, Prestecs 0, Posició 15
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 15 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 31860€, Terrenys 1, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 16 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 4186 a el valor 9 i el resultat es 3 i perd 4186
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 53250€, Terrenys 2, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 10 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 74230€, Terrenys 3, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 5 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 37674€, Terrenys 1, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 2 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 53250€, Terrenys 2, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 15 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 74230€, Terrenys 4, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 10 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Compra CarrerGirona a un preu de 25000
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 37674€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 6 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 63250€, Terrenys 2, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 1 a la 3
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 52230€, Terrenys 5, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 19 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 37674€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 13 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 60250€, Terrenys 2, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 3 a la 11
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 68230€, Terrenys 5, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 5 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Compra ViaLaietana a un preu de 20000
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 31674€, Terrenys 0, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 19 a la 8
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 61750€, Terrenys 2, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 4 i 1
+CPU1> Mou de la posició 11 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 6175 a el valor 6 i el resultat es 6 i guanya 17152
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 48230€, Terrenys 6, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 12 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 38674€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 8 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 78902€, Terrenys 2, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 16 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 48230€, Terrenys 6, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 19 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 38674€, Terrenys 0, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 15 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 88902€, Terrenys 3, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 1 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 58230€, Terrenys 5, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 6 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 5823 a el valor 8 i el resultat es 6 i perd 5823
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 31674€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 20 a la 8
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 91902€, Terrenys 3, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 10 a la 18
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 52407€, Terrenys 5, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 16 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 38674€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 8 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 3867 a el valor 8 i el resultat es 10 i guanya 22557
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 101902€, Terrenys 3, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 17 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 68407€, Terrenys 5, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 1 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 61231€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 16 a la 5
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 95902€, Terrenys 3, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 19 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 68407€, Terrenys 5, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 9 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 6840 a el valor 7 i el resultat es 2 i perd 6840
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 71231€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 5 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 105902€, Terrenys 3, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 1 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 61567€, Terrenys 5, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 16 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 72231€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 9 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 105902€, Terrenys 3, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 8 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 76567€, Terrenys 5, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 4 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 66231€, Terrenys 0, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 19 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 105902€, Terrenys 3, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 13 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 79567€, Terrenys 5, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 9 a la 18
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 73231€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 3 a la 11
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 98902€, Terrenys 2, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 20 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 79567€, Terrenys 7, Prestecs 0, Posició 18
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 18 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 83231€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 1 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 108902€, Terrenys 1, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 6 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 100567€, Terrenys 7, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 5 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 80231€, Terrenys 0, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 7 a la 11
+CPU3> Cau a Casella Sort
+CPU3> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 100902€, Terrenys 1, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 12 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 100567€, Terrenys 7, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Mou de la posició 7 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 82231€, Terrenys 0, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 11 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 100902€, Terrenys 1, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 15 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 113567€, Terrenys 7, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 13 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 72231€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 17 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 107902€, Terrenys 1, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 3 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 114567€, Terrenys 7, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 20 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 82231€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 1 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 99902€, Terrenys 1, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 12 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 124567€, Terrenys 7, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 5 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 82231€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 9 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 8223 a el valor 5 i el resultat es 5 i guanya 13705
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 92902€, Terrenys 1, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 20 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 10290 a el valor 3 i el resultat es 5 i guanya 2858
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 124567€, Terrenys 7, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 95936€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 16 a la 5
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 105760€, Terrenys 1, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 2 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 128567€, Terrenys 7, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 12 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 105936€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 5 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 101760€, Terrenys 1, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 10 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 133567€, Terrenys 7, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 17 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 14356 a el valor 3 i el resultat es 5 i guanya 3987
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 100936€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 14 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 101760€, Terrenys 1, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 15 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 153554€, Terrenys 7, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 2 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 93936€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 20 a la 8
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 98760€, Terrenys 1, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 19 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 153554€, Terrenys 7, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 7 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 100936€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 8 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 108760€, Terrenys 1, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 5 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 165554€, Terrenys 7, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 14 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 92936€, Terrenys 0, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 12 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 104760€, Terrenys 1, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Mou de la posició 10 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 10476 a el valor 3 i el resultat es 3 i guanya 2909
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 180554€, Terrenys 7, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 3 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 87936€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Mou de la posició 14 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 9793 a el valor 6 i el resultat es 8 i guanya 27202
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 107669€, Terrenys 1, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 16 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 11766 a el valor 4 i el resultat es 4 i guanya 9805
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 180554€, Terrenys 7, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 7 a la 11
+CPU2> Cau a Casella Sort
+CPU2> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 125138€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 2 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 127474€, Terrenys 1, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 2 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 182054€, Terrenys 8, Prestecs 0, Posició 11
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 11 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 122138€, Terrenys 0, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 7 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 127474€, Terrenys 0, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 6 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 198054€, Terrenys 8, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Mou de la posició 19 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 114138€, Terrenys 0, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 12 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 119474€, Terrenys 0, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 12 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 218054€, Terrenys 8, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 5 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 104138€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 17 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 112474€, Terrenys 0, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 20 a la 7
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 221054€, Terrenys 8, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 17 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 23105 a el valor 4 i el resultat es 8 i guanya 19254
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 97138€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Mou de la posició 20 a la 5
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 119474€, Terrenys 0, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 7 a la 11
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 250308€, Terrenys 8, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 2 a la 4
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 108138€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 5 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 118474€, Terrenys 0, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 11 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 250308€, Terrenys 8, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 4 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 108138€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 13 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 10813 a el valor 4 i el resultat es 10 i guanya 9010
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 118474€, Terrenys 0, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 15 a la 17
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 270308€, Terrenys 8, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 117148€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 16 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 108474€, Terrenys 0, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 17 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 270308€, Terrenys 8, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 7 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 27030 a el valor 5 i el resultat es 7 i guanya 45050
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 110148€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 20 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 118474€, Terrenys 0, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 5 a la 11
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 315358€, Terrenys 8, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 16 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 122148€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 4 a la 11
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 116974€, Terrenys 1, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 11 a la 18
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 325358€, Terrenys 7, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 6 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 123148€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 17 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 115974€, Terrenys 1, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 18 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 328358€, Terrenys 7, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 9 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 130148€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 3 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 125974€, Terrenys 1, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 1 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 331358€, Terrenys 8, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 14 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 127148€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 8 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 125974€, Terrenys 0, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 6 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 354358€, Terrenys 8, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 3 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 122148€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 14 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 12214 a el valor 4 i el resultat es 5 i guanya 10178
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 117974€, Terrenys 0, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 12 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 11797 a el valor 6 i el resultat es 8 i guanya 32769
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 354358€, Terrenys 8, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 8 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 132326€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 16 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 150743€, Terrenys 0, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 16 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 354358€, Terrenys 8, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 12 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 142326€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Mou de la posició 1 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 160743€, Terrenys 0, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Mou de la posició 6 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 354358€, Terrenys 8, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 17 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 142326€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 9 a la 11
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 160743€, Terrenys 0, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 13 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 364358€, Terrenys 7, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 5 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 142326€, Terrenys 1, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 11 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 14232 a el valor 3 i el resultat es 4 i guanya 3953
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 153743€, Terrenys 0, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 20 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 364358€, Terrenys 7, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 8 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 146279€, Terrenys 1, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 16 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 163743€, Terrenys 0, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 5 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 369358€, Terrenys 7, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Mou de la posició 13 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 152279€, Terrenys 1, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 19 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 158743€, Terrenys 0, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 14 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 369358€, Terrenys 8, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 19 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 162279€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 6 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 152743€, Terrenys 1, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 19 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 379358€, Terrenys 7, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 6 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 162279€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 9 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 16227 a el valor 6 i el resultat es 6 i guanya 45075
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 162743€, Terrenys 1, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 5 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 379358€, Terrenys 7, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 10 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 207354€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 16 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 162743€, Terrenys 1, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 15 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 382358€, Terrenys 7, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 17 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 39235 a el valor 4 i el resultat es 4 i guanya 32695
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 214354€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 172743€, Terrenys 1, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 5 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 428053€, Terrenys 7, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 2 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 214354€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 9 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 169743€, Terrenys 1, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 8 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 448053€, Terrenys 7, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 209354€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 14 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 167743€, Terrenys 1, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 14 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 451053€, Terrenys 7, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 7 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 216354€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 174743€, Terrenys 1, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 3 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 451053€, Terrenys 7, Prestecs 0, Posició 15
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 15 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 216354€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 9 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 174743€, Terrenys 1, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 5 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 451053€, Terrenys 7, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 19 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 216354€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 13 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 174743€, Terrenys 2, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 13 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 477053€, Terrenys 6, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 6 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 206354€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Mou de la posició 17 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 21635 a el valor 6 i el resultat es 7 i guanya 60097
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 168743€, Terrenys 2, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 19 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 480053€, Terrenys 6, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 14 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 48005 a el valor 3 i el resultat es 4 i guanya 13334
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 276451€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 2 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 175743€, Terrenys 2, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 3 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 493387€, Terrenys 6, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 16 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 276451€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 5 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 175743€, Terrenys 2, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 9 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 512387€, Terrenys 6, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 5 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 272451€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 10 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 173743€, Terrenys 2, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 14 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 514387€, Terrenys 6, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 8 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 51438 a el valor 4 i el resultat es 4 i guanya 42865
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 267451€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 14 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 166743€, Terrenys 2, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 20 a la 9
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 557252€, Terrenys 6, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 16 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 56725 a el valor 4 i el resultat es 6 i guanya 47270
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 277451€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 1 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 176743€, Terrenys 2, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 9 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 622522€, Terrenys 6, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 2 a la 6
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 277451€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 5 a la 11
+CPU3> Cau a Casella Sort
+CPU3> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 168743€, Terrenys 3, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 12 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 622522€, Terrenys 5, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 6 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 279451€, Terrenys 0, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 11 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 168743€, Terrenys 3, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 15 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 628522€, Terrenys 5, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 13 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 273451€, Terrenys 0, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 19 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 161743€, Terrenys 3, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 20 a la 8
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 628522€, Terrenys 5, Prestecs 0, Posició 15
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 15 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 281951€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 4 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 171743€, Terrenys 3, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Mou de la posició 8 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 638522€, Terrenys 5, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 1 a la 4
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 281951€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 13 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 171743€, Terrenys 3, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 15 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 18174 a el valor 4 i el resultat es 9 i guanya 15145
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 638522€, Terrenys 5, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 17 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 274951€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 20 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 197888€, Terrenys 3, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 2 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 648522€, Terrenys 6, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 1 a la 3
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 283951€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 4 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 201888€, Terrenys 2, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Mou de la posició 6 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 656522€, Terrenys 6, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 3 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 279951€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 10 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 193888€, Terrenys 2, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 12 a la 18
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 656522€, Terrenys 5, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 13 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 272951€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 20 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 193888€, Terrenys 3, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Mou de la posició 18 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 652522€, Terrenys 5, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 20 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 292951€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 1
+CPU3> Mou de la posició 1 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 200888€, Terrenys 4, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 3 a la 11
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 662522€, Terrenys 4, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 6 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 292951€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 6 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 206888€, Terrenys 4, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 11 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 20688 a el valor 4 i el resultat es 6 i guanya 17240
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 658522€, Terrenys 4, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 10 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 292951€, Terrenys 0, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 15 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerGirona( 6000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 230128€, Terrenys 4, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 16 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 658522€, Terrenys 4, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 17 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 286951€, Terrenys 0, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 19 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 238628€, Terrenys 4, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 4 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 679522€, Terrenys 4, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 17 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 293951€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 3 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 234628€, Terrenys 4, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 12 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 689522€, Terrenys 4, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 5 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 289951€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 10 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 28995 a el valor 4 i el resultat es 5 i guanya 24162
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 244628€, Terrenys 4, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 1 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 689522€, Terrenys 4, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 13 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 314113€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Mou de la posició 16 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 245628€, Terrenys 4, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 10 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 699522€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 323113€, Terrenys 0, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 4 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 251628€, Terrenys 4, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 19 a la 8
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 696522€, Terrenys 4, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 7 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 320113€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 8 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 261628€, Terrenys 4, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 8 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 26162 a el valor 6 i el resultat es 8 i guanya 72672
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 704522€, Terrenys 4, Prestecs 0, Posició 15
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 15 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 312113€, Terrenys 0, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 12 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 340300€, Terrenys 4, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Mou de la posició 16 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 35030 a el valor 5 i el resultat es 2 i perd 35030
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 698522€, Terrenys 4, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 19 a la 7
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 305113€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 20 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 318270€, Terrenys 4, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 2 a la 7
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 705522€, Terrenys 4, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 315113€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 6 a la 11
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 318270€, Terrenys 3, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 7 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 710522€, Terrenys 4, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 12 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 315113€, Terrenys 1, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 11 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 313270€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 14 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 730522€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 1 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 305113€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 17 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 31511 a el valor 4 i el resultat es 5 i guanya 26259
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 329270€, Terrenys 3, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 4 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 731522€, Terrenys 4, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 10 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 341372€, Terrenys 1, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 3 i 5
+CPU3> Mou de la posició 2 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 328270€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 14 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 724522€, Terrenys 4, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 20 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 343372€, Terrenys 1, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 10 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 322270€, Terrenys 3, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 19 a la 7
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 743022€, Terrenys 4, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 4 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 333372€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 17 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 34337 a el valor 6 i el resultat es 4 i perd 34337
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 332270€, Terrenys 3, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 4 i 1
+CPU1> Mou de la posició 7 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 751022€, Terrenys 4, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 9 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 309035€, Terrenys 1, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 2 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 324270€, Terrenys 3, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 12 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 751022€, Terrenys 4, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 12 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 315035€, Terrenys 1, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 5 a la 11
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 318270€, Terrenys 3, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 19 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 32827 a el valor 3 i el resultat es 4 i guanya 9118
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 751022€, Terrenys 4, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 17 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 316035€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 17 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 337388€, Terrenys 3, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 2 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 760022€, Terrenys 4, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 4 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 326035€, Terrenys 1, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 1 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 341388€, Terrenys 3, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 8 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 34138 a el valor 5 i el resultat es 3 i perd 34138
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 760022€, Terrenys 4, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 13 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 76002 a el valor 5 i el resultat es 3 i perd 76002
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 322035€, Terrenys 1, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 10 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 32203 a el valor 6 i el resultat es 4 i perd 32203
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 307250€, Terrenys 3, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 16 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 687020€, Terrenys 4, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 16 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 289832€, Terrenys 1, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 16 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 314250€, Terrenys 3, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 3 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 697020€, Terrenys 4, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 5 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 282832€, Terrenys 1, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 20 a la 8
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 317250€, Terrenys 3, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 13 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 700020€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 14 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 71002 a el valor 6 i el resultat es 4 i perd 71002
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 289832€, Terrenys 1, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 8 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 324250€, Terrenys 3, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 3 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 639018€, Terrenys 4, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 2 a la 6
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 289832€, Terrenys 1, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 15 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 324250€, Terrenys 4, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 5 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 639018€, Terrenys 3, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 6 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 282832€, Terrenys 1, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 20 a la 7
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 331250€, Terrenys 4, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 15 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 635018€, Terrenys 3, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 10 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 289832€, Terrenys 1, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 7 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 341250€, Terrenys 4, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 5 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 640018€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 14 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 65001 a el valor 4 i el resultat es 7 i guanya 54167
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 284832€, Terrenys 1, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 14 a la 18
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 341250€, Terrenys 3, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Mou de la posició 10 a la 17
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 714185€, Terrenys 3, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 2 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 284832€, Terrenys 2, Prestecs 0, Posició 18
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 18 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 331250€, Terrenys 3, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 17 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 724185€, Terrenys 3, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 294832€, Terrenys 2, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 1 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 330250€, Terrenys 3, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 20 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 721185€, Terrenys 3, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 291832€, Terrenys 2, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 8 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 342250€, Terrenys 3, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 4 a la 11
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 726185€, Terrenys 3, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 12 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 286832€, Terrenys 2, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 14 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 340750€, Terrenys 3, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 11 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 726185€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 14 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 296832€, Terrenys 2, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 333750€, Terrenys 3, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 20 a la 8
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 736185€, Terrenys 3, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 1 a la 5
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 296832€, Terrenys 2, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 9 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 29683 a el valor 5 i el resultat es 5 i guanya 49471
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 343750€, Terrenys 3, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 8 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 741185€, Terrenys 3, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 5 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 346303€, Terrenys 2, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 16 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 338750€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Mou de la posició 14 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 741185€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 17 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 365303€, Terrenys 2, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 1 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 335750€, Terrenys 3, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 19 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 748185€, Terrenys 4, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 3 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 362303€, Terrenys 2, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 7 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 348750€, Terrenys 2, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 6 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 745185€, Terrenys 4, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 8 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 362303€, Terrenys 2, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 15 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 348750€, Terrenys 2, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 8 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 745185€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 14 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 372303€, Terrenys 2, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 1 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 352750€, Terrenys 2, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 13 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 755185€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 1 a la 5
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 368303€, Terrenys 2, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 10 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 36830 a el valor 3 i el resultat es 7 i guanya 10230
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 345750€, Terrenys 2, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 20 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 755185€, Terrenys 4, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 5 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 378533€, Terrenys 2, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 16 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 356750€, Terrenys 2, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 5 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 755185€, Terrenys 4, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 9 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 377533€, Terrenys 2, Prestecs 0, Posició 18
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 18 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 38753 a el valor 4 i el resultat es 6 i guanya 32294
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 356750€, Terrenys 2, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 9 a la 17
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 765185€, Terrenys 4, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 12 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 419827€, Terrenys 2, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 2 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 349750€, Terrenys 2, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 17 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 765185€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 17 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 419827€, Terrenys 2, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 8 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 359750€, Terrenys 3, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Mou de la posició 4 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 780185€, Terrenys 3, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 3 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 411827€, Terrenys 2, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 12 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 362750€, Terrenys 3, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 10 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 36275 a el valor 3 i el resultat es 9 i guanya 10076
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 777185€, Terrenys 3, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 8 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerBruc( 10000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 421827€, Terrenys 2, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 1 a la 11
+CPU3> Cau a Casella Sort
+CPU3> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 382826€, Terrenys 3, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 16 a la 18
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 767185€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 17 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 423827€, Terrenys 2, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 11 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 381326€, Terrenys 3, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 18 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 777185€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 17 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 426827€, Terrenys 2, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 13 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 391326€, Terrenys 3, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 5 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 789185€, Terrenys 3, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 3 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 426827€, Terrenys 2, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 19 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 390326€, Terrenys 4, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 14 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 785185€, Terrenys 3, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 10 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 436827€, Terrenys 1, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 6 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 383326€, Terrenys 4, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 20 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> Has de pagar 1000 a un dels altres jugadors
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 785185€, Terrenys 3, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 12 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 437827€, Terrenys 1, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 13 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 402326€, Terrenys 4, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 4 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 803185€, Terrenys 3, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 1 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 427827€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 17 a la 1
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sortida
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 394326€, Terrenys 4, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 4 i 3
+CPU1> Mou de la posició 12 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 803185€, Terrenys 3, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 9 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 443827€, Terrenys 1, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 1 a la 3
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 391326€, Terrenys 4, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 19 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 803185€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 2 i 5
+CPU2> Mou de la posició 14 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 440827€, Terrenys 1, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 401326€, Terrenys 3, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 6 a la 13
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 813185€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 1 a la 5
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 440827€, Terrenys 1, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 9 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 401326€, Terrenys 3, Prestecs 0, Posició 13
+CPU1> Resultat dels daus: 3 i 4
+CPU1> Mou de la posició 13 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 818185€, Terrenys 4, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 5 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 435827€, Terrenys 1, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 14 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 394326€, Terrenys 3, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 20 a la 9
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 818185€, Terrenys 4, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 13 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerBruc( 10000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 435827€, Terrenys 1, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 19 a la 8
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 414326€, Terrenys 3, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 9 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 811185€, Terrenys 4, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 17 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 454827€, Terrenys 1, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 8 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 408326€, Terrenys 3, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 19 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 810185€, Terrenys 3, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 19 a la 7
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 449827€, Terrenys 1, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 14 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 428326€, Terrenys 4, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 4 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 820185€, Terrenys 3, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 439827€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 17 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 431326€, Terrenys 4, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Mou de la posició 9 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 820185€, Terrenys 3, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 12 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 83018 a el valor 4 i el resultat es 8 i guanya 69181
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 446827€, Terrenys 1, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 3 a la 7
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 431326€, Terrenys 4, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 15 a la 18
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 902366€, Terrenys 3, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 2 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 443827€, Terrenys 1, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 7 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 441326€, Terrenys 4, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 1 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 910366€, Terrenys 4, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 3 i 4
+CPU2> Mou de la posició 9 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 91036 a el valor 4 i el resultat es 4 i guanya 75863
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 435827€, Terrenys 1, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 12 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 441326€, Terrenys 3, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 6 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 986229€, Terrenys 4, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 16 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 99622 a el valor 4 i el resultat es 4 i guanya 83018
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 435827€, Terrenys 1, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 15 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 441326€, Terrenys 3, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 9 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1079247€, Terrenys 4, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 2 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 447827€, Terrenys 1, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 4 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 441326€, Terrenys 3, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 15 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1082247€, Terrenys 4, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 7 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 444827€, Terrenys 1, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 8 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 454826€, Terrenys 3, Prestecs 0, Posició 4
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 4 a la 11
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1077247€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 14 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 445827€, Terrenys 1, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 13 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 454826€, Terrenys 3, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 17 a la 7
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1079247€, Terrenys 4, Prestecs 0, Posició 18
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 18 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 445827€, Terrenys 1, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 19 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 464826€, Terrenys 3, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 7 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1086247€, Terrenys 5, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 3 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 455827€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 6 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 464826€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 14 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 47482 a el valor 3 i el resultat es 5 i guanya 13189
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1090247€, Terrenys 5, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 451827€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 10 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 488015€, Terrenys 3, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 2 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1090247€, Terrenys 5, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 12 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 444827€, Terrenys 0, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 2 i 4
+CPU3> Mou de la posició 20 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 488015€, Terrenys 3, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 3 i 2
+CPU1> Mou de la posició 9 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1090247€, Terrenys 5, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 19 a la 9
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 454827€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 6 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 493015€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 14 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 50301 a el valor 4 i el resultat es 8 i guanya 41917
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1100247€, Terrenys 5, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 9 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 449827€, Terrenys 0, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 14 a la 18
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 544932€, Terrenys 3, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 2 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1103247€, Terrenys 4, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 12 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 449827€, Terrenys 1, Prestecs 0, Posició 18
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 18 a la 7
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 546932€, Terrenys 3, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Mou de la posició 8 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1101247€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Mou de la posició 14 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 456827€, Terrenys 1, Prestecs 0, Posició 7
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 7 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 546932€, Terrenys 3, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 14 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1094247€, Terrenys 4, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 20 a la 6
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 456827€, Terrenys 1, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 9 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 544932€, Terrenys 4, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 20 a la 9
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1104247€, Terrenys 3, Prestecs 0, Posició 6
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 6 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 451827€, Terrenys 1, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 14 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 554932€, Terrenys 4, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 5 i 2
+CPU1> Mou de la posició 9 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 55493 a el valor 6 i el resultat es 8 i guanya 154147
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1104247€, Terrenys 3, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 10 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 461827€, Terrenys 1, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 1 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 714079€, Terrenys 4, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 16 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1099247€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 14 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 467827€, Terrenys 1, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 5 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 724079€, Terrenys 4, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 5 a la 11
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1093247€, Terrenys 3, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 19 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 467827€, Terrenys 1, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 13 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 46782 a el valor 5 i el resultat es 5 i guanya 77970
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 726079€, Terrenys 4, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 2 i 1
+CPU1> Mou de la posició 11 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1101747€, Terrenys 3, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 4 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 545797€, Terrenys 1, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 16 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 726079€, Terrenys 4, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 5 i 3
+CPU1> Mou de la posició 14 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 73607 a el valor 3 i el resultat es 8 i guanya 20446
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1101747€, Terrenys 3, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 13 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 556797€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 17 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> El jugador rebra una propietats d'algun dels seus adversaris
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 756525€, Terrenys 3, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 2 a la 6
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1100747€, Terrenys 4, Prestecs 0, Posició 18
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 18 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 566797€, Terrenys 2, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 4 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 756525€, Terrenys 2, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 6 a la 12
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1122747€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 1 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 562797€, Terrenys 2, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 1 i 2
+CPU3> Mou de la posició 10 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 748525€, Terrenys 2, Prestecs 0, Posició 12
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 12 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1122747€, Terrenys 4, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 8 a la 13
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 562797€, Terrenys 2, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 13 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 758525€, Terrenys 2, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 4 i 4
+CPU1> Mou de la posició 1 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1122747€, Terrenys 4, Prestecs 0, Posició 13
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 13 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 562797€, Terrenys 2, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 19 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 758525€, Terrenys 2, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 9 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1132747€, Terrenys 4, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 4 i 3
+CPU2> Mou de la posició 1 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 582797€, Terrenys 2, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 4 i 4
+CPU3> Mou de la posició 1 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 758525€, Terrenys 2, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 3 i 3
+CPU1> Mou de la posició 14 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1132747€, Terrenys 4, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 8 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 582797€, Terrenys 2, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 9 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 58279 a el valor 3 i el resultat es 5 i guanya 16188
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 756525€, Terrenys 2, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 20 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1127747€, Terrenys 4, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 14 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerBruc( 10000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 608985€, Terrenys 2, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 1
+CPU3> Mou de la posició 16 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 766525€, Terrenys 2, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 5 a la 11
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1117747€, Terrenys 4, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 17 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 601985€, Terrenys 2, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 20 a la 4
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Sort
+CPU3> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 768525€, Terrenys 2, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 11 a la 17
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerBruc( 10000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1110747€, Terrenys 4, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 20 a la 10
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 620485€, Terrenys 2, Prestecs 0, Posició 4
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 4 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 758525€, Terrenys 2, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 17 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1124747€, Terrenys 4, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 10 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 622485€, Terrenys 2, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 10 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 768525€, Terrenys 2, Prestecs 0, Posició 17
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 17 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1118747€, Terrenys 4, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 19 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 622485€, Terrenys 2, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 13 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 781525€, Terrenys 2, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 3 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1132747€, Terrenys 4, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 5 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 629485€, Terrenys 2, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 1 i 1
+CPU3> Mou de la posició 3 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 777525€, Terrenys 2, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Mou de la posició 10 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1132747€, Terrenys 4, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 5 i 4
+CPU2> Mou de la posició 10 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 635485€, Terrenys 2, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 5 a la 11
+CPU3> Cau a Casella Sort
+CPU3> Has de pagar 1000 a un dels altres jugadors
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 778525€, Terrenys 2, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 15 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU3
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1126747€, Terrenys 4, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 5 i 5
+CPU2> Mou de la posició 19 a la 9
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 640485€, Terrenys 2, Prestecs 0, Posició 11
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 11 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 64048 a el valor 6 i el resultat es 9 i guanya 177911
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 772525€, Terrenys 2, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 19 a la 5
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1136747€, Terrenys 4, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 9 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 818396€, Terrenys 2, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 4 i 3
+CPU3> Mou de la posició 16 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 785525€, Terrenys 2, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 5 a la 9
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1136747€, Terrenys 4, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 1
+CPU2> Mou de la posició 12 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 825396€, Terrenys 2, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 790525€, Terrenys 2, Prestecs 0, Posició 9
+CPU1> Resultat dels daus: 4 i 5
+CPU1> Mou de la posició 9 a la 18
+CPU1> Cau a Casella Sort
+CPU1> El jugador rebra una propietats d'algun dels seus adversaris
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1131747€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 14 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 114174 a el valor 5 i el resultat es 4 i perd 114174
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 825396€, Terrenys 2, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 9 a la 14
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 795525€, Terrenys 3, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 5 i 1
+CPU1> Mou de la posició 18 a la 4
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sort
+CPU1> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU1> Ha rebut: 10000€
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1027573€, Terrenys 3, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 2 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 820396€, Terrenys 2, Prestecs 0, Posició 14
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 14 a la 20
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 815525€, Terrenys 3, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 1 i 3
+CPU1> Mou de la posició 1 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1027573€, Terrenys 3, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 10 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 102757 a el valor 3 i el resultat es 7 i guanya 28543
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 813396€, Terrenys 2, Prestecs 0, Posició 20
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 20 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 815525€, Terrenys 4, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 5 a la 11
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1056116€, Terrenys 3, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 3 i 1
+CPU2> Mou de la posició 16 a la 20
+CPU2> Cau a Casella Comanda Directe
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 823396€, Terrenys 1, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 6 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 817525€, Terrenys 4, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 11 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1049116€, Terrenys 3, Prestecs 0, Posició 20
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 20 a la 9
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 823396€, Terrenys 1, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 15 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 83339 a el valor 3 i el resultat es 4 i guanya 23149
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 827525€, Terrenys 4, Prestecs 0, Posició 1
+CPU1> Resultat dels daus: 2 i 2
+CPU1> Mou de la posició 1 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1059116€, Terrenys 3, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 9 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 856545€, Terrenys 1, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 2 a la 5
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 832525€, Terrenys 4, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 1 i 2
+CPU1> Mou de la posició 5 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1057116€, Terrenys 3, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 14 a la 19
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de CarrerGirona( 6000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 856545€, Terrenys 1, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 2 i 3
+CPU3> Mou de la posició 5 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 835525€, Terrenys 4, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 8 a la 18
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1055116€, Terrenys 3, Prestecs 0, Posició 19
+CPU2> Resultat dels daus: 1 i 4
+CPU2> Mou de la posició 19 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 852545€, Terrenys 1, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 10 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 834025€, Terrenys 4, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 18 a la 8
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1068116€, Terrenys 3, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 5
+CPU2> Mou de la posició 17 a la 5
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 852545€, Terrenys 1, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 17 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 86254 a el valor 6 i el resultat es 8 i guanya 239594
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 841025€, Terrenys 4, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 8 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 84102 a el valor 4 i el resultat es 6 i guanya 70085
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1078116€, Terrenys 3, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 5 a la 11
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1102139€, Terrenys 1, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 2 i 2
+CPU3> Mou de la posició 2 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 912110€, Terrenys 5, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 16 a la 2
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 92211 a el valor 5 i el resultat es 5 i guanya 153685
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1077116€, Terrenys 3, Prestecs 0, Posició 11
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 11 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 107711 a el valor 4 i el resultat es 9 i guanya 89759
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1102139€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 6 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1075795€, Terrenys 5, Prestecs 0, Posició 2
+CPU1> Resultat dels daus: 4 i 2
+CPU1> Mou de la posició 2 a la 8
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1169875€, Terrenys 3, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 4 i 4
+CPU2> Mou de la posició 16 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1102139€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 13 a la 19
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerGirona( 6000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1078795€, Terrenys 4, Prestecs 0, Posició 8
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 8 a la 15
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1179875€, Terrenys 4, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 4 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1096139€, Terrenys 0, Prestecs 0, Posició 19
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 19 a la 5
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1078795€, Terrenys 4, Prestecs 0, Posició 15
+CPU1> Resultat dels daus: 1 i 4
+CPU1> Mou de la posició 15 a la 20
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1179875€, Terrenys 4, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 5
+CPU2> Mou de la posició 7 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 117987 a el valor 3 i el resultat es 3 i guanya 32774
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1106139€, Terrenys 0, Prestecs 0, Posició 5
+CPU3> Resultat dels daus: 2 i 1
+CPU3> Mou de la posició 5 a la 8
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerCamprodon( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1071795€, Terrenys 4, Prestecs 0, Posició 20
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 20 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1215649€, Terrenys 5, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 4 i 2
+CPU2> Mou de la posició 16 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 122564 a el valor 5 i el resultat es 9 i guanya 204273
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1103139€, Terrenys 0, Prestecs 0, Posició 8
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 8 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1081795€, Terrenys 3, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 6 a la 10
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1433922€, Terrenys 5, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 2 a la 5
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1103139€, Terrenys 0, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 15 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 111313 a el valor 6 i el resultat es 9 i guanya 309202
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1077795€, Terrenys 3, Prestecs 0, Posició 10
+CPU1> Resultat dels daus: 2 i 4
+CPU1> Mou de la posició 10 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 107779 a el valor 5 i el resultat es 5 i guanya 179631
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1433922€, Terrenys 5, Prestecs 0, Posició 5
+CPU2> Resultat dels daus: 2 i 1
+CPU2> Mou de la posició 5 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1422341€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 2 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU1
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1265426€, Terrenys 3, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 16 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1436922€, Terrenys 5, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 8 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de PauClaris( 5000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1414341€, Terrenys 0, Prestecs 0, Posició 12
+CPU3> Resultat dels daus: 4 i 2
+CPU3> Mou de la posició 12 a la 18
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1277426€, Terrenys 3, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 3 a la 5
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1431922€, Terrenys 5, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 1 i 2
+CPU2> Mou de la posició 14 a la 17
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1424341€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 5 i 4
+CPU3> Mou de la posició 1 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1277426€, Terrenys 3, Prestecs 0, Posició 5
+CPU1> Resultat dels daus: 1 i 5
+CPU1> Mou de la posició 5 a la 11
+CPU1> Cau a Casella Sort
+CPU1> LA TEVA COMPAÑIA D'INTERNET OBTE BENEFICIS REP 2000 €
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1435922€, Terrenys 5, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 1 i 3
+CPU2> Mou de la posició 17 a la 1
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sortida
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1420341€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 1 i 4
+CPU3> Mou de la posició 10 a la 15
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1279426€, Terrenys 3, Prestecs 0, Posició 11
+CPU1> Resultat dels daus: 2 i 3
+CPU1> Mou de la posició 11 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 127942 a el valor 5 i el resultat es 4 i perd 127942
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1445922€, Terrenys 5, Prestecs 0, Posició 1
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 1 a la 7
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1420341€, Terrenys 0, Prestecs 0, Posició 15
+CPU3> Resultat dels daus: 2 i 5
+CPU3> Mou de la posició 15 a la 2
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 143034 a el valor 6 i el resultat es 6 i guanya 397316
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1151484€, Terrenys 3, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 16 a la 18
+CPU1> Cau a Casella Sort
+CPU1> PAGA  1500€ PER LA MATRICULA DE LA UDG
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1445922€, Terrenys 5, Prestecs 0, Posició 7
+CPU2> Resultat dels daus: 4 i 1
+CPU2> Mou de la posició 7 a la 12
+CPU2> Cau a Casella Terreny
+CPU2> Paga el lloguer de ViaLaietana( 8000€ ) a CPU1
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1827657€, Terrenys 0, Prestecs 0, Posició 2
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 2 a la 10
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de PlaçaGalaPlacidia( 4000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1157984€, Terrenys 3, Prestecs 0, Posició 18
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 18 a la 7
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1444922€, Terrenys 5, Prestecs 0, Posició 12
+CPU2> Resultat dels daus: 1 i 5
+CPU2> Mou de la posició 12 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Vas immediatament a la casella 17 i si passes per la casella de sortida, cobra la recompensa
+CPU2> Ha rebut: 10000€
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1823657€, Terrenys 0, Prestecs 0, Posició 10
+CPU3> Resultat dels daus: 5 i 2
+CPU3> Mou de la posició 10 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1164984€, Terrenys 3, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 7 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 116498 a el valor 5 i el resultat es 5 i guanya 194163
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1464922€, Terrenys 5, Prestecs 0, Posició 17
+CPU2> Resultat dels daus: 3 i 2
+CPU2> Mou de la posició 17 a la 2
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 147492 a el valor 6 i el resultat es 7 i guanya 409700
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1813657€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 4 i 5
+CPU3> Mou de la posició 17 a la 6
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1359147€, Terrenys 3, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 16 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1884622€, Terrenys 6, Prestecs 0, Posició 2
+CPU2> Resultat dels daus: 5 i 1
+CPU2> Mou de la posició 2 a la 8
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1823657€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 5 i 5
+CPU3> Mou de la posició 6 a la 16
+CPU3> Cau a Casella Aposta
+CPU3> Aposta 182365 a el valor 4 i el resultat es 7 i guanya 151970
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1369147€, Terrenys 2, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 6 a la 16
+CPU1> Cau a Casella Aposta
+CPU1> Aposta 136914 a el valor 4 i el resultat es 5 i guanya 114095
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1884622€, Terrenys 6, Prestecs 0, Posició 8
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 8 a la 14
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1975627€, Terrenys 0, Prestecs 0, Posició 16
+CPU3> Resultat dels daus: 3 i 4
+CPU3> Mou de la posició 16 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1483242€, Terrenys 2, Prestecs 0, Posició 16
+CPU1> Resultat dels daus: 5 i 5
+CPU1> Mou de la posició 16 a la 6
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Comanda Directe
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1887622€, Terrenys 7, Prestecs 0, Posició 14
+CPU2> Resultat dels daus: 2 i 2
+CPU2> Mou de la posició 14 a la 18
+CPU2> Cau a Casella Sort
+CPU2> Has de pagar 1000 a un dels altres jugadors
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1982627€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 1 i 5
+CPU3> Mou de la posició 3 a la 9
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1494242€, Terrenys 1, Prestecs 0, Posició 6
+CPU1> Resultat dels daus: 3 i 5
+CPU1> Mou de la posició 6 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1891622€, Terrenys 7, Prestecs 0, Posició 18
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 18 a la 3
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1982627€, Terrenys 0, Prestecs 0, Posició 9
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 9 a la 13
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1489242€, Terrenys 1, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 5 i 4
+CPU1> Mou de la posició 14 a la 3
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1904622€, Terrenys 7, Prestecs 0, Posició 3
+CPU2> Resultat dels daus: 5 i 2
+CPU2> Mou de la posició 3 a la 10
+CPU2> Cau a Casella Terreny
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1982627€, Terrenys 0, Prestecs 0, Posició 13
+CPU3> Resultat dels daus: 1 i 3
+CPU3> Mou de la posició 13 a la 17
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de CarrerBruc( 10000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1496242€, Terrenys 1, Prestecs 0, Posició 3
+CPU1> Resultat dels daus: 3 i 1
+CPU1> Mou de la posició 3 a la 7
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerPerill( 3000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1917622€, Terrenys 7, Prestecs 0, Posició 10
+CPU2> Resultat dels daus: 3 i 3
+CPU2> Mou de la posició 10 a la 16
+CPU2> Cau a Casella Aposta
+CPU2> Aposta 191762 a el valor 3 i el resultat es 5 i guanya 53267
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1972627€, Terrenys 0, Prestecs 0, Posició 17
+CPU3> Resultat dels daus: 5 i 1
+CPU3> Mou de la posició 17 a la 3
+CPU3> Ha rebut: 10000€
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ParcDelMigdia( 3000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1493242€, Terrenys 1, Prestecs 0, Posició 7
+CPU1> Resultat dels daus: 2 i 5
+CPU1> Mou de la posició 7 a la 14
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de PauClaris( 5000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1978889€, Terrenys 7, Prestecs 0, Posició 16
+CPU2> Resultat dels daus: 5 i 3
+CPU2> Mou de la posició 16 a la 4
+CPU2> Ha rebut: 10000€
+CPU2> Cau a Casella Sort
+CPU2> El jugador rebra una propietats d'algun dels seus adversaris
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1979627€, Terrenys 0, Prestecs 0, Posició 3
+CPU3> Resultat dels daus: 5 i 3
+CPU3> Mou de la posició 3 a la 11
+CPU3> Cau a Casella Sort
+CPU3> Vas immediatament a la casella 1 i si passes per la casella de sortida, cobra la recompensa
+CPU3> Ha rebut: 10000€
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1488242€, Terrenys 0, Prestecs 0, Posició 14
+CPU1> Resultat dels daus: 4 i 1
+CPU1> Mou de la posició 14 a la 19
+CPU1> Cau a Casella Terreny
+CPU1> Paga el lloguer de CarrerGirona( 6000€ ) a CPU2
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1994889€, Terrenys 8, Prestecs 0, Posició 4
+CPU2> Resultat dels daus: 2 i 3
+CPU2> Mou de la posició 4 a la 9
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1989627€, Terrenys 0, Prestecs 0, Posició 1
+CPU3> Resultat dels daus: 3 i 2
+CPU3> Mou de la posició 1 a la 6
+CPU3> Cau a Casella Comanda Directe
+CPU3> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU1> 1482242€, Terrenys 0, Prestecs 0, Posició 19
+CPU1> Resultat dels daus: 1 i 1
+CPU1> Mou de la posició 19 a la 1
+CPU1> Ha rebut: 10000€
+CPU1> Cau a Casella Sortida
+CPU1> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU2> 1994889€, Terrenys 8, Prestecs 0, Posició 9
+CPU2> Resultat dels daus: 2 i 4
+CPU2> Mou de la posició 9 a la 15
+CPU2> Accio opcional escollida: 0 - RES
+
+CANVI DE JUGADOR:
+CPU3> 1989627€, Terrenys 0, Prestecs 0, Posició 6
+CPU3> Resultat dels daus: 3 i 3
+CPU3> Mou de la posició 6 a la 12
+CPU3> Cau a Casella Terreny
+CPU3> Paga el lloguer de ViaLaietana( 8000€ ) a CPU2
+CPU3> Accio opcional escollida: 0 - RES
+MAXIM DE DINERS ASOLITS: FINAL PARTIDA
+
+
+------- FINAL PARTIDA -------
+
+CPU2HA GUANYAT LA PARTIDA
+
+---- ESTAT FINAL PARTIDA ----
+
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | CPU1
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana | CPU3
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY | CPU2
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+CPU1: 1492242€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+CPU2: 2002889€ | Fallida false
+PROPIETATS:
+    CarrerCamprodon. amb un valor de 8000€
+    PlaçaGalaPlacidia. amb un valor de 10000€
+    CarrerPerill. amb un valor de 7000€
+    CarrerBruc. amb un valor de 25000€
+    ParcDelMigdia. amb un valor de 15000€
+    PauClaris. amb un valor de 20000€
+    ViaLaietana. amb un valor de 20000€
+    CarrerGirona. amb un valor de 25000€
+NO TE PRESTECS
+CPU3: 1981627€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+

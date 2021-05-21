@@ -101,9 +101,6 @@ public class Monopoly {
                 }
             }
             else System.out.println("ERROR: Jugador en Fallida, per tant no pot jugar el seu torn");
-            if (current_player.getFields().size() > 10 || current_player.getMoney() > 100000) {
-                System.out.println("ERROR: Alguna cosa ha anat malament...");
-            }
             nextPlayer();
         }
         endGame();

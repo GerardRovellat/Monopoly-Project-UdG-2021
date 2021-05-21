@@ -1,0 +1,40 @@
+Mode: classica
+---------- TAULELL ----------
+1  | SORTIDA | Joan | Laura | Enric
+2  | APOSTA
+3  | FIELD:   ParcDelMigdia
+4  | LUCK
+5  | EMPTY
+6  | GIVE
+7  | FIELD:   CarrerPerill
+8  | FIELD:   CarrerCamprodon
+9  | EMPTY
+10 | FIELD:   PlaçaGalaPlacidia
+11 | LUCK
+12 | FIELD:   ViaLaietana
+13 | EMPTY
+14 | FIELD:   PauClaris
+15 | EMPTY
+16 | APOSTA
+17 | FIELD:   CarrerBruc
+18 | LUCK
+19 | FIELD:   CarrerGirona
+20 | FINE
+
+---------- JUGADORS ----------
+Joan: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+Laura: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+Enric: 40000€ | Fallida false
+NO TE PROPIETATS
+NO TE PRESTECS
+
+
+--------------- PARTIDA--------------
+
+
+CANVI DE JUGADOR:
+Joan> 40000€, Terrenys 0, Prestecs 0, Posició 1
