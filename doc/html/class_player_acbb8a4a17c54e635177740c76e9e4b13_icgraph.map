@@ -1,0 +1,14 @@
+<map id="Player.removeBox" name="Player.removeBox">
+<area shape="rect" id="node1" title="Elimina un terreny a la propietat d&#39;un Jugador." alt="" coords="947,56,1073,83"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e" title="Gestiona la negociacio de la compra del terreny." alt="" coords="783,5,890,32"/>
+<area shape="rect" id="node5" href="$class_card_get.html#a3288800fb9d6c105d5dada1e889f2092" title="Execucio de la carta." alt="" coords="777,56,897,83"/>
+<area shape="rect" id="node6" href="$class_card_give.html#a9669d63474adfceb476b5f01e4afea7d" title="Execucio de la carta." alt="" coords="775,107,899,133"/>
+<area shape="rect" id="node3" href="$class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd" title="Gestiona la negociacio de la compra del terreny." alt="" coords="552,5,727,32"/>
+<area shape="rect" id="node4" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="355,5,487,32"/>
+<area shape="rect" id="node7" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="574,107,705,133"/>
+<area shape="rect" id="node8" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,56,504,83"/>
+<area shape="rect" id="node11" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,107,503,133"/>
+<area shape="rect" id="node12" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,157,495,184"/>
+<area shape="rect" id="node9" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,107,291,133"/>
+<area shape="rect" id="node10" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,107,136,133"/>
+</map>

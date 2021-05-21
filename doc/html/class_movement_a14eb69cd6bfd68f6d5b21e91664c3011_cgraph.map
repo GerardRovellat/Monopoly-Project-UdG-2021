@@ -1,0 +1,6 @@
+<map id="Movement.optionalActions" name="Movement.optionalActions">
+<area shape="rect" id="node1" title="Administra totes les possibles accions opcionals." alt="" coords="5,56,180,83"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="228,5,391,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="252,56,367,83"/>
+<area shape="rect" id="node4" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="233,107,385,133"/>
+</map>

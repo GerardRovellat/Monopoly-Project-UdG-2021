@@ -1,0 +1,9 @@
+<map id="UIFileSelector.startComponents" name="UIFileSelector.startComponents">
+<area shape="rect" id="node1" title="Inicialitza i crea tota la finestra." alt="" coords="5,159,212,186"/>
+<area shape="rect" id="node2" href="$class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703" title="Crea les accions pels botons browse." alt="" coords="260,5,447,47"/>
+<area shape="rect" id="node3" href="$class_u_i_file_selector.html#aa13aa80e61ba2b23c6b0d7e51c901789" title="Crea etiquetes i les afegeix a la finestra." alt="" coords="263,71,444,98"/>
+<area shape="rect" id="node4" href="$class_u_i_file_selector.html#a5f6622e6a29b535aaf01c7799437f1c8" title="Crea les accions pel boto next." alt="" coords="268,123,439,164"/>
+<area shape="rect" id="node5" href="$class_u_i_file_selector.html#a1b0cbb846cffd5f15f3a170ab278ef2f" title="Afegeix botos a la finestra." alt="" coords="260,189,447,215"/>
+<area shape="rect" id="node6" href="$class_u_i_file_selector.html#a28512fceaf0fcec17a5d14c4b8c9b7b0" title="Afegeix areas de text a la finestra." alt="" coords="270,240,437,281"/>
+<area shape="rect" id="node7" href="$class_u_i_file_selector.html#a521305e60807eee9745b4a3b935461a8" title="Afegeix camps de text a la finestra." alt="" coords="270,305,437,347"/>
+</map>

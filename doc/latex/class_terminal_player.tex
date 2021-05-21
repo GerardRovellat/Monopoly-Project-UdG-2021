@@ -1,0 +1,111 @@
+\hypertarget{class_terminal_player}{}\doxysection{Referència de la Classe Terminal\+Player}
+\label{class_terminal_player}\index{TerminalPlayer@{TerminalPlayer}}
+
+
+Jugador controlat per el usuari.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a Terminal\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_terminal_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Terminal\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terminal_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terminal_player_a8ee6ef83fce9787095481cef484433a4}{Terminal\+Player}} (String \mbox{\hyperlink{class_player_a88be288918be24fa02f6ec4cc7232558}{name}}, int initial\+\_\+money, int initial\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Constructor de jugador amb terminal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_terminal_player_a931bb287d3478c0eff416fc6e2ef587b}{option\+Selection}} (String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}}, \mbox{\hyperlink{class_player}{Player}} player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field, Array\+List$<$ Integer $>$ options, Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_card}{Card}} card, int value, Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$ optional\+\_\+actions)
+\item 
+String \mbox{\hyperlink{class_terminal_player_a8e0efde053f99b3564128b698010ab9f}{string\+Value\+Selection}} (String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}}, \mbox{\hyperlink{class_player}{Player}} player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field, int value, int second\+\_\+value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Jugador controlat per el usuari. 
+
+Definició a la línia 11 del fitxer Terminal\+Player.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_terminal_player_a8ee6ef83fce9787095481cef484433a4}\label{class_terminal_player_a8ee6ef83fce9787095481cef484433a4}} 
+\index{TerminalPlayer@{TerminalPlayer}!TerminalPlayer@{TerminalPlayer}}
+\index{TerminalPlayer@{TerminalPlayer}!TerminalPlayer@{TerminalPlayer}}
+\doxysubsubsection{\texorpdfstring{TerminalPlayer()}{TerminalPlayer()}}
+{\footnotesize\ttfamily Terminal\+Player.\+Terminal\+Player (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{initial\+\_\+money,  }\item[{int}]{initial\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Constructor de jugador amb terminal. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em name} & nom del Jugador. \\
+\hline
+{\em initial\+\_\+money} & quantitat de diners inicials dels que disposa un Jugador. \\
+\hline
+{\em initial\+\_\+position} & posició inicial del Jugador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un jugador amb els atributs entrats. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 22 del fitxer Terminal\+Player.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_terminal_player_a931bb287d3478c0eff416fc6e2ef587b}\label{class_terminal_player_a931bb287d3478c0eff416fc6e2ef587b}} 
+\index{TerminalPlayer@{TerminalPlayer}!optionSelection@{optionSelection}}
+\index{optionSelection@{optionSelection}!TerminalPlayer@{TerminalPlayer}}
+\doxysubsubsection{\texorpdfstring{optionSelection()}{optionSelection()}}
+{\footnotesize\ttfamily int Terminal\+Player.\+option\+Selection (\begin{DoxyParamCaption}\item[{String}]{type,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field,  }\item[{Array\+List$<$ Integer $>$}]{options,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_card}{Card}}}]{card,  }\item[{int}]{value,  }\item[{Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$}]{optional\+\_\+actions }\end{DoxyParamCaption})}
+
+
+
+Reimplementat de \mbox{\hyperlink{class_player_af0c32e4e32dd886c7ae62af44feeab5c}{Player}}.
+
+
+
+Definició a la línia 26 del fitxer Terminal\+Player.\+java.
+
+\mbox{\Hypertarget{class_terminal_player_a8e0efde053f99b3564128b698010ab9f}\label{class_terminal_player_a8e0efde053f99b3564128b698010ab9f}} 
+\index{TerminalPlayer@{TerminalPlayer}!stringValueSelection@{stringValueSelection}}
+\index{stringValueSelection@{stringValueSelection}!TerminalPlayer@{TerminalPlayer}}
+\doxysubsubsection{\texorpdfstring{stringValueSelection()}{stringValueSelection()}}
+{\footnotesize\ttfamily String Terminal\+Player.\+string\+Value\+Selection (\begin{DoxyParamCaption}\item[{String}]{type,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field,  }\item[{int}]{value,  }\item[{int}]{second\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Reimplementat de \mbox{\hyperlink{class_player_a1aa8cfe1b6e921d2d362906b87755c0f}{Player}}.
+
+
+
+Definició a la línia 41 del fitxer Terminal\+Player.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terminal_player_8java}{Terminal\+Player.\+java}}\end{DoxyCompactItemize}

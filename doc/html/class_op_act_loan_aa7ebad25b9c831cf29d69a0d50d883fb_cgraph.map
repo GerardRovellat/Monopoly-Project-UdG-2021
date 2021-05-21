@@ -1,0 +1,6 @@
+<map id="OpActLoan.giveLoan" name="OpActLoan.giveLoan">
+<area shape="rect" id="node1" title="Afageix un prestec al jugador que el reb i treu els diners al jugador que el dona." alt="" coords="5,56,147,83"/>
+<area shape="rect" id="node2" href="$class_player.html#a11d8006a5a2b42c9075f164d63b2ca75" title="Afegeix un préstec a la llista de préstecs del Jugador." alt="" coords="195,5,307,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="199,56,302,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="209,107,293,133"/>
+</map>

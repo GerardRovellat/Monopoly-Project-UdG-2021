@@ -1,0 +1,15 @@
+<map id="Board.tryToSellToAlive" name="Board.tryToSellToAlive">
+<area shape="rect" id="node1" title="Realitzarà una venta per tal d&#39;afrontar el pagament i no quedar&#45;se en fallida." alt="" coords="1097,132,1249,159"/>
+<area shape="rect" id="node2" href="$class_board.html#a4226915e533b1a2b1c357d9baaffb0c5" title="Gestiona les accions per quan el jugador està sense diners ( en fallida )" alt="" coords="927,132,1049,159"/>
+<area shape="rect" id="node3" href="$class_card_pay.html#a387f88f21829ec0d9a63896d2f8b80e3" title="Execucio de la carta." alt="" coords="751,56,873,83"/>
+<area shape="rect" id="node10" href="$class_card_fine.html#aef155cd2c2b932319fede7de45791b45" title="Execucio de la carta." alt="" coords="750,107,874,133"/>
+<area shape="rect" id="node11" href="$class_player.html#aaa4c62368cadefce191815c933b5185a" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="565,157,684,184"/>
+<area shape="rect" id="node12" href="$class_movement.html#ac879f38f0089f9144e53b96fc07797e3" title="Administrarà el pagament dels lloguers en els terrenys amb propietaris." alt="" coords="745,208,879,235"/>
+<area shape="rect" id="node4" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="559,56,690,83"/>
+<area shape="rect" id="node5" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,5,504,32"/>
+<area shape="rect" id="node8" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,56,503,83"/>
+<area shape="rect" id="node9" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,107,495,133"/>
+<area shape="rect" id="node6" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,132,291,159"/>
+<area shape="rect" id="node7" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,132,136,159"/>
+<area shape="rect" id="node13" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="552,208,697,235"/>
+</map>

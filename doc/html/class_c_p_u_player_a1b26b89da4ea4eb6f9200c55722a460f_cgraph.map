@@ -1,0 +1,4 @@
+<map id="CPUPlayer.sellFieldSelect" name="CPUPlayer.sellFieldSelect">
+<area shape="rect" id="node1" title="Seleccio del terreny a la funcio Sell." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="228,5,344,32"/>
+</map>

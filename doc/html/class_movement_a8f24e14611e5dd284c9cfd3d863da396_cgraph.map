@@ -1,0 +1,10 @@
+<map id="Movement.betAction" name="Movement.betAction">
+<area shape="rect" id="node1" title="Administra les accions que s&#39;han de fer si es cau en una Casella d&#39;aposta Bet." alt="" coords="5,157,145,184"/>
+<area shape="rect" id="node2" href="$class_box_bet.html#a642d07f8f6fad4767053dd644e544208" title="Calcula el resultat de una aposta." alt="" coords="213,5,337,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="223,56,326,83"/>
+<area shape="rect" id="node4" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="193,107,356,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="215,157,335,184"/>
+<area shape="rect" id="node6" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="217,208,332,235"/>
+<area shape="rect" id="node7" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="199,259,351,285"/>
+<area shape="rect" id="node8" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="233,309,317,336"/>
+</map>

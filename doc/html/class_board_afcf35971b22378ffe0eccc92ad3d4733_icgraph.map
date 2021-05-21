@@ -1,0 +1,6 @@
+<map id="Board.getBox" name="Board.getBox">
+<area shape="rect" id="node1" title="Getter de la casella on estigui el jugador." alt="" coords="552,5,653,32"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#aa04949af7f2bfa7a8a4c64dfe62d5aa9" title="Retornara la casella actual del Jugador." alt="" coords="339,5,504,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

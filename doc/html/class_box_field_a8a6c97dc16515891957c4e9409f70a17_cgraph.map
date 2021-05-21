@@ -1,0 +1,5 @@
+<map id="BoxField.priceToBuild" name="BoxField.priceToBuild">
+<area shape="rect" id="node1" title="Consulta el preu per construïr el el edifici que correspon." alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$class_box_field.html#a0ffb15c9fe59c8486d1f02aab0a946e5" title="Consulta si es pot contruïr un hotel a terreny." alt="" coords="205,5,363,32"/>
+<area shape="rect" id="node3" href="$class_box_field.html#accb697c6f775d2558fb24684604d98bc" title="Consulta si es pot construïr cases en el terreny." alt="" coords="201,56,367,83"/>
+</map>

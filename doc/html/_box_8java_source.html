@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi Box.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Box.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_box_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_box.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_box.html">Box</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">   11</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>;        </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_box.html#ab08459cb58328b9d185f74522c322487">   12</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>;         </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_box.html#a392238cecf08a6e5f2f336290b54137b">   13</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String <a class="code" href="class_box.html#a392238cecf08a6e5f2f336290b54137b">name</a>;        </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_box.html#a9b18a5732b52519405690919a66e9c7b">   23</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_box.html#a9b18a5732b52519405690919a66e9c7b">Box</a>(<span class="keywordtype">int</span> <a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>,String <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>,String <a class="code" href="class_box.html#a392238cecf08a6e5f2f336290b54137b">name</a>) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        this.position = <a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        this.type = <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this.name = <a class="code" href="class_box.html#a392238cecf08a6e5f2f336290b54137b">name</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_box.html#aea0718df8afc5c94480ba8ca24b5f926">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_box.html#aea0718df8afc5c94480ba8ca24b5f926">getPosition</a>() {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_box.html#a56dec956b37631c7faa911e67e4a437f">   45</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_box.html#a56dec956b37631c7faa911e67e4a437f">getType</a>() { <span class="keywordflow">return</span> this.<a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_box.html#a18f3a70e22b7384eef543baabd96b925">   53</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_box.html#a18f3a70e22b7384eef543baabd96b925">print</a>(ArrayList&lt;Player&gt; players) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        String output_text =<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (this.position &gt; 9) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (this.type.equals(<span class="stringliteral">&quot;FIELD&quot;</span>)) output_text += this.position + <span class="stringliteral">&quot; | &quot;</span> + this.type + <span class="stringliteral">&quot;:   &quot;</span> + this.name + <a class="code" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">playerInPosition</a>(players)+<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">else</span> output_text += this.position + <span class="stringliteral">&quot; | &quot;</span> + this.name + <a class="code" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">playerInPosition</a>(players)+<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (this.type.equals(<span class="stringliteral">&quot;FIELD&quot;</span>)) output_text += this.position + <span class="stringliteral">&quot;  | &quot;</span> + this.type + <span class="stringliteral">&quot;:   &quot;</span> + this.name + <a class="code" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">playerInPosition</a>(players)+<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">else</span> output_text += this.position + <span class="stringliteral">&quot;  | &quot;</span> + this.name + <a class="code" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">playerInPosition</a>(players)+<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> output_text;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">   73</a></span>&#160;    <span class="keyword">private</span> String <a class="code" href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">playerInPosition</a>(ArrayList&lt;Player&gt; players) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        StringBuilder playersInPosition = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="class_player.html">Player</a> aux : players) <span class="keywordflow">if</span> (aux.getPosition()==<a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>) playersInPosition.append(<span class="stringliteral">&quot; | &quot;</span>).append(aux.getName());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> playersInPosition.toString();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00009">Box.java:9</a></div></div>
+<div class="ttc" id="aclass_box_html_a392238cecf08a6e5f2f336290b54137b"><div class="ttname"><a href="class_box.html#a392238cecf08a6e5f2f336290b54137b">Box.name</a></div><div class="ttdeci">final String name</div><div class="ttdoc">Nom de la casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00013">Box.java:13</a></div></div>
+<div class="ttc" id="aclass_box_html_a92add73ab48651b642c3ede2cc268d74"><div class="ttname"><a href="class_box.html#a92add73ab48651b642c3ede2cc268d74">Box.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">Posicio de la casella en el taulell.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00011">Box.java:11</a></div></div>
+<div class="ttc" id="aclass_box_html_ab8a1308041ba6f99aca14e665cea23d3"><div class="ttname"><a href="class_box.html#ab8a1308041ba6f99aca14e665cea23d3">Box.playerInPosition</a></div><div class="ttdeci">String playerInPosition(ArrayList&lt; Player &gt; players)</div><div class="ttdoc">Busca tots els jugadors que estan en aquesta casella i crea un String amb ells.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00073">Box.java:73</a></div></div>
+<div class="ttc" id="aclass_box_html_ab08459cb58328b9d185f74522c322487"><div class="ttname"><a href="class_box.html#ab08459cb58328b9d185f74522c322487">Box.type</a></div><div class="ttdeci">String type</div><div class="ttdoc">Tipus de casella. ( Start, Field, Bet, Luck, DirectComand, Empty )</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00012">Box.java:12</a></div></div>
+<div class="ttc" id="aclass_box_html_aea0718df8afc5c94480ba8ca24b5f926"><div class="ttname"><a href="class_box.html#aea0718df8afc5c94480ba8ca24b5f926">Box.getPosition</a></div><div class="ttdeci">int getPosition()</div><div class="ttdoc">Getter de la posicio de la casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00035">Box.java:35</a></div></div>
+<div class="ttc" id="aclass_box_html_a9b18a5732b52519405690919a66e9c7b"><div class="ttname"><a href="class_box.html#a9b18a5732b52519405690919a66e9c7b">Box.Box</a></div><div class="ttdeci">Box(int position, String type, String name)</div><div class="ttdoc">Constructor de Box.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00023">Box.java:23</a></div></div>
+<div class="ttc" id="aclass_box_html_a18f3a70e22b7384eef543baabd96b925"><div class="ttname"><a href="class_box.html#a18f3a70e22b7384eef543baabd96b925">Box.print</a></div><div class="ttdeci">String print(ArrayList&lt; Player &gt; players)</div><div class="ttdoc">Sortida per pantalla de la informació basica de la casella i, si n'hi ha, el jugador que està en aque...</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00053">Box.java:53</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_box_html_a56dec956b37631c7faa911e67e4a437f"><div class="ttname"><a href="class_box.html#a56dec956b37631c7faa911e67e4a437f">Box.getType</a></div><div class="ttdeci">String getType()</div><div class="ttdoc">Getter del tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00045">Box.java:45</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

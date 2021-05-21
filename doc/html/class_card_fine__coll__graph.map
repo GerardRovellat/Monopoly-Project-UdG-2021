@@ -1,0 +1,5 @@
+<map id="CardFine" name="CardFine">
+<area shape="rect" id="node1" title="Implementa la funcions de la carta de tipus multa." alt="" coords="62,95,137,121"/>
+<area shape="rect" id="node2" href="$class_card.html" title="Implementa la funcions base i comunes totes les cartes." alt="" coords="5,5,55,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="79,5,261,32"/>
+</map>

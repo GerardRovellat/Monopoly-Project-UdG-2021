@@ -1,0 +1,8 @@
+<map id="Monopoly.startGame" name="Monopoly.startGame">
+<area shape="rect" id="node1" title="Inicialitza el joc del Monopoly." alt="" coords="5,81,148,108"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a4a99a635a4bc39a22bcbb85df6f15367" title="Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari." alt="" coords="196,5,376,32"/>
+<area shape="rect" id="node4" href="$class_monopoly.html#ac12f3de240b7812c34b271b2011630d6" title="Demana el numero number_of_players de Jugadors que jugaran al joc del monopoly, han de jugar de dos a..." alt="" coords="199,56,373,83"/>
+<area shape="rect" id="node5" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="205,107,367,133"/>
+<area shape="rect" id="node6" href="$class_board.html#aa0eb1bce909ddaa777b95bdaa003f727" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="233,157,339,184"/>
+<area shape="rect" id="node3" href="$class_board.html#a4b474b33d51dbcfd17ad53673d5bbe3c" title="Afegir un jugador nou a la partida." alt="" coords="424,5,543,32"/>
+</map>

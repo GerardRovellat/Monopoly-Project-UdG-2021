@@ -1,0 +1,6 @@
+<map id="Monopoly.throwDice" name="Monopoly.throwDice">
+<area shape="rect" id="node1" title="Tira els daus d&#39;un torn." alt="" coords="5,56,144,83"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="192,5,355,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="216,56,331,83"/>
+<area shape="rect" id="node4" href="$class_player.html#acd1a5fd336ee36c0bb39a1980306f9eb" title="Retorna el tipus de Jugador el qual la crida." alt="" coords="219,107,328,133"/>
+</map>

@@ -1,0 +1,35 @@
+<map id="Player.payLoans" name="Player.payLoans">
+<area shape="rect" id="node1" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="5,841,124,868"/>
+<area shape="rect" id="node2" href="$class_player_loan.html#aa3f1b20be827a08168a42f0e79f59430" title="Sortida resumida dels préstecs actius de loaned." alt="" coords="179,436,327,463"/>
+<area shape="rect" id="node3" href="$class_player.html#adc5510d3a520618735e2926946b94578" title="Declara el Jugador en fallida." alt="" coords="394,5,551,32"/>
+<area shape="rect" id="node4" href="$class_board.html#a4226915e533b1a2b1c357d9baaffb0c5" title="Gestiona les accions per quan el jugador està sense diners ( en fallida )" alt="" coords="192,537,315,564"/>
+<area shape="rect" id="node24" href="$class_player_loan.html#afc41de0be956f82646845cfb07fc0ba6" title="Consultor per saber si s&#39;ha acabat els torns del préstec." alt="" coords="411,1171,535,1197"/>
+<area shape="rect" id="node25" href="$class_player_loan.html#ab58999b7876d8071d4fc847de0349c24" title="Resta un torn per haver de tornar el préstec." alt="" coords="183,867,324,893"/>
+<area shape="rect" id="node26" href="$class_player_loan.html#a6526a174d4422ba5816cdb7a0a0a994a" title="Acció per pagar el préstec del loaned al loaner." alt="" coords="183,1044,323,1071"/>
+<area shape="rect" id="node28" href="$class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a" title="Calcula el valor que se l&#39;hi haura de tornar al prestador." alt="" coords="613,1120,770,1147"/>
+<area shape="rect" id="node30" href="$class_board.html#ab9e9b86132577cdcacd794e41766602b" title="Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador." alt="" coords="172,816,335,843"/>
+<area shape="rect" id="node5" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="1059,487,1221,513"/>
+<area shape="rect" id="node6" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="1082,157,1198,184"/>
+<area shape="rect" id="node7" href="$class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d" title="Retorna en una llista les targetes sort luckCards del Jugador." alt="" coords="620,664,763,691"/>
+<area shape="rect" id="node8" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="413,715,533,741"/>
+<area shape="rect" id="node9" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="1083,563,1197,589"/>
+<area shape="rect" id="node10" href="$class_movement.html#a313c41da560f06620e21d18e93151990" title="Retorna la classe de sortida de dades." alt="" coords="844,613,987,640"/>
+<area shape="rect" id="node11" href="$class_board.html#abe22e5c208c08cc203e6d49a2fa4d79e" title="Sel·lecciona una opcio al pel metode de isBankrupt." alt="" coords="849,309,982,336"/>
+<area shape="rect" id="node13" href="$class_board.html#a324fe4986e6b6a1787367b93e85334bb" title="Intentara executar una targeta de la ma per tal de no declarar&#45;se en fallida." alt="" coords="383,563,563,589"/>
+<area shape="rect" id="node17" href="$class_board.html#a08472efd73fd491ef591fa115598db54" title="Realitzarà una venta per tal d&#39;afrontar el pagament i no quedar&#45;se en fallida." alt="" coords="397,309,549,336"/>
+<area shape="rect" id="node12" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="1064,309,1216,336"/>
+<area shape="rect" id="node14" href="$class_card_charge.html#a1240043f513d0c6dc40226910f60c4b4" title="Execucio de la carta." alt="" coords="621,613,761,640"/>
+<area shape="rect" id="node16" href="$class_card_charge.html#a2ec6aece3da1435e2565ee37d14ea0d4" title="Getter de la quantitat a cobrar." alt="" coords="611,563,772,589"/>
+<area shape="rect" id="node15" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="864,791,967,817"/>
+<area shape="rect" id="node18" href="$class_op_act_sell.html#ab29c01960c1ffed1ddcb6657353a2f62" title="Mètode per executar el procés de vendre un terreny en propietat d&#39;un jugador." alt="" coords="626,411,757,437"/>
+<area shape="rect" id="node19" href="$class_op_act_sell.html#af007b9b97802180873191724f7a14576" title="Mètode per executar la subhasta d&#39;una venta." alt="" coords="844,512,987,539"/>
+<area shape="rect" id="node20" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="1075,385,1205,412"/>
+<area shape="rect" id="node21" href="$class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6" title="Mètode per sel·leccionar el terreny que es vol vendre." alt="" coords="823,259,1007,285"/>
+<area shape="rect" id="node23" href="$class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1" title="Mètode per sel·leccionar el preu del terreny a vendre." alt="" coords="820,411,1011,437"/>
+<area shape="rect" id="node22" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="1079,259,1201,285"/>
+<area shape="rect" id="node27" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="431,968,515,995"/>
+<area shape="rect" id="node29" href="$class_player_loan.html#adfe37f2e6e1dc62fa39bb9bd6ee69044" title="toString per mostrar la descripció dels préstecs PlayerLoan per text." alt="" coords="405,1069,541,1096"/>
+<area shape="rect" id="node31" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="419,917,526,944"/>
+<area shape="rect" id="node33" href="$class_movement.html#ae43e66f4f896cbf0b200f9ef12dad886" title="Retorna les targetes sort del joc del Monopoly." alt="" coords="404,867,541,893"/>
+<area shape="rect" id="node32" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="642,917,741,944"/>
+</map>

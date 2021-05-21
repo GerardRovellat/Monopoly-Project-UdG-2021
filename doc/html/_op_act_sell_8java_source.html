@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi OpActSell.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OpActSell.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_op_act_sell_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> javafx.util.Pair;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_op_act_sell.html">   13</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_op_act_sell.html">OpActSell</a> <span class="keyword">implements</span> <a class="code" href="interfaceoptional_actions.html">optionalActions</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#ac8bdb3bee67c72608455f04c0ccd951c">   20</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_op_act_sell.html#ac8bdb3bee67c72608455f04c0ccd951c">OpActSell</a>() {}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    @Override <span class="comment">// Heretat d&#39;Object</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#af120868746a627aa0a5abd5bde5fe58c">   29</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_op_act_sell.html#af120868746a627aa0a5abd5bde5fe58c">toString</a>() {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Vendre: posar a la venda una de les teves propietats, incloent-hi els edificis que hi pugui haver-hi.&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#ab29c01960c1ffed1ddcb6657353a2f62">   43</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_sell.html#ab29c01960c1ffed1ddcb6657353a2f62">execute</a>(ArrayList&lt;Player&gt; players,<a class="code" href="class_player.html">Player</a> current_player,<a class="code" href="class_movement.html">Movement</a> m) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_output_manager.html">OutputManager</a> output = m.<a class="code" href="class_movement.html#a313c41da560f06620e21d18e93151990">getOutput</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">boolean</span> is_possible = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(current_player.<a class="code" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">getFields</a>().isEmpty()){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            System.out.println(<span class="stringliteral">&quot;Cap terreny en propietat&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; No te cap terreny en propietat&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            is_possible = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_box_field.html">BoxField</a> field_to_sell = <a class="code" href="class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6">selectFieldToSell</a>(current_player);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span>(field_to_sell != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">int</span> sell_price = <a class="code" href="class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1">selectPriceOfField</a>(current_player,field_to_sell,output);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                Pair&lt;Player,Integer&gt; winner = <a class="code" href="class_op_act_sell.html#af007b9b97802180873191724f7a14576">doAuction</a>(players,current_player,field_to_sell,output,sell_price);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">if</span> (winner.getKey() == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    System.out.println(<span class="stringliteral">&quot;Cap jugador ha comprat la propietat &quot;</span> + field_to_sell.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Cap jugador compra&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    winner.getKey().pay(winner.getValue());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    current_player.<a class="code" href="class_player.html#a99d07341ae4305ddfb6968afc0702286">charge</a>(winner.getValue());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    System.out.println(<span class="stringliteral">&quot;El jugador &quot;</span> + winner.getKey().getName() + <span class="stringliteral">&quot; ha comprat &quot;</span> + field_to_sell.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; per &quot;</span> + winner.getValue());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(winner.getKey().getName() + <span class="stringliteral">&quot;&gt; Compra &quot;</span> + field_to_sell.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; a &quot;</span> + current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot; per &quot;</span> + winner.getValue());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                is_possible = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                System.out.println(<span class="stringliteral">&quot;S&#39;ha cancel·lat la compra&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>()+<span class="stringliteral">&quot;&gt; S&#39;ha cancel·lat la compra&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span>  is_possible;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#af007b9b97802180873191724f7a14576">   87</a></span>&#160;    <span class="keyword">private</span> Pair&lt;Player,Integer&gt; <a class="code" href="class_op_act_sell.html#af007b9b97802180873191724f7a14576">doAuction</a>(ArrayList&lt;Player&gt; players, <a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_box_field.html">BoxField</a> field_to_sell, <a class="code" href="class_output_manager.html">OutputManager</a> output, <span class="keywordtype">int</span> sell_price){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        ArrayList&lt;Player&gt; retired_players = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        ArrayList&lt;Player&gt; auction_players = <span class="keyword">new</span> ArrayList&lt;&gt;(players);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        auction_players.remove(current_player);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">int</span> offer = sell_price, max_offer = sell_price;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_player.html">Player</a> winner = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">while</span> (auction_players.size() &gt; 0) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="class_player.html">Player</a> aux_player : auction_players) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">if</span> (auction_players.size() - retired_players.size() != 1 || winner == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    String name_of_player = aux_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <span class="keywordtype">int</span> current_money = aux_player.getMoney();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    System.out.println(name_of_player + <span class="stringliteral">&quot; tens &quot;</span> + current_money + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    System.out.println(<span class="stringliteral">&quot;Que ofereixes? (-1 per retirar-se):&quot;</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    offer = aux_player.optionSelection(<span class="stringliteral">&quot;sellBuyerOffer&quot;</span>, <span class="keyword">null</span>, field_to_sell, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, offer,<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">while</span> (current_money &lt; offer || offer &lt; max_offer &amp;&amp; offer != -1) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <span class="keywordflow">if</span> (offer &lt; max_offer)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                            System.out.println(<span class="stringliteral">&quot;Erroni, s&#39;ha de superar el import de &quot;</span> + max_offer);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            System.out.println(<span class="stringliteral">&quot;Erroni, no pots pagar més de &quot;</span> + current_money + <span class="stringliteral">&quot;, prova de nou&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                        offer = aux_player.optionSelection(<span class="stringliteral">&quot;sellBuyerOffer&quot;</span>, <span class="keyword">null</span>, field_to_sell, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, offer,<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="keywordflow">if</span> (offer == -1) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        retired_players.add(aux_player);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        System.out.println(name_of_player + <span class="stringliteral">&quot; s&#39;ha retirat de la subhasta&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(<span class="stringliteral">&quot;\t&quot;</span> + name_of_player + <span class="stringliteral">&quot;&gt; Es retira&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        <span class="keywordflow">if</span> (max_offer &lt; offer) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                            max_offer = offer;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                            winner = aux_player;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(<span class="stringliteral">&quot;\t&quot;</span> + name_of_player + <span class="stringliteral">&quot;&gt; Ofereix &quot;</span> + offer + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">if</span>(auction_players.size() == 1 &amp;&amp; winner != <span class="keyword">null</span>) retired_players.addAll(auction_players);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="class_player.html">Player</a> retired : retired_players) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                auction_players.remove(retired);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            retired_players.clear();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Pair&lt;&gt;(winner,max_offer);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1">  139</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1">selectPriceOfField</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_box_field.html">BoxField</a> field_to_sell, <a class="code" href="class_output_manager.html">OutputManager</a> output){</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">int</span> sell_price;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        System.out.println(<span class="stringliteral">&quot;Per quin preu vols començar la venta?&quot;</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        sell_price = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;sellInitalOffer&quot;</span>,<span class="keyword">null</span>,field_to_sell,<span class="keyword">null</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,0,<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        System.out.println(<span class="stringliteral">&quot;La subhasta per &quot;</span> + field_to_sell.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; comença per &quot;</span> + sell_price + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Ven &quot;</span> + field_to_sell.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; per &quot;</span> + sell_price + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> sell_price;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6">  155</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_box_field.html">BoxField</a> <a class="code" href="class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6">selectFieldToSell</a>(<a class="code" href="class_player.html">Player</a> current_player){</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        System.out.println(<span class="stringliteral">&quot;Llistat de terrenys en propietat:&quot;</span>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">int</span> field_nr = 0;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_box_field.html">BoxField</a> field : current_player.<a class="code" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">getFields</a>()) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            System.out.println(<span class="stringliteral">&quot;\t&quot;</span> + field_nr + <span class="stringliteral">&quot;- &quot;</span> + field.getName() + <span class="stringliteral">&quot; (Valor del terreny &quot;</span> + field.getPrice() + <span class="stringliteral">&quot;€)&quot;</span>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            field_nr++;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordtype">int</span> confirm = 1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">int</span> nr_of_fields = field_nr;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="class_box_field.html">BoxField</a> field_to_sell = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">while</span> (confirm == 1) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            System.out.println(<span class="stringliteral">&quot;Quin terreny vols vendre?&quot;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            field_nr = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;sellFieldSelect&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">while</span> (field_nr &lt; 0 || field_nr &gt; nr_of_fields - 1) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                System.out.println(<span class="stringliteral">&quot;Tria una opcio correcte:&quot;</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                field_nr = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;confirmation&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            field_to_sell = current_player.<a class="code" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">getFields</a>().get(field_nr);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            System.out.println(field_to_sell.<a class="code" href="class_box_field.html#aed5292387f7afd1dda1f43271f215d97">toString</a>());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            System.out.println(<span class="stringliteral">&quot;Segur que vols vendre aquesta propietat? (0-Si 1-No 2-Cancel·lar)&quot;</span>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            confirm = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;confirmation&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">while</span> (confirm != 0 &amp;&amp; confirm != 1 &amp;&amp; confirm != 2) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                System.out.println(<span class="stringliteral">&quot;Tria una opcio correcte:&quot;</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                confirm = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;confirmation&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>( confirm == 0) <span class="keywordflow">return</span> field_to_sell;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_box_field_html_aed5292387f7afd1dda1f43271f215d97"><div class="ttname"><a href="class_box_field.html#aed5292387f7afd1dda1f43271f215d97">BoxField.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">toString per mostrar la descripció del terreny Field en text.</div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00235">BoxField.java:235</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_af007b9b97802180873191724f7a14576"><div class="ttname"><a href="class_op_act_sell.html#af007b9b97802180873191724f7a14576">OpActSell.doAuction</a></div><div class="ttdeci">Pair&lt; Player, Integer &gt; doAuction(ArrayList&lt; Player &gt; players, Player current_player, BoxField field_to_sell, OutputManager output, int sell_price)</div><div class="ttdoc">Mètode per executar la subhasta d'una venta.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00087">OpActSell.java:87</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_ad1cedbcc1a4d276dedf27dcc027bcbe1"><div class="ttname"><a href="class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1">OpActSell.selectPriceOfField</a></div><div class="ttdeci">int selectPriceOfField(Player current_player, BoxField field_to_sell, OutputManager output)</div><div class="ttdoc">Mètode per sel·leccionar el preu del terreny a vendre.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00139">OpActSell.java:139</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_ab29c01960c1ffed1ddcb6657353a2f62"><div class="ttname"><a href="class_op_act_sell.html#ab29c01960c1ffed1ddcb6657353a2f62">OpActSell.execute</a></div><div class="ttdeci">boolean execute(ArrayList&lt; Player &gt; players, Player current_player, Movement m)</div><div class="ttdoc">Mètode per executar el procés de vendre un terreny en propietat d'un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00043">OpActSell.java:43</a></div></div>
+<div class="ttc" id="aclass_movement_html"><div class="ttname"><a href="class_movement.html">Movement</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera...</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00011">Movement.java:11</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_ac8bdb3bee67c72608455f04c0ccd951c"><div class="ttname"><a href="class_op_act_sell.html#ac8bdb3bee67c72608455f04c0ccd951c">OpActSell.OpActSell</a></div><div class="ttdeci">OpActSell()</div><div class="ttdoc">Constructor de Sell.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00020">OpActSell.java:20</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_a836e3c44c83c8fd5064de75c10133fb6"><div class="ttname"><a href="class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6">OpActSell.selectFieldToSell</a></div><div class="ttdeci">BoxField selectFieldToSell(Player current_player)</div><div class="ttdoc">Mètode per sel·leccionar el terreny que es vol vendre.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00155">OpActSell.java:155</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html_af120868746a627aa0a5abd5bde5fe58c"><div class="ttname"><a href="class_op_act_sell.html#af120868746a627aa0a5abd5bde5fe58c">OpActSell.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">toString per mostrar la descripció de l'acció Sell per text.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00029">OpActSell.java:29</a></div></div>
+<div class="ttc" id="ainterfaceoptional_actions_html"><div class="ttname"><a href="interfaceoptional_actions.html">optionalActions</a></div><div class="ttdoc">Interficie general d'accions opcionals del joc de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="optional_actions_8java_source.html#l00008">optionalActions.java:8</a></div></div>
+<div class="ttc" id="aclass_player_html_a7b17595bbe9876d4aa469ad9bee644dd"><div class="ttname"><a href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">Player.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Retorna el nom del Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00093">Player.java:93</a></div></div>
+<div class="ttc" id="aclass_box_field_html"><div class="ttname"><a href="class_box_field.html">BoxField</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00009">BoxField.java:9</a></div></div>
+<div class="ttc" id="aclass_player_html_a99d07341ae4305ddfb6968afc0702286"><div class="ttname"><a href="class_player.html#a99d07341ae4305ddfb6968afc0702286">Player.charge</a></div><div class="ttdeci">void charge(int amount)</div><div class="ttdoc">El jugador cobra una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00053">Player.java:53</a></div></div>
+<div class="ttc" id="aclass_output_manager_html_abd9e037fa4547ddf78602038195f596e"><div class="ttname"><a href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">OutputManager.fileWrite</a></div><div class="ttdeci">void fileWrite(String line)</div><div class="ttdoc">Escriu text line al fitxer de desenvolupament de partida dev_file.</div><div class="ttdef"><b>Definition:</b> <a href="_output_manager_8java_source.html#l00044">OutputManager.java:44</a></div></div>
+<div class="ttc" id="aclass_player_html_af0c32e4e32dd886c7ae62af44feeab5c"><div class="ttname"><a href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">Player.optionSelection</a></div><div class="ttdeci">abstract int optionSelection(String type, Player player, BoxField field, ArrayList&lt; Integer &gt; options, ArrayList&lt; Player &gt; players, Card card, int value, ArrayList&lt; optionalActions &gt; optional_actions)</div></div>
+<div class="ttc" id="aclass_player_html_af2aa0edaa9a65bea619ba797d33509bf"><div class="ttname"><a href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">Player.getFields</a></div><div class="ttdeci">ArrayList&lt; BoxField &gt; getFields()</div><div class="ttdoc">Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00181">Player.java:181</a></div></div>
+<div class="ttc" id="aclass_output_manager_html"><div class="ttname"><a href="class_output_manager.html">OutputManager</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les sortides en el nostre cas al fitxer de desenvolupament de par...</div><div class="ttdef"><b>Definition:</b> <a href="_output_manager_8java_source.html#l00011">OutputManager.java:11</a></div></div>
+<div class="ttc" id="aclass_movement_html_a313c41da560f06620e21d18e93151990"><div class="ttname"><a href="class_movement.html#a313c41da560f06620e21d18e93151990">Movement.getOutput</a></div><div class="ttdeci">OutputManager getOutput()</div><div class="ttdoc">Retorna la classe de sortida de dades.</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00462">Movement.java:462</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_box_field_html_a9ce68b8cedc4771e8448051b0ed41ee2"><div class="ttname"><a href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">BoxField.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Getter del nom de la terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00202">BoxField.java:202</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html"><div class="ttname"><a href="class_op_act_sell.html">OpActSell</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00013">OpActSell.java:13</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

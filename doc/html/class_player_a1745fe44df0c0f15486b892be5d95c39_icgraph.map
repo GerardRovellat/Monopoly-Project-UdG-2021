@@ -1,0 +1,5 @@
+<map id="Player.getBankruptcy" name="Player.getBankruptcy">
+<area shape="rect" id="node1" title="Retorna si el Jugador es en fallida o no." alt="" coords="339,5,485,32"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node3" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

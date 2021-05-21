@@ -1,0 +1,7 @@
+<map id="OpActSell.selectPriceOfField" name="OpActSell.selectPriceOfField">
+<area shape="rect" id="node1" title="Mètode per sel·leccionar el preu del terreny a vendre." alt="" coords="5,81,196,108"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="244,5,407,32"/>
+<area shape="rect" id="node3" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="261,56,390,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="268,107,383,133"/>
+<area shape="rect" id="node5" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="249,157,401,184"/>
+</map>

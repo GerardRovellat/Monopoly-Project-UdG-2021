@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi UIFileSelector.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">UIFileSelector.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_u_i_file_selector_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> javax.swing.*;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> java.awt.*;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.awt.event.ActionEvent;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.awt.event.ActionListener;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.io.File;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> java.io.FileReader;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html">   15</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_u_i_file_selector.html">UIFileSelector</a> <span class="keyword">extends</span> JFrame {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a8746c080c47ad115000c7367ed91b7fd">   17</a></span>&#160;    <span class="keyword">private</span> String <a class="code" href="class_u_i_file_selector.html#a8746c080c47ad115000c7367ed91b7fd">rules_name</a>;             </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#ae8580717cc8537924ca3d20b281725bd">   18</a></span>&#160;    <span class="keyword">private</span> String <a class="code" href="class_u_i_file_selector.html#ae8580717cc8537924ca3d20b281725bd">board_name</a>;             </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a26312cc6ffbd06de44772806559a8f14">   19</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_u_i_file_selector.html#a26312cc6ffbd06de44772806559a8f14">status</a> = <span class="keyword">false</span>;        </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a4c9ab512c68ccff1ca33115e38abf963">   26</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_u_i_file_selector.html#a4c9ab512c68ccff1ca33115e38abf963">UIFileSelector</a>(){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        setSize(750,750);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        setTitle(<span class="stringliteral">&quot;MONOPOLY CONFIG&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        setLocationRelativeTo(<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_u_i_file_selector.html#afe3ce04185fc0390776e1bdfb0644a70">startComponents</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#afe3ce04185fc0390776e1bdfb0644a70">   38</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#afe3ce04185fc0390776e1bdfb0644a70">startComponents</a>() {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        JPanel panel = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        panel.setBackground(Color.GRAY);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        panel.setLayout(<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this.getContentPane().add(panel);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_u_i_file_selector.html#aa13aa80e61ba2b23c6b0d7e51c901789">createLabels</a>(panel);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        JButton browse_rules_button = <span class="keyword">new</span> JButton();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        JButton browse_board_button = <span class="keyword">new</span> JButton();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        JButton next_button = <span class="keyword">new</span> JButton();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a1b0cbb846cffd5f15f3a170ab278ef2f">defineButtons</a>(browse_rules_button,browse_board_button,next_button,panel);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        JTextField rules_field = <span class="keyword">new</span> JTextField();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        JTextField board_field = <span class="keyword">new</span> JTextField();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a521305e60807eee9745b4a3b935461a8">defineTextFields</a>(rules_field,board_field,panel);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        JTextArea rules_text_area = <span class="keyword">new</span> JTextArea();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        JTextArea board_text_area = <span class="keyword">new</span> JTextArea();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a28512fceaf0fcec17a5d14c4b8c9b7b0">defineTextAreas</a>(rules_text_area,board_text_area,panel);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703">createBrowseButtonAction</a>(browse_rules_button,rules_field,rules_text_area,<span class="stringliteral">&quot;rules&quot;</span>,panel);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703">createBrowseButtonAction</a>(browse_board_button,board_field,board_text_area,<span class="stringliteral">&quot;board&quot;</span>,panel);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_u_i_file_selector.html#a5f6622e6a29b535aaf01c7799437f1c8">createNextButtonAction</a>(next_button);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#ab93ec3ffd5f542944e11efef360d0df9">   63</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_u_i_file_selector.html#ab93ec3ffd5f542944e11efef360d0df9">getRulesFileName</a>(){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_u_i_file_selector.html#a8746c080c47ad115000c7367ed91b7fd">rules_name</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a3429e358ba395bc46fda166e2fed253a">   72</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_u_i_file_selector.html#a3429e358ba395bc46fda166e2fed253a">getBoardFileName</a>(){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_u_i_file_selector.html#ae8580717cc8537924ca3d20b281725bd">board_name</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a093126e469944543d893e3ec218467e5">   81</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="class_u_i_file_selector.html#a093126e469944543d893e3ec218467e5">getStatus</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_u_i_file_selector.html#a26312cc6ffbd06de44772806559a8f14">status</a>; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#aa13aa80e61ba2b23c6b0d7e51c901789">   88</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#aa13aa80e61ba2b23c6b0d7e51c901789">createLabels</a>(JPanel panel){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        JLabel rules = <span class="keyword">new</span> JLabel();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        JLabel board = <span class="keyword">new</span> JLabel();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        rules.setText(<span class="stringliteral">&quot;Fitxer de regles:&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        board.setText(<span class="stringliteral">&quot;Fitxer de tauler:&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        rules.setBounds(50, 20, 100, 30);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        board.setBounds(400, 20, 100, 30);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        panel.add(rules);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        panel.add(board);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a1b0cbb846cffd5f15f3a170ab278ef2f">  104</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#a1b0cbb846cffd5f15f3a170ab278ef2f">defineButtons</a>(JButton browse_rules_button, JButton browse_board_button, JButton next_button, JPanel panel){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        browse_rules_button.setText(<span class="stringliteral">&quot;Browse&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        browse_board_button.setText(<span class="stringliteral">&quot;Browse&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        browse_rules_button.setBounds(150, 20, 100, 30);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        browse_board_button.setBounds(500, 20, 100, 30);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        panel.add(browse_rules_button);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        panel.add(browse_board_button);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        next_button.setText(<span class="stringliteral">&quot;Següent&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        next_button.setBounds(600, 650, 100, 30);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        panel.add(next_button);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        next_button.setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a521305e60807eee9745b4a3b935461a8">  123</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#a521305e60807eee9745b4a3b935461a8">defineTextFields</a>(JTextField rules_field, JTextField board_field, JPanel panel){</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        rules_field.setBounds(50, 60, 300, 30);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        board_field.setBounds(400, 60, 300, 30);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        panel.add(rules_field);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        panel.add(board_field);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a28512fceaf0fcec17a5d14c4b8c9b7b0">  135</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#a28512fceaf0fcec17a5d14c4b8c9b7b0">defineTextAreas</a>(JTextArea rules_text_area, JTextArea board_text_area , JPanel panel){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        JScrollPane scroll_rules = <span class="keyword">new</span> JScrollPane(rules_text_area);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        JScrollPane scroll_board = <span class="keyword">new</span> JScrollPane(board_text_area);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        rules_text_area.setEditable(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        scroll_rules.setBounds(50, 120, 300, 525);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        scroll_rules.setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        panel.add(scroll_rules);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        board_text_area.setEditable(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        scroll_board.setBounds(400, 120, 300, 525);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        scroll_board.setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        panel.add(scroll_board);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703">  154</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703">createBrowseButtonAction</a>(JButton browse_button, JTextField browse_field, JTextArea browse_textarea, String name_button, JPanel panel){</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        ActionListener browse_action = e -&gt; {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            File file;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">int</span> response;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            JFileChooser board_file_chooser = <span class="keyword">new</span> JFileChooser(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            response = board_file_chooser.showOpenDialog(panel);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">if</span> (response == JFileChooser.APPROVE_OPTION) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">if</span>(name_button.equals(<span class="stringliteral">&quot;rules&quot;</span>)){</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    file = board_file_chooser.getSelectedFile();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    <a class="code" href="class_u_i_file_selector.html#a8746c080c47ad115000c7367ed91b7fd">rules_name</a> = file.getPath();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    file = board_file_chooser.getSelectedFile();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <a class="code" href="class_u_i_file_selector.html#ae8580717cc8537924ca3d20b281725bd">board_name</a> = file.getPath();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                browse_field.setText(file.getPath());</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">try</span> (FileReader fr = <span class="keyword">new</span> FileReader(file)) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    StringBuilder cadena = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    <span class="keywordtype">int</span> valor = fr.read();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    <span class="keywordflow">while</span> (valor != -1) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        cadena.append((<span class="keywordtype">char</span>) valor);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        valor = fr.read();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    browse_textarea.setText(cadena.toString());</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                } <span class="keywordflow">catch</span> (IOException exception) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    exception.printStackTrace();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        };</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        browse_button.addActionListener(browse_action);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_u_i_file_selector.html#a5f6622e6a29b535aaf01c7799437f1c8">  191</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_u_i_file_selector.html#a5f6622e6a29b535aaf01c7799437f1c8">createNextButtonAction</a>(JButton next_button){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        ActionListener next_action = e -&gt; {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="class_u_i_file_selector.html#a26312cc6ffbd06de44772806559a8f14">status</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            dispose();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        };</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        next_button.addActionListener(next_action);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_u_i_file_selector_html_a1b0cbb846cffd5f15f3a170ab278ef2f"><div class="ttname"><a href="class_u_i_file_selector.html#a1b0cbb846cffd5f15f3a170ab278ef2f">UIFileSelector.defineButtons</a></div><div class="ttdeci">void defineButtons(JButton browse_rules_button, JButton browse_board_button, JButton next_button, JPanel panel)</div><div class="ttdoc">Afegeix botos a la finestra.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00104">UIFileSelector.java:104</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a093126e469944543d893e3ec218467e5"><div class="ttname"><a href="class_u_i_file_selector.html#a093126e469944543d893e3ec218467e5">UIFileSelector.getStatus</a></div><div class="ttdeci">boolean getStatus()</div><div class="ttdoc">Getter de estat de finestra status.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00081">UIFileSelector.java:81</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a4c9ab512c68ccff1ca33115e38abf963"><div class="ttname"><a href="class_u_i_file_selector.html#a4c9ab512c68ccff1ca33115e38abf963">UIFileSelector.UIFileSelector</a></div><div class="ttdeci">UIFileSelector()</div><div class="ttdoc">Constructor de UIFileSelector().</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00026">UIFileSelector.java:26</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a26312cc6ffbd06de44772806559a8f14"><div class="ttname"><a href="class_u_i_file_selector.html#a26312cc6ffbd06de44772806559a8f14">UIFileSelector.status</a></div><div class="ttdeci">boolean status</div><div class="ttdoc">Estat de selector de fitxers, true si s'ha sel·leccionat false altrament.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00019">UIFileSelector.java:19</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_ae8580717cc8537924ca3d20b281725bd"><div class="ttname"><a href="class_u_i_file_selector.html#ae8580717cc8537924ca3d20b281725bd">UIFileSelector.board_name</a></div><div class="ttdeci">String board_name</div><div class="ttdoc">Ruta fitxer de tauler.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00018">UIFileSelector.java:18</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a8feac289402f2bccbe652d7ae1539703"><div class="ttname"><a href="class_u_i_file_selector.html#a8feac289402f2bccbe652d7ae1539703">UIFileSelector.createBrowseButtonAction</a></div><div class="ttdeci">void createBrowseButtonAction(JButton browse_button, JTextField browse_field, JTextArea browse_textarea, String name_button, JPanel panel)</div><div class="ttdoc">Crea les accions pels botons browse.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00154">UIFileSelector.java:154</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a8746c080c47ad115000c7367ed91b7fd"><div class="ttname"><a href="class_u_i_file_selector.html#a8746c080c47ad115000c7367ed91b7fd">UIFileSelector.rules_name</a></div><div class="ttdeci">String rules_name</div><div class="ttdoc">Ruta fitxer de regles.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00017">UIFileSelector.java:17</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html"><div class="ttname"><a href="class_u_i_file_selector.html">UIFileSelector</a></div><div class="ttdoc">Implementació d'un selector de fitxers gràfic per poder jugar al Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00015">UIFileSelector.java:15</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_ab93ec3ffd5f542944e11efef360d0df9"><div class="ttname"><a href="class_u_i_file_selector.html#ab93ec3ffd5f542944e11efef360d0df9">UIFileSelector.getRulesFileName</a></div><div class="ttdeci">String getRulesFileName()</div><div class="ttdoc">Getter de nom de fitxer regles rules_name.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00063">UIFileSelector.java:63</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a3429e358ba395bc46fda166e2fed253a"><div class="ttname"><a href="class_u_i_file_selector.html#a3429e358ba395bc46fda166e2fed253a">UIFileSelector.getBoardFileName</a></div><div class="ttdeci">String getBoardFileName()</div><div class="ttdoc">Getter de nom de fitxer tauler board_name.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00072">UIFileSelector.java:72</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a5f6622e6a29b535aaf01c7799437f1c8"><div class="ttname"><a href="class_u_i_file_selector.html#a5f6622e6a29b535aaf01c7799437f1c8">UIFileSelector.createNextButtonAction</a></div><div class="ttdeci">void createNextButtonAction(JButton next_button)</div><div class="ttdoc">Crea les accions pel boto next.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00191">UIFileSelector.java:191</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a521305e60807eee9745b4a3b935461a8"><div class="ttname"><a href="class_u_i_file_selector.html#a521305e60807eee9745b4a3b935461a8">UIFileSelector.defineTextFields</a></div><div class="ttdeci">void defineTextFields(JTextField rules_field, JTextField board_field, JPanel panel)</div><div class="ttdoc">Afegeix camps de text a la finestra.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00123">UIFileSelector.java:123</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_a28512fceaf0fcec17a5d14c4b8c9b7b0"><div class="ttname"><a href="class_u_i_file_selector.html#a28512fceaf0fcec17a5d14c4b8c9b7b0">UIFileSelector.defineTextAreas</a></div><div class="ttdeci">void defineTextAreas(JTextArea rules_text_area, JTextArea board_text_area, JPanel panel)</div><div class="ttdoc">Afegeix areas de text a la finestra.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00135">UIFileSelector.java:135</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_aa13aa80e61ba2b23c6b0d7e51c901789"><div class="ttname"><a href="class_u_i_file_selector.html#aa13aa80e61ba2b23c6b0d7e51c901789">UIFileSelector.createLabels</a></div><div class="ttdeci">void createLabels(JPanel panel)</div><div class="ttdoc">Crea etiquetes i les afegeix a la finestra.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00088">UIFileSelector.java:88</a></div></div>
+<div class="ttc" id="aclass_u_i_file_selector_html_afe3ce04185fc0390776e1bdfb0644a70"><div class="ttname"><a href="class_u_i_file_selector.html#afe3ce04185fc0390776e1bdfb0644a70">UIFileSelector.startComponents</a></div><div class="ttdeci">void startComponents()</div><div class="ttdoc">Inicialitza i crea tota la finestra.</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_file_selector_8java_source.html#l00038">UIFileSelector.java:38</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

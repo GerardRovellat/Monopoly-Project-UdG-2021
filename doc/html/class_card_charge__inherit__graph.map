@@ -1,0 +1,4 @@
+<map id="CardCharge" name="CardCharge">
+<area shape="rect" id="node1" title="Implementa la funcions de la carta de tipus cobrar." alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node2" href="$class_card.html" title="Implementa la funcions base i comunes totes les cartes." alt="" coords="26,5,75,32"/>
+</map>

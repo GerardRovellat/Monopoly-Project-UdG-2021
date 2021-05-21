@@ -1,0 +1,8 @@
+<map id="Jerarquia Gràfica de la Classe" name="Jerarquia Gràfica de la Classe">
+<area shape="rect" id="node1" href="$class_box.html" title="Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella." alt="" coords="5,107,51,133"/>
+<area shape="rect" id="node2" href="$class_box_bet.html" title=" " alt="" coords="135,5,201,32"/>
+<area shape="rect" id="node3" href="$class_box_direct_command.html" title=" " alt="" coords="99,56,237,83"/>
+<area shape="rect" id="node4" href="$class_box_empty.html" title=" " alt="" coords="127,107,209,133"/>
+<area shape="rect" id="node5" href="$class_box_field.html" title=" " alt="" coords="131,157,205,184"/>
+<area shape="rect" id="node6" href="$class_box_start.html" title=" " alt="" coords="131,208,205,235"/>
+</map>

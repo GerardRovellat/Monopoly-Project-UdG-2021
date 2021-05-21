@@ -1,0 +1,4 @@
+<map id="CPUPlayer" name="CPUPlayer">
+<area shape="rect" id="node1" title="Jugador controlat per el ordinador." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node2" href="$class_player.html" title="Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a..." alt="" coords="19,5,78,32"/>
+</map>

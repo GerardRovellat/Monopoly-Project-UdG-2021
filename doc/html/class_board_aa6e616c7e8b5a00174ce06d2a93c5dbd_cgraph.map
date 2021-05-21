@@ -1,0 +1,4 @@
+<map id="Board.numberOfAgrupationField" name="Board.numberOfAgrupationField">
+<area shape="rect" id="node1" title="Retorna el contador de propietats amb el grup igual a group_name." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$class_box_field.html#a5f6fd5b9e9aa1256faf0a45c2421e91b" title="Getter de la agrupació del terreny." alt="" coords="232,13,363,39"/>
+</map>

@@ -1,0 +1,301 @@
+\hypertarget{class_op_act_sell}{}\doxysection{Referència de la Classe Op\+Act\+Sell}
+\label{class_op_act_sell}\index{OpActSell@{OpActSell}}
+
+
+Diagrama d\textquotesingle{}Herència per a Op\+Act\+Sell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_op_act_sell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Op\+Act\+Sell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_op_act_sell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_op_act_sell_ac8bdb3bee67c72608455f04c0ccd951c}{Op\+Act\+Sell}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de Sell. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_op_act_sell_af120868746a627aa0a5abd5bde5fe58c}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String per mostrar la descripció de l\textquotesingle{}acció Sell per text. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62}{execute}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_movement}{Movement}} m)
+\begin{DoxyCompactList}\small\item\em Mètode per executar el procés de vendre un terreny en propietat d\textquotesingle{}un jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+Pair$<$ \mbox{\hyperlink{class_player}{Player}}, Integer $>$ \mbox{\hyperlink{class_op_act_sell_af007b9b97802180873191724f7a14576}{do\+Auction}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field\+\_\+to\+\_\+sell, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output, int sell\+\_\+price)
+\begin{DoxyCompactList}\small\item\em Mètode per executar la subhasta d\textquotesingle{}una venta. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_op_act_sell_ad1cedbcc1a4d276dedf27dcc027bcbe1}{select\+Price\+Of\+Field}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field\+\_\+to\+\_\+sell, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output)
+\begin{DoxyCompactList}\small\item\em Mètode per sel·leccionar el preu del terreny a vendre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_box_field}{Box\+Field}} \mbox{\hyperlink{class_op_act_sell_a836e3c44c83c8fd5064de75c10133fb6}{select\+Field\+To\+Sell}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player)
+\begin{DoxyCompactList}\small\item\em Mètode per sel·leccionar el terreny que es vol vendre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 13 del fitxer Op\+Act\+Sell.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_op_act_sell_ac8bdb3bee67c72608455f04c0ccd951c}\label{class_op_act_sell_ac8bdb3bee67c72608455f04c0ccd951c}} 
+\index{OpActSell@{OpActSell}!OpActSell@{OpActSell}}
+\index{OpActSell@{OpActSell}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{OpActSell()}{OpActSell()}}
+{\footnotesize\ttfamily Op\+Act\+Sell.\+Op\+Act\+Sell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de Sell. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una acció opcional Sell. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 20 del fitxer Op\+Act\+Sell.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_op_act_sell_af007b9b97802180873191724f7a14576}\label{class_op_act_sell_af007b9b97802180873191724f7a14576}} 
+\index{OpActSell@{OpActSell}!doAuction@{doAuction}}
+\index{doAuction@{doAuction}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{doAuction()}{doAuction()}}
+{\footnotesize\ttfamily Pair$<$\mbox{\hyperlink{class_player}{Player}},Integer$>$ Op\+Act\+Sell.\+do\+Auction (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field\+\_\+to\+\_\+sell,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output,  }\item[{int}]{sell\+\_\+price }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mètode per executar la subhasta d\textquotesingle{}una venta. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La subhasta ha estat realitzada. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & Array\+List de jugadors que estan jugant al \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em current\+\_\+player} & Jugador que fa la venda. \\
+\hline
+{\em field\+\_\+to\+\_\+sell} & Terreny a subhastar. \\
+\hline
+{\em output} & Fitxer desenvolupament partida. \\
+\hline
+{\em sell\+\_\+price} & Preu inicial de venta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el jugador guanyador i el preu pel que l\textquotesingle{}ha comprat, altrament torna jugador null. 
+\end{DoxyReturn}
+
+
+Definició a la línia 87 del fitxer Op\+Act\+Sell.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_op_act_sell_af007b9b97802180873191724f7a14576_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_af007b9b97802180873191724f7a14576_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62}\label{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62}} 
+\index{OpActSell@{OpActSell}!execute@{execute}}
+\index{execute@{execute}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily boolean Op\+Act\+Sell.\+execute (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Mètode per executar el procés de vendre un terreny en propietat d\textquotesingle{}un jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+Jugador {\ttfamily current\+\_\+player} != null i Moviment {\ttfamily m} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Una propietat del jugador ha estat venuda al guanyador de la subhasta, en cas contrari no ha estat venuda i la subhasta no té guanyador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & Array\+List de jugadors que estan jugant al \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em current\+\_\+player} & Jugador que fa la venda. \\
+\hline
+{\em m} & Moviment que crida Sell, en aquesta implementació, {\ttfamily m} no és usada però s\textquotesingle{}ha de passar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si el procés s\textquotesingle{}ha realitzat, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interfaceoptional_actions_aa808202808d24920969b6fff8036b085}{optional\+Actions}}.
+
+
+
+Definició a la línia 43 del fitxer Op\+Act\+Sell.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_sell_a836e3c44c83c8fd5064de75c10133fb6}\label{class_op_act_sell_a836e3c44c83c8fd5064de75c10133fb6}} 
+\index{OpActSell@{OpActSell}!selectFieldToSell@{selectFieldToSell}}
+\index{selectFieldToSell@{selectFieldToSell}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{selectFieldToSell()}{selectFieldToSell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_box_field}{Box\+Field}} Op\+Act\+Sell.\+select\+Field\+To\+Sell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mètode per sel·leccionar el terreny que es vol vendre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily current\+\_\+player} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Propietat a vendre sel·leccionada. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la venda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un terreny {\ttfamily Field}, null en cas de cancel·lar-\/se. 
+\end{DoxyReturn}
+
+
+Definició a la línia 155 del fitxer Op\+Act\+Sell.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_a836e3c44c83c8fd5064de75c10133fb6_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_a836e3c44c83c8fd5064de75c10133fb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_sell_ad1cedbcc1a4d276dedf27dcc027bcbe1}\label{class_op_act_sell_ad1cedbcc1a4d276dedf27dcc027bcbe1}} 
+\index{OpActSell@{OpActSell}!selectPriceOfField@{selectPriceOfField}}
+\index{selectPriceOfField@{selectPriceOfField}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{selectPriceOfField()}{selectPriceOfField()}}
+{\footnotesize\ttfamily int Op\+Act\+Sell.\+select\+Price\+Of\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field\+\_\+to\+\_\+sell,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mètode per sel·leccionar el preu del terreny a vendre. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily current\+\_\+player} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Preu a vendre sel·leccionat. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la venda. \\
+\hline
+{\em field\+\_\+to\+\_\+sell} & Terreny a vendre \\
+\hline
+{\em output} & Fitxer a escriure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el preu {\ttfamily sell\+\_\+price} a vendre. 
+\end{DoxyReturn}
+
+
+Definició a la línia 139 del fitxer Op\+Act\+Sell.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_ad1cedbcc1a4d276dedf27dcc027bcbe1_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_sell_ad1cedbcc1a4d276dedf27dcc027bcbe1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_sell_af120868746a627aa0a5abd5bde5fe58c}\label{class_op_act_sell_af120868746a627aa0a5abd5bde5fe58c}} 
+\index{OpActSell@{OpActSell}!toString@{toString}}
+\index{toString@{toString}!OpActSell@{OpActSell}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Op\+Act\+Sell.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String per mostrar la descripció de l\textquotesingle{}acció Sell per text. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Mostra la descripció de Sell 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+String de la sortida per pantalla de Sell 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interfaceoptional_actions_aa3f4f90ebe50b040febd46a902a67973}{optional\+Actions}}.
+
+
+
+Definició a la línia 29 del fitxer Op\+Act\+Sell.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_op_act_sell_8java}{Op\+Act\+Sell.\+java}}\end{DoxyCompactItemize}

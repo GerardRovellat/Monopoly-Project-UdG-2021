@@ -1,0 +1,4 @@
+<map id="CardGet.fieldSelect" name="CardGet.fieldSelect">
+<area shape="rect" id="node1" title="Mostra tots els terreyns del jugador i deixa escollir a un d&#39;ells." alt="" coords="173,5,308,32"/>
+<area shape="rect" id="node2" href="$class_card_get.html#a3288800fb9d6c105d5dada1e889f2092" title="Execucio de la carta." alt="" coords="5,5,125,32"/>
+</map>

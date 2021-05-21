@@ -1,0 +1,4 @@
+<map id="OpActLoan.offer" name="OpActLoan.offer">
+<area shape="rect" id="node1" title="Demana al jugador la quantiat que vol demanar." alt="" coords="191,5,305,32"/>
+<area shape="rect" id="node2" href="$class_op_act_loan.html#a4c600503963ae54c4e34952b58052981" title="Mètode per executar el procés de demanar un préstec a un Jugador." alt="" coords="5,5,143,32"/>
+</map>

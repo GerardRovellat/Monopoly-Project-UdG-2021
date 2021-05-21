@@ -1,0 +1,5 @@
+<map id="PlayerLoan.toString" name="PlayerLoan.toString">
+<area shape="rect" id="node1" title="toString per mostrar la descripció dels préstecs PlayerLoan per text." alt="" coords="5,31,141,57"/>
+<area shape="rect" id="node2" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="211,5,325,32"/>
+<area shape="rect" id="node3" href="$class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a" title="Calcula el valor que se l&#39;hi haura de tornar al prestador." alt="" coords="189,56,347,83"/>
+</map>

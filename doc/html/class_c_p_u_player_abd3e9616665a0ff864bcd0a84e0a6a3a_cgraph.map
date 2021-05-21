@@ -1,0 +1,5 @@
+<map id="CPUPlayer.betValue" name="CPUPlayer.betValue">
+<area shape="rect" id="node1" title="Seleciona la millor aposta a fer depenguent de la quanitat apostada." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a278087129dabc5c8a078fcd1a30661f7" title="Seleciona la millor quanitat a apostar ( el 10% del seu capital )" alt="" coords="195,5,352,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="400,5,520,32"/>
+</map>

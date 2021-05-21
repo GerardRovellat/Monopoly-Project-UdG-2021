@@ -1,0 +1,4 @@
+<map id="Board.getBox" name="Board.getBox">
+<area shape="rect" id="node1" title="Getter de la casella on estigui el jugador." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node2" href="$class_player.html#a983b2356365ed49c2ed2d50bd96c494c" title="Retorna la posició del Jugador el qual la crida." alt="" coords="155,5,283,32"/>
+</map>

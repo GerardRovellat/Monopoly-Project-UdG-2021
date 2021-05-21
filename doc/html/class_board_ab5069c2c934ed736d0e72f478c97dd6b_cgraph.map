@@ -1,0 +1,6 @@
+<map id="Board.haveAvailableFields" name="Board.haveAvailableFields">
+<area shape="rect" id="node1" title="Comprova si queden terrenys sense propietari." alt="" coords="5,31,177,57"/>
+<area shape="rect" id="node2" href="$class_board.html#a3012e670a81918123e667ce8debe34b7" title="Comprova si la casella te propietari." alt="" coords="225,31,348,57"/>
+<area shape="rect" id="node3" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="403,5,517,32"/>
+<area shape="rect" id="node4" href="$class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="396,56,524,83"/>
+</map>

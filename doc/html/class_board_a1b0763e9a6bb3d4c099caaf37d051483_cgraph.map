@@ -1,0 +1,18 @@
+<map id="Board.movePlayer" name="Board.movePlayer">
+<area shape="rect" id="node1" title="Moure el jugador de casella i gestionar el pas per la casella de inici." alt="" coords="5,233,132,260"/>
+<area shape="rect" id="node2" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="208,5,315,32"/>
+<area shape="rect" id="node3" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="427,31,526,57"/>
+<area shape="rect" id="node4" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="210,107,313,133"/>
+<area shape="rect" id="node5" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="180,157,343,184"/>
+<area shape="rect" id="node6" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="197,208,326,235"/>
+<area shape="rect" id="node7" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="204,259,319,285"/>
+<area shape="rect" id="node8" href="$class_player.html#a983b2356365ed49c2ed2d50bd96c494c" title="Retorna la posició del Jugador el qual la crida." alt="" coords="197,309,325,336"/>
+<area shape="rect" id="node9" href="$class_player.html#ad19e380b8797c0887cf5ab1dab4675b5" title="Mou el Jugador a una posició position final en el tauler." alt="" coords="196,360,327,387"/>
+<area shape="rect" id="node10" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="185,411,337,437"/>
+<area shape="rect" id="node11" href="$class_board.html#ab6918c30c851902511b1e371997aa491" title="Genera una casella de terreny de forma aleatoria." alt="" coords="196,461,327,488"/>
+<area shape="rect" id="node12" href="$class_box.html#a56dec956b37631c7faa911e67e4a437f" title="Getter del tipus de casella." alt="" coords="429,411,524,437"/>
+<area shape="rect" id="node13" href="$class_board.html#ab5069c2c934ed736d0e72f478c97dd6b" title="Comprova si queden terrenys sense propietari." alt="" coords="391,461,563,488"/>
+<area shape="rect" id="node16" href="$class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="781,512,909,539"/>
+<area shape="rect" id="node14" href="$class_board.html#a3012e670a81918123e667ce8debe34b7" title="Comprova si la casella te propietari." alt="" coords="611,461,733,488"/>
+<area shape="rect" id="node15" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="788,461,903,488"/>
+</map>

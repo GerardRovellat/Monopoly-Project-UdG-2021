@@ -1,0 +1,85 @@
+\hypertarget{interfaceoptional_actions}{}\doxysection{Referència de la Classe optional\+Actions}
+\label{interfaceoptional_actions}\index{optionalActions@{optionalActions}}
+
+
+Interficie general d\textquotesingle{}accions opcionals del joc de \mbox{\hyperlink{class_monopoly}{Monopoly}}.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a optional\+Actions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceoptional_actions__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interfaceoptional_actions_aa3f4f90ebe50b040febd46a902a67973}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String que tindra cada acciño opcional per tal de mostrar la seva funcio. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceoptional_actions_aa808202808d24920969b6fff8036b085}{execute}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_movement}{Movement}} aux)
+\begin{DoxyCompactList}\small\item\em Execució d\textquotesingle{}una acció opcional, depenent de quina, farà una funcio o altre descrita en el seu fitxer java corresponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Interficie general d\textquotesingle{}accions opcionals del joc de \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+Definició a la línia 8 del fitxer optional\+Actions.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{interfaceoptional_actions_aa808202808d24920969b6fff8036b085}\label{interfaceoptional_actions_aa808202808d24920969b6fff8036b085}} 
+\index{optionalActions@{optionalActions}!execute@{execute}}
+\index{execute@{execute}!optionalActions@{optionalActions}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily boolean optional\+Actions.\+execute (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{aux }\end{DoxyParamCaption})}
+
+
+
+Execució d\textquotesingle{}una acció opcional, depenent de quina, farà una funcio o altre descrita en el seu fitxer java corresponent. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna {\ttfamily true} si l\textquotesingle{}acció s\textquotesingle{}ha realitzat correctament, {\ttfamily false} altrament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si s\textquotesingle{}ha pogut realitzar l\textquotesingle{}acció, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_op_act_sell_ab29c01960c1ffed1ddcb6657353a2f62}{Op\+Act\+Sell}}, \mbox{\hyperlink{class_op_act_buy_a0d1872644b11887f0ff12fb45fe8dbed}{Op\+Act\+Buy}}, \mbox{\hyperlink{class_op_act_luck_card_aebc6fda8c92cbd9ba0be0344a53c8f52}{Op\+Act\+Luck\+Card}} i \mbox{\hyperlink{class_op_act_loan_a4c600503963ae54c4e34952b58052981}{Op\+Act\+Loan}}.
+
+\mbox{\Hypertarget{interfaceoptional_actions_aa3f4f90ebe50b040febd46a902a67973}\label{interfaceoptional_actions_aa3f4f90ebe50b040febd46a902a67973}} 
+\index{optionalActions@{optionalActions}!toString@{toString}}
+\index{toString@{toString}!optionalActions@{optionalActions}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String optional\+Actions.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String que tindra cada acciño opcional per tal de mostrar la seva funcio. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La informació ha sigut mostrada per pantalla. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Informació especifica de cada acció opcional. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_op_act_sell_af120868746a627aa0a5abd5bde5fe58c}{Op\+Act\+Sell}}, \mbox{\hyperlink{class_op_act_luck_card_a81e7bca544ed46d2d40fbdd58bb67ac5}{Op\+Act\+Luck\+Card}}, \mbox{\hyperlink{class_op_act_loan_abf22526000b59bbe525ff52603b3458e}{Op\+Act\+Loan}} i \mbox{\hyperlink{class_op_act_buy_a56a52d1ec4207b2b492d0d8a4c597bcf}{Op\+Act\+Buy}}.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{optional_actions_8java}{optional\+Actions.\+java}}\end{DoxyCompactItemize}

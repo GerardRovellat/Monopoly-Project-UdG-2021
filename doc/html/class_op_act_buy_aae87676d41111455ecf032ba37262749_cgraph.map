@@ -1,0 +1,8 @@
+<map id="OpActBuy.startOffer" name="OpActBuy.startOffer">
+<area shape="rect" id="node1" title="Demana al jugador el valor de la seva oferta inicial." alt="" coords="5,107,144,133"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="192,5,355,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="213,56,333,83"/>
+<area shape="rect" id="node4" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="209,107,338,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="216,157,331,184"/>
+<area shape="rect" id="node6" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="197,208,349,235"/>
+</map>

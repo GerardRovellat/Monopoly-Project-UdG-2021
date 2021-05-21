@@ -1,0 +1,7 @@
+<map id="Board.toString" name="Board.toString">
+<area shape="rect" id="node1" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="529,56,635,83"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00" title="Gestiona la finalització del joc de Monopoly." alt="" coords="341,5,479,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,56,291,83"/>
+<area shape="rect" id="node5" href="$class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="339,107,481,133"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,56,136,83"/>
+</map>

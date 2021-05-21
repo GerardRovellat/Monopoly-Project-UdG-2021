@@ -1,0 +1,7 @@
+<map id="Board.addPlayer" name="Board.addPlayer">
+<area shape="rect" id="node1" title="Afegir un jugador nou a la partida." alt="" coords="757,5,876,32"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a4a99a635a4bc39a22bcbb85df6f15367" title="Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari." alt="" coords="529,5,709,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="339,5,481,32"/>
+<area shape="rect" id="node4" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node5" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

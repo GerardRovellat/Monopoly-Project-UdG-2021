@@ -1,0 +1,1012 @@
+\hypertarget{class_player}{}\doxysection{Referència de la Classe Player}
+\label{class_player}\index{Player@{Player}}
+
+
+Classe de Jugador del \mbox{\hyperlink{class_monopoly}{Monopoly}}. En aquesta classe hi haura tota la informació del jugador i algunes accions que pot fer el jugador en si.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a5dee93484551e3bae301e389d9b282dd}{Player}} (String \mbox{\hyperlink{class_player_a88be288918be24fa02f6ec4cc7232558}{name}}, int initial\+\_\+money, int initial\+\_\+position, String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_player}{Player}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a3415b58dac5e2ad7b803782793016b62}{pay}} (int amount)
+\begin{DoxyCompactList}\small\item\em El Jugador paga una quantitat de diners {\ttfamily amount} determinada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a99d07341ae4305ddfb6968afc0702286}{charge}} (int amount)
+\begin{DoxyCompactList}\small\item\em El jugador cobra una quantitat de diners {\ttfamily amount} determinada. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \mbox{\hyperlink{class_player_a13ab2ae07c7f479aa7f2ca3fb2aefa1d}{get\+Luck\+Cards}} ()
+\begin{DoxyCompactList}\small\item\em Retorna en una llista les targetes sort {\ttfamily luck\+Cards} del Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8a4f43e04ff718a1bf4321d994ebdaff}{add\+Luck\+Card}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Afegeix una targeta sort {\ttfamily card} a la propietat del Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ac13c308723e750efc6ef723aa78a7e2c}{remove\+Luck\+Card}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Elimina una targeta sort {\ttfamily card} de la propietat del Jugador. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_player_a7b17595bbe9876d4aa469ad9bee644dd}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el nom del Jugador el qual la crida. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_player_acd1a5fd336ee36c0bb39a1980306f9eb}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el tipus de Jugador el qual la crida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a983b2356365ed49c2ed2d50bd96c494c}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la posició del Jugador el qual la crida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a7f1f07fbebec188292866cba55d9a290}{get\+Money}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els diners que té el Jugador en possessió. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a9ad6ad3ab34c971020a42e10dfd4a775}{number\+Of\+Buildings\+Affordable}} (int price)
+\begin{DoxyCompactList}\small\item\em Calcula el nombre de apartaments que es pot permetre costruir al preu entrat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ad19e380b8797c0887cf5ab1dab4675b5}{move\+Player}} (int \mbox{\hyperlink{class_player_afdb8ba2752c6eecb3e14c77be0421025}{position}})
+\begin{DoxyCompactList}\small\item\em Mou el Jugador a una posició {\ttfamily position} final en el tauler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ae275ec6392df9695a70e10e999c7d428}{add\+Box}} (\mbox{\hyperlink{class_box_field}{Box\+Field}} box)
+\begin{DoxyCompactList}\small\item\em Afegeix un terreny a la propietat d\textquotesingle{}un Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_acbb8a4a17c54e635177740c76e9e4b13}{remove\+Box}} (\mbox{\hyperlink{class_box}{Box}} box)
+\begin{DoxyCompactList}\small\item\em Elimina un terreny a la propietat d\textquotesingle{}un Jugador. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{class_box_field}{Box\+Field}} $>$ \mbox{\hyperlink{class_player_af2aa0edaa9a65bea619ba797d33509bf}{get\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la llista {\ttfamily boxes\+\_\+in\+\_\+property} de terrenys que te en propietat el Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_adc5510d3a520618735e2926946b94578}{go\+To\+Bankruptcy}} ()
+\begin{DoxyCompactList}\small\item\em Declara el Jugador en fallida. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_player_a9f23c9c0e1d47fe21ea6488c788c296b}{have\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Retorna si el Jugador te terrenys en propietat o no. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{class_player_loan}{Player\+Loan}} $>$ \mbox{\hyperlink{class_player_ad3ce0835b1597d279f6fd36d762ade50}{get\+Loans}} ()
+\item 
+Boolean \mbox{\hyperlink{class_player_a1745fe44df0c0f15486b892be5d95c39}{get\+Bankruptcy}} ()
+\begin{DoxyCompactList}\small\item\em Retorna si el Jugador es en fallida o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a11d8006a5a2b42c9075f164d63b2ca75}{add\+Loan}} (\mbox{\hyperlink{class_player}{Player}} loaner, int value, int interest, int torns)
+\begin{DoxyCompactList}\small\item\em Afegeix un préstec a la llista de préstecs del Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aaa4c62368cadefce191815c933b5185a}{pay\+Loans}} (\mbox{\hyperlink{class_board}{Board}} board, \mbox{\hyperlink{class_movement}{Movement}} movement)
+\begin{DoxyCompactList}\small\item\em Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s\textquotesingle{}han de pagar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a9ea5fb70441cceeea352cb3a73ad66d1}{number\+Of\+Agrupation\+Field}} (String group\+\_\+name)
+\begin{DoxyCompactList}\small\item\em calcula el numero de terrenys de la agrupacio passada que te en propietat el jugador \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_player_aa9e1a689ebd0700ec2453d31007e86bb}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String per mostrar l\textquotesingle{}informació de \mbox{\hyperlink{class_player}{Player}} per text. \end{DoxyCompactList}\item 
+abstract int \mbox{\hyperlink{class_player_af0c32e4e32dd886c7ae62af44feeab5c}{option\+Selection}} (String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}}, \mbox{\hyperlink{class_player}{Player}} player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field, Array\+List$<$ Integer $>$ options, Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_card}{Card}} card, int value, Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$ optional\+\_\+actions)
+\item 
+abstract String \mbox{\hyperlink{class_player_a1aa8cfe1b6e921d2d362906b87755c0f}{string\+Value\+Selection}} (String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}}, \mbox{\hyperlink{class_player}{Player}} player, \mbox{\hyperlink{class_box_field}{Box\+Field}} field, int value, int second\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+final String \mbox{\hyperlink{class_player_a88be288918be24fa02f6ec4cc7232558}{name}}
+\begin{DoxyCompactList}\small\item\em Nom del Jugador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_aed37167e4117c2518a154e73fbfc103c}{money}}
+\begin{DoxyCompactList}\small\item\em Diners del Jugador. \end{DoxyCompactList}\item 
+final Array\+List$<$ \mbox{\hyperlink{class_box_field}{Box\+Field}} $>$ \mbox{\hyperlink{class_player_afb3077403bf1bc6f28284d83ecf1dc73}{boxes\+\_\+in\+\_\+property}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Llista terrenys en propietat del Jugador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_afdb8ba2752c6eecb3e14c77be0421025}{position}}
+\begin{DoxyCompactList}\small\item\em Posició del Jugador. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \mbox{\hyperlink{class_player_a0060de56b3f0dd430843f23060545257}{luck\+Cards}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Llista targetes sort. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_player_afab6a6c866e0456486fcb30a0ebb7f2e}{bankruptcy}} = false
+\begin{DoxyCompactList}\small\item\em Estat fallida jugador. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{class_player_loan}{Player\+Loan}} $>$ \mbox{\hyperlink{class_player_a2be48e0805bb95a6c03bd9b9cc3b4571}{loans}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Llista de préstecs del Jugador. \end{DoxyCompactList}\item 
+final String \mbox{\hyperlink{class_player_ae9ea9ec6d49badfc2aedc233191233d9}{type}}
+\begin{DoxyCompactList}\small\item\em Tipus de jugador ( C\+PU, U\+S\+ER ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe de Jugador del \mbox{\hyperlink{class_monopoly}{Monopoly}}. En aquesta classe hi haura tota la informació del jugador i algunes accions que pot fer el jugador en si. 
+
+Definició a la línia 10 del fitxer Player.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_player_a5dee93484551e3bae301e389d9b282dd}\label{class_player_a5dee93484551e3bae301e389d9b282dd}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player.\+Player (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{initial\+\_\+money,  }\item[{int}]{initial\+\_\+position,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_player}{Player}}. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un jugador amb els atributs entrats. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em name} & nom del Jugador. \\
+\hline
+{\em initial\+\_\+money} & quantitat de diners inicials dels que disposa un Jugador. \\
+\hline
+{\em initial\+\_\+position} & posició inicial del Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 30 del fitxer Player.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_player_ae275ec6392df9695a70e10e999c7d428}\label{class_player_ae275ec6392df9695a70e10e999c7d428}} 
+\index{Player@{Player}!addBox@{addBox}}
+\index{addBox@{addBox}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addBox()}{addBox()}}
+{\footnotesize\ttfamily void Player.\+add\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{box }\end{DoxyParamCaption})}
+
+
+
+Afegeix un terreny a la propietat d\textquotesingle{}un Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily box} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\ttfamily box} ha estat afegit a la llista de propietats {\ttfamily boxes\+\_\+in\+\_\+property} de Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em box} & terreny que serà afegit a la propietat de Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 158 del fitxer Player.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_player_ae275ec6392df9695a70e10e999c7d428_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_ae275ec6392df9695a70e10e999c7d428_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a11d8006a5a2b42c9075f164d63b2ca75}\label{class_player_a11d8006a5a2b42c9075f164d63b2ca75}} 
+\index{Player@{Player}!addLoan@{addLoan}}
+\index{addLoan@{addLoan}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addLoan()}{addLoan()}}
+{\footnotesize\ttfamily void Player.\+add\+Loan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{loaner,  }\item[{int}]{value,  }\item[{int}]{interest,  }\item[{int}]{torns }\end{DoxyParamCaption})}
+
+
+
+Afegeix un préstec a la llista de préstecs del Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily loaner} != null, {\ttfamily torns} $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El préstec ha estat afegit a la llista de préstecs {\ttfamily loans} de Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em loaner} & Jugador que ha prestat diners a Jugador. \\
+\hline
+{\em value} & valor a retornar a {\ttfamily loaner}. \\
+\hline
+{\em interest} & interes del préstec. \\
+\hline
+{\em torns} & numero de torns el qual s\textquotesingle{}ha de tornar el préstec del Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 228 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a11d8006a5a2b42c9075f164d63b2ca75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a8a4f43e04ff718a1bf4321d994ebdaff}\label{class_player_a8a4f43e04ff718a1bf4321d994ebdaff}} 
+\index{Player@{Player}!addLuckCard@{addLuckCard}}
+\index{addLuckCard@{addLuckCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addLuckCard()}{addLuckCard()}}
+{\footnotesize\ttfamily void Player.\+add\+Luck\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Afegeix una targeta sort {\ttfamily card} a la propietat del Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily card} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La targeta {\ttfamily card} ha estat afegida a la llista de targetes sort del Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em card} & targeta que es vol afegir a les targetes de sort {\ttfamily luck\+Cards} del Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 73 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a8a4f43e04ff718a1bf4321d994ebdaff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a99d07341ae4305ddfb6968afc0702286}\label{class_player_a99d07341ae4305ddfb6968afc0702286}} 
+\index{Player@{Player}!charge@{charge}}
+\index{charge@{charge}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{charge()}{charge()}}
+{\footnotesize\ttfamily void Player.\+charge (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+El jugador cobra una quantitat de diners {\ttfamily amount} determinada. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily amount} $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La quantitat entrada {\ttfamily amount} ha estat sumada de {\ttfamily money} del Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em amount} & quantitat a cobrar \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 53 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a99d07341ae4305ddfb6968afc0702286_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a1745fe44df0c0f15486b892be5d95c39}\label{class_player_a1745fe44df0c0f15486b892be5d95c39}} 
+\index{Player@{Player}!getBankruptcy@{getBankruptcy}}
+\index{getBankruptcy@{getBankruptcy}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getBankruptcy()}{getBankruptcy()}}
+{\footnotesize\ttfamily Boolean Player.\+get\+Bankruptcy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna si el Jugador es en fallida o no. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+És retorna {\ttfamily true} si Jugador es en fallida, {\ttfamily false} altrament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si {\ttfamily bakruptcy} es {\ttfamily true}, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Definició a la línia 215 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a1745fe44df0c0f15486b892be5d95c39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_af2aa0edaa9a65bea619ba797d33509bf}\label{class_player_af2aa0edaa9a65bea619ba797d33509bf}} 
+\index{Player@{Player}!getFields@{getFields}}
+\index{getFields@{getFields}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getFields()}{getFields()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_box_field}{Box\+Field}}$>$ Player.\+get\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la llista {\ttfamily boxes\+\_\+in\+\_\+property} de terrenys que te en propietat el Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La llista {\ttfamily boces\+\_\+in\+\_\+property} ha estat retornada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Array\+List que contindrà tots els terrenys en propeitat del Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 181 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_af2aa0edaa9a65bea619ba797d33509bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_ad3ce0835b1597d279f6fd36d762ade50}\label{class_player_ad3ce0835b1597d279f6fd36d762ade50}} 
+\index{Player@{Player}!getLoans@{getLoans}}
+\index{getLoans@{getLoans}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getLoans()}{getLoans()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_player_loan}{Player\+Loan}}$>$ Player.\+get\+Loans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definició a la línia 205 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_ad3ce0835b1597d279f6fd36d762ade50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a13ab2ae07c7f479aa7f2ca3fb2aefa1d}\label{class_player_a13ab2ae07c7f479aa7f2ca3fb2aefa1d}} 
+\index{Player@{Player}!getLuckCards@{getLuckCards}}
+\index{getLuckCards@{getLuckCards}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getLuckCards()}{getLuckCards()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_card}{Card}}$>$ Player.\+get\+Luck\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna en una llista les targetes sort {\ttfamily luck\+Cards} del Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\ttfamily luck\+Cards} ha estat retornada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+List de targetes sort del Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 63 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a13ab2ae07c7f479aa7f2ca3fb2aefa1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a7f1f07fbebec188292866cba55d9a290}\label{class_player_a7f1f07fbebec188292866cba55d9a290}} 
+\index{Player@{Player}!getMoney@{getMoney}}
+\index{getMoney@{getMoney}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMoney()}{getMoney()}}
+{\footnotesize\ttfamily int Player.\+get\+Money (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els diners que té el Jugador en possessió. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els diners {\ttfamily money} del Jugador han estat retornats. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+int que contindrà els diners {\ttfamily money} de Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 125 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a7f1f07fbebec188292866cba55d9a290_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a7b17595bbe9876d4aa469ad9bee644dd}\label{class_player_a7b17595bbe9876d4aa469ad9bee644dd}} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String Player.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el nom del Jugador el qual la crida. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El nom del Jugador {\ttfamily name} ha estat tornat. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+String que contindrà el nom {\ttfamily name} del Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 93 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a7b17595bbe9876d4aa469ad9bee644dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a983b2356365ed49c2ed2d50bd96c494c}\label{class_player_a983b2356365ed49c2ed2d50bd96c494c}} 
+\index{Player@{Player}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Player.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició del Jugador el qual la crida. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+la posició del Jugador {\ttfamily position} ha estat tornada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+int que contindrà la {\ttfamily position} del Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 114 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a983b2356365ed49c2ed2d50bd96c494c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_acd1a5fd336ee36c0bb39a1980306f9eb}\label{class_player_acd1a5fd336ee36c0bb39a1980306f9eb}} 
+\index{Player@{Player}!getType@{getType}}
+\index{getType@{getType}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily String Player.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el tipus de Jugador el qual la crida. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El tipus del Jugador {\ttfamily type} ha estat tornat. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+String que contindrà el tipus {\ttfamily type} del Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 103 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_acd1a5fd336ee36c0bb39a1980306f9eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_adc5510d3a520618735e2926946b94578}\label{class_player_adc5510d3a520618735e2926946b94578}} 
+\index{Player@{Player}!goToBankruptcy@{goToBankruptcy}}
+\index{goToBankruptcy@{goToBankruptcy}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{goToBankruptcy()}{goToBankruptcy()}}
+{\footnotesize\ttfamily void Player.\+go\+To\+Bankruptcy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Declara el Jugador en fallida. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El jugador ha estat declarat en fallida. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 191 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_adc5510d3a520618735e2926946b94578_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a9f23c9c0e1d47fe21ea6488c788c296b}\label{class_player_a9f23c9c0e1d47fe21ea6488c788c296b}} 
+\index{Player@{Player}!haveFields@{haveFields}}
+\index{haveFields@{haveFields}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{haveFields()}{haveFields()}}
+{\footnotesize\ttfamily boolean Player.\+have\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna si el Jugador te terrenys en propietat o no. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+És retorna {\ttfamily true} si Jugador te terrenys, {\ttfamily false} altrament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si {\ttfamily boxes\+\_\+in\+\_\+property} no es buida, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Definició a la línia 201 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a9f23c9c0e1d47fe21ea6488c788c296b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_ad19e380b8797c0887cf5ab1dab4675b5}\label{class_player_ad19e380b8797c0887cf5ab1dab4675b5}} 
+\index{Player@{Player}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily void Player.\+move\+Player (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Mou el Jugador a una posició {\ttfamily position} final en el tauler. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily postion} $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El Jugador ha sigut mogut a {\ttfamily position} del tauler. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em position} & posició final a la qual el Jugador s\textquotesingle{}ha de moure. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 147 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_ad19e380b8797c0887cf5ab1dab4675b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a9ea5fb70441cceeea352cb3a73ad66d1}\label{class_player_a9ea5fb70441cceeea352cb3a73ad66d1}} 
+\index{Player@{Player}!numberOfAgrupationField@{numberOfAgrupationField}}
+\index{numberOfAgrupationField@{numberOfAgrupationField}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{numberOfAgrupationField()}{numberOfAgrupationField()}}
+{\footnotesize\ttfamily int Player.\+number\+Of\+Agrupation\+Field (\begin{DoxyParamCaption}\item[{String}]{group\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+calcula el numero de terrenys de la agrupacio passada que te en propietat el jugador 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el numero de terrenys de la agrupacio passada s\textquotesingle{}ha retornat 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em group\+\_\+name} & nom de la agrupacio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+numero de terrenys de la agrupacio passada 
+\end{DoxyReturn}
+
+
+Definició a la línia 264 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a9ea5fb70441cceeea352cb3a73ad66d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a9ad6ad3ab34c971020a42e10dfd4a775}\label{class_player_a9ad6ad3ab34c971020a42e10dfd4a775}} 
+\index{Player@{Player}!numberOfBuildingsAffordable@{numberOfBuildingsAffordable}}
+\index{numberOfBuildingsAffordable@{numberOfBuildingsAffordable}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{numberOfBuildingsAffordable()}{numberOfBuildingsAffordable()}}
+{\footnotesize\ttfamily int Player.\+number\+Of\+Buildings\+Affordable (\begin{DoxyParamCaption}\item[{int}]{price }\end{DoxyParamCaption})}
+
+
+
+Calcula el nombre de apartaments que es pot permetre costruir al preu entrat. 
+
+\begin{DoxyPrecond}{Precondició}
+price $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el nombre de apartaments construïbles ha estat retornada 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em price} & preu de un apartament \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int que contindrà el nombre de apartaments construibles 
+\end{DoxyReturn}
+
+
+Definició a la línia 136 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a9ad6ad3ab34c971020a42e10dfd4a775_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_af0c32e4e32dd886c7ae62af44feeab5c}\label{class_player_af0c32e4e32dd886c7ae62af44feeab5c}} 
+\index{Player@{Player}!optionSelection@{optionSelection}}
+\index{optionSelection@{optionSelection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{optionSelection()}{optionSelection()}}
+{\footnotesize\ttfamily abstract int Player.\+option\+Selection (\begin{DoxyParamCaption}\item[{String}]{type,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field,  }\item[{Array\+List$<$ Integer $>$}]{options,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_card}{Card}}}]{card,  }\item[{int}]{value,  }\item[{Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$}]{optional\+\_\+actions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Reimplementat a \mbox{\hyperlink{class_terminal_player_a931bb287d3478c0eff416fc6e2ef587b}{Terminal\+Player}} i \mbox{\hyperlink{class_c_p_u_player_a5d1cd463222aa331912fc633449ba2f4}{C\+P\+U\+Player}}.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_af0c32e4e32dd886c7ae62af44feeab5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a3415b58dac5e2ad7b803782793016b62}\label{class_player_a3415b58dac5e2ad7b803782793016b62}} 
+\index{Player@{Player}!pay@{pay}}
+\index{pay@{pay}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{pay()}{pay()}}
+{\footnotesize\ttfamily void Player.\+pay (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+El Jugador paga una quantitat de diners {\ttfamily amount} determinada. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily amount} $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La quantitat entrada {\ttfamily amount} ha estat restada de {\ttfamily money} del Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em amount} & quantitat a pagar \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 43 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a3415b58dac5e2ad7b803782793016b62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_aaa4c62368cadefce191815c933b5185a}\label{class_player_aaa4c62368cadefce191815c933b5185a}} 
+\index{Player@{Player}!payLoans@{payLoans}}
+\index{payLoans@{payLoans}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{payLoans()}{payLoans()}}
+{\footnotesize\ttfamily void Player.\+pay\+Loans (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}}}]{board,  }\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{movement }\end{DoxyParamCaption})}
+
+
+
+Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s\textquotesingle{}han de pagar. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+els préstecs que han finalitzat s\textquotesingle{}han retornat i gestionat els torns dels que no 
+\end{DoxyPostcond}
+
+
+Definició a la línia 238 del fitxer Player.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_aaa4c62368cadefce191815c933b5185a_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_aaa4c62368cadefce191815c933b5185a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_acbb8a4a17c54e635177740c76e9e4b13}\label{class_player_acbb8a4a17c54e635177740c76e9e4b13}} 
+\index{Player@{Player}!removeBox@{removeBox}}
+\index{removeBox@{removeBox}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeBox()}{removeBox()}}
+{\footnotesize\ttfamily void Player.\+remove\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_box}{Box}}}]{box }\end{DoxyParamCaption})}
+
+
+
+Elimina un terreny a la propietat d\textquotesingle{}un Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily box} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\ttfamily box} ha estat eliminat de la llista de propietats {\ttfamily boxes\+\_\+in\+\_\+property} de Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em box} & terreny que serà eliminat de la propietat de Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 171 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_acbb8a4a17c54e635177740c76e9e4b13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_ac13c308723e750efc6ef723aa78a7e2c}\label{class_player_ac13c308723e750efc6ef723aa78a7e2c}} 
+\index{Player@{Player}!removeLuckCard@{removeLuckCard}}
+\index{removeLuckCard@{removeLuckCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeLuckCard()}{removeLuckCard()}}
+{\footnotesize\ttfamily void Player.\+remove\+Luck\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Elimina una targeta sort {\ttfamily card} de la propietat del Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily card} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La targeta {\ttfamily card} ha estat eliminada de la llista de targetes sort del Jugador. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em card} & targeta que es vol eliminar de les targetes de sort {\ttfamily luck\+Cards} del Jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 83 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_ac13c308723e750efc6ef723aa78a7e2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_a1aa8cfe1b6e921d2d362906b87755c0f}\label{class_player_a1aa8cfe1b6e921d2d362906b87755c0f}} 
+\index{Player@{Player}!stringValueSelection@{stringValueSelection}}
+\index{stringValueSelection@{stringValueSelection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stringValueSelection()}{stringValueSelection()}}
+{\footnotesize\ttfamily abstract String Player.\+string\+Value\+Selection (\begin{DoxyParamCaption}\item[{String}]{type,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{field,  }\item[{int}]{value,  }\item[{int}]{second\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Reimplementat a \mbox{\hyperlink{class_terminal_player_a8e0efde053f99b3564128b698010ab9f}{Terminal\+Player}} i \mbox{\hyperlink{class_c_p_u_player_a7c79dc3099d47467b30a3c2b31806983}{C\+P\+U\+Player}}.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a1aa8cfe1b6e921d2d362906b87755c0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_aa9e1a689ebd0700ec2453d31007e86bb}\label{class_player_aa9e1a689ebd0700ec2453d31007e86bb}} 
+\index{Player@{Player}!toString@{toString}}
+\index{toString@{toString}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Player.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String per mostrar l\textquotesingle{}informació de \mbox{\hyperlink{class_player}{Player}} per text. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+\mbox{\hyperlink{class_player}{Player}} ha estat mostrat per pantalla amb tota la seva informació per poder seguir la partida adequadament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+String buida. 
+\end{DoxyReturn}
+
+
+Definició a la línia 279 del fitxer Player.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_aa9e1a689ebd0700ec2453d31007e86bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_player_afab6a6c866e0456486fcb30a0ebb7f2e}\label{class_player_afab6a6c866e0456486fcb30a0ebb7f2e}} 
+\index{Player@{Player}!bankruptcy@{bankruptcy}}
+\index{bankruptcy@{bankruptcy}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{bankruptcy}{bankruptcy}}
+{\footnotesize\ttfamily boolean Player.\+bankruptcy = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estat fallida jugador. 
+
+
+
+Reimplementat a \mbox{\hyperlink{class_c_p_u_player_aea846f6a680d1c60f3ee6567fe9b448b}{C\+P\+U\+Player}}.
+
+
+
+Definició a la línia 17 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_afb3077403bf1bc6f28284d83ecf1dc73}\label{class_player_afb3077403bf1bc6f28284d83ecf1dc73}} 
+\index{Player@{Player}!boxes\_in\_property@{boxes\_in\_property}}
+\index{boxes\_in\_property@{boxes\_in\_property}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{boxes\_in\_property}{boxes\_in\_property}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{class_box_field}{Box\+Field}}$>$ Player.\+boxes\+\_\+in\+\_\+property = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista terrenys en propietat del Jugador. 
+
+
+
+Definició a la línia 14 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_a2be48e0805bb95a6c03bd9b9cc3b4571}\label{class_player_a2be48e0805bb95a6c03bd9b9cc3b4571}} 
+\index{Player@{Player}!loans@{loans}}
+\index{loans@{loans}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{loans}{loans}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_player_loan}{Player\+Loan}}$>$ Player.\+loans = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista de préstecs del Jugador. 
+
+
+
+Definició a la línia 18 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_a0060de56b3f0dd430843f23060545257}\label{class_player_a0060de56b3f0dd430843f23060545257}} 
+\index{Player@{Player}!luckCards@{luckCards}}
+\index{luckCards@{luckCards}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{luckCards}{luckCards}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_card}{Card}}$>$ Player.\+luck\+Cards = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista targetes sort. 
+
+
+
+Definició a la línia 16 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_aed37167e4117c2518a154e73fbfc103c}\label{class_player_aed37167e4117c2518a154e73fbfc103c}} 
+\index{Player@{Player}!money@{money}}
+\index{money@{money}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{money}{money}}
+{\footnotesize\ttfamily int Player.\+money\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Diners del Jugador. 
+
+
+
+Definició a la línia 13 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_a88be288918be24fa02f6ec4cc7232558}\label{class_player_a88be288918be24fa02f6ec4cc7232558}} 
+\index{Player@{Player}!name@{name}}
+\index{name@{name}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily final String Player.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nom del Jugador. 
+
+
+
+Definició a la línia 12 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_afdb8ba2752c6eecb3e14c77be0421025}\label{class_player_afdb8ba2752c6eecb3e14c77be0421025}} 
+\index{Player@{Player}!position@{position}}
+\index{position@{position}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily int Player.\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Posició del Jugador. 
+
+
+
+Definició a la línia 15 del fitxer Player.\+java.
+
+\mbox{\Hypertarget{class_player_ae9ea9ec6d49badfc2aedc233191233d9}\label{class_player_ae9ea9ec6d49badfc2aedc233191233d9}} 
+\index{Player@{Player}!type@{type}}
+\index{type@{type}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily final String Player.\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tipus de jugador ( C\+PU, U\+S\+ER ) 
+
+
+
+Definició a la línia 19 del fitxer Player.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8java}{Player.\+java}}\end{DoxyCompactItemize}

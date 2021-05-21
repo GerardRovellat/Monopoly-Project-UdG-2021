@@ -1,0 +1,4 @@
+<map id="Player.removeLuckCard" name="Player.removeLuckCard">
+<area shape="rect" id="node1" title="Elimina una targeta sort card de la propietat del Jugador." alt="" coords="217,5,376,32"/>
+<area shape="rect" id="node2" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="5,5,169,32"/>
+</map>

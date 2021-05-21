@@ -1,0 +1,395 @@
+\hypertarget{class_op_act_buy}{}\doxysection{Referència de la Classe Op\+Act\+Buy}
+\label{class_op_act_buy}\index{OpActBuy@{OpActBuy}}
+
+
+Diagrama d\textquotesingle{}Herència per a Op\+Act\+Buy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_op_act_buy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Op\+Act\+Buy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_op_act_buy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_op_act_buy_a1538cf467679d2f0f23eea8f711ea264}{Op\+Act\+Buy}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de Buy. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_op_act_buy_a56a52d1ec4207b2b492d0d8a4c597bcf}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String per mostrar la descripció de l\textquotesingle{}acció Buy per text. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_op_act_buy_a0d1872644b11887f0ff12fb45fe8dbed}{execute}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_movement}{Movement}} m)
+\begin{DoxyCompactList}\small\item\em Mètode per executar el procés de compra un terreny en propietat d\textquotesingle{}un jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_op_act_buy_a790ced1d700e20a70e2c8ee624902b63}{player\+Select}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player, Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output)
+\begin{DoxyCompactList}\small\item\em Mostra tots els jugadors amb terrenys i deixa escollir a un d\textquotesingle{}ells per comprar-\/li un terreny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_box_field}{Box\+Field}} \mbox{\hyperlink{class_op_act_buy_a28475659037e5369a8b5b73ef6946137}{field\+Select}} (\mbox{\hyperlink{class_player}{Player}} buy\+\_\+player)
+\begin{DoxyCompactList}\small\item\em Mostra tots els terreyns del jugador i deixa escollir a un d\textquotesingle{}ells per comprar\textquotesingle{}l-\/ho. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_op_act_buy_aae87676d41111455ecf032ba37262749}{start\+Offer}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_box_field}{Box\+Field}} buy\+\_\+field, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output)
+\begin{DoxyCompactList}\small\item\em Demana al jugador el valor de la seva oferta inicial. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_op_act_buy_a90029c95447e26b98f9c15c921064bbd}{buy\+Negociation}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_player}{Player}} buy\+\_\+player, \mbox{\hyperlink{class_box_field}{Box\+Field}} buy\+\_\+field, int initial\+\_\+offer, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output)
+\begin{DoxyCompactList}\small\item\em Gestiona la negociacio de la compra del terreny. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_op_act_buy_ad6957fa3590c1aa28ed7b9ab04034c6e}{buy}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player, \mbox{\hyperlink{class_player}{Player}} buy\+\_\+player, \mbox{\hyperlink{class_box_field}{Box\+Field}} buy\+\_\+field, int final\+\_\+offer)
+\begin{DoxyCompactList}\small\item\em Gestiona la negociacio de la compra del terreny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 10 del fitxer Op\+Act\+Buy.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_op_act_buy_a1538cf467679d2f0f23eea8f711ea264}\label{class_op_act_buy_a1538cf467679d2f0f23eea8f711ea264}} 
+\index{OpActBuy@{OpActBuy}!OpActBuy@{OpActBuy}}
+\index{OpActBuy@{OpActBuy}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{OpActBuy()}{OpActBuy()}}
+{\footnotesize\ttfamily Op\+Act\+Buy.\+Op\+Act\+Buy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de Buy. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una acció opcional Buy. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 17 del fitxer Op\+Act\+Buy.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_op_act_buy_ad6957fa3590c1aa28ed7b9ab04034c6e}\label{class_op_act_buy_ad6957fa3590c1aa28ed7b9ab04034c6e}} 
+\index{OpActBuy@{OpActBuy}!buy@{buy}}
+\index{buy@{buy}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{buy()}{buy()}}
+{\footnotesize\ttfamily boolean Op\+Act\+Buy.\+buy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{buy\+\_\+player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{buy\+\_\+field,  }\item[{int}]{final\+\_\+offer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la negociacio de la compra del terreny. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la compra \\
+\hline
+{\em buy\+\_\+player} & Jugador que ven el terreny \\
+\hline
+{\em buy\+\_\+field} & Terreny a comprar \\
+\hline
+{\em final\+\_\+offer} & Oferta final \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true si s\textquotesingle{}ha comprat el terreny, false altrament 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el boolean indicant si la compra s\textquotesingle{}ha dut a terme s\textquotesingle{}ha retornat 
+\end{DoxyPostcond}
+
+
+Definició a la línia 182 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_buy_ad6957fa3590c1aa28ed7b9ab04034c6e_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_buy_ad6957fa3590c1aa28ed7b9ab04034c6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_a90029c95447e26b98f9c15c921064bbd}\label{class_op_act_buy_a90029c95447e26b98f9c15c921064bbd}} 
+\index{OpActBuy@{OpActBuy}!buyNegociation@{buyNegociation}}
+\index{buyNegociation@{buyNegociation}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{buyNegociation()}{buyNegociation()}}
+{\footnotesize\ttfamily boolean Op\+Act\+Buy.\+buy\+Negociation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{buy\+\_\+player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{buy\+\_\+field,  }\item[{int}]{initial\+\_\+offer,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la negociacio de la compra del terreny. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la compra \\
+\hline
+{\em buy\+\_\+player} & Jugador que ven el terreny \\
+\hline
+{\em buy\+\_\+field} & Terreny a comprar \\
+\hline
+{\em initial\+\_\+offer} & Oferta inicial \\
+\hline
+{\em output} & sortida al fitxer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true si s\textquotesingle{}ha comprat el terreny, false altrament 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el boolean indicant si la compra s\textquotesingle{}ha dut a terme s\textquotesingle{}ha retornat 
+\end{DoxyPostcond}
+
+
+Definició a la línia 145 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_buy_a90029c95447e26b98f9c15c921064bbd_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_op_act_buy_a90029c95447e26b98f9c15c921064bbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_a0d1872644b11887f0ff12fb45fe8dbed}\label{class_op_act_buy_a0d1872644b11887f0ff12fb45fe8dbed}} 
+\index{OpActBuy@{OpActBuy}!execute@{execute}}
+\index{execute@{execute}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily boolean Op\+Act\+Buy.\+execute (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Mètode per executar el procés de compra un terreny en propietat d\textquotesingle{}un jugador. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & Array\+List de jugadors que estan jugant al \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em current\+\_\+player} & Jugador que fa la compra. \\
+\hline
+{\em m} & Moviment que crida Buy, en aquesta implementació, {\ttfamily m} no és usada però s\textquotesingle{}ha de passar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si el procés s\textquotesingle{}ha realitzat, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+Jugador {\ttfamily current\+\_\+player} != null i Moviment {\ttfamily m} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Una propietat de algun jugador ha estat comprada o la acció s\textquotesingle{}ha cancelat 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{interfaceoptional_actions_aa808202808d24920969b6fff8036b085}{optional\+Actions}}.
+
+
+
+Definició a la línia 39 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_buy_a0d1872644b11887f0ff12fb45fe8dbed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_a28475659037e5369a8b5b73ef6946137}\label{class_op_act_buy_a28475659037e5369a8b5b73ef6946137}} 
+\index{OpActBuy@{OpActBuy}!fieldSelect@{fieldSelect}}
+\index{fieldSelect@{fieldSelect}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{fieldSelect()}{fieldSelect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_box_field}{Box\+Field}} Op\+Act\+Buy.\+field\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{buy\+\_\+player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mostra tots els terreyns del jugador i deixa escollir a un d\textquotesingle{}ells per comprar\textquotesingle{}l-\/ho. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em buy\+\_\+player} & Jugador que ven el terreny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+el terreny selecionat per el jugador o null si no es pot 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El terreny selecionat ha estat retornat, o en la seva absencia, s\textquotesingle{}ha retorntat un terreny null 
+\end{DoxyPostcond}
+
+
+Definició a la línia 91 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_op_act_buy_a28475659037e5369a8b5b73ef6946137_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_op_act_buy_a28475659037e5369a8b5b73ef6946137_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_a790ced1d700e20a70e2c8ee624902b63}\label{class_op_act_buy_a790ced1d700e20a70e2c8ee624902b63}} 
+\index{OpActBuy@{OpActBuy}!playerSelect@{playerSelect}}
+\index{playerSelect@{playerSelect}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{playerSelect()}{playerSelect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Op\+Act\+Buy.\+player\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mostra tots els jugadors amb terrenys i deixa escollir a un d\textquotesingle{}ells per comprar-\/li un terreny. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la compra. \\
+\hline
+{\em players} & Array\+List de jugadors que estan jugant al \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em output} & sortida al fitxer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+el jugador selecionat o null si no n\textquotesingle{}hi ha cap 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El jugador selecionat ha estat retornat, o en la seva absencia, s\textquotesingle{}ha retorntat un jugador null 
+\end{DoxyPostcond}
+
+
+Definició a la línia 61 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_op_act_buy_a790ced1d700e20a70e2c8ee624902b63_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_op_act_buy_a790ced1d700e20a70e2c8ee624902b63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_aae87676d41111455ecf032ba37262749}\label{class_op_act_buy_aae87676d41111455ecf032ba37262749}} 
+\index{OpActBuy@{OpActBuy}!startOffer@{startOffer}}
+\index{startOffer@{startOffer}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{startOffer()}{startOffer()}}
+{\footnotesize\ttfamily int Op\+Act\+Buy.\+start\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{\mbox{\hyperlink{class_box_field}{Box\+Field}}}]{buy\+\_\+field,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Demana al jugador el valor de la seva oferta inicial. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que fa la compra. \\
+\hline
+{\em buy\+\_\+field} & Terreny a comprar \\
+\hline
+{\em output} & sortida al fitxer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+el valor de la oferta inicial o un -\/1 en cas de error (no tractat ja que no arriba mai a retornnar-\/lo 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El valor de la oferta ha estat retornat i el valor $>$ 0 i $<$ la quantitat de diners del jugador comprador 
+\end{DoxyPostcond}
+
+
+Definició a la línia 117 del fitxer Op\+Act\+Buy.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_op_act_buy_aae87676d41111455ecf032ba37262749_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_op_act_buy_aae87676d41111455ecf032ba37262749_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_op_act_buy_a56a52d1ec4207b2b492d0d8a4c597bcf}\label{class_op_act_buy_a56a52d1ec4207b2b492d0d8a4c597bcf}} 
+\index{OpActBuy@{OpActBuy}!toString@{toString}}
+\index{toString@{toString}!OpActBuy@{OpActBuy}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Op\+Act\+Buy.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String per mostrar la descripció de l\textquotesingle{}acció Buy per text. 
+
+\begin{DoxyReturn}{Retorna}
+String de la sortida per pantalla de Buy 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Mostra la descripció de Buy 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{interfaceoptional_actions_aa3f4f90ebe50b040febd46a902a67973}{optional\+Actions}}.
+
+
+
+Definició a la línia 26 del fitxer Op\+Act\+Buy.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_op_act_buy_8java}{Op\+Act\+Buy.\+java}}\end{DoxyCompactItemize}

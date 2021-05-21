@@ -1,0 +1,8 @@
+<map id="Board.randomField" name="Board.randomField">
+<area shape="rect" id="node1" title="Genera una casella de terreny de forma aleatoria." alt="" coords="5,56,136,83"/>
+<area shape="rect" id="node2" href="$class_box.html#a56dec956b37631c7faa911e67e4a437f" title="Getter del tipus de casella." alt="" coords="223,5,317,32"/>
+<area shape="rect" id="node3" href="$class_board.html#ab5069c2c934ed736d0e72f478c97dd6b" title="Comprova si queden terrenys sense propietari." alt="" coords="184,56,356,83"/>
+<area shape="rect" id="node6" href="$class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="575,107,703,133"/>
+<area shape="rect" id="node4" href="$class_board.html#a3012e670a81918123e667ce8debe34b7" title="Comprova si la casella te propietari." alt="" coords="404,56,527,83"/>
+<area shape="rect" id="node5" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="581,56,696,83"/>
+</map>

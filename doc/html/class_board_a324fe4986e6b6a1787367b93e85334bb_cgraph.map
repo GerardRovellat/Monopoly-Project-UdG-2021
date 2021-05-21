@@ -1,0 +1,7 @@
+<map id="Board.tryToRunCardToAlive" name="Board.tryToRunCardToAlive">
+<area shape="rect" id="node1" title="Intentara executar una targeta de la ma per tal de no declarar&#45;se en fallida." alt="" coords="5,56,185,83"/>
+<area shape="rect" id="node2" href="$class_card_charge.html#a1240043f513d0c6dc40226910f60c4b4" title="Execucio de la carta." alt="" coords="244,5,384,32"/>
+<area shape="rect" id="node4" href="$class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d" title="Retorna en una llista les targetes sort luckCards del Jugador." alt="" coords="243,56,385,83"/>
+<area shape="rect" id="node5" href="$class_card_charge.html#a2ec6aece3da1435e2565ee37d14ea0d4" title="Getter de la quantitat a cobrar." alt="" coords="233,107,395,133"/>
+<area shape="rect" id="node3" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="443,5,545,32"/>
+</map>

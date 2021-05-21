@@ -1,0 +1,4 @@
+<map id="CPUPlayer.cardGetFieldSelect" name="CPUPlayer.cardGetFieldSelect">
+<area shape="rect" id="node1" title="Selecciona el terrent amb major valor." alt="" coords="232,5,433,32"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a5d1cd463222aa331912fc633449ba2f4" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="5,5,184,32"/>
+</map>

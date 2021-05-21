@@ -1,0 +1,9 @@
+<map id="BoxField" name="BoxField">
+<area shape="rect" id="node1" title=" " alt="" coords="107,184,181,211"/>
+<area shape="rect" id="node2" href="$class_box.html" title="Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella." alt="" coords="5,95,51,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="75,95,213,121"/>
+<area shape="rect" id="node4" href="$class_player.html" title="Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a..." alt="" coords="237,95,296,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="17,5,180,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="204,5,329,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="353,5,503,32"/>
+</map>

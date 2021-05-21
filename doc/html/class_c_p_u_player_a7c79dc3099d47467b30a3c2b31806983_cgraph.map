@@ -1,0 +1,9 @@
+<map id="CPUPlayer.stringValueSelection" name="CPUPlayer.stringValueSelection">
+<area shape="rect" id="node1" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="5,81,215,108"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#ad6df718f0a30c0539bf912f83ab725c2" title="Seleccio de la oferta del comprador a la funcio Buy en negociació" alt="" coords="269,5,441,32"/>
+<area shape="rect" id="node4" href="$class_c_p_u_player.html#aec70d26c0bbc8a6309d67ec75e9e97ca" title="Seleccio de la oferta del venedor a la funcio Buy en negociació" alt="" coords="269,56,440,83"/>
+<area shape="rect" id="node5" href="$class_c_p_u_player.html#aec3991e4567ca8dd95332a2076897a8c" title="Seleccio de la acceptacio, denegació o valor del interes del prestec." alt="" coords="263,107,447,133"/>
+<area shape="rect" id="node7" href="$class_c_p_u_player.html#a024ee24926f75292bcf529d9f21e934e" title="Seleccio de dels torns que durarà del prestec." alt="" coords="268,157,441,184"/>
+<area shape="rect" id="node3" href="$class_box_field.html#a1e50dec82bdf23cdeef47732716d66f1" title="Getter del preu del terreny Field." alt="" coords="495,31,620,57"/>
+<area shape="rect" id="node6" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="497,107,617,133"/>
+</map>

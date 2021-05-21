@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi OpActBuy.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OpActBuy.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_op_act_buy_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_op_act_buy.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_op_act_buy.html">OpActBuy</a> <span class="keyword">implements</span> <a class="code" href="interfaceoptional_actions.html">optionalActions</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a1538cf467679d2f0f23eea8f711ea264">   17</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_op_act_buy.html#a1538cf467679d2f0f23eea8f711ea264">OpActBuy</a>() { }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    @Override <span class="comment">// Heretat d&#39;Object</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a56a52d1ec4207b2b492d0d8a4c597bcf">   26</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_op_act_buy.html#a56a52d1ec4207b2b492d0d8a4c597bcf">toString</a>() {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Comprar: Fer una oferta de compra a un altre jugador&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed">   39</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed">execute</a>(ArrayList&lt;Player&gt; players, <a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_movement.html">Movement</a> m) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_output_manager.html">OutputManager</a> output = m.<a class="code" href="class_movement.html#a313c41da560f06620e21d18e93151990">getOutput</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_player.html">Player</a> buy_player = <a class="code" href="class_op_act_buy.html#a790ced1d700e20a70e2c8ee624902b63">playerSelect</a>(current_player, players,output);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (buy_player != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_box_field.html">BoxField</a> buy_field = <a class="code" href="class_op_act_buy.html#a28475659037e5369a8b5b73ef6946137">fieldSelect</a>(buy_player);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (buy_field != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordtype">int</span> initial_offer = <a class="code" href="class_op_act_buy.html#aae87676d41111455ecf032ba37262749">startOffer</a>(current_player, buy_field, output);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd">buyNegociation</a>(current_player, buy_player, buy_field, initial_offer, output);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a790ced1d700e20a70e2c8ee624902b63">   61</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_player.html">Player</a> <a class="code" href="class_op_act_buy.html#a790ced1d700e20a70e2c8ee624902b63">playerSelect</a>(<a class="code" href="class_player.html">Player</a> current_player, ArrayList&lt;Player&gt; players,<a class="code" href="class_output_manager.html">OutputManager</a> output) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">boolean</span> players_available = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_player.html">Player</a> aux : players) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (!aux.getName().equals(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>()) &amp;&amp; aux.getFields().size() &gt; 0) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                System.out.println(players.indexOf(aux) + <span class="stringliteral">&quot;. &quot;</span> + aux.getName());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                players_available = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (players_available) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                System.out.println(<span class="stringliteral">&quot;Selecioni la opcio que desitgi:&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <span class="keywordtype">int</span> value = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;buyPlayerSelect&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, players, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordflow">if</span> (value &gt;= 0 &amp;&amp; value &lt; players.size()) <span class="keywordflow">return</span> players.get(value);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">else</span> System.out.println(<span class="stringliteral">&quot;La opcio entrada es incorrecte ( ha de ser un enter entre 0 i &quot;</span> + (players.size() - 1) + <span class="stringliteral">&quot; ). Torni a provar:&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            } <span class="keywordflow">catch</span> (NumberFormatException e) {System.out.println(<span class="stringliteral">&quot;Format incorrecte. Torna-hi.&quot;</span>);}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Cap jugador amb propietats&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        System.out.println(<span class="stringliteral">&quot;No hi ha cap jugador amb propietats per comprar&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a28475659037e5369a8b5b73ef6946137">   91</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_box_field.html">BoxField</a> <a class="code" href="class_op_act_buy.html#a28475659037e5369a8b5b73ef6946137">fieldSelect</a>(<a class="code" href="class_player.html">Player</a> buy_player) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ArrayList&lt;BoxField&gt; fields = buy_player.<a class="code" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">getFields</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (fields.size() != 0) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            System.out.println(<span class="stringliteral">&quot;Selecioni la propietat de &quot;</span> + buy_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot; que desitja comprar:&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="class_box_field.html">BoxField</a> aux : fields) System.out.println(fields.indexOf(aux) + <span class="stringliteral">&quot;. &quot;</span> + aux.getName() + <span class="stringliteral">&quot; | &quot;</span> + aux.getPrice());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            System.out.println(<span class="stringliteral">&quot;Selecioni la opcio que desitgi:&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordtype">int</span> value = buy_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;buyFieldSelect&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    <span class="keywordflow">if</span> (value &gt;= 0 &amp;&amp; value &lt; fields.size()) <span class="keywordflow">return</span> fields.get(value);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">else</span> System.out.println(<span class="stringliteral">&quot;La opcio entrada es incorrecte ( ha de ser un enter entre 0 i &quot;</span> + (fields.size() - 1) + <span class="stringliteral">&quot; ). Torni a provar:&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            } <span class="keywordflow">catch</span> (NumberFormatException e) {System.out.println(<span class="stringliteral">&quot;Format incorrecte. Torna-hi.&quot;</span>);}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        } <span class="keywordflow">else</span> System.out.println(<span class="stringliteral">&quot;Aquest jugador no te cap propietat en posesió per poder comprar&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#aae87676d41111455ecf032ba37262749">  117</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_op_act_buy.html#aae87676d41111455ecf032ba37262749">startOffer</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_box_field.html">BoxField</a> buy_field, <a class="code" href="class_output_manager.html">OutputManager</a> output) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">int</span> current_offer;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        System.out.println(<span class="stringliteral">&quot;Indiqui la oferta inicial:&quot;</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                current_offer = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;buyInitalOffer&quot;</span>, <span class="keyword">null</span>, buy_field, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, 0, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">if</span> (current_offer &gt; 0 || current_offer &lt;= current_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>()) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Vol comprar &quot;</span> + buy_field.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; per &quot;</span> + current_offer + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    System.out.println(<span class="stringliteral">&quot;Oferta realitzada.&quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    <span class="keywordflow">return</span> current_offer;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    System.out.println(<span class="stringliteral">&quot;valor entrat incorrecte. Ha de ser superior a 0 i inferior a &quot;</span> + current_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>() + <span class="stringliteral">&quot;. Torna a provar:&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        } <span class="keywordflow">catch</span> (NumberFormatException e) {System.out.println(<span class="stringliteral">&quot;Format incorrecte. Torna-hi.&quot;</span>);}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd">  145</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd">buyNegociation</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_player.html">Player</a> buy_player, <a class="code" href="class_box_field.html">BoxField</a> buy_field, <span class="keywordtype">int</span> initial_offer, <a class="code" href="class_output_manager.html">OutputManager</a> output) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        System.out.println(<span class="stringliteral">&quot;Comença la negociació&quot;</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        System.out.println(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; COMPRAR &quot;</span> + buy_field.<a class="code" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">getName</a>() + <span class="stringliteral">&quot; &quot;</span> + initial_offer);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="class_player.html">Player</a> offer_active_player = buy_player;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            System.out.println(offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;: indiqui ok si accepta la oferta, no si la rebutja o un valor per fer una contraoferta:&quot;</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            String tmp;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">if</span> (offer_active_player == current_player) tmp = current_player.<a class="code" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">stringValueSelection</a>(<span class="stringliteral">&quot;buyBuyerOffer&quot;</span>, offer_active_player, buy_field, initial_offer, 0);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">else</span> tmp = buy_player.<a class="code" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">stringValueSelection</a>(<span class="stringliteral">&quot;buySellerOffer&quot;</span>, offer_active_player, buy_field, initial_offer, 0);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">if</span> (tmp.equals(<span class="stringliteral">&quot;ok&quot;</span>)) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Accepta la oferta&quot;</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e">buy</a>(current_player, buy_player, buy_field, initial_offer);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tmp.equals(<span class="stringliteral">&quot;no&quot;</span>)) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; No accepta la oferta&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                System.out.println(<span class="stringliteral">&quot;Les negociacions no han concluit i per tant la compra no es farà efectiva&quot;</span>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Integer.parseInt(tmp) &lt; 0 || Integer.parseInt(tmp) &gt;= current_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>()) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                System.out.println(<span class="stringliteral">&quot;Valor incorrecte, la oferta ha de superior a 0 i inferior a &quot;</span> + current_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>());</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                initial_offer = Integer.parseInt(tmp);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                output.<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(<span class="stringliteral">&quot;\t&quot;</span> + offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; Contraoferta: &quot;</span> + initial_offer + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">if</span> (offer_active_player == buy_player) offer_active_player = current_player;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">else</span> offer_active_player = buy_player;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e">  182</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e">buy</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_player.html">Player</a> buy_player, <a class="code" href="class_box_field.html">BoxField</a> buy_field, <span class="keywordtype">int</span> final_offer) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        current_player.<a class="code" href="class_player.html#a3415b58dac5e2ad7b803782793016b62">pay</a>(final_offer);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        buy_player.<a class="code" href="class_player.html#a99d07341ae4305ddfb6968afc0702286">charge</a>(final_offer);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        current_player.<a class="code" href="class_player.html#ae275ec6392df9695a70e10e999c7d428">addBox</a>(buy_field);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        buy_player.<a class="code" href="class_player.html#acbb8a4a17c54e635177740c76e9e4b13">removeBox</a>(buy_field);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        System.out.println(<span class="stringliteral">&quot;La venda s&#39;ha fet efectiva, per un preu de &quot;</span> + final_offer + <span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_op_act_buy_html_aae87676d41111455ecf032ba37262749"><div class="ttname"><a href="class_op_act_buy.html#aae87676d41111455ecf032ba37262749">OpActBuy.startOffer</a></div><div class="ttdeci">int startOffer(Player current_player, BoxField buy_field, OutputManager output)</div><div class="ttdoc">Demana al jugador el valor de la seva oferta inicial.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00117">OpActBuy.java:117</a></div></div>
+<div class="ttc" id="aclass_player_html_a3415b58dac5e2ad7b803782793016b62"><div class="ttname"><a href="class_player.html#a3415b58dac5e2ad7b803782793016b62">Player.pay</a></div><div class="ttdeci">void pay(int amount)</div><div class="ttdoc">El Jugador paga una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00043">Player.java:43</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a90029c95447e26b98f9c15c921064bbd"><div class="ttname"><a href="class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd">OpActBuy.buyNegociation</a></div><div class="ttdeci">boolean buyNegociation(Player current_player, Player buy_player, BoxField buy_field, int initial_offer, OutputManager output)</div><div class="ttdoc">Gestiona la negociacio de la compra del terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00145">OpActBuy.java:145</a></div></div>
+<div class="ttc" id="aclass_player_html_acbb8a4a17c54e635177740c76e9e4b13"><div class="ttname"><a href="class_player.html#acbb8a4a17c54e635177740c76e9e4b13">Player.removeBox</a></div><div class="ttdeci">void removeBox(Box box)</div><div class="ttdoc">Elimina un terreny a la propietat d'un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00171">Player.java:171</a></div></div>
+<div class="ttc" id="aclass_movement_html"><div class="ttname"><a href="class_movement.html">Movement</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera...</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00011">Movement.java:11</a></div></div>
+<div class="ttc" id="aclass_player_html_ae275ec6392df9695a70e10e999c7d428"><div class="ttname"><a href="class_player.html#ae275ec6392df9695a70e10e999c7d428">Player.addBox</a></div><div class="ttdeci">void addBox(BoxField box)</div><div class="ttdoc">Afegeix un terreny a la propietat d'un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00158">Player.java:158</a></div></div>
+<div class="ttc" id="ainterfaceoptional_actions_html"><div class="ttname"><a href="interfaceoptional_actions.html">optionalActions</a></div><div class="ttdoc">Interficie general d'accions opcionals del joc de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="optional_actions_8java_source.html#l00008">optionalActions.java:8</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html"><div class="ttname"><a href="class_op_act_buy.html">OpActBuy</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00010">OpActBuy.java:10</a></div></div>
+<div class="ttc" id="aclass_player_html_a7b17595bbe9876d4aa469ad9bee644dd"><div class="ttname"><a href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">Player.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Retorna el nom del Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00093">Player.java:93</a></div></div>
+<div class="ttc" id="aclass_box_field_html"><div class="ttname"><a href="class_box_field.html">BoxField</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00009">BoxField.java:9</a></div></div>
+<div class="ttc" id="aclass_player_html_a99d07341ae4305ddfb6968afc0702286"><div class="ttname"><a href="class_player.html#a99d07341ae4305ddfb6968afc0702286">Player.charge</a></div><div class="ttdeci">void charge(int amount)</div><div class="ttdoc">El jugador cobra una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00053">Player.java:53</a></div></div>
+<div class="ttc" id="aclass_output_manager_html_abd9e037fa4547ddf78602038195f596e"><div class="ttname"><a href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">OutputManager.fileWrite</a></div><div class="ttdeci">void fileWrite(String line)</div><div class="ttdoc">Escriu text line al fitxer de desenvolupament de partida dev_file.</div><div class="ttdef"><b>Definition:</b> <a href="_output_manager_8java_source.html#l00044">OutputManager.java:44</a></div></div>
+<div class="ttc" id="aclass_player_html_af0c32e4e32dd886c7ae62af44feeab5c"><div class="ttname"><a href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">Player.optionSelection</a></div><div class="ttdeci">abstract int optionSelection(String type, Player player, BoxField field, ArrayList&lt; Integer &gt; options, ArrayList&lt; Player &gt; players, Card card, int value, ArrayList&lt; optionalActions &gt; optional_actions)</div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a56a52d1ec4207b2b492d0d8a4c597bcf"><div class="ttname"><a href="class_op_act_buy.html#a56a52d1ec4207b2b492d0d8a4c597bcf">OpActBuy.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">toString per mostrar la descripció de l'acció Buy per text.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00026">OpActBuy.java:26</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a0d1872644b11887f0ff12fb45fe8dbed"><div class="ttname"><a href="class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed">OpActBuy.execute</a></div><div class="ttdeci">boolean execute(ArrayList&lt; Player &gt; players, Player current_player, Movement m)</div><div class="ttdoc">Mètode per executar el procés de compra un terreny en propietat d'un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00039">OpActBuy.java:39</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a28475659037e5369a8b5b73ef6946137"><div class="ttname"><a href="class_op_act_buy.html#a28475659037e5369a8b5b73ef6946137">OpActBuy.fieldSelect</a></div><div class="ttdeci">BoxField fieldSelect(Player buy_player)</div><div class="ttdoc">Mostra tots els terreyns del jugador i deixa escollir a un d'ells per comprar'l-ho.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00091">OpActBuy.java:91</a></div></div>
+<div class="ttc" id="aclass_player_html_a1aa8cfe1b6e921d2d362906b87755c0f"><div class="ttname"><a href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">Player.stringValueSelection</a></div><div class="ttdeci">abstract String stringValueSelection(String type, Player player, BoxField field, int value, int second_value)</div></div>
+<div class="ttc" id="aclass_player_html_af2aa0edaa9a65bea619ba797d33509bf"><div class="ttname"><a href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">Player.getFields</a></div><div class="ttdeci">ArrayList&lt; BoxField &gt; getFields()</div><div class="ttdoc">Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00181">Player.java:181</a></div></div>
+<div class="ttc" id="aclass_output_manager_html"><div class="ttname"><a href="class_output_manager.html">OutputManager</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les sortides en el nostre cas al fitxer de desenvolupament de par...</div><div class="ttdef"><b>Definition:</b> <a href="_output_manager_8java_source.html#l00011">OutputManager.java:11</a></div></div>
+<div class="ttc" id="aclass_movement_html_a313c41da560f06620e21d18e93151990"><div class="ttname"><a href="class_movement.html#a313c41da560f06620e21d18e93151990">Movement.getOutput</a></div><div class="ttdeci">OutputManager getOutput()</div><div class="ttdoc">Retorna la classe de sortida de dades.</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00462">Movement.java:462</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a790ced1d700e20a70e2c8ee624902b63"><div class="ttname"><a href="class_op_act_buy.html#a790ced1d700e20a70e2c8ee624902b63">OpActBuy.playerSelect</a></div><div class="ttdeci">Player playerSelect(Player current_player, ArrayList&lt; Player &gt; players, OutputManager output)</div><div class="ttdoc">Mostra tots els jugadors amb terrenys i deixa escollir a un d'ells per comprar-li un terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00061">OpActBuy.java:61</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_a1538cf467679d2f0f23eea8f711ea264"><div class="ttname"><a href="class_op_act_buy.html#a1538cf467679d2f0f23eea8f711ea264">OpActBuy.OpActBuy</a></div><div class="ttdeci">OpActBuy()</div><div class="ttdoc">Constructor de Buy.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00017">OpActBuy.java:17</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html_ad6957fa3590c1aa28ed7b9ab04034c6e"><div class="ttname"><a href="class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e">OpActBuy.buy</a></div><div class="ttdeci">boolean buy(Player current_player, Player buy_player, BoxField buy_field, int final_offer)</div><div class="ttdoc">Gestiona la negociacio de la compra del terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00182">OpActBuy.java:182</a></div></div>
+<div class="ttc" id="aclass_box_field_html_a9ce68b8cedc4771e8448051b0ed41ee2"><div class="ttname"><a href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2">BoxField.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Getter del nom de la terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00202">BoxField.java:202</a></div></div>
+<div class="ttc" id="aclass_player_html_a7f1f07fbebec188292866cba55d9a290"><div class="ttname"><a href="class_player.html#a7f1f07fbebec188292866cba55d9a290">Player.getMoney</a></div><div class="ttdeci">int getMoney()</div><div class="ttdoc">Retorna els diners que té el Jugador en possessió.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00125">Player.java:125</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

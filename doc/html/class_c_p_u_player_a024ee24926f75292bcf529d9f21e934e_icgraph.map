@@ -1,0 +1,4 @@
+<map id="CPUPlayer.loanTurnsOffer" name="CPUPlayer.loanTurnsOffer">
+<area shape="rect" id="node1" title="Seleccio de dels torns que durarà del prestec." alt="" coords="263,5,436,32"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a7c79dc3099d47467b30a3c2b31806983" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="5,5,215,32"/>
+</map>

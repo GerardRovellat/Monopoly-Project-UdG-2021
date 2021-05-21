@@ -1,0 +1,4 @@
+<map id="Player.addBox" name="Player.addBox">
+<area shape="rect" id="node1" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="160,5,259,32"/>
+</map>

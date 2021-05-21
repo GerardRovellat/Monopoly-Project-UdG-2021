@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi TerminalPlayer.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TerminalPlayer.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_terminal_player_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> java.util.InputMismatchException;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.Scanner;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_terminal_player.html">   11</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_terminal_player.html">TerminalPlayer</a> <span class="keyword">extends</span> <a class="code" href="class_player.html">Player</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Scanner scan = <span class="keyword">new</span> Scanner(System.in);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_terminal_player.html#a8ee6ef83fce9787095481cef484433a4">   22</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_terminal_player.html#a8ee6ef83fce9787095481cef484433a4">TerminalPlayer</a>(String <a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>, <span class="keywordtype">int</span> initial_money, <span class="keywordtype">int</span> initial_position) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        super(<a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>, initial_money, initial_position,<span class="stringliteral">&quot;USER&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_terminal_player.html#a931bb287d3478c0eff416fc6e2ef587b">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_terminal_player.html#a931bb287d3478c0eff416fc6e2ef587b">optionSelection</a>(String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>, <a class="code" href="class_player.html">Player</a> player, <a class="code" href="class_box_field.html">BoxField</a> field, ArrayList&lt;Integer&gt; options, ArrayList&lt;Player&gt; players, <a class="code" href="class_card.html">Card</a> card, <span class="keywordtype">int</span> value, ArrayList&lt;optionalActions&gt; optional_actions) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> number = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">boolean</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                number = scan.nextInt();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                valid = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            } <span class="keywordflow">catch</span> (InputMismatchException e_format) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                scan.nextLine();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                System.out.println(<span class="stringliteral">&quot;FORMAT ENTRAT INCORRECTE: Torna-hi...&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        } <span class="keywordflow">while</span> (!valid);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> number;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_terminal_player.html#a8e0efde053f99b3564128b698010ab9f">   41</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_terminal_player.html#a8e0efde053f99b3564128b698010ab9f">stringValueSelection</a>(String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>, <a class="code" href="class_player.html">Player</a> player, <a class="code" href="class_box_field.html">BoxField</a> field, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> second_value) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> scan.next();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_card_html"><div class="ttname"><a href="class_card.html">Card</a></div><div class="ttdoc">Implementa la funcions base i comunes totes les cartes.</div><div class="ttdef"><b>Definition:</b> <a href="_card_8java_source.html#l00008">Card.java:8</a></div></div>
+<div class="ttc" id="aclass_terminal_player_html_a8e0efde053f99b3564128b698010ab9f"><div class="ttname"><a href="class_terminal_player.html#a8e0efde053f99b3564128b698010ab9f">TerminalPlayer.stringValueSelection</a></div><div class="ttdeci">String stringValueSelection(String type, Player player, BoxField field, int value, int second_value)</div><div class="ttdef"><b>Definition:</b> <a href="_terminal_player_8java_source.html#l00041">TerminalPlayer.java:41</a></div></div>
+<div class="ttc" id="aclass_box_field_html"><div class="ttname"><a href="class_box_field.html">BoxField</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00009">BoxField.java:9</a></div></div>
+<div class="ttc" id="aclass_terminal_player_html_a931bb287d3478c0eff416fc6e2ef587b"><div class="ttname"><a href="class_terminal_player.html#a931bb287d3478c0eff416fc6e2ef587b">TerminalPlayer.optionSelection</a></div><div class="ttdeci">int optionSelection(String type, Player player, BoxField field, ArrayList&lt; Integer &gt; options, ArrayList&lt; Player &gt; players, Card card, int value, ArrayList&lt; optionalActions &gt; optional_actions)</div><div class="ttdef"><b>Definition:</b> <a href="_terminal_player_8java_source.html#l00026">TerminalPlayer.java:26</a></div></div>
+<div class="ttc" id="aclass_player_html_ae9ea9ec6d49badfc2aedc233191233d9"><div class="ttname"><a href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">Player.type</a></div><div class="ttdeci">final String type</div><div class="ttdoc">Tipus de jugador ( CPU, USER )</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00019">Player.java:19</a></div></div>
+<div class="ttc" id="aclass_player_html_a88be288918be24fa02f6ec4cc7232558"><div class="ttname"><a href="class_player.html#a88be288918be24fa02f6ec4cc7232558">Player.name</a></div><div class="ttdeci">final String name</div><div class="ttdoc">Nom del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00012">Player.java:12</a></div></div>
+<div class="ttc" id="aclass_terminal_player_html_a8ee6ef83fce9787095481cef484433a4"><div class="ttname"><a href="class_terminal_player.html#a8ee6ef83fce9787095481cef484433a4">TerminalPlayer.TerminalPlayer</a></div><div class="ttdeci">TerminalPlayer(String name, int initial_money, int initial_position)</div><div class="ttdoc">Constructor de jugador amb terminal.</div><div class="ttdef"><b>Definition:</b> <a href="_terminal_player_8java_source.html#l00022">TerminalPlayer.java:22</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_terminal_player_html"><div class="ttname"><a href="class_terminal_player.html">TerminalPlayer</a></div><div class="ttdoc">Jugador controlat per el usuari.</div><div class="ttdef"><b>Definition:</b> <a href="_terminal_player_8java_source.html#l00011">TerminalPlayer.java:11</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

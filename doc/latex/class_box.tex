@@ -1,0 +1,272 @@
+\hypertarget{class_box}{}\doxysection{Referència de la Classe Box}
+\label{class_box}\index{Box@{Box}}
+
+
+Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_box__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_box_a9b18a5732b52519405690919a66e9c7b}{Box}} (int \mbox{\hyperlink{class_box_a92add73ab48651b642c3ede2cc268d74}{position}}, String \mbox{\hyperlink{class_box_ab08459cb58328b9d185f74522c322487}{type}}, String \mbox{\hyperlink{class_box_a392238cecf08a6e5f2f336290b54137b}{name}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_box}{Box}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_box_aea0718df8afc5c94480ba8ca24b5f926}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la posicio de la casella. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_box_a56dec956b37631c7faa911e67e4a437f}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Getter del tipus de casella. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_box_a18f3a70e22b7384eef543baabd96b925}{print}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players)
+\begin{DoxyCompactList}\small\item\em Sortida per pantalla de la informació basica de la casella i, si n\textquotesingle{}hi ha, el jugador que està en aquesta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Públics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_box_a92add73ab48651b642c3ede2cc268d74}{position}}
+\begin{DoxyCompactList}\small\item\em Posicio de la casella en el taulell. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_box_ab08459cb58328b9d185f74522c322487}{type}}
+\begin{DoxyCompactList}\small\item\em Tipus de casella. ( Start, Field, Bet, Luck, Direct\+Comand, Empty ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_box_ab8a1308041ba6f99aca14e665cea23d3}{player\+In\+Position}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players)
+\begin{DoxyCompactList}\small\item\em Busca tots els jugadors que estan en aquesta casella i crea un String amb ells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+final String \mbox{\hyperlink{class_box_a392238cecf08a6e5f2f336290b54137b}{name}}
+\begin{DoxyCompactList}\small\item\em Nom de la casella. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella. 
+
+Definició a la línia 9 del fitxer Box.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_box_a9b18a5732b52519405690919a66e9c7b}\label{class_box_a9b18a5732b52519405690919a66e9c7b}} 
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily Box.\+Box (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{String}]{type,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_box}{Box}}. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+la casella ha estat creada 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em position} & Posicio de la casella \\
+\hline
+{\em type} & Tipus de casella. ( Start, Field, Bet, Luck, Direct\+Comand, Empty ) \\
+\hline
+{\em name} & Nom de la casella \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 23 del fitxer Box.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_box_aea0718df8afc5c94480ba8ca24b5f926}\label{class_box_aea0718df8afc5c94480ba8ca24b5f926}} 
+\index{Box@{Box}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Box.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la posicio de la casella. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La posicio de la casella ha estat retornada 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+posicio de la casella en el taulell 
+\end{DoxyReturn}
+
+
+Definició a la línia 35 del fitxer Box.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_box_aea0718df8afc5c94480ba8ca24b5f926_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_box_a56dec956b37631c7faa911e67e4a437f}\label{class_box_a56dec956b37631c7faa911e67e4a437f}} 
+\index{Box@{Box}!getType@{getType}}
+\index{getType@{getType}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily String Box.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del tipus de casella. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el tipus de casella ha estat retornat 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+tius de casella 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_box_start_a920ac2edf2553bbf9dd3667447d21544}{Box\+Start}}.
+
+
+
+Definició a la línia 45 del fitxer Box.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_box_a56dec956b37631c7faa911e67e4a437f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_box_ab8a1308041ba6f99aca14e665cea23d3}\label{class_box_ab8a1308041ba6f99aca14e665cea23d3}} 
+\index{Box@{Box}!playerInPosition@{playerInPosition}}
+\index{playerInPosition@{playerInPosition}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{playerInPosition()}{playerInPosition()}}
+{\footnotesize\ttfamily String Box.\+player\+In\+Position (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Busca tots els jugadors que estan en aquesta casella i crea un String amb ells. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El string amb el nom de tots els jugadors ha estat creat 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & llista de jugadors de la partida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+nom dels jugadors que estan en la casella 
+\end{DoxyReturn}
+
+
+Definició a la línia 73 del fitxer Box.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_box_ab8a1308041ba6f99aca14e665cea23d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_box_a18f3a70e22b7384eef543baabd96b925}\label{class_box_a18f3a70e22b7384eef543baabd96b925}} 
+\index{Box@{Box}!print@{print}}
+\index{print@{print}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily String Box.\+print (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Sortida per pantalla de la informació basica de la casella i, si n\textquotesingle{}hi ha, el jugador que està en aquesta. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La casella s\textquotesingle{}ha tret per pantalla 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & llista de jugadors de la partida \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 53 del fitxer Box.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_box_a18f3a70e22b7384eef543baabd96b925_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_box_a392238cecf08a6e5f2f336290b54137b}\label{class_box_a392238cecf08a6e5f2f336290b54137b}} 
+\index{Box@{Box}!name@{name}}
+\index{name@{name}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily final String Box.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nom de la casella. 
+
+
+
+Definició a la línia 13 del fitxer Box.\+java.
+
+\mbox{\Hypertarget{class_box_a92add73ab48651b642c3ede2cc268d74}\label{class_box_a92add73ab48651b642c3ede2cc268d74}} 
+\index{Box@{Box}!position@{position}}
+\index{position@{position}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily int Box.\+position}
+
+
+
+Posicio de la casella en el taulell. 
+
+
+
+Definició a la línia 11 del fitxer Box.\+java.
+
+\mbox{\Hypertarget{class_box_ab08459cb58328b9d185f74522c322487}\label{class_box_ab08459cb58328b9d185f74522c322487}} 
+\index{Box@{Box}!type@{type}}
+\index{type@{type}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily String Box.\+type}
+
+
+
+Tipus de casella. ( Start, Field, Bet, Luck, Direct\+Comand, Empty ) 
+
+
+
+Definició a la línia 12 del fitxer Box.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_box_8java}{Box.\+java}}\end{DoxyCompactItemize}

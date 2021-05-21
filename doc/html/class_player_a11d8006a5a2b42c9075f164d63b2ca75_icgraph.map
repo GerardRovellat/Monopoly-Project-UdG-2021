@@ -1,0 +1,6 @@
+<map id="Player.addLoan" name="Player.addLoan">
+<area shape="rect" id="node1" title="Afegeix un préstec a la llista de préstecs del Jugador." alt="" coords="585,5,697,32"/>
+<area shape="rect" id="node2" href="$class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb" title="Afageix un prestec al jugador que el reb i treu els diners al jugador que el dona." alt="" coords="396,5,537,32"/>
+<area shape="rect" id="node3" href="$class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6" title="Gestiona la negociacio de els torns i interesos del prestec." alt="" coords="191,5,348,32"/>
+<area shape="rect" id="node4" href="$class_op_act_loan.html#a4c600503963ae54c4e34952b58052981" title="Mètode per executar el procés de demanar un préstec a un Jugador." alt="" coords="5,5,143,32"/>
+</map>

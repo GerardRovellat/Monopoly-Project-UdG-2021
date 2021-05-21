@@ -1,0 +1,13 @@
+<map id="Movement" name="Movement">
+<area shape="rect" id="node1" title="Classe que s&#39;encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera..." alt="" coords="589,193,671,220"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,43,154,69"/>
+<area shape="rect" id="node4" href="$class_board.html" title="Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altre..." alt="" coords="365,80,421,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,145,149,172"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a..." alt="" coords="363,193,422,220"/>
+<area shape="rect" id="node5" href="$class_box.html" title="Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella." alt="" coords="370,244,415,271"/>
+<area shape="rect" id="node6" href="$class_output_manager.html" title="Classe que s&#39;encarrega de gestionar les sortides en el nostre cas al fitxer de desenvolupament de par..." alt="" coords="337,295,448,321"/>
+<area shape="rect" id="node7" title=" " alt="" coords="65,311,108,337"/>
+<area shape="rect" id="node8" title=" " alt="" coords="327,345,459,372"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,209,168,236"/>
+<area shape="rect" id="node11" title=" " alt="" coords="12,260,161,287"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="UIFileSelector.getBoardFileName" name="UIFileSelector.getBoardFileName">
+<area shape="rect" id="node1" title="Getter de nom de fitxer tauler board_name." alt="" coords="184,5,399,32"/>
+<area shape="rect" id="node2" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

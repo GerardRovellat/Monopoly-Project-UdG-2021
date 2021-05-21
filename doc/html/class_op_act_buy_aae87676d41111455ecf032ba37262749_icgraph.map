@@ -1,0 +1,4 @@
+<map id="OpActBuy.startOffer" name="OpActBuy.startOffer">
+<area shape="rect" id="node1" title="Demana al jugador el valor de la seva oferta inicial." alt="" coords="185,5,324,32"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="5,5,137,32"/>
+</map>

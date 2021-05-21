@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi BoxDirectCommand.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BoxDirectCommand.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_box_direct_command_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_box_direct_command.html">    8</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> <span class="keyword">extends</span> <a class="code" href="class_box.html">Box</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_box_direct_command.html#a49068c42c31e16fef506d4ed09261c2c">   10</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="class_card.html">Card</a> <span class="keyword">function</span>;                              </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_box_direct_command.html#ac6fd633d2265e5c4088e6faae3f510f9">   17</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_box_direct_command.html#ac6fd633d2265e5c4088e6faae3f510f9">BoxDirectCommand</a>(<span class="keywordtype">int</span> <a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>, String <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>, <a class="code" href="class_card.html">Card</a> <span class="keyword">function</span>){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        super(<a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>,<a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>,<span class="keyword">function</span>.<a class="code" href="class_box.html#a56dec956b37631c7faa911e67e4a437f">getType</a>());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        this.<span class="keyword">function</span> = <span class="keyword">function</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_box_direct_command.html#a6af29322024f0f4895a4629d37ced113">   28</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_card.html">Card</a> <a class="code" href="class_box_direct_command.html#a6af29322024f0f4895a4629d37ced113">getCard</a>() { <span class="keywordflow">return</span> this.<span class="keyword">function</span>; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_box_direct_command_html"><div class="ttname"><a href="class_box_direct_command.html">BoxDirectCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_direct_command_8java_source.html#l00008">BoxDirectCommand.java:8</a></div></div>
+<div class="ttc" id="aclass_card_html"><div class="ttname"><a href="class_card.html">Card</a></div><div class="ttdoc">Implementa la funcions base i comunes totes les cartes.</div><div class="ttdef"><b>Definition:</b> <a href="_card_8java_source.html#l00008">Card.java:8</a></div></div>
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00009">Box.java:9</a></div></div>
+<div class="ttc" id="aclass_box_direct_command_html_a6af29322024f0f4895a4629d37ced113"><div class="ttname"><a href="class_box_direct_command.html#a6af29322024f0f4895a4629d37ced113">BoxDirectCommand.getCard</a></div><div class="ttdeci">Card getCard()</div><div class="ttdoc">Getter de funcio equivalent que te una targeta.</div><div class="ttdef"><b>Definition:</b> <a href="_box_direct_command_8java_source.html#l00028">BoxDirectCommand.java:28</a></div></div>
+<div class="ttc" id="aclass_box_html_a92add73ab48651b642c3ede2cc268d74"><div class="ttname"><a href="class_box.html#a92add73ab48651b642c3ede2cc268d74">Box.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">Posicio de la casella en el taulell.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00011">Box.java:11</a></div></div>
+<div class="ttc" id="aclass_box_direct_command_html_ac6fd633d2265e5c4088e6faae3f510f9"><div class="ttname"><a href="class_box_direct_command.html#ac6fd633d2265e5c4088e6faae3f510f9">BoxDirectCommand.BoxDirectCommand</a></div><div class="ttdeci">BoxDirectCommand(int position, String type, Card function)</div><div class="ttdoc">Constructor de Buy.</div><div class="ttdef"><b>Definition:</b> <a href="_box_direct_command_8java_source.html#l00017">BoxDirectCommand.java:17</a></div></div>
+<div class="ttc" id="aclass_box_html_ab08459cb58328b9d185f74522c322487"><div class="ttname"><a href="class_box.html#ab08459cb58328b9d185f74522c322487">Box.type</a></div><div class="ttdeci">String type</div><div class="ttdoc">Tipus de casella. ( Start, Field, Bet, Luck, DirectComand, Empty )</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00012">Box.java:12</a></div></div>
+<div class="ttc" id="aclass_box_html_a56dec956b37631c7faa911e67e4a437f"><div class="ttname"><a href="class_box.html#a56dec956b37631c7faa911e67e4a437f">Box.getType</a></div><div class="ttdeci">String getType()</div><div class="ttdoc">Getter del tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00045">Box.java:45</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

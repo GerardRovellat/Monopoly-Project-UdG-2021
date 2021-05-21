@@ -1,0 +1,4 @@
+<map id="Monopoly.checkEndGame" name="Monopoly.checkEndGame">
+<area shape="rect" id="node1" title="Comproba si el joc s&#39;ha acabat o no." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="228,5,391,32"/>
+</map>

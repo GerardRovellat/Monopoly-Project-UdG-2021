@@ -1,0 +1,5 @@
+<map id="CardGet.fieldSelect" name="CardGet.fieldSelect">
+<area shape="rect" id="node1" title="Mostra tots els terreyns del jugador i deixa escollir a un d&#39;ells." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="206,5,322,32"/>
+<area shape="rect" id="node3" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="188,56,340,83"/>
+</map>

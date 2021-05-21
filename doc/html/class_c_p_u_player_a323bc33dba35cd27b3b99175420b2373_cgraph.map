@@ -1,0 +1,4 @@
+<map id="CPUPlayer.sellBuyerOffer" name="CPUPlayer.sellBuyerOffer">
+<area shape="rect" id="node1" title="Seleccio de la oferta del comprador a la funcio Sell." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$class_box_field.html#a1e50dec82bdf23cdeef47732716d66f1" title="Getter del preu del terreny Field." alt="" coords="224,5,349,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CardGet.execute" name="CardGet.execute">
+<area shape="rect" id="node1" title="Execucio de la carta." alt="" coords="5,132,125,159"/>
+<area shape="rect" id="node2" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="193,5,300,32"/>
+<area shape="rect" id="node4" href="$class_card_get.html#a013642fa39d64cbd36161b150fdd9327" title="Mostra tots els terreyns del jugador i deixa escollir a un d&#39;ells." alt="" coords="179,56,314,83"/>
+<area shape="rect" id="node7" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="182,107,311,133"/>
+<area shape="rect" id="node8" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="189,157,304,184"/>
+<area shape="rect" id="node9" href="$class_card_get.html#ae0fec735b66449299223eff3602889ef" title="Mostra tots els jugadors i deixa escollir a un d&#39;ells." alt="" coords="173,208,320,235"/>
+<area shape="rect" id="node11" href="$class_player.html#acbb8a4a17c54e635177740c76e9e4b13" title="Elimina un terreny a la propietat d&#39;un Jugador." alt="" coords="183,259,310,285"/>
+<area shape="rect" id="node3" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="395,5,493,32"/>
+<area shape="rect" id="node5" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="386,56,502,83"/>
+<area shape="rect" id="node6" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="368,132,520,159"/>
+<area shape="rect" id="node10" href="$class_player.html#a9f23c9c0e1d47fe21ea6488c788c296b" title="Retorna si el Jugador te terrenys en propietat o no." alt="" coords="382,208,506,235"/>
+</map>

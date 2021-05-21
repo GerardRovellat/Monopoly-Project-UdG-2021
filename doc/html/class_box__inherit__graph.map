@@ -1,0 +1,8 @@
+<map id="Box" name="Box">
+<area shape="rect" id="node1" title="Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella." alt="" coords="277,5,322,32"/>
+<area shape="rect" id="node2" href="$class_box_bet.html" title=" " alt="" coords="5,80,71,107"/>
+<area shape="rect" id="node3" href="$class_box_direct_command.html" title=" " alt="" coords="95,80,234,107"/>
+<area shape="rect" id="node4" href="$class_box_empty.html" title=" " alt="" coords="258,80,341,107"/>
+<area shape="rect" id="node5" href="$class_box_field.html" title=" " alt="" coords="365,80,439,107"/>
+<area shape="rect" id="node6" href="$class_box_start.html" title=" " alt="" coords="463,80,536,107"/>
+</map>

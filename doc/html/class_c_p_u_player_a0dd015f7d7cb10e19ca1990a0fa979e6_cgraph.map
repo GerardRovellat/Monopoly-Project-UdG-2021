@@ -1,0 +1,4 @@
+<map id="CPUPlayer.cardGiveFieldSelect" name="CPUPlayer.cardGiveFieldSelect">
+<area shape="rect" id="node1" title="Selecciona el terrent amb major valor." alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="259,5,375,32"/>
+</map>

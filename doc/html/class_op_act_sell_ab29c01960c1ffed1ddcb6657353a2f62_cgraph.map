@@ -1,0 +1,14 @@
+<map id="OpActSell.execute" name="OpActSell.execute">
+<area shape="rect" id="node1" title="Mètode per executar el procés de vendre un terreny en propietat d&#39;un jugador." alt="" coords="5,208,136,235"/>
+<area shape="rect" id="node2" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="228,5,331,32"/>
+<area shape="rect" id="node3" href="$class_op_act_sell.html#af007b9b97802180873191724f7a14576" title="Mètode per executar la subhasta d&#39;una venta." alt="" coords="208,107,351,133"/>
+<area shape="rect" id="node4" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="423,107,585,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="447,157,561,184"/>
+<area shape="rect" id="node6" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="446,360,562,387"/>
+<area shape="rect" id="node7" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="439,208,569,235"/>
+<area shape="rect" id="node8" href="$class_movement.html#a313c41da560f06620e21d18e93151990" title="Retorna la classe de sortida de dades." alt="" coords="208,411,351,437"/>
+<area shape="rect" id="node9" href="$class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6" title="Mètode per sel·leccionar el terreny que es vol vendre." alt="" coords="187,309,371,336"/>
+<area shape="rect" id="node12" href="$class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1" title="Mètode per sel·leccionar el preu del terreny a vendre." alt="" coords="184,208,375,235"/>
+<area shape="rect" id="node10" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="428,259,580,285"/>
+<area shape="rect" id="node11" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="443,309,565,336"/>
+</map>

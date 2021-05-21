@@ -1,0 +1,8 @@
+<map id="Player.numberOfBuildingsAffordable" name="Player.numberOfBuildingsAffordable">
+<area shape="rect" id="node1" title="Calcula el nombre de apartaments que es pot permetre costruir al preu entrat." alt="" coords="919,5,1091,47"/>
+<area shape="rect" id="node2" href="$class_movement.html#a6c3f49f509a793c433e1f4ec9a86a7cd" title="Administra l&#39;acció per contruïr apartaments en una propietat." alt="" coords="692,13,871,39"/>
+<area shape="rect" id="node3" href="$class_movement.html#a7fe49f01d861e1f4587ec99d569cf5d0" title="Administra l&#39;acció per contruïr edificis si el terreny es de la propietat de Jugador." alt="" coords="532,13,644,39"/>
+<area shape="rect" id="node4" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="339,13,484,39"/>
+<area shape="rect" id="node5" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,13,291,39"/>
+<area shape="rect" id="node6" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,13,136,39"/>
+</map>

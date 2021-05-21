@@ -1,0 +1,167 @@
+\hypertarget{class_card_go}{}\doxysection{Referència de la Classe Card\+Go}
+\label{class_card_go}\index{CardGo@{CardGo}}
+
+
+Targeta que mou al jugador a una casella determinada en el tauler de \mbox{\hyperlink{class_monopoly}{Monopoly}}.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a Card\+Go\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_card_go__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Card\+Go\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_card_go__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_go_adad8331add1fc709fa4573a619c412e7}{Card\+Go}} (boolean \mbox{\hyperlink{class_card_addab8ffd8522c7b0c97cb492d484959b}{postposable}}, int \mbox{\hyperlink{class_card_go_a57f2884c85c20849faf6e3fe2d8028a2}{position}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_card_go}{Card\+Go}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_go_a0eb76d5ff523ba568585f2f909ee25c3}{execute}} (\mbox{\hyperlink{class_board}{Board}} board, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player, Array\+List$<$ String $>$ rewards, \mbox{\hyperlink{class_output_manager}{Output\+Manager}} output)
+\begin{DoxyCompactList}\small\item\em Mètode per executar la targeta Card\+Go.\+Moura el jugador fins a la posició que li indiqui la targeta. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_card_go_a9d344a1328ea4ba030e810c10c7eb292}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String per mostrar la descripció de la targeta \mbox{\hyperlink{class_card_go}{Card\+Go}} per text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{class_card_go_a57f2884c85c20849faf6e3fe2d8028a2}{position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Targeta que mou al jugador a una casella determinada en el tauler de \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+Definició a la línia 9 del fitxer Card\+Go.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_card_go_adad8331add1fc709fa4573a619c412e7}\label{class_card_go_adad8331add1fc709fa4573a619c412e7}} 
+\index{CardGo@{CardGo}!CardGo@{CardGo}}
+\index{CardGo@{CardGo}!CardGo@{CardGo}}
+\doxysubsubsection{\texorpdfstring{CardGo()}{CardGo()}}
+{\footnotesize\ttfamily Card\+Go.\+Card\+Go (\begin{DoxyParamCaption}\item[{boolean}]{postposable,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_card_go}{Card\+Go}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una targeta \mbox{\hyperlink{class_card_go}{Card\+Go}} amb les propietats entrades i heredades. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em postposable} & {\ttfamily true} si la targeta es pot posposar i ser guardada pel jugador, {\ttfamily false} altrament. \\
+\hline
+{\em position} & posició final on ha de moure\textquotesingle{}s el jugador en cas d\textquotesingle{}executar-\/la. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 19 del fitxer Card\+Go.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_card_go_a0eb76d5ff523ba568585f2f909ee25c3}\label{class_card_go_a0eb76d5ff523ba568585f2f909ee25c3}} 
+\index{CardGo@{CardGo}!execute@{execute}}
+\index{execute@{execute}!CardGo@{CardGo}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Card\+Go.\+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}}}]{board,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player,  }\item[{Array\+List$<$ String $>$}]{rewards,  }\item[{\mbox{\hyperlink{class_output_manager}{Output\+Manager}}}]{output }\end{DoxyParamCaption})}
+
+
+
+Mètode per executar la targeta Card\+Go.\+Moura el jugador fins a la posició que li indiqui la targeta. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily players} != null, {\ttfamily board} != null, {\ttfamily current\+\_\+player} != null, {\ttfamily rewards} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El jugador ha estat mogut fins a la posició {\ttfamily position}. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em board} & tauler de \mbox{\hyperlink{class_monopoly}{Monopoly}} en el qual s\textquotesingle{}esta jugant. \\
+\hline
+{\em current\+\_\+player} & jugador actual que executa la targeta \mbox{\hyperlink{class_card_go}{Card\+Go}}. \\
+\hline
+{\em rewards} & Array\+List de recompenses que pot donar-\/te la casella de sortida. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 32 del fitxer Card\+Go.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_go_a0eb76d5ff523ba568585f2f909ee25c3_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_go_a0eb76d5ff523ba568585f2f909ee25c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_card_go_a9d344a1328ea4ba030e810c10c7eb292}\label{class_card_go_a9d344a1328ea4ba030e810c10c7eb292}} 
+\index{CardGo@{CardGo}!toString@{toString}}
+\index{toString@{toString}!CardGo@{CardGo}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Card\+Go.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String per mostrar la descripció de la targeta \mbox{\hyperlink{class_card_go}{Card\+Go}} per text. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\ttfamily \mbox{\hyperlink{class_card_go}{Card\+Go}}} ha estat mostrada per pantalla. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+String de la sortida per pantalla. 
+\end{DoxyReturn}
+
+
+Definició a la línia 47 del fitxer Card\+Go.\+java.
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_card_go_a57f2884c85c20849faf6e3fe2d8028a2}\label{class_card_go_a57f2884c85c20849faf6e3fe2d8028a2}} 
+\index{CardGo@{CardGo}!position@{position}}
+\index{position@{position}!CardGo@{CardGo}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily final int Card\+Go.\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 10 del fitxer Card\+Go.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_card_go_8java}{Card\+Go.\+java}}\end{DoxyCompactItemize}

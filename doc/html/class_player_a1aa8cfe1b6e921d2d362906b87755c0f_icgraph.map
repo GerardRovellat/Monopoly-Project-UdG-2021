@@ -1,0 +1,7 @@
+<map id="Player.stringValueSelection" name="Player.stringValueSelection">
+<area shape="rect" id="node1" title=" " alt="" coords="413,31,596,57"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd" title="Gestiona la negociacio de la compra del terreny." alt="" coords="191,5,365,32"/>
+<area shape="rect" id="node4" href="$class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6" title="Gestiona la negociacio de els torns i interesos del prestec." alt="" coords="199,56,357,83"/>
+<area shape="rect" id="node3" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="8,5,140,32"/>
+<area shape="rect" id="node5" href="$class_op_act_loan.html#a4c600503963ae54c4e34952b58052981" title="Mètode per executar el procés de demanar un préstec a un Jugador." alt="" coords="5,56,143,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CPUPlayer.postposableLuckCardChoice" name="CPUPlayer.postposableLuckCardChoice">
+<area shape="rect" id="node1" title="Selecciona si vol executar una carta de sort o guardar&#45;sela." alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$class_card.html#aa66a560c036a451b0d89583f8eae332c" title="Retorna el tipus de la carta." alt="" coords="241,13,340,39"/>
+</map>

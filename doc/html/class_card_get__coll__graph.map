@@ -1,0 +1,4 @@
+<map id="CardGet" name="CardGet">
+<area shape="rect" id="node1" title="Implementa la funcions de la carta de tipus rebre." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node2" href="$class_card.html" title="Implementa la funcions base i comunes totes les cartes." alt="" coords="16,5,65,32"/>
+</map>

@@ -1,0 +1,242 @@
+\hypertarget{class_card_give}{}\doxysection{Referència de la Classe Card\+Give}
+\label{class_card_give}\index{CardGive@{CardGive}}
+
+
+Implementa la funcions de la carta de tipus donar.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a Card\+Give\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_card_give__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a Card\+Give\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_card_give__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_give_aa288b0f142e08975c6ed0a43c7710463}{Card\+Give}} (boolean \mbox{\hyperlink{class_card_addab8ffd8522c7b0c97cb492d484959b}{postposable}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_card_give}{Card\+Give}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_give_a9669d63474adfceb476b5f01e4afea7d}{execute}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player)
+\begin{DoxyCompactList}\small\item\em Execucio de la carta. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_card_give_a7527af010db7797f2b00c75100b90067}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Sortida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_card_give_ac8bed1455d36aadf1bacdd2a52a8ca93}{player\+Select}} (Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ players, \mbox{\hyperlink{class_player}{Player}} current\+\_\+player)
+\begin{DoxyCompactList}\small\item\em Mostra tots els jugadors i deixa escollir a un d\textquotesingle{}ells a qui donar-\/li un terreny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_box_field}{Box\+Field}} \mbox{\hyperlink{class_card_give_a093596485d93e0d18c4e10d3911fb3bb}{field\+Select}} (\mbox{\hyperlink{class_player}{Player}} current\+\_\+player)
+\begin{DoxyCompactList}\small\item\em Mostra tots els terreyns del jugador i deixa escollir a un d\textquotesingle{}ells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Implementa la funcions de la carta de tipus donar. 
+
+Definició a la línia 9 del fitxer Card\+Give.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_card_give_aa288b0f142e08975c6ed0a43c7710463}\label{class_card_give_aa288b0f142e08975c6ed0a43c7710463}} 
+\index{CardGive@{CardGive}!CardGive@{CardGive}}
+\index{CardGive@{CardGive}!CardGive@{CardGive}}
+\doxysubsubsection{\texorpdfstring{CardGive()}{CardGive()}}
+{\footnotesize\ttfamily Card\+Give.\+Card\+Give (\begin{DoxyParamCaption}\item[{boolean}]{postposable }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_card_give}{Card\+Give}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La carta ha estat creada 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em postposable} & true si es posposable, false altrament \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 17 del fitxer Card\+Give.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_card_give_a9669d63474adfceb476b5f01e4afea7d}\label{class_card_give_a9669d63474adfceb476b5f01e4afea7d}} 
+\index{CardGive@{CardGive}!execute@{execute}}
+\index{execute@{execute}!CardGive@{CardGive}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Card\+Give.\+execute (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player }\end{DoxyParamCaption})}
+
+
+
+Execucio de la carta. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+la propietat ha estat donada 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & llista de jugadors de la partida \\
+\hline
+{\em current\+\_\+player} & jugador actiu \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 28 del fitxer Card\+Give.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_give_a9669d63474adfceb476b5f01e4afea7d_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_give_a9669d63474adfceb476b5f01e4afea7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_card_give_a093596485d93e0d18c4e10d3911fb3bb}\label{class_card_give_a093596485d93e0d18c4e10d3911fb3bb}} 
+\index{CardGive@{CardGive}!fieldSelect@{fieldSelect}}
+\index{fieldSelect@{fieldSelect}!CardGive@{CardGive}}
+\doxysubsubsection{\texorpdfstring{fieldSelect()}{fieldSelect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_box_field}{Box\+Field}} Card\+Give.\+field\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mostra tots els terreyns del jugador i deixa escollir a un d\textquotesingle{}ells. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em current\+\_\+player} & Jugador que ha de donar el terreny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+el terreny selecionat per el jugador o null si no es pot 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+current player fields $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El terreny selecionat ha estat retornat ( mai retorna un terreny null per la precondicio) 
+\end{DoxyPostcond}
+
+
+Definició a la línia 69 del fitxer Card\+Give.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_card_give_a093596485d93e0d18c4e10d3911fb3bb_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_give_a093596485d93e0d18c4e10d3911fb3bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_card_give_ac8bed1455d36aadf1bacdd2a52a8ca93}\label{class_card_give_ac8bed1455d36aadf1bacdd2a52a8ca93}} 
+\index{CardGive@{CardGive}!playerSelect@{playerSelect}}
+\index{playerSelect@{playerSelect}!CardGive@{CardGive}}
+\doxysubsubsection{\texorpdfstring{playerSelect()}{playerSelect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Card\+Give.\+player\+Select (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{current\+\_\+player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mostra tots els jugadors i deixa escollir a un d\textquotesingle{}ells a qui donar-\/li un terreny. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em players} & Array\+List de jugadors que estan jugant al \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em current\+\_\+player} & Jugador que ha de donar el terreny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+el jugador selecionat o null si no n\textquotesingle{}hi ha cap 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+players size $>$ 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El jugador selecionat ha estat retornat ( mai retorna un jugador null per la precondicio) 
+\end{DoxyPostcond}
+
+
+Definició a la línia 49 del fitxer Card\+Give.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_card_give_ac8bed1455d36aadf1bacdd2a52a8ca93_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_card_give_ac8bed1455d36aadf1bacdd2a52a8ca93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_card_give_a7527af010db7797f2b00c75100b90067}\label{class_card_give_a7527af010db7797f2b00c75100b90067}} 
+\index{CardGive@{CardGive}!toString@{toString}}
+\index{toString@{toString}!CardGive@{CardGive}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Card\+Give.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sortida. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el missatge ha estat retornat 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+missatge de sortida 
+\end{DoxyReturn}
+
+
+Definició a la línia 93 del fitxer Card\+Give.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_card_give_8java}{Card\+Give.\+java}}\end{DoxyCompactItemize}

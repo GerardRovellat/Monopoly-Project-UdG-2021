@@ -1,0 +1,6 @@
+<map id="OpActSell.selectFieldToSell" name="OpActSell.selectFieldToSell">
+<area shape="rect" id="node1" title="Mètode per sel·leccionar el terreny que es vol vendre." alt="" coords="5,56,189,83"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="255,5,371,32"/>
+<area shape="rect" id="node3" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="237,56,389,83"/>
+<area shape="rect" id="node4" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="252,107,375,133"/>
+</map>

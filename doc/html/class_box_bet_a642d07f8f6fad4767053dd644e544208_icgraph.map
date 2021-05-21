@@ -1,0 +1,6 @@
+<map id="BoxBet.betResult" name="BoxBet.betResult">
+<area shape="rect" id="node1" title="Calcula el resultat de una aposta." alt="" coords="527,5,651,32"/>
+<area shape="rect" id="node2" href="$class_movement.html#a8f24e14611e5dd284c9cfd3d863da396" title="Administra les accions que s&#39;han de fer si es cau en una Casella d&#39;aposta Bet." alt="" coords="339,5,479,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

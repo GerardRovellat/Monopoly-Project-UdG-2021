@@ -1,0 +1,5 @@
+<map id="OpActSell.doAuction" name="OpActSell.doAuction">
+<area shape="rect" id="node1" title="Mètode per executar la subhasta d&#39;una venta." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="196,5,359,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="220,56,335,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Player.getType" name="Player.getType">
+<area shape="rect" id="node1" title="Retorna el tipus de Jugador el qual la crida." alt="" coords="525,5,635,32"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a0a85c5910ebf711bfce3cb3f7a3b7cf3" title="Tira els daus d&#39;un torn." alt="" coords="339,5,477,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

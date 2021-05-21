@@ -1,0 +1,15 @@
+<map id="BoxField.getPrice" name="BoxField.getPrice">
+<area shape="rect" id="node1" title="Getter del preu del terreny Field." alt="" coords="816,157,941,184"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a90eeebebb758e3fc48dd2fc7a563ea5b" title="Seleciona si compra o no el terreny entrat." alt="" coords="627,5,737,32"/>
+<area shape="rect" id="node4" href="$class_c_p_u_player.html#ad6df718f0a30c0539bf912f83ab725c2" title="Seleccio de la oferta del comprador a la funcio Buy en negociació" alt="" coords="596,208,768,235"/>
+<area shape="rect" id="node6" href="$class_movement.html#a79673a4cdffd779435ed9d00d01113de" title="Administrarà la compra d&#39;un terreny on s&#39;ha caigut de tauler." alt="" coords="615,309,749,336"/>
+<area shape="rect" id="node10" href="$class_c_p_u_player.html#a71759c33a68c004c702b6283d34f61f9" title="Seleccio de la oferta inicial a la funcio Buy." alt="" coords="599,56,765,83"/>
+<area shape="rect" id="node11" href="$class_c_p_u_player.html#aec70d26c0bbc8a6309d67ec75e9e97ca" title="Seleccio de la oferta del venedor a la funcio Buy en negociació" alt="" coords="597,259,767,285"/>
+<area shape="rect" id="node12" href="$class_c_p_u_player.html#a323bc33dba35cd27b3b99175420b2373" title="Seleccio de la oferta del comprador a la funcio Sell." alt="" coords="597,107,767,133"/>
+<area shape="rect" id="node13" href="$class_c_p_u_player.html#ac88aa455e96587489f751cb744d4b839" title="Seleccio de la oferta inicial a la funcio Sell." alt="" coords="600,157,764,184"/>
+<area shape="rect" id="node3" href="$class_c_p_u_player.html#a5d1cd463222aa331912fc633449ba2f4" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="354,81,533,108"/>
+<area shape="rect" id="node5" href="$class_c_p_u_player.html#a7c79dc3099d47467b30a3c2b31806983" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="339,233,548,260"/>
+<area shape="rect" id="node7" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="371,309,516,336"/>
+<area shape="rect" id="node8" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,309,291,336"/>
+<area shape="rect" id="node9" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,309,136,336"/>
+</map>

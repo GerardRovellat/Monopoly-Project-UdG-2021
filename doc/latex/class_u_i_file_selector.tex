@@ -1,0 +1,443 @@
+\hypertarget{class_u_i_file_selector}{}\doxysection{Referència de la Classe U\+I\+File\+Selector}
+\label{class_u_i_file_selector}\index{UIFileSelector@{UIFileSelector}}
+
+
+Implementació d\textquotesingle{}un selector de fitxers gràfic per poder jugar al \mbox{\hyperlink{class_monopoly}{Monopoly}}.  
+
+
+
+
+Diagrama d\textquotesingle{}Herència per a U\+I\+File\+Selector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_u_i_file_selector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de col·laboració per a U\+I\+File\+Selector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_u_i_file_selector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963}{U\+I\+File\+Selector}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963}{U\+I\+File\+Selector()}}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_u_i_file_selector_ab93ec3ffd5f542944e11efef360d0df9}{get\+Rules\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter de nom de fitxer regles {\ttfamily rules\+\_\+name}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_u_i_file_selector_a3429e358ba395bc46fda166e2fed253a}{get\+Board\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter de nom de fitxer tauler {\ttfamily board\+\_\+name}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_u_i_file_selector_a093126e469944543d893e3ec218467e5}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Getter de estat de finestra {\ttfamily status}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_file_selector_afe3ce04185fc0390776e1bdfb0644a70}{start\+Components}} ()
+\begin{DoxyCompactList}\small\item\em Inicialitza i crea tota la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_aa13aa80e61ba2b23c6b0d7e51c901789}{create\+Labels}} (J\+Panel panel)
+\begin{DoxyCompactList}\small\item\em Crea etiquetes i les afegeix a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_a1b0cbb846cffd5f15f3a170ab278ef2f}{define\+Buttons}} (J\+Button browse\+\_\+rules\+\_\+button, J\+Button browse\+\_\+board\+\_\+button, J\+Button next\+\_\+button, J\+Panel panel)
+\begin{DoxyCompactList}\small\item\em Afegeix botos a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_a521305e60807eee9745b4a3b935461a8}{define\+Text\+Fields}} (J\+Text\+Field rules\+\_\+field, J\+Text\+Field board\+\_\+field, J\+Panel panel)
+\begin{DoxyCompactList}\small\item\em Afegeix camps de text a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_a28512fceaf0fcec17a5d14c4b8c9b7b0}{define\+Text\+Areas}} (J\+Text\+Area rules\+\_\+text\+\_\+area, J\+Text\+Area board\+\_\+text\+\_\+area, J\+Panel panel)
+\begin{DoxyCompactList}\small\item\em Afegeix areas de text a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_a8feac289402f2bccbe652d7ae1539703}{create\+Browse\+Button\+Action}} (J\+Button browse\+\_\+button, J\+Text\+Field browse\+\_\+field, J\+Text\+Area browse\+\_\+textarea, String name\+\_\+button, J\+Panel panel)
+\begin{DoxyCompactList}\small\item\em Crea les accions pels botons browse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_file_selector_a5f6622e6a29b535aaf01c7799437f1c8}{create\+Next\+Button\+Action}} (J\+Button next\+\_\+button)
+\begin{DoxyCompactList}\small\item\em Crea les accions pel boto next. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_u_i_file_selector_a8746c080c47ad115000c7367ed91b7fd}{rules\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Ruta fitxer de regles. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_u_i_file_selector_ae8580717cc8537924ca3d20b281725bd}{board\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Ruta fitxer de tauler. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_u_i_file_selector_a26312cc6ffbd06de44772806559a8f14}{status}} = false
+\begin{DoxyCompactList}\small\item\em Estat de selector de fitxers, true si s\textquotesingle{}ha sel·leccionat false altrament. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Implementació d\textquotesingle{}un selector de fitxers gràfic per poder jugar al \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+Definició a la línia 15 del fitxer U\+I\+File\+Selector.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963}\label{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963}} 
+\index{UIFileSelector@{UIFileSelector}!UIFileSelector@{UIFileSelector}}
+\index{UIFileSelector@{UIFileSelector}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{UIFileSelector()}{UIFileSelector()}}
+{\footnotesize\ttfamily U\+I\+File\+Selector.\+U\+I\+File\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963}{U\+I\+File\+Selector()}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un sel·lector de fitxers d\textquotesingle{}entrada. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 26 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a4c9ab512c68ccff1ca33115e38abf963_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_u_i_file_selector_a8feac289402f2bccbe652d7ae1539703}\label{class_u_i_file_selector_a8feac289402f2bccbe652d7ae1539703}} 
+\index{UIFileSelector@{UIFileSelector}!createBrowseButtonAction@{createBrowseButtonAction}}
+\index{createBrowseButtonAction@{createBrowseButtonAction}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{createBrowseButtonAction()}{createBrowseButtonAction()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+create\+Browse\+Button\+Action (\begin{DoxyParamCaption}\item[{J\+Button}]{browse\+\_\+button,  }\item[{J\+Text\+Field}]{browse\+\_\+field,  }\item[{J\+Text\+Area}]{browse\+\_\+textarea,  }\item[{String}]{name\+\_\+button,  }\item[{J\+Panel}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea les accions pels botons browse. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Accions creades per a cada boto de browse. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 154 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a8feac289402f2bccbe652d7ae1539703_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_aa13aa80e61ba2b23c6b0d7e51c901789}\label{class_u_i_file_selector_aa13aa80e61ba2b23c6b0d7e51c901789}} 
+\index{UIFileSelector@{UIFileSelector}!createLabels@{createLabels}}
+\index{createLabels@{createLabels}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{createLabels()}{createLabels()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+create\+Labels (\begin{DoxyParamCaption}\item[{J\+Panel}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea etiquetes i les afegeix a la finestra. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Etiquetes afegides a la finestra. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 88 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_aa13aa80e61ba2b23c6b0d7e51c901789_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a5f6622e6a29b535aaf01c7799437f1c8}\label{class_u_i_file_selector_a5f6622e6a29b535aaf01c7799437f1c8}} 
+\index{UIFileSelector@{UIFileSelector}!createNextButtonAction@{createNextButtonAction}}
+\index{createNextButtonAction@{createNextButtonAction}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{createNextButtonAction()}{createNextButtonAction()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+create\+Next\+Button\+Action (\begin{DoxyParamCaption}\item[{J\+Button}]{next\+\_\+button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea les accions pel boto next. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Accions creades pel boto next. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 191 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a5f6622e6a29b535aaf01c7799437f1c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a1b0cbb846cffd5f15f3a170ab278ef2f}\label{class_u_i_file_selector_a1b0cbb846cffd5f15f3a170ab278ef2f}} 
+\index{UIFileSelector@{UIFileSelector}!defineButtons@{defineButtons}}
+\index{defineButtons@{defineButtons}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{defineButtons()}{defineButtons()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+define\+Buttons (\begin{DoxyParamCaption}\item[{J\+Button}]{browse\+\_\+rules\+\_\+button,  }\item[{J\+Button}]{browse\+\_\+board\+\_\+button,  }\item[{J\+Button}]{next\+\_\+button,  }\item[{J\+Panel}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Afegeix botos a la finestra. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Botons definits a la finestra. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 104 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a1b0cbb846cffd5f15f3a170ab278ef2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a28512fceaf0fcec17a5d14c4b8c9b7b0}\label{class_u_i_file_selector_a28512fceaf0fcec17a5d14c4b8c9b7b0}} 
+\index{UIFileSelector@{UIFileSelector}!defineTextAreas@{defineTextAreas}}
+\index{defineTextAreas@{defineTextAreas}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{defineTextAreas()}{defineTextAreas()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+define\+Text\+Areas (\begin{DoxyParamCaption}\item[{J\+Text\+Area}]{rules\+\_\+text\+\_\+area,  }\item[{J\+Text\+Area}]{board\+\_\+text\+\_\+area,  }\item[{J\+Panel}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Afegeix areas de text a la finestra. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Les areas de text han estat definides. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 135 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a28512fceaf0fcec17a5d14c4b8c9b7b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a521305e60807eee9745b4a3b935461a8}\label{class_u_i_file_selector_a521305e60807eee9745b4a3b935461a8}} 
+\index{UIFileSelector@{UIFileSelector}!defineTextFields@{defineTextFields}}
+\index{defineTextFields@{defineTextFields}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{defineTextFields()}{defineTextFields()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+define\+Text\+Fields (\begin{DoxyParamCaption}\item[{J\+Text\+Field}]{rules\+\_\+field,  }\item[{J\+Text\+Field}]{board\+\_\+field,  }\item[{J\+Panel}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Afegeix camps de text a la finestra. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els camps de text han estat definits. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 123 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a521305e60807eee9745b4a3b935461a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a3429e358ba395bc46fda166e2fed253a}\label{class_u_i_file_selector_a3429e358ba395bc46fda166e2fed253a}} 
+\index{UIFileSelector@{UIFileSelector}!getBoardFileName@{getBoardFileName}}
+\index{getBoardFileName@{getBoardFileName}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{getBoardFileName()}{getBoardFileName()}}
+{\footnotesize\ttfamily String U\+I\+File\+Selector.\+get\+Board\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de nom de fitxer tauler {\ttfamily board\+\_\+name}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el nom de fitxer {\ttfamily board\+\_\+name} ha estat tornat. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 72 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_a3429e358ba395bc46fda166e2fed253a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_ab93ec3ffd5f542944e11efef360d0df9}\label{class_u_i_file_selector_ab93ec3ffd5f542944e11efef360d0df9}} 
+\index{UIFileSelector@{UIFileSelector}!getRulesFileName@{getRulesFileName}}
+\index{getRulesFileName@{getRulesFileName}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{getRulesFileName()}{getRulesFileName()}}
+{\footnotesize\ttfamily String U\+I\+File\+Selector.\+get\+Rules\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de nom de fitxer regles {\ttfamily rules\+\_\+name}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el nom de fitxer {\ttfamily rules\+\_\+name} ha estat tornat. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 63 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_ab93ec3ffd5f542944e11efef360d0df9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_a093126e469944543d893e3ec218467e5}\label{class_u_i_file_selector_a093126e469944543d893e3ec218467e5}} 
+\index{UIFileSelector@{UIFileSelector}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily boolean U\+I\+File\+Selector.\+get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de estat de finestra {\ttfamily status}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el estat de finestra {\ttfamily status} ha estat tornat. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 81 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_u_i_file_selector_a093126e469944543d893e3ec218467e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_i_file_selector_afe3ce04185fc0390776e1bdfb0644a70}\label{class_u_i_file_selector_afe3ce04185fc0390776e1bdfb0644a70}} 
+\index{UIFileSelector@{UIFileSelector}!startComponents@{startComponents}}
+\index{startComponents@{startComponents}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{startComponents()}{startComponents()}}
+{\footnotesize\ttfamily void U\+I\+File\+Selector.\+start\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicialitza i crea tota la finestra. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Finestra creada amb tota la seva interficie grafica. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 38 del fitxer U\+I\+File\+Selector.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_afe3ce04185fc0390776e1bdfb0644a70_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_i_file_selector_afe3ce04185fc0390776e1bdfb0644a70_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_u_i_file_selector_ae8580717cc8537924ca3d20b281725bd}\label{class_u_i_file_selector_ae8580717cc8537924ca3d20b281725bd}} 
+\index{UIFileSelector@{UIFileSelector}!board\_name@{board\_name}}
+\index{board\_name@{board\_name}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{board\_name}{board\_name}}
+{\footnotesize\ttfamily String U\+I\+File\+Selector.\+board\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ruta fitxer de tauler. 
+
+
+
+Definició a la línia 18 del fitxer U\+I\+File\+Selector.\+java.
+
+\mbox{\Hypertarget{class_u_i_file_selector_a8746c080c47ad115000c7367ed91b7fd}\label{class_u_i_file_selector_a8746c080c47ad115000c7367ed91b7fd}} 
+\index{UIFileSelector@{UIFileSelector}!rules\_name@{rules\_name}}
+\index{rules\_name@{rules\_name}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{rules\_name}{rules\_name}}
+{\footnotesize\ttfamily String U\+I\+File\+Selector.\+rules\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ruta fitxer de regles. 
+
+
+
+Definició a la línia 17 del fitxer U\+I\+File\+Selector.\+java.
+
+\mbox{\Hypertarget{class_u_i_file_selector_a26312cc6ffbd06de44772806559a8f14}\label{class_u_i_file_selector_a26312cc6ffbd06de44772806559a8f14}} 
+\index{UIFileSelector@{UIFileSelector}!status@{status}}
+\index{status@{status}!UIFileSelector@{UIFileSelector}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily boolean U\+I\+File\+Selector.\+status = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estat de selector de fitxers, true si s\textquotesingle{}ha sel·leccionat false altrament. 
+
+
+
+Definició a la línia 19 del fitxer U\+I\+File\+Selector.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_u_i_file_selector_8java}{U\+I\+File\+Selector.\+java}}\end{DoxyCompactItemize}

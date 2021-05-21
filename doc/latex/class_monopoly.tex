@@ -1,0 +1,678 @@
+\hypertarget{class_monopoly}{}\doxysection{Referència de la Classe Monopoly}
+\label{class_monopoly}\index{Monopoly@{Monopoly}}
+
+
+Classe que s\textquotesingle{}encarrega d\textquotesingle{}administrar l\textquotesingle{}inicialització, els torns i funcionament general i la finalització del joc \mbox{\hyperlink{class_monopoly}{Monopoly}}.  
+
+
+
+
+Diagrama de col·laboració per a Monopoly\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monopoly_a1971277869d4de2534e7b89da46985fb}{Monopoly}} (String \mbox{\hyperlink{class_monopoly_a4baf227223b7d01cde0c1e5dc5608d28}{mode}}, \mbox{\hyperlink{class_board}{Board}} read\+\_\+board, Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$ read\+\_\+optional\+\_\+actions, Array\+List$<$ \mbox{\hyperlink{class_card}{Card}} $>$ stack\+\_\+of\+\_\+cards, int \mbox{\hyperlink{class_monopoly_adf6b182e5665c34a946f0e2701227bfd}{initial\+\_\+money}}, Array\+List$<$ String $>$ \mbox{\hyperlink{class_monopoly_aa3061f4364fb533b8e71efb72884f9b6}{start\+\_\+rewards}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_a61e966ffedbf288aeb860568c2b92435}{play}} ()
+\begin{DoxyCompactList}\small\item\em Mètode que s\textquotesingle{}encarrega de gestionar els fluxe de joc del \mbox{\hyperlink{class_monopoly}{Monopoly}} (comprovar si s\textquotesingle{}ha de seguir, jugar, finalitzar). \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_monopoly_af761331b83173a13ce41431414893e94}{get\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el mode de joc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_monopoly_ae4d623f7498785827ed36c78f9cfbb98}{move\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}accio de moure Jugador i dona el resultat dels daus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_box}{Box}} \mbox{\hyperlink{class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9}{get\+Current\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Retornara la casella actual del Jugador. \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_monopoly_aebc947aea5fc7cdb0ea427f17798f863}{check\+End\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Comproba si el joc s\textquotesingle{}ha acabat o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_ac610cc7331663e7cf788a9378865c293}{next\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Salta al següent Jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3}{throw\+Dice}} ()
+\begin{DoxyCompactList}\small\item\em Tira els daus d\textquotesingle{}un torn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Inicialitza el joc del \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_monopoly_ac12f3de240b7812c34b271b2011630d6}{ask\+Nr\+Of\+Players}} ()
+\begin{DoxyCompactList}\small\item\em Demana el numero {\ttfamily number\+\_\+of\+\_\+players} de Jugadors que jugaran al joc del monopoly, han de jugar de dos a dotze persones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367}{ask\+Info\+Of\+Players}} (int number\+\_\+of\+\_\+players)
+\begin{DoxyCompactList}\small\item\em Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es C\+PU o Usuari. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_a2878921eab8bfd3ac87486c9829c7e00}{end\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Gestiona la finalització del joc de \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monopoly_af2a14eb3e37725fc7e958c62837d0786}{print\+Players}} ()
+\begin{DoxyCompactList}\small\item\em Mostra els jugadors que no estan en fallida jugant a \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+final String \mbox{\hyperlink{class_monopoly_a4baf227223b7d01cde0c1e5dc5608d28}{mode}}
+\begin{DoxyCompactList}\small\item\em Mode de joc. \end{DoxyCompactList}\item 
+final Array\+List$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \mbox{\hyperlink{class_monopoly_a1f358ffb248672fa59a07e5575a19a53}{players}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Llista de Jugadors del \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\item 
+final \mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{class_monopoly_ad84d7cc1dbd1c6d6ab2cfc4be51503ac}{board}}
+\begin{DoxyCompactList}\small\item\em Tauler del \mbox{\hyperlink{class_monopoly}{Monopoly}}. \end{DoxyCompactList}\item 
+final int \mbox{\hyperlink{class_monopoly_adf6b182e5665c34a946f0e2701227bfd}{initial\+\_\+money}}
+\begin{DoxyCompactList}\small\item\em Diners inicials quan es comença una partida. \end{DoxyCompactList}\item 
+final Array\+List$<$ String $>$ \mbox{\hyperlink{class_monopoly_aa3061f4364fb533b8e71efb72884f9b6}{start\+\_\+rewards}}
+\begin{DoxyCompactList}\small\item\em Recompenses de casella sortida \char`\"{}\+Start\char`\"{}. \end{DoxyCompactList}\item 
+Pair$<$ Integer, Integer $>$ \mbox{\hyperlink{class_monopoly_a8221db199456d377fd74f601139a7266}{dice\+\_\+result}}
+\begin{DoxyCompactList}\small\item\em Resultat dels daus tirats. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_monopoly_a3e83aa83688af14c0e702df531f7e9c3}{current\+\_\+player\+\_\+iterator}} = 0
+\begin{DoxyCompactList}\small\item\em Iterador que recorre Llista players. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_monopoly_aae395c295b14dfcf2edc4083daf04f5a}{current\+\_\+player}}
+\begin{DoxyCompactList}\small\item\em Jugador actual. \end{DoxyCompactList}\item 
+final Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$ \mbox{\hyperlink{class_monopoly_a01ce4b1d3affb80db86a079d2e818386}{optional\+\_\+actions}}
+\begin{DoxyCompactList}\small\item\em Llista d\textquotesingle{}accions opcionals. \end{DoxyCompactList}\item 
+final Array\+List$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \mbox{\hyperlink{class_monopoly_a54698c016c8e95a3cdb43399fe66e1f4}{cards}}
+\begin{DoxyCompactList}\small\item\em Llista de targetes sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que s\textquotesingle{}encarrega d\textquotesingle{}administrar l\textquotesingle{}inicialització, els torns i funcionament general i la finalització del joc \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+Definició a la línia 16 del fitxer Monopoly.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_monopoly_a1971277869d4de2534e7b89da46985fb}\label{class_monopoly_a1971277869d4de2534e7b89da46985fb}} 
+\index{Monopoly@{Monopoly}!Monopoly@{Monopoly}}
+\index{Monopoly@{Monopoly}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{Monopoly()}{Monopoly()}}
+{\footnotesize\ttfamily Monopoly.\+Monopoly (\begin{DoxyParamCaption}\item[{String}]{mode,  }\item[{\mbox{\hyperlink{class_board}{Board}}}]{read\+\_\+board,  }\item[{Array\+List$<$ \mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}} $>$}]{read\+\_\+optional\+\_\+actions,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_card}{Card}} $>$}]{stack\+\_\+of\+\_\+cards,  }\item[{int}]{initial\+\_\+money,  }\item[{Array\+List$<$ String $>$}]{start\+\_\+rewards }\end{DoxyParamCaption})}
+
+
+
+Constructor de \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea \mbox{\hyperlink{class_monopoly}{Monopoly}} amb els atributs entrats. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em read\+\_\+board} & tauler llegit del \mbox{\hyperlink{class_j_s_o_n_manager}{J\+S\+O\+N\+Manager}}. \\
+\hline
+{\em read\+\_\+optional\+\_\+actions} & accions opcionals llegides del \mbox{\hyperlink{class_j_s_o_n_manager}{J\+S\+O\+N\+Manager}}. \\
+\hline
+{\em stack\+\_\+of\+\_\+cards} & pila de targetes sort del \mbox{\hyperlink{class_monopoly}{Monopoly}}. \\
+\hline
+{\em initial\+\_\+money} & diners inicials del Jugador. \\
+\hline
+{\em start\+\_\+rewards} & llista de recompenses per la casella de sortida \char`\"{}\+Start\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 42 del fitxer Monopoly.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367}\label{class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367}} 
+\index{Monopoly@{Monopoly}!askInfoOfPlayers@{askInfoOfPlayers}}
+\index{askInfoOfPlayers@{askInfoOfPlayers}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{askInfoOfPlayers()}{askInfoOfPlayers()}}
+{\footnotesize\ttfamily void Monopoly.\+ask\+Info\+Of\+Players (\begin{DoxyParamCaption}\item[{int}]{number\+\_\+of\+\_\+players }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es C\+PU o Usuari. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els Jugadors entrats estan preparats per poder jugar al \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 261 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_ac12f3de240b7812c34b271b2011630d6}\label{class_monopoly_ac12f3de240b7812c34b271b2011630d6}} 
+\index{Monopoly@{Monopoly}!askNrOfPlayers@{askNrOfPlayers}}
+\index{askNrOfPlayers@{askNrOfPlayers}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{askNrOfPlayers()}{askNrOfPlayers()}}
+{\footnotesize\ttfamily int Monopoly.\+ask\+Nr\+Of\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Demana el numero {\ttfamily number\+\_\+of\+\_\+players} de Jugadors que jugaran al joc del monopoly, han de jugar de dos a dotze persones. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el numero entrat de Jugadors que jugaran al \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+numero de Jugadors de la partida. 
+\end{DoxyReturn}
+
+
+Definició a la línia 237 del fitxer Monopoly.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_ac12f3de240b7812c34b271b2011630d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_aebc947aea5fc7cdb0ea427f17798f863}\label{class_monopoly_aebc947aea5fc7cdb0ea427f17798f863}} 
+\index{Monopoly@{Monopoly}!checkEndGame@{checkEndGame}}
+\index{checkEndGame@{checkEndGame}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{checkEndGame()}{checkEndGame()}}
+{\footnotesize\ttfamily Boolean Monopoly.\+check\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Comproba si el joc s\textquotesingle{}ha acabat o no. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna {\ttfamily true} si el joc s\textquotesingle{}ha acabat {\ttfamily false} altrament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si s\textquotesingle{}ha acabat, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Definició a la línia 157 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_a2878921eab8bfd3ac87486c9829c7e00}\label{class_monopoly_a2878921eab8bfd3ac87486c9829c7e00}} 
+\index{Monopoly@{Monopoly}!endGame@{endGame}}
+\index{endGame@{endGame}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{endGame()}{endGame()}}
+{\footnotesize\ttfamily void Monopoly.\+end\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la finalització del joc de \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Finalitza el joc i mostra per pantalla el resum de la partida. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 302 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9}\label{class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9}} 
+\index{Monopoly@{Monopoly}!getCurrentBox@{getCurrentBox}}
+\index{getCurrentBox@{getCurrentBox}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{getCurrentBox()}{getCurrentBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_box}{Box}} Monopoly.\+get\+Current\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retornara la casella actual del Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Casella actual on esta el Jugador retornada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily box} on es el Jugador. 
+\end{DoxyReturn}
+
+
+Definició a la línia 147 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_af761331b83173a13ce41431414893e94}\label{class_monopoly_af761331b83173a13ce41431414893e94}} 
+\index{Monopoly@{Monopoly}!getMode@{getMode}}
+\index{getMode@{getMode}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily String Monopoly.\+get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el mode de joc. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el mode de joc s\textquotesingle{}ha retornat. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+mode de joc 
+\end{DoxyReturn}
+
+
+Definició a la línia 119 del fitxer Monopoly.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_monopoly_af761331b83173a13ce41431414893e94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_ae4d623f7498785827ed36c78f9cfbb98}\label{class_monopoly_ae4d623f7498785827ed36c78f9cfbb98}} 
+\index{Monopoly@{Monopoly}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily void Monopoly.\+move\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicialitza l\textquotesingle{}accio de moure Jugador i dona el resultat dels daus. 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Jugador sera mogut fins a {\ttfamily position} del \textbackslash{}board de \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 128 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_ac610cc7331663e7cf788a9378865c293}\label{class_monopoly_ac610cc7331663e7cf788a9378865c293}} 
+\index{Monopoly@{Monopoly}!nextPlayer@{nextPlayer}}
+\index{nextPlayer@{nextPlayer}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{nextPlayer()}{nextPlayer()}}
+{\footnotesize\ttfamily void Monopoly.\+next\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Salta al següent Jugador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha passat al segÜent Jugador de la llista. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 181 del fitxer Monopoly.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_ac610cc7331663e7cf788a9378865c293_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_a61e966ffedbf288aeb860568c2b92435}\label{class_monopoly_a61e966ffedbf288aeb860568c2b92435}} 
+\index{Monopoly@{Monopoly}!play@{play}}
+\index{play@{play}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Monopoly.\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mètode que s\textquotesingle{}encarrega de gestionar els fluxe de joc del \mbox{\hyperlink{class_monopoly}{Monopoly}} (comprovar si s\textquotesingle{}ha de seguir, jugar, finalitzar). 
+
+\begin{DoxyPrecond}{Precondició}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es jugara al \mbox{\hyperlink{class_monopoly}{Monopoly}} fins que s\textquotesingle{}hagi acabat el joc. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 57 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_monopoly_a61e966ffedbf288aeb860568c2b92435_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_monopoly_a61e966ffedbf288aeb860568c2b92435_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_af2a14eb3e37725fc7e958c62837d0786}\label{class_monopoly_af2a14eb3e37725fc7e958c62837d0786}} 
+\index{Monopoly@{Monopoly}!printPlayers@{printPlayers}}
+\index{printPlayers@{printPlayers}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{printPlayers()}{printPlayers()}}
+{\footnotesize\ttfamily void Monopoly.\+print\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mostra els jugadors que no estan en fallida jugant a \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna els jugadors amb {\ttfamily bankruptcy} = false. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 349 del fitxer Monopoly.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_af2a14eb3e37725fc7e958c62837d0786_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7}\label{class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7}} 
+\index{Monopoly@{Monopoly}!startGame@{startGame}}
+\index{startGame@{startGame}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void Monopoly.\+start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicialitza el joc del \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El joc ha estat inicialitzat i esta preparat per començar la partida. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 222 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3}\label{class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3}} 
+\index{Monopoly@{Monopoly}!throwDice@{throwDice}}
+\index{throwDice@{throwDice}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{throwDice()}{throwDice()}}
+{\footnotesize\ttfamily void Monopoly.\+throw\+Dice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tira els daus d\textquotesingle{}un torn. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Dona el resultat dels daus d\textquotesingle{}aquest torn. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 204 del fitxer Monopoly.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_monopoly_ad84d7cc1dbd1c6d6ab2cfc4be51503ac}\label{class_monopoly_ad84d7cc1dbd1c6d6ab2cfc4be51503ac}} 
+\index{Monopoly@{Monopoly}!board@{board}}
+\index{board@{board}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_board}{Board}} Monopoly.\+board\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tauler del \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+
+
+Definició a la línia 20 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a54698c016c8e95a3cdb43399fe66e1f4}\label{class_monopoly_a54698c016c8e95a3cdb43399fe66e1f4}} 
+\index{Monopoly@{Monopoly}!cards@{cards}}
+\index{cards@{cards}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{cards}{cards}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{class_card}{Card}}$>$ Monopoly.\+cards\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista de targetes sort. 
+
+
+
+Definició a la línia 27 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_aae395c295b14dfcf2edc4083daf04f5a}\label{class_monopoly_aae395c295b14dfcf2edc4083daf04f5a}} 
+\index{Monopoly@{Monopoly}!current\_player@{current\_player}}
+\index{current\_player@{current\_player}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{current\_player}{current\_player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Monopoly.\+current\+\_\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Jugador actual. 
+
+
+
+Definició a la línia 25 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a3e83aa83688af14c0e702df531f7e9c3}\label{class_monopoly_a3e83aa83688af14c0e702df531f7e9c3}} 
+\index{Monopoly@{Monopoly}!current\_player\_iterator@{current\_player\_iterator}}
+\index{current\_player\_iterator@{current\_player\_iterator}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{current\_player\_iterator}{current\_player\_iterator}}
+{\footnotesize\ttfamily int Monopoly.\+current\+\_\+player\+\_\+iterator = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Iterador que recorre Llista players. 
+
+
+
+Definició a la línia 24 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a8221db199456d377fd74f601139a7266}\label{class_monopoly_a8221db199456d377fd74f601139a7266}} 
+\index{Monopoly@{Monopoly}!dice\_result@{dice\_result}}
+\index{dice\_result@{dice\_result}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{dice\_result}{dice\_result}}
+{\footnotesize\ttfamily Pair$<$Integer,Integer$>$ Monopoly.\+dice\+\_\+result\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resultat dels daus tirats. 
+
+
+
+Definició a la línia 23 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_adf6b182e5665c34a946f0e2701227bfd}\label{class_monopoly_adf6b182e5665c34a946f0e2701227bfd}} 
+\index{Monopoly@{Monopoly}!initial\_money@{initial\_money}}
+\index{initial\_money@{initial\_money}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{initial\_money}{initial\_money}}
+{\footnotesize\ttfamily final int Monopoly.\+initial\+\_\+money\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Diners inicials quan es comença una partida. 
+
+
+
+Definició a la línia 21 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a4baf227223b7d01cde0c1e5dc5608d28}\label{class_monopoly_a4baf227223b7d01cde0c1e5dc5608d28}} 
+\index{Monopoly@{Monopoly}!mode@{mode}}
+\index{mode@{mode}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily final String Monopoly.\+mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mode de joc. 
+
+
+
+Definició a la línia 18 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a01ce4b1d3affb80db86a079d2e818386}\label{class_monopoly_a01ce4b1d3affb80db86a079d2e818386}} 
+\index{Monopoly@{Monopoly}!optional\_actions@{optional\_actions}}
+\index{optional\_actions@{optional\_actions}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{optional\_actions}{optional\_actions}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{interfaceoptional_actions}{optional\+Actions}}$>$ Monopoly.\+optional\+\_\+actions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista d\textquotesingle{}accions opcionals. 
+
+
+
+Definició a la línia 26 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_a1f358ffb248672fa59a07e5575a19a53}\label{class_monopoly_a1f358ffb248672fa59a07e5575a19a53}} 
+\index{Monopoly@{Monopoly}!players@{players}}
+\index{players@{players}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{class_player}{Player}}$>$ Monopoly.\+players = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista de Jugadors del \mbox{\hyperlink{class_monopoly}{Monopoly}}. 
+
+
+
+Definició a la línia 19 del fitxer Monopoly.\+java.
+
+\mbox{\Hypertarget{class_monopoly_aa3061f4364fb533b8e71efb72884f9b6}\label{class_monopoly_aa3061f4364fb533b8e71efb72884f9b6}} 
+\index{Monopoly@{Monopoly}!start\_rewards@{start\_rewards}}
+\index{start\_rewards@{start\_rewards}!Monopoly@{Monopoly}}
+\doxysubsubsection{\texorpdfstring{start\_rewards}{start\_rewards}}
+{\footnotesize\ttfamily final Array\+List$<$String$>$ Monopoly.\+start\+\_\+rewards\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recompenses de casella sortida \char`\"{}\+Start\char`\"{}. 
+
+
+
+Definició a la línia 22 del fitxer Monopoly.\+java.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_monopoly_8java}{Monopoly.\+java}}\end{DoxyCompactItemize}

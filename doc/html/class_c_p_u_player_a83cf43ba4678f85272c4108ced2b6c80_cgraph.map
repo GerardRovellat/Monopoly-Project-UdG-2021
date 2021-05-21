@@ -1,0 +1,6 @@
+<map id="CPUPlayer.optionalActionSelector" name="CPUPlayer.optionalActionSelector">
+<area shape="rect" id="node1" title="Seleciona la millor accio opcional per la CPU al final del torn segons les probabilitats de guanyar d..." alt="" coords="5,49,177,90"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="239,5,355,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d" title="Retorna en una llista les targetes sort luckCards del Jugador." alt="" coords="225,56,368,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="237,107,357,133"/>
+</map>

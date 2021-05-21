@@ -1,0 +1,7 @@
+<map id="Jerarquia Gràfica de la Classe" name="Jerarquia Gràfica de la Classe">
+<area shape="rect" id="node1" href="$interfaceoptional_actions.html" title="Interficie general d&#39;accions opcionals del joc de Monopoly." alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html" title=" " alt="" coords="180,5,263,32"/>
+<area shape="rect" id="node3" href="$class_op_act_loan.html" title=" " alt="" coords="178,56,265,83"/>
+<area shape="rect" id="node4" href="$class_op_act_luck_card.html" title=" " alt="" coords="164,107,279,133"/>
+<area shape="rect" id="node5" href="$class_op_act_sell.html" title=" " alt="" coords="181,157,262,184"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CPUPlayer.loanInterestOffer" name="CPUPlayer.loanInterestOffer">
+<area shape="rect" id="node1" title="Seleccio de la acceptacio, denegació o valor del interes del prestec." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="237,5,357,32"/>
+</map>

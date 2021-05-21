@@ -1,0 +1,5 @@
+<map id="CPUPlayer.buildApartment" name="CPUPlayer.buildApartment">
+<area shape="rect" id="node1" title="Seleciona quants apartament vol construir." alt="" coords="397,31,575,57"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a539a4f3757b837ab06b8aff36da5671c" title="Seleciona si construeix un apartament o un hotel." alt="" coords="232,5,349,32"/>
+<area shape="rect" id="node3" href="$class_c_p_u_player.html#a5d1cd463222aa331912fc633449ba2f4" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="5,31,184,57"/>
+</map>

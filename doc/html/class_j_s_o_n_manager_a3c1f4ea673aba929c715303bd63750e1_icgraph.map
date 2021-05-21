@@ -1,0 +1,5 @@
+<map id="JSONManager.readRules" name="JSONManager.readRules">
+<area shape="rect" id="node1" title="Llegeix rules_file fitxer JSON i configura les propietats llegides del joc del Monopoly." alt="" coords="388,5,556,32"/>
+<area shape="rect" id="node2" href="$class_j_s_o_n_manager.html#a62c59e71d7d63a920869da7f86f30314" title="Llegeix els dos fitxers d&#39;entrada rules_file i board_file per poder crear el joc del Monopoly." alt="" coords="184,5,340,32"/>
+<area shape="rect" id="node3" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

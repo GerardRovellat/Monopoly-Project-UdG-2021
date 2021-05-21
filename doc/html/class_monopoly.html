@@ -1,0 +1,1148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Referència de la Classe Monopoly</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Mètodes públics</a> &#124;
+<a href="#pri-methods">Mètodes Privats</a> &#124;
+<a href="#pri-attribs">Atributs Privats</a> &#124;
+<a href="class_monopoly-members.html">Llista de tots els membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Referència de la Classe Monopoly</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe que s'encarrega d'administrar l'inicialització, els torns i funcionament general i la finalització del joc <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  
+ <a href="class_monopoly.html#details">Més...</a></p>
+<div class="dynheader">
+Diagrama de col·laboració per a Monopoly:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly__coll__graph.png" border="0" usemap="#a_monopoly_coll__map" alt="Collaboration graph"/></div>
+<map name="_monopoly_coll__map" id="a_monopoly_coll__map">
+<area shape="rect" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz..." alt="" coords="660,261,739,288"/>
+<area shape="rect" title=" " alt="" coords="19,60,154,87"/>
+<area shape="rect" href="class_board.html" title="Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altre..." alt="" coords="392,97,448,124"/>
+<area shape="rect" title=" " alt="" coords="24,164,149,191"/>
+<area shape="rect" href="class_player.html" title="Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a..." alt="" coords="391,211,449,237"/>
+<area shape="rect" title=" " alt="" coords="385,261,455,288"/>
+<area shape="rect" title=" " alt="" coords="327,312,513,339"/>
+<area shape="rect" href="class_output_manager.html" title="Classe que s&#39;encarrega de gestionar les sortides en el nostre cas al fitxer de desenvolupament de par..." alt="" coords="365,363,475,389"/>
+<area shape="rect" title=" " alt="" coords="65,363,108,389"/>
+<area shape="rect" title=" " alt="" coords="354,413,486,440"/>
+<area shape="rect" title=" " alt="" coords="343,464,497,491"/>
+<area shape="rect" title=" " alt="" coords="5,229,168,256"/>
+<area shape="rect" title=" " alt="" coords="12,280,161,307"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">llegenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Mètodes públics</h2></td></tr>
+<tr class="memitem:a1971277869d4de2534e7b89da46985fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a1971277869d4de2534e7b89da46985fb">Monopoly</a> (String <a class="el" href="class_monopoly.html#a4baf227223b7d01cde0c1e5dc5608d28">mode</a>, <a class="el" href="class_board.html">Board</a> read_board, ArrayList&lt; <a class="el" href="interfaceoptional_actions.html">optionalActions</a> &gt; read_optional_actions, ArrayList&lt; <a class="el" href="class_card.html">Card</a> &gt; stack_of_cards, int <a class="el" href="class_monopoly.html#adf6b182e5665c34a946f0e2701227bfd">initial_money</a>, ArrayList&lt; String &gt; <a class="el" href="class_monopoly.html#aa3061f4364fb533b8e71efb72884f9b6">start_rewards</a>)</td></tr>
+<tr class="memdesc:a1971277869d4de2534e7b89da46985fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#a1971277869d4de2534e7b89da46985fb">Més...</a><br /></td></tr>
+<tr class="separator:a1971277869d4de2534e7b89da46985fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e966ffedbf288aeb860568c2b92435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435">play</a> ()</td></tr>
+<tr class="memdesc:a61e966ffedbf288aeb860568c2b92435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mètode que s'encarrega de gestionar els fluxe de joc del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a> (comprovar si s'ha de seguir, jugar, finalitzar).  <a href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435">Més...</a><br /></td></tr>
+<tr class="separator:a61e966ffedbf288aeb860568c2b92435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af761331b83173a13ce41431414893e94"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#af761331b83173a13ce41431414893e94">getMode</a> ()</td></tr>
+<tr class="memdesc:af761331b83173a13ce41431414893e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el mode de joc.  <a href="class_monopoly.html#af761331b83173a13ce41431414893e94">Més...</a><br /></td></tr>
+<tr class="separator:af761331b83173a13ce41431414893e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Mètodes Privats</h2></td></tr>
+<tr class="memitem:ae4d623f7498785827ed36c78f9cfbb98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#ae4d623f7498785827ed36c78f9cfbb98">movePlayer</a> ()</td></tr>
+<tr class="memdesc:ae4d623f7498785827ed36c78f9cfbb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialitza l'accio de moure Jugador i dona el resultat dels daus.  <a href="class_monopoly.html#ae4d623f7498785827ed36c78f9cfbb98">Més...</a><br /></td></tr>
+<tr class="separator:ae4d623f7498785827ed36c78f9cfbb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04949af7f2bfa7a8a4c64dfe62d5aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_box.html">Box</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#aa04949af7f2bfa7a8a4c64dfe62d5aa9">getCurrentBox</a> ()</td></tr>
+<tr class="memdesc:aa04949af7f2bfa7a8a4c64dfe62d5aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retornara la casella actual del Jugador.  <a href="class_monopoly.html#aa04949af7f2bfa7a8a4c64dfe62d5aa9">Més...</a><br /></td></tr>
+<tr class="separator:aa04949af7f2bfa7a8a4c64dfe62d5aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc947aea5fc7cdb0ea427f17798f863"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#aebc947aea5fc7cdb0ea427f17798f863">checkEndGame</a> ()</td></tr>
+<tr class="memdesc:aebc947aea5fc7cdb0ea427f17798f863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comproba si el joc s'ha acabat o no.  <a href="class_monopoly.html#aebc947aea5fc7cdb0ea427f17798f863">Més...</a><br /></td></tr>
+<tr class="separator:aebc947aea5fc7cdb0ea427f17798f863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac610cc7331663e7cf788a9378865c293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#ac610cc7331663e7cf788a9378865c293">nextPlayer</a> ()</td></tr>
+<tr class="memdesc:ac610cc7331663e7cf788a9378865c293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salta al següent Jugador.  <a href="class_monopoly.html#ac610cc7331663e7cf788a9378865c293">Més...</a><br /></td></tr>
+<tr class="separator:ac610cc7331663e7cf788a9378865c293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a85c5910ebf711bfce3cb3f7a3b7cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a0a85c5910ebf711bfce3cb3f7a3b7cf3">throwDice</a> ()</td></tr>
+<tr class="memdesc:a0a85c5910ebf711bfce3cb3f7a3b7cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tira els daus d'un torn.  <a href="class_monopoly.html#a0a85c5910ebf711bfce3cb3f7a3b7cf3">Més...</a><br /></td></tr>
+<tr class="separator:a0a85c5910ebf711bfce3cb3f7a3b7cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333e8dacca4091f82e5cf70326b8ddd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7">startGame</a> ()</td></tr>
+<tr class="memdesc:a333e8dacca4091f82e5cf70326b8ddd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialitza el joc del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7">Més...</a><br /></td></tr>
+<tr class="separator:a333e8dacca4091f82e5cf70326b8ddd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12f3de240b7812c34b271b2011630d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#ac12f3de240b7812c34b271b2011630d6">askNrOfPlayers</a> ()</td></tr>
+<tr class="memdesc:ac12f3de240b7812c34b271b2011630d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demana el numero <code>number_of_players</code> de Jugadors que jugaran al joc del monopoly, han de jugar de dos a dotze persones.  <a href="class_monopoly.html#ac12f3de240b7812c34b271b2011630d6">Més...</a><br /></td></tr>
+<tr class="separator:ac12f3de240b7812c34b271b2011630d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a99a635a4bc39a22bcbb85df6f15367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a4a99a635a4bc39a22bcbb85df6f15367">askInfoOfPlayers</a> (int number_of_players)</td></tr>
+<tr class="memdesc:a4a99a635a4bc39a22bcbb85df6f15367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari.  <a href="class_monopoly.html#a4a99a635a4bc39a22bcbb85df6f15367">Més...</a><br /></td></tr>
+<tr class="separator:a4a99a635a4bc39a22bcbb85df6f15367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2878921eab8bfd3ac87486c9829c7e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00">endGame</a> ()</td></tr>
+<tr class="memdesc:a2878921eab8bfd3ac87486c9829c7e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestiona la finalització del joc de <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00">Més...</a><br /></td></tr>
+<tr class="separator:a2878921eab8bfd3ac87486c9829c7e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a14eb3e37725fc7e958c62837d0786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#af2a14eb3e37725fc7e958c62837d0786">printPlayers</a> ()</td></tr>
+<tr class="memdesc:af2a14eb3e37725fc7e958c62837d0786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra els jugadors que no estan en fallida jugant a <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#af2a14eb3e37725fc7e958c62837d0786">Més...</a><br /></td></tr>
+<tr class="separator:af2a14eb3e37725fc7e958c62837d0786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributs Privats</h2></td></tr>
+<tr class="memitem:a4baf227223b7d01cde0c1e5dc5608d28"><td class="memItemLeft" align="right" valign="top">final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a4baf227223b7d01cde0c1e5dc5608d28">mode</a></td></tr>
+<tr class="memdesc:a4baf227223b7d01cde0c1e5dc5608d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode de joc.  <a href="class_monopoly.html#a4baf227223b7d01cde0c1e5dc5608d28">Més...</a><br /></td></tr>
+<tr class="separator:a4baf227223b7d01cde0c1e5dc5608d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f358ffb248672fa59a07e5575a19a53"><td class="memItemLeft" align="right" valign="top">final ArrayList&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a1f358ffb248672fa59a07e5575a19a53">players</a> = new ArrayList&lt;&gt;()</td></tr>
+<tr class="memdesc:a1f358ffb248672fa59a07e5575a19a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llista de Jugadors del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#a1f358ffb248672fa59a07e5575a19a53">Més...</a><br /></td></tr>
+<tr class="separator:a1f358ffb248672fa59a07e5575a19a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84d7cc1dbd1c6d6ab2cfc4be51503ac"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="class_board.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#ad84d7cc1dbd1c6d6ab2cfc4be51503ac">board</a></td></tr>
+<tr class="memdesc:ad84d7cc1dbd1c6d6ab2cfc4be51503ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tauler del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>.  <a href="class_monopoly.html#ad84d7cc1dbd1c6d6ab2cfc4be51503ac">Més...</a><br /></td></tr>
+<tr class="separator:ad84d7cc1dbd1c6d6ab2cfc4be51503ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6b182e5665c34a946f0e2701227bfd"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#adf6b182e5665c34a946f0e2701227bfd">initial_money</a></td></tr>
+<tr class="memdesc:adf6b182e5665c34a946f0e2701227bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diners inicials quan es comença una partida.  <a href="class_monopoly.html#adf6b182e5665c34a946f0e2701227bfd">Més...</a><br /></td></tr>
+<tr class="separator:adf6b182e5665c34a946f0e2701227bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3061f4364fb533b8e71efb72884f9b6"><td class="memItemLeft" align="right" valign="top">final ArrayList&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#aa3061f4364fb533b8e71efb72884f9b6">start_rewards</a></td></tr>
+<tr class="memdesc:aa3061f4364fb533b8e71efb72884f9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompenses de casella sortida "Start".  <a href="class_monopoly.html#aa3061f4364fb533b8e71efb72884f9b6">Més...</a><br /></td></tr>
+<tr class="separator:aa3061f4364fb533b8e71efb72884f9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8221db199456d377fd74f601139a7266"><td class="memItemLeft" align="right" valign="top">Pair&lt; Integer, Integer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a8221db199456d377fd74f601139a7266">dice_result</a></td></tr>
+<tr class="memdesc:a8221db199456d377fd74f601139a7266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resultat dels daus tirats.  <a href="class_monopoly.html#a8221db199456d377fd74f601139a7266">Més...</a><br /></td></tr>
+<tr class="separator:a8221db199456d377fd74f601139a7266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e83aa83688af14c0e702df531f7e9c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a3e83aa83688af14c0e702df531f7e9c3">current_player_iterator</a> = 0</td></tr>
+<tr class="memdesc:a3e83aa83688af14c0e702df531f7e9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterador que recorre Llista players.  <a href="class_monopoly.html#a3e83aa83688af14c0e702df531f7e9c3">Més...</a><br /></td></tr>
+<tr class="separator:a3e83aa83688af14c0e702df531f7e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae395c295b14dfcf2edc4083daf04f5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#aae395c295b14dfcf2edc4083daf04f5a">current_player</a></td></tr>
+<tr class="memdesc:aae395c295b14dfcf2edc4083daf04f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jugador actual.  <a href="class_monopoly.html#aae395c295b14dfcf2edc4083daf04f5a">Més...</a><br /></td></tr>
+<tr class="separator:aae395c295b14dfcf2edc4083daf04f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ce4b1d3affb80db86a079d2e818386"><td class="memItemLeft" align="right" valign="top">final ArrayList&lt; <a class="el" href="interfaceoptional_actions.html">optionalActions</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a01ce4b1d3affb80db86a079d2e818386">optional_actions</a></td></tr>
+<tr class="memdesc:a01ce4b1d3affb80db86a079d2e818386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llista d'accions opcionals.  <a href="class_monopoly.html#a01ce4b1d3affb80db86a079d2e818386">Més...</a><br /></td></tr>
+<tr class="separator:a01ce4b1d3affb80db86a079d2e818386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54698c016c8e95a3cdb43399fe66e1f4"><td class="memItemLeft" align="right" valign="top">final ArrayList&lt; <a class="el" href="class_card.html">Card</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monopoly.html#a54698c016c8e95a3cdb43399fe66e1f4">cards</a></td></tr>
+<tr class="memdesc:a54698c016c8e95a3cdb43399fe66e1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llista de targetes sort.  <a href="class_monopoly.html#a54698c016c8e95a3cdb43399fe66e1f4">Més...</a><br /></td></tr>
+<tr class="separator:a54698c016c8e95a3cdb43399fe66e1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripció Detallada</h2>
+<div class="textblock"><p>Classe que s'encarrega d'administrar l'inicialització, els torns i funcionament general i la finalització del joc <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00016">16</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+</div><h2 class="groupheader">Documentació del Constructor i el Destructor</h2>
+<a id="a1971277869d4de2534e7b89da46985fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1971277869d4de2534e7b89da46985fb">&#9670;&nbsp;</a></span>Monopoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Monopoly.Monopoly </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_board.html">Board</a>&#160;</td>
+          <td class="paramname"><em>read_board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="interfaceoptional_actions.html">optionalActions</a> &gt;&#160;</td>
+          <td class="paramname"><em>read_optional_actions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="class_card.html">Card</a> &gt;&#160;</td>
+          <td class="paramname"><em>stack_of_cards</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initial_money</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>start_rewards</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor de <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Crea <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a> amb els atributs entrats. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read_board</td><td>tauler llegit del <a class="el" href="class_j_s_o_n_manager.html" title="JSONManager administra totes les funcions relacionades amb llegir fitxers JSON i també la creació del...">JSONManager</a>. </td></tr>
+    <tr><td class="paramname">read_optional_actions</td><td>accions opcionals llegides del <a class="el" href="class_j_s_o_n_manager.html" title="JSONManager administra totes les funcions relacionades amb llegir fitxers JSON i també la creació del...">JSONManager</a>. </td></tr>
+    <tr><td class="paramname">stack_of_cards</td><td>pila de targetes sort del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </td></tr>
+    <tr><td class="paramname">initial_money</td><td>diners inicials del Jugador. </td></tr>
+    <tr><td class="paramname">start_rewards</td><td>llista de recompenses per la casella de sortida "Start" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00042">42</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Funcions Membre</h2>
+<a id="a4a99a635a4bc39a22bcbb85df6f15367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a99a635a4bc39a22bcbb85df6f15367">&#9670;&nbsp;</a></span>askInfoOfPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.askInfoOfPlayers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number_of_players</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Els Jugadors entrats estan preparats per poder jugar al <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00261">261</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_cgraph.png" border="0" usemap="#aclass_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_cgraph" alt=""/></div>
+<map name="class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_cgraph" id="aclass_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_cgraph">
+<area shape="rect" title="Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari." alt="" coords="5,5,185,32"/>
+<area shape="rect" href="class_board.html#a4b474b33d51dbcfd17ad53673d5bbe3c" title="Afegir un jugador nou a la partida." alt="" coords="233,5,352,32"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_icgraph.png" border="0" usemap="#aclass_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_icgraph" alt=""/></div>
+<map name="class_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_icgraph" id="aclass_monopoly_a4a99a635a4bc39a22bcbb85df6f15367_icgraph">
+<area shape="rect" title="Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari." alt="" coords="529,5,709,32"/>
+<area shape="rect" href="class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="339,5,481,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac12f3de240b7812c34b271b2011630d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12f3de240b7812c34b271b2011630d6">&#9670;&nbsp;</a></span>askNrOfPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Monopoly.askNrOfPlayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Demana el numero <code>number_of_players</code> de Jugadors que jugaran al joc del monopoly, han de jugar de dos a dotze persones. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Retorna el numero entrat de Jugadors que jugaran al <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>numero de Jugadors de la partida. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00237">237</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_ac12f3de240b7812c34b271b2011630d6_icgraph.png" border="0" usemap="#aclass_monopoly_ac12f3de240b7812c34b271b2011630d6_icgraph" alt=""/></div>
+<map name="class_monopoly_ac12f3de240b7812c34b271b2011630d6_icgraph" id="aclass_monopoly_ac12f3de240b7812c34b271b2011630d6_icgraph">
+<area shape="rect" title="Demana el numero number_of_players de Jugadors que jugaran al joc del monopoly, han de jugar de dos a..." alt="" coords="529,5,703,32"/>
+<area shape="rect" href="class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="339,5,481,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aebc947aea5fc7cdb0ea427f17798f863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc947aea5fc7cdb0ea427f17798f863">&#9670;&nbsp;</a></span>checkEndGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean Monopoly.checkEndGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comproba si el joc s'ha acabat o no. </p>
+<dl class="section pre"><dt>Precondició</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Retorna <code>true</code> si el joc s'ha acabat <code>false</code> altrament. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> si s'ha acabat, <code>false</code> altrament. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00157">157</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_cgraph.png" border="0" usemap="#aclass_monopoly_aebc947aea5fc7cdb0ea427f17798f863_cgraph" alt=""/></div>
+<map name="class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_cgraph" id="aclass_monopoly_aebc947aea5fc7cdb0ea427f17798f863_cgraph">
+<area shape="rect" title="Comproba si el joc s&#39;ha acabat o no." alt="" coords="5,5,180,32"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="228,5,391,32"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_icgraph.png" border="0" usemap="#aclass_monopoly_aebc947aea5fc7cdb0ea427f17798f863_icgraph" alt=""/></div>
+<map name="class_monopoly_aebc947aea5fc7cdb0ea427f17798f863_icgraph" id="aclass_monopoly_aebc947aea5fc7cdb0ea427f17798f863_icgraph">
+<area shape="rect" title="Comproba si el joc s&#39;ha acabat o no." alt="" coords="339,5,513,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2878921eab8bfd3ac87486c9829c7e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2878921eab8bfd3ac87486c9829c7e00">&#9670;&nbsp;</a></span>endGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.endGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gestiona la finalització del joc de <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Finalitza el joc i mostra per pantalla el resum de la partida. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00302">302</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_cgraph.png" border="0" usemap="#aclass_monopoly_a2878921eab8bfd3ac87486c9829c7e00_cgraph" alt=""/></div>
+<map name="class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_cgraph" id="aclass_monopoly_a2878921eab8bfd3ac87486c9829c7e00_cgraph">
+<area shape="rect" title="Gestiona la finalització del joc de Monopoly." alt="" coords="5,81,144,108"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="192,5,355,32"/>
+<area shape="rect" href="class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="213,56,333,83"/>
+<area shape="rect" href="class_monopoly.html#af2a14eb3e37725fc7e958c62837d0786" title="Mostra els jugadors que no estan en fallida jugant a Monopoly." alt="" coords="198,107,349,133"/>
+<area shape="rect" href="class_board.html#aa0eb1bce909ddaa777b95bdaa003f727" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="221,157,326,184"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_icgraph.png" border="0" usemap="#aclass_monopoly_a2878921eab8bfd3ac87486c9829c7e00_icgraph" alt=""/></div>
+<map name="class_monopoly_a2878921eab8bfd3ac87486c9829c7e00_icgraph" id="aclass_monopoly_a2878921eab8bfd3ac87486c9829c7e00_icgraph">
+<area shape="rect" title="Gestiona la finalització del joc de Monopoly." alt="" coords="339,5,477,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa04949af7f2bfa7a8a4c64dfe62d5aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04949af7f2bfa7a8a4c64dfe62d5aa9">&#9670;&nbsp;</a></span>getCurrentBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_box.html">Box</a> Monopoly.getCurrentBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retornara la casella actual del Jugador. </p>
+<dl class="section pre"><dt>Precondició</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Casella actual on esta el Jugador retornada. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>box</code> on es el Jugador. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00147">147</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_cgraph.png" border="0" usemap="#aclass_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_cgraph" alt=""/></div>
+<map name="class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_cgraph" id="aclass_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_cgraph">
+<area shape="rect" title="Retornara la casella actual del Jugador." alt="" coords="5,5,171,32"/>
+<area shape="rect" href="class_board.html#afcf35971b22378ffe0eccc92ad3d4733" title="Getter de la casella on estigui el jugador." alt="" coords="219,5,320,32"/>
+<area shape="rect" href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c" title="Retorna la posició del Jugador el qual la crida." alt="" coords="368,5,496,32"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_icgraph.png" border="0" usemap="#aclass_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_icgraph" alt=""/></div>
+<map name="class_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_icgraph" id="aclass_monopoly_aa04949af7f2bfa7a8a4c64dfe62d5aa9_icgraph">
+<area shape="rect" title="Retornara la casella actual del Jugador." alt="" coords="339,5,504,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af761331b83173a13ce41431414893e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af761331b83173a13ce41431414893e94">&#9670;&nbsp;</a></span>getMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Monopoly.getMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna el mode de joc. </p>
+<dl class="section pre"><dt>Precondició</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>el mode de joc s'ha retornat. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>mode de joc </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00119">119</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_af761331b83173a13ce41431414893e94_icgraph.png" border="0" usemap="#aclass_monopoly_af761331b83173a13ce41431414893e94_icgraph" alt=""/></div>
+<map name="class_monopoly_af761331b83173a13ce41431414893e94_icgraph" id="aclass_monopoly_af761331b83173a13ce41431414893e94_icgraph">
+<area shape="rect" title="Retorna el mode de joc." alt="" coords="184,5,316,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae4d623f7498785827ed36c78f9cfbb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d623f7498785827ed36c78f9cfbb98">&#9670;&nbsp;</a></span>movePlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.movePlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicialitza l'accio de moure Jugador i dona el resultat dels daus. </p>
+<dl class="section pre"><dt>Precondició</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Jugador sera mogut fins a <code>position</code> del \board de <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00128">128</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_cgraph.png" border="0" usemap="#aclass_monopoly_ae4d623f7498785827ed36c78f9cfbb98_cgraph" alt=""/></div>
+<map name="class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_cgraph" id="aclass_monopoly_ae4d623f7498785827ed36c78f9cfbb98_cgraph">
+<area shape="rect" title="Inicialitza l&#39;accio de moure Jugador i dona el resultat dels daus." alt="" coords="5,107,155,133"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="377,5,540,32"/>
+<area shape="rect" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="401,56,516,83"/>
+<area shape="rect" href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c" title="Retorna la posició del Jugador el qual la crida." alt="" coords="395,107,523,133"/>
+<area shape="rect" href="class_board.html#aacc24da6093510c047df9b4382018bcb" title="Calcula la mida del taulell." alt="" coords="214,233,318,260"/>
+<area shape="rect" href="class_board.html#a1b0763e9a6bb3d4c099caaf37d051483" title="Moure el jugador de casella i gestionar el pas per la casella de inici." alt="" coords="203,183,329,209"/>
+<area shape="rect" href="class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="405,259,512,285"/>
+<area shape="rect" href="class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="625,208,723,235"/>
+<area shape="rect" href="class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="407,360,510,387"/>
+<area shape="rect" href="class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="394,411,523,437"/>
+<area shape="rect" href="class_player.html#ad19e380b8797c0887cf5ab1dab4675b5" title="Mou el Jugador a una posició position final en el tauler." alt="" coords="393,461,524,488"/>
+<area shape="rect" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="383,157,535,184"/>
+<area shape="rect" href="class_board.html#ab6918c30c851902511b1e371997aa491" title="Genera una casella de terreny de forma aleatoria." alt="" coords="393,309,524,336"/>
+<area shape="rect" href="class_box.html#a56dec956b37631c7faa911e67e4a437f" title="Getter del tipus de casella." alt="" coords="627,309,721,336"/>
+<area shape="rect" href="class_board.html#ab5069c2c934ed736d0e72f478c97dd6b" title="Comprova si queden terrenys sense propietari." alt="" coords="588,360,760,387"/>
+<area shape="rect" href="class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="979,272,1107,299"/>
+<area shape="rect" href="class_board.html#a3012e670a81918123e667ce8debe34b7" title="Comprova si la casella te propietari." alt="" coords="808,335,931,361"/>
+<area shape="rect" href="class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="985,335,1100,361"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_icgraph.png" border="0" usemap="#aclass_monopoly_ae4d623f7498785827ed36c78f9cfbb98_icgraph" alt=""/></div>
+<map name="class_monopoly_ae4d623f7498785827ed36c78f9cfbb98_icgraph" id="aclass_monopoly_ae4d623f7498785827ed36c78f9cfbb98_icgraph">
+<area shape="rect" title="Inicialitza l&#39;accio de moure Jugador i dona el resultat dels daus." alt="" coords="339,5,488,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac610cc7331663e7cf788a9378865c293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac610cc7331663e7cf788a9378865c293">&#9670;&nbsp;</a></span>nextPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.nextPlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Salta al següent Jugador. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha passat al segÜent Jugador de la llista. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00181">181</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_ac610cc7331663e7cf788a9378865c293_icgraph.png" border="0" usemap="#aclass_monopoly_ac610cc7331663e7cf788a9378865c293_icgraph" alt=""/></div>
+<map name="class_monopoly_ac610cc7331663e7cf788a9378865c293_icgraph" id="aclass_monopoly_ac610cc7331663e7cf788a9378865c293_icgraph">
+<area shape="rect" title="Salta al següent Jugador." alt="" coords="339,5,483,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61e966ffedbf288aeb860568c2b92435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e966ffedbf288aeb860568c2b92435">&#9670;&nbsp;</a></span>play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.play </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mètode que s'encarrega de gestionar els fluxe de joc del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a> (comprovar si s'ha de seguir, jugar, finalitzar). </p>
+<dl class="section pre"><dt>Precondició</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Es jugara al <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a> fins que s'hagi acabat el joc. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00057">57</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a61e966ffedbf288aeb860568c2b92435_cgraph.png" border="0" usemap="#aclass_monopoly_a61e966ffedbf288aeb860568c2b92435_cgraph" alt=""/></div>
+<map name="class_monopoly_a61e966ffedbf288aeb860568c2b92435_cgraph" id="aclass_monopoly_a61e966ffedbf288aeb860568c2b92435_cgraph">
+<area shape="rect" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="5,1001,112,1028"/>
+<area shape="rect" href="class_movement.html#a8f24e14611e5dd284c9cfd3d863da396" title="Administra les accions que s&#39;han de fer si es cau en una Casella d&#39;aposta Bet." alt="" coords="613,216,753,242"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="831,748,993,774"/>
+<area shape="rect" href="class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="852,114,972,141"/>
+<area shape="rect" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="855,1026,969,1053"/>
+<area shape="rect" href="class_monopoly.html#aebc947aea5fc7cdb0ea427f17798f863" title="Comproba si el joc s&#39;ha acabat o no." alt="" coords="373,824,548,850"/>
+<area shape="rect" href="class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="601,1229,766,1256"/>
+<area shape="rect" href="class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00" title="Gestiona la finalització del joc de Monopoly." alt="" coords="173,266,312,293"/>
+<area shape="rect" href="class_board.html#aa0eb1bce909ddaa777b95bdaa003f727" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="408,317,513,344"/>
+<area shape="rect" href="class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="170,596,315,622"/>
+<area shape="rect" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="854,165,970,192"/>
+<area shape="rect" href="class_player.html#a1745fe44df0c0f15486b892be5d95c39" title="Retorna si el Jugador es en fallida o no." alt="" coords="169,925,316,952"/>
+<area shape="rect" href="class_monopoly.html#aa04949af7f2bfa7a8a4c64dfe62d5aa9" title="Retornara la casella actual del Jugador." alt="" coords="160,1888,325,1914"/>
+<area shape="rect" href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c" title="Retorna la posició del Jugador el qual la crida." alt="" coords="848,1806,976,1833"/>
+<area shape="rect" href="class_player.html#ad3ce0835b1597d279f6fd36d762ade50" title=" " alt="" coords="185,1077,301,1104"/>
+<area shape="rect" href="class_box.html#a56dec956b37631c7faa911e67e4a437f" title="Getter del tipus de casella." alt="" coords="195,1128,290,1154"/>
+<area shape="rect" href="class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="610,1381,757,1408"/>
+<area shape="rect" href="class_monopoly.html#ae4d623f7498785827ed36c78f9cfbb98" title="Inicialitza l&#39;accio de moure Jugador i dona el resultat dels daus." alt="" coords="386,1229,535,1256"/>
+<area shape="rect" href="class_monopoly.html#ac610cc7331663e7cf788a9378865c293" title="Salta al següent Jugador." alt="" coords="171,1280,315,1306"/>
+<area shape="rect" href="class_movement.html#a14eb69cd6bfd68f6d5b21e91664c3011" title="Administra totes les possibles accions opcionals." alt="" coords="596,824,771,850"/>
+<area shape="rect" href="class_player.html#aaa4c62368cadefce191815c933b5185a" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="401,1533,520,1560"/>
+<area shape="rect" href="class_movement.html#a41041c91a3795bb94c586ac76c8f3847" title="Informa al Jugador que ha caigut a la casella de sortida Start." alt="" coords="609,1128,757,1154"/>
+<area shape="rect" href="class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="171,520,314,546"/>
+<area shape="rect" href="class_monopoly.html#a0a85c5910ebf711bfce3cb3f7a3b7cf3" title="Tira els daus d&#39;un torn." alt="" coords="614,976,753,1002"/>
+<area shape="rect" href="class_player.html#aa9e1a689ebd0700ec2453d31007e86bb" title="toString per mostrar l&#39;informació de Player per text." alt="" coords="189,1938,297,1965"/>
+<area shape="rect" href="class_box_bet.html#a642d07f8f6fad4767053dd644e544208" title="Calcula el resultat de una aposta." alt="" coords="850,266,974,293"/>
+<area shape="rect" href="class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="861,418,963,445"/>
+<area shape="rect" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="836,621,988,648"/>
+<area shape="rect" href="class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="870,216,954,242"/>
+<area shape="rect" href="class_box_direct_command.html#a6af29322024f0f4895a4629d37ced113" title="Getter de funcio equivalent que te una targeta." alt="" coords="819,1229,1005,1256"/>
+<area shape="rect" href="class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="847,1280,977,1306"/>
+<area shape="rect" href="class_monopoly.html#af2a14eb3e37725fc7e958c62837d0786" title="Mostra els jugadors que no estan en fallida jugant a Monopoly." alt="" coords="385,216,536,242"/>
+<area shape="rect" href="class_movement.html#a7fe49f01d861e1f4587ec99d569cf5d0" title="Administra l&#39;acció per contruïr edificis si el terreny es de la propietat de Jugador." alt="" coords="405,570,517,597"/>
+<area shape="rect" href="class_movement.html#a79673a4cdffd779435ed9d00d01113de" title="Administrarà la compra d&#39;un terreny on s&#39;ha caigut de tauler." alt="" coords="616,266,751,293"/>
+<area shape="rect" href="class_box_field.html#a4523cc8cdf9eb70b6529707c490ca196" title="Getter del propietari owner del terreny." alt="" coords="617,368,749,394"/>
+<area shape="rect" href="class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="397,672,525,698"/>
+<area shape="rect" href="class_movement.html#ac879f38f0089f9144e53b96fc07797e3" title="Administrarà el pagament dels lloguers en els terrenys amb propietaris." alt="" coords="394,469,527,496"/>
+<area shape="rect" href="class_player.html#adc5510d3a520618735e2926946b94578" title="Declara el Jugador en fallida." alt="" coords="833,1432,991,1458"/>
+<area shape="rect" href="class_board.html#a4226915e533b1a2b1c357d9baaffb0c5" title="Gestiona les accions per quan el jugador està sense diners ( en fallida )" alt="" coords="622,621,745,648"/>
+<area shape="rect" href="class_board.html#ab9e9b86132577cdcacd794e41766602b" title="Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador." alt="" coords="602,165,765,192"/>
+<area shape="rect" href="class_board.html#afcf35971b22378ffe0eccc92ad3d4733" title="Getter de la casella on estigui el jugador." alt="" coords="633,1888,734,1914"/>
+<area shape="rect" href="class_player.html#a8a4f43e04ff718a1bf4321d994ebdaff" title="Afegeix una targeta sort card a la propietat del Jugador." alt="" coords="843,1330,981,1357"/>
+<area shape="rect" href="class_card.html#adadf066e298b0256c7c8d5a0179ea585" title="Comprova si la carta es posposable." alt="" coords="845,1381,979,1408"/>
+<area shape="rect" href="class_board.html#aacc24da6093510c047df9b4382018bcb" title="Calcula la mida del taulell." alt="" coords="631,1280,735,1306"/>
+<area shape="rect" href="class_board.html#a1b0763e9a6bb3d4c099caaf37d051483" title="Moure el jugador de casella i gestionar el pas per la casella de inici." alt="" coords="620,925,747,952"/>
+<area shape="rect" href="class_player_loan.html#aa3f1b20be827a08168a42f0e79f59430" title="Sortida resumida dels préstecs actius de loaned." alt="" coords="609,1685,757,1712"/>
+<area shape="rect" href="class_player_loan.html#afc41de0be956f82646845cfb07fc0ba6" title="Consultor per saber si s&#39;ha acabat els torns del préstec." alt="" coords="850,1609,974,1636"/>
+<area shape="rect" href="class_player_loan.html#ab58999b7876d8071d4fc847de0349c24" title="Resta un torn per haver de tornar el préstec." alt="" coords="613,1634,754,1661"/>
+<area shape="rect" href="class_player_loan.html#a6526a174d4422ba5816cdb7a0a0a994a" title="Acció per pagar el préstec del loaned al loaner." alt="" coords="613,1482,753,1509"/>
+<area shape="rect" href="class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a" title="Calcula el valor que se l&#39;hi haura de tornar al prestador." alt="" coords="833,1724,991,1750"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a61e966ffedbf288aeb860568c2b92435_icgraph.png" border="0" usemap="#aclass_monopoly_a61e966ffedbf288aeb860568c2b92435_icgraph" alt=""/></div>
+<map name="class_monopoly_a61e966ffedbf288aeb860568c2b92435_icgraph" id="aclass_monopoly_a61e966ffedbf288aeb860568c2b92435_icgraph">
+<area shape="rect" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2a14eb3e37725fc7e958c62837d0786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a14eb3e37725fc7e958c62837d0786">&#9670;&nbsp;</a></span>printPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.printPlayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mostra els jugadors que no estan en fallida jugant a <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Retorna els jugadors amb <code>bankruptcy</code> = false. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00349">349</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_af2a14eb3e37725fc7e958c62837d0786_icgraph.png" border="0" usemap="#aclass_monopoly_af2a14eb3e37725fc7e958c62837d0786_icgraph" alt=""/></div>
+<map name="class_monopoly_af2a14eb3e37725fc7e958c62837d0786_icgraph" id="aclass_monopoly_af2a14eb3e37725fc7e958c62837d0786_icgraph">
+<area shape="rect" title="Mostra els jugadors que no estan en fallida jugant a Monopoly." alt="" coords="525,5,676,32"/>
+<area shape="rect" href="class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00" title="Gestiona la finalització del joc de Monopoly." alt="" coords="339,5,477,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a333e8dacca4091f82e5cf70326b8ddd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333e8dacca4091f82e5cf70326b8ddd7">&#9670;&nbsp;</a></span>startGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.startGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicialitza el joc del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>El joc ha estat inicialitzat i esta preparat per començar la partida. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00222">222</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_cgraph.png" border="0" usemap="#aclass_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_cgraph" alt=""/></div>
+<map name="class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_cgraph" id="aclass_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_cgraph">
+<area shape="rect" title="Inicialitza el joc del Monopoly." alt="" coords="5,81,148,108"/>
+<area shape="rect" href="class_monopoly.html#a4a99a635a4bc39a22bcbb85df6f15367" title="Demana la informació que es necessita dels Jugadors, en aquest cas, el seu nom i si es CPU o Usuari." alt="" coords="196,5,376,32"/>
+<area shape="rect" href="class_monopoly.html#ac12f3de240b7812c34b271b2011630d6" title="Demana el numero number_of_players de Jugadors que jugaran al joc del monopoly, han de jugar de dos a..." alt="" coords="199,56,373,83"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="205,107,367,133"/>
+<area shape="rect" href="class_board.html#aa0eb1bce909ddaa777b95bdaa003f727" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="233,157,339,184"/>
+<area shape="rect" href="class_board.html#a4b474b33d51dbcfd17ad53673d5bbe3c" title="Afegir un jugador nou a la partida." alt="" coords="424,5,543,32"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_icgraph.png" border="0" usemap="#aclass_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_icgraph" alt=""/></div>
+<map name="class_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_icgraph" id="aclass_monopoly_a333e8dacca4091f82e5cf70326b8ddd7_icgraph">
+<area shape="rect" title="Inicialitza el joc del Monopoly." alt="" coords="339,5,481,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a85c5910ebf711bfce3cb3f7a3b7cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a85c5910ebf711bfce3cb3f7a3b7cf3">&#9670;&nbsp;</a></span>throwDice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monopoly.throwDice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tira els daus d'un torn. </p>
+<dl class="section pre"><dt>Precondició</dt><dd><code>true</code> </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Dona el resultat dels daus d'aquest torn. </dd></dl>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00204">204</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+<div class="dynheader">
+Gràfic de crides d'aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_cgraph.png" border="0" usemap="#aclass_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_cgraph" alt=""/></div>
+<map name="class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_cgraph" id="aclass_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_cgraph">
+<area shape="rect" title="Tira els daus d&#39;un torn." alt="" coords="5,56,144,83"/>
+<area shape="rect" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="192,5,355,32"/>
+<area shape="rect" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="216,56,331,83"/>
+<area shape="rect" href="class_player.html#acd1a5fd336ee36c0bb39a1980306f9eb" title="Retorna el tipus de Jugador el qual la crida." alt="" coords="219,107,328,133"/>
+</map>
+</div>
+<div class="dynheader">
+Gràfic de crides a aquesta funció:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_icgraph.png" border="0" usemap="#aclass_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_icgraph" alt=""/></div>
+<map name="class_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_icgraph" id="aclass_monopoly_a0a85c5910ebf711bfce3cb3f7a3b7cf3_icgraph">
+<area shape="rect" title="Tira els daus d&#39;un torn." alt="" coords="339,5,477,32"/>
+<area shape="rect" href="class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" href="class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Dades Membre</h2>
+<a id="ad84d7cc1dbd1c6d6ab2cfc4be51503ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84d7cc1dbd1c6d6ab2cfc4be51503ac">&#9670;&nbsp;</a></span>board</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="class_board.html">Board</a> Monopoly.board</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tauler del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00020">20</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a54698c016c8e95a3cdb43399fe66e1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54698c016c8e95a3cdb43399fe66e1f4">&#9670;&nbsp;</a></span>cards</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final ArrayList&lt;<a class="el" href="class_card.html">Card</a>&gt; Monopoly.cards</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Llista de targetes sort. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00027">27</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="aae395c295b14dfcf2edc4083daf04f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae395c295b14dfcf2edc4083daf04f5a">&#9670;&nbsp;</a></span>current_player</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> Monopoly.current_player</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Jugador actual. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00025">25</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a3e83aa83688af14c0e702df531f7e9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e83aa83688af14c0e702df531f7e9c3">&#9670;&nbsp;</a></span>current_player_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Monopoly.current_player_iterator = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iterador que recorre Llista players. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00024">24</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a8221db199456d377fd74f601139a7266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8221db199456d377fd74f601139a7266">&#9670;&nbsp;</a></span>dice_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pair&lt;Integer,Integer&gt; Monopoly.dice_result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resultat dels daus tirats. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00023">23</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="adf6b182e5665c34a946f0e2701227bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6b182e5665c34a946f0e2701227bfd">&#9670;&nbsp;</a></span>initial_money</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int Monopoly.initial_money</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Diners inicials quan es comença una partida. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00021">21</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a4baf227223b7d01cde0c1e5dc5608d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baf227223b7d01cde0c1e5dc5608d28">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String Monopoly.mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mode de joc. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00018">18</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a01ce4b1d3affb80db86a079d2e818386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ce4b1d3affb80db86a079d2e818386">&#9670;&nbsp;</a></span>optional_actions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final ArrayList&lt;<a class="el" href="interfaceoptional_actions.html">optionalActions</a>&gt; Monopoly.optional_actions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Llista d'accions opcionals. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00026">26</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="a1f358ffb248672fa59a07e5575a19a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f358ffb248672fa59a07e5575a19a53">&#9670;&nbsp;</a></span>players</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final ArrayList&lt;<a class="el" href="class_player.html">Player</a>&gt; Monopoly.players = new ArrayList&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Llista de Jugadors del <a class="el" href="class_monopoly.html" title="Classe que s&#39;encarrega d&#39;administrar l&#39;inicialització, els torns i funcionament general i la finalitz...">Monopoly</a>. </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00019">19</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<a id="aa3061f4364fb533b8e71efb72884f9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3061f4364fb533b8e71efb72884f9b6">&#9670;&nbsp;</a></span>start_rewards</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final ArrayList&lt;String&gt; Monopoly.start_rewards</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recompenses de casella sortida "Start". </p>
+
+<p class="definition">Definició a la línia <a class="el" href="_monopoly_8java_source.html#l00022">22</a> del fitxer <a class="el" href="_monopoly_8java_source.html">Monopoly.java</a>.</p>
+
+</div>
+</div>
+<hr/>La documentació d'aquesta classe es va generar a partir del següent fitxer:<ul>
+<li><a class="el" href="_monopoly_8java_source.html">Monopoly.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

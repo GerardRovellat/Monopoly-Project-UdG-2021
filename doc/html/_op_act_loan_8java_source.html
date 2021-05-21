@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi OpActLoan.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OpActLoan.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_op_act_loan_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_op_act_loan.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_op_act_loan.html">OpActLoan</a> <span class="keyword">implements</span> <a class="code" href="interfaceoptional_actions.html">optionalActions</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#a149b7d7a188ba3f8fa9f6f51e025bcbd">   16</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_op_act_loan.html#a149b7d7a188ba3f8fa9f6f51e025bcbd">OpActLoan</a>() {}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    @Override</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#abf22526000b59bbe525ff52603b3458e">   25</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_op_act_loan.html#abf22526000b59bbe525ff52603b3458e">toString</a>() {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;PRÉSTEC: pot demanar una quantitat prestada a un altre jugador&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#a4c600503963ae54c4e34952b58052981">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_loan.html#a4c600503963ae54c4e34952b58052981">execute</a>(ArrayList&lt;Player&gt; players,<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_movement.html">Movement</a> aux) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        System.out.println(<span class="stringliteral">&quot;Sel·lecioni el jugador a qui l&#39;hi vol demanar el prestec:&quot;</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_player.html">Player</a> loan_player = <a class="code" href="class_op_act_loan.html#ad059233fedc174991786195e6505f775">playerSelect</a>(players,current_player);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">int</span> current_offer = <a class="code" href="class_op_act_loan.html#a7a280b0bf07969ba91dcfdfc57f09ec9">offer</a>(current_player, loan_player);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6">negociation</a>(current_player,loan_player,current_offer,aux);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#ad059233fedc174991786195e6505f775">   51</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_player.html">Player</a> <a class="code" href="class_op_act_loan.html#ad059233fedc174991786195e6505f775">playerSelect</a>(ArrayList&lt;Player&gt; players, <a class="code" href="class_player.html">Player</a> current_player) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_player.html">Player</a> player : players) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (player != current_player &amp;&amp; player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>() &gt; 0) System.out.println(players.indexOf(player) + <span class="stringliteral">&quot;. &quot;</span> + player.getName());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">int</span> value = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;loanPlayerSelect&quot;</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,players,<span class="keyword">null</span>,0,<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (value &gt;= 0 &amp;&amp; value &lt; players.size() &amp;&amp; value != players.indexOf(current_player)) <span class="keywordflow">return</span> players.get(value);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">else</span> System.out.println(<span class="stringliteral">&quot;El valor entrat no es correcte. Torn-hi a provar:&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#a7a280b0bf07969ba91dcfdfc57f09ec9">   70</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_op_act_loan.html#a7a280b0bf07969ba91dcfdfc57f09ec9">offer</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_player.html">Player</a> loan_player) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> current_offer = -1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">while</span> (current_offer &lt; 0 || current_offer &gt; loan_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>()) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            System.out.println(<span class="stringliteral">&quot;Valor de la oferta:&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            current_offer = current_player.<a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(<span class="stringliteral">&quot;loanInitialOffer&quot;</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,0,<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (current_offer &lt; 0 || current_offer &gt; loan_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>()) System.out.println(<span class="stringliteral">&quot;Valor incorrecte. El valor ha de ser superior o igual a 0 i inferior a &quot;</span> + loan_player.<a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        System.out.println(<span class="stringliteral">&quot;Info del prestes:&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        System.out.println(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;&gt; PRESTEC &quot;</span> + loan_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot; &quot;</span> + current_offer);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> current_offer;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6">   91</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6">negociation</a>(<a class="code" href="class_player.html">Player</a> current_player, <a class="code" href="class_player.html">Player</a> loan_player, <span class="keywordtype">int</span> current_offer, <a class="code" href="class_movement.html">Movement</a> aux) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_player.html">Player</a> offer_active_player = loan_player;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        String interests_string;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">int</span> interests = -1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">int</span> turns = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">if</span> (turns==0)System.out.println(offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;: indiqui no si rebutja la oferta, o el interes que demana tot seguit de el numero de torns (ex: 15 3).&quot;</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">else</span> System.out.println((offer_active_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() + <span class="stringliteral">&quot;: indiqui no si rebutja la oferta, ok si la accepta o el interes que demana tot seguit de el numero de torns (ex: 15 3) si vol fer una contraoferta&quot;</span>));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            interests_string = offer_active_player.<a class="code" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">stringValueSelection</a>(<span class="stringliteral">&quot;loanInterestOffer&quot;</span>,loan_player,<span class="keyword">null</span>,current_offer,interests);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (interests_string.equals(<span class="stringliteral">&quot;no&quot;</span>)) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                System.out.println(<span class="stringliteral">&quot;La operacio s&#39;ha cancel·lat&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                aux.<a class="code" href="class_movement.html#a313c41da560f06620e21d18e93151990">getOutput</a>().<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>()+<span class="stringliteral">&quot;&gt; La operacio s&#39;ha cancel·lat&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (interests_string.equals(<span class="stringliteral">&quot;ok&quot;</span>)) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                aux.<a class="code" href="class_movement.html#a313c41da560f06620e21d18e93151990">getOutput</a>().<a class="code" href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">fileWrite</a>(current_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>()+<span class="stringliteral">&quot;&gt; prestec de &quot;</span>+loan_player.<a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>()+<span class="stringliteral">&quot; de &quot;</span>+current_offer+<span class="stringliteral">&quot;€ amb un &quot;</span>+interests+<span class="stringliteral">&quot;% d&#39;interes en &quot;</span>+turns+<span class="stringliteral">&quot; torns&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb">giveLoan</a>(loan_player,current_player,current_offer,interests,turns);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                interests = Integer.parseInt(interests_string);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                turns = Integer.parseInt(offer_active_player.<a class="code" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">stringValueSelection</a>(<span class="stringliteral">&quot;loanTurnsOffer&quot;</span>,<span class="keyword">null</span>,<span class="keyword">null</span>,0,0));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (offer_active_player == current_player) offer_active_player = loan_player;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">else</span> offer_active_player = current_player;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb">  129</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb">giveLoan</a> (<a class="code" href="class_player.html">Player</a> loan_player, <a class="code" href="class_player.html">Player</a> current_player, <span class="keywordtype">int</span> current_offer, <span class="keywordtype">int</span> interests, <span class="keywordtype">int</span> turns) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        current_player.<a class="code" href="class_player.html#a11d8006a5a2b42c9075f164d63b2ca75">addLoan</a>(loan_player,current_offer,interests,turns);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        loan_player.<a class="code" href="class_player.html#a3415b58dac5e2ad7b803782793016b62">pay</a>(current_offer);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        current_player.<a class="code" href="class_player.html#a99d07341ae4305ddfb6968afc0702286">charge</a>(current_offer);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        System.out.println(<span class="stringliteral">&quot;El prestec s&#39;ha dut a terme&quot;</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_op_act_loan_html_aa7ebad25b9c831cf29d69a0d50d883fb"><div class="ttname"><a href="class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb">OpActLoan.giveLoan</a></div><div class="ttdeci">boolean giveLoan(Player loan_player, Player current_player, int current_offer, int interests, int turns)</div><div class="ttdoc">Afageix un prestec al jugador que el reb i treu els diners al jugador que el dona.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00129">OpActLoan.java:129</a></div></div>
+<div class="ttc" id="aclass_player_html_a3415b58dac5e2ad7b803782793016b62"><div class="ttname"><a href="class_player.html#a3415b58dac5e2ad7b803782793016b62">Player.pay</a></div><div class="ttdeci">void pay(int amount)</div><div class="ttdoc">El Jugador paga una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00043">Player.java:43</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_a149b7d7a188ba3f8fa9f6f51e025bcbd"><div class="ttname"><a href="class_op_act_loan.html#a149b7d7a188ba3f8fa9f6f51e025bcbd">OpActLoan.OpActLoan</a></div><div class="ttdeci">OpActLoan()</div><div class="ttdoc">Constructor per defecte de Loan.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00016">OpActLoan.java:16</a></div></div>
+<div class="ttc" id="aclass_movement_html"><div class="ttname"><a href="class_movement.html">Movement</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera...</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00011">Movement.java:11</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_a7a280b0bf07969ba91dcfdfc57f09ec9"><div class="ttname"><a href="class_op_act_loan.html#a7a280b0bf07969ba91dcfdfc57f09ec9">OpActLoan.offer</a></div><div class="ttdeci">int offer(Player current_player, Player loan_player)</div><div class="ttdoc">Demana al jugador la quantiat que vol demanar.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00070">OpActLoan.java:70</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html"><div class="ttname"><a href="class_op_act_loan.html">OpActLoan</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00009">OpActLoan.java:9</a></div></div>
+<div class="ttc" id="ainterfaceoptional_actions_html"><div class="ttname"><a href="interfaceoptional_actions.html">optionalActions</a></div><div class="ttdoc">Interficie general d'accions opcionals del joc de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="optional_actions_8java_source.html#l00008">optionalActions.java:8</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_ad059233fedc174991786195e6505f775"><div class="ttname"><a href="class_op_act_loan.html#ad059233fedc174991786195e6505f775">OpActLoan.playerSelect</a></div><div class="ttdeci">Player playerSelect(ArrayList&lt; Player &gt; players, Player current_player)</div><div class="ttdoc">Mostra tots els jugadors i deixa escollir a un d'ells.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00051">OpActLoan.java:51</a></div></div>
+<div class="ttc" id="aclass_player_html_a7b17595bbe9876d4aa469ad9bee644dd"><div class="ttname"><a href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">Player.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Retorna el nom del Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00093">Player.java:93</a></div></div>
+<div class="ttc" id="aclass_player_html_a99d07341ae4305ddfb6968afc0702286"><div class="ttname"><a href="class_player.html#a99d07341ae4305ddfb6968afc0702286">Player.charge</a></div><div class="ttdeci">void charge(int amount)</div><div class="ttdoc">El jugador cobra una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00053">Player.java:53</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_abf22526000b59bbe525ff52603b3458e"><div class="ttname"><a href="class_op_act_loan.html#abf22526000b59bbe525ff52603b3458e">OpActLoan.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">toString per mostrar la descripció de l'acció LuckCard per text.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00025">OpActLoan.java:25</a></div></div>
+<div class="ttc" id="aclass_output_manager_html_abd9e037fa4547ddf78602038195f596e"><div class="ttname"><a href="class_output_manager.html#abd9e037fa4547ddf78602038195f596e">OutputManager.fileWrite</a></div><div class="ttdeci">void fileWrite(String line)</div><div class="ttdoc">Escriu text line al fitxer de desenvolupament de partida dev_file.</div><div class="ttdef"><b>Definition:</b> <a href="_output_manager_8java_source.html#l00044">OutputManager.java:44</a></div></div>
+<div class="ttc" id="aclass_player_html_af0c32e4e32dd886c7ae62af44feeab5c"><div class="ttname"><a href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">Player.optionSelection</a></div><div class="ttdeci">abstract int optionSelection(String type, Player player, BoxField field, ArrayList&lt; Integer &gt; options, ArrayList&lt; Player &gt; players, Card card, int value, ArrayList&lt; optionalActions &gt; optional_actions)</div></div>
+<div class="ttc" id="aclass_player_html_a1aa8cfe1b6e921d2d362906b87755c0f"><div class="ttname"><a href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">Player.stringValueSelection</a></div><div class="ttdeci">abstract String stringValueSelection(String type, Player player, BoxField field, int value, int second_value)</div></div>
+<div class="ttc" id="aclass_player_html_a11d8006a5a2b42c9075f164d63b2ca75"><div class="ttname"><a href="class_player.html#a11d8006a5a2b42c9075f164d63b2ca75">Player.addLoan</a></div><div class="ttdeci">void addLoan(Player loaner, int value, int interest, int torns)</div><div class="ttdoc">Afegeix un préstec a la llista de préstecs del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00228">Player.java:228</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_a4c600503963ae54c4e34952b58052981"><div class="ttname"><a href="class_op_act_loan.html#a4c600503963ae54c4e34952b58052981">OpActLoan.execute</a></div><div class="ttdeci">boolean execute(ArrayList&lt; Player &gt; players, Player current_player, Movement aux)</div><div class="ttdoc">Mètode per executar el procés de demanar un préstec a un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00035">OpActLoan.java:35</a></div></div>
+<div class="ttc" id="aclass_movement_html_a313c41da560f06620e21d18e93151990"><div class="ttname"><a href="class_movement.html#a313c41da560f06620e21d18e93151990">Movement.getOutput</a></div><div class="ttdeci">OutputManager getOutput()</div><div class="ttdoc">Retorna la classe de sortida de dades.</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00462">Movement.java:462</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html_acc5bbe59385f47488502c7b7f48da3d6"><div class="ttname"><a href="class_op_act_loan.html#acc5bbe59385f47488502c7b7f48da3d6">OpActLoan.negociation</a></div><div class="ttdeci">boolean negociation(Player current_player, Player loan_player, int current_offer, Movement aux)</div><div class="ttdoc">Gestiona la negociacio de els torns i interesos del prestec.</div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00091">OpActLoan.java:91</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_player_html_a7f1f07fbebec188292866cba55d9a290"><div class="ttname"><a href="class_player.html#a7f1f07fbebec188292866cba55d9a290">Player.getMoney</a></div><div class="ttdeci">int getMoney()</div><div class="ttdoc">Retorna els diners que té el Jugador en possessió.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00125">Player.java:125</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

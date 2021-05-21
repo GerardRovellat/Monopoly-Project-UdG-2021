@@ -1,0 +1,16 @@
+<map id="BoxField.isBought" name="BoxField.isBought">
+<area shape="rect" id="node1" title="Consulta si la propietat esta comprada." alt="" coords="1657,56,1785,83"/>
+<area shape="rect" id="node2" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="1280,5,1425,32"/>
+<area shape="rect" id="node5" href="$class_board.html#a3012e670a81918123e667ce8debe34b7" title="Comprova si la casella te propietari." alt="" coords="1487,56,1609,83"/>
+<area shape="rect" id="node7" href="$class_board.html#ab6918c30c851902511b1e371997aa491" title="Genera una casella de terreny de forma aleatoria." alt="" coords="1088,107,1219,133"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,107,291,133"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,107,136,133"/>
+<area shape="rect" id="node6" href="$class_board.html#ab5069c2c934ed736d0e72f478c97dd6b" title="Comprova si queden terrenys sense propietari." alt="" coords="1267,56,1439,83"/>
+<area shape="rect" id="node8" href="$class_board.html#a1b0763e9a6bb3d4c099caaf37d051483" title="Moure el jugador de casella i gestionar el pas per la casella de inici." alt="" coords="913,107,1040,133"/>
+<area shape="rect" id="node9" href="$class_card_go.html#a0eb76d5ff523ba568585f2f909ee25c3" title="Mètode per executar la targeta CardGo.Moura el jugador fins a la posició que li indiqui la targeta." alt="" coords="749,107,865,133"/>
+<area shape="rect" id="node14" href="$class_monopoly.html#ae4d623f7498785827ed36c78f9cfbb98" title="Inicialitza l&#39;accio de moure Jugador i dona el resultat dels daus." alt="" coords="552,196,701,223"/>
+<area shape="rect" id="node10" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="561,107,692,133"/>
+<area shape="rect" id="node11" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,56,504,83"/>
+<area shape="rect" id="node12" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,107,503,133"/>
+<area shape="rect" id="node13" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,157,495,184"/>
+</map>

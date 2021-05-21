@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi JSONManager.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JSONManager.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_j_s_o_n_manager_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.io.FileReader;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> com.google.gson.*;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html">   12</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_j_s_o_n_manager.html">JSONManager</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#afd99ecd4748716be250570d6b8dd17f0">   14</a></span>&#160;    <span class="keyword">private</span> String <a class="code" href="class_j_s_o_n_manager.html#afd99ecd4748716be250570d6b8dd17f0">mode</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#ac2c55b829f75d393961d229470467c31">   15</a></span>&#160;    <span class="keyword">private</span> ArrayList&lt;String&gt; <a class="code" href="class_j_s_o_n_manager.html#ac2c55b829f75d393961d229470467c31">star_rewards</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();         </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#acc9308c1f7228e1a3015bb3d357d9aaf">   16</a></span>&#160;    <span class="keyword">private</span> ArrayList&lt;Card&gt; <a class="code" href="class_j_s_o_n_manager.html#acc9308c1f7228e1a3015bb3d357d9aaf">cards</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();                    </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#a4edb85274ecf40f9259f28283d731de2">   17</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_j_s_o_n_manager.html#a4edb85274ecf40f9259f28283d731de2">initial_money</a> = 0;                                      </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#a7c2ebc6c1fe2bc23b831d8e48f7ad9f3">   18</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String <a class="code" href="class_j_s_o_n_manager.html#a7c2ebc6c1fe2bc23b831d8e48f7ad9f3">rules_file</a>;                                          </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#aaa2c5127296cf4cdc78514cec0efb827">   19</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String <a class="code" href="class_j_s_o_n_manager.html#aaa2c5127296cf4cdc78514cec0efb827">board_file</a>;                                          </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#adcd01ea4ddd8ea00d50bc76e9267d8b9">   28</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_j_s_o_n_manager.html#adcd01ea4ddd8ea00d50bc76e9267d8b9">JSONManager</a>(String rules, String board) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_j_s_o_n_manager.html#a7c2ebc6c1fe2bc23b831d8e48f7ad9f3">rules_file</a> = rules;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_j_s_o_n_manager.html#aaa2c5127296cf4cdc78514cec0efb827">board_file</a> = board;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#a62c59e71d7d63a920869da7f86f30314">   39</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_monopoly.html">Monopoly</a> <a class="code" href="class_j_s_o_n_manager.html#a62c59e71d7d63a920869da7f86f30314">readFile</a>() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_board.html">Board</a> board = <a class="code" href="class_j_s_o_n_manager.html#aab3e75c982a6f6653b357e01664e6d13">readBoard</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ArrayList&lt;optionalActions&gt; actions = <a class="code" href="class_j_s_o_n_manager.html#a3c1f4ea673aba929c715303bd63750e1">readRules</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_monopoly.html">Monopoly</a>(<a class="code" href="class_j_s_o_n_manager.html#afd99ecd4748716be250570d6b8dd17f0">mode</a>, board, actions,<a class="code" href="class_j_s_o_n_manager.html#acc9308c1f7228e1a3015bb3d357d9aaf">cards</a>,<a class="code" href="class_j_s_o_n_manager.html#a4edb85274ecf40f9259f28283d731de2">initial_money</a>,<a class="code" href="class_j_s_o_n_manager.html#ac2c55b829f75d393961d229470467c31">star_rewards</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#a3c1f4ea673aba929c715303bd63750e1">   53</a></span>&#160;    <span class="keyword">private</span> ArrayList&lt;optionalActions&gt; <a class="code" href="class_j_s_o_n_manager.html#a3c1f4ea673aba929c715303bd63750e1">readRules</a>() {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//Inicialitza les variables gson.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Gson gson = <span class="keyword">new</span> Gson();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        JsonParser parser = <span class="keyword">new</span> JsonParser();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        FileReader reader;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ArrayList&lt;optionalActions&gt; possible_actions = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="comment">//Parseja el fitxer a JsonElement i s&#39;agafa com a JsonObject.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            reader = <span class="keyword">new</span> FileReader(<a class="code" href="class_j_s_o_n_manager.html#a7c2ebc6c1fe2bc23b831d8e48f7ad9f3">rules_file</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            JsonElement data = parser.parse(reader);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            JsonObject j_object = data.getAsJsonObject();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="comment">//Primer element &quot;modalitat&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="class_j_s_o_n_manager.html#afd99ecd4748716be250570d6b8dd17f0">mode</a> = j_object.get(<span class="stringliteral">&quot;modalitat&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">//Segon element array &quot;accionsNoAplicables&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            JsonArray restricted_actions = j_object.get(<span class="stringliteral">&quot;accionsNoAplicables&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            List&lt;String&gt; restricted_action_list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span> (JsonElement array_element : restricted_actions){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                restricted_action_list.add(array_element.getAsString());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span>(!restricted_action_list.contains(<span class="stringliteral">&quot;VENDRE&quot;</span>)){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <a class="code" href="class_op_act_sell.html">OpActSell</a> sell_action  = <span class="keyword">new</span> <a class="code" href="class_op_act_sell.html">OpActSell</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                possible_actions.add(sell_action);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span>(!restricted_action_list.contains(<span class="stringliteral">&quot;COMPRAR&quot;</span>)){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="class_op_act_buy.html">OpActBuy</a> buy_action = <span class="keyword">new</span> <a class="code" href="class_op_act_buy.html">OpActBuy</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                possible_actions.add(buy_action);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span>(!restricted_action_list.contains(<span class="stringliteral">&quot;PRESTEC&quot;</span>)){</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="class_op_act_loan.html">OpActLoan</a> loan_action = <span class="keyword">new</span> <a class="code" href="class_op_act_loan.html">OpActLoan</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                possible_actions.add(loan_action);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span>(!restricted_action_list.contains(<span class="stringliteral">&quot;SORT&quot;</span>)){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="class_op_act_luck_card.html">OpActLuckCard</a> luck_card_action = <span class="keyword">new</span> <a class="code" href="class_op_act_luck_card.html">OpActLuckCard</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                possible_actions.add(luck_card_action);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="comment">//Tercer element &quot;dinersInicials&quot;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            this.initial_money = j_object.get(<span class="stringliteral">&quot;dinersInicials&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="comment">//Quart element array &quot;recompensesCasellaSortida&quot;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            JsonArray start_box_rewards = j_object.get(<span class="stringliteral">&quot;recompensesCasellaSortida&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            ArrayList&lt;String&gt; start_box_rewards_list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">for</span> (JsonElement array_element : start_box_rewards) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                start_box_rewards_list.add(array_element.toString().replace(<span class="stringliteral">&quot;\&quot;&quot;</span>,<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            this.star_rewards=start_box_rewards_list;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">//Cinquè element &quot;percentatgePreuEdificisHipoteca&quot;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">int</span> percentage_mortgage_buildings = j_object.get(<span class="stringliteral">&quot;percentatgePreuEdificisHipoteca&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            System.err.println(<span class="stringliteral">&quot;ERROR: Hi ha hagut un problema amb el fitxer JSON --&gt; &quot;</span>+e.getMessage());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            System.exit(-1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> possible_actions;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_j_s_o_n_manager.html#aab3e75c982a6f6653b357e01664e6d13">  119</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_board.html">Board</a> <a class="code" href="class_j_s_o_n_manager.html#aab3e75c982a6f6653b357e01664e6d13">readBoard</a>() {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//Inicialitza les variables gson.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        Gson gson = <span class="keyword">new</span> Gson();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        JsonParser parser = <span class="keyword">new</span> JsonParser();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        FileReader reader;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="class_board.html">Board</a> board = <span class="keyword">new</span> <a class="code" href="class_board.html">Board</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="comment">//Parseja el fitxer a JsonElement i s&#39;agafa com a JsonObject.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            reader = <span class="keyword">new</span> FileReader(<a class="code" href="class_j_s_o_n_manager.html#aaa2c5127296cf4cdc78514cec0efb827">board_file</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            JsonElement data = parser.parse(reader);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            JsonObject j_object = data.getAsJsonObject();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">//Primer element nombre de caselles.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordtype">int</span> boxes_nr = j_object.get(<span class="stringliteral">&quot;nombreCaselles&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            board.<a class="code" href="class_board.html#a83775b780eb80b5f583f2963b524e116">setBoxesNr</a>(boxes_nr);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="comment">//Casella Sortida sempre sera la primera.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="class_box_start.html">BoxStart</a> start = <span class="keyword">new</span> <a class="code" href="class_box_start.html">BoxStart</a>(1,<span class="stringliteral">&quot;START&quot;</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(start);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="comment">//Segon element array de terrenys.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            JsonArray field_boxes = j_object.get(<span class="stringliteral">&quot;casellesTerreny&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : field_boxes){</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                <span class="keywordtype">int</span> box_nr = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;numCasella&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                String box_name = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;nom&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordtype">int</span> box_price = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preu&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordtype">int</span> box_mortgage = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuHipoteca&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                String box_group ;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">if</span>(array_element.getAsJsonObject().get(<span class="stringliteral">&quot;agrupacio&quot;</span>).isJsonNull()){</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    box_group = <span class="stringliteral">&quot;null&quot;</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">else</span> box_group = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;agrupacio&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keywordtype">int</span> box_basic_rent = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuLloguerBasic&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordtype">int</span> box_group_rent;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">if</span>(array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuLloguerAgrupacio&quot;</span>).isJsonNull()){</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    box_group_rent = -1;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordflow">else</span> box_group_rent = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuLloguerAgrupacio&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                String box_buildable = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;construible&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordtype">int</span> box_max_houses = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;maxCases&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keywordtype">int</span> box_houses_price;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">if</span>(array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuCasa&quot;</span>).isJsonNull()) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    box_houses_price = -1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">else</span> box_houses_price = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuCasa&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordtype">boolean</span> box_hotel = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;hotel&quot;</span>).getAsBoolean();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordtype">int</span> box_hotel_price;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">if</span>(array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuHotel&quot;</span>).isJsonNull()){</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    box_hotel_price = -1;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">else</span> box_hotel_price = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;preuHotel&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                JsonArray houses_rents = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;lloguerAmbCases&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                ArrayList&lt;Integer&gt; houses_rents_list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">for</span>(JsonElement rents : houses_rents){</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    houses_rents_list.add(rents.getAsInt());</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordtype">int</span> hotel_rent;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">if</span>(array_element.getAsJsonObject().get(<span class="stringliteral">&quot;lloguerAmbHotel&quot;</span>).isJsonNull()){</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    hotel_rent = -1;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordflow">else</span> hotel_rent = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;lloguerAmbHotel&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <a class="code" href="class_box_field.html">BoxField</a> field = <span class="keyword">new</span> <a class="code" href="class_box_field.html">BoxField</a>(box_nr,<span class="stringliteral">&quot;FIELD&quot;</span>,box_name,box_price,box_group,box_basic_rent,box_group_rent,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        box_buildable,box_max_houses,box_houses_price,box_hotel,box_hotel_price,houses_rents_list,hotel_rent);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(field);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="comment">//Tercer element array caselles preso.</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            JsonArray jail_boxes = j_object.get(<span class="stringliteral">&quot;casellesPreso&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : jail_boxes){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keywordtype">int</span> box_nr = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;numCasella&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                String box_name = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;nom&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <a class="code" href="class_box_empty.html">BoxEmpty</a> empty = <span class="keyword">new</span> <a class="code" href="class_box_empty.html">BoxEmpty</a>(box_nr,<span class="stringliteral">&quot;EMPTY&quot;</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(empty);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="comment">//Quart element array caselles comanda directa.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            JsonArray direct_command_boxes = j_object.get(<span class="stringliteral">&quot;casellesComandaDirecta&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : direct_command_boxes) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordtype">int</span> box_nr = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;numCasella&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                String box_action = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;accio&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">switch</span> (box_action) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;PAGAR&quot;</span>:</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                        <span class="keywordtype">int</span> pay_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        <a class="code" href="class_card_pay.html">CardPay</a> pay_card = <span class="keyword">new</span> <a class="code" href="class_card_pay.html">CardPay</a>( <span class="keyword">false</span>, pay_amount);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> pay_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,pay_card);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(pay_direct_command);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;MULTA&quot;</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="keywordtype">int</span> fine_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        <a class="code" href="class_card_fine.html">CardFine</a> fine_card = <span class="keyword">new</span> <a class="code" href="class_card_fine.html">CardFine</a>( <span class="keyword">false</span>, fine_amount);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> fine_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,fine_card);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(fine_direct_command);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;COBRAR&quot;</span>:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                        <span class="keywordtype">int</span> charge_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                        <a class="code" href="class_card_charge.html">CardCharge</a> charge_card = <span class="keyword">new</span> <a class="code" href="class_card_charge.html">CardCharge</a>(<span class="keyword">false</span>, charge_amount);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> charge_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,charge_card);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(charge_direct_command);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;ANAR&quot;</span>:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        <span class="keywordtype">int</span> go_box_nr = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;numCasella&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                        <a class="code" href="class_card_go.html">CardGo</a> go_card = <span class="keyword">new</span> <a class="code" href="class_card_go.html">CardGo</a>(<span class="keyword">false</span>, go_box_nr);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> go_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,go_card);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(go_direct_command);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;DONAR&quot;</span>:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        <a class="code" href="class_card_give.html">CardGive</a> give_card = <span class="keyword">new</span> <a class="code" href="class_card_give.html">CardGive</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> give_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,give_card);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(give_direct_command);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;REBRE&quot;</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        <a class="code" href="class_card_get.html">CardGet</a> get_card = <span class="keyword">new</span> <a class="code" href="class_card_get.html">CardGet</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a> get_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_direct_command.html">BoxDirectCommand</a>(box_nr,<span class="stringliteral">&quot;DIRECTCOMMAND&quot;</span>,get_card);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(get_direct_command);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;HIPOTECAR&quot;</span>:</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                        <a class="code" href="class_box_empty.html">BoxEmpty</a> mortatge_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_empty.html">BoxEmpty</a>(box_nr,<span class="stringliteral">&quot;EMPTY&quot;</span>);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(mortatge_direct_command);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;DISPENSAR&quot;</span>:</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        <a class="code" href="class_box_empty.html">BoxEmpty</a> dispense_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_empty.html">BoxEmpty</a>(box_nr,<span class="stringliteral">&quot;EMPTY&quot;</span>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(dispense_direct_command);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;PRESO&quot;</span>:</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                        <a class="code" href="class_box_empty.html">BoxEmpty</a> jail_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_empty.html">BoxEmpty</a>(box_nr,<span class="stringliteral">&quot;EMPTY&quot;</span>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(jail_direct_command);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;ANAR_PRESO&quot;</span>:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <a class="code" href="class_box_empty.html">BoxEmpty</a> go_jail_direct_command = <span class="keyword">new</span> <a class="code" href="class_box_empty.html">BoxEmpty</a>(box_nr,<span class="stringliteral">&quot;EMPTY&quot;</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(go_jail_direct_command);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="comment">//Cinquè element array caselles aposta</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            JsonArray bet_boxes = j_object.get(<span class="stringliteral">&quot;casellesAposta&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : bet_boxes){</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <a class="code" href="class_box_bet.html">BoxBet</a> bet = <span class="keyword">new</span> <a class="code" href="class_box_bet.html">BoxBet</a>(array_element.getAsInt(),<span class="stringliteral">&quot;BET&quot;</span>);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(bet);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="comment">//Sise element array caselles sort.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            JsonArray luck_cards_boxes = j_object.get(<span class="stringliteral">&quot;casellesSort&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : luck_cards_boxes){</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <a class="code" href="class_box.html">Box</a> box = <span class="keyword">new</span> <a class="code" href="class_box.html">Box</a>(array_element.getAsInt(),<span class="stringliteral">&quot;LUCK&quot;</span>,<span class="stringliteral">&quot;LUCK&quot;</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                board.<a class="code" href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">addBox</a>(box);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="comment">//Sete element array targetes sort.</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            JsonArray luck_cards = j_object.get(<span class="stringliteral">&quot;targetesSort&quot;</span>).getAsJsonArray();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            ArrayList&lt;Card&gt; cards_stack = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">for</span>(JsonElement array_element : luck_cards){</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                String card_action = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;accio&quot;</span>).getAsString();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordtype">boolean</span> postponable = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;posposable&quot;</span>).getAsBoolean();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">switch</span> (card_action){</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;PAGAR&quot;</span>:</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        <span class="keywordtype">int</span> pay_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        <a class="code" href="class_card_pay.html">CardPay</a> pay_card = <span class="keyword">new</span> <a class="code" href="class_card_pay.html">CardPay</a>(postponable,pay_amount);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        cards_stack.add(pay_card);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;MULTA&quot;</span>:</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <span class="keywordtype">int</span> fine_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <a class="code" href="class_card_fine.html">CardFine</a> fine_card = <span class="keyword">new</span> <a class="code" href="class_card_fine.html">CardFine</a>(postponable,fine_amount);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        cards_stack.add(fine_card);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;COBRAR&quot;</span>:</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <span class="keywordtype">int</span> charge_amount = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;quantitat&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <a class="code" href="class_card_charge.html">CardCharge</a> charge_card = <span class="keyword">new</span> <a class="code" href="class_card_charge.html">CardCharge</a>(postponable,charge_amount);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        cards_stack.add(charge_card);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;ANAR&quot;</span>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        <span class="keywordtype">int</span> box_nr = array_element.getAsJsonObject().get(<span class="stringliteral">&quot;numCasella&quot;</span>).getAsInt();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        <a class="code" href="class_card_go.html">CardGo</a> go_card = <span class="keyword">new</span> <a class="code" href="class_card_go.html">CardGo</a>(postponable,box_nr);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        cards_stack.add(go_card);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;DONAR&quot;</span>:</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        <a class="code" href="class_card_give.html">CardGive</a> give_card = <span class="keyword">new</span> <a class="code" href="class_card_give.html">CardGive</a>(postponable);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                        cards_stack.add(give_card);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;REBRE&quot;</span>:</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        <a class="code" href="class_card_get.html">CardGet</a> get_card = <span class="keyword">new</span> <a class="code" href="class_card_get.html">CardGet</a>(postponable);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                        cards_stack.add(get_card);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <a class="code" href="class_j_s_o_n_manager.html#acc9308c1f7228e1a3015bb3d357d9aaf">cards</a> = cards_stack;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            System.err.println(<span class="stringliteral">&quot;ERROR: Hi ha hagut un problema amb el fitxer JSON --&gt; &quot;</span>+e.getMessage());</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            System.exit(-1);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> board;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_box_direct_command_html"><div class="ttname"><a href="class_box_direct_command.html">BoxDirectCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_direct_command_8java_source.html#l00008">BoxDirectCommand.java:8</a></div></div>
+<div class="ttc" id="aclass_board_html_a83775b780eb80b5f583f2963b524e116"><div class="ttname"><a href="class_board.html#a83775b780eb80b5f583f2963b524e116">Board.setBoxesNr</a></div><div class="ttdeci">void setBoxesNr(int number)</div><div class="ttdoc">Setter del nombre de caselles.</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00027">Board.java:27</a></div></div>
+<div class="ttc" id="aclass_card_fine_html"><div class="ttname"><a href="class_card_fine.html">CardFine</a></div><div class="ttdoc">Implementa la funcions de la carta de tipus multa.</div><div class="ttdef"><b>Definition:</b> <a href="_card_fine_8java_source.html#l00010">CardFine.java:10</a></div></div>
+<div class="ttc" id="aclass_card_go_html"><div class="ttname"><a href="class_card_go.html">CardGo</a></div><div class="ttdoc">Targeta que mou al jugador a una casella determinada en el tauler de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_card_go_8java_source.html#l00009">CardGo.java:9</a></div></div>
+<div class="ttc" id="aclass_monopoly_html"><div class="ttname"><a href="class_monopoly.html">Monopoly</a></div><div class="ttdoc">Classe que s'encarrega d'administrar l'inicialització, els torns i funcionament general i la finalitz...</div><div class="ttdef"><b>Definition:</b> <a href="_monopoly_8java_source.html#l00016">Monopoly.java:16</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_a62c59e71d7d63a920869da7f86f30314"><div class="ttname"><a href="class_j_s_o_n_manager.html#a62c59e71d7d63a920869da7f86f30314">JSONManager.readFile</a></div><div class="ttdeci">Monopoly readFile()</div><div class="ttdoc">Llegeix els dos fitxers d'entrada rules_file i board_file per poder crear el joc del Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00039">JSONManager.java:39</a></div></div>
+<div class="ttc" id="aclass_op_act_luck_card_html"><div class="ttname"><a href="class_op_act_luck_card.html">OpActLuckCard</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_luck_card_8java_source.html#l00012">OpActLuckCard.java:12</a></div></div>
+<div class="ttc" id="aclass_box_empty_html"><div class="ttname"><a href="class_box_empty.html">BoxEmpty</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_empty_8java_source.html#l00008">BoxEmpty.java:8</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_ac2c55b829f75d393961d229470467c31"><div class="ttname"><a href="class_j_s_o_n_manager.html#ac2c55b829f75d393961d229470467c31">JSONManager.star_rewards</a></div><div class="ttdeci">ArrayList&lt; String &gt; star_rewards</div><div class="ttdoc">Llistat de recompenses que pot donar Start.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00015">JSONManager.java:15</a></div></div>
+<div class="ttc" id="aclass_card_pay_html"><div class="ttname"><a href="class_card_pay.html">CardPay</a></div><div class="ttdoc">Targeta que fa pagar la quantitat assignada a un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_card_pay_8java_source.html#l00009">CardPay.java:9</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_aab3e75c982a6f6653b357e01664e6d13"><div class="ttname"><a href="class_j_s_o_n_manager.html#aab3e75c982a6f6653b357e01664e6d13">JSONManager.readBoard</a></div><div class="ttdeci">Board readBoard()</div><div class="ttdoc">Llegeix bord_file fitxer JSON i configura les propietats del tauler llegides al joc del Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00119">JSONManager.java:119</a></div></div>
+<div class="ttc" id="aclass_op_act_loan_html"><div class="ttname"><a href="class_op_act_loan.html">OpActLoan</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_loan_8java_source.html#l00009">OpActLoan.java:9</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html"><div class="ttname"><a href="class_j_s_o_n_manager.html">JSONManager</a></div><div class="ttdoc">JSONManager administra totes les funcions relacionades amb llegir fitxers JSON i també la creació del...</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00012">JSONManager.java:12</a></div></div>
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00009">Box.java:9</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_adcd01ea4ddd8ea00d50bc76e9267d8b9"><div class="ttname"><a href="class_j_s_o_n_manager.html#adcd01ea4ddd8ea00d50bc76e9267d8b9">JSONManager.JSONManager</a></div><div class="ttdeci">JSONManager(String rules, String board)</div><div class="ttdoc">Constructor de JSONManager.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00028">JSONManager.java:28</a></div></div>
+<div class="ttc" id="aclass_card_give_html"><div class="ttname"><a href="class_card_give.html">CardGive</a></div><div class="ttdoc">Implementa la funcions de la carta de tipus donar.</div><div class="ttdef"><b>Definition:</b> <a href="_card_give_8java_source.html#l00009">CardGive.java:9</a></div></div>
+<div class="ttc" id="aclass_op_act_buy_html"><div class="ttname"><a href="class_op_act_buy.html">OpActBuy</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_buy_8java_source.html#l00010">OpActBuy.java:10</a></div></div>
+<div class="ttc" id="aclass_box_field_html"><div class="ttname"><a href="class_box_field.html">BoxField</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00009">BoxField.java:9</a></div></div>
+<div class="ttc" id="aclass_card_charge_html"><div class="ttname"><a href="class_card_charge.html">CardCharge</a></div><div class="ttdoc">Implementa la funcions de la carta de tipus cobrar.</div><div class="ttdef"><b>Definition:</b> <a href="_card_charge_8java_source.html#l00010">CardCharge.java:10</a></div></div>
+<div class="ttc" id="aclass_card_get_html"><div class="ttname"><a href="class_card_get.html">CardGet</a></div><div class="ttdoc">Implementa la funcions de la carta de tipus rebre.</div><div class="ttdef"><b>Definition:</b> <a href="_card_get_8java_source.html#l00009">CardGet.java:9</a></div></div>
+<div class="ttc" id="aclass_box_bet_html"><div class="ttname"><a href="class_box_bet.html">BoxBet</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_bet_8java_source.html#l00007">BoxBet.java:7</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_a3c1f4ea673aba929c715303bd63750e1"><div class="ttname"><a href="class_j_s_o_n_manager.html#a3c1f4ea673aba929c715303bd63750e1">JSONManager.readRules</a></div><div class="ttdeci">ArrayList&lt; optionalActions &gt; readRules()</div><div class="ttdoc">Llegeix rules_file fitxer JSON i configura les propietats llegides del joc del Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00053">JSONManager.java:53</a></div></div>
+<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdoc">Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altre...</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00009">Board.java:9</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_a7c2ebc6c1fe2bc23b831d8e48f7ad9f3"><div class="ttname"><a href="class_j_s_o_n_manager.html#a7c2ebc6c1fe2bc23b831d8e48f7ad9f3">JSONManager.rules_file</a></div><div class="ttdeci">final String rules_file</div><div class="ttdoc">Fitxer definicio regles del joc de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00018">JSONManager.java:18</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_a4edb85274ecf40f9259f28283d731de2"><div class="ttname"><a href="class_j_s_o_n_manager.html#a4edb85274ecf40f9259f28283d731de2">JSONManager.initial_money</a></div><div class="ttdeci">int initial_money</div><div class="ttdoc">Diners inicials de cada Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00017">JSONManager.java:17</a></div></div>
+<div class="ttc" id="aclass_box_start_html"><div class="ttname"><a href="class_box_start.html">BoxStart</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_start_8java_source.html#l00009">BoxStart.java:9</a></div></div>
+<div class="ttc" id="aclass_board_html_a040baec9f683c53e9bbdb7bcb332a75e"><div class="ttname"><a href="class_board.html#a040baec9f683c53e9bbdb7bcb332a75e">Board.addBox</a></div><div class="ttdeci">void addBox(Box box)</div><div class="ttdoc">Afageix una casella al taulell.</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00115">Board.java:115</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_aaa2c5127296cf4cdc78514cec0efb827"><div class="ttname"><a href="class_j_s_o_n_manager.html#aaa2c5127296cf4cdc78514cec0efb827">JSONManager.board_file</a></div><div class="ttdeci">final String board_file</div><div class="ttdoc">Fitxer definicio tauler del joc de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00019">JSONManager.java:19</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_afd99ecd4748716be250570d6b8dd17f0"><div class="ttname"><a href="class_j_s_o_n_manager.html#afd99ecd4748716be250570d6b8dd17f0">JSONManager.mode</a></div><div class="ttdeci">String mode</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00014">JSONManager.java:14</a></div></div>
+<div class="ttc" id="aclass_j_s_o_n_manager_html_acc9308c1f7228e1a3015bb3d357d9aaf"><div class="ttname"><a href="class_j_s_o_n_manager.html#acc9308c1f7228e1a3015bb3d357d9aaf">JSONManager.cards</a></div><div class="ttdeci">ArrayList&lt; Card &gt; cards</div><div class="ttdoc">Llistat de targetes sort de Monopoly.</div><div class="ttdef"><b>Definition:</b> <a href="_j_s_o_n_manager_8java_source.html#l00016">JSONManager.java:16</a></div></div>
+<div class="ttc" id="aclass_op_act_sell_html"><div class="ttname"><a href="class_op_act_sell.html">OpActSell</a></div><div class="ttdef"><b>Definition:</b> <a href="_op_act_sell_8java_source.html#l00013">OpActSell.java:13</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

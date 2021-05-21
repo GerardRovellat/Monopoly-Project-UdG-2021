@@ -1,0 +1,4 @@
+<map id="CardGive.playerSelect" name="CardGive.playerSelect">
+<area shape="rect" id="node1" title="Mostra tots els jugadors i deixa escollir a un d&#39;ells a qui donar&#45;li un terreny." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="204,5,356,32"/>
+</map>

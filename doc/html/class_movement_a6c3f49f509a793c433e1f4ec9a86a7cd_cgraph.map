@@ -1,0 +1,18 @@
+<map id="Movement.buildApartament" name="Movement.buildApartament">
+<area shape="rect" id="node1" title="Administra l&#39;acció per contruïr apartaments en una propietat." alt="" coords="5,335,184,361"/>
+<area shape="rect" id="node2" href="$class_box_field.html#a161f7798b8f209bf541b61b53cc7693b" title="Afegeix quantity com a edificis edificats al terreny Field." alt="" coords="293,5,397,32"/>
+<area shape="rect" id="node3" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="264,56,427,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="285,107,405,133"/>
+<area shape="rect" id="node5" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="281,157,410,184"/>
+<area shape="rect" id="node6" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="288,208,403,235"/>
+<area shape="rect" id="node7" href="$class_box_field.html#a491a31a8fda23e47f6385b3d64b56154" title="Getter de nombre d&#39;edificacions construïdes." alt="" coords="232,259,459,285"/>
+<area shape="rect" id="node9" href="$class_box_field.html#a53e3882ad45c209473e874bf5f4c7a87" title="Consulta el nombre d&#39;hotels que estan construïts." alt="" coords="250,309,441,336"/>
+<area shape="rect" id="node10" href="$class_box_field.html#accb697c6f775d2558fb24684604d98bc" title="Consulta si es pot construïr cases en el terreny." alt="" coords="507,469,672,496"/>
+<area shape="rect" id="node11" href="$class_player.html#a9ad6ad3ab34c971020a42e10dfd4a775" title="Calcula el nombre de apartaments que es pot permetre costruir al preu entrat." alt="" coords="259,411,431,453"/>
+<area shape="rect" id="node12" href="$class_box_field.html#a34cf545edd9d0baa1ca7539ca2d14334" title="Consulta el nombre de cases que es pot construïr en un terreny." alt="" coords="234,477,457,504"/>
+<area shape="rect" id="node13" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="269,528,421,555"/>
+<area shape="rect" id="node14" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="303,579,387,605"/>
+<area shape="rect" id="node15" href="$class_box_field.html#a8a6c97dc16515891957c4e9409f70a17" title="Consulta el preu per construïr el el edifici que correspon." alt="" coords="271,360,419,387"/>
+<area shape="rect" id="node16" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="284,680,407,707"/>
+<area shape="rect" id="node8" href="$class_box_field.html#a0ffb15c9fe59c8486d1f02aab0a946e5" title="Consulta si es pot contruïr un hotel a terreny." alt="" coords="510,309,669,336"/>
+</map>

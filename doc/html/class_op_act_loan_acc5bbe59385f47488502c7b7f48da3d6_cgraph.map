@@ -1,0 +1,11 @@
+<map id="OpActLoan.negociation" name="OpActLoan.negociation">
+<area shape="rect" id="node1" title="Gestiona la negociacio de els torns i interesos del prestec." alt="" coords="5,107,163,133"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="221,5,383,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="245,56,359,83"/>
+<area shape="rect" id="node4" href="$class_movement.html#a313c41da560f06620e21d18e93151990" title="Retorna la classe de sortida de dades." alt="" coords="231,107,373,133"/>
+<area shape="rect" id="node5" href="$class_op_act_loan.html#aa7ebad25b9c831cf29d69a0d50d883fb" title="Afageix un prestec al jugador que el reb i treu els diners al jugador que el dona." alt="" coords="231,157,373,184"/>
+<area shape="rect" id="node9" href="$class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f" title=" " alt="" coords="211,208,393,235"/>
+<area shape="rect" id="node6" href="$class_player.html#a11d8006a5a2b42c9075f164d63b2ca75" title="Afegeix un préstec a la llista de préstecs del Jugador." alt="" coords="441,107,553,133"/>
+<area shape="rect" id="node7" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="446,157,549,184"/>
+<area shape="rect" id="node8" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="455,208,539,235"/>
+</map>

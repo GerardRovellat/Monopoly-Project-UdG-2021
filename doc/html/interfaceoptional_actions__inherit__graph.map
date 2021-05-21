@@ -1,0 +1,7 @@
+<map id="optionalActions" name="optionalActions">
+<area shape="rect" id="node1" title="Interficie general d&#39;accions opcionals del joc de Monopoly." alt="" coords="163,5,274,32"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$class_op_act_loan.html" title=" " alt="" coords="113,80,199,107"/>
+<area shape="rect" id="node4" href="$class_op_act_luck_card.html" title=" " alt="" coords="224,80,339,107"/>
+<area shape="rect" id="node5" href="$class_op_act_sell.html" title=" " alt="" coords="363,80,445,107"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="OpActLoan.offer" name="OpActLoan.offer">
+<area shape="rect" id="node1" title="Demana al jugador la quantiat que vol demanar." alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node2" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="184,5,304,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="187,56,301,83"/>
+<area shape="rect" id="node4" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="168,107,320,133"/>
+</map>

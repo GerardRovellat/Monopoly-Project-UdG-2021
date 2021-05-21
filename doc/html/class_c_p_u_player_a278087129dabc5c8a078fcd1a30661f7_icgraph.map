@@ -1,0 +1,5 @@
+<map id="CPUPlayer.betQuantity" name="CPUPlayer.betQuantity">
+<area shape="rect" id="node1" title="Seleciona la millor quanitat a apostar ( el 10% del seu capital )" alt="" coords="421,31,579,57"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#abd3e9616665a0ff864bcd0a84e0a6a3a" title="Seleciona la millor aposta a fer depenguent de la quanitat apostada." alt="" coords="232,5,373,32"/>
+<area shape="rect" id="node3" href="$class_c_p_u_player.html#a5d1cd463222aa331912fc633449ba2f4" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="5,31,184,57"/>
+</map>

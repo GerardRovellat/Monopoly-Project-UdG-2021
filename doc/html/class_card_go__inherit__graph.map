@@ -1,0 +1,4 @@
+<map id="CardGo" name="CardGo">
+<area shape="rect" id="node1" title="Targeta que mou al jugador a una casella determinada en el tauler de Monopoly." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node2" href="$class_card.html" title="Implementa la funcions base i comunes totes les cartes." alt="" coords="14,5,63,32"/>
+</map>

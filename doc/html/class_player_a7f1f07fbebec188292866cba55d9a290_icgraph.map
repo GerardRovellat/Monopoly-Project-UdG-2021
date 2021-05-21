@@ -1,0 +1,41 @@
+<map id="Player.getMoney" name="Player.getMoney">
+<area shape="rect" id="node1" title="Retorna els diners que té el Jugador en possessió." alt="" coords="1268,618,1388,645"/>
+<area shape="rect" id="node2" href="$class_movement.html#a8f24e14611e5dd284c9cfd3d863da396" title="Administra les accions que s&#39;han de fer si es cau en una Casella d&#39;aposta Bet." alt="" coords="571,111,711,138"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,263,291,290"/>
+<area shape="rect" id="node5" href="$class_c_p_u_player.html#a278087129dabc5c8a078fcd1a30661f7" title="Seleciona la millor quanitat a apostar ( el 10% del seu capital )" alt="" coords="1049,887,1207,914"/>
+<area shape="rect" id="node8" href="$class_c_p_u_player.html#a539a4f3757b837ab06b8aff36da5671c" title="Seleciona si construeix un apartament o un hotel." alt="" coords="825,973,942,999"/>
+<area shape="rect" id="node9" href="$class_movement.html#a6c3f49f509a793c433e1f4ec9a86a7cd" title="Administra l&#39;acció per contruïr apartaments en una propietat." alt="" coords="1039,111,1217,138"/>
+<area shape="rect" id="node12" href="$class_c_p_u_player.html#a8e168885edd65d12a9de80f0190ee013" title="Seleciona quants apartament vol construir." alt="" coords="1039,989,1217,1015"/>
+<area shape="rect" id="node13" href="$class_c_p_u_player.html#a9552fa3aa94e09b94c7920279329fe1b" title="Seleciona si construeix o no en el terreny." alt="" coords="805,567,962,594"/>
+<area shape="rect" id="node14" href="$class_movement.html#aacc377a8babfff826f79017f2a2b4cce" title="Administra l&#39;acció per contruïr un hotel en una propietat." alt="" coords="1057,162,1199,189"/>
+<area shape="rect" id="node15" href="$class_c_p_u_player.html#a90eeebebb758e3fc48dd2fc7a563ea5b" title="Seleciona si compra o no el terreny entrat." alt="" coords="828,618,939,645"/>
+<area shape="rect" id="node16" href="$class_movement.html#a79673a4cdffd779435ed9d00d01113de" title="Administrarà la compra d&#39;un terreny on s&#39;ha caigut de tauler." alt="" coords="816,213,951,239"/>
+<area shape="rect" id="node17" href="$class_c_p_u_player.html#a71759c33a68c004c702b6283d34f61f9" title="Seleccio de la oferta inicial a la funcio Buy." alt="" coords="801,669,966,695"/>
+<area shape="rect" id="node18" href="$class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd" title="Gestiona la negociacio de la compra del terreny." alt="" coords="1041,1090,1215,1117"/>
+<area shape="rect" id="node20" href="$class_monopoly.html#a2878921eab8bfd3ac87486c9829c7e00" title="Gestiona la finalització del joc de Monopoly." alt="" coords="352,263,491,290"/>
+<area shape="rect" id="node21" href="$class_card_pay.html#a387f88f21829ec0d9a63896d2f8b80e3" title="Execucio de la carta." alt="" coords="822,466,945,493"/>
+<area shape="rect" id="node26" href="$class_card_fine.html#aef155cd2c2b932319fede7de45791b45" title="Execucio de la carta." alt="" coords="821,415,945,442"/>
+<area shape="rect" id="node27" href="$class_board.html#a4226915e533b1a2b1c357d9baaffb0c5" title="Gestiona les accions per quan el jugador està sense diners ( en fallida )" alt="" coords="1067,415,1189,442"/>
+<area shape="rect" id="node29" href="$class_movement.html#ac879f38f0089f9144e53b96fc07797e3" title="Administrarà el pagament dels lloguers en els terrenys amb propietaris." alt="" coords="817,314,950,341"/>
+<area shape="rect" id="node30" href="$class_c_p_u_player.html#a0aa37cc415542e2966e79572457cc808" title="Seleccio de la oferta inicial adel prestec." alt="" coords="1043,719,1213,746"/>
+<area shape="rect" id="node31" href="$class_c_p_u_player.html#aec3991e4567ca8dd95332a2076897a8c" title="Seleccio de la acceptacio, denegació o valor del interes del prestec." alt="" coords="1036,1141,1220,1167"/>
+<area shape="rect" id="node33" href="$class_op_act_loan.html#a7a280b0bf07969ba91dcfdfc57f09ec9" title="Demana al jugador la quantiat que vol demanar." alt="" coords="1071,1242,1185,1269"/>
+<area shape="rect" id="node35" href="$class_c_p_u_player.html#a83cf43ba4678f85272c4108ced2b6c80" title="Seleciona la millor accio opcional per la CPU al final del torn segons les probabilitats de guanyar d..." alt="" coords="1042,771,1214,812"/>
+<area shape="rect" id="node36" href="$class_op_act_loan.html#ad059233fedc174991786195e6505f775" title="Mostra tots els jugadors i deixa escollir a un d&#39;ells." alt="" coords="1047,1191,1209,1218"/>
+<area shape="rect" id="node37" href="$class_c_p_u_player.html#ac88aa455e96587489f751cb744d4b839" title="Seleccio de la oferta inicial a la funcio Sell." alt="" coords="1046,837,1210,863"/>
+<area shape="rect" id="node38" href="$class_op_act_buy.html#aae87676d41111455ecf032ba37262749" title="Demana al jugador el valor de la seva oferta inicial." alt="" coords="1059,1039,1197,1066"/>
+<area shape="rect" id="node39" href="$class_board.html#ab9e9b86132577cdcacd794e41766602b" title="Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador." alt="" coords="1047,365,1209,391"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,263,136,290"/>
+<area shape="rect" id="node6" href="$class_c_p_u_player.html#abd3e9616665a0ff864bcd0a84e0a6a3a" title="Seleciona la millor aposta a fer depenguent de la quanitat apostada." alt="" coords="813,922,954,949"/>
+<area shape="rect" id="node7" href="$class_c_p_u_player.html#a5d1cd463222aa331912fc633449ba2f4" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="552,795,731,822"/>
+<area shape="rect" id="node10" href="$class_movement.html#a7fe49f01d861e1f4587ec99d569cf5d0" title="Administra l&#39;acció per contruïr edificis si el terreny es de la propietat de Jugador." alt="" coords="827,162,939,189"/>
+<area shape="rect" id="node11" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="569,213,714,239"/>
+<area shape="rect" id="node19" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="817,1082,949,1109"/>
+<area shape="rect" id="node22" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="576,415,707,442"/>
+<area shape="rect" id="node23" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,365,504,391"/>
+<area shape="rect" id="node24" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,466,503,493"/>
+<area shape="rect" id="node25" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,415,495,442"/>
+<area shape="rect" id="node28" href="$class_player.html#aaa4c62368cadefce191815c933b5185a" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="824,365,943,391"/>
+<area shape="rect" id="node32" href="$class_c_p_u_player.html#a7c79dc3099d47467b30a3c2b31806983" title="Pregunta a la CPU segons el tipus entrat." alt="" coords="779,1141,988,1167"/>
+<area shape="rect" id="node34" href="$class_op_act_loan.html#a4c600503963ae54c4e34952b58052981" title="Mètode per executar el procés de demanar un préstec a un Jugador." alt="" coords="815,1217,952,1243"/>
+</map>

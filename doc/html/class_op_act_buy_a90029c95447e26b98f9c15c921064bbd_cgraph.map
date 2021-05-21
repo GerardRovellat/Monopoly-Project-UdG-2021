@@ -1,0 +1,14 @@
+<map id="OpActBuy.buyNegociation" name="OpActBuy.buyNegociation">
+<area shape="rect" id="node1" title="Gestiona la negociacio de la compra del terreny." alt="" coords="5,208,180,235"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e" title="Gestiona la negociacio de la compra del terreny." alt="" coords="266,81,373,108"/>
+<area shape="rect" id="node8" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="238,132,401,159"/>
+<area shape="rect" id="node9" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="259,183,379,209"/>
+<area shape="rect" id="node10" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="255,233,384,260"/>
+<area shape="rect" id="node11" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="262,284,377,311"/>
+<area shape="rect" id="node12" href="$class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f" title=" " alt="" coords="228,335,411,361"/>
+<area shape="rect" id="node3" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="469,5,575,32"/>
+<area shape="rect" id="node5" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="471,56,573,83"/>
+<area shape="rect" id="node6" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="480,107,564,133"/>
+<area shape="rect" id="node7" href="$class_player.html#acbb8a4a17c54e635177740c76e9e4b13" title="Elimina un terreny a la propietat d&#39;un Jugador." alt="" coords="459,157,585,184"/>
+<area shape="rect" id="node4" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="633,5,732,32"/>
+</map>

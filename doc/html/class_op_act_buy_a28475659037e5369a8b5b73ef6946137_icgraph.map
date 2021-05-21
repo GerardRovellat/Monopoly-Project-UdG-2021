@@ -1,0 +1,4 @@
+<map id="OpActBuy.fieldSelect" name="OpActBuy.fieldSelect">
+<area shape="rect" id="node1" title="Mostra tots els terreyns del jugador i deixa escollir a un d&#39;ells per comprar&#39;l&#45;ho." alt="" coords="185,5,332,32"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="5,5,137,32"/>
+</map>

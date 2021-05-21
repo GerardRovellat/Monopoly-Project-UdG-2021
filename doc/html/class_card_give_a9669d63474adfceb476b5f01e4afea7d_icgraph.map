@@ -1,0 +1,9 @@
+<map id="CardGive.execute" name="CardGive.execute">
+<area shape="rect" id="node1" title="Execucio de la carta." alt="" coords="731,56,855,83"/>
+<area shape="rect" id="node2" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="552,56,683,83"/>
+<area shape="rect" id="node3" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,5,504,32"/>
+<area shape="rect" id="node6" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,56,503,83"/>
+<area shape="rect" id="node7" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,107,495,133"/>
+<area shape="rect" id="node4" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,56,291,83"/>
+<area shape="rect" id="node5" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,56,136,83"/>
+</map>

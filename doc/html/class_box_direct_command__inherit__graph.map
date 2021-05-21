@@ -1,0 +1,4 @@
+<map id="BoxDirectCommand" name="BoxDirectCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node2" href="$class_box.html" title="Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella." alt="" coords="52,5,97,32"/>
+</map>

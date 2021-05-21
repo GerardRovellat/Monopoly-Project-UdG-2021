@@ -1,0 +1,15 @@
+<map id="Board.tryToSellToAlive" name="Board.tryToSellToAlive">
+<area shape="rect" id="node1" title="Realitzarà una venta per tal d&#39;afrontar el pagament i no quedar&#45;se en fallida." alt="" coords="5,336,157,363"/>
+<area shape="rect" id="node2" href="$class_op_act_sell.html#ab29c01960c1ffed1ddcb6657353a2f62" title="Mètode per executar el procés de vendre un terreny en propietat d&#39;un jugador." alt="" coords="205,221,336,248"/>
+<area shape="rect" id="node7" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="646,399,762,425"/>
+<area shape="rect" id="node3" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="428,145,531,172"/>
+<area shape="rect" id="node4" href="$class_op_act_sell.html#af007b9b97802180873191724f7a14576" title="Mètode per executar la subhasta d&#39;una venta." alt="" coords="408,44,551,71"/>
+<area shape="rect" id="node5" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="623,44,785,71"/>
+<area shape="rect" id="node6" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="647,196,761,223"/>
+<area shape="rect" id="node8" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="639,247,769,273"/>
+<area shape="rect" id="node9" href="$class_movement.html#a313c41da560f06620e21d18e93151990" title="Retorna la classe de sortida de dades." alt="" coords="408,95,551,121"/>
+<area shape="rect" id="node10" href="$class_op_act_sell.html#a836e3c44c83c8fd5064de75c10133fb6" title="Mètode per sel·leccionar el terreny que es vol vendre." alt="" coords="387,348,571,375"/>
+<area shape="rect" id="node13" href="$class_op_act_sell.html#ad1cedbcc1a4d276dedf27dcc027bcbe1" title="Mètode per sel·leccionar el preu del terreny a vendre." alt="" coords="384,247,575,273"/>
+<area shape="rect" id="node11" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="628,297,780,324"/>
+<area shape="rect" id="node12" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="643,348,765,375"/>
+</map>

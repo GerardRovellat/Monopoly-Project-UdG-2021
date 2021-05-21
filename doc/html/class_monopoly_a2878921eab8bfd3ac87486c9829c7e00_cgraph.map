@@ -1,0 +1,7 @@
+<map id="Monopoly.endGame" name="Monopoly.endGame">
+<area shape="rect" id="node1" title="Gestiona la finalització del joc de Monopoly." alt="" coords="5,81,144,108"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="192,5,355,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="213,56,333,83"/>
+<area shape="rect" id="node4" href="$class_monopoly.html#af2a14eb3e37725fc7e958c62837d0786" title="Mostra els jugadors que no estan en fallida jugant a Monopoly." alt="" coords="198,107,349,133"/>
+<area shape="rect" id="node5" href="$class_board.html#aa0eb1bce909ddaa777b95bdaa003f727" title="toString per mostrar l&#39;informació del Taulell per text." alt="" coords="221,157,326,184"/>
+</map>

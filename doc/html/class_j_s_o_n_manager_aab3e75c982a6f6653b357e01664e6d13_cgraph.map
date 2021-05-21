@@ -1,0 +1,6 @@
+<map id="JSONManager.readBoard" name="JSONManager.readBoard">
+<area shape="rect" id="node1" title="Llegeix bord_file fitxer JSON i configura les propietats del tauler llegides al joc del Monopoly." alt="" coords="5,31,175,57"/>
+<area shape="rect" id="node2" href="$class_board.html#a040baec9f683c53e9bbdb7bcb332a75e" title="Afageix una casella al taulell." alt="" coords="235,5,339,32"/>
+<area shape="rect" id="node4" href="$class_board.html#a83775b780eb80b5f583f2963b524e116" title="Setter del nombre de caselles." alt="" coords="223,56,351,83"/>
+<area shape="rect" id="node3" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="399,5,513,32"/>
+</map>

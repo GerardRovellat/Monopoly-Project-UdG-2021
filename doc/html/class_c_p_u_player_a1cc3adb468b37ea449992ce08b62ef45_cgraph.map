@@ -1,0 +1,4 @@
+<map id="CPUPlayer.buyFieldSelect" name="CPUPlayer.buyFieldSelect">
+<area shape="rect" id="node1" title="Seleccio del terreny a la funcio Buy." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node2" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="229,5,345,32"/>
+</map>

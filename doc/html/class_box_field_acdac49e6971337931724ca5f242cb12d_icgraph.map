@@ -1,0 +1,25 @@
+<map id="BoxField.buy" name="BoxField.buy">
+<area shape="rect" id="node1" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="1337,247,1436,273"/>
+<area shape="rect" id="node2" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="1183,247,1289,273"/>
+<area shape="rect" id="node6" href="$class_movement.html#a79673a4cdffd779435ed9d00d01113de" title="Administrarà la compra d&#39;un terreny on s&#39;ha caigut de tauler." alt="" coords="986,157,1121,184"/>
+<area shape="rect" id="node16" href="$class_board.html#a1b0763e9a6bb3d4c099caaf37d051483" title="Moure el jugador de casella i gestionar el pas per la casella de inici." alt="" coords="990,360,1117,387"/>
+<area shape="rect" id="node3" href="$class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e" title="Gestiona la negociacio de la compra del terreny." alt="" coords="1000,56,1107,83"/>
+<area shape="rect" id="node10" href="$class_card_get.html#a3288800fb9d6c105d5dada1e889f2092" title="Execucio de la carta." alt="" coords="993,309,1113,336"/>
+<area shape="rect" id="node11" href="$class_card_give.html#a9669d63474adfceb476b5f01e4afea7d" title="Execucio de la carta." alt="" coords="991,259,1115,285"/>
+<area shape="rect" id="node19" href="$class_board.html#ab9e9b86132577cdcacd794e41766602b" title="Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador." alt="" coords="972,208,1135,235"/>
+<area shape="rect" id="node4" href="$class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd" title="Gestiona la negociacio de la compra del terreny." alt="" coords="749,5,924,32"/>
+<area shape="rect" id="node5" href="$class_op_act_buy.html#a0d1872644b11887f0ff12fb45fe8dbed" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="561,5,693,32"/>
+<area shape="rect" id="node7" href="$class_movement.html#aa2d8f41c935d9e86dc78cfef02a0e7d7" title="Administra les accions que s&#39;han de fer si es cau en una Casella de terreny Field." alt="" coords="554,107,699,133"/>
+<area shape="rect" id="node8" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,259,291,285"/>
+<area shape="rect" id="node9" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,259,136,285"/>
+<area shape="rect" id="node12" href="$class_movement.html#a4ef99532961ab95f945819519c765b2a" title="Administra les accions que s&#39;han de fer depenent de la targeta que et toqui." alt="" coords="561,259,692,285"/>
+<area shape="rect" id="node13" href="$class_movement.html#a26f942169c3ea0e50973ce14c3045658" title="Administra les accions que s&#39;han de fer si es cau en una Casella de comanda directa." alt="" coords="339,309,504,336"/>
+<area shape="rect" id="node14" href="$class_op_act_luck_card.html#aebc6fda8c92cbd9ba0be0344a53c8f52" title="Mètode per executar el procés d&#39;utilitzar una targeta sort en la seva propietat al final del torn." alt="" coords="339,208,503,235"/>
+<area shape="rect" id="node15" href="$class_movement.html#a8b79b7c37c1e8cef02ad9b5f9abca6e5" title="Administra les accions que s&#39;han de fer si es cau en una Casella de sort." alt="" coords="348,259,495,285"/>
+<area shape="rect" id="node17" href="$class_card_go.html#a0eb76d5ff523ba568585f2f909ee25c3" title="Mètode per executar la targeta CardGo.Moura el jugador fins a la posició que li indiqui la targeta." alt="" coords="779,360,895,387"/>
+<area shape="rect" id="node18" href="$class_monopoly.html#ae4d623f7498785827ed36c78f9cfbb98" title="Inicialitza l&#39;accio de moure Jugador i dona el resultat dels daus." alt="" coords="552,397,701,424"/>
+<area shape="rect" id="node20" href="$class_card_pay.html#a387f88f21829ec0d9a63896d2f8b80e3" title="Execucio de la carta." alt="" coords="775,259,898,285"/>
+<area shape="rect" id="node21" href="$class_card_fine.html#aef155cd2c2b932319fede7de45791b45" title="Execucio de la carta." alt="" coords="775,208,899,235"/>
+<area shape="rect" id="node22" href="$class_player.html#aaa4c62368cadefce191815c933b5185a" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="362,157,481,184"/>
+<area shape="rect" id="node23" href="$class_movement.html#ac879f38f0089f9144e53b96fc07797e3" title="Administrarà el pagament dels lloguers en els terrenys amb propietaris." alt="" coords="770,107,903,133"/>
+</map>

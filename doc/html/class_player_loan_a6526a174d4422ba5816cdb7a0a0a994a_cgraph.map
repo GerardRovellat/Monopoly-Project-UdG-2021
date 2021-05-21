@@ -1,0 +1,9 @@
+<map id="PlayerLoan.payLoan" name="PlayerLoan.payLoan">
+<area shape="rect" id="node1" title="Acció per pagar el préstec del loaned al loaner." alt="" coords="5,107,145,133"/>
+<area shape="rect" id="node2" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="210,5,313,32"/>
+<area shape="rect" id="node3" href="$class_player_loan.html#afc41de0be956f82646845cfb07fc0ba6" title="Consultor per saber si s&#39;ha acabat els torns del préstec." alt="" coords="199,56,323,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="219,107,303,133"/>
+<area shape="rect" id="node5" href="$class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a" title="Calcula el valor que se l&#39;hi haura de tornar al prestador." alt="" coords="377,157,535,184"/>
+<area shape="rect" id="node6" href="$class_player_loan.html#adfe37f2e6e1dc62fa39bb9bd6ee69044" title="toString per mostrar la descripció dels préstecs PlayerLoan per text." alt="" coords="193,208,329,235"/>
+<area shape="rect" id="node7" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="399,208,513,235"/>
+</map>

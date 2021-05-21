@@ -1,0 +1,6 @@
+<map id="OpActBuy.playerSelect" name="OpActBuy.playerSelect">
+<area shape="rect" id="node1" title="Mostra tots els jugadors amb terrenys i deixa escollir a un d&#39;ells per comprar&#45;li un terreny." alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node2" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="212,5,375,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="236,56,351,83"/>
+<area shape="rect" id="node4" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="217,107,369,133"/>
+</map>

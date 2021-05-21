@@ -1,0 +1,21 @@
+<map id="OpActBuy.execute" name="OpActBuy.execute">
+<area shape="rect" id="node1" title="Mètode per executar el procés de compra un terreny en propietat d&#39;un jugador." alt="" coords="5,284,137,311"/>
+<area shape="rect" id="node2" href="$class_op_act_buy.html#a90029c95447e26b98f9c15c921064bbd" title="Gestiona la negociacio de la compra del terreny." alt="" coords="185,183,360,209"/>
+<area shape="rect" id="node14" href="$class_op_act_buy.html#a28475659037e5369a8b5b73ef6946137" title="Mostra tots els terreyns del jugador i deixa escollir a un d&#39;ells per comprar&#39;l&#45;ho." alt="" coords="199,385,346,412"/>
+<area shape="rect" id="node17" href="$class_movement.html#a313c41da560f06620e21d18e93151990" title="Retorna la classe de sortida de dades." alt="" coords="201,284,344,311"/>
+<area shape="rect" id="node18" href="$class_op_act_buy.html#a790ced1d700e20a70e2c8ee624902b63" title="Mostra tots els jugadors amb terrenys i deixa escollir a un d&#39;ells per comprar&#45;li un terreny." alt="" coords="193,335,352,361"/>
+<area shape="rect" id="node19" href="$class_op_act_buy.html#aae87676d41111455ecf032ba37262749" title="Demana al jugador el valor de la seva oferta inicial." alt="" coords="203,233,342,260"/>
+<area shape="rect" id="node3" href="$class_op_act_buy.html#ad6957fa3590c1aa28ed7b9ab04034c6e" title="Gestiona la negociacio de la compra del terreny." alt="" coords="446,81,553,108"/>
+<area shape="rect" id="node9" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="418,284,581,311"/>
+<area shape="rect" id="node10" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="439,233,559,260"/>
+<area shape="rect" id="node11" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="435,183,564,209"/>
+<area shape="rect" id="node12" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="442,335,557,361"/>
+<area shape="rect" id="node13" href="$class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f" title=" " alt="" coords="408,132,591,159"/>
+<area shape="rect" id="node4" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="649,5,755,32"/>
+<area shape="rect" id="node6" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="651,56,753,83"/>
+<area shape="rect" id="node7" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="660,107,744,133"/>
+<area shape="rect" id="node8" href="$class_player.html#acbb8a4a17c54e635177740c76e9e4b13" title="Elimina un terreny a la propietat d&#39;un Jugador." alt="" coords="639,157,765,184"/>
+<area shape="rect" id="node5" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="813,5,912,32"/>
+<area shape="rect" id="node15" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="441,436,557,463"/>
+<area shape="rect" id="node16" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="423,385,575,412"/>
+</map>

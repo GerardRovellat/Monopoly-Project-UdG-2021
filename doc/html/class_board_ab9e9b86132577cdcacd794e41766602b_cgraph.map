@@ -1,0 +1,11 @@
+<map id="Board.transferProperties" name="Board.transferProperties">
+<area shape="rect" id="node1" title="Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador." alt="" coords="5,157,168,184"/>
+<area shape="rect" id="node2" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="234,5,341,32"/>
+<area shape="rect" id="node4" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="236,56,339,83"/>
+<area shape="rect" id="node5" href="$class_movement.html#ae43e66f4f896cbf0b200f9ef12dad886" title="Retorna les targetes sort del joc del Monopoly." alt="" coords="219,107,356,133"/>
+<area shape="rect" id="node6" href="$class_player.html#af2aa0edaa9a65bea619ba797d33509bf" title="Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador." alt="" coords="229,157,345,184"/>
+<area shape="rect" id="node7" href="$class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d" title="Retorna en una llista les targetes sort luckCards del Jugador." alt="" coords="216,208,359,235"/>
+<area shape="rect" id="node8" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="227,259,347,285"/>
+<area shape="rect" id="node9" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="245,309,329,336"/>
+<area shape="rect" id="node3" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="407,5,505,32"/>
+</map>

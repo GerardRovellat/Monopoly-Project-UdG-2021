@@ -1,0 +1,4 @@
+<map id="CPUPlayer.loanInitialOffer" name="CPUPlayer.loanInitialOffer">
+<area shape="rect" id="node1" title="Seleccio de la oferta inicial adel prestec." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="224,5,344,32"/>
+</map>

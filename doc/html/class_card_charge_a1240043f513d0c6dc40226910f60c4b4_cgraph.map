@@ -1,0 +1,4 @@
+<map id="CardCharge.execute" name="CardCharge.execute">
+<area shape="rect" id="node1" title="Execucio de la carta." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node2" href="$class_player.html#a99d07341ae4305ddfb6968afc0702286" title="El jugador cobra una quantitat de diners amount determinada." alt="" coords="193,5,296,32"/>
+</map>

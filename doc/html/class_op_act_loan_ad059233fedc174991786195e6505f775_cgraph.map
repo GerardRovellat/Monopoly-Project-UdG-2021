@@ -1,0 +1,5 @@
+<map id="OpActLoan.playerSelect" name="OpActLoan.playerSelect">
+<area shape="rect" id="node1" title="Mostra tots els jugadors i deixa escollir a un d&#39;ells." alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="232,5,352,32"/>
+<area shape="rect" id="node3" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="216,56,368,83"/>
+</map>

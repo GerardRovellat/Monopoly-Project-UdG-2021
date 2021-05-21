@@ -1,0 +1,4 @@
+<map id="PlayerLoan.smallPrint" name="PlayerLoan.smallPrint">
+<area shape="rect" id="node1" title="Sortida resumida dels préstecs actius de loaned." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node2" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="203,5,317,32"/>
+</map>

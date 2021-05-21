@@ -1,0 +1,5 @@
+<map id="CardGet.playerSelect" name="CardGet.playerSelect">
+<area shape="rect" id="node1" title="Mostra tots els jugadors i deixa escollir a un d&#39;ells." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="node2" href="$class_player.html#a9f23c9c0e1d47fe21ea6488c788c296b" title="Retorna si el Jugador te terrenys en propietat o no." alt="" coords="214,5,338,32"/>
+<area shape="rect" id="node3" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="200,56,352,83"/>
+</map>

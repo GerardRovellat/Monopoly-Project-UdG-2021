@@ -1,0 +1,4 @@
+<map id="Board.addBox" name="Board.addBox">
+<area shape="rect" id="node1" title="Afageix una casella al taulell." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="157,5,272,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="CPUPlayer.build" name="CPUPlayer.build">
+<area shape="rect" id="node1" title="Seleciona si construeix un apartament o un hotel." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node2" href="$class_c_p_u_player.html#a8e168885edd65d12a9de80f0190ee013" title="Seleciona quants apartament vol construir." alt="" coords="171,80,348,107"/>
+<area shape="rect" id="node3" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="410,43,530,70"/>
+<area shape="rect" id="node4" href="$class_box_field.html#a8a6c97dc16515891957c4e9409f70a17" title="Consulta el preu per construïr el el edifici que correspon." alt="" coords="396,119,544,146"/>
+<area shape="rect" id="node5" href="$class_box_field.html#a0ffb15c9fe59c8486d1f02aab0a946e5" title="Consulta si es pot contruïr un hotel a terreny." alt="" coords="595,91,754,118"/>
+<area shape="rect" id="node6" href="$class_box_field.html#accb697c6f775d2558fb24684604d98bc" title="Consulta si es pot construïr cases en el terreny." alt="" coords="592,147,757,174"/>
+</map>

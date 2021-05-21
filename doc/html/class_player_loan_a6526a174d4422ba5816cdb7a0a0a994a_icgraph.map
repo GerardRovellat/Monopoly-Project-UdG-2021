@@ -1,0 +1,6 @@
+<map id="PlayerLoan.payLoan" name="PlayerLoan.payLoan">
+<area shape="rect" id="node1" title="Acció per pagar el préstec del loaned al loaner." alt="" coords="505,5,645,32"/>
+<area shape="rect" id="node2" href="$class_player.html#aaa4c62368cadefce191815c933b5185a" title="Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s&#39;han de pagar..." alt="" coords="339,5,457,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

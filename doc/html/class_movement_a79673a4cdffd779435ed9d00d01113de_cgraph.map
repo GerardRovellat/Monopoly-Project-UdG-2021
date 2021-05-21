@@ -1,0 +1,13 @@
+<map id="Movement.buyField" name="Movement.buyField">
+<area shape="rect" id="node1" title="Administrarà la compra d&#39;un terreny on s&#39;ha caigut de tauler." alt="" coords="5,233,140,260"/>
+<area shape="rect" id="node2" href="$class_player.html#ae275ec6392df9695a70e10e999c7d428" title="Afegeix un terreny a la propietat d&#39;un Jugador." alt="" coords="216,5,323,32"/>
+<area shape="rect" id="node3" href="$class_box_field.html#acdac49e6971337931724ca5f242cb12d" title="Assigna un Jugador Player com a propietari owner i actualitza estat del terreny." alt="" coords="399,31,497,57"/>
+<area shape="rect" id="node4" href="$class_output_manager.html#abd9e037fa4547ddf78602038195f596e" title="Escriu text line al fitxer de desenvolupament de partida dev_file." alt="" coords="188,107,351,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a7f1f07fbebec188292866cba55d9a290" title="Retorna els diners que té el Jugador en possessió." alt="" coords="209,157,329,184"/>
+<area shape="rect" id="node6" href="$class_box_field.html#a9ce68b8cedc4771e8448051b0ed41ee2" title="Getter del nom de la terreny." alt="" coords="205,208,334,235"/>
+<area shape="rect" id="node7" href="$class_player.html#a7b17595bbe9876d4aa469ad9bee644dd" title="Retorna el nom del Jugador el qual la crida." alt="" coords="212,259,327,285"/>
+<area shape="rect" id="node8" href="$class_box_field.html#a1e50dec82bdf23cdeef47732716d66f1" title="Getter del preu del terreny Field." alt="" coords="207,309,332,336"/>
+<area shape="rect" id="node9" href="$class_player.html#af0c32e4e32dd886c7ae62af44feeab5c" title=" " alt="" coords="193,360,345,387"/>
+<area shape="rect" id="node10" href="$class_player.html#a3415b58dac5e2ad7b803782793016b62" title="El Jugador paga una quantitat de diners amount determinada." alt="" coords="227,411,311,437"/>
+<area shape="rect" id="node11" href="$class_box_field.html#aed5292387f7afd1dda1f43271f215d97" title="toString per mostrar la descripció del terreny Field en text." alt="" coords="208,461,331,488"/>
+</map>

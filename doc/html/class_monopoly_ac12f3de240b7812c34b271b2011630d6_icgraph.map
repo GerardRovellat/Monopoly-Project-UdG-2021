@@ -1,0 +1,6 @@
+<map id="Monopoly.askNrOfPlayers" name="Monopoly.askNrOfPlayers">
+<area shape="rect" id="node1" title="Demana el numero number_of_players de Jugadors que jugaran al joc del monopoly, han de jugar de dos a..." alt="" coords="529,5,703,32"/>
+<area shape="rect" id="node2" href="$class_monopoly.html#a333e8dacca4091f82e5cf70326b8ddd7" title="Inicialitza el joc del Monopoly." alt="" coords="339,5,481,32"/>
+<area shape="rect" id="node3" href="$class_monopoly.html#a61e966ffedbf288aeb860568c2b92435" title="Mètode que s&#39;encarrega de gestionar els fluxe de joc del Monopoly (comprovar si s&#39;ha de seguir,..." alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node4" href="$class_joc_monopoly.html#a21357bbdacb5a70dba645cdc219777bf" title="Main principal per començar el Joc de Monopoly." alt="" coords="5,5,136,32"/>
+</map>

@@ -1,0 +1,304 @@
+\hypertarget{class_player_loan}{}\doxysection{Referència de la Classe Player\+Loan}
+\label{class_player_loan}\index{PlayerLoan@{PlayerLoan}}
+
+
+Classe que administra els préstecs entre prestatari i prestador.  
+
+
+
+
+Diagrama de col·laboració per a Player\+Loan\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_loan_aa3ce9c3b28819e2ff4dadd4c01e54686}{Player\+Loan}} (\mbox{\hyperlink{class_player}{Player}} loaner, \mbox{\hyperlink{class_player}{Player}} loaned, int value, int interest, int turns)
+\begin{DoxyCompactList}\small\item\em Constructor de {\ttfamily \mbox{\hyperlink{class_player_loan}{Player\+Loan}}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_loan_ab58999b7876d8071d4fc847de0349c24}{next\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Resta un torn per haver de tornar el préstec. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_loan_ae6affad7c4460d297ad6e98bd515e66a}{return\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Calcula el valor que se l\textquotesingle{}hi haura de tornar al prestador. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_player_loan_afc41de0be956f82646845cfb07fc0ba6}{is\+End}} ()
+\begin{DoxyCompactList}\small\item\em Consultor per saber si s\textquotesingle{}ha acabat els torns del préstec. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_player_loan_a6526a174d4422ba5816cdb7a0a0a994a}{pay\+Loan}} ()
+\begin{DoxyCompactList}\small\item\em Acció per pagar el préstec del {\ttfamily loaned} al {\ttfamily loaner}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_player_loan_a65cae4ff8162740af6480ee795d8e853}{small\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Sortida resumida dels préstecs actius de {\ttfamily loaned}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_player_loan_aa3f1b20be827a08168a42f0e79f59430}{get\+Loaner}} ()
+\begin{DoxyCompactList}\small\item\em Sortida resumida dels préstecs actius de {\ttfamily loaned}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_player_loan_adfe37f2e6e1dc62fa39bb9bd6ee69044}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em to\+String per mostrar la descripció dels préstecs \mbox{\hyperlink{class_player_loan}{Player\+Loan}} per text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que administra els préstecs entre prestatari i prestador. 
+
+Definició a la línia 7 del fitxer Player\+Loan.\+java.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_player_loan_aa3ce9c3b28819e2ff4dadd4c01e54686}\label{class_player_loan_aa3ce9c3b28819e2ff4dadd4c01e54686}} 
+\index{PlayerLoan@{PlayerLoan}!PlayerLoan@{PlayerLoan}}
+\index{PlayerLoan@{PlayerLoan}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{PlayerLoan()}{PlayerLoan()}}
+{\footnotesize\ttfamily Player\+Loan.\+Player\+Loan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{loaner,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{loaned,  }\item[{int}]{value,  }\item[{int}]{interest,  }\item[{int}]{turns }\end{DoxyParamCaption})}
+
+
+
+Constructor de {\ttfamily \mbox{\hyperlink{class_player_loan}{Player\+Loan}}}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily loaner} != null i {\ttfamily loaned} != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat un préstec amb els atributs entrats. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 20 del fitxer Player\+Loan.\+java.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_player_loan_aa3f1b20be827a08168a42f0e79f59430}\label{class_player_loan_aa3f1b20be827a08168a42f0e79f59430}} 
+\index{PlayerLoan@{PlayerLoan}!getLoaner@{getLoaner}}
+\index{getLoaner@{getLoaner}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{getLoaner()}{getLoaner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Player\+Loan.\+get\+Loaner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sortida resumida dels préstecs actius de {\ttfamily loaned}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha mostrat els préstec que queden actius del jugador {\ttfamily loaned}. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+string amb la informació del préstec. 
+\end{DoxyReturn}
+
+
+Definició a la línia 92 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_aa3f1b20be827a08168a42f0e79f59430_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_afc41de0be956f82646845cfb07fc0ba6}\label{class_player_loan_afc41de0be956f82646845cfb07fc0ba6}} 
+\index{PlayerLoan@{PlayerLoan}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily boolean Player\+Loan.\+is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor per saber si s\textquotesingle{}ha acabat els torns del préstec. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna {\ttfamily true} si numero de torns finalitzat, {\ttfamily false} altrament 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si {\ttfamily turns} = 0, {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Definició a la línia 54 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_afc41de0be956f82646845cfb07fc0ba6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_ab58999b7876d8071d4fc847de0349c24}\label{class_player_loan_ab58999b7876d8071d4fc847de0349c24}} 
+\index{PlayerLoan@{PlayerLoan}!nextTurn@{nextTurn}}
+\index{nextTurn@{nextTurn}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{nextTurn()}{nextTurn()}}
+{\footnotesize\ttfamily void Player\+Loan.\+next\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resta un torn per haver de tornar el préstec. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Torn restat a {\ttfamily turns}. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 33 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_ab58999b7876d8071d4fc847de0349c24_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_a6526a174d4422ba5816cdb7a0a0a994a}\label{class_player_loan_a6526a174d4422ba5816cdb7a0a0a994a}} 
+\index{PlayerLoan@{PlayerLoan}!payLoan@{payLoan}}
+\index{payLoan@{payLoan}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{payLoan()}{payLoan()}}
+{\footnotesize\ttfamily boolean Player\+Loan.\+pay\+Loan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Acció per pagar el préstec del {\ttfamily loaned} al {\ttfamily loaner}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna {\ttfamily true} si s\textquotesingle{}ha pagat el préstec, {\ttfamily false} altrament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+{\ttfamily true} si s\textquotesingle{}ha pagat {\ttfamily false} altrament. 
+\end{DoxyReturn}
+
+
+Definició a la línia 64 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_a6526a174d4422ba5816cdb7a0a0a994a_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_a6526a174d4422ba5816cdb7a0a0a994a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_ae6affad7c4460d297ad6e98bd515e66a}\label{class_player_loan_ae6affad7c4460d297ad6e98bd515e66a}} 
+\index{PlayerLoan@{PlayerLoan}!returnValue@{returnValue}}
+\index{returnValue@{returnValue}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{returnValue()}{returnValue()}}
+{\footnotesize\ttfamily int Player\+Loan.\+return\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcula el valor que se l\textquotesingle{}hi haura de tornar al prestador. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorne el valor a tornar al prestador. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+valor a retornar {\ttfamily result}. 
+\end{DoxyReturn}
+
+
+Definició a la línia 43 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_ae6affad7c4460d297ad6e98bd515e66a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_a65cae4ff8162740af6480ee795d8e853}\label{class_player_loan_a65cae4ff8162740af6480ee795d8e853}} 
+\index{PlayerLoan@{PlayerLoan}!smallPrint@{smallPrint}}
+\index{smallPrint@{smallPrint}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{smallPrint()}{smallPrint()}}
+{\footnotesize\ttfamily String Player\+Loan.\+small\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sortida resumida dels préstecs actius de {\ttfamily loaned}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha mostrat els préstec que queden actius del jugador {\ttfamily loaned}. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+string amb la informació del préstec. 
+\end{DoxyReturn}
+
+
+Definició a la línia 82 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_player_loan_a65cae4ff8162740af6480ee795d8e853_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_loan_adfe37f2e6e1dc62fa39bb9bd6ee69044}\label{class_player_loan_adfe37f2e6e1dc62fa39bb9bd6ee69044}} 
+\index{PlayerLoan@{PlayerLoan}!toString@{toString}}
+\index{toString@{toString}!PlayerLoan@{PlayerLoan}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Player\+Loan.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+to\+String per mostrar la descripció dels préstecs \mbox{\hyperlink{class_player_loan}{Player\+Loan}} per text. 
+
+\begin{DoxyPrecond}{Precondició}
+{\ttfamily true} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La descripció dels préstecs ha estat mostrada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Stirng buida. 
+\end{DoxyReturn}
+
+
+Definició a la línia 103 del fitxer Player\+Loan.\+java.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_player_loan_adfe37f2e6e1dc62fa39bb9bd6ee69044_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_loan_adfe37f2e6e1dc62fa39bb9bd6ee69044_icgraph}
+\end{center}
+\end{figure}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_loan_8java}{Player\+Loan.\+java}}\end{DoxyCompactItemize}

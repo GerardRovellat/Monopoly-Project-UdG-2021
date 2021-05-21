@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi BoxBet.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BoxBet.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_box_bet_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_box_bet.html">    7</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_box_bet.html">BoxBet</a> <span class="keyword">extends</span> <a class="code" href="class_box.html">Box</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_box_bet.html#ae2557bbfba6b397d0d88e7a0bdd39925">    9</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="class_box_bet.html#ae2557bbfba6b397d0d88e7a0bdd39925">combinations</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[]{0,0,0,1,3,6,10,15,21,26,30,33,35}; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_box_bet.html#a598d890b8b8a0b3f491439ec001be88e">   18</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_box_bet.html#a598d890b8b8a0b3f491439ec001be88e">BoxBet</a>(<span class="keywordtype">int</span> <a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>, String <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        super(<a class="code" href="class_box.html#a92add73ab48651b642c3ede2cc268d74">position</a>, <a class="code" href="class_box.html#ab08459cb58328b9d185f74522c322487">type</a>, <span class="stringliteral">&quot;APOSTA&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_box_bet.html#a642d07f8f6fad4767053dd644e544208">   30</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_box_bet.html#a642d07f8f6fad4767053dd644e544208">betResult</a>(<span class="keywordtype">int</span> quanity, <span class="keywordtype">int</span> bet, <span class="keywordtype">int</span> dice_result) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (dice_result &gt;= bet) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Double aux = quanity * (1 + 10 * <a class="code" href="class_box_bet.html#ae2557bbfba6b397d0d88e7a0bdd39925">combinations</a>[bet] / 36 ) ; <span class="comment">// combinations[bet] = combinacions posibles de que surti un valor inferior o igual a bet</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">return</span> aux.intValue();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_box_bet_html_a642d07f8f6fad4767053dd644e544208"><div class="ttname"><a href="class_box_bet.html#a642d07f8f6fad4767053dd644e544208">BoxBet.betResult</a></div><div class="ttdeci">int betResult(int quanity, int bet, int dice_result)</div><div class="ttdoc">Calcula el resultat de una aposta.</div><div class="ttdef"><b>Definition:</b> <a href="_box_bet_8java_source.html#l00030">BoxBet.java:30</a></div></div>
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00009">Box.java:9</a></div></div>
+<div class="ttc" id="aclass_box_bet_html_ae2557bbfba6b397d0d88e7a0bdd39925"><div class="ttname"><a href="class_box_bet.html#ae2557bbfba6b397d0d88e7a0bdd39925">BoxBet.combinations</a></div><div class="ttdeci">final double[] combinations</div><div class="ttdoc">Contè les combinacions acomulades sobre un total de 12 valors ( 2 daus )</div><div class="ttdef"><b>Definition:</b> <a href="_box_bet_8java_source.html#l00009">BoxBet.java:9</a></div></div>
+<div class="ttc" id="aclass_box_html_a92add73ab48651b642c3ede2cc268d74"><div class="ttname"><a href="class_box.html#a92add73ab48651b642c3ede2cc268d74">Box.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">Posicio de la casella en el taulell.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00011">Box.java:11</a></div></div>
+<div class="ttc" id="aclass_box_bet_html"><div class="ttname"><a href="class_box_bet.html">BoxBet</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_bet_8java_source.html#l00007">BoxBet.java:7</a></div></div>
+<div class="ttc" id="aclass_box_html_ab08459cb58328b9d185f74522c322487"><div class="ttname"><a href="class_box.html#ab08459cb58328b9d185f74522c322487">Box.type</a></div><div class="ttdeci">String type</div><div class="ttdoc">Tipus de casella. ( Start, Field, Bet, Luck, DirectComand, Empty )</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00012">Box.java:12</a></div></div>
+<div class="ttc" id="aclass_box_bet_html_a598d890b8b8a0b3f491439ec001be88e"><div class="ttname"><a href="class_box_bet.html#a598d890b8b8a0b3f491439ec001be88e">BoxBet.BoxBet</a></div><div class="ttdeci">BoxBet(int position, String type)</div><div class="ttdoc">Constructor de Bet.</div><div class="ttdef"><b>Definition:</b> <a href="_box_bet_8java_source.html#l00018">BoxBet.java:18</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

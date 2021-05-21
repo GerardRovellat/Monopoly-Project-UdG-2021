@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monopoly: Fitxer de Codi Player.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monopoly
+   </div>
+   <div id="projectbrief">Versio en mode text del joc del monopoly. Projecte de Programació. Marc Got i Gerard Rovellat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4bf54e045f75f006fc81323efdd284a9.html">projecte-a9</a></li><li class="navelem"><a class="el" href="dir_8d4623e6da3ee622c9436971e641a739.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Player.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_player_8java.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> java.util.*;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_player.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="class_player.html">Player</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">   12</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String <a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>;                                                </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_player.html#aed37167e4117c2518a154e73fbfc103c">   13</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#aed37167e4117c2518a154e73fbfc103c">money</a>;                                                        </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">   14</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> ArrayList&lt;BoxField&gt; <a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();     </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">   15</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">position</a>;                                                     </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_player.html#a0060de56b3f0dd430843f23060545257">   16</a></span>&#160;    <span class="keyword">private</span> ArrayList&lt;Card&gt; <a class="code" href="class_player.html#a0060de56b3f0dd430843f23060545257">luckCards</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();                    </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_player.html#afab6a6c866e0456486fcb30a0ebb7f2e">   17</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code" href="class_player.html#afab6a6c866e0456486fcb30a0ebb7f2e">bankruptcy</a> = <span class="keyword">false</span>;                                       </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">   18</a></span>&#160;    <span class="keyword">private</span> ArrayList&lt;PlayerLoan&gt; <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();                  </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">   19</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>;                                                </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_player.html#a5dee93484551e3bae301e389d9b282dd">   30</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_player.html#a5dee93484551e3bae301e389d9b282dd">Player</a>(String <a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>,<span class="keywordtype">int</span> initial_money,<span class="keywordtype">int</span> initial_position,String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this.name = <a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this.money = initial_money;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.position = initial_position;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this.type = <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_player.html#a3415b58dac5e2ad7b803782793016b62">   43</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#a3415b58dac5e2ad7b803782793016b62">pay</a>(<span class="keywordtype">int</span> amount){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.money = this.money - amount;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_player.html#a99d07341ae4305ddfb6968afc0702286">   53</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#a99d07341ae4305ddfb6968afc0702286">charge</a>(<span class="keywordtype">int</span> amount){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.money = this.money + amount;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d">   63</a></span>&#160;    <span class="keyword">public</span> List&lt;Card&gt; <a class="code" href="class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d">getLuckCards</a>() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="class_player.html#a0060de56b3f0dd430843f23060545257">luckCards</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_player.html#a8a4f43e04ff718a1bf4321d994ebdaff">   73</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#a8a4f43e04ff718a1bf4321d994ebdaff">addLuckCard</a>(<a class="code" href="class_card.html">Card</a> card){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        this.luckCards.add(card);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_player.html#ac13c308723e750efc6ef723aa78a7e2c">   83</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#ac13c308723e750efc6ef723aa78a7e2c">removeLuckCard</a>(<a class="code" href="class_card.html">Card</a> card) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        this.luckCards.remove(card);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">   93</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">getName</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#a88be288918be24fa02f6ec4cc7232558">name</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_player.html#acd1a5fd336ee36c0bb39a1980306f9eb">  103</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_player.html#acd1a5fd336ee36c0bb39a1980306f9eb">getType</a>() {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c">  114</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c">getPosition</a>() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">position</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">  125</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#a7f1f07fbebec188292866cba55d9a290">getMoney</a>() {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#aed37167e4117c2518a154e73fbfc103c">money</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="class_player.html#a9ad6ad3ab34c971020a42e10dfd4a775">  136</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#a9ad6ad3ab34c971020a42e10dfd4a775">numberOfBuildingsAffordable</a>(<span class="keywordtype">int</span> price) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#aed37167e4117c2518a154e73fbfc103c">money</a> / price;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_player.html#ad19e380b8797c0887cf5ab1dab4675b5">  147</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#ad19e380b8797c0887cf5ab1dab4675b5">movePlayer</a>(<span class="keywordtype">int</span> <a class="code" href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">position</a>) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        this.position = <a class="code" href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">position</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_player.html#ae275ec6392df9695a70e10e999c7d428">  158</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#ae275ec6392df9695a70e10e999c7d428">addBox</a>(<a class="code" href="class_box_field.html">BoxField</a> box) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (box != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>.add(box);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            box.<a class="code" href="class_box_field.html#acdac49e6971337931724ca5f242cb12d">buy</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_player.html#acbb8a4a17c54e635177740c76e9e4b13">  171</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#acbb8a4a17c54e635177740c76e9e4b13">removeBox</a>(<a class="code" href="class_box.html">Box</a> box) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>.remove(box);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">  181</a></span>&#160;    <span class="keyword">public</span> ArrayList&lt;BoxField&gt; <a class="code" href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">getFields</a>() {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_player.html#adc5510d3a520618735e2926946b94578">  191</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#adc5510d3a520618735e2926946b94578">goToBankruptcy</a>() {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        bankruptcy = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_player.html#a9f23c9c0e1d47fe21ea6488c788c296b">  201</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="class_player.html#a9f23c9c0e1d47fe21ea6488c788c296b">haveFields</a>(){</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">return</span> !<a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>.isEmpty();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_player.html#ad3ce0835b1597d279f6fd36d762ade50">  205</a></span>&#160;    <span class="keyword">public</span> ArrayList&lt;PlayerLoan&gt; <a class="code" href="class_player.html#ad3ce0835b1597d279f6fd36d762ade50">getLoans</a>(){</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="class_player.html#a1745fe44df0c0f15486b892be5d95c39">  215</a></span>&#160;    <span class="keyword">public</span> Boolean <a class="code" href="class_player.html#a1745fe44df0c0f15486b892be5d95c39">getBankruptcy</a>() {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="class_player.html#afab6a6c866e0456486fcb30a0ebb7f2e">bankruptcy</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="class_player.html#a11d8006a5a2b42c9075f164d63b2ca75">  228</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#a11d8006a5a2b42c9075f164d63b2ca75">addLoan</a>(<a class="code" href="class_player.html">Player</a> loaner, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> interest, <span class="keywordtype">int</span> torns) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>.add(<span class="keyword">new</span> <a class="code" href="class_player_loan.html">PlayerLoan</a>(loaner,<span class="keyword">this</span>,value,interest,torns));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_player.html#aaa4c62368cadefce191815c933b5185a">  238</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_player.html#aaa4c62368cadefce191815c933b5185a">payLoans</a>(<a class="code" href="class_board.html">Board</a> board, <a class="code" href="class_movement.html">Movement</a> movement) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>.size();i++){</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <a class="code" href="class_player_loan.html">PlayerLoan</a> aux = <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>.get(i);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            aux.<a class="code" href="class_player_loan.html#ab58999b7876d8071d4fc847de0349c24">nextTurn</a>();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span> (aux.<a class="code" href="class_player_loan.html#afc41de0be956f82646845cfb07fc0ba6">isEnd</a>()) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordtype">boolean</span> ableToPay = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordflow">if</span> (aux.<a class="code" href="class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a">returnValue</a>() &gt; <a class="code" href="class_player.html#aed37167e4117c2518a154e73fbfc103c">money</a>) ableToPay = board.<a class="code" href="class_board.html#a4226915e533b1a2b1c357d9baaffb0c5">isBankrupt</a>(<span class="keyword">this</span>, aux.<a class="code" href="class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a">returnValue</a>(), movement);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keywordflow">if</span> (!ableToPay) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    <span class="keywordflow">if</span> (aux.<a class="code" href="class_player_loan.html#a6526a174d4422ba5816cdb7a0a0a994a">payLoan</a>()) <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>.remove(aux);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                    board.<a class="code" href="class_board.html#ab9e9b86132577cdcacd794e41766602b">transferProperties</a>(<span class="keyword">this</span>,aux.<a class="code" href="class_player_loan.html#aa3f1b20be827a08168a42f0e79f59430">getLoaner</a>(),movement);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    this.<a class="code" href="class_player.html#adc5510d3a520618735e2926946b94578">goToBankruptcy</a>();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_player.html#a9ea5fb70441cceeea352cb3a73ad66d1">  264</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#a9ea5fb70441cceeea352cb3a73ad66d1">numberOfAgrupationField</a>(String group_name) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordtype">int</span> cont = 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_box_field.html">BoxField</a> aux : <a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">if</span> (aux.getGroup().equals(group_name)) cont++;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> cont;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    @Override</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="class_player.html#aa9e1a689ebd0700ec2453d31007e86bb">  279</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="class_player.html#aa9e1a689ebd0700ec2453d31007e86bb">toString</a>() {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        StringBuilder output_text = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        output_text.append(this.name).append(<span class="stringliteral">&quot;: &quot;</span>).append(this.money).append(<span class="stringliteral">&quot;€&quot;</span>).append(<span class="stringliteral">&quot; | Fallida &quot;</span>).append(<a class="code" href="class_player.html#afab6a6c866e0456486fcb30a0ebb7f2e">bankruptcy</a>).append(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>.size() &gt; 0) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            output_text.append(<span class="stringliteral">&quot;PROPIETATS:\n&quot;</span>);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="class_box_field.html">BoxField</a> current : <a class="code" href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">boxes_in_property</a>) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                output_text.append(<span class="stringliteral">&quot;    &quot;</span>).append(current.getName()).append(<span class="stringliteral">&quot;. amb un valor de &quot;</span>).append(current.getPrice()).append(<span class="stringliteral">&quot;€\n&quot;</span>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">else</span> output_text.append(<span class="stringliteral">&quot;NO TE PROPIETATS\n&quot;</span>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>.size() &gt; 0) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            output_text.append(<span class="stringliteral">&quot;PRESTECS:\n&quot;</span>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="class_player_loan.html">PlayerLoan</a> loan : <a class="code" href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">loans</a>) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                output_text.append(<span class="stringliteral">&quot;    &quot;</span>).append(loan.smallPrint()).append(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">else</span> output_text.append(<span class="stringliteral">&quot;NO TE PRESTECS\n&quot;</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> output_text.toString();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">  299</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">int</span> <a class="code" href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">optionSelection</a>(String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>, <a class="code" href="class_player.html">Player</a> player, <a class="code" href="class_box_field.html">BoxField</a> field, ArrayList&lt;Integer&gt; options, ArrayList&lt;Player&gt; players, <a class="code" href="class_card.html">Card</a> card, <span class="keywordtype">int</span> value, ArrayList&lt;optionalActions&gt; optional_actions);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">  301</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> String <a class="code" href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">stringValueSelection</a>(String <a class="code" href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">type</a>, <a class="code" href="class_player.html">Player</a> player, <a class="code" href="class_box_field.html">BoxField</a> field, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> second_value);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_player_html_aa9e1a689ebd0700ec2453d31007e86bb"><div class="ttname"><a href="class_player.html#aa9e1a689ebd0700ec2453d31007e86bb">Player.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">toString per mostrar l'informació de Player per text.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00279">Player.java:279</a></div></div>
+<div class="ttc" id="aclass_player_loan_html_aa3f1b20be827a08168a42f0e79f59430"><div class="ttname"><a href="class_player_loan.html#aa3f1b20be827a08168a42f0e79f59430">PlayerLoan.getLoaner</a></div><div class="ttdeci">Player getLoaner()</div><div class="ttdoc">Sortida resumida dels préstecs actius de loaned.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00092">PlayerLoan.java:92</a></div></div>
+<div class="ttc" id="aclass_player_html_a9ad6ad3ab34c971020a42e10dfd4a775"><div class="ttname"><a href="class_player.html#a9ad6ad3ab34c971020a42e10dfd4a775">Player.numberOfBuildingsAffordable</a></div><div class="ttdeci">int numberOfBuildingsAffordable(int price)</div><div class="ttdoc">Calcula el nombre de apartaments que es pot permetre costruir al preu entrat.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00136">Player.java:136</a></div></div>
+<div class="ttc" id="aclass_player_html_a9f23c9c0e1d47fe21ea6488c788c296b"><div class="ttname"><a href="class_player.html#a9f23c9c0e1d47fe21ea6488c788c296b">Player.haveFields</a></div><div class="ttdeci">boolean haveFields()</div><div class="ttdoc">Retorna si el Jugador te terrenys en propietat o no.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00201">Player.java:201</a></div></div>
+<div class="ttc" id="aclass_player_html_a983b2356365ed49c2ed2d50bd96c494c"><div class="ttname"><a href="class_player.html#a983b2356365ed49c2ed2d50bd96c494c">Player.getPosition</a></div><div class="ttdeci">int getPosition()</div><div class="ttdoc">Retorna la posició del Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00114">Player.java:114</a></div></div>
+<div class="ttc" id="aclass_player_html_afb3077403bf1bc6f28284d83ecf1dc73"><div class="ttname"><a href="class_player.html#afb3077403bf1bc6f28284d83ecf1dc73">Player.boxes_in_property</a></div><div class="ttdeci">final ArrayList&lt; BoxField &gt; boxes_in_property</div><div class="ttdoc">Llista terrenys en propietat del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00014">Player.java:14</a></div></div>
+<div class="ttc" id="aclass_player_html_a1745fe44df0c0f15486b892be5d95c39"><div class="ttname"><a href="class_player.html#a1745fe44df0c0f15486b892be5d95c39">Player.getBankruptcy</a></div><div class="ttdeci">Boolean getBankruptcy()</div><div class="ttdoc">Retorna si el Jugador es en fallida o no.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00215">Player.java:215</a></div></div>
+<div class="ttc" id="aclass_player_html_a3415b58dac5e2ad7b803782793016b62"><div class="ttname"><a href="class_player.html#a3415b58dac5e2ad7b803782793016b62">Player.pay</a></div><div class="ttdeci">void pay(int amount)</div><div class="ttdoc">El Jugador paga una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00043">Player.java:43</a></div></div>
+<div class="ttc" id="aclass_card_html"><div class="ttname"><a href="class_card.html">Card</a></div><div class="ttdoc">Implementa la funcions base i comunes totes les cartes.</div><div class="ttdef"><b>Definition:</b> <a href="_card_8java_source.html#l00008">Card.java:8</a></div></div>
+<div class="ttc" id="aclass_player_html_acbb8a4a17c54e635177740c76e9e4b13"><div class="ttname"><a href="class_player.html#acbb8a4a17c54e635177740c76e9e4b13">Player.removeBox</a></div><div class="ttdeci">void removeBox(Box box)</div><div class="ttdoc">Elimina un terreny a la propietat d'un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00171">Player.java:171</a></div></div>
+<div class="ttc" id="aclass_player_html_aaa4c62368cadefce191815c933b5185a"><div class="ttname"><a href="class_player.html#aaa4c62368cadefce191815c933b5185a">Player.payLoans</a></div><div class="ttdeci">void payLoans(Board board, Movement movement)</div><div class="ttdoc">Paga els préstecs que te pendents els Jugadors i gestiona els torns dels que encara no s'han de pagar...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00238">Player.java:238</a></div></div>
+<div class="ttc" id="aclass_player_loan_html"><div class="ttname"><a href="class_player_loan.html">PlayerLoan</a></div><div class="ttdoc">Classe que administra els préstecs entre prestatari i prestador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00007">PlayerLoan.java:7</a></div></div>
+<div class="ttc" id="aclass_movement_html"><div class="ttname"><a href="class_movement.html">Movement</a></div><div class="ttdoc">Classe que s'encarrega de gestionar les accions que es poden fer en un moviment. Aquest moviment sera...</div><div class="ttdef"><b>Definition:</b> <a href="_movement_8java_source.html#l00011">Movement.java:11</a></div></div>
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">Classe de Casella. Gestiona les dades i accions comunes entre tots els diferents tipus de casella.</div><div class="ttdef"><b>Definition:</b> <a href="_box_8java_source.html#l00009">Box.java:9</a></div></div>
+<div class="ttc" id="aclass_player_html_ae275ec6392df9695a70e10e999c7d428"><div class="ttname"><a href="class_player.html#ae275ec6392df9695a70e10e999c7d428">Player.addBox</a></div><div class="ttdeci">void addBox(BoxField box)</div><div class="ttdoc">Afegeix un terreny a la propietat d'un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00158">Player.java:158</a></div></div>
+<div class="ttc" id="aclass_player_html_ad3ce0835b1597d279f6fd36d762ade50"><div class="ttname"><a href="class_player.html#ad3ce0835b1597d279f6fd36d762ade50">Player.getLoans</a></div><div class="ttdeci">ArrayList&lt; PlayerLoan &gt; getLoans()</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00205">Player.java:205</a></div></div>
+<div class="ttc" id="aclass_player_html_a7b17595bbe9876d4aa469ad9bee644dd"><div class="ttname"><a href="class_player.html#a7b17595bbe9876d4aa469ad9bee644dd">Player.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">Retorna el nom del Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00093">Player.java:93</a></div></div>
+<div class="ttc" id="aclass_box_field_html"><div class="ttname"><a href="class_box_field.html">BoxField</a></div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00009">BoxField.java:9</a></div></div>
+<div class="ttc" id="aclass_player_html_a99d07341ae4305ddfb6968afc0702286"><div class="ttname"><a href="class_player.html#a99d07341ae4305ddfb6968afc0702286">Player.charge</a></div><div class="ttdeci">void charge(int amount)</div><div class="ttdoc">El jugador cobra una quantitat de diners amount determinada.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00053">Player.java:53</a></div></div>
+<div class="ttc" id="aclass_board_html_a4226915e533b1a2b1c357d9baaffb0c5"><div class="ttname"><a href="class_board.html#a4226915e533b1a2b1c357d9baaffb0c5">Board.isBankrupt</a></div><div class="ttdeci">boolean isBankrupt(Player current_player, int pay_amount, Movement aux)</div><div class="ttdoc">Gestiona les accions per quan el jugador està sense diners ( en fallida )</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00204">Board.java:204</a></div></div>
+<div class="ttc" id="aclass_player_loan_html_ab58999b7876d8071d4fc847de0349c24"><div class="ttname"><a href="class_player_loan.html#ab58999b7876d8071d4fc847de0349c24">PlayerLoan.nextTurn</a></div><div class="ttdeci">void nextTurn()</div><div class="ttdoc">Resta un torn per haver de tornar el préstec.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00033">PlayerLoan.java:33</a></div></div>
+<div class="ttc" id="aclass_player_html_afab6a6c866e0456486fcb30a0ebb7f2e"><div class="ttname"><a href="class_player.html#afab6a6c866e0456486fcb30a0ebb7f2e">Player.bankruptcy</a></div><div class="ttdeci">boolean bankruptcy</div><div class="ttdoc">Estat fallida jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00017">Player.java:17</a></div></div>
+<div class="ttc" id="aclass_player_html_a13ab2ae07c7f479aa7f2ca3fb2aefa1d"><div class="ttname"><a href="class_player.html#a13ab2ae07c7f479aa7f2ca3fb2aefa1d">Player.getLuckCards</a></div><div class="ttdeci">List&lt; Card &gt; getLuckCards()</div><div class="ttdoc">Retorna en una llista les targetes sort luckCards del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00063">Player.java:63</a></div></div>
+<div class="ttc" id="aclass_player_loan_html_a6526a174d4422ba5816cdb7a0a0a994a"><div class="ttname"><a href="class_player_loan.html#a6526a174d4422ba5816cdb7a0a0a994a">PlayerLoan.payLoan</a></div><div class="ttdeci">boolean payLoan()</div><div class="ttdoc">Acció per pagar el préstec del loaned al loaner.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00064">PlayerLoan.java:64</a></div></div>
+<div class="ttc" id="aclass_player_html_af0c32e4e32dd886c7ae62af44feeab5c"><div class="ttname"><a href="class_player.html#af0c32e4e32dd886c7ae62af44feeab5c">Player.optionSelection</a></div><div class="ttdeci">abstract int optionSelection(String type, Player player, BoxField field, ArrayList&lt; Integer &gt; options, ArrayList&lt; Player &gt; players, Card card, int value, ArrayList&lt; optionalActions &gt; optional_actions)</div></div>
+<div class="ttc" id="aclass_player_html_ac13c308723e750efc6ef723aa78a7e2c"><div class="ttname"><a href="class_player.html#ac13c308723e750efc6ef723aa78a7e2c">Player.removeLuckCard</a></div><div class="ttdeci">void removeLuckCard(Card card)</div><div class="ttdoc">Elimina una targeta sort card de la propietat del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00083">Player.java:83</a></div></div>
+<div class="ttc" id="aclass_player_html_a8a4f43e04ff718a1bf4321d994ebdaff"><div class="ttname"><a href="class_player.html#a8a4f43e04ff718a1bf4321d994ebdaff">Player.addLuckCard</a></div><div class="ttdeci">void addLuckCard(Card card)</div><div class="ttdoc">Afegeix una targeta sort card a la propietat del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00073">Player.java:73</a></div></div>
+<div class="ttc" id="aclass_player_html_ae9ea9ec6d49badfc2aedc233191233d9"><div class="ttname"><a href="class_player.html#ae9ea9ec6d49badfc2aedc233191233d9">Player.type</a></div><div class="ttdeci">final String type</div><div class="ttdoc">Tipus de jugador ( CPU, USER )</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00019">Player.java:19</a></div></div>
+<div class="ttc" id="aclass_player_html_aed37167e4117c2518a154e73fbfc103c"><div class="ttname"><a href="class_player.html#aed37167e4117c2518a154e73fbfc103c">Player.money</a></div><div class="ttdeci">int money</div><div class="ttdoc">Diners del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00013">Player.java:13</a></div></div>
+<div class="ttc" id="aclass_player_html_adc5510d3a520618735e2926946b94578"><div class="ttname"><a href="class_player.html#adc5510d3a520618735e2926946b94578">Player.goToBankruptcy</a></div><div class="ttdeci">void goToBankruptcy()</div><div class="ttdoc">Declara el Jugador en fallida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00191">Player.java:191</a></div></div>
+<div class="ttc" id="aclass_player_html_a1aa8cfe1b6e921d2d362906b87755c0f"><div class="ttname"><a href="class_player.html#a1aa8cfe1b6e921d2d362906b87755c0f">Player.stringValueSelection</a></div><div class="ttdeci">abstract String stringValueSelection(String type, Player player, BoxField field, int value, int second_value)</div></div>
+<div class="ttc" id="aclass_board_html_ab9e9b86132577cdcacd794e41766602b"><div class="ttname"><a href="class_board.html#ab9e9b86132577cdcacd794e41766602b">Board.transferProperties</a></div><div class="ttdeci">void transferProperties(Player player_give, Player player_get, Movement movement)</div><div class="ttdoc">Transfereix totes les propietats, diners i targetes sort a la banca o a un altre jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00358">Board.java:358</a></div></div>
+<div class="ttc" id="aclass_player_html_a9ea5fb70441cceeea352cb3a73ad66d1"><div class="ttname"><a href="class_player.html#a9ea5fb70441cceeea352cb3a73ad66d1">Player.numberOfAgrupationField</a></div><div class="ttdeci">int numberOfAgrupationField(String group_name)</div><div class="ttdoc">calcula el numero de terrenys de la agrupacio passada que te en propietat el jugador</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00264">Player.java:264</a></div></div>
+<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdoc">Classe del taulell. Gestiona la informació del taulell, les accions de moviment dels jugadors i altre...</div><div class="ttdef"><b>Definition:</b> <a href="_board_8java_source.html#l00009">Board.java:9</a></div></div>
+<div class="ttc" id="aclass_player_html_ad19e380b8797c0887cf5ab1dab4675b5"><div class="ttname"><a href="class_player.html#ad19e380b8797c0887cf5ab1dab4675b5">Player.movePlayer</a></div><div class="ttdeci">void movePlayer(int position)</div><div class="ttdoc">Mou el Jugador a una posició position final en el tauler.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00147">Player.java:147</a></div></div>
+<div class="ttc" id="aclass_player_html_af2aa0edaa9a65bea619ba797d33509bf"><div class="ttname"><a href="class_player.html#af2aa0edaa9a65bea619ba797d33509bf">Player.getFields</a></div><div class="ttdeci">ArrayList&lt; BoxField &gt; getFields()</div><div class="ttdoc">Retorna la llista boxes_in_property de terrenys que te en propietat el Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00181">Player.java:181</a></div></div>
+<div class="ttc" id="aclass_player_html_a11d8006a5a2b42c9075f164d63b2ca75"><div class="ttname"><a href="class_player.html#a11d8006a5a2b42c9075f164d63b2ca75">Player.addLoan</a></div><div class="ttdeci">void addLoan(Player loaner, int value, int interest, int torns)</div><div class="ttdoc">Afegeix un préstec a la llista de préstecs del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00228">Player.java:228</a></div></div>
+<div class="ttc" id="aclass_player_html_a88be288918be24fa02f6ec4cc7232558"><div class="ttname"><a href="class_player.html#a88be288918be24fa02f6ec4cc7232558">Player.name</a></div><div class="ttdeci">final String name</div><div class="ttdoc">Nom del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00012">Player.java:12</a></div></div>
+<div class="ttc" id="aclass_player_html_afdb8ba2752c6eecb3e14c77be0421025"><div class="ttname"><a href="class_player.html#afdb8ba2752c6eecb3e14c77be0421025">Player.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">Posició del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00015">Player.java:15</a></div></div>
+<div class="ttc" id="aclass_box_field_html_acdac49e6971337931724ca5f242cb12d"><div class="ttname"><a href="class_box_field.html#acdac49e6971337931724ca5f242cb12d">BoxField.buy</a></div><div class="ttdeci">void buy(Player owner)</div><div class="ttdoc">Assigna un Jugador Player com a propietari owner i actualitza estat del terreny.</div><div class="ttdef"><b>Definition:</b> <a href="_box_field_8java_source.html#l00054">BoxField.java:54</a></div></div>
+<div class="ttc" id="aclass_player_loan_html_ae6affad7c4460d297ad6e98bd515e66a"><div class="ttname"><a href="class_player_loan.html#ae6affad7c4460d297ad6e98bd515e66a">PlayerLoan.returnValue</a></div><div class="ttdeci">int returnValue()</div><div class="ttdoc">Calcula el valor que se l'hi haura de tornar al prestador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00043">PlayerLoan.java:43</a></div></div>
+<div class="ttc" id="aclass_player_html_a0060de56b3f0dd430843f23060545257"><div class="ttname"><a href="class_player.html#a0060de56b3f0dd430843f23060545257">Player.luckCards</a></div><div class="ttdeci">ArrayList&lt; Card &gt; luckCards</div><div class="ttdoc">Llista targetes sort.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00016">Player.java:16</a></div></div>
+<div class="ttc" id="aclass_player_html_acd1a5fd336ee36c0bb39a1980306f9eb"><div class="ttname"><a href="class_player.html#acd1a5fd336ee36c0bb39a1980306f9eb">Player.getType</a></div><div class="ttdeci">String getType()</div><div class="ttdoc">Retorna el tipus de Jugador el qual la crida.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00103">Player.java:103</a></div></div>
+<div class="ttc" id="aclass_player_html_a5dee93484551e3bae301e389d9b282dd"><div class="ttname"><a href="class_player.html#a5dee93484551e3bae301e389d9b282dd">Player.Player</a></div><div class="ttdeci">Player(String name, int initial_money, int initial_position, String type)</div><div class="ttdoc">Constructor de Player.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00030">Player.java:30</a></div></div>
+<div class="ttc" id="aclass_player_html_a2be48e0805bb95a6c03bd9b9cc3b4571"><div class="ttname"><a href="class_player.html#a2be48e0805bb95a6c03bd9b9cc3b4571">Player.loans</a></div><div class="ttdeci">ArrayList&lt; PlayerLoan &gt; loans</div><div class="ttdoc">Llista de préstecs del Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00018">Player.java:18</a></div></div>
+<div class="ttc" id="aclass_player_loan_html_afc41de0be956f82646845cfb07fc0ba6"><div class="ttname"><a href="class_player_loan.html#afc41de0be956f82646845cfb07fc0ba6">PlayerLoan.isEnd</a></div><div class="ttdeci">boolean isEnd()</div><div class="ttdoc">Consultor per saber si s'ha acabat els torns del préstec.</div><div class="ttdef"><b>Definition:</b> <a href="_player_loan_8java_source.html#l00054">PlayerLoan.java:54</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe de Jugador del Monopoly. En aquesta classe hi haura tota la informació del jugador i algunes a...</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00010">Player.java:10</a></div></div>
+<div class="ttc" id="aclass_player_html_a7f1f07fbebec188292866cba55d9a290"><div class="ttname"><a href="class_player.html#a7f1f07fbebec188292866cba55d9a290">Player.getMoney</a></div><div class="ttdeci">int getMoney()</div><div class="ttdoc">Retorna els diners que té el Jugador en possessió.</div><div class="ttdef"><b>Definition:</b> <a href="_player_8java_source.html#l00125">Player.java:125</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

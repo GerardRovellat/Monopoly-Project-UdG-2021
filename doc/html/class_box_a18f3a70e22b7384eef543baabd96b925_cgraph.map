@@ -1,0 +1,4 @@
+<map id="Box.print" name="Box.print">
+<area shape="rect" id="node1" title="Sortida per pantalla de la informació basica de la casella i, si n&#39;hi ha, el jugador que està en aque..." alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$class_box.html#ab8a1308041ba6f99aca14e665cea23d3" title="Busca tots els jugadors que estan en aquesta casella i crea un String amb ells." alt="" coords="128,5,269,32"/>
+</map>

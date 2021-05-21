@@ -1,0 +1,5 @@
+<map id="Board.haveOwner" name="Board.haveOwner">
+<area shape="rect" id="node1" title="Comprova si la casella te propietari." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$class_box.html#aea0718df8afc5c94480ba8ca24b5f926" title="Getter de la posicio de la casella." alt="" coords="183,5,297,32"/>
+<area shape="rect" id="node3" href="$class_box_field.html#a7cc0daea20a9b299d927a64c44220f3b" title="Consulta si la propietat esta comprada." alt="" coords="176,56,304,83"/>
+</map>
