@@ -2,6 +2,9 @@
   <artifact type="jar" name="projecte-a9:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/projecte_a9_jar</output-path>
     <root id="archive" name="projecte-a9.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/jar/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="projecte-a9" />
       <element id="extracted-dir" path="$PROJECT_DIR$/jar/gson-2.8.2.jar" path-in-jar="/" />
     </root>
