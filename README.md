@@ -1,9 +1,3 @@
-# Projecte de Programació (GEINF/GEB - UdG)
-
-## Primavera 2021
-
-> Trobareu l'enunciat i la normativa al [Moodle](https://moodle2.udg.edu/course/view.php?id=26811)
-
 **Directoris**
 
 - [src](src) : codi font
